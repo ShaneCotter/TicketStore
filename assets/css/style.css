@@ -1,0 +1,173 @@
+#logo span{
+    color: #33cc33;
+}
+
+#logo{
+    margin-left: 3em;
+    color:white;
+}
+
+#nav-top{
+
+	background-color: #808080;
+	display: table; 
+	width:100%;       
+}
+
+#search{
+	
+}
+
+#nav-buttons{
+	margin-top: 1em;
+	margin-right: 1em;
+}
+
+#nav-bottom{
+	
+	clear:both;
+	text-align:center;
+    font-size:1.5em;
+	padding-bottom:.5em;
+	padding-top:.25em;
+	background-color:#33cc33;
+}
+
+.btn-lg-round
+{
+	border-radius: 3em;
+}
+
+#nav-bottom a:link {
+	transition: all .2s ease-in-out;
+    color:#ffffff;
+	padding-left:2em;
+	padding-right:2em;
+	text-decoration: none;
+	font-family: Montserrat, sans-serif;
+}
+
+
+/* visited link */
+#nav-bottom a:visited {
+    color: #ffffff;
+}
+
+/* mouse over link */
+#nav-bottom a:hover {
+    color: black;
+}
+
+/* selected link */
+#nav-bottom a:active {
+    color: black;
+}
+
+/*CSS for content*/
+#content h2 , h1{
+	text-align: center;
+}
+
+#content a{
+	transition: all .2s ease-in-out;
+    color:#33cc33;
+	text-align:center;
+	font-family: Montserrat, sans-serif;
+}
+/*End CSS for content*/
+
+/*CSS for footer*/
+.footer{
+
+ clear:both;
+	text-align:center;
+    font-size:1.5em;
+	padding-bottom:.5em;
+	padding-top:.25em;
+	background-color:#33cc33;
+    font-family: Montserrat, sans-serif;
+    position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 1rem;
+  text-align: center;
+}
+
+
+.footer h2{
+
+	color:white;
+}
+
+#icon{
+	color:white;
+}
+/*End CSS for footer*/
+
+/*CSS for login page*/
+@media (min-width: 768px) {
+    .omb_row-sm-offset-3 div:first-child[class*="col-"] {
+        margin-left: 25%;
+    }
+}
+
+.omb_login .omb_authTitle {
+    text-align: center;
+	line-height: 300%;
+}
+	
+.omb_login .omb_socialButtons a {
+	color: white; // In yourUse @body-bg 
+	opacity:0.9;
+}
+.omb_login .omb_socialButtons a:hover {
+    color: white;
+	opacity:1;    	
+}
+.omb_login .omb_socialButtons .omb_btn-facebook {background: #3b5998;}
+.omb_login .omb_socialButtons .omb_btn-twitter {background: #00aced;}
+.omb_login .omb_socialButtons .omb_btn-google {background: #c32f10;}
+
+
+.omb_login .omb_loginOr {
+	position: relative;
+	font-size: 1.5em;
+	color: #aaa;
+	margin-top: 1em;
+	margin-bottom: 1em;
+	padding-top: 0.5em;
+	padding-bottom: 0.5em;
+}
+.omb_login .omb_loginOr .omb_hrOr {
+	background-color: #cdcdcd;
+	height: 1px;
+	margin-top: 0px !important;
+	margin-bottom: 0px !important;
+}
+.omb_login .omb_loginOr .omb_spanOr {
+	display: block;
+	position: absolute;
+	left: 50%;
+	top: -0.6em;
+	margin-left: -1.5em;
+	background-color: white;
+	width: 3em;
+	text-align: center;
+}			
+
+.omb_login .omb_loginForm .input-group.i {
+	width: 2em;
+}
+.omb_login .omb_loginForm  .help-block {
+    color: red;
+}
+
+	
+@media (min-width: 768px) {
+    .omb_login .omb_forgotPwd {
+        text-align: right;
+		margin-top:10px;
+ 	}		
+}
+/*End CSS for login page*/
