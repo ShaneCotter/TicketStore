@@ -7,6 +7,10 @@
     color:white;
 }
 
+#signup{
+	
+}
+
 #nav-top{
 
 	background-color: #808080;
@@ -32,6 +36,8 @@
 	padding-top:.25em;
 	background-color:#33cc33;
 }
+
+
 
 .btn-lg-round
 {
@@ -74,6 +80,14 @@
 	text-align:center;
 	font-family: Montserrat, sans-serif;
 }
+
+
+#content {
+	width: 80%;
+	margin-bottom: 30px;
+	margin-top: 30px;
+	position:center;
+}
 /*End CSS for content*/
 
 /*CSS for footer*/
@@ -92,6 +106,7 @@
   left: 0;
   padding: 1rem;
   text-align: center;
+  
 }
 
 
@@ -170,4 +185,17 @@
 		margin-top:10px;
  	}		
 }
+
+
 /*End CSS for login page*/
+
+
+
+
+
+
+
+.signUp {
+	
+}
+
