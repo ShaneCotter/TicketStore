@@ -74,6 +74,22 @@
 }
 /*-----END NAV BAR CSS--------*/
 
+/*-----INDEX PAGE-------------*/
+
+#aboutUs h2{
+	font-size: 2em;
+	text-align: center;
+	text-transform: capitalize;
+	border-bottom: 0.025em;
+	border-bottom-color: #808080;
+	border-bottom-style: solid;
+	color: #808080;
+}
+
+#aboutUs img{
+	margin-bottom: 0.5em;
+}
+
 
 /*---CSS for content---*/
 #content h2 , h1{
