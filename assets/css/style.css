@@ -1,5 +1,5 @@
 /*-------NAV BAR CSS----------*/
-#logo span{
+#logo span , #footer span{
     color: #33cc33;
 }
 
@@ -103,21 +103,21 @@
 /*---CSS for footer---*/
 #footer{
 
-	text-align:center;
     font-size:1.5em;
 	padding-bottom:.5em;
 	padding-top:.25em;
-	background-color:#33cc33;
+	background-color:#808080;
     font-family: Montserrat, sans-serif;
     width: 100%;
     padding: 1em;
-    text-align: center;
     position: absolute;
     left: 0;
     bottom: 0;
     height: 5em;
     width: 100%;
     overflow:hidden;
+	padding-left:3em;
+	padding-right:3em;
 }
 
 html {
@@ -137,6 +137,7 @@ body {
 #icon{
 	color:white;
 }
+
 /*End CSS for footer*/
 
 
@@ -154,7 +155,7 @@ body {
 }
 	
 .omb_login .omb_socialButtons a {
-	color: white; // In yourUse @body-bg 
+	color: 33cc33; // In yourUse @body-bg 
 	opacity:0.9;
 }
 .omb_login .omb_socialButtons a:hover {
