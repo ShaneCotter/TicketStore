@@ -144,7 +144,8 @@ html {
 }
 
 body {
-    margin: 0 0 5em;; /* bottom = footer height */
+    margin: 0 0 5em; /* bottom = footer height */
+	font-family: Montserrat, sans-serif;
 }
 
 #footer h2{
