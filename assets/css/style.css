@@ -96,7 +96,10 @@
 }
 /*End CSS for content*/
 
-
+#addEvent form , #addEvent .btn{
+	margin-left:25%;
+	margin-right:0%;
+}
 
 
 
