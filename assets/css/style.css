@@ -92,9 +92,14 @@
 	width: 100%;
 	padding: 0;
 	margin: 0;
+	margin-bottom:10em;
 }
-=======
->>>>>>> c6362be255bfe8a5e154edd8ff6f63bcd60dd8bd
+
+
+.item h1{
+	margin-bottom:3em;
+	font-size:4em;
+}
 
 #aboutUs h2{
 	font-size: 2em;
