@@ -74,7 +74,12 @@
 }
 /*-----END NAV BAR CSS--------*/
 
+
+
+
+
 /*-----INDEX PAGE-------------*/
+
 
 #aboutUs h2{
 	font-size: 2em;
@@ -89,6 +94,8 @@
 #aboutUs img{
 	margin-bottom: 0.5em;
 }
+
+
 
 
 /*---CSS for content---*/
@@ -114,6 +121,7 @@
 	
 }
 
+
 #content {
 	width: 80%;
 	margin-bottom: 10em;
@@ -122,6 +130,10 @@
 }
 /*End CSS for content*/
 
+
+
+
+/*---Add event---*/
 #addEvent form , #addEvent .btn{
 	margin-left:25%;
 	margin-right:0%;
@@ -131,6 +143,9 @@
 	
 	margin-bottom:10em;
 }
+/*-------------*/
+
+
 
 
 
@@ -174,6 +189,7 @@ body {
 }
 
 /*End CSS for footer*/
+
 
 
 
@@ -243,7 +259,6 @@ body {
  	}		
 }
 
-
 /*End CSS for login page*/
 
 
@@ -262,6 +277,7 @@ body {
 /*Change button colors*/
 .btn-success{
 	background-color: #33cc33 !important;
+	color:white !important;
 }
 
 /*Change glow on input fields to green*/
@@ -309,6 +325,9 @@ input[type="color"]:focus,
   }
 }
 
+
+
+/*--- CSS for events page---*/
 .glyphicon { margin-right:5px; }
 .thumbnail
 {
@@ -366,4 +385,4 @@ input[type="color"]:focus,
 {
     margin: 0 0 11px;
 }
-
+/*------------*/
