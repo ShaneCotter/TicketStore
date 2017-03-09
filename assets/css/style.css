@@ -3,6 +3,10 @@
     color: #33cc33;
 }
 
+.greentext{
+	   color: #33cc33;
+}
+
 #logo{
     margin-left: 3em;
     color:white;
@@ -322,6 +326,17 @@ input[type="color"]:focus,
   outline: 0 none;
 }
 
+#seatingselect:focus{
+	 border-color: rgba(126, 239, 104, 0.8);
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(126, 239, 104, 0.6);
+  outline: 0 none;
+}
+
+#seatingselect:active, #seatingselect:hover {
+   outline-color: #33cc33;
+
+}
+
 
 /* make sidebar nav vertical */ 
 @media (min-width: 768px) {
@@ -406,3 +421,11 @@ input[type="color"]:focus,
     margin: 0 0 11px;
 }
 /*------------*/
+
+#seatingplans{
+	margin-top: 3em;
+}
+
+#seatingform{
+	padding-top: 5em;
+}
