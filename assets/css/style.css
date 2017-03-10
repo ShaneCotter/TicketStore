@@ -285,6 +285,13 @@ body {
 
 /*End CSS for login page*/
 
+/* CSS for Cart */
+
+#cartContent img {
+		border: .2em solid;
+		width: 20%;
+}
+
 
 
 /*---GENERAL CSS---*/
