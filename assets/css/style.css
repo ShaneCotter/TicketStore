@@ -99,6 +99,18 @@
 	margin-bottom:10em;
 }
 
+#indexContent a{
+	
+	color:white;
+	text-decoration:none;
+}
+
+#indexContent a:hover{
+	
+	color:#33cc33;
+	text-decoration:none;
+}
+
 
 .item h1{
 	margin-bottom:3em;
@@ -448,6 +460,13 @@ input[type="color"]:focus,
 
 #seatingplans h1{
 	color:#33cc33 !important;
+}
+
+#seatingplans p{
+	
+	color : #33cc33 ;
+	font-size:1.5em;
+	font-style:bold;
 }
 /*---End ticket page CSS---*/
 
