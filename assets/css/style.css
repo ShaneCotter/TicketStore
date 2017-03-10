@@ -287,9 +287,128 @@ body {
 
 /* CSS for Cart */
 
+#cartContent {
+	margin-bottom: 10em;
+	margin-top: 2em;
+	/*text-align: center;*/
+}
+
+#cartContent h3 {
+	color: #33cc33;
+	margin-left: 16.5em;
+	word-spacing: 2em;	
+}
+
+#cartContent h2 {
+	font-family: Montserrat, sans-serif;
+	color: #33cc33;	
+}
+
 #cartContent img {
 		border: .2em solid;
 		width: 20%;
+}
+
+#cartContent strong {
+	color: #33cc33;
+	margin-left: 2em;
+	font-size: 1.5em;
+	font-family: Montserrat, sans-serif;
+}
+
+#cartContent b {
+	color: #33cc33;
+	margin-left: 2em;
+	font-size: 1.5em;
+	font-family: Montserrat, sans-serif;
+	float: right;
+	margin-right: 2em;
+	margin-bottom: 3em;
+}
+
+#cartContent .btn-success {
+	float:right;
+	margin-right: 5em;
+}
+
+.steps {
+    margin-top: -41px;
+    display: inline-block;
+    float: right;
+    font-size: 16px
+}
+.step {
+    float: left;
+    background: white;
+    padding: 7px 13px;
+    border-radius: 1px;
+    text-align: center;
+    width: 100px;
+    position: relative
+}
+.step_line {
+    margin: 0;
+    width: 0;
+    height: 0;
+    border-left: 16px solid #fff;
+    border-top: 16px solid transparent;
+    border-bottom: 16px solid transparent;
+    z-index: 1008;
+    position: absolute;
+    left: 99px;
+    top: 1px
+}
+.step_line.backline {
+    border-left: 20px solid #f7f7f7;
+    border-top: 20px solid transparent;
+    border-bottom: 20px solid transparent;
+    z-index: 1006;
+    position: absolute;
+    left: 99px;
+    top: -3px
+}
+.step_complete {
+    background: #357ebd;
+	
+}
+.step_complete a.check-bc, .step_complete a.check-bc:hover,.afix-1,.afix-1:hover{
+    color: #eee;
+}
+.step_line.step_complete {
+    background: 0;
+    border-left: 16px solid #357ebd
+}
+.step_thankyou {
+    float: left;
+    background: white;
+    padding: 7px 13px;
+    border-radius: 1px;
+    text-align: center;
+    width: 100px;
+}
+.step.check_step {
+    margin-left: 5px;
+}
+.ch_pp {
+    text-decoration: underline;
+}
+.ch_pp.sip {
+    margin-left: 10px;
+}
+.check-bc,
+.check-bc:hover {
+    color: #222;
+}
+.SuccessField {
+    border-color: #458845 !important;
+    -webkit-box-shadow: 0 0 7px #9acc9a !important;
+    -moz-box-shadow: 0 0 7px #9acc9a !important;
+    box-shadow: 0 0 7px #9acc9a !important;
+    background: #f9f9f9 url(../images/valid.png) no-repeat 98% center !important
+}
+
+.btn-xs{
+    line-height: 28px;
 }
 
 
