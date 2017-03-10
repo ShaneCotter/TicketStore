@@ -84,7 +84,6 @@
 
 /*-----INDEX PAGE-------------*/
 
-<<<<<<< HEAD
 .carousel-inner > .item > img,
   .carousel-inner > .item > a > img {
       width: 100%;
@@ -97,6 +96,18 @@
 	padding: 0;
 	margin: 0;
 	margin-bottom:10em;
+}
+
+#indexContent a{
+	
+	color:white;
+	text-decoration:none;
+}
+
+#indexContent a:hover{
+	
+	color:#33cc33;
+	text-decoration:none;
 }
 
 
@@ -296,10 +307,9 @@ body {
 
 /*Add green borders to well*/
 .well{
-    border-style: inset !important;
-    border-width: 5px !important;
+   border-style: solid !important;
+    border-width: .15em !important;
 	border-color: #33cc33 !important;
-	box-shadow: 10px 10px 5px #888888 !important;
 	background-color: #F0F0F0 !important;
 }
 
@@ -427,9 +437,13 @@ input[type="color"]:focus,
 }
 /*------------*/
 
+/*---CSS for ticket page---*/
 #seatingplans{
 	margin-top: 3em;
+	margin-bottom: 10em;
 }
+
+
 
 #seatingform{
 	padding-top: 5em;
@@ -451,3 +465,29 @@ input[type="color"]:focus,
 	border:.15em;
 	border-color:#33cc33 !important;
 }
+=======
+#seating{
+	
+	clear:both;
+	margin-top:2em;
+	padding-top:1em;
+	padding-bottom:1em;
+}
+
+#eventInfo{
+	
+	padding-left:2em;
+}
+
+#seatingplans h1{
+	color:#33cc33 !important;
+}
+
+#seatingplans p{
+	
+	color : #33cc33 ;
+	font-size:1.5em;
+	font-style:bold;
+}
+/*---End ticket page CSS---*/
+
