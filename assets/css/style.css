@@ -297,6 +297,11 @@ body {
 
 /*End CSS for login page*/
 
+/* CSS for Cart */
+body {
+	margin-top: 20px;
+}
+
 
 
 /*---GENERAL CSS---*/
@@ -444,6 +449,23 @@ input[type="color"]:focus,
 #seatingform{
 	padding-top: 5em;
 }
+
+
+
+#cartContent{
+	margin-top:5em;
+	
+}
+
+.panel-heading{
+	
+	background-color: #D6FFD6 !important;
+}
+
+.panel-info{
+	
+	border:.15em;
+	border-color:#33cc33 !important;
 
 /*-----------Checkout------------*/
 
