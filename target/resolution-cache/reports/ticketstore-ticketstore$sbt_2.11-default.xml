@@ -7,7 +7,7 @@
 		revision="1.0-SNAPSHOT"
 		conf="default"
 		confs="default"
-		date="20170316105335"/>
+		date="20170316125248"/>
 	<dependencies>
 		<module organisation="com.typesafe.sbt" name="sbt-play-ebean">
 			<revision name="3.0.2" status="release" pubdate="20160609205750" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/playframework/play-ebean" extra-scalaVersion="2.10" extra-sbtVersion="0.13" downloaded="false" searched="false" default="false" conf="compile, default(compile)" position="176">
