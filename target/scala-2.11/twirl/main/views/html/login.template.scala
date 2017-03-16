@@ -86,8 +86,8 @@ Seq[Any](_display_(/*2.2*/main("Welcome to Play")/*2.25*/ {_display_(Seq[Any](fo
 object login extends login_Scope0.login
               /*
                   -- GENERATED --
-                  DATE: Wed Mar 15 11:47:18 GMT 2017
-                  SOURCE: /home/wdd/Desktop/TicketStore/app/views/login.scala.html
+                  DATE: Thu Mar 16 10:31:09 GMT 2017
+                  SOURCE: /home/wdd/webapps/TicketStore/app/views/login.scala.html
                   HASH: 5ea2d97ed1d1835999b8990b5a8cd190fa8f5871
                   MATRIX: 827->2|858->25|897->27|924->28
                   LINES: 32->2|32->2|32->2|33->3

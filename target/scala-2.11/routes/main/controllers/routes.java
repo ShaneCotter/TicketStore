@@ -1,7 +1,7 @@
 
 // @GENERATOR:play-routes-compiler
-// @SOURCE:/home/wdd/Desktop/TicketStore/conf/routes
-// @DATE:Wed Mar 15 11:47:18 GMT 2017
+// @SOURCE:/home/wdd/webapps/TicketStore/conf/routes
+// @DATE:Thu Mar 16 10:31:08 GMT 2017
 
 package controllers;
 

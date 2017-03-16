@@ -26,7 +26,7 @@
     <div class="container-fluid" id="nav-top">
         <div class="row">
             <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
-                <h1 id="logo">TC <span> Events</span></h1>
+                <a href="@routes.HomeController.index()"> <h1 id="logo">TC <span> Events</span></h1></a>
             </div>
             <div class="col-lg-8 col-md-8 col-sm-8 col-xs-8" id="">
                 <!--Search bar-->
@@ -42,9 +42,9 @@
                 </div>
                 <!--/Search Bar-->
                 <div class="nav navbar-nav navbar-right" id="nav-buttons">
-                    <button type="button" class="btn btn-success btn-circle btn-lg"><i class="glyphicon glyphicon-shopping-cart"></i></button>
-                    <a href="login.scala.html" class="btn btn-success btn-lg round"><span class="glyphicon glyphicon-user"></span>Login</a>
-                    <a href="signUp.scala.html" class="btn btn-success btn-lg round"><span class="glyphcon glyphicon-pencil"></span>Sign up</a>
+                    <a href="@routes.HomeController.cart()" class="btn btn-success btn-circle btn-lg"><i class="glyphicon glyphicon-shopping-cart"></i></a>
+                    <a href="@routes.HomeController.login()" class="btn btn-success btn-lg round"><span class="glyphicon glyphicon-user"></span>Login</a>
+                    <a href="@routes.HomeController.signUp()" class="btn btn-success btn-lg round"><span class="glyphcon glyphicon-pencil"></span>Sign up</a>
                 </div>
             </div>
         </div>
@@ -65,7 +65,7 @@
 <div class="container" id = "footer">
         <div class="row">
             <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 pull-left">
-                <h2>TC <span>EVENTS</h2>
+                <a href="@routes.HomeController.index()"><h2>TC <span>EVENTS</h2></a>
             </div>
             <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6" id="icon div">
                 <a href="#"><i class="fa fa-3x fa-fw fa-instagram text-inverse pull-right" id="icon"></i></a>

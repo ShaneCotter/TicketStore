@@ -56,7 +56,7 @@ Seq[Any](format.raw/*7.32*/("""
     <div class="container-fluid" id="nav-top">
         <div class="row">
             <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
-                <h1 id="logo">TC <span> Events</span></h1>
+                <a href=""""),_display_(/*29.27*/routes/*29.33*/.HomeController.index()),format.raw/*29.56*/(""""> <h1 id="logo">TC <span> Events</span></h1></a>
             </div>
             <div class="col-lg-8 col-md-8 col-sm-8 col-xs-8" id="">
                 <!--Search bar-->
@@ -72,9 +72,9 @@ Seq[Any](format.raw/*7.32*/("""
                 </div>
                 <!--/Search Bar-->
                 <div class="nav navbar-nav navbar-right" id="nav-buttons">
-                    <button type="button" class="btn btn-success btn-circle btn-lg"><i class="glyphicon glyphicon-shopping-cart"></i></button>
-                    <a href="login.scala.html" class="btn btn-success btn-lg round"><span class="glyphicon glyphicon-user"></span>Login</a>
-                    <a href="signUp.scala.html" class="btn btn-success btn-lg round"><span class="glyphcon glyphicon-pencil"></span>Sign up</a>
+                    <a href=""""),_display_(/*45.31*/routes/*45.37*/.HomeController.cart()),format.raw/*45.59*/("""" class="btn btn-success btn-circle btn-lg"><i class="glyphicon glyphicon-shopping-cart"></i></a>
+                    <a href=""""),_display_(/*46.31*/routes/*46.37*/.HomeController.login()),format.raw/*46.60*/("""" class="btn btn-success btn-lg round"><span class="glyphicon glyphicon-user"></span>Login</a>
+                    <a href=""""),_display_(/*47.31*/routes/*47.37*/.HomeController.signUp()),format.raw/*47.61*/("""" class="btn btn-success btn-lg round"><span class="glyphcon glyphicon-pencil"></span>Sign up</a>
                 </div>
             </div>
         </div>
@@ -95,7 +95,7 @@ Seq[Any](format.raw/*7.32*/("""
 """),format.raw/*65.1*/("""<div class="container" id = "footer">
         <div class="row">
             <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 pull-left">
-                <h2>TC <span>EVENTS</h2>
+                <a href=""""),_display_(/*68.27*/routes/*68.33*/.HomeController.index()),format.raw/*68.56*/(""""><h2>TC <span>EVENTS</h2></a>
             </div>
             <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6" id="icon div">
                 <a href="#"><i class="fa fa-3x fa-fw fa-instagram text-inverse pull-right" id="icon"></i></a>
@@ -132,11 +132,11 @@ Seq[Any](format.raw/*7.32*/("""
 object main extends main_Scope0.main
               /*
                   -- GENERATED --
-                  DATE: Wed Mar 15 11:52:28 GMT 2017
-                  SOURCE: /home/wdd/Desktop/TicketStore/app/views/main.scala.html
-                  HASH: debfad9632f8213e1b006b1d81c90a5d9c2b4680
-                  MATRIX: 1002->260|1127->290|1155->292|1205->316|1231->321|1331->394|1346->400|1409->442|4061->3067|4076->3073|4118->3094|4186->3135|4201->3141|4244->3163|4314->3206|4329->3212|4373->3235|4445->3280|4460->3286|4504->3309|4626->3404|4654->3411|4683->3413
-                  LINES: 32->7|37->7|39->9|40->10|40->10|44->14|44->14|44->14|84->54|84->54|84->54|85->55|85->55|85->55|86->56|86->56|86->56|87->57|87->57|87->57|93->63|93->63|95->65
+                  DATE: Thu Mar 16 10:38:20 GMT 2017
+                  SOURCE: /home/wdd/webapps/TicketStore/app/views/main.scala.html
+                  HASH: 17e6e9678265a0c8241ead32c825b519c52a9d6a
+                  MATRIX: 1002->260|1127->290|1155->292|1205->316|1231->321|1331->394|1346->400|1409->442|2529->1535|2544->1541|2588->1564|3535->2484|3550->2490|3593->2512|3748->2640|3763->2646|3807->2669|3959->2794|3974->2800|4019->2824|4376->3154|4391->3160|4433->3181|4501->3222|4516->3228|4559->3250|4629->3293|4644->3299|4688->3322|4760->3367|4775->3373|4819->3396|4941->3491|4969->3498|4998->3500|5187->3662|5202->3668|5246->3691
+                  LINES: 32->7|37->7|39->9|40->10|40->10|44->14|44->14|44->14|59->29|59->29|59->29|75->45|75->45|75->45|76->46|76->46|76->46|77->47|77->47|77->47|84->54|84->54|84->54|85->55|85->55|85->55|86->56|86->56|86->56|87->57|87->57|87->57|93->63|93->63|95->65|98->68|98->68|98->68
                   -- GENERATED --
               */
           
