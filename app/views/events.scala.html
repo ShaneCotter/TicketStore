@@ -1,4 +1,6 @@
-@main("Welcome to Play") {
+@(events: List[models.Event])
+
+@main("Events") {
 	
 	
 <!--..CONTENT..-->
@@ -71,20 +73,21 @@
 	<br>
 	
     <div id="products" class="row list-group">
-	
-	<a href="eventTicket.scala.html"
+        <!-- Start of for loop - Fo reach e in events add a row -->
+	@for(e <- events) {
+	<a href="@routes.HomeController.eventTicket()">
         <div class="item  col-xs-4 col-lg-4">
             <div class="thumbnail">
 			
                 <img class="group list-group-image" src="http://placehold.it/400x250/000/fff" alt="" >
                 <div class="caption">
                     <h4 class="group inner list-group-item-heading">
-                        Event title</h4>
+                        @e.getTitle</h4>
                     <p class="group inner list-group-item-text">
-                        Event name : $
-						Location: $
-						Date: $
-						Description: $</p>
+                        @e.getEventName
+						@e.getLocation
+						@e.getDate
+						@e.getPrice</p>
                     <div class="row">
                         <div class="col-xs-12 col-md-6">
                             <p class="lead">
@@ -99,7 +102,8 @@
                 </div>
             </div>
         </div>
-		</a>
+        </a>
+    } <!-- End of for loop -->
 		
 		
                         <div class="col-xs-12 col-md-6">
@@ -118,5 +122,6 @@ $(document).ready(function() {
     $('#list').click(function(event){event.preventDefault();$('#products .item').addClass('list-group-item');});
     $('#grid').click(function(event){event.preventDefault();$('#products .item').removeClass('list-group-item');$('#products .item').addClass('grid-group-item');});
 });</script>
-
 }
+
+

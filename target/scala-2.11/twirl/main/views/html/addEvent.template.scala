@@ -176,7 +176,7 @@ Seq[Any](_display_(/*1.2*/main("Welcome to Play")/*1.25*/ {_display_(Seq[Any](fo
 object addEvent extends addEvent_Scope0.addEvent
               /*
                   -- GENERATED --
-                  DATE: Thu Mar 16 10:31:09 GMT 2017
+                  DATE: Thu Mar 16 13:29:36 GMT 2017
                   SOURCE: /home/wdd/webapps/TicketStore/app/views/addEvent.scala.html
                   HASH: 86fe0bb5eb511ecbcfee53dee744fb4e79350eb7
                   MATRIX: 833->1|864->24|903->26|930->27

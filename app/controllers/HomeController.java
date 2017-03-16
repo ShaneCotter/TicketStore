@@ -1,8 +1,14 @@
 package controllers;
 
 import play.mvc.*;
-
+import play.api.Environment;
+import play.data.*;
+import play.db.ebean.Transactional;
+import java.util.*;
+import javax.inject.Inject;
 import views.html.*;
+// Import models
+import models.*;
 
 
 public class HomeController extends Controller {
@@ -33,7 +39,11 @@ public class HomeController extends Controller {
     }
 
     public Result events() {
-        return ok(events.render());
+
+        // Get list of events
+        List<Event> eventsList = Event.findAll();
+        // Render the list events view, passing parameters
+        return ok(events.render(eventsList));
     }
 
     public Result eventTicket() {

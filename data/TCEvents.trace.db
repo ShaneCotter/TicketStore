@@ -1,3 +1,133 @@
 2017-03-16 13:04:54 jdbc[4]: exception
 org.h2.jdbc.JdbcSQLException: Table "PLAY_EVOLUTIONS" not found; SQL statement:
 select id, hash, apply_script, revert_script, state, last_problem from play_evolutions where state like 'applying_%' [42102-192]
+2017-03-16 13:27:39 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "EVENTS" not found; SQL statement:
+select * from events [42102-192]
+2017-03-16 13:44:30 jdbc[4]: exception
+org.h2.jdbc.JdbcSQLException: Table "EVENTS" not found; SQL statement:
+drop table events [42102-192]
+2017-03-16 13:44:38 jdbc[4]: exception
+org.h2.jdbc.JdbcSQLException: Table "EVENT" not found; SQL statement:
+drop table event [42102-192]
+2017-03-16 13:59:25 jdbc[37]: exception
+org.h2.jdbc.JdbcSQLException: Column "Ed Sheeran" not found; SQL statement:
+insert into event(event_id, event_name, description, time, location, date, title, price)
+values(001, "Ed Sheeran", "Ed Sheeran plays the Three Arena", "18:00", "Dublin", 12/02/2017, "ED SHEERAN", 65.00) [42122-192]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:345)
+	at org.h2.message.DbException.get(DbException.java:179)
+	at org.h2.message.DbException.get(DbException.java:155)
+	at org.h2.expression.ExpressionColumn.optimize(ExpressionColumn.java:147)
+	at org.h2.command.dml.Insert.prepare(Insert.java:270)
+	at org.h2.command.Parser.prepareCommand(Parser.java:259)
+	at org.h2.engine.Session.prepareLocal(Session.java:560)
+	at org.h2.engine.Session.prepareCommand(Session.java:501)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1202)
+	at org.h2.jdbc.JdbcStatement.executeInternal(JdbcStatement.java:170)
+	at org.h2.jdbc.JdbcStatement.execute(JdbcStatement.java:158)
+	at org.h2.server.web.WebApp.getResult(WebApp.java:1388)
+	at org.h2.server.web.WebApp.query(WebApp.java:1061)
+	at org.h2.server.web.WebApp$1.next(WebApp.java:1023)
+	at org.h2.server.web.WebApp$1.next(WebApp.java:1010)
+	at org.h2.server.web.WebThread.process(WebThread.java:164)
+	at org.h2.server.web.WebThread.run(WebThread.java:89)
+	at java.lang.Thread.run(Thread.java:745)
+2017-03-16 13:59:49 jdbc[37]: exception
+org.h2.jdbc.JdbcSQLException: Column "Ed Sheeran" not found; SQL statement:
+insert into event(event_id, event_name, description, time, location, date, title, price) values(001, "Ed Sheeran", "Ed Sheeran plays the Three Arena", "18:00", "Dublin", 12/02/2017, "ED SHEERAN", 65.00) [42122-192]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:345)
+	at org.h2.message.DbException.get(DbException.java:179)
+	at org.h2.message.DbException.get(DbException.java:155)
+	at org.h2.expression.ExpressionColumn.optimize(ExpressionColumn.java:147)
+	at org.h2.command.dml.Insert.prepare(Insert.java:270)
+	at org.h2.command.Parser.prepareCommand(Parser.java:259)
+	at org.h2.engine.Session.prepareLocal(Session.java:560)
+	at org.h2.engine.Session.prepareCommand(Session.java:501)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1202)
+	at org.h2.jdbc.JdbcStatement.executeInternal(JdbcStatement.java:170)
+	at org.h2.jdbc.JdbcStatement.execute(JdbcStatement.java:158)
+	at org.h2.server.web.WebApp.getResult(WebApp.java:1388)
+	at org.h2.server.web.WebApp.query(WebApp.java:1061)
+	at org.h2.server.web.WebApp$1.next(WebApp.java:1023)
+	at org.h2.server.web.WebApp$1.next(WebApp.java:1010)
+	at org.h2.server.web.WebThread.process(WebThread.java:164)
+	at org.h2.server.web.WebThread.run(WebThread.java:89)
+	at java.lang.Thread.run(Thread.java:745)
+2017-03-16 14:01:17 jdbc[37]: exception
+org.h2.jdbc.JdbcSQLException: Cannot parse "TIMESTAMP" constant "0"; SQL statement:
+insert into event(event_id, event_name, description, time, location, date, title, price) values(001, 'Ed Sheeran', 'Ed Sheeran plays the Three Arena', '18:00', 'Dublin', 12/02/2017, 'ED SHEERAN', 65.00) -- (1, 'Ed Sheeran', 'Ed Sheeran plays the Three Arena', '18:00', 'Dublin', 0, 'ED SHEERAN', 65.00) [22007-192]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:345)
+	at org.h2.message.DbException.get(DbException.java:168)
+	at org.h2.value.ValueTimestamp.parse(ValueTimestamp.java:122)
+	at org.h2.value.Value.convertTo(Value.java:967)
+	at org.h2.table.Column.convert(Column.java:149)
+	at org.h2.command.dml.Insert.insertRows(Insert.java:143)
+	at org.h2.command.dml.Insert.update(Insert.java:114)
+	at org.h2.command.CommandContainer.update(CommandContainer.java:98)
+	at org.h2.command.Command.executeUpdate(Command.java:258)
+	at org.h2.jdbc.JdbcStatement.executeInternal(JdbcStatement.java:184)
+	at org.h2.jdbc.JdbcStatement.execute(JdbcStatement.java:158)
+	at org.h2.server.web.WebApp.getResult(WebApp.java:1388)
+	at org.h2.server.web.WebApp.query(WebApp.java:1061)
+	at org.h2.server.web.WebApp$1.next(WebApp.java:1023)
+	at org.h2.server.web.WebApp$1.next(WebApp.java:1010)
+	at org.h2.server.web.WebThread.process(WebThread.java:164)
+	at org.h2.server.web.WebThread.run(WebThread.java:89)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.lang.IllegalArgumentException: 0
+	at org.h2.util.DateTimeUtils.parseDateValue(DateTimeUtils.java:305)
+	at org.h2.value.ValueTimestamp.parseTry(ValueTimestamp.java:140)
+	at org.h2.value.ValueTimestamp.parse(ValueTimestamp.java:120)
+	... 15 more
+2017-03-16 14:03:06 jdbc[37]: exception
+org.h2.jdbc.JdbcSQLException: Cannot parse "TIMESTAMP" constant "12-0-2017"; SQL statement:
+insert into event(event_id, event_name, description, time, location, date, title, price) values(001, 'Ed Sheeran', 'Ed Sheeran plays the Three Arena', '18:00', 'Dublin', '12-0-2017', 'ED SHEERAN', 65.00) -- (1, 'Ed Sheeran', 'Ed Sheeran plays the Three Arena', '18:00', 'Dublin', '12-0-2017', 'ED SHEERAN', 65.00) [22007-192]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:345)
+	at org.h2.message.DbException.get(DbException.java:168)
+	at org.h2.value.ValueTimestamp.parse(ValueTimestamp.java:122)
+	at org.h2.value.Value.convertTo(Value.java:967)
+	at org.h2.table.Column.convert(Column.java:149)
+	at org.h2.command.dml.Insert.insertRows(Insert.java:143)
+	at org.h2.command.dml.Insert.update(Insert.java:114)
+	at org.h2.command.CommandContainer.update(CommandContainer.java:98)
+	at org.h2.command.Command.executeUpdate(Command.java:258)
+	at org.h2.jdbc.JdbcStatement.executeInternal(JdbcStatement.java:184)
+	at org.h2.jdbc.JdbcStatement.execute(JdbcStatement.java:158)
+	at org.h2.server.web.WebApp.getResult(WebApp.java:1388)
+	at org.h2.server.web.WebApp.query(WebApp.java:1061)
+	at org.h2.server.web.WebApp$1.next(WebApp.java:1023)
+	at org.h2.server.web.WebApp$1.next(WebApp.java:1010)
+	at org.h2.server.web.WebThread.process(WebThread.java:164)
+	at org.h2.server.web.WebThread.run(WebThread.java:89)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.lang.IllegalArgumentException: 12-0-2017
+	at org.h2.util.DateTimeUtils.parseDateValue(DateTimeUtils.java:311)
+	at org.h2.value.ValueTimestamp.parseTry(ValueTimestamp.java:140)
+	at org.h2.value.ValueTimestamp.parse(ValueTimestamp.java:120)
+	... 15 more
+2017-03-16 14:03:15 jdbc[37]: exception
+org.h2.jdbc.JdbcSQLException: Cannot parse "TIMESTAMP" constant "-2005"; SQL statement:
+insert into event(event_id, event_name, description, time, location, date, title, price) values(001, 'Ed Sheeran', 'Ed Sheeran plays the Three Arena', '18:00', 'Dublin', 12-0-2017, 'ED SHEERAN', 65.00) -- (1, 'Ed Sheeran', 'Ed Sheeran plays the Three Arena', '18:00', 'Dublin', -2005, 'ED SHEERAN', 65.00) [22007-192]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:345)
+	at org.h2.message.DbException.get(DbException.java:168)
+	at org.h2.value.ValueTimestamp.parse(ValueTimestamp.java:122)
+	at org.h2.value.Value.convertTo(Value.java:967)
+	at org.h2.table.Column.convert(Column.java:149)
+	at org.h2.command.dml.Insert.insertRows(Insert.java:143)
+	at org.h2.command.dml.Insert.update(Insert.java:114)
+	at org.h2.command.CommandContainer.update(CommandContainer.java:98)
+	at org.h2.command.Command.executeUpdate(Command.java:258)
+	at org.h2.jdbc.JdbcStatement.executeInternal(JdbcStatement.java:184)
+	at org.h2.jdbc.JdbcStatement.execute(JdbcStatement.java:158)
+	at org.h2.server.web.WebApp.getResult(WebApp.java:1388)
+	at org.h2.server.web.WebApp.query(WebApp.java:1061)
+	at org.h2.server.web.WebApp$1.next(WebApp.java:1023)
+	at org.h2.server.web.WebApp$1.next(WebApp.java:1010)
+	at org.h2.server.web.WebThread.process(WebThread.java:164)
+	at org.h2.server.web.WebThread.run(WebThread.java:89)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.lang.IllegalArgumentException: -2005
+	at org.h2.util.DateTimeUtils.parseDateValue(DateTimeUtils.java:305)
+	at org.h2.value.ValueTimestamp.parseTry(ValueTimestamp.java:140)
+	at org.h2.value.ValueTimestamp.parse(ValueTimestamp.java:120)
+	... 15 more

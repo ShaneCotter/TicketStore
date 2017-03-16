@@ -106,7 +106,7 @@ Seq[Any](_display_(/*1.2*/main("Welcome to Play")/*1.25*/ {_display_(Seq[Any](fo
 object eventTicket extends eventTicket_Scope0.eventTicket
               /*
                   -- GENERATED --
-                  DATE: Thu Mar 16 10:31:09 GMT 2017
+                  DATE: Thu Mar 16 13:30:09 GMT 2017
                   SOURCE: /home/wdd/webapps/TicketStore/app/views/eventTicket.scala.html
                   HASH: 5af2c20cd98caf530b85fc491b34fd1a0637f749
                   MATRIX: 839->1|870->24|909->26|940->31
