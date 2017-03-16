@@ -13,6 +13,12 @@
     color:white;
 }
 
+a:hover, a:visited, a:link, a:active {
+    text-decoration: none!important;
+}
+
+
+
 #nav-top{
 
 	background-color: #808080;
@@ -251,7 +257,7 @@ body {
 }
 	
 .omb_login .omb_socialButtons a {
-	color: 33cc33; // In yourUse @body-bg 
+	color: #33cc33; // In yourUse @body-bg
 	opacity:0.9;
 }
 .omb_login .omb_socialButtons a:hover {
@@ -472,10 +478,11 @@ input[type="color"]:focus,
 	background-color: #D6FFD6 !important;
 }
 
-.panel-info{
-	
-	border:.15em;
-	border-color:#33cc33 !important;
+.panel-info {
+
+    border: .15em;
+    border-color: #33cc33 !important;
+}
 
 /*-----------Checkout------------*/
 
