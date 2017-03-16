@@ -1,9 +1,14 @@
-2017-03-16 13:04:53,587 [INFO] from application in ForkJoinPool-1-worker-0 - Creating Pool for datasource 'default'
-2017-03-16 13:04:53,864 [INFO] from play.api.db.DefaultDBApi in ForkJoinPool-1-worker-0 - Database [default] connected at jdbc:h2:file:./data/TCEvents
-2017-03-16 13:04:54,755 [INFO] from application in ForkJoinPool-1-worker-0 - ApplicationTimer demo: Starting application at 2017-03-16T13:04:54.754Z
-2017-03-16 13:04:54,757 [ERROR] from application in netty-event-loop-3 - 
+2017-03-16 14:48:13,841 [INFO] from application in ForkJoinPool-1-worker-1 - Creating Pool for datasource 'default'
+2017-03-16 14:48:14,079 [INFO] from play.api.db.DefaultDBApi in ForkJoinPool-1-worker-1 - Database [default] connected at jdbc:h2:file:./data/TCEvents
+2017-03-16 14:48:14,749 [INFO] from application in ForkJoinPool-1-worker-1 - ApplicationTimer demo: Starting application at 2017-03-16T14:48:14.748Z
+2017-03-16 14:48:15,632 [INFO] from application in ForkJoinPool-1-worker-1 - ApplicationTimer demo: Stopping application at 2017-03-16T14:48:15.632Z after 1s.
+2017-03-16 14:48:15,648 [INFO] from application in ForkJoinPool-1-worker-1 - Shutting down connection pool.
+2017-03-16 14:48:15,799 [INFO] from application in ForkJoinPool-1-worker-1 - Creating Pool for datasource 'default'
+2017-03-16 14:48:15,818 [INFO] from play.api.db.DefaultDBApi in ForkJoinPool-1-worker-1 - Database [default] connected at jdbc:h2:file:./data/TCEvents
+2017-03-16 14:48:15,864 [INFO] from application in ForkJoinPool-1-worker-1 - ApplicationTimer demo: Starting application at 2017-03-16T14:48:15.864Z
+2017-03-16 14:48:15,905 [ERROR] from application in netty-event-loop-3 - 
 
-! @73c6dmahk - Internal server error, for (GET) [/] ->
+! @73c71b5ph - Internal server error, for (GET) [/] ->
  
 play.api.db.evolutions.InvalidDatabaseRevision: Database 'default' needs evolution![An SQL script need to be run on your database.]
 	at play.api.db.evolutions.ApplicationEvolutions$$anonfun$play$api$db$evolutions$ApplicationEvolutions$$runEvolutions$1.apply$mcV$sp(ApplicationEvolutions.scala:77)
@@ -55,11 +60,11 @@ play.api.db.evolutions.InvalidDatabaseRevision: Database 'default' needs evoluti
 	at java.util.concurrent.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1056)
 	at java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1692)
 	at java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:157)
-2017-03-16 13:04:56,819 [INFO] from application in ForkJoinPool-1-worker-0 - ApplicationTimer demo: Stopping application at 2017-03-16T13:04:56.819Z after 2s.
-2017-03-16 13:04:56,826 [INFO] from application in ForkJoinPool-1-worker-0 - Shutting down connection pool.
-2017-03-16 13:04:56,925 [INFO] from application in ForkJoinPool-1-worker-0 - Creating Pool for datasource 'default'
-2017-03-16 13:04:56,938 [INFO] from play.api.db.DefaultDBApi in ForkJoinPool-1-worker-0 - Database [default] connected at jdbc:h2:file:./data/TCEvents
-2017-03-16 13:04:56,993 [INFO] from application in ForkJoinPool-1-worker-0 - ApplicationTimer demo: Starting application at 2017-03-16T13:04:56.993Z
-2017-03-16 13:04:57,154 [INFO] from play.api.Play in ForkJoinPool-1-worker-0 - Application started (Dev)
-2017-03-16 13:05:14,738 [INFO] from application in pool-4-thread-4 - ApplicationTimer demo: Stopping application at 2017-03-16T13:05:14.738Z after 18s.
-2017-03-16 13:05:14,741 [INFO] from application in pool-4-thread-4 - Shutting down connection pool.
+2017-03-16 14:48:18,615 [INFO] from application in ForkJoinPool-1-worker-1 - ApplicationTimer demo: Stopping application at 2017-03-16T14:48:18.615Z after 3s.
+2017-03-16 14:48:18,619 [INFO] from application in ForkJoinPool-1-worker-1 - Shutting down connection pool.
+2017-03-16 14:48:18,742 [INFO] from application in ForkJoinPool-1-worker-1 - Creating Pool for datasource 'default'
+2017-03-16 14:48:18,782 [INFO] from play.api.db.DefaultDBApi in ForkJoinPool-1-worker-1 - Database [default] connected at jdbc:h2:file:./data/TCEvents
+2017-03-16 14:48:18,825 [INFO] from application in ForkJoinPool-1-worker-1 - ApplicationTimer demo: Starting application at 2017-03-16T14:48:18.825Z
+2017-03-16 14:48:18,935 [INFO] from play.api.Play in ForkJoinPool-1-worker-1 - Application started (Dev)
+2017-03-16 14:48:25,824 [INFO] from application in pool-4-thread-2 - ApplicationTimer demo: Stopping application at 2017-03-16T14:48:25.824Z after 7s.
+2017-03-16 14:48:25,826 [INFO] from application in pool-4-thread-2 - Shutting down connection pool.
