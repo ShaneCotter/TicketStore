@@ -39,28 +39,28 @@ Seq[Any](_display_(/*1.2*/main("Welcome to Play")/*1.25*/ {_display_(Seq[Any](fo
 <div class="col-lg-12 well" id="addEvent">
 <!-- Start of add event up form-->
 		<form class="form-horizontal">
-		
+
 	<!--Name field--><div class="form-group">
 					<label class="control-label col-sm-2" for="name">Name:</label>
 					<div class="col-sm-5">
 					<input type="name" class="form-control" id="name" placeholder="Enter Name">
 					</div>
 				    </div>
-				
+
 	<!--Date field--><div class="form-group">
 					<label class="control-label col-sm-2" for="date">Date:</label>
 					<div class="col-sm-5">
 					<input type="date" class="form-control" id="date" placeholder="Enter date">
 					</div>
 				    </div>
-					
+
 	<!--Time field--><div class="form-group">
 					<label class="control-label col-sm-2" for="time">Time:</label>
 					<div class="col-sm-5">
 						<input type="action" class="form-control" id="time"></input>
 					</div>
 				</div>
-		
+
 <!--Location field--><div class="form-group">
 					<label class="control-label col-sm-2" for="location">Location:</label>
 					<div class="col-sm-5">
@@ -70,7 +70,7 @@ Seq[Any](_display_(/*1.2*/main("Welcome to Play")/*1.25*/ {_display_(Seq[Any](fo
 					</select>
 					</div>
 				    </div>
-				
+
 <!--Category field--><div class="form-group">
 						<label class="control-label col-sm-2" for="category">Category:</label>
 						<div class="col-sm-5">
@@ -98,7 +98,7 @@ Seq[Any](_display_(/*1.2*/main("Welcome to Play")/*1.25*/ {_display_(Seq[Any](fo
 						<input type="stock" class="form-control" id="stock" placeholder="Enter Stock">
 						</div>
 					</div>-->
-				
+
 <!--Description field--><div class="form-group">
 							<label class="control-label col-sm-2" for="description">Description:</label>
 							<div class="col-sm-5">
@@ -106,7 +106,7 @@ Seq[Any](_display_(/*1.2*/main("Welcome to Play")/*1.25*/ {_display_(Seq[Any](fo
 							</div>
 						</div>
 
-<!--Ticket Type-->		<div class="form-group">
+<!--Ticket Type		<div class="form-group">
 							<label class="control-label col-sm-2" for="name">Ticket Type 1:</label>
 							<div class="col-sm-5">
 							<select class="form-control" id="type">
@@ -146,14 +146,14 @@ Seq[Any](_display_(/*1.2*/main("Welcome to Play")/*1.25*/ {_display_(Seq[Any](fo
 							<input type="name" class="form-control" id="type" placeholder="Enter Price">
 							<input type="name" class="form-control" id="type" placeholder="Enter Stock">
 							</div>
-				    	</div>						
+				    	</div> --
 				
 <!--Button for submit--><button type="submit" class="btn btn-success">Submit</button>
 					
 				</div>
 			</form>
 			</div>
-		</div>	
+		</div>
 <!--END CONTENT-->
 
 """)))}))
@@ -176,9 +176,9 @@ Seq[Any](_display_(/*1.2*/main("Welcome to Play")/*1.25*/ {_display_(Seq[Any](fo
 object addEvent extends addEvent_Scope0.addEvent
               /*
                   -- GENERATED --
-                  DATE: Thu Mar 16 13:29:36 GMT 2017
-                  SOURCE: /home/wdd/webapps/TicketStore/app/views/addEvent.scala.html
-                  HASH: 86fe0bb5eb511ecbcfee53dee744fb4e79350eb7
+                  DATE: Tue Mar 21 21:52:38 GMT 2017
+                  SOURCE: /home/matthewcleary/Desktop/TicketStore/app/views/addEvent.scala.html
+                  HASH: e07dfc373a9f17d718df6ad13a59bdc0421bdb4f
                   MATRIX: 833->1|864->24|903->26|930->27
                   LINES: 32->1|32->1|32->1|33->2
                   -- GENERATED --

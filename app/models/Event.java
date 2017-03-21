@@ -18,29 +18,24 @@ public class Event extends Model {
     @Constraints.Required
     private String eventName;
     @Constraints.Required
-    private String description;
-    @Constraints.Required
     private String time;
     @Constraints.Required
     private String location;
     @Constraints.Required
     private Date date;
     @Constraints.Required
-    private String title;
-    @Constraints.Required
-    private double price;
+    private String title; // Artist?
+
 
     public Event() {}
 
-    public Event(double price, Long eventID, String eventName, String description, String time, String location, Date date, String title) {
+    public Event(Long eventID, String eventName, String time, String location, Date date, String title) {
         this.eventID = eventID;
         this.eventName = eventName;
-        this.description = description;
         this.time = time;
         this.location = location;
         this.date = date;
         this.title = title;
-        this.price = price;
     }
 
     public Long getEventID() {
@@ -57,14 +52,6 @@ public class Event extends Model {
 
     public void setEventName(String eventName) {
         this.eventName = eventName;
-    }
-
-    public String getDescription() {
-        return description;
-    }
-
-    public void setDescription(String description) {
-        this.description = description;
     }
 
     public String getTime() {
@@ -97,14 +84,6 @@ public class Event extends Model {
 
     public void setTitle(String title) {
         this.title = title;
-    }
-
-    public double getPrice(){
-        return price;
-    }
-
-    public void setPrice(double price) {
-        this.price = price;
     }
 
     // Generic query helper for entity Computer with id long

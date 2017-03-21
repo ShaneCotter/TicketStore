@@ -59,7 +59,7 @@
   <div class="col-sm-9">
     <div class="row">
 	<h1> Events </h1>
-	 <a href="addEvent.scala.html" class="btn btn-success btn-lg round">Add event</a>
+	 <a href="@routes.HomeController.addEvent()" class="btn btn-success btn-lg round">Add event</a>
 	    <br>
 	    <br>
 		<strong>Display</strong>
@@ -87,7 +87,7 @@
                         @e.getEventName
 						@e.getLocation
 						@e.getDate
-						@e.getPrice</p>
+                    </p>
                     <div class="row">
                         <div class="col-xs-12 col-md-6">
                             <p class="lead">

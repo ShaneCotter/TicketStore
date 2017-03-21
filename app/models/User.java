@@ -27,13 +27,13 @@ public class User extends Model {
     private String town;
     @Constraints.Required
     private String city;
-//    @Constraints.Required
-//    private String securityQuest;
+    @Constraints.Required
+    private String securityAns;
     @Constraints.Required
     private  String password;
 
     public User(Long userID, String role, String username, String email, String address1,
-                String address2, String town, String city, String password, String securityQuest) {
+                String address2, String town, String city, String password, String securityAns) {
         this.userID = userID;
         this.role = role;
         this.username = username;
@@ -42,7 +42,7 @@ public class User extends Model {
         this.address2 = address2;
         this.town = town;
         this.city = city;
-        //this.securityQuest = securityQuest;
+        this.securityAns = securityAns;
         this.password = password;
     }
 
@@ -113,14 +113,13 @@ public class User extends Model {
         this.city = city;
     }
 
-//    public String getSecurityQuest() {
-//        return securityQuest;
-//    }
-//
-//    public void setSecurityQuest(String securityQuest) {
-//        this.securityQuest = securityQuest;
-//    }
+    public String getSecurityAns() {
+        return securityAns;
+    }
 
+    public void setSecurityAns(String securityAns) {
+        this.securityAns = securityAns;
+    }
 
     public String getPassword() {
         return password;
