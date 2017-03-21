@@ -58,5 +58,5 @@ public class HomeController extends Controller {
         return ok(signUp.render());
     }
 
-
+    public Result addTicket(){ return ok(addTicket.render());}
 }
