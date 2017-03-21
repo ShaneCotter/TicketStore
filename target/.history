@@ -32,3 +32,8 @@ exit
 run
 h2-browser
 exit
+run
+clean
+exit
+h2-browser
+exit

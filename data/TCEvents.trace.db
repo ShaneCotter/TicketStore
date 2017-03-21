@@ -131,3 +131,21 @@ Caused by: java.lang.IllegalArgumentException: -2005
 	at org.h2.value.ValueTimestamp.parseTry(ValueTimestamp.java:140)
 	at org.h2.value.ValueTimestamp.parse(ValueTimestamp.java:120)
 	... 15 more
+2017-03-21 11:54:28 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "CREATE TABLE ORDER[*] (
+ORDER_ID                      BIGINT NOT NULL,
+ORDER_DATE                    VARCHAR(255),
+TOTAL_COST                    DOUBLE,
+USER_ID                       BIGINT,
+CONSTRAINT PK_ORDER PRIMARY KEY (ORDER_ID)
+) "; expected "identifier"; SQL statement:
+create table order (
+order_id                      bigint not null,
+order_date                    varchar(255),
+total_cost                    double,
+user_id                       bigint,
+constraint pk_order primary key (order_id)
+) [42001-192]
+2017-03-21 11:56:13 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "SELECT * FROM *[*] "; expected "identifier"; SQL statement:
+select * from * [42001-192]
