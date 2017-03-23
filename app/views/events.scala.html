@@ -1,127 +1,132 @@
 @(events: List[models.Event])
 
 @main("Events") {
-	
-	
-<!--..CONTENT..-->
-<div class="container-fluid" id="eventContent">
-<div class="row">
-  <div class="col-sm-3">
-    <div class="sidebar-nav">
-      <div class="navbar navbar-default" role="navigation">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".sidebar-navbar-collapse">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <span class="visible-xs navbar-brand">Sidebar menu</span>
-        </div>
-        <div class="navbar-collapse collapse sidebar-navbar-collapse">
-          <ul class="nav navbar-nav">
-            <li class="active"><a href="#"><h3>EVENT CATEGORIES</h3></a></li>
-            <li><a href="#"><h4>Music</h4></a></li>
-			<li><a href="#"><h4>Sports</h4></a></li>
-			<li><a href="#"><h4>Comedy</h4></a></li>
-			<li><a href="#"><h4>Theatre</h4></a></li>
-			<li><a href="#"><h4>Racing</h4></a></li>
-			<li class="active"><a href="#"><h3>BY COUNTRY</h3></a></li>
-			<li><a href="#"><h4>Ireland</h4></a></li>
-			<li><a href="#"><h4>UK</h4></a></li>
-			
-			<li class="active"><a href="#"><h3>BY MONTH</h3></a></li>
-            
-                <li><a href="#"><h4>January</h4></a></li>
-                <li><a href="#"><h4>February</h4></a></li>
-                <li><a href="#"><h4>March</h4></a></li>
-                <li><a href="#"><h4>April</h4></a></li>
-                <li><a href="#"><h4>May</h4></a></li>
-                <li><a href="#"><h4>June</h4></a></li>
-                <li><a href="#"><h4>July</h4></a></li>
-				<li><a href="#"><h4>August</h4></a></li>
-				<li><a href="#"><h4>September</h4></a></li>
-				<li><a href="#"><h4>October</h4></a></li>
-				<li><a href="#"><h4>November</h4></a></li>
-				<li><a href="#"><h4>December</h4></a></li>
-              </ul>
-			  <br>
-			  <br>
-            </li>
-          </ul>
-        </div><!--/.nav-collapse -->
-      </div>
-    </div>
-  </div>
-  
-  
-  <!--Main content--->
-  <div class="col-sm-9">
-    <div class="row">
-	<h1> Events </h1>
-	 <a href="@routes.HomeController.addEvent()" class="btn btn-success btn-lg round">Add event</a>
-	    <br>
-	    <br>
-		<strong>Display</strong>
-       
-        <div class="btn-group">
-            <a href="#" id="list" class="btn btn-default btn-sm"><span class="glyphicon glyphicon-th-list">
-            </span>List</a> <a href="#" id="grid" class="btn btn-default btn-sm"><span
-                class="glyphicon glyphicon-th"></span>Grid</a>
-        </div>
-    </div>
-	<br>
-	
-    <div id="products" class="row list-group">
-        <!-- Start of for loop - Fo reach e in events add a row -->
-	@for(e <- events) {
-	<a href="@routes.HomeController.eventTicket()">
-        <div class="item  col-xs-4 col-lg-4">
-            <div class="thumbnail">
-			
-                <img class="group list-group-image" src="http://placehold.it/400x250/000/fff" alt="" >
-                <div class="caption">
-                    <h4 class="group inner list-group-item-heading">
-                        @e.getTitle</h4>
-                    <p class="group inner list-group-item-text">
-                        @e.getEventName
-						@e.getLocation
-						@e.getDate
-                    </p>
-                    <div class="row">
-                        <div class="col-xs-12 col-md-6">
-                            <p class="lead">
+
+
+    <!--..CONTENT..-->
+    <div class="container-fluid" id="eventContent">
+        <div class="row">
+            <div class="col-sm-3">
+                <div class="sidebar-nav">
+                    <div class="navbar navbar-default" role="navigation">
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".sidebar-navbar-collapse">
+                                <span class="sr-only">Toggle navigation</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                            <span class="visible-xs navbar-brand">Sidebar menu</span>
+                        </div>
+                        <div class="navbar-collapse collapse sidebar-navbar-collapse">
+                            <ul class="nav navbar-nav">
+                                <li class="active"><a href="#"><h3>EVENT CATEGORIES</h3></a></li>
+                                <li><a href="#"><h4>Music</h4></a></li>
+                                <li><a href="#"><h4>Sports</h4></a></li>
+                                <li><a href="#"><h4>Comedy</h4></a></li>
+                                <li><a href="#"><h4>Theatre</h4></a></li>
+                                <li><a href="#"><h4>Racing</h4></a></li>
+                                <li class="active"><a href="#"><h3>BY COUNTRY</h3></a></li>
+                                <li><a href="#"><h4>Ireland</h4></a></li>
+                                <li><a href="#"><h4>UK</h4></a></li>
+
+                                <li class="active"><a href="#"><h3>BY MONTH</h3></a></li>
+
+                                <li><a href="#"><h4>January</h4></a></li>
+                                <li><a href="#"><h4>February</h4></a></li>
+                                <li><a href="#"><h4>March</h4></a></li>
+                                <li><a href="#"><h4>April</h4></a></li>
+                                <li><a href="#"><h4>May</h4></a></li>
+                                <li><a href="#"><h4>June</h4></a></li>
+                                <li><a href="#"><h4>July</h4></a></li>
+                                <li><a href="#"><h4>August</h4></a></li>
+                                <li><a href="#"><h4>September</h4></a></li>
+                                <li><a href="#"><h4>October</h4></a></li>
+                                <li><a href="#"><h4>November</h4></a></li>
+                                <li><a href="#"><h4>December</h4></a></li>
+                            </ul>
+                            <br>
+                            <br>
+                        </div><!--/.nav-collapse -->
+                    </div>
+                </div>
+            </div>
+
+
+                <!--Main content--->
+            <div class="col-sm-9">
+                <div class="row">
+                    <h1> Events </h1>
+                    <a href="@routes.HomeController.addEvent()" class="btn btn-success btn-lg round">Add event</a>
+                    <br>
+                    <br>
+                    <strong>Display</strong>
+
+                    <div class="btn-group">
+                        <a href="#" id="list" class="btn btn-default btn-sm"><span class="glyphicon glyphicon-th-list">
+                        </span>List</a> <a href="#" id="grid" class="btn btn-default btn-sm"><span
+                    class="glyphicon glyphicon-th"></span>Grid</a>
+                    </div>
+                </div>
+                <br>
+
+                <div id="products" class="row list-group">
+                        <!-- Start of for loop - Fo reach e in events add a row -->
+                    @for(e <- events) {
+                        <a href="@routes.HomeController.eventTicket()">
+                            <div class="item  col-xs-4 col-lg-4">
+                                <div class="thumbnail">
+
+                                    <img class="group list-group-image" src="http://placehold.it/400x250/000/fff" alt="" >
+                                    <div class="caption">
+                                        <h4 class="group inner list-group-item-heading">
+                                        @e.getTitle</h4>
+                                        <p class="group inner list-group-item-text">
+                                            @e.getEventName
+                                            @e.getLocation
+                                            @e.getDate
+                                        </p>
+                                        <div class="row">
+                                            <div class="col-xs-12 col-md-6">
+                                                <p class="lead">
                                 Starting from €95.00</p>
-                        </div>
-						
-						
-                        <div class="col-xs-12 col-md-6">
-                        
-                        </div>
+
+                                                <a href="@routes.HomeController.deleteEvent(e.getEventID)" class = "btn-xs btn-danger"
+                                                onclick="return confirmDel();">
+                                                    <span class="glyphicon glyphicon-trash"></span>
+                                                </a>
+                                            </div>
+
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    } <!-- End of for loop -->
+
+
+                    <div class="col-xs-12 col-md-6">
+
                     </div>
                 </div>
             </div>
         </div>
-        </a>
-    } <!-- End of for loop -->
-		
-		
-                        <div class="col-xs-12 col-md-6">
-                        
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+    </div>
 
-<!--END CONTENT-->
+        <!--END CONTENT-->
 
-<!--Script for displaying products in grid/list-->
-<script>
-$(document).ready(function() {
-    $('#list').click(function(event){event.preventDefault();$('#products .item').addClass('list-group-item');});
-    $('#grid').click(function(event){event.preventDefault();$('#products .item').removeClass('list-group-item');$('#products .item').addClass('grid-group-item');});
-});</script>
+        <!--Script for displaying products in grid/list-->
+    <script>
+            $(document).ready(function() {
+                $('#list').click(function(event){event.preventDefault();$('#products .item').addClass('list-group-item');});
+                $('#grid').click(function(event){event.preventDefault();$('#products .item').removeClass('list-group-item');$('#products .item').addClass('grid-group-item');});
+            });</script>
+
+    <!--Script for confirming delete of event-->
+    <script>
+        function confirmDel(){
+            return confirm('Are you sure?');
+        }
+    </script>
 }
-
-

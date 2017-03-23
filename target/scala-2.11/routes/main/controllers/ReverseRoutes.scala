@@ -1,7 +1,7 @@
 
 // @GENERATOR:play-routes-compiler
 // @SOURCE:C:/Users/Eileen/Desktop/TicketStore/conf/routes
-// @DATE:Thu Mar 23 18:27:14 GMT 2017
+// @DATE:Thu Mar 23 20:36:19 GMT 2017
 
 import play.api.mvc.{ QueryStringBindable, PathBindable, Call, JavascriptLiteral }
 import play.core.routing.{ HandlerDef, ReverseRouteContext, queryString, dynamicString }
@@ -24,6 +24,12 @@ package controllers {
     def cart(): Call = {
       import ReverseRouteContext.empty
       Call("GET", _prefix + { _defaultPrefix } + "cart")
+    }
+  
+    // @LINE:20
+    def deleteEvent(id:Long): Call = {
+      import ReverseRouteContext.empty
+      Call("GET", _prefix + { _defaultPrefix } + "delEvent/" + implicitly[PathBindable[Long]].unbind("id", id))
     }
   
     // @LINE:15
@@ -62,6 +68,12 @@ package controllers {
       Call("GET", _prefix + { _defaultPrefix } + "events")
     }
   
+    // @LINE:18
+    def addEventSubmit(): Call = {
+      import ReverseRouteContext.empty
+      Call("POST", _prefix + { _defaultPrefix } + "addEventSubmit")
+    }
+  
     // @LINE:6
     def index(): Call = {
       import ReverseRouteContext.empty
@@ -88,14 +100,14 @@ package controllers {
   
   }
 
-  // @LINE:19
+  // @LINE:23
   class ReverseAssets(_prefix: => String) {
     def _defaultPrefix: String = {
       if (_prefix.endsWith("/")) "" else "/"
     }
 
   
-    // @LINE:19
+    // @LINE:23
     def versioned(file:Asset): Call = {
       implicit val _rrc = new ReverseRouteContext(Map(("path", "/public")))
       Call("GET", _prefix + { _defaultPrefix } + "assets/" + implicitly[PathBindable[Asset]].unbind("file", file))

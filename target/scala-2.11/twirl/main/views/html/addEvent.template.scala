@@ -21,16 +21,21 @@ import play.data._
 import play.api.data.Field
 import play.mvc.Http.Context.Implicit._
 
-class addEvent extends BaseScalaTemplate[play.twirl.api.HtmlFormat.Appendable,Format[play.twirl.api.HtmlFormat.Appendable]](play.twirl.api.HtmlFormat) with play.twirl.api.Template0[play.twirl.api.HtmlFormat.Appendable] {
+     object addEvent_Scope1 {
+import helper._
+
+class addEvent extends BaseScalaTemplate[play.twirl.api.HtmlFormat.Appendable,Format[play.twirl.api.HtmlFormat.Appendable]](play.twirl.api.HtmlFormat) with play.twirl.api.Template1[Form[models.Event],play.twirl.api.HtmlFormat.Appendable] {
 
   /**/
-  def apply():play.twirl.api.HtmlFormat.Appendable = {
+  def apply/*3.2*/(addEventForm: Form[models.Event]):play.twirl.api.HtmlFormat.Appendable = {
     _display_ {
       {
 
 
-Seq[Any](_display_(/*1.2*/main("Welcome to Play")/*1.25*/ {_display_(Seq[Any](format.raw/*1.27*/("""
-"""),format.raw/*2.1*/("""<!--..CONTENT..-->
+Seq[Any](format.raw/*3.36*/("""
+
+"""),_display_(/*5.2*/main("Welcome to Play")/*5.25*/ {_display_(Seq[Any](format.raw/*5.27*/("""
+"""),format.raw/*6.1*/("""<!--..CONTENT..-->
 <div class="container-fluid" id="content">
 <h1>Add Event Page</h1>
 
@@ -38,132 +43,40 @@ Seq[Any](_display_(/*1.2*/main("Welcome to Play")/*1.25*/ {_display_(Seq[Any](fo
 <div class="row">
 <div class="col-lg-12 well" id="addEvent">
 <!-- Start of add event up form-->
-		<form class="form-horizontal">
+		"""),_display_(/*14.4*/form(action = routes.HomeController.addEventSubmit(), 'class -> "form=horizontal", 'role->"form")/*14.101*/{_display_(Seq[Any](format.raw/*14.102*/("""
 
-	<!--Name field--><div class="form-group">
-					<label class="control-label col-sm-2" for="name">Name:</label>
-					<div class="col-sm-5">
-					<input type="name" class="form-control" id="name" placeholder="Enter Name">
-					</div>
-				    </div>
+				"""),_display_(/*16.6*/inputText(addEventForm("eventName"), '_label -> "Name", 'class -> "form-control")),format.raw/*16.87*/("""
+				"""),_display_(/*17.6*/inputText(addEventForm("time"), '_label -> "Time", 'class -> "form-control")),format.raw/*17.82*/("""
+				"""),_display_(/*18.6*/inputText(addEventForm("location"), '_label -> "Location", 'class -> "form-control")),format.raw/*18.90*/("""
+				"""),_display_(/*19.6*/inputText(addEventForm("date"), '_label -> "Date", 'class -> "form-control")),format.raw/*19.82*/("""
+				"""),_display_(/*20.6*/inputText(addEventForm("title"), '_label -> "Title", 'class -> "form-control")),format.raw/*20.84*/("""
 
-	<!--Date field--><div class="form-group">
-					<label class="control-label col-sm-2" for="date">Date:</label>
-					<div class="col-sm-5">
-					<input type="date" class="form-control" id="date" placeholder="Enter date">
-					</div>
-				    </div>
+				"""),_display_(/*22.6*/inputText(addEventForm("id"), '_label -> "", 'hidden -> "hidden")),format.raw/*22.71*/("""
 
-	<!--Time field--><div class="form-group">
-					<label class="control-label col-sm-2" for="time">Time:</label>
-					<div class="col-sm-5">
-						<input type="action" class="form-control" id="time"></input>
-					</div>
+				"""),format.raw/*24.5*/("""<br>
+
+				<div class="actions">
+					<input type="submit" value="Add Product" class="btn btn-success">
+
+
+					"""),format.raw/*30.112*/("""
+					"""),format.raw/*31.6*/("""<a href=""""),_display_(/*31.16*/routes/*31.22*/.HomeController.events()),format.raw/*31.46*/("""" class="btn btn-warning">Cancel</a>
+
+
 				</div>
-
-<!--Location field--><div class="form-group">
-					<label class="control-label col-sm-2" for="location">Location:</label>
-					<div class="col-sm-5">
-					<select class="form-control" id="location">
-						<option>Ireland</option>
-						<option>U.K.</option>
-					</select>
-					</div>
-				    </div>
-
-<!--Category field--><div class="form-group">
-						<label class="control-label col-sm-2" for="category">Category:</label>
-						<div class="col-sm-5">
-						<select class="form-control" id="category">
-							<option>Music</option>
-							<option>Sports</option>
-							<option>Theatre</option>
-							<option>Comedy</option>
-							<option>Racing</option>
-						</select>
-						</div>
-					</div>
-
-<!--Price field 	<div class="form-group">
-						<label class="control-label col-sm-2" for="price">Price:</label>
-						<div class="col-sm-5">
-						<input type="price" class="form-control" id="price" placeholder="Enter Price">
-						</div>
-					</div>-->
-
-
-<!--Stock field 	<div class="form-group">
-						<label class="control-label col-sm-2" for="stock">Stock:</label>
-						<div class="col-sm-5">
-						<input type="stock" class="form-control" id="stock" placeholder="Enter Stock">
-						</div>
-					</div>-->
-
-<!--Description field--><div class="form-group">
-							<label class="control-label col-sm-2" for="description">Description:</label>
-							<div class="col-sm-5">
-							<textarea class="form-control" rows="4" id="description"></textarea>
-							</div>
-						</div>
-
-<!--Ticket Type		<div class="form-group">
-							<label class="control-label col-sm-2" for="name">Ticket Type 1:</label>
-							<div class="col-sm-5">
-							<select class="form-control" id="type">
-							<option>Choose Type</option>
-							<option>Seating</option>
-							<option>Standing</option>
-							<option>VIP</option>
-							</select>
-							<input type="name" class="form-control" id="type" placeholder="Enter Price">
-							<input type="name" class="form-control" id="type" placeholder="Enter Stock">
-							</div>
-				    	</div>
-
-				    	<div class="form-group">
-							<label class="control-label col-sm-2" for="name">Ticket Type 2:</label>
-							<div class="col-sm-5">
-							<select class="form-control" id="type">
-							<option>Choose Type</option>
-							<option>Seating</option>
-							<option>Standing</option>
-							<option>VIP</option>
-							</select>
-							<input type="name" class="form-control" id="type" placeholder="Enter Price">
-							<input type="name" class="form-control" id="type" placeholder="Enter Stock">
-							</div>
-				    	</div>
-
-				    	<div class="form-group">
-							<label class="control-label col-sm-2" for="name">Ticket Type 3:</label>
-							<div class="col-sm-5">
-							<select class="form-control" id="type">
-							<option>Choose Type</option>
-							<option>Seating</option>
-							<option>Standing</option>
-							<option>VIP</option>
-							</select>
-							<input type="name" class="form-control" id="type" placeholder="Enter Price">
-							<input type="name" class="form-control" id="type" placeholder="Enter Stock">
-							</div>
-				    	</div> --
-				
-<!--Button for submit--><button type="submit" class="btn btn-success">Submit</button>
-					
-				</div>
-			</form>
 			</div>
 		</div>
 <!--END CONTENT-->
 
+""")))}),format.raw/*39.2*/("""
 """)))}))
       }
     }
   }
 
-  def render(): play.twirl.api.HtmlFormat.Appendable = apply()
+  def render(addEventForm:Form[models.Event]): play.twirl.api.HtmlFormat.Appendable = apply(addEventForm)
 
-  def f:(() => play.twirl.api.HtmlFormat.Appendable) = () => apply()
+  def f:((Form[models.Event]) => play.twirl.api.HtmlFormat.Appendable) = (addEventForm) => apply(addEventForm)
 
   def ref: this.type = this
 
@@ -171,16 +84,17 @@ Seq[Any](_display_(/*1.2*/main("Welcome to Play")/*1.25*/ {_display_(Seq[Any](fo
 
 
 }
+}
 
 /**/
-object addEvent extends addEvent_Scope0.addEvent
+object addEvent extends addEvent_Scope0.addEvent_Scope1.addEvent
               /*
                   -- GENERATED --
-                  DATE: Thu Mar 23 18:27:15 GMT 2017
+                  DATE: Thu Mar 23 20:10:19 GMT 2017
                   SOURCE: C:/Users/Eileen/Desktop/TicketStore/app/views/addEvent.scala.html
-                  HASH: 884acf9cdb957da5fbb72cede5c314f292ed6a1e
-                  MATRIX: 833->1|864->24|903->26|931->28
-                  LINES: 32->1|32->1|32->1|33->2
+                  HASH: c1d3f182e06a14b2bcbdfa4012408bfb6df8d4ea
+                  MATRIX: 810->21|939->55|969->60|1000->83|1039->85|1067->87|1288->282|1395->379|1435->380|1470->389|1572->470|1605->477|1702->553|1735->560|1840->644|1873->651|1970->727|2003->734|2102->812|2137->821|2223->886|2258->894|2403->1116|2437->1123|2474->1133|2489->1139|2534->1163|2662->1261
+                  LINES: 30->3|35->3|37->5|37->5|37->5|38->6|46->14|46->14|46->14|48->16|48->16|49->17|49->17|50->18|50->18|51->19|51->19|52->20|52->20|54->22|54->22|56->24|62->30|63->31|63->31|63->31|63->31|71->39
                   -- GENERATED --
               */
           

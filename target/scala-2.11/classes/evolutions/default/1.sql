@@ -15,7 +15,7 @@ create table event (
   event_name                    varchar(255),
   time                          varchar(255),
   location                      varchar(255),
-  date                          timestamp,
+  date                          varchar(255),
   title                         varchar(255),
   constraint pk_event primary key (event_id)
 );

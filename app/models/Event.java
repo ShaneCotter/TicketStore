@@ -22,14 +22,14 @@ public class Event extends Model {
     @Constraints.Required
     private String location;
     @Constraints.Required
-    private Date date;
+    private String date;
     @Constraints.Required
     private String title; // Artist?
 
 
     public Event() {}
 
-    public Event(Long eventID, String eventName, String time, String location, Date date, String title) {
+    public Event(Long eventID, String eventName, String time, String location, String date, String title) {
         this.eventID = eventID;
         this.eventName = eventName;
         this.time = time;
@@ -70,11 +70,11 @@ public class Event extends Model {
         this.location = location;
     }
 
-    public Date getDate() {
+    public String getDate() {
         return date;
     }
 
-    public void setDate(Date date) {
+    public void setDate(String date) {
         this.date = date;
     }
 

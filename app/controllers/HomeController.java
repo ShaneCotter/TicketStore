@@ -1,5 +1,6 @@
 package controllers;
 
+import controllers.*;
 import play.mvc.*;
 import play.api.Environment;
 import play.data.*;
@@ -13,6 +14,12 @@ import models.*;
 
 public class HomeController extends Controller {
 
+    private FormFactory formFactory;
+
+    @Inject
+    public HomeController(FormFactory f){
+        this.formFactory = f;
+    }
 
     public Result index() {
         return ok(index.render());
@@ -23,7 +30,36 @@ public class HomeController extends Controller {
     }
 
     public Result addEvent() {
-        return ok(addEvent.render());
+
+        Form<Event> addEventForm = formFactory.form(Event.class);
+        return ok(addEvent.render(addEventForm));
+    }
+
+    public Result addEventSubmit(){
+
+        Form<Event> newEventForm = formFactory.form(Event.class).bindFromRequest();
+
+        if(newEventForm.hasErrors()){
+
+            return badRequest(addEvent.render(newEventForm));
+        }
+
+        Event newEvent = newEventForm.get();
+
+        newEvent.save();
+
+        flash("success", "Event " + newEvent.getEventName() + " has been created. Do not forget to add Tickets");
+
+        return redirect(controllers.routes.HomeController.events());
+    }
+
+    public Result deleteEvent(Long id){
+
+        Event.find.ref(id).delete();
+
+        flash("success","Event has been deleted");
+
+        return redirect(routes.HomeController.events());
     }
 
     public Result cart() {

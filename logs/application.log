@@ -1,185 +1,104 @@
-2017-03-23 18:52:22,062 [INFO] from application in ForkJoinPool-2-worker-0 - Creating Pool for datasource 'default'
-2017-03-23 18:52:24,280 [INFO] from play.api.db.DefaultDBApi in ForkJoinPool-2-worker-0 - Database [default] connected at jdbc:h2:file:./data/TCEvents
-2017-03-23 18:52:27,524 [INFO] from application in ForkJoinPool-2-worker-0 - ApplicationTimer demo: Starting application at 2017-03-23T18:52:27.519Z
-2017-03-23 18:52:27,526 [ERROR] from application in netty-event-loop-3 - 
+2017-03-23 20:30:05,216 [INFO] from application in ForkJoinPool-4-worker-2 - Creating Pool for datasource 'default'
+2017-03-23 20:30:05,260 [INFO] from play.api.db.DefaultDBApi in ForkJoinPool-4-worker-2 - Database [default] connected at jdbc:h2:file:./data/TCEvents
+2017-03-23 20:30:05,968 [INFO] from application in ForkJoinPool-4-worker-2 - ApplicationTimer demo: Starting application at 2017-03-23T20:30:05.968Z
+2017-03-23 20:30:06,866 [INFO] from play.api.Play in ForkJoinPool-4-worker-2 - Application started (Dev)
+2017-03-23 20:32:00,104 [INFO] from application in application-akka.actor.default-dispatcher-5 - ApplicationTimer demo: Stopping application at 2017-03-23T20:32:00.104Z after 115s.
+2017-03-23 20:32:00,112 [INFO] from application in application-akka.actor.default-dispatcher-5 - Shutting down connection pool.
+2017-03-23 20:32:00,296 [INFO] from application in application-akka.actor.default-dispatcher-5 - Creating Pool for datasource 'default'
+2017-03-23 20:32:00,324 [INFO] from play.api.db.DefaultDBApi in application-akka.actor.default-dispatcher-5 - Database [default] connected at jdbc:h2:file:./data/TCEvents
+2017-03-23 20:32:00,420 [INFO] from application in application-akka.actor.default-dispatcher-5 - ApplicationTimer demo: Starting application at 2017-03-23T20:32:00.420Z
+2017-03-23 20:32:00,516 [INFO] from play.api.Play in application-akka.actor.default-dispatcher-5 - Application started (Dev)
+2017-03-23 20:33:23,269 [INFO] from application in application-akka.actor.default-dispatcher-8 - ApplicationTimer demo: Stopping application at 2017-03-23T20:33:23.269Z after 83s.
+2017-03-23 20:33:23,269 [INFO] from application in application-akka.actor.default-dispatcher-8 - Shutting down connection pool.
+2017-03-23 20:33:23,417 [INFO] from application in application-akka.actor.default-dispatcher-8 - Creating Pool for datasource 'default'
+2017-03-23 20:33:23,437 [INFO] from play.api.db.DefaultDBApi in application-akka.actor.default-dispatcher-8 - Database [default] connected at jdbc:h2:file:./data/TCEvents
+2017-03-23 20:33:23,525 [INFO] from application in application-akka.actor.default-dispatcher-8 - ApplicationTimer demo: Starting application at 2017-03-23T20:33:23.525Z
+2017-03-23 20:33:23,605 [INFO] from play.api.Play in application-akka.actor.default-dispatcher-8 - Application started (Dev)
+2017-03-23 20:34:02,228 [INFO] from application in application-akka.actor.default-dispatcher-4 - ApplicationTimer demo: Stopping application at 2017-03-23T20:34:02.228Z after 39s.
+2017-03-23 20:34:02,228 [INFO] from application in application-akka.actor.default-dispatcher-4 - Shutting down connection pool.
+2017-03-23 20:34:02,392 [INFO] from application in application-akka.actor.default-dispatcher-4 - Creating Pool for datasource 'default'
+2017-03-23 20:34:02,416 [INFO] from play.api.db.DefaultDBApi in application-akka.actor.default-dispatcher-4 - Database [default] connected at jdbc:h2:file:./data/TCEvents
+2017-03-23 20:34:02,520 [INFO] from application in application-akka.actor.default-dispatcher-4 - ApplicationTimer demo: Starting application at 2017-03-23T20:34:02.520Z
+2017-03-23 20:34:02,608 [INFO] from play.api.Play in application-akka.actor.default-dispatcher-4 - Application started (Dev)
+2017-03-23 20:36:22,392 [ERROR] from application in netty-event-loop-4 - 
 
-! @73e74paa1 - Internal server error, for (GET) [/] ->
+! @73e7ig3k5 - Internal server error, for (GET) [/] ->
  
-play.api.db.evolutions.InvalidDatabaseRevision: Database 'default' needs evolution![An SQL script need to be run on your database.]
-	at play.api.db.evolutions.ApplicationEvolutions$$anonfun$play$api$db$evolutions$ApplicationEvolutions$$runEvolutions$1.apply$mcV$sp(ApplicationEvolutions.scala:77)
-	at play.api.db.evolutions.ApplicationEvolutions.withLock(ApplicationEvolutions.scala:99)
-	at play.api.db.evolutions.ApplicationEvolutions.play$api$db$evolutions$ApplicationEvolutions$$runEvolutions(ApplicationEvolutions.scala:49)
-	at play.api.db.evolutions.ApplicationEvolutions$$anonfun$start$1.apply(ApplicationEvolutions.scala:42)
-	at play.api.db.evolutions.ApplicationEvolutions$$anonfun$start$1.apply(ApplicationEvolutions.scala:42)
-	at scala.collection.immutable.List.foreach(List.scala:381)
-	at play.api.db.evolutions.ApplicationEvolutions.start(ApplicationEvolutions.scala:42)
-	at play.api.db.evolutions.ApplicationEvolutions.<init>(ApplicationEvolutions.scala:150)
-	at play.api.db.evolutions.ApplicationEvolutionsProvider.get$lzycompute(EvolutionsModule.scala:53)
-	at play.api.db.evolutions.ApplicationEvolutionsProvider.get(EvolutionsModule.scala:53)
-	at play.api.db.evolutions.ApplicationEvolutionsProvider.get(EvolutionsModule.scala:44)
-	at com.google.inject.internal.ProviderInternalFactory.provision(ProviderInternalFactory.java:81)
-	at com.google.inject.internal.BoundProviderFactory.provision(BoundProviderFactory.java:72)
-	at com.google.inject.internal.ProviderInternalFactory.circularGet(ProviderInternalFactory.java:61)
-	at com.google.inject.internal.BoundProviderFactory.get(BoundProviderFactory.java:62)
-	at com.google.inject.internal.ProviderToInternalFactoryAdapter$1.call(ProviderToInternalFactoryAdapter.java:46)
-	at com.google.inject.internal.InjectorImpl.callInContext(InjectorImpl.java:1103)
-	at com.google.inject.internal.ProviderToInternalFactoryAdapter.get(ProviderToInternalFactoryAdapter.java:40)
-	at com.google.inject.internal.SingletonScope$1.get(SingletonScope.java:145)
-	at com.google.inject.internal.InternalFactoryToProviderAdapter.get(InternalFactoryToProviderAdapter.java:41)
-	at com.google.inject.internal.InternalInjectorCreator$1.call(InternalInjectorCreator.java:205)
-	at com.google.inject.internal.InternalInjectorCreator$1.call(InternalInjectorCreator.java:199)
-	at com.google.inject.internal.InjectorImpl.callInContext(InjectorImpl.java:1092)
-	at com.google.inject.internal.InternalInjectorCreator.loadEagerSingletons(InternalInjectorCreator.java:199)
-	at com.google.inject.internal.InternalInjectorCreator.injectDynamically(InternalInjectorCreator.java:180)
-	at com.google.inject.internal.InternalInjectorCreator.build(InternalInjectorCreator.java:110)
-	at com.google.inject.Guice.createInjector(Guice.java:96)
-	at com.google.inject.Guice.createInjector(Guice.java:84)
-	at play.api.inject.guice.GuiceBuilder.injector(GuiceInjectorBuilder.scala:181)
-	at play.api.inject.guice.GuiceApplicationBuilder.build(GuiceApplicationBuilder.scala:123)
-	at play.api.inject.guice.GuiceApplicationLoader.load(GuiceApplicationLoader.scala:21)
-	at play.core.server.DevServerStart$$anonfun$mainDev$1$$anon$1$$anonfun$get$1$$anonfun$apply$1$$anonfun$1$$anonfun$2.apply(DevServerStart.scala:168)
-	at play.core.server.DevServerStart$$anonfun$mainDev$1$$anon$1$$anonfun$get$1$$anonfun$apply$1$$anonfun$1$$anonfun$2.apply(DevServerStart.scala:164)
-	at play.utils.Threads$.withContextClassLoader(Threads.scala:21)
-	at play.core.server.DevServerStart$$anonfun$mainDev$1$$anon$1$$anonfun$get$1$$anonfun$apply$1$$anonfun$1.apply(DevServerStart.scala:164)
-	at play.core.server.DevServerStart$$anonfun$mainDev$1$$anon$1$$anonfun$get$1$$anonfun$apply$1$$anonfun$1.apply(DevServerStart.scala:131)
-	at scala.Option.map(Option.scala:146)
-	at play.core.server.DevServerStart$$anonfun$mainDev$1$$anon$1$$anonfun$get$1$$anonfun$apply$1.apply(DevServerStart.scala:131)
-	at play.core.server.DevServerStart$$anonfun$mainDev$1$$anon$1$$anonfun$get$1$$anonfun$apply$1.apply(DevServerStart.scala:129)
-	at scala.util.Success.flatMap(Try.scala:231)
-	at play.core.server.DevServerStart$$anonfun$mainDev$1$$anon$1$$anonfun$get$1.apply(DevServerStart.scala:129)
+play.sbt.PlayExceptions$CompilationException: Compilation error[value getId is not a member of models.Event]
+	at play.sbt.PlayExceptions$CompilationException$.apply(PlayExceptions.scala:27)
+	at play.sbt.PlayExceptions$CompilationException$.apply(PlayExceptions.scala:27)
+	at scala.Option.map(Option.scala:145)
+	at play.sbt.run.PlayReload$$anonfun$taskFailureHandler$1.apply(PlayReload.scala:49)
+	at play.sbt.run.PlayReload$$anonfun$taskFailureHandler$1.apply(PlayReload.scala:44)
+	at scala.Option.map(Option.scala:145)
+	at play.sbt.run.PlayReload$.taskFailureHandler(PlayReload.scala:44)
+	at play.sbt.run.PlayReload$.compileFailure(PlayReload.scala:40)
+	at play.sbt.run.PlayReload$$anonfun$compile$1.apply(PlayReload.scala:17)
+	at play.sbt.run.PlayReload$$anonfun$compile$1.apply(PlayReload.scala:17)
+	at scala.util.Either$LeftProjection.map(Either.scala:377)
+	at play.sbt.run.PlayReload$.compile(PlayReload.scala:17)
+	at play.sbt.run.PlayRun$$anonfun$playRunTask$1$$anonfun$apply$2$$anonfun$apply$3$$anonfun$2.apply(PlayRun.scala:61)
+	at play.sbt.run.PlayRun$$anonfun$playRunTask$1$$anonfun$apply$2$$anonfun$apply$3$$anonfun$2.apply(PlayRun.scala:61)
+	at play.runsupport.Reloader$$anonfun$reload$1.apply(Reloader.scala:339)
+	at play.runsupport.Reloader$$anon$3.run(Reloader.scala:44)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at play.runsupport.Reloader$.play$runsupport$Reloader$$withReloaderContextClassLoader(Reloader.scala:40)
+	at play.runsupport.Reloader.reload(Reloader.scala:337)
+	at play.core.server.DevServerStart$$anonfun$mainDev$1$$anon$1$$anonfun$get$1.apply(DevServerStart.scala:123)
 	at play.core.server.DevServerStart$$anonfun$mainDev$1$$anon$1$$anonfun$get$1.apply(DevServerStart.scala:121)
 	at scala.concurrent.impl.Future$PromiseCompletingRunnable.liftedTree1$1(Future.scala:24)
 	at scala.concurrent.impl.Future$PromiseCompletingRunnable.run(Future.scala:24)
-	at java.util.concurrent.ForkJoinTask$RunnableExecuteAction.exec(ForkJoinTask.java:1402)
-	at java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:289)
-	at java.util.concurrent.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1056)
-	at java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1692)
-	at java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:157)
-2017-03-23 18:52:31,164 [ERROR] from play.api.db.evolutions.DefaultEvolutionsApi in netty-event-loop-3 - Syntax error in SQL statement "DROP TABLE IF EXISTS ORDER[*] "; expected "identifier"; SQL statement:
-drop table if exists order [42001-192] [ERROR:42001, SQLSTATE:42001]
-2017-03-23 18:52:31,165 [ERROR] from application in netty-event-loop-3 - 
-
-! @73e74pfpf - Internal server error, for (GET) [/@evolutions/apply/default?redirect=http%3A%2F%2Flocalhost%3A9000%2F] ->
- 
-play.api.db.evolutions.InconsistentDatabase: Database 'default' is in an inconsistent state![An evolution has not been applied properly. Please check the problem and resolve it manually before marking it as resolved.]
-	at play.api.db.evolutions.DatabaseEvolutions.checkEvolutionsState(EvolutionsApi.scala:276)
-	at play.api.db.evolutions.DatabaseEvolutions.evolve(EvolutionsApi.scala:231)
-	at play.api.db.evolutions.DefaultEvolutionsApi.evolve(EvolutionsApi.scala:86)
-	at play.api.db.evolutions.EvolutionsWebCommands.handleWebCommand(ApplicationEvolutions.scala:361)
-	at play.core.DefaultWebCommands$$anonfun$handleWebCommand$1.apply(WebCommands.scala:40)
-	at play.core.DefaultWebCommands$$anonfun$handleWebCommand$1.apply(WebCommands.scala:40)
-	at scala.collection.immutable.Stream.flatMap(Stream.scala:489)
-	at play.core.DefaultWebCommands.handleWebCommand(WebCommands.scala:40)
-	at play.core.server.DevServerStart$$anonfun$mainDev$1$$anon$1$$anonfun$handleWebCommand$1$$anonfun$apply$7.apply(DevServerStart.scala:203)
-	at play.core.server.DevServerStart$$anonfun$mainDev$1$$anon$1$$anonfun$handleWebCommand$1$$anonfun$apply$7.apply(DevServerStart.scala:203)
-	at scala.Option.flatMap(Option.scala:171)
-	at play.core.server.DevServerStart$$anonfun$mainDev$1$$anon$1$$anonfun$handleWebCommand$1.apply(DevServerStart.scala:203)
-	at play.core.server.DevServerStart$$anonfun$mainDev$1$$anon$1$$anonfun$handleWebCommand$1.apply(DevServerStart.scala:203)
-	at scala.Option.orElse(Option.scala:289)
-	at play.core.server.DevServerStart$$anonfun$mainDev$1$$anon$1.handleWebCommand(DevServerStart.scala:202)
-	at play.core.server.Server$class.getHandlerFor(Server.scala:49)
-	at play.core.server.NettyServer.getHandlerFor(NettyServer.scala:47)
-	at play.core.server.netty.PlayRequestHandler.handle(PlayRequestHandler.scala:82)
-	at play.core.server.netty.PlayRequestHandler.channelRead(PlayRequestHandler.scala:163)
-	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:366)
-	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:352)
-	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:345)
-	at com.typesafe.netty.http.HttpStreamsHandler.channelRead(HttpStreamsHandler.java:129)
-	at com.typesafe.netty.http.HttpStreamsServerHandler.channelRead(HttpStreamsServerHandler.java:96)
-	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:366)
-	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:352)
-	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:345)
-	at io.netty.handler.codec.MessageToMessageDecoder.channelRead(MessageToMessageDecoder.java:102)
-	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:366)
-	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:352)
-	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:345)
-	at io.netty.handler.codec.ByteToMessageDecoder.fireChannelRead(ByteToMessageDecoder.java:293)
-	at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:267)
-	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:366)
-	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:352)
-	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:345)
-	at io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1294)
-	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:366)
-	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:352)
-	at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:911)
-	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:131)
-	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:611)
-	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:552)
-	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:466)
-	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:438)
-	at io.netty.util.concurrent.SingleThreadEventExecutor$2.run(SingleThreadEventExecutor.java:140)
-	at java.lang.Thread.run(Thread.java:745)
-2017-03-23 18:52:33,149 [ERROR] from play.api.db.evolutions.DefaultEvolutionsApi in netty-event-loop-3 - Syntax error in SQL statement "CREATE TABLE ORDER[*] (
-ORDER_ID                      BIGINT NOT NULL,
-USER_ID                       BIGINT,
-ORDER_DATE                    TIMESTAMP,
-TOTAL_COST                    DOUBLE,
-CONSTRAINT PK_ORDER PRIMARY KEY (ORDER_ID)
-) "; expected "identifier"; SQL statement:
-create table order (
-order_id                      bigint not null,
-user_id                       bigint,
-order_date                    timestamp,
-total_cost                    double,
-constraint pk_order primary key (order_id)
-) [42001-192] [ERROR:42001, SQLSTATE:42001]
-2017-03-23 18:52:33,150 [ERROR] from application in netty-event-loop-3 - 
-
-! @73e74pino - Internal server error, for (GET) [/@evolutions/apply/default?redirect=http%3A%2F%2Flocalhost%3A9000%2F] ->
- 
-play.api.db.evolutions.InconsistentDatabase: Database 'default' is in an inconsistent state![An evolution has not been applied properly. Please check the problem and resolve it manually before marking it as resolved.]
-	at play.api.db.evolutions.DatabaseEvolutions.checkEvolutionsState(EvolutionsApi.scala:276)
-	at play.api.db.evolutions.DatabaseEvolutions.evolve(EvolutionsApi.scala:231)
-	at play.api.db.evolutions.DefaultEvolutionsApi.evolve(EvolutionsApi.scala:86)
-	at play.api.db.evolutions.EvolutionsWebCommands.handleWebCommand(ApplicationEvolutions.scala:361)
-	at play.core.DefaultWebCommands$$anonfun$handleWebCommand$1.apply(WebCommands.scala:40)
-	at play.core.DefaultWebCommands$$anonfun$handleWebCommand$1.apply(WebCommands.scala:40)
-	at scala.collection.immutable.Stream.flatMap(Stream.scala:489)
-	at play.core.DefaultWebCommands.handleWebCommand(WebCommands.scala:40)
-	at play.core.server.DevServerStart$$anonfun$mainDev$1$$anon$1$$anonfun$handleWebCommand$1$$anonfun$apply$7.apply(DevServerStart.scala:203)
-	at play.core.server.DevServerStart$$anonfun$mainDev$1$$anon$1$$anonfun$handleWebCommand$1$$anonfun$apply$7.apply(DevServerStart.scala:203)
-	at scala.Option.flatMap(Option.scala:171)
-	at play.core.server.DevServerStart$$anonfun$mainDev$1$$anon$1$$anonfun$handleWebCommand$1.apply(DevServerStart.scala:203)
-	at play.core.server.DevServerStart$$anonfun$mainDev$1$$anon$1$$anonfun$handleWebCommand$1.apply(DevServerStart.scala:203)
-	at scala.Option.orElse(Option.scala:289)
-	at play.core.server.DevServerStart$$anonfun$mainDev$1$$anon$1.handleWebCommand(DevServerStart.scala:202)
-	at play.core.server.Server$class.getHandlerFor(Server.scala:49)
-	at play.core.server.NettyServer.getHandlerFor(NettyServer.scala:47)
-	at play.core.server.netty.PlayRequestHandler.handle(PlayRequestHandler.scala:82)
-	at play.core.server.netty.PlayRequestHandler.channelRead(PlayRequestHandler.scala:163)
-	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:366)
-	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:352)
-	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:345)
-	at com.typesafe.netty.http.HttpStreamsHandler.channelRead(HttpStreamsHandler.java:129)
-	at com.typesafe.netty.http.HttpStreamsServerHandler.channelRead(HttpStreamsServerHandler.java:96)
-	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:366)
-	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:352)
-	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:345)
-	at io.netty.handler.codec.MessageToMessageDecoder.channelRead(MessageToMessageDecoder.java:102)
-	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:366)
-	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:352)
-	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:345)
-	at io.netty.handler.codec.ByteToMessageDecoder.fireChannelRead(ByteToMessageDecoder.java:293)
-	at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:267)
-	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:366)
-	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:352)
-	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:345)
-	at io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1294)
-	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:366)
-	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:352)
-	at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:911)
-	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:131)
-	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:611)
-	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:552)
-	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:466)
-	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:438)
-	at io.netty.util.concurrent.SingleThreadEventExecutor$2.run(SingleThreadEventExecutor.java:140)
-	at java.lang.Thread.run(Thread.java:745)
-2017-03-23 18:52:37,691 [INFO] from application in ForkJoinPool-2-worker-0 - ApplicationTimer demo: Stopping application at 2017-03-23T18:52:37.691Z after 10s.
-2017-03-23 18:52:37,778 [INFO] from application in ForkJoinPool-2-worker-0 - Shutting down connection pool.
-2017-03-23 18:52:38,073 [INFO] from application in ForkJoinPool-2-worker-0 - Creating Pool for datasource 'default'
-2017-03-23 18:52:38,103 [INFO] from play.api.db.DefaultDBApi in ForkJoinPool-2-worker-0 - Database [default] connected at jdbc:h2:file:./data/TCEvents
-2017-03-23 18:52:38,240 [INFO] from application in ForkJoinPool-2-worker-0 - ApplicationTimer demo: Starting application at 2017-03-23T18:52:38.240Z
-2017-03-23 18:52:38,415 [INFO] from play.api.Play in ForkJoinPool-2-worker-0 - Application started (Dev)
-2017-03-23 18:55:39,901 [INFO] from application in pool-20-thread-7 - ApplicationTimer demo: Stopping application at 2017-03-23T18:55:39.901Z after 181s.
-2017-03-23 18:55:39,901 [INFO] from application in pool-20-thread-7 - Shutting down connection pool.
+	at akka.dispatch.TaskInvocation.run(AbstractDispatcher.scala:39)
+	at akka.dispatch.ForkJoinExecutorConfigurator$AkkaForkJoinTask.exec(AbstractDispatcher.scala:415)
+	at scala.concurrent.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260)
+	at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339)
+	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979)
+	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107)
+2017-03-23 20:40:22,965 [INFO] from application in application-akka.actor.default-dispatcher-6 - ApplicationTimer demo: Stopping application at 2017-03-23T20:40:22.965Z after 380s.
+2017-03-23 20:40:22,965 [INFO] from application in application-akka.actor.default-dispatcher-6 - Shutting down connection pool.
+2017-03-23 20:40:23,101 [INFO] from application in application-akka.actor.default-dispatcher-6 - Creating Pool for datasource 'default'
+2017-03-23 20:40:23,129 [INFO] from play.api.db.DefaultDBApi in application-akka.actor.default-dispatcher-6 - Database [default] connected at jdbc:h2:file:./data/TCEvents
+2017-03-23 20:40:23,209 [INFO] from application in application-akka.actor.default-dispatcher-6 - ApplicationTimer demo: Starting application at 2017-03-23T20:40:23.209Z
+2017-03-23 20:40:23,305 [INFO] from play.api.Play in application-akka.actor.default-dispatcher-6 - Application started (Dev)
+2017-03-23 20:41:04,214 [INFO] from application in application-akka.actor.default-dispatcher-5 - ApplicationTimer demo: Stopping application at 2017-03-23T20:41:04.214Z after 41s.
+2017-03-23 20:41:04,214 [INFO] from application in application-akka.actor.default-dispatcher-5 - Shutting down connection pool.
+2017-03-23 20:41:04,362 [INFO] from application in application-akka.actor.default-dispatcher-5 - Creating Pool for datasource 'default'
+2017-03-23 20:41:04,414 [INFO] from play.api.db.DefaultDBApi in application-akka.actor.default-dispatcher-5 - Database [default] connected at jdbc:h2:file:./data/TCEvents
+2017-03-23 20:41:04,514 [INFO] from application in application-akka.actor.default-dispatcher-5 - ApplicationTimer demo: Starting application at 2017-03-23T20:41:04.514Z
+2017-03-23 20:41:04,618 [INFO] from play.api.Play in application-akka.actor.default-dispatcher-5 - Application started (Dev)
+2017-03-23 20:52:38,864 [INFO] from application in application-akka.actor.default-dispatcher-15 - ApplicationTimer demo: Stopping application at 2017-03-23T20:52:38.864Z after 694s.
+2017-03-23 20:52:38,864 [INFO] from application in application-akka.actor.default-dispatcher-15 - Shutting down connection pool.
+2017-03-23 20:52:39,044 [INFO] from application in application-akka.actor.default-dispatcher-15 - Creating Pool for datasource 'default'
+2017-03-23 20:52:39,072 [INFO] from play.api.db.DefaultDBApi in application-akka.actor.default-dispatcher-15 - Database [default] connected at jdbc:h2:file:./data/TCEvents
+2017-03-23 20:52:39,140 [INFO] from application in application-akka.actor.default-dispatcher-15 - ApplicationTimer demo: Starting application at 2017-03-23T20:52:39.140Z
+2017-03-23 20:52:39,212 [INFO] from play.api.Play in application-akka.actor.default-dispatcher-15 - Application started (Dev)
+2017-03-23 20:53:35,257 [INFO] from application in application-akka.actor.default-dispatcher-5 - ApplicationTimer demo: Stopping application at 2017-03-23T20:53:35.257Z after 56s.
+2017-03-23 20:53:35,257 [INFO] from application in application-akka.actor.default-dispatcher-5 - Shutting down connection pool.
+2017-03-23 20:53:35,393 [INFO] from application in application-akka.actor.default-dispatcher-5 - Creating Pool for datasource 'default'
+2017-03-23 20:53:35,413 [INFO] from play.api.db.DefaultDBApi in application-akka.actor.default-dispatcher-5 - Database [default] connected at jdbc:h2:file:./data/TCEvents
+2017-03-23 20:53:35,489 [INFO] from application in application-akka.actor.default-dispatcher-5 - ApplicationTimer demo: Starting application at 2017-03-23T20:53:35.489Z
+2017-03-23 20:53:35,573 [INFO] from play.api.Play in application-akka.actor.default-dispatcher-5 - Application started (Dev)
+2017-03-23 20:57:20,648 [INFO] from application in application-akka.actor.default-dispatcher-5 - ApplicationTimer demo: Stopping application at 2017-03-23T20:57:20.648Z after 225s.
+2017-03-23 20:57:20,648 [INFO] from application in application-akka.actor.default-dispatcher-5 - Shutting down connection pool.
+2017-03-23 20:57:20,804 [INFO] from application in application-akka.actor.default-dispatcher-5 - Creating Pool for datasource 'default'
+2017-03-23 20:57:20,844 [INFO] from play.api.db.DefaultDBApi in application-akka.actor.default-dispatcher-5 - Database [default] connected at jdbc:h2:file:./data/TCEvents
+2017-03-23 20:57:21,038 [INFO] from application in application-akka.actor.default-dispatcher-5 - ApplicationTimer demo: Starting application at 2017-03-23T20:57:21.038Z
+2017-03-23 20:57:21,129 [INFO] from play.api.Play in application-akka.actor.default-dispatcher-5 - Application started (Dev)
+2017-03-23 20:59:25,586 [INFO] from application in application-akka.actor.default-dispatcher-7 - ApplicationTimer demo: Stopping application at 2017-03-23T20:59:25.586Z after 124s.
+2017-03-23 20:59:25,586 [INFO] from application in application-akka.actor.default-dispatcher-7 - Shutting down connection pool.
+2017-03-23 20:59:25,710 [INFO] from application in application-akka.actor.default-dispatcher-7 - Creating Pool for datasource 'default'
+2017-03-23 20:59:25,738 [INFO] from play.api.db.DefaultDBApi in application-akka.actor.default-dispatcher-7 - Database [default] connected at jdbc:h2:file:./data/TCEvents
+2017-03-23 20:59:25,826 [INFO] from application in application-akka.actor.default-dispatcher-7 - ApplicationTimer demo: Starting application at 2017-03-23T20:59:25.826Z
+2017-03-23 20:59:25,894 [INFO] from play.api.Play in application-akka.actor.default-dispatcher-7 - Application started (Dev)
+2017-03-23 21:02:55,302 [INFO] from application in application-akka.actor.default-dispatcher-2 - ApplicationTimer demo: Stopping application at 2017-03-23T21:02:55.302Z after 210s.
+2017-03-23 21:02:55,306 [INFO] from application in application-akka.actor.default-dispatcher-2 - Shutting down connection pool.
+2017-03-23 21:02:55,426 [INFO] from application in application-akka.actor.default-dispatcher-2 - Creating Pool for datasource 'default'
+2017-03-23 21:02:55,446 [INFO] from play.api.db.DefaultDBApi in application-akka.actor.default-dispatcher-2 - Database [default] connected at jdbc:h2:file:./data/TCEvents
+2017-03-23 21:02:55,514 [INFO] from application in application-akka.actor.default-dispatcher-2 - ApplicationTimer demo: Starting application at 2017-03-23T21:02:55.514Z
+2017-03-23 21:02:55,574 [INFO] from play.api.Play in application-akka.actor.default-dispatcher-2 - Application started (Dev)
+2017-03-23 21:06:41,797 [INFO] from application in application-akka.actor.default-dispatcher-3 - ApplicationTimer demo: Stopping application at 2017-03-23T21:06:41.797Z after 226s.
+2017-03-23 21:06:41,797 [INFO] from application in application-akka.actor.default-dispatcher-3 - Shutting down connection pool.
+2017-03-23 21:06:41,961 [INFO] from application in application-akka.actor.default-dispatcher-3 - Creating Pool for datasource 'default'
+2017-03-23 21:06:41,985 [INFO] from play.api.db.DefaultDBApi in application-akka.actor.default-dispatcher-3 - Database [default] connected at jdbc:h2:file:./data/TCEvents
+2017-03-23 21:06:42,077 [INFO] from application in application-akka.actor.default-dispatcher-3 - ApplicationTimer demo: Starting application at 2017-03-23T21:06:42.077Z
+2017-03-23 21:06:42,165 [INFO] from play.api.Play in application-akka.actor.default-dispatcher-3 - Application started (Dev)
