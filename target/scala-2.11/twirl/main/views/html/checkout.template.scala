@@ -293,10 +293,10 @@ Seq[Any](_display_(/*1.2*/main("Welcome to Play")/*1.25*/ {_display_(Seq[Any](fo
 object checkout extends checkout_Scope0.checkout
               /*
                   -- GENERATED --
-                  DATE: Tue Mar 21 20:42:17 GMT 2017
-                  SOURCE: /home/matthewcleary/Desktop/TicketStore/app/views/checkout.scala.html
-                  HASH: 5ff2de5204fd2774e619b60ce3539ce6e81b0792
-                  MATRIX: 833->1|864->24|903->26|930->27|15551->14617
+                  DATE: Thu Mar 23 18:27:15 GMT 2017
+                  SOURCE: C:/Users/Eileen/Desktop/TicketStore/app/views/checkout.scala.html
+                  HASH: e626dd5b48dcc7928474fc2da6bd6ce9c6b0f8df
+                  MATRIX: 833->1|864->24|903->26|931->28|15794->14860
                   LINES: 32->1|32->1|32->1|33->2|275->244
                   -- GENERATED --
               */

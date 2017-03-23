@@ -1,7 +1,7 @@
-[debug] Copy resource mappings: 
-[debug] 	(/home/matthewcleary/Desktop/TicketStore/conf/evolutions,/home/matthewcleary/Desktop/TicketStore/target/scala-2.11/classes/evolutions)
-[debug] 	(/home/matthewcleary/Desktop/TicketStore/conf/logback.xml,/home/matthewcleary/Desktop/TicketStore/target/scala-2.11/classes/logback.xml)
-[debug] 	(/home/matthewcleary/Desktop/TicketStore/conf/application.conf,/home/matthewcleary/Desktop/TicketStore/target/scala-2.11/classes/application.conf)
-[debug] 	(/home/matthewcleary/Desktop/TicketStore/conf/routes,/home/matthewcleary/Desktop/TicketStore/target/scala-2.11/classes/routes)
-[debug] 	(/home/matthewcleary/Desktop/TicketStore/conf/evolutions/default,/home/matthewcleary/Desktop/TicketStore/target/scala-2.11/classes/evolutions/default)
-[debug] 	(/home/matthewcleary/Desktop/TicketStore/conf/evolutions/default/1.sql,/home/matthewcleary/Desktop/TicketStore/target/scala-2.11/classes/evolutions/default/1.sql)
+[0m[[0mdebug[0m] [0mCopy resource mappings: [0m
+[0m[[0mdebug[0m] [0m	(C:\Users\Eileen\Desktop\TicketStore\conf\application.conf,C:\Users\Eileen\Desktop\TicketStore\target\scala-2.11\classes\application.conf)[0m
+[0m[[0mdebug[0m] [0m	(C:\Users\Eileen\Desktop\TicketStore\conf\evolutions,C:\Users\Eileen\Desktop\TicketStore\target\scala-2.11\classes\evolutions)[0m
+[0m[[0mdebug[0m] [0m	(C:\Users\Eileen\Desktop\TicketStore\conf\logback.xml,C:\Users\Eileen\Desktop\TicketStore\target\scala-2.11\classes\logback.xml)[0m
+[0m[[0mdebug[0m] [0m	(C:\Users\Eileen\Desktop\TicketStore\conf\routes,C:\Users\Eileen\Desktop\TicketStore\target\scala-2.11\classes\routes)[0m
+[0m[[0mdebug[0m] [0m	(C:\Users\Eileen\Desktop\TicketStore\conf\evolutions\default,C:\Users\Eileen\Desktop\TicketStore\target\scala-2.11\classes\evolutions\default)[0m
+[0m[[0mdebug[0m] [0m	(C:\Users\Eileen\Desktop\TicketStore\conf\evolutions\default\1.sql,C:\Users\Eileen\Desktop\TicketStore\target\scala-2.11\classes\evolutions\default\1.sql)[0m
