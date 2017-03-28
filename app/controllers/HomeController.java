@@ -93,6 +93,38 @@ public class HomeController extends Controller {
     public Result signUp() {
         return ok(signUp.render());
     }
+//////////////////////////////////////////////////////////////////////////////////////////
+    public Result addTicket() {
 
-    public Result addTicket(){ return ok(addTicket.render());}
+        Form<Ticket> addTicketForm = formFactory.form(Ticket.class);
+
+        return ok(addTicket.render(addTicketForm));
+
+    }
+
+    public Result addTicketSubmit(){
+
+        Form<Ticket> newTicketForm = formFactory.form(Ticket.class).bindFromRequest();
+
+        if(newTicketForm.hasErrors()){
+            return badRequest(addTicket.render(newTicketForm));
+        }
+
+        Ticket newTicket = newTicketForm.get();
+
+        newTicket.save();
+
+        flash("success", "Ticket " + newTicket.getTicketType() + "has been created");
+
+        return redirect(controllers.routes.HomeController.index());
+    }
+
+    public Result deleteTicket(Long id){
+
+        Event.find.ref(id).delete();
+
+        flash("success","Ticket has been deleted");
+
+        return redirect(routes.HomeController.eventTicket());
+    }
 }

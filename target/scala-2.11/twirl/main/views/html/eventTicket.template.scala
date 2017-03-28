@@ -21,6 +21,9 @@ import play.data._
 import play.api.data.Field
 import play.mvc.Http.Context.Implicit._
 
+     object eventTicket_Scope1 {
+import helper._
+
 class eventTicket extends BaseScalaTemplate[play.twirl.api.HtmlFormat.Appendable,Format[play.twirl.api.HtmlFormat.Appendable]](play.twirl.api.HtmlFormat) with play.twirl.api.Template0[play.twirl.api.HtmlFormat.Appendable] {
 
   /**/
@@ -29,8 +32,14 @@ class eventTicket extends BaseScalaTemplate[play.twirl.api.HtmlFormat.Appendable
       {
 
 
-Seq[Any](_display_(/*1.2*/main("Welcome to Play")/*1.25*/ {_display_(Seq[Any](format.raw/*1.27*/("""
-    """),format.raw/*2.5*/("""<!--..CONTENT..-->
+Seq[Any](_display_(/*3.2*/{addTicketForm: Form[models.Ticket]}),format.raw/*3.38*/("""
+
+
+
+
+
+"""),_display_(/*9.2*/main("Welcome to Play")/*9.25*/ {_display_(Seq[Any](format.raw/*9.27*/("""
+    """),format.raw/*10.5*/("""<!--..CONTENT..-->
     <div class="container" id = "seatingplans">
         <div class="row well">
 		  <div class="col-lg-5 col-md-5 col-sm-6 col-xs-12">
@@ -83,8 +92,47 @@ Seq[Any](_display_(/*1.2*/main("Welcome to Play")/*1.25*/ {_display_(Seq[Any](fo
                 </div>
             </div>
         </div>
+            <div id="products" class="row list-group">
+                        <!-- Start of for loop - Fo reach e in events add a row -->
+                    """),_display_(/*65.22*/for(t <- tickets) yield /*65.39*/ {_display_(Seq[Any](format.raw/*65.41*/("""
+                        """),format.raw/*66.25*/("""<a href=""""),_display_(/*66.35*/routes/*66.41*/.HomeController.eventTicket()),format.raw/*66.70*/("""">
+                            <div class="item  col-xs-4 col-lg-4">
+                                <div class="thumbnail">
+
+                                    <img class="group list-group-image" src="http://placehold.it/400x250/000/fff" alt="" >
+                                    <div class="caption">    
+                                        <p class="group inner list-group-item-text">
+                                            """),_display_(/*73.46*/t/*73.47*/.getTicketType),format.raw/*73.61*/("""
+                                            """),_display_(/*74.46*/t/*74.47*/.getPrice),format.raw/*74.56*/("""
+                                           
+                                        """),format.raw/*76.41*/("""</p>
+                                        <div class="row">
+                                            <div class="col-xs-12 col-md-6">
+                                           
+
+                                                <a href=""""),_display_(/*81.59*/routes/*81.65*/.HomeController.deleteTicket(e.getTicketID)),format.raw/*81.108*/("""" class = "btn-xs btn-danger"
+                                                onclick="return confirmDel();">
+                                                    <span class="glyphicon glyphicon-trash"></span>
+                                                </a>
+                                            </div>
+
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    """)))}),format.raw/*93.22*/(""" """),format.raw/*93.23*/("""<!-- End of for loop -->
+
         </div>
-		</div>
+
+        
+   <script>
+        function confirmDel()"""),format.raw/*99.30*/("""{"""),format.raw/*99.31*/("""
+            """),format.raw/*100.13*/("""return confirm('Are you sure?');
+        """),format.raw/*101.9*/("""}"""),format.raw/*101.10*/("""
+    """),format.raw/*102.5*/("""</script>
+
         <!--END CONTENT-->
        """)))}))
       }
@@ -101,16 +149,17 @@ Seq[Any](_display_(/*1.2*/main("Welcome to Play")/*1.25*/ {_display_(Seq[Any](fo
 
 
 }
+}
 
 /**/
-object eventTicket extends eventTicket_Scope0.eventTicket
+object eventTicket extends eventTicket_Scope0.eventTicket_Scope1.eventTicket
               /*
                   -- GENERATED --
-                  DATE: Thu Mar 23 18:27:16 GMT 2017
-                  SOURCE: C:/Users/Eileen/Desktop/TicketStore/app/views/eventTicket.scala.html
-                  HASH: 227582f046c8cbf4eec769839e4abf744e3767ed
-                  MATRIX: 839->1|870->24|909->26|941->32
-                  LINES: 32->1|32->1|32->1|33->2
+                  DATE: Tue Mar 28 21:01:59 BST 2017
+                  SOURCE: C:/Users/Jay/Desktop/TicketStore/app/views/eventTicket.scala.html
+                  HASH: 5ac646efceb8224536c498da08eeccf79739ac55
+                  MATRIX: 889->21|945->57|983->70|1014->93|1053->95|1086->101|3496->2484|3529->2501|3569->2503|3623->2529|3660->2539|3675->2545|3725->2574|4200->3022|4210->3023|4245->3037|4319->3084|4329->3085|4359->3094|4474->3181|4749->3429|4764->3435|4829->3478|5402->4020|5431->4021|5557->4119|5586->4120|5629->4134|5699->4176|5729->4177|5763->4183
+                  LINES: 35->3|35->3|41->9|41->9|41->9|42->10|97->65|97->65|97->65|98->66|98->66|98->66|98->66|105->73|105->73|105->73|106->74|106->74|106->74|108->76|113->81|113->81|113->81|125->93|125->93|131->99|131->99|132->100|133->101|133->101|134->102
                   -- GENERATED --
               */
           

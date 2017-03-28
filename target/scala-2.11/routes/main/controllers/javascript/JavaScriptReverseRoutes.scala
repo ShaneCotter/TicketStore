@@ -1,7 +1,7 @@
 
 // @GENERATOR:play-routes-compiler
-// @SOURCE:C:/Users/Eileen/Desktop/TicketStore/conf/routes
-// @DATE:Thu Mar 23 20:36:19 GMT 2017
+// @SOURCE:C:/Users/Jay/Desktop/TicketStore/conf/routes
+// @DATE:Tue Mar 28 21:01:59 BST 2017
 
 import play.api.routing.JavaScriptReverseRoute
 import play.api.mvc.{ QueryStringBindable, PathBindable, Call, JavascriptLiteral }
@@ -33,7 +33,7 @@ package controllers.javascript {
       """
     )
   
-    // @LINE:20
+    // @LINE:24
     def deleteEvent: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.HomeController.deleteEvent",
       """
@@ -58,7 +58,7 @@ package controllers.javascript {
       "controllers.HomeController.addTicket",
       """
         function() {
-          return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "addTicket"})
+          return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "addticket"})
         }
       """
     )
@@ -73,12 +73,32 @@ package controllers.javascript {
       """
     )
   
+    // @LINE:18
+    def addTicketSubmit: JavaScriptReverseRoute = JavaScriptReverseRoute(
+      "controllers.HomeController.addTicketSubmit",
+      """
+        function() {
+          return _wA({method:"POST", url:"""" + _prefix + { _defaultPrefix } + """" + "addTicketSubmit"})
+        }
+      """
+    )
+  
     // @LINE:13
     def eventTicket: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.HomeController.eventTicket",
       """
         function() {
           return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "eventticket"})
+        }
+      """
+    )
+  
+    // @LINE:20
+    def deleteTicket: JavaScriptReverseRoute = JavaScriptReverseRoute(
+      "controllers.HomeController.deleteTicket",
+      """
+        function(id0) {
+          return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "delTicket/" + (""" + implicitly[PathBindable[Long]].javascriptUnbind + """)("id", id0)})
         }
       """
     )
@@ -103,7 +123,7 @@ package controllers.javascript {
       """
     )
   
-    // @LINE:18
+    // @LINE:22
     def addEventSubmit: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.HomeController.addEventSubmit",
       """
@@ -155,7 +175,7 @@ package controllers.javascript {
   
   }
 
-  // @LINE:23
+  // @LINE:33
   class ReverseAssets(_prefix: => String) {
 
     def _defaultPrefix: String = {
@@ -163,7 +183,7 @@ package controllers.javascript {
     }
 
   
-    // @LINE:23
+    // @LINE:33
     def versioned: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.Assets.versioned",
       """

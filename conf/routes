@@ -13,11 +13,21 @@ GET     /events                     controllers.HomeController.events
 GET     /eventticket                controllers.HomeController.eventTicket
 GET     /login                      controllers.HomeController.login
 GET     /signup                     controllers.HomeController.signUp
-GET     /addTicket                  controllers.HomeController.addTicket
+GET     /addticket                  controllers.HomeController.addTicket
+
+POST    /addTicketSubmit             controllers.HomeController.addTicketSubmit
+
+GET     /delTicket/:id               controllers.HomeController.deleteTicket(id:Long)
 
 POST    /addEventSubmit             controllers.HomeController.addEventSubmit
 
 GET     /delEvent/:id               controllers.HomeController.deleteEvent(id:Long)
+
+
+
+
+
+
 
 # Map static resources from the /public folder to the /assets URL path
 GET     /assets/*file               controllers.Assets.versioned(path="/public", file: Asset)
