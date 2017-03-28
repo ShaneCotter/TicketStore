@@ -309,3 +309,5 @@ play.sbt.PlayExceptions$CompilationException: Compilation error[not found: value
 	at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339)
 	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979)
 	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107)
+2017-03-28 21:22:39,375 [INFO] from application in pool-4-thread-1 - ApplicationTimer demo: Stopping application at 2017-03-28T20:22:39.375Z after 12187s.
+2017-03-28 21:22:39,382 [INFO] from application in pool-4-thread-1 - Shutting down connection pool.
