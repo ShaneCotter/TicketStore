@@ -46,7 +46,8 @@ public class LoginController extends Controller {
 
     public Result logout(){
         session().clear();
-        return redirect(routes.HomeController.index());
+        flash("success", "Successfully logged out");
+        return redirect(routes.LoginController.login());
     }
 
     private User getUserFromSession(){

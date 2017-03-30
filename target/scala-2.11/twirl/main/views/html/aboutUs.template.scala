@@ -30,7 +30,7 @@ class aboutUs extends BaseScalaTemplate[play.twirl.api.HtmlFormat.Appendable,For
 
 
 Seq[Any](format.raw/*1.27*/("""
-"""),_display_(/*2.2*/main("Welcome to Play",user)/*2.30*/ {_display_(Seq[Any](format.raw/*2.32*/("""
+"""),_display_(/*2.2*/main("About Us",user)/*2.23*/ {_display_(Seq[Any](format.raw/*2.25*/("""
 """),format.raw/*3.1*/("""<!--..CONTENT..-->
 <div class="container-fluid" id="content">
     <div class="container" id="aboutUs">
@@ -42,17 +42,13 @@ Seq[Any](format.raw/*1.27*/("""
            We specialise in events, bringing a competitive service to view. Our goal is to provide a ticket booking
            site where tickets can be bought close to face value, even if the event has sold out countrywide.
         </p>
-<<<<<<< HEAD
+        <br>
         <p>
-=======
-        <img src="assets/img/crowd.png" alt="crowd" width="100%" height="100%">
-        <br><p>
->>>>>>> c6362be255bfe8a5e154edd8ff6f63bcd60dd8bd
             Ran by a team of three second year college students, TC EVENTS is dedicated to ensuring its customers are
             100% satisfied with their experience. <br>The website was created in 2017, using HTML, CSS, and Bootstrap.
         </p>
 		<br>
-		<img src="assets/img/crowd.png" alt="crowd" width="100%" height="100%">
+		<img src=""""),_display_(/*20.14*/routes/*20.20*/.Assets.versioned("images/crowd1.jpg")),format.raw/*20.58*/("""" alt="crowd" width="90%" height="100%">
     </div>
 </div>
 </div>
@@ -79,11 +75,11 @@ Seq[Any](format.raw/*1.27*/("""
 object aboutUs extends aboutUs_Scope0.aboutUs
               /*
                   -- GENERATED --
-                  DATE: Thu Mar 30 11:34:08 IST 2017
+                  DATE: Thu Mar 30 12:20:41 IST 2017
                   SOURCE: /home/wdd/webapps/TicketStore/app/views/aboutUs.scala.html
-                  HASH: 8cea7085bf8cc290516a694c4d3b64a626445469
-                  MATRIX: 760->1|880->26|907->28|943->56|982->58|1009->59
-                  LINES: 27->1|32->1|33->2|33->2|33->2|34->3
+                  HASH: 8324f4012aec6fdda1b89922bcc2f9036719ebfc
+                  MATRIX: 760->1|880->26|907->28|936->49|975->51|1002->52|1886->909|1901->915|1960->953
+                  LINES: 27->1|32->1|33->2|33->2|33->2|34->3|51->20|51->20|51->20
                   -- GENERATED --
               */
           
