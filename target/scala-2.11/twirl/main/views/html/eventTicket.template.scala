@@ -24,21 +24,21 @@ import play.mvc.Http.Context.Implicit._
      object eventTicket_Scope1 {
 import helper._
 
-class eventTicket extends BaseScalaTemplate[play.twirl.api.HtmlFormat.Appendable,Format[play.twirl.api.HtmlFormat.Appendable]](play.twirl.api.HtmlFormat) with play.twirl.api.Template0[play.twirl.api.HtmlFormat.Appendable] {
+class eventTicket extends BaseScalaTemplate[play.twirl.api.HtmlFormat.Appendable,Format[play.twirl.api.HtmlFormat.Appendable]](play.twirl.api.HtmlFormat) with play.twirl.api.Template1[models.users.User,play.twirl.api.HtmlFormat.Appendable] {
 
   /**/
-  def apply():play.twirl.api.HtmlFormat.Appendable = {
+  def apply/*3.2*/(user: models.users.User):play.twirl.api.HtmlFormat.Appendable = {
     _display_ {
       {
 
 
-Seq[Any](_display_(/*3.2*/{addTicketForm: Form[models.Ticket]}),format.raw/*3.38*/("""
+Seq[Any](format.raw/*3.27*/("""
 
 
 
 
 
-"""),_display_(/*9.2*/main("Welcome to Play")/*9.25*/ {_display_(Seq[Any](format.raw/*9.27*/("""
+"""),_display_(/*9.2*/main("Welcome to Play",user)/*9.30*/ {_display_(Seq[Any](format.raw/*9.32*/("""
     """),format.raw/*10.5*/("""<!--..CONTENT..-->
     <div class="container" id = "seatingplans">
         <div class="row well">
@@ -92,26 +92,41 @@ Seq[Any](_display_(/*3.2*/{addTicketForm: Form[models.Ticket]}),format.raw/*3.38
                 </div>
             </div>
         </div>
+
+          <div class="row well" id="tickets">
+            <div class="col-lg-8 col-md-8 col-sm-6 col-xs-12">
+                <div class="row">
+                    <h1>  </h1>
+                    <a href=""""),_display_(/*68.31*/routes/*68.37*/.HomeController.addTicket()),format.raw/*68.64*/("""" class="btn btn-success btn-lg round">Add ticket</a>
+                    <br>
+                    <br>
+                    <strong>Display</strong>
+
+                    <div class="btn-group">
+                        <a href="#" id="list" class="btn btn-default btn-sm"><span class="glyphicon glyphicon-th-list">
+                        </span>List</a> <a href="#" id="grid" class="btn btn-default btn-sm"><span
+                    class="glyphicon glyphicon-th"></span>Grid</a>
+                    </div>
+                </div>
+                <br>
+
             <div id="products" class="row list-group">
                         <!-- Start of for loop - Fo reach e in events add a row -->
-                    """),_display_(/*65.22*/for(t <- tickets) yield /*65.39*/ {_display_(Seq[Any](format.raw/*65.41*/("""
-                        """),format.raw/*66.25*/("""<a href=""""),_display_(/*66.35*/routes/*66.41*/.HomeController.eventTicket()),format.raw/*66.70*/("""">
+
+                        <a href=""""),_display_(/*84.35*/routes/*84.41*/.HomeController.eventTicket()),format.raw/*84.70*/("""">
                             <div class="item  col-xs-4 col-lg-4">
                                 <div class="thumbnail">
 
                                     <img class="group list-group-image" src="http://placehold.it/400x250/000/fff" alt="" >
                                     <div class="caption">    
                                         <p class="group inner list-group-item-text">
-                                            """),_display_(/*73.46*/t/*73.47*/.getTicketType),format.raw/*73.61*/("""
-                                            """),_display_(/*74.46*/t/*74.47*/.getPrice),format.raw/*74.56*/("""
-                                           
-                                        """),format.raw/*76.41*/("""</p>
+
+                                        </p>
                                         <div class="row">
                                             <div class="col-xs-12 col-md-6">
                                            
 
-                                                <a href=""""),_display_(/*81.59*/routes/*81.65*/.HomeController.deleteTicket(e.getTicketID)),format.raw/*81.108*/("""" class = "btn-xs btn-danger"
-                                                onclick="return confirmDel();">
+
                                                     <span class="glyphicon glyphicon-trash"></span>
                                                 </a>
                                             </div>
@@ -122,16 +137,17 @@ Seq[Any](_display_(/*3.2*/{addTicketForm: Form[models.Ticket]}),format.raw/*3.38
                                 </div>
                             </div>
                         </a>
-                    """)))}),format.raw/*93.22*/(""" """),format.raw/*93.23*/("""<!-- End of for loop -->
+                    <!-- End of for loop -->
 
+            </div>
+            </div>
         </div>
 
-        
    <script>
-        function confirmDel()"""),format.raw/*99.30*/("""{"""),format.raw/*99.31*/("""
-            """),format.raw/*100.13*/("""return confirm('Are you sure?');
-        """),format.raw/*101.9*/("""}"""),format.raw/*101.10*/("""
-    """),format.raw/*102.5*/("""</script>
+        function confirmDel()"""),format.raw/*115.30*/("""{"""),format.raw/*115.31*/("""
+            """),format.raw/*116.13*/("""return confirm('Are you sure?');
+        """),format.raw/*117.9*/("""}"""),format.raw/*117.10*/("""
+    """),format.raw/*118.5*/("""</script>
 
         <!--END CONTENT-->
        """)))}))
@@ -139,9 +155,9 @@ Seq[Any](_display_(/*3.2*/{addTicketForm: Form[models.Ticket]}),format.raw/*3.38
     }
   }
 
-  def render(): play.twirl.api.HtmlFormat.Appendable = apply()
+  def render(user:models.users.User): play.twirl.api.HtmlFormat.Appendable = apply(user)
 
-  def f:(() => play.twirl.api.HtmlFormat.Appendable) = () => apply()
+  def f:((models.users.User) => play.twirl.api.HtmlFormat.Appendable) = (user) => apply(user)
 
   def ref: this.type = this
 
@@ -155,11 +171,11 @@ Seq[Any](_display_(/*3.2*/{addTicketForm: Form[models.Ticket]}),format.raw/*3.38
 object eventTicket extends eventTicket_Scope0.eventTicket_Scope1.eventTicket
               /*
                   -- GENERATED --
-                  DATE: Tue Mar 28 21:01:59 BST 2017
-                  SOURCE: C:/Users/Jay/Desktop/TicketStore/app/views/eventTicket.scala.html
-                  HASH: 5ac646efceb8224536c498da08eeccf79739ac55
-                  MATRIX: 889->21|945->57|983->70|1014->93|1053->95|1086->101|3496->2484|3529->2501|3569->2503|3623->2529|3660->2539|3675->2545|3725->2574|4200->3022|4210->3023|4245->3037|4319->3084|4329->3085|4359->3094|4474->3181|4749->3429|4764->3435|4829->3478|5402->4020|5431->4021|5557->4119|5586->4120|5629->4134|5699->4176|5729->4177|5763->4183
-                  LINES: 35->3|35->3|41->9|41->9|41->9|42->10|97->65|97->65|97->65|98->66|98->66|98->66|98->66|105->73|105->73|105->73|106->74|106->74|106->74|108->76|113->81|113->81|113->81|125->93|125->93|131->99|131->99|132->100|133->101|133->101|134->102
+                  DATE: Thu Mar 30 10:44:40 IST 2017
+                  SOURCE: /home/wdd/Desktop/TicketStore/app/views/eventTicket.scala.html
+                  HASH: 8d096bf19bf5f7273499ca7b560f7a4de4b0ac6f
+                  MATRIX: 818->19|938->44|970->51|1006->79|1045->81|1077->86|3478->2460|3493->2466|3541->2493|4294->3219|4309->3225|4359->3254|5551->4417|5581->4418|5623->4431|5692->4472|5722->4473|5755->4478
+                  LINES: 30->3|35->3|41->9|41->9|41->9|42->10|100->68|100->68|100->68|116->84|116->84|116->84|147->115|147->115|148->116|149->117|149->117|150->118
                   -- GENERATED --
               */
           

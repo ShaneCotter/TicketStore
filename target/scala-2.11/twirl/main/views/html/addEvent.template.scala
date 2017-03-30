@@ -24,17 +24,17 @@ import play.mvc.Http.Context.Implicit._
      object addEvent_Scope1 {
 import helper._
 
-class addEvent extends BaseScalaTemplate[play.twirl.api.HtmlFormat.Appendable,Format[play.twirl.api.HtmlFormat.Appendable]](play.twirl.api.HtmlFormat) with play.twirl.api.Template1[Form[models.Event],play.twirl.api.HtmlFormat.Appendable] {
+class addEvent extends BaseScalaTemplate[play.twirl.api.HtmlFormat.Appendable,Format[play.twirl.api.HtmlFormat.Appendable]](play.twirl.api.HtmlFormat) with play.twirl.api.Template2[Form[models.Event],models.users.User,play.twirl.api.HtmlFormat.Appendable] {
 
   /**/
-  def apply/*3.2*/(addEventForm: Form[models.Event]):play.twirl.api.HtmlFormat.Appendable = {
+  def apply/*3.2*/(addEventForm: Form[models.Event],user: models.users.User):play.twirl.api.HtmlFormat.Appendable = {
     _display_ {
       {
 
 
-Seq[Any](format.raw/*3.36*/("""
+Seq[Any](format.raw/*3.60*/("""
 
-"""),_display_(/*5.2*/main("Welcome to Play")/*5.25*/ {_display_(Seq[Any](format.raw/*5.27*/("""
+"""),_display_(/*5.2*/main("Welcome to Play",user)/*5.30*/ {_display_(Seq[Any](format.raw/*5.32*/("""
 """),format.raw/*6.1*/("""<!--..CONTENT..-->
 <div class="container-fluid" id="content">
 <h1>Add Event Page</h1>
@@ -74,9 +74,9 @@ Seq[Any](format.raw/*3.36*/("""
     }
   }
 
-  def render(addEventForm:Form[models.Event]): play.twirl.api.HtmlFormat.Appendable = apply(addEventForm)
+  def render(addEventForm:Form[models.Event],user:models.users.User): play.twirl.api.HtmlFormat.Appendable = apply(addEventForm,user)
 
-  def f:((Form[models.Event]) => play.twirl.api.HtmlFormat.Appendable) = (addEventForm) => apply(addEventForm)
+  def f:((Form[models.Event],models.users.User) => play.twirl.api.HtmlFormat.Appendable) = (addEventForm,user) => apply(addEventForm,user)
 
   def ref: this.type = this
 
@@ -90,10 +90,10 @@ Seq[Any](format.raw/*3.36*/("""
 object addEvent extends addEvent_Scope0.addEvent_Scope1.addEvent
               /*
                   -- GENERATED --
-                  DATE: Tue Mar 28 17:59:08 BST 2017
-                  SOURCE: C:/Users/Jay/Desktop/TicketStore/app/views/addEvent.scala.html
-                  HASH: c1d3f182e06a14b2bcbdfa4012408bfb6df8d4ea
-                  MATRIX: 810->21|939->55|969->60|1000->83|1039->85|1067->87|1288->282|1395->379|1435->380|1470->389|1572->470|1605->477|1702->553|1735->560|1840->644|1873->651|1970->727|2003->734|2102->812|2137->821|2223->886|2258->894|2403->1116|2437->1123|2474->1133|2489->1139|2534->1163|2662->1261
+                  DATE: Thu Mar 30 10:43:16 IST 2017
+                  SOURCE: /home/wdd/Desktop/TicketStore/app/views/addEvent.scala.html
+                  HASH: 2ea6bf1023e69c8fb9292ad985a338f03e504348
+                  MATRIX: 828->19|981->77|1009->80|1045->108|1084->110|1111->111|1324->298|1431->395|1471->396|1504->403|1606->484|1638->490|1735->566|1767->572|1872->656|1904->662|2001->738|2033->744|2132->822|2165->829|2251->894|2284->900|2423->1116|2456->1122|2493->1132|2508->1138|2553->1162|2673->1252
                   LINES: 30->3|35->3|37->5|37->5|37->5|38->6|46->14|46->14|46->14|48->16|48->16|49->17|49->17|50->18|50->18|51->19|51->19|52->20|52->20|54->22|54->22|56->24|62->30|63->31|63->31|63->31|63->31|71->39
                   -- GENERATED --
               */

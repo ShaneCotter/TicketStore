@@ -1,8 +1,8 @@
 @import helper._
 
-@(addTicketForm: Form[models.Ticket])
+@(addTicketForm: Form[models.Ticket],user: models.users.User)
 
-@main("Add Ticket") {
+@main("Add Ticket",user) {
 
 
 <div class="row">

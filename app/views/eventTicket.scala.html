@@ -1,12 +1,12 @@
 @import helper._
 
-@{addTicketForm: Form[models.Ticket]}
+@(user: models.users.User)
 
 
 
 
 
-@main("Welcome to Play") {
+@main("Welcome to Play",user) {
     <!--..CONTENT..-->
     <div class="container" id = "seatingplans">
         <div class="row well">
@@ -80,7 +80,7 @@
 
             <div id="products" class="row list-group">
                         <!-- Start of for loop - Fo reach e in events add a row -->
-                    @for(t <- tickets) {
+
                         <a href="@routes.HomeController.eventTicket()">
                             <div class="item  col-xs-4 col-lg-4">
                                 <div class="thumbnail">
@@ -88,16 +88,13 @@
                                     <img class="group list-group-image" src="http://placehold.it/400x250/000/fff" alt="" >
                                     <div class="caption">    
                                         <p class="group inner list-group-item-text">
-                                            @t.getTicketType
-                                            @t.getPrice
-                                           
+
                                         </p>
                                         <div class="row">
                                             <div class="col-xs-12 col-md-6">
                                            
 
-                                                <a href="@routes.HomeController.deleteTicket(e.getTicketID)" class = "btn-xs btn-danger"
-                                                onclick="return confirmDel();">
+
                                                     <span class="glyphicon glyphicon-trash"></span>
                                                 </a>
                                             </div>
@@ -108,7 +105,7 @@
                                 </div>
                             </div>
                         </a>
-                    } <!-- End of for loop -->
+                    <!-- End of for loop -->
 
             </div>
             </div>

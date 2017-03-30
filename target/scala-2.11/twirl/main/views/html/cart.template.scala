@@ -21,17 +21,18 @@ import play.data._
 import play.api.data.Field
 import play.mvc.Http.Context.Implicit._
 
-class cart extends BaseScalaTemplate[play.twirl.api.HtmlFormat.Appendable,Format[play.twirl.api.HtmlFormat.Appendable]](play.twirl.api.HtmlFormat) with play.twirl.api.Template0[play.twirl.api.HtmlFormat.Appendable] {
+class cart extends BaseScalaTemplate[play.twirl.api.HtmlFormat.Appendable,Format[play.twirl.api.HtmlFormat.Appendable]](play.twirl.api.HtmlFormat) with play.twirl.api.Template1[models.users.User,play.twirl.api.HtmlFormat.Appendable] {
 
   /**/
-  def apply():play.twirl.api.HtmlFormat.Appendable = {
+  def apply/*1.2*/(user: models.users.User):play.twirl.api.HtmlFormat.Appendable = {
     _display_ {
       {
 
 
-Seq[Any](_display_(/*1.2*/main("Welcome to Play")/*1.25*/ {_display_(Seq[Any](format.raw/*1.27*/("""
+Seq[Any](format.raw/*1.27*/("""
+"""),_display_(/*2.2*/main("Welcome to Play",user)/*2.30*/ {_display_(Seq[Any](format.raw/*2.32*/("""
 
-"""),format.raw/*3.1*/("""<!--..CONTENT..-->
+"""),format.raw/*4.1*/("""<!--..CONTENT..-->
 <div class="container-fluid" id="cartContent">
 	<div class="row">
 		<div class="col-lg-8 col-lg-offset-2">
@@ -130,9 +131,9 @@ Seq[Any](_display_(/*1.2*/main("Welcome to Play")/*1.25*/ {_display_(Seq[Any](fo
     }
   }
 
-  def render(): play.twirl.api.HtmlFormat.Appendable = apply()
+  def render(user:models.users.User): play.twirl.api.HtmlFormat.Appendable = apply(user)
 
-  def f:(() => play.twirl.api.HtmlFormat.Appendable) = () => apply()
+  def f:((models.users.User) => play.twirl.api.HtmlFormat.Appendable) = (user) => apply(user)
 
   def ref: this.type = this
 
@@ -145,11 +146,11 @@ Seq[Any](_display_(/*1.2*/main("Welcome to Play")/*1.25*/ {_display_(Seq[Any](fo
 object cart extends cart_Scope0.cart
               /*
                   -- GENERATED --
-                  DATE: Tue Mar 28 17:59:09 BST 2017
-                  SOURCE: C:/Users/Jay/Desktop/TicketStore/app/views/cart.scala.html
-                  HASH: 4b7253489cb1e55c2df62c0c75bfe02d3175784a
-                  MATRIX: 825->1|856->24|895->26|925->30
-                  LINES: 32->1|32->1|32->1|34->3
+                  DATE: Thu Mar 30 10:43:16 IST 2017
+                  SOURCE: /home/wdd/Desktop/TicketStore/app/views/cart.scala.html
+                  HASH: 758a2711665b00c68747f19a7c368484b4645967
+                  MATRIX: 754->1|874->26|901->28|937->56|976->58|1004->60
+                  LINES: 27->1|32->1|33->2|33->2|33->2|35->4
                   -- GENERATED --
               */
           

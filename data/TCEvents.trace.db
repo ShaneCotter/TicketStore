@@ -238,3 +238,21 @@ order_date                    timestamp,
 total_cost                    double,
 constraint pk_order primary key (order_id)
 ) [42001-192]
+2017-03-30 10:09:19 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "DROP TABLE IF EXISTS ORDER[*] "; expected "identifier"; SQL statement:
+drop table if exists order [42001-192]
+2017-03-30 10:09:21 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "CREATE TABLE ORDER[*] (
+ORDER_ID                      BIGINT NOT NULL,
+USER_ID                       BIGINT,
+ORDER_DATE                    TIMESTAMP,
+TOTAL_COST                    DOUBLE,
+CONSTRAINT PK_ORDER PRIMARY KEY (ORDER_ID)
+) "; expected "identifier"; SQL statement:
+create table order (
+order_id                      bigint not null,
+user_id                       bigint,
+order_date                    timestamp,
+total_cost                    double,
+constraint pk_order primary key (order_id)
+) [42001-192]

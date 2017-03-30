@@ -21,16 +21,17 @@ import play.data._
 import play.api.data.Field
 import play.mvc.Http.Context.Implicit._
 
-class contact extends BaseScalaTemplate[play.twirl.api.HtmlFormat.Appendable,Format[play.twirl.api.HtmlFormat.Appendable]](play.twirl.api.HtmlFormat) with play.twirl.api.Template0[play.twirl.api.HtmlFormat.Appendable] {
+class contact extends BaseScalaTemplate[play.twirl.api.HtmlFormat.Appendable,Format[play.twirl.api.HtmlFormat.Appendable]](play.twirl.api.HtmlFormat) with play.twirl.api.Template1[models.users.User,play.twirl.api.HtmlFormat.Appendable] {
 
   /**/
-  def apply():play.twirl.api.HtmlFormat.Appendable = {
+  def apply/*1.2*/(user: models.users.User):play.twirl.api.HtmlFormat.Appendable = {
     _display_ {
       {
 
 
-Seq[Any](_display_(/*1.2*/main("Welcome to Play")/*1.25*/ {_display_(Seq[Any](format.raw/*1.27*/("""
-"""),format.raw/*2.1*/("""<!--..CONTENT..-->
+Seq[Any](format.raw/*1.27*/("""
+"""),_display_(/*2.2*/main("Welcome to Play",user)/*2.30*/ {_display_(Seq[Any](format.raw/*2.32*/("""
+"""),format.raw/*3.1*/("""<!--..CONTENT..-->
 <div class="container-fluid" id="content">
 	<div class="container">
     <div class="row">
@@ -103,9 +104,9 @@ Seq[Any](_display_(/*1.2*/main("Welcome to Play")/*1.25*/ {_display_(Seq[Any](fo
     }
   }
 
-  def render(): play.twirl.api.HtmlFormat.Appendable = apply()
+  def render(user:models.users.User): play.twirl.api.HtmlFormat.Appendable = apply(user)
 
-  def f:(() => play.twirl.api.HtmlFormat.Appendable) = () => apply()
+  def f:((models.users.User) => play.twirl.api.HtmlFormat.Appendable) = (user) => apply(user)
 
   def ref: this.type = this
 
@@ -118,11 +119,11 @@ Seq[Any](_display_(/*1.2*/main("Welcome to Play")/*1.25*/ {_display_(Seq[Any](fo
 object contact extends contact_Scope0.contact
               /*
                   -- GENERATED --
-                  DATE: Tue Mar 28 17:59:09 BST 2017
-                  SOURCE: C:/Users/Jay/Desktop/TicketStore/app/views/contact.scala.html
-                  HASH: 2056c123ae819b8f3c630b27d3474567d4a0a671
-                  MATRIX: 831->1|862->24|901->26|929->28
-                  LINES: 32->1|32->1|32->1|33->2
+                  DATE: Thu Mar 30 10:43:16 IST 2017
+                  SOURCE: /home/wdd/Desktop/TicketStore/app/views/contact.scala.html
+                  HASH: 34729a36e0bf99fd267944a918d724ab018352be
+                  MATRIX: 760->1|880->26|907->28|943->56|982->58|1009->59
+                  LINES: 27->1|32->1|33->2|33->2|33->2|34->3
                   -- GENERATED --
               */
           

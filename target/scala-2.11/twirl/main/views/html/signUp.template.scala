@@ -21,17 +21,18 @@ import play.data._
 import play.api.data.Field
 import play.mvc.Http.Context.Implicit._
 
-class signUp extends BaseScalaTemplate[play.twirl.api.HtmlFormat.Appendable,Format[play.twirl.api.HtmlFormat.Appendable]](play.twirl.api.HtmlFormat) with play.twirl.api.Template0[play.twirl.api.HtmlFormat.Appendable] {
+class signUp extends BaseScalaTemplate[play.twirl.api.HtmlFormat.Appendable,Format[play.twirl.api.HtmlFormat.Appendable]](play.twirl.api.HtmlFormat) with play.twirl.api.Template1[models.users.User,play.twirl.api.HtmlFormat.Appendable] {
 
   /**/
-  def apply():play.twirl.api.HtmlFormat.Appendable = {
+  def apply/*1.2*/(user: models.users.User):play.twirl.api.HtmlFormat.Appendable = {
     _display_ {
       {
 
 
-Seq[Any](_display_(/*1.2*/main("Welcome to Play")/*1.25*/ {_display_(Seq[Any](format.raw/*1.27*/("""
+Seq[Any](format.raw/*1.27*/("""
+"""),_display_(/*2.2*/main("Welcome to Play",user)/*2.30*/ {_display_(Seq[Any](format.raw/*2.32*/("""
 
-    """),format.raw/*3.5*/("""<!--..CONTENT..-->
+    """),format.raw/*4.5*/("""<!--..CONTENT..-->
     <div class="container-fluid" id="content">
         <div class="row">
             <div class="col-lg-12 well" id="signup">
@@ -96,9 +97,9 @@ Seq[Any](_display_(/*1.2*/main("Welcome to Play")/*1.25*/ {_display_(Seq[Any](fo
     }
   }
 
-  def render(): play.twirl.api.HtmlFormat.Appendable = apply()
+  def render(user:models.users.User): play.twirl.api.HtmlFormat.Appendable = apply(user)
 
-  def f:(() => play.twirl.api.HtmlFormat.Appendable) = () => apply()
+  def f:((models.users.User) => play.twirl.api.HtmlFormat.Appendable) = (user) => apply(user)
 
   def ref: this.type = this
 
@@ -111,11 +112,11 @@ Seq[Any](_display_(/*1.2*/main("Welcome to Play")/*1.25*/ {_display_(Seq[Any](fo
 object signUp extends signUp_Scope0.signUp
               /*
                   -- GENERATED --
-                  DATE: Tue Mar 28 17:59:09 BST 2017
-                  SOURCE: C:/Users/Jay/Desktop/TicketStore/app/views/signUp.scala.html
-                  HASH: bd3ba756bcf6ed6f237810c6dcddbb0d71b91d21
-                  MATRIX: 829->1|860->24|899->26|933->34
-                  LINES: 32->1|32->1|32->1|34->3
+                  DATE: Thu Mar 30 10:43:16 IST 2017
+                  SOURCE: /home/wdd/Desktop/TicketStore/app/views/signUp.scala.html
+                  HASH: 082b479cdab7c3b8380448fdf18af3723ff3340a
+                  MATRIX: 758->1|878->26|905->28|941->56|980->58|1012->64
+                  LINES: 27->1|32->1|33->2|33->2|33->2|35->4
                   -- GENERATED --
               */
           

@@ -21,7 +21,7 @@ import play.data._
 import play.api.data.Field
 import play.mvc.Http.Context.Implicit._
 
-class main extends BaseScalaTemplate[play.twirl.api.HtmlFormat.Appendable,Format[play.twirl.api.HtmlFormat.Appendable]](play.twirl.api.HtmlFormat) with play.twirl.api.Template2[String,Html,play.twirl.api.HtmlFormat.Appendable] {
+class main extends BaseScalaTemplate[play.twirl.api.HtmlFormat.Appendable,Format[play.twirl.api.HtmlFormat.Appendable]](play.twirl.api.HtmlFormat) with play.twirl.api.Template3[String,models.users.User,Html,play.twirl.api.HtmlFormat.Appendable] {
 
   /*
  * This template is called from the `index` template. This template
@@ -29,12 +29,12 @@ class main extends BaseScalaTemplate[play.twirl.api.HtmlFormat.Appendable,Format
  * two arguments, a `String` for the title of the page and an `Html`
  * object to insert into the body of the page.
  */
-  def apply/*7.2*/(title: String)(content: Html):play.twirl.api.HtmlFormat.Appendable = {
+  def apply/*7.2*/(title: String,user:models.users.User)(content: Html):play.twirl.api.HtmlFormat.Appendable = {
     _display_ {
       {
 
 
-Seq[Any](format.raw/*7.32*/("""
+Seq[Any](format.raw/*7.55*/("""
 
 """),format.raw/*9.1*/("""<!DOCTYPE HTML>
 <title>"""),_display_(/*10.9*/title),format.raw/*10.14*/("""</title>
@@ -72,30 +72,36 @@ Seq[Any](format.raw/*7.32*/("""
                 </div>
                 <!--/Search Bar-->
                 <div class="nav navbar-nav navbar-right" id="nav-buttons">
-                    <a href=""""),_display_(/*45.31*/routes/*45.37*/.HomeController.cart()),format.raw/*45.59*/("""" class="btn btn-success btn-circle btn-lg"><i class="glyphicon glyphicon-shopping-cart"></i></a>
-                    <a href=""""),_display_(/*46.31*/routes/*46.37*/.HomeController.login()),format.raw/*46.60*/("""" class="btn btn-success btn-lg round"><span class="glyphicon glyphicon-user"></span>Login</a>
-                    <a href=""""),_display_(/*47.31*/routes/*47.37*/.HomeController.signUp()),format.raw/*47.61*/("""" class="btn btn-success btn-lg round"><span class="glyphcon glyphicon-pencil"></span>Sign up</a>
-                </div>
+                    """),_display_(/*45.22*/if(user != null)/*45.38*/{_display_(Seq[Any](format.raw/*45.39*/("""
+                        """),format.raw/*46.25*/("""<a href=""""),_display_(/*46.35*/routes/*46.41*/.HomeController.cart()),format.raw/*46.63*/("""" class="btn btn-success btn-circle btn-lg"><i class="glyphicon glyphicon-shopping-cart"></i></a>
+                        <a href=""""),_display_(/*47.35*/routes/*47.41*/.LoginController.logout()),format.raw/*47.66*/("""" class="btn btn-success btn-lg round"><span class="glyphcon glyphicon-pencil"></span>LOGOUT</a>
+                        <a href=""""),_display_(/*48.35*/routes/*48.41*/.HomeController.cart()),format.raw/*48.63*/("""" class="btn btn-success btn-circle btn-lg"><i class="glyphicon glyphicon-shopping-cart"></i></a>
+
+                    """)))}/*50.22*/else/*50.26*/{_display_(Seq[Any](format.raw/*50.27*/("""
+                        """),format.raw/*51.25*/("""<a href=""""),_display_(/*51.35*/routes/*51.41*/.LoginController.login()),format.raw/*51.65*/("""" class="btn btn-success btn-circle btn-lg"><i class="glyphicon glyphicon-shopping-cart"></i>Login</a>
+                        <a href=""""),_display_(/*52.35*/routes/*52.41*/.HomeController.signUp()),format.raw/*52.65*/("""" class="btn btn-success btn-lg round"><span class="glyphcon glyphicon-pencil"></span>Sign up</a>
+                    """)))}),format.raw/*53.22*/("""
+                """),format.raw/*54.17*/("""</div>
             </div>
         </div>
         <div id="container">
             <div class="row">
                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" id="nav-bottom">
-                    <a href=""""),_display_(/*54.31*/routes/*54.37*/.HomeController.index),format.raw/*54.58*/("""">HOME</a>
-                    <a href=""""),_display_(/*55.31*/routes/*55.37*/.HomeController.events),format.raw/*55.59*/("""">EVENTS</a>
-                    <a href=""""),_display_(/*56.31*/routes/*56.37*/.HomeController.aboutUs),format.raw/*56.60*/("""">ABOUT US</a>
-                    <a href=""""),_display_(/*57.31*/routes/*57.37*/.HomeController.contact),format.raw/*57.60*/("""">CONTACT US</a>
+                    <a href=""""),_display_(/*60.31*/routes/*60.37*/.HomeController.index),format.raw/*60.58*/("""">HOME</a>
+                    <a href=""""),_display_(/*61.31*/routes/*61.37*/.HomeController.events),format.raw/*61.59*/("""">EVENTS</a>
+                    <a href=""""),_display_(/*62.31*/routes/*62.37*/.HomeController.aboutUs),format.raw/*62.60*/("""">ABOUT US</a>
+                    <a href=""""),_display_(/*63.31*/routes/*63.37*/.HomeController.contact),format.raw/*63.60*/("""">CONTACT US</a>
                 </div>
             </div>
         </div>
     </div>
 
-        """),_display_(/*63.10*/content),format.raw/*63.17*/("""
+        """),_display_(/*69.10*/content),format.raw/*69.17*/("""
 
-"""),format.raw/*65.1*/("""<div class="container" id = "footer">
+"""),format.raw/*71.1*/("""<div class="container" id = "footer">
         <div class="row">
             <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 pull-left">
-                <a href=""""),_display_(/*68.27*/routes/*68.33*/.HomeController.index()),format.raw/*68.56*/(""""><h2>TC <span>EVENTS</h2></a>
+                <a href=""""),_display_(/*74.27*/routes/*74.33*/.HomeController.index()),format.raw/*74.56*/(""""><h2>TC <span>EVENTS</h2></a>
             </div>
             <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6" id="icon div">
                 <a href="#"><i class="fa fa-3x fa-fw fa-instagram text-inverse pull-right" id="icon"></i></a>
@@ -112,9 +118,9 @@ Seq[Any](format.raw/*7.32*/("""
     }
   }
 
-  def render(title:String,content:Html): play.twirl.api.HtmlFormat.Appendable = apply(title)(content)
+  def render(title:String,user:models.users.User,content:Html): play.twirl.api.HtmlFormat.Appendable = apply(title,user)(content)
 
-  def f:((String) => (Html) => play.twirl.api.HtmlFormat.Appendable) = (title) => (content) => apply(title)(content)
+  def f:((String,models.users.User) => (Html) => play.twirl.api.HtmlFormat.Appendable) = (title,user) => (content) => apply(title,user)(content)
 
   def ref: this.type = this
 
@@ -132,11 +138,11 @@ Seq[Any](format.raw/*7.32*/("""
 object main extends main_Scope0.main
               /*
                   -- GENERATED --
-                  DATE: Tue Mar 28 17:59:09 BST 2017
-                  SOURCE: C:/Users/Jay/Desktop/TicketStore/app/views/main.scala.html
-                  HASH: 1454cd6f22e8f53bf70a7a8688e3e29d1d6974cc
-                  MATRIX: 1007->266|1132->296|1162->300|1213->325|1239->330|1343->407|1358->413|1421->455|2556->1563|2571->1569|2615->1592|3578->2528|3593->2534|3636->2556|3792->2685|3807->2691|3851->2714|4004->2840|4019->2846|4064->2870|4428->3207|4443->3213|4485->3234|4554->3276|4569->3282|4612->3304|4683->3348|4698->3354|4742->3377|4815->3423|4830->3429|4874->3452|5002->3553|5030->3560|5061->3564|5253->3729|5268->3735|5312->3758
-                  LINES: 32->7|37->7|39->9|40->10|40->10|44->14|44->14|44->14|59->29|59->29|59->29|75->45|75->45|75->45|76->46|76->46|76->46|77->47|77->47|77->47|84->54|84->54|84->54|85->55|85->55|85->55|86->56|86->56|86->56|87->57|87->57|87->57|93->63|93->63|95->65|98->68|98->68|98->68
+                  DATE: Thu Mar 30 10:45:51 IST 2017
+                  SOURCE: /home/wdd/Desktop/TicketStore/app/views/main.scala.html
+                  HASH: 0d33ef4647855c476be6de368180080ebcaa5097
+                  MATRIX: 1020->260|1168->313|1196->315|1246->339|1272->344|1372->417|1387->423|1450->465|2570->1558|2585->1564|2629->1587|3567->2498|3592->2514|3631->2515|3684->2540|3721->2550|3736->2556|3779->2578|3938->2710|3953->2716|3999->2741|4157->2872|4172->2878|4215->2900|4354->3020|4367->3024|4406->3025|4459->3050|4496->3060|4511->3066|4556->3090|4720->3227|4735->3233|4780->3257|4930->3376|4975->3393|5218->3609|5233->3615|5275->3636|5343->3677|5358->3683|5401->3705|5471->3748|5486->3754|5530->3777|5602->3822|5617->3828|5661->3851|5783->3946|5811->3953|5840->3955|6029->4117|6044->4123|6088->4146
+                  LINES: 32->7|37->7|39->9|40->10|40->10|44->14|44->14|44->14|59->29|59->29|59->29|75->45|75->45|75->45|76->46|76->46|76->46|76->46|77->47|77->47|77->47|78->48|78->48|78->48|80->50|80->50|80->50|81->51|81->51|81->51|81->51|82->52|82->52|82->52|83->53|84->54|90->60|90->60|90->60|91->61|91->61|91->61|92->62|92->62|92->62|93->63|93->63|93->63|99->69|99->69|101->71|104->74|104->74|104->74
                   -- GENERATED --
               */
           

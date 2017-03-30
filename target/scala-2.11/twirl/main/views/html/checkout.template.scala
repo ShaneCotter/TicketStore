@@ -21,16 +21,17 @@ import play.data._
 import play.api.data.Field
 import play.mvc.Http.Context.Implicit._
 
-class checkout extends BaseScalaTemplate[play.twirl.api.HtmlFormat.Appendable,Format[play.twirl.api.HtmlFormat.Appendable]](play.twirl.api.HtmlFormat) with play.twirl.api.Template0[play.twirl.api.HtmlFormat.Appendable] {
+class checkout extends BaseScalaTemplate[play.twirl.api.HtmlFormat.Appendable,Format[play.twirl.api.HtmlFormat.Appendable]](play.twirl.api.HtmlFormat) with play.twirl.api.Template1[models.users.User,play.twirl.api.HtmlFormat.Appendable] {
 
   /**/
-  def apply():play.twirl.api.HtmlFormat.Appendable = {
+  def apply/*1.2*/(user: models.users.User):play.twirl.api.HtmlFormat.Appendable = {
     _display_ {
       {
 
 
-Seq[Any](_display_(/*1.2*/main("Welcome to Play")/*1.25*/ {_display_(Seq[Any](format.raw/*1.27*/("""
-"""),format.raw/*2.1*/("""<!--..CONTENT..-->
+Seq[Any](format.raw/*1.27*/("""
+"""),_display_(/*2.2*/main("Welcome to Play",user)/*2.30*/ {_display_(Seq[Any](format.raw/*2.32*/("""
+"""),format.raw/*3.1*/("""<!--..CONTENT..-->
 <div class="container-fluid" id="content">
             <div class="row cart-head">
                 <div class="container">
@@ -272,15 +273,15 @@ Seq[Any](_display_(/*1.2*/main("Welcome to Play")/*1.25*/ {_display_(Seq[Any](fo
     </div>
 <!--END CONTENT-->
 
-""")))}),format.raw/*244.2*/("""
+""")))}),format.raw/*245.2*/("""
 """))
       }
     }
   }
 
-  def render(): play.twirl.api.HtmlFormat.Appendable = apply()
+  def render(user:models.users.User): play.twirl.api.HtmlFormat.Appendable = apply(user)
 
-  def f:(() => play.twirl.api.HtmlFormat.Appendable) = () => apply()
+  def f:((models.users.User) => play.twirl.api.HtmlFormat.Appendable) = (user) => apply(user)
 
   def ref: this.type = this
 
@@ -293,11 +294,11 @@ Seq[Any](_display_(/*1.2*/main("Welcome to Play")/*1.25*/ {_display_(Seq[Any](fo
 object checkout extends checkout_Scope0.checkout
               /*
                   -- GENERATED --
-                  DATE: Tue Mar 28 17:59:09 BST 2017
-                  SOURCE: C:/Users/Jay/Desktop/TicketStore/app/views/checkout.scala.html
-                  HASH: e626dd5b48dcc7928474fc2da6bd6ce9c6b0f8df
-                  MATRIX: 833->1|864->24|903->26|931->28|15794->14860
-                  LINES: 32->1|32->1|32->1|33->2|275->244
+                  DATE: Thu Mar 30 10:43:16 IST 2017
+                  SOURCE: /home/wdd/Desktop/TicketStore/app/views/checkout.scala.html
+                  HASH: 0d9536a2f811667cb2e34a84b1047c59a23c8df5
+                  MATRIX: 762->1|882->26|909->28|945->56|984->58|1011->59|15632->14649
+                  LINES: 27->1|32->1|33->2|33->2|33->2|34->3|276->245
                   -- GENERATED --
               */
           

@@ -21,17 +21,17 @@ import play.data._
 import play.api.data.Field
 import play.mvc.Http.Context.Implicit._
 
-class events extends BaseScalaTemplate[play.twirl.api.HtmlFormat.Appendable,Format[play.twirl.api.HtmlFormat.Appendable]](play.twirl.api.HtmlFormat) with play.twirl.api.Template1[List[models.Event],play.twirl.api.HtmlFormat.Appendable] {
+class events extends BaseScalaTemplate[play.twirl.api.HtmlFormat.Appendable,Format[play.twirl.api.HtmlFormat.Appendable]](play.twirl.api.HtmlFormat) with play.twirl.api.Template2[List[models.Event],models.users.User,play.twirl.api.HtmlFormat.Appendable] {
 
   /**/
-  def apply/*1.2*/(events: List[models.Event]):play.twirl.api.HtmlFormat.Appendable = {
+  def apply/*1.2*/(events: List[models.Event],user: models.users.User):play.twirl.api.HtmlFormat.Appendable = {
     _display_ {
       {
 
 
-Seq[Any](format.raw/*1.30*/("""
+Seq[Any](format.raw/*1.54*/("""
 
-"""),_display_(/*3.2*/main("Events")/*3.16*/ {_display_(Seq[Any](format.raw/*3.18*/("""
+"""),_display_(/*3.2*/main("Events",user)/*3.21*/ {_display_(Seq[Any](format.raw/*3.23*/("""
 
 
     """),format.raw/*6.5*/("""<!--..CONTENT..-->
@@ -165,9 +165,9 @@ Seq[Any](format.raw/*1.30*/("""
     }
   }
 
-  def render(events:List[models.Event]): play.twirl.api.HtmlFormat.Appendable = apply(events)
+  def render(events:List[models.Event],user:models.users.User): play.twirl.api.HtmlFormat.Appendable = apply(events,user)
 
-  def f:((List[models.Event]) => play.twirl.api.HtmlFormat.Appendable) = (events) => apply(events)
+  def f:((List[models.Event],models.users.User) => play.twirl.api.HtmlFormat.Appendable) = (events,user) => apply(events,user)
 
   def ref: this.type = this
 
@@ -180,10 +180,10 @@ Seq[Any](format.raw/*1.30*/("""
 object events extends events_Scope0.events
               /*
                   -- GENERATED --
-                  DATE: Tue Mar 28 17:59:09 BST 2017
-                  SOURCE: C:/Users/Jay/Desktop/TicketStore/app/views/events.scala.html
-                  HASH: 7534619aaad51001337b87a383476f22f7750e72
-                  MATRIX: 759->1|882->29|912->34|934->48|973->50|1009->60|4157->3181|4172->3187|4219->3213|4976->3943|5008->3959|5048->3961|5102->3987|5139->3997|5154->4003|5204->4032|5675->4476|5685->4477|5715->4486|5880->4624|5890->4625|5924->4638|5998->4685|6008->4686|6041->4698|6115->4745|6125->4746|6154->4754|6224->4796|6578->5123|6593->5129|6656->5170|7230->5712|7260->5713|7622->6046|7652->6047|7699->6065|7760->6097|7790->6098|7892->6170|7923->6171|8004->6223|8034->6224|8188->6348|8219->6349|8264->6365|8294->6366|8431->6474|8461->6475|8504->6489|8574->6531|8604->6532|8638->6538
+                  DATE: Thu Mar 30 10:43:16 IST 2017
+                  SOURCE: /home/wdd/Desktop/TicketStore/app/views/events.scala.html
+                  HASH: b755187c1be760589dc1631ee9e46f64da41b7e3
+                  MATRIX: 777->1|924->53|952->56|979->75|1018->77|1051->84|4145->3151|4160->3157|4207->3183|4949->3898|4981->3914|5021->3916|5074->3941|5111->3951|5126->3957|5176->3986|5640->4423|5650->4424|5680->4433|5843->4569|5853->4570|5887->4583|5960->4629|5970->4630|6003->4642|6076->4688|6086->4689|6115->4697|6184->4738|6532->5059|6547->5065|6610->5106|7172->5636|7202->5637|7549->5955|7579->5956|7625->5973|7686->6005|7716->6006|7818->6078|7849->6079|7929->6130|7959->6131|8113->6255|8144->6256|8188->6271|8218->6272|8351->6376|8381->6377|8423->6390|8492->6431|8522->6432|8555->6437
                   LINES: 27->1|32->1|34->3|34->3|34->3|37->6|91->60|91->60|91->60|106->75|106->75|106->75|107->76|107->76|107->76|107->76|114->83|114->83|114->83|116->85|116->85|116->85|117->86|117->86|117->86|118->87|118->87|118->87|119->88|125->94|125->94|125->94|137->106|137->106|152->121|152->121|153->122|153->122|153->122|153->122|153->122|154->123|154->123|154->123|154->123|155->124|155->124|159->128|159->128|160->129|161->130|161->130|162->131
                   -- GENERATED --
               */

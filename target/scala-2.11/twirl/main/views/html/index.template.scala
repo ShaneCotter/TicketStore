@@ -21,15 +21,16 @@ import play.data._
 import play.api.data.Field
 import play.mvc.Http.Context.Implicit._
 
-class index extends BaseScalaTemplate[play.twirl.api.HtmlFormat.Appendable,Format[play.twirl.api.HtmlFormat.Appendable]](play.twirl.api.HtmlFormat) with play.twirl.api.Template0[play.twirl.api.HtmlFormat.Appendable] {
+class index extends BaseScalaTemplate[play.twirl.api.HtmlFormat.Appendable,Format[play.twirl.api.HtmlFormat.Appendable]](play.twirl.api.HtmlFormat) with play.twirl.api.Template1[models.users.User,play.twirl.api.HtmlFormat.Appendable] {
 
   /**/
-  def apply():play.twirl.api.HtmlFormat.Appendable = {
+  def apply/*1.2*/(user: models.users.User):play.twirl.api.HtmlFormat.Appendable = {
     _display_ {
       {
 
 
-Seq[Any](_display_(/*2.2*/main("Welcome to Play")/*2.25*/ {_display_(Seq[Any](format.raw/*2.27*/("""
+Seq[Any](format.raw/*1.27*/("""
+"""),_display_(/*2.2*/main("Welcome to Play",user)/*2.30*/ {_display_(Seq[Any](format.raw/*2.32*/("""
 
     """),format.raw/*4.5*/("""<!--..CONTENT..-->
     <div class="container-fluid" id="indexContent">
@@ -94,9 +95,9 @@ Seq[Any](_display_(/*2.2*/main("Welcome to Play")/*2.25*/ {_display_(Seq[Any](fo
     }
   }
 
-  def render(): play.twirl.api.HtmlFormat.Appendable = apply()
+  def render(user:models.users.User): play.twirl.api.HtmlFormat.Appendable = apply(user)
 
-  def f:(() => play.twirl.api.HtmlFormat.Appendable) = () => apply()
+  def f:((models.users.User) => play.twirl.api.HtmlFormat.Appendable) = (user) => apply(user)
 
   def ref: this.type = this
 
@@ -109,11 +110,11 @@ Seq[Any](_display_(/*2.2*/main("Welcome to Play")/*2.25*/ {_display_(Seq[Any](fo
 object index extends index_Scope0.index
               /*
                   -- GENERATED --
-                  DATE: Tue Mar 28 17:59:09 BST 2017
-                  SOURCE: C:/Users/Jay/Desktop/TicketStore/app/views/index.scala.html
-                  HASH: 5eacf1af1ff695c80cc2e3f55a220119eca0a909
-                  MATRIX: 827->3|858->26|897->28|931->36|1685->763|1700->769|1759->807|1886->907|1901->913|1946->937|2207->1171|2222->1177|2281->1215|2407->1314|2422->1320|2467->1344|2639->1489|2654->1495|2713->1533|2839->1632|2854->1638|2899->1662|3073->1809|3088->1815|3147->1853|3273->1952|3288->1958|3333->1982|4094->2713
-                  LINES: 32->2|32->2|32->2|34->4|48->18|48->18|48->18|50->20|50->20|50->20|56->26|56->26|56->26|58->28|58->28|58->28|63->33|63->33|63->33|65->35|65->35|65->35|70->40|70->40|70->40|72->42|72->42|72->42|91->61
+                  DATE: Thu Mar 30 10:38:41 IST 2017
+                  SOURCE: /home/wdd/Desktop/TicketStore/app/views/index.scala.html
+                  HASH: 6bca75c34485dbc4ac6278876782d0fcfa7b1762
+                  MATRIX: 756->1|876->26|903->28|939->56|978->58|1010->64|1750->777|1765->783|1824->821|1949->919|1964->925|2009->949|2264->1177|2279->1183|2338->1221|2462->1318|2477->1324|2522->1348|2689->1488|2704->1494|2763->1532|2887->1629|2902->1635|2947->1659|3116->1801|3131->1807|3190->1845|3314->1942|3329->1948|3374->1972|4116->2684
+                  LINES: 27->1|32->1|33->2|33->2|33->2|35->4|49->18|49->18|49->18|51->20|51->20|51->20|57->26|57->26|57->26|59->28|59->28|59->28|64->33|64->33|64->33|66->35|66->35|66->35|71->40|71->40|71->40|73->42|73->42|73->42|92->61
                   -- GENERATED --
               */
           

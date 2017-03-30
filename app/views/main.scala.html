@@ -4,7 +4,7 @@
  * two arguments, a `String` for the title of the page and an `Html`
  * object to insert into the body of the page.
  *@
-@(title: String)(content: Html)
+@(title: String,user:models.users.User)(content: Html)
 
 <!DOCTYPE HTML>
 <title>@title</title>
@@ -42,9 +42,15 @@
                 </div>
                 <!--/Search Bar-->
                 <div class="nav navbar-nav navbar-right" id="nav-buttons">
-                    <a href="@routes.HomeController.cart()" class="btn btn-success btn-circle btn-lg"><i class="glyphicon glyphicon-shopping-cart"></i></a>
-                    <a href="@routes.HomeController.login()" class="btn btn-success btn-lg round"><span class="glyphicon glyphicon-user"></span>Login</a>
-                    <a href="@routes.HomeController.signUp()" class="btn btn-success btn-lg round"><span class="glyphcon glyphicon-pencil"></span>Sign up</a>
+                    @if(user != null){
+                        <a href="@routes.HomeController.cart()" class="btn btn-success btn-circle btn-lg"><i class="glyphicon glyphicon-shopping-cart"></i></a>
+                        <a href="@routes.LoginController.logout()" class="btn btn-success btn-lg round"><span class="glyphcon glyphicon-pencil"></span>LOGOUT</a>
+                        <a href="@routes.HomeController.cart()" class="btn btn-success btn-circle btn-lg"><i class="glyphicon glyphicon-shopping-cart"></i></a>
+
+                    }else{
+                        <a href="@routes.LoginController.login()" class="btn btn-success btn-circle btn-lg"><i class="glyphicon glyphicon-shopping-cart"></i>Login</a>
+                        <a href="@routes.HomeController.signUp()" class="btn btn-success btn-lg round"><span class="glyphcon glyphicon-pencil"></span>Sign up</a>
+                    }
                 </div>
             </div>
         </div>

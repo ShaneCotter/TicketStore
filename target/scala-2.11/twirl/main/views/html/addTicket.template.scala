@@ -24,17 +24,17 @@ import play.mvc.Http.Context.Implicit._
      object addTicket_Scope1 {
 import helper._
 
-class addTicket extends BaseScalaTemplate[play.twirl.api.HtmlFormat.Appendable,Format[play.twirl.api.HtmlFormat.Appendable]](play.twirl.api.HtmlFormat) with play.twirl.api.Template1[Form[models.Ticket],play.twirl.api.HtmlFormat.Appendable] {
+class addTicket extends BaseScalaTemplate[play.twirl.api.HtmlFormat.Appendable,Format[play.twirl.api.HtmlFormat.Appendable]](play.twirl.api.HtmlFormat) with play.twirl.api.Template2[Form[models.Ticket],models.users.User,play.twirl.api.HtmlFormat.Appendable] {
 
   /**/
-  def apply/*3.2*/(addTicketForm: Form[models.Ticket]):play.twirl.api.HtmlFormat.Appendable = {
+  def apply/*3.2*/(addTicketForm: Form[models.Ticket],user: models.users.User):play.twirl.api.HtmlFormat.Appendable = {
     _display_ {
       {
 
 
-Seq[Any](format.raw/*3.38*/("""
+Seq[Any](format.raw/*3.62*/("""
 
-"""),_display_(/*5.2*/main("Add Ticket")/*5.20*/ {_display_(Seq[Any](format.raw/*5.22*/("""
+"""),_display_(/*5.2*/main("Add Ticket",user)/*5.25*/ {_display_(Seq[Any](format.raw/*5.27*/("""
 
 
 """),format.raw/*8.1*/("""<div class="row">
@@ -62,9 +62,9 @@ Seq[Any](format.raw/*3.38*/("""
     }
   }
 
-  def render(addTicketForm:Form[models.Ticket]): play.twirl.api.HtmlFormat.Appendable = apply(addTicketForm)
+  def render(addTicketForm:Form[models.Ticket],user:models.users.User): play.twirl.api.HtmlFormat.Appendable = apply(addTicketForm,user)
 
-  def f:((Form[models.Ticket]) => play.twirl.api.HtmlFormat.Appendable) = (addTicketForm) => apply(addTicketForm)
+  def f:((Form[models.Ticket],models.users.User) => play.twirl.api.HtmlFormat.Appendable) = (addTicketForm,user) => apply(addTicketForm,user)
 
   def ref: this.type = this
 
@@ -78,10 +78,10 @@ Seq[Any](format.raw/*3.38*/("""
 object addTicket extends addTicket_Scope0.addTicket_Scope1.addTicket
               /*
                   -- GENERATED --
-                  DATE: Tue Mar 28 21:01:59 BST 2017
-                  SOURCE: C:/Users/Jay/Desktop/TicketStore/app/views/addTicket.scala.html
-                  HASH: f10bc50a39ccee484f38f2df60f1632ef3ff97e9
-                  MATRIX: 814->21|945->57|975->62|1001->80|1040->82|1072->88|1208->197|1309->288|1349->289|1397->310|1508->399|1554->418|1661->503|1707->522|1807->601|1855->621|2047->786|2062->792|2106->815|2238->917
+                  DATE: Thu Mar 30 10:43:16 IST 2017
+                  SOURCE: /home/wdd/Desktop/TicketStore/app/views/addTicket.scala.html
+                  HASH: bf9c1f99a6c7fbdf9868b4501206c7655ee4f518
+                  MATRIX: 832->19|987->79|1015->82|1046->105|1085->107|1114->110|1247->216|1348->307|1388->308|1434->327|1545->416|1590->434|1697->519|1742->537|1842->616|1888->634|2077->796|2092->802|2136->825|2261->920
                   LINES: 30->3|35->3|37->5|37->5|37->5|40->8|43->11|43->11|43->11|45->13|45->13|46->14|46->14|47->15|47->15|49->17|52->20|52->20|52->20|59->27
                   -- GENERATED --
               */

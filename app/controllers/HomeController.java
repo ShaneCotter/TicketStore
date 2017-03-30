@@ -1,6 +1,7 @@
 package controllers;
 
 import controllers.*;
+import models.users.User;
 import play.mvc.*;
 import play.api.Environment;
 import play.data.*;
@@ -22,17 +23,17 @@ public class HomeController extends Controller {
     }
 
     public Result index() {
-        return ok(index.render());
+        return ok(index.render(getUserFromSession()));
     }
 
     public Result aboutUs() {
-        return ok(aboutUs.render());
+        return ok(aboutUs.render(getUserFromSession()));
     }
 
     public Result addEvent() {
 
         Form<Event> addEventForm = formFactory.form(Event.class);
-        return ok(addEvent.render(addEventForm));
+        return ok(addEvent.render(addEventForm,getUserFromSession()));
     }
 
     public Result addEventSubmit(){
@@ -41,7 +42,7 @@ public class HomeController extends Controller {
 
         if(newEventForm.hasErrors()){
 
-            return badRequest(addEvent.render(newEventForm));
+            return badRequest(addEvent.render(newEventForm,getUserFromSession()));
         }
 
         Event newEvent = newEventForm.get();
@@ -63,15 +64,15 @@ public class HomeController extends Controller {
     }
 
     public Result cart() {
-        return ok(cart.render());
+        return ok(cart.render(getUserFromSession()));
     }
 
     public Result checkout() {
-        return ok(checkout.render());
+        return ok(checkout.render(getUserFromSession()));
     }
 
     public Result contact() {
-        return ok(contact.render());
+        return ok(contact.render(getUserFromSession()));
     }
 
     public Result events() {
@@ -79,26 +80,23 @@ public class HomeController extends Controller {
         // Get list of events
         List<Event> eventsList = Event.findAll();
         // Render the list events view, passing parameters
-        return ok(events.render(eventsList));
+        return ok(events.render(eventsList,getUserFromSession()));
     }
 
     public Result eventTicket() {
-        return ok(eventTicket.render());
+        return ok(eventTicket.render(getUserFromSession()));
     }
 
-    public Result login() {
-        return ok(login.render());
-    }
 
     public Result signUp() {
-        return ok(signUp.render());
+        return ok(signUp.render(getUserFromSession()));
     }
 //////////////////////////////////////////////////////////////////////////////////////////
     public Result addTicket() {
 
         Form<Ticket> addTicketForm = formFactory.form(Ticket.class);
 
-        return ok(addTicket.render(addTicketForm));
+        return ok(addTicket.render(addTicketForm,getUserFromSession()));
 
     }
 
@@ -107,7 +105,7 @@ public class HomeController extends Controller {
         Form<Ticket> newTicketForm = formFactory.form(Ticket.class).bindFromRequest();
 
         if(newTicketForm.hasErrors()){
-            return badRequest(addTicket.render(newTicketForm));
+            return badRequest(addTicket.render(newTicketForm,getUserFromSession()));
         }
 
         Ticket newTicket = newTicketForm.get();
@@ -126,5 +124,9 @@ public class HomeController extends Controller {
         flash("success","Ticket has been deleted");
 
         return redirect(routes.HomeController.eventTicket());
+    }
+
+    private User getUserFromSession(){
+        return User.getUserById(session().get("email"));
     }
 }

@@ -4,6 +4,7 @@
 
 # An example controller showing a sample home page
 GET     /                           controllers.HomeController.index
+POST    /loginSubmit                controllers.LoginController.loginSubmit()
 GET     /aboutus                    controllers.HomeController.aboutUs
 GET     /addevent                   controllers.HomeController.addEvent
 GET     /cart                       controllers.HomeController.cart
@@ -11,9 +12,11 @@ GET     /checkout                   controllers.HomeController.checkout
 GET     /contact                    controllers.HomeController.contact
 GET     /events                     controllers.HomeController.events
 GET     /eventticket                controllers.HomeController.eventTicket
-GET     /login                      controllers.HomeController.login
+GET     /login                      controllers.LoginController.login
 GET     /signup                     controllers.HomeController.signUp
 GET     /addticket                  controllers.HomeController.addTicket
+GET     /logout                     controllers.LoginController.logout
+
 
 POST    /addTicketSubmit             controllers.HomeController.addTicketSubmit
 
