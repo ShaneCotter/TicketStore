@@ -30,12 +30,16 @@ public class HomeController extends Controller {
         return ok(aboutUs.render(getUserFromSession()));
     }
 
+    @Security.Authenticated(Secured.class)
+    @Transactional
     public Result addEvent() {
 
         Form<Event> addEventForm = formFactory.form(Event.class);
         return ok(addEvent.render(addEventForm,getUserFromSession()));
     }
 
+    @Security.Authenticated(Secured.class)
+    @Transactional
     public Result addEventSubmit(){
 
         Form<Event> newEventForm = formFactory.form(Event.class).bindFromRequest();
@@ -54,6 +58,8 @@ public class HomeController extends Controller {
         return redirect(controllers.routes.HomeController.events());
     }
 
+    @Security.Authenticated(Secured.class)
+    @Transactional
     public Result deleteEvent(Long id){
 
         Event.find.ref(id).delete();
@@ -63,10 +69,13 @@ public class HomeController extends Controller {
         return redirect(routes.HomeController.events());
     }
 
+
     public Result cart() {
         return ok(cart.render(getUserFromSession()));
     }
 
+    @Security.Authenticated(Secured.class)
+    @Transactional
     public Result checkout() {
         return ok(checkout.render(getUserFromSession()));
     }
@@ -87,11 +96,12 @@ public class HomeController extends Controller {
         return ok(eventTicket.render(getUserFromSession()));
     }
 
-
     public Result signUp() {
         return ok(signUp.render(getUserFromSession()));
     }
 //////////////////////////////////////////////////////////////////////////////////////////
+    @Security.Authenticated(Secured.class)
+    @Transactional
     public Result addTicket() {
 
         Form<Ticket> addTicketForm = formFactory.form(Ticket.class);
@@ -100,6 +110,8 @@ public class HomeController extends Controller {
 
     }
 
+    @Security.Authenticated(Secured.class)
+    @Transactional
     public Result addTicketSubmit(){
 
         Form<Ticket> newTicketForm = formFactory.form(Ticket.class).bindFromRequest();
@@ -117,6 +129,8 @@ public class HomeController extends Controller {
         return redirect(controllers.routes.HomeController.index());
     }
 
+    @Security.Authenticated(Secured.class)
+    @Transactional
     public Result deleteTicket(Long id){
 
         Event.find.ref(id).delete();
