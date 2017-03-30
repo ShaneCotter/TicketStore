@@ -31,6 +31,7 @@ public class HomeController extends Controller {
     }
 
     @Security.Authenticated(Secured.class)
+    @With(AuthAdmin.class)
     @Transactional
     public Result addEvent() {
 
@@ -39,6 +40,7 @@ public class HomeController extends Controller {
     }
 
     @Security.Authenticated(Secured.class)
+    @With(AuthAdmin.class)
     @Transactional
     public Result addEventSubmit(){
 
@@ -59,6 +61,7 @@ public class HomeController extends Controller {
     }
 
     @Security.Authenticated(Secured.class)
+    @With(AuthAdmin.class)
     @Transactional
     public Result deleteEvent(Long id){
 
@@ -101,6 +104,7 @@ public class HomeController extends Controller {
     }
 //////////////////////////////////////////////////////////////////////////////////////////
     @Security.Authenticated(Secured.class)
+    @With(AuthAdmin.class)
     @Transactional
     public Result addTicket() {
 

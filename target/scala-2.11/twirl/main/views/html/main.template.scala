@@ -75,32 +75,34 @@ Seq[Any](format.raw/*7.55*/("""
                     """),_display_(/*45.22*/if(user != null)/*45.38*/{_display_(Seq[Any](format.raw/*45.39*/("""
                         """),format.raw/*46.25*/("""<a href=""""),_display_(/*46.35*/routes/*46.41*/.HomeController.cart()),format.raw/*46.63*/("""" class="btn btn-success btn-circle btn-lg"><i class="glyphicon glyphicon-shopping-cart"></i></a>
                         <a href=""""),_display_(/*47.35*/routes/*47.41*/.LoginController.logout()),format.raw/*47.66*/("""" class="btn btn-success btn-lg round"><span class="glyphcon glyphicon-pencil"></span>LOGOUT</a>
-
-                    """)))}/*49.22*/else/*49.26*/{_display_(Seq[Any](format.raw/*49.27*/("""
-                        """),format.raw/*50.25*/("""<a href=""""),_display_(/*50.35*/routes/*50.41*/.LoginController.login()),format.raw/*50.65*/("""" class="btn btn-success btn-circle btn-lg"><i class="glyphicon glyphicon-shopping-cart"></i>Login</a>
-                        <a href=""""),_display_(/*51.35*/routes/*51.41*/.HomeController.signUp()),format.raw/*51.65*/("""" class="btn btn-success btn-lg round"><span class="glyphcon glyphicon-pencil"></span>Sign up</a>
-                    """)))}),format.raw/*52.22*/("""
-                """),format.raw/*53.17*/("""</div>
+                        """),_display_(/*48.26*/if(user.getRole.equals("admin"))/*48.58*/ {_display_(Seq[Any](format.raw/*48.60*/("""
+                            """),format.raw/*49.29*/("""<a href=""""),_display_(/*49.39*/routes/*49.45*/.HomeController.addEvent()),format.raw/*49.71*/("""" class="btn btn-success btn-lg round">Add event</a>
+                        """)))}),format.raw/*50.26*/("""
+                    """)))}/*51.22*/else/*51.26*/{_display_(Seq[Any](format.raw/*51.27*/("""
+                        """),format.raw/*52.25*/("""<a href=""""),_display_(/*52.35*/routes/*52.41*/.LoginController.login()),format.raw/*52.65*/("""" class="btn btn-success btn-circle btn-lg"><i class="glyphicon glyphicon-shopping-cart"></i>Login</a>
+                        <a href=""""),_display_(/*53.35*/routes/*53.41*/.HomeController.signUp()),format.raw/*53.65*/("""" class="btn btn-success btn-lg round"><span class="glyphcon glyphicon-pencil"></span>Sign up</a>
+                    """)))}),format.raw/*54.22*/("""
+                """),format.raw/*55.17*/("""</div>
             </div>
         </div>
         <div id="container">
             <div class="row">
                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" id="nav-bottom">
-                    <a href=""""),_display_(/*59.31*/routes/*59.37*/.HomeController.index),format.raw/*59.58*/("""">HOME</a>
-                    <a href=""""),_display_(/*60.31*/routes/*60.37*/.HomeController.events),format.raw/*60.59*/("""">EVENTS</a>
-                    <a href=""""),_display_(/*61.31*/routes/*61.37*/.HomeController.aboutUs),format.raw/*61.60*/("""">ABOUT US</a>
-                    <a href=""""),_display_(/*62.31*/routes/*62.37*/.HomeController.contact),format.raw/*62.60*/("""">CONTACT US</a>
+                    <a href=""""),_display_(/*61.31*/routes/*61.37*/.HomeController.index),format.raw/*61.58*/("""">HOME</a>
+                    <a href=""""),_display_(/*62.31*/routes/*62.37*/.HomeController.events),format.raw/*62.59*/("""">EVENTS</a>
+                    <a href=""""),_display_(/*63.31*/routes/*63.37*/.HomeController.aboutUs),format.raw/*63.60*/("""">ABOUT US</a>
+                    <a href=""""),_display_(/*64.31*/routes/*64.37*/.HomeController.contact),format.raw/*64.60*/("""">CONTACT US</a>
                 </div>
             </div>
         </div>
     </div>
 
-        """),_display_(/*68.10*/content),format.raw/*68.17*/("""
+        """),_display_(/*70.10*/content),format.raw/*70.17*/("""
 
-"""),format.raw/*70.1*/("""<div class="container" id = "footer">
+"""),format.raw/*72.1*/("""<div class="container" id = "footer">
         <div class="row">
             <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 pull-left">
-                <a href=""""),_display_(/*73.27*/routes/*73.33*/.HomeController.index()),format.raw/*73.56*/(""""><h2>TC <span>EVENTS</h2></a>
+                <a href=""""),_display_(/*75.27*/routes/*75.33*/.HomeController.index()),format.raw/*75.56*/(""""><h2>TC <span>EVENTS</h2></a>
             </div>
             <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6" id="icon div">
                 <a href="#"><i class="fa fa-3x fa-fw fa-instagram text-inverse pull-right" id="icon"></i></a>
@@ -137,11 +139,11 @@ Seq[Any](format.raw/*7.55*/("""
 object main extends main_Scope0.main
               /*
                   -- GENERATED --
-                  DATE: Thu Mar 30 11:35:44 IST 2017
+                  DATE: Thu Mar 30 12:51:55 IST 2017
                   SOURCE: /home/wdd/webapps/TicketStore/app/views/main.scala.html
-                  HASH: 2d89259e698e34899941ef35634c41f254b737d4
-                  MATRIX: 1020->260|1168->313|1196->315|1246->339|1272->344|1372->417|1387->423|1450->465|2570->1558|2585->1564|2629->1587|3567->2498|3592->2514|3631->2515|3684->2540|3721->2550|3736->2556|3779->2578|3938->2710|3953->2716|3999->2741|4137->2860|4150->2864|4189->2865|4242->2890|4279->2900|4294->2906|4339->2930|4503->3067|4518->3073|4563->3097|4713->3216|4758->3233|5001->3449|5016->3455|5058->3476|5126->3517|5141->3523|5184->3545|5254->3588|5269->3594|5313->3617|5385->3662|5400->3668|5444->3691|5566->3786|5594->3793|5623->3795|5812->3957|5827->3963|5871->3986
-                  LINES: 32->7|37->7|39->9|40->10|40->10|44->14|44->14|44->14|59->29|59->29|59->29|75->45|75->45|75->45|76->46|76->46|76->46|76->46|77->47|77->47|77->47|79->49|79->49|79->49|80->50|80->50|80->50|80->50|81->51|81->51|81->51|82->52|83->53|89->59|89->59|89->59|90->60|90->60|90->60|91->61|91->61|91->61|92->62|92->62|92->62|98->68|98->68|100->70|103->73|103->73|103->73
+                  HASH: e3e4283897ace059a857d681ee0007cf2c7aca40
+                  MATRIX: 1020->260|1168->313|1196->315|1246->339|1272->344|1372->417|1387->423|1450->465|2570->1558|2585->1564|2629->1587|3567->2498|3592->2514|3631->2515|3684->2540|3721->2550|3736->2556|3779->2578|3938->2710|3953->2716|3999->2741|4148->2863|4189->2895|4229->2897|4286->2926|4323->2936|4338->2942|4385->2968|4494->3046|4535->3068|4548->3072|4587->3073|4640->3098|4677->3108|4692->3114|4737->3138|4901->3275|4916->3281|4961->3305|5111->3424|5156->3441|5399->3657|5414->3663|5456->3684|5524->3725|5539->3731|5582->3753|5652->3796|5667->3802|5711->3825|5783->3870|5798->3876|5842->3899|5964->3994|5992->4001|6021->4003|6210->4165|6225->4171|6269->4194
+                  LINES: 32->7|37->7|39->9|40->10|40->10|44->14|44->14|44->14|59->29|59->29|59->29|75->45|75->45|75->45|76->46|76->46|76->46|76->46|77->47|77->47|77->47|78->48|78->48|78->48|79->49|79->49|79->49|79->49|80->50|81->51|81->51|81->51|82->52|82->52|82->52|82->52|83->53|83->53|83->53|84->54|85->55|91->61|91->61|91->61|92->62|92->62|92->62|93->63|93->63|93->63|94->64|94->64|94->64|100->70|100->70|102->72|105->75|105->75|105->75
                   -- GENERATED --
               */
           

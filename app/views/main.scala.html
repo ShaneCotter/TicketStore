@@ -45,7 +45,9 @@
                     @if(user != null){
                         <a href="@routes.HomeController.cart()" class="btn btn-success btn-circle btn-lg"><i class="glyphicon glyphicon-shopping-cart"></i></a>
                         <a href="@routes.LoginController.logout()" class="btn btn-success btn-lg round"><span class="glyphcon glyphicon-pencil"></span>LOGOUT</a>
-
+                        @if(user.getRole.equals("admin")) {
+                            <a href="@routes.HomeController.addEvent()" class="btn btn-success btn-lg round">Add event</a>
+                        }
                     }else{
                         <a href="@routes.LoginController.login()" class="btn btn-success btn-circle btn-lg"><i class="glyphicon glyphicon-shopping-cart"></i>Login</a>
                         <a href="@routes.HomeController.signUp()" class="btn btn-success btn-lg round"><span class="glyphcon glyphicon-pencil"></span>Sign up</a>

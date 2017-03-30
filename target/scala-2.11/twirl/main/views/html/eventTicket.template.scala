@@ -171,7 +171,7 @@ Seq[Any](format.raw/*3.27*/("""
 object eventTicket extends eventTicket_Scope0.eventTicket_Scope1.eventTicket
               /*
                   -- GENERATED --
-                  DATE: Thu Mar 30 11:34:08 IST 2017
+                  DATE: Thu Mar 30 12:35:31 IST 2017
                   SOURCE: /home/wdd/webapps/TicketStore/app/views/eventTicket.scala.html
                   HASH: 8d096bf19bf5f7273499ca7b560f7a4de4b0ac6f
                   MATRIX: 818->19|938->44|970->51|1006->79|1045->81|1077->86|3478->2460|3493->2466|3541->2493|4294->3219|4309->3225|4359->3254|5551->4417|5581->4418|5623->4431|5692->4472|5722->4473|5755->4478
