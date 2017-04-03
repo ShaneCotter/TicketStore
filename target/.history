@@ -55,3 +55,19 @@ exit
 clean
 run
 exit
+run
+h2-browser
+run
+h2-browser
+run
+h2-browser
+run
+h2-browser
+run
+activator clean
+clean
+run
+activator clean 
+exit
+h2-browser
+run

@@ -17,59 +17,56 @@ public class Ticket extends Model {
 
 
     @Id
-    private Long ticketID;
-
-    // Foreign Key
-    private Long eventID;
+    private Long ticket_id;
 
 
     @Constraints.Required
-    private String ticketType;
+    private String ticket_type;
 
     @Constraints.Required
     private int quantity;
-
-    private int qty;
 
 
     @Constraints.Required
     private double price;
 
 
+
+
     public Ticket() {
     }
 
-    public Ticket(Long ticketID, Long eventID, String ticketType, int quantity, double price) {
-        this.ticketID = ticketID;
-        this.eventID = eventID;
-        this.ticketType = ticketType;
+    public Ticket(Long ticketID, String ticketType, int quantity, double price) {
+        this.ticket_id = ticketID;
+//        this.event_id = eventID;
+        this.ticket_type = ticketType;
         this.quantity = quantity;
     }
 
 
     public Long getTicketID() {
-        return ticketID;
+        return ticket_id;
     }
 
     public void setTicketID(Long ticketID) {
-        this.ticketID = ticketID;
+        this.ticket_id = ticketID;
     }
 
 
-    public Long getEventID() {
-        return eventID;
-    }
-
-    public void setEventID(Long eventID) {
-        this.eventID = eventID;
-    }
+//    public Long getEventID() {
+//        return event_id;
+//    }
+//
+//    public void setEventID(Long eventID) {
+//        this.event_id = eventID;
+//    }
 
     public String getTicketType() {
-        return ticketType;
+        return ticket_type;
     }
 
     public void setTicketType(String ticketType) {
-        this.ticketType = ticketType;
+        this.ticket_type = ticketType;
     }
 
 
@@ -81,19 +78,19 @@ public class Ticket extends Model {
         this.quantity = quantity;
     }
 
-    public int getQty() {
-        return qty;
-    }
-
-    public void setQty(int qty) {
-        this.qty = qty;
-    }
-
     public double getPrice() {
         return price;
     }
 
     public void setPrice(double price) {
         this.price = price;
+    }
+
+    public static Finder<Long,Ticket> find = new Finder<Long, Ticket>(Ticket.class);
+
+    // Find all Events in the database
+    // Filter event name
+    public static List<Ticket> findAll() {
+        return Ticket.find.all();
     }
 }

@@ -96,7 +96,9 @@ public class HomeController extends Controller {
     }
 
     public Result eventTicket() {
-        return ok(eventTicket.render(getUserFromSession()));
+        List<Ticket> ticketList = Ticket.findAll();
+
+        return ok(eventTicket.render(ticketList,getUserFromSession()));
     }
 
     public Result signUp() {

@@ -40,7 +40,7 @@ Seq[Any](format.raw/*3.62*/("""
 """),format.raw/*8.1*/("""<div class="row">
 <div class="col-lg-12 well" id="addEvent">
          <h4>Add Tickets</h4>
-              """),_display_(/*11.16*/form(action = routes.HomeController.addTicket(), 'class -> "form-horizontal",'role->"form")/*11.107*/{_display_(Seq[Any](format.raw/*11.108*/("""
+              """),_display_(/*11.16*/form(action = routes.HomeController.addTicketSubmit(), 'class -> "form-horizontal",'role->"form")/*11.113*/{_display_(Seq[Any](format.raw/*11.114*/("""
 
                 """),_display_(/*13.18*/inputText(addTicketForm("ticketType"), '_label -> "TicketType", 'class -> "form-control")),format.raw/*13.107*/("""
                 """),_display_(/*14.18*/inputText(addTicketForm("quantity"), '_label -> "Quantity", 'class -> "form-control")),format.raw/*14.103*/("""
@@ -78,10 +78,10 @@ Seq[Any](format.raw/*3.62*/("""
 object addTicket extends addTicket_Scope0.addTicket_Scope1.addTicket
               /*
                   -- GENERATED --
-                  DATE: Thu Mar 30 12:35:31 IST 2017
-                  SOURCE: /home/wdd/webapps/TicketStore/app/views/addTicket.scala.html
-                  HASH: bf9c1f99a6c7fbdf9868b4501206c7655ee4f518
-                  MATRIX: 832->19|987->79|1015->82|1046->105|1085->107|1114->110|1247->216|1348->307|1388->308|1434->327|1545->416|1590->434|1697->519|1742->537|1842->616|1888->634|2077->796|2092->802|2136->825|2261->920
+                  DATE: Mon Apr 03 12:34:01 BST 2017
+                  SOURCE: C:/Users/Eileen/Desktop/TicketStore/app/views/addTicket.scala.html
+                  HASH: 8211a5dbc24bd58c263a1999bae7fc613d88ec97
+                  MATRIX: 832->21|987->81|1017->86|1048->109|1087->111|1119->117|1255->226|1362->323|1402->324|1450->345|1561->434|1607->453|1714->538|1760->557|1860->636|1908->656|2100->821|2115->827|2159->850|2291->952
                   LINES: 30->3|35->3|37->5|37->5|37->5|40->8|43->11|43->11|43->11|45->13|45->13|46->14|46->14|47->15|47->15|49->17|52->20|52->20|52->20|59->27
                   -- GENERATED --
               */

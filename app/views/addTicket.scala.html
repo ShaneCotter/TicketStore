@@ -8,7 +8,7 @@
 <div class="row">
 <div class="col-lg-12 well" id="addEvent">
          <h4>Add Tickets</h4>
-              @form(action = routes.HomeController.addTicket(), 'class -> "form-horizontal",'role->"form"){
+              @form(action = routes.HomeController.addTicketSubmit(), 'class -> "form-horizontal",'role->"form"){
 
                 @inputText(addTicketForm("ticketType"), '_label -> "TicketType", 'class -> "form-control")
                 @inputText(addTicketForm("quantity"), '_label -> "Quantity", 'class -> "form-control")

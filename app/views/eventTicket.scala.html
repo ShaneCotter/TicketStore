@@ -1,3 +1,5 @@
+@(tickets: List[models.Ticket],user: models.users.User)
+
 @import helper._
 
 @(user: models.users.User)
@@ -21,45 +23,6 @@
 			<p>Description here : </p>
 		  </div>
 		  </div>
-		  
-		  <div class="row well" id="seating">
-            <div class="col-lg-8 col-md-8 col-sm-6 col-xs-12">
-                <img src="assets/img/seatingplan.png" class="img-responsive" alt="seatingplan">
-            </div>
-            <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12" id = "seatingform">
-            <h2 class = "text-center greentext">Choose your Tickets</h2>
-                <div class="form-group">
-                    <label for="seat">Seating Block</label>
-                    <select class="form-control" id = "seatingselect">
-                        <option>A €50.00</option>
-                        <option>B</option>
-                        <option>C</option>
-                        <option>D</option>
-                        <option>E</option>
-                        <option>F</option>
-                        <option>G</option>
-                        <option>H</option>
-                        <option>I</option>
-                        <option>J</option>
-                        <option>K</option>
-                        <option>L</option>
-                        <option>M</option>
-                        <option>N</option>
-                        <option>O</option>
-                        <option>P</option>
-                    </select>
-                </div>
-                <div class="form-group">
-                    <label for="quantity">Quantity</label>
-                    <input type="number" name="quantiy" value="0" min="1" max="99" step="1">
-                </div>
-
-                 <div class="form-group">
-                   
-                    <input type="submit" class = "form-control btn-success" value = "Add To Cart">
-                </div>
-            </div>
-        </div>
 
           <div class="row well" id="tickets">
             <div class="col-lg-8 col-md-8 col-sm-6 col-xs-12">
@@ -78,38 +41,36 @@
                 </div>
                 <br>
 
-            <div id="products" class="row list-group">
-                        <!-- Start of for loop - Fo reach e in events add a row -->
+                <div id="products" class="row list-group">
+                @for(t <- tickets) {
+                    <div class="item  col-xs-4 col-lg-4">
+                        <div class="thumbnail">
 
-                        <a href="@routes.HomeController.eventTicket()">
-                            <div class="item  col-xs-4 col-lg-4">
-                                <div class="thumbnail">
+                            <h1>@t.getTicketType</h1>
+                            <div class="caption">
+                                <p class="group inner list-group-item-text">
+                                    @t.getPrice
 
-                                    <img class="group list-group-image" src="http://placehold.it/400x250/000/fff" alt="" >
-                                    <div class="caption">    
-                                        <p class="group inner list-group-item-text">
-
-                                        </p>
-                                        <div class="row">
-                                            <div class="col-xs-12 col-md-6">
-                                           
+                                </p>
+                                <div class="row">
+                                    <div class="col-xs-12 col-md-6">
 
 
-                                                    <span class="glyphicon glyphicon-trash"></span>
-                                                </a>
-                                            </div>
+                                        <a href="@routes.HomeController.deleteTicket(t.getTicketID)" class = "btn-xs btn-danger"
+                                        onclick="return confirmDel();">
+                                            <span class="glyphicon glyphicon-trash"></span></a>
 
-
-                                        </div>
                                     </div>
+
+
                                 </div>
                             </div>
-                        </a>
-                    <!-- End of for loop -->
+                        </div>
+                    </div>
+                </div>
+          </div>
+        }
 
-            </div>
-            </div>
-        </div>
 
    <script>
         function confirmDel(){

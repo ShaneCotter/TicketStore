@@ -154,7 +154,7 @@ a:hover, a:visited, a:link, a:active {
 
 #products a{
 		transition: all .2s ease-in-out;
-    color:white;
+    color:black;
 	text-align:center;
 	font-family: Montserrat, sans-serif;	
 }
