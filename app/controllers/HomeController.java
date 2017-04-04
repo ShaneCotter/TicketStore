@@ -102,9 +102,18 @@ public class HomeController extends Controller {
     }
 
     public Result signUp() {
-        return ok(signUp.render(getUserFromSession()));
+        Form<User> addUserForm = formFactory.form(User.class);
+        return ok(signUp.render(addUserForm,getUserFromSession()));
     }
-//////////////////////////////////////////////////////////////////////////////////////////
+
+    public Result signUpSubmit(){
+        Form<User> newUser = formFactory.form(User.class).bindFromRequest();
+        User user = newUser.get();
+        user.setRole("user");
+        user.save();
+        return redirect(routes.LoginController.login());
+    }
+
     @Security.Authenticated(Secured.class)
     @With(AuthAdmin.class)
     @Transactional

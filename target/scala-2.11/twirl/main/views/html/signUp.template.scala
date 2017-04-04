@@ -21,85 +21,46 @@ import play.data._
 import play.api.data.Field
 import play.mvc.Http.Context.Implicit._
 
-class signUp extends BaseScalaTemplate[play.twirl.api.HtmlFormat.Appendable,Format[play.twirl.api.HtmlFormat.Appendable]](play.twirl.api.HtmlFormat) with play.twirl.api.Template1[models.users.User,play.twirl.api.HtmlFormat.Appendable] {
+     object signUp_Scope1 {
+import helper._
+
+class signUp extends BaseScalaTemplate[play.twirl.api.HtmlFormat.Appendable,Format[play.twirl.api.HtmlFormat.Appendable]](play.twirl.api.HtmlFormat) with play.twirl.api.Template2[Form[models.users.User],models.users.User,play.twirl.api.HtmlFormat.Appendable] {
 
   /**/
-  def apply/*1.2*/(user: models.users.User):play.twirl.api.HtmlFormat.Appendable = {
+  def apply/*3.2*/(addUserForm: Form[models.users.User], user: models.users.User):play.twirl.api.HtmlFormat.Appendable = {
     _display_ {
       {
 
 
-Seq[Any](format.raw/*1.27*/("""
-"""),_display_(/*2.2*/main("Welcome to Play",user)/*2.30*/ {_display_(Seq[Any](format.raw/*2.32*/("""
+Seq[Any](format.raw/*3.65*/("""
 
-    """),format.raw/*4.5*/("""<!--..CONTENT..-->
+"""),_display_(/*5.2*/main("Sign Up",user)/*5.22*/ {_display_(Seq[Any](format.raw/*5.24*/("""
+
+    """),format.raw/*7.5*/("""<!--..CONTENT..-->
     <div class="container-fluid" id="content">
+
         <div class="row">
             <div class="col-lg-12 well" id="signup">
-                <form action="#">
-                            <div class="col-sm-6 form-group">
-                                <label>First Name</label>
-                                <input type="text" placeholder="Enter First Name Here.." class="form-control">
-                            </div>
-                            <div class="col-sm-6 form-group">
-                                <label>Last Name</label>
-                                <input type="text" placeholder="Enter Last Name Here.." class="form-control">
-                            </div>
-                        
-                      
-                        <div class="form-group">
-                            <label>Address</label>
-                            <input type="text" placeholder="Address Line 1" class="form-control">
-                            <br>
-                            <input type="text" placeholder="Address Line 2" class="form-control">
-                            <br>
-                            <input type="text" placeholder="Address Line 3" class="form-control">
-                            <br>
-                        </div>
-                        <div class="row">
-                            <div class="col-sm-4 form-group">
-                                <label>City</label>
-                                <input type="text" placeholder="Enter City Name Here.." class="form-control">
-                            </div>
-                            <div class="col-sm-4 form-group">
-                                <label>County</label>
-                                <input type="text" placeholder="Enter County Name Here.." class="form-control">
-                            </div>
-                            <div class="col-sm-4 form-group">
-                                <label>Phone Number</label>
-                                <input type="text" placeholder="Enter Phone Number Here..." class="form-control">
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label>Account Security Question : What is your mother's maiden name ? </label>
-                            <input type="text" placeholder="Enter Security question answer Here.." class="form-control">
-                        </div>
-						<div class="form-group">
-                            <label>Email Address </label>
-                            <input type="text" placeholder="Enter email here.." class="form-control">
-                        </div>
-                        <div class="form-group">
-                            <label>Password</label>
-                            <input type="text" placeholder="Enter Password.." class="form-control">
-                        </div>
-                        <div class="form-group">
-                            <label>Password</label>
-                            <input type="text" placeholder="Re-Enter Password.." class="form-control">
-                        </div>
-                        <button type="button" class="btn btn-lg btn-success">Submit</button>
-						 </form>
+                <form action=""""),_display_(/*12.32*/routes/*12.38*/.HomeController.signUpSubmit()),format.raw/*12.68*/("""" name = "addUserForm">
+                    <input type="text" name = "email" placeholder="Email">
+                    <input type="text" name = "name" placeholder="Name">
+                    <input type="password" name = "password" placeholder="Password">
+                    <div class="actions">
+                        <input type="submit" value="Sign Up" class="btn btn-success">
                     </div>
+                </form>
             </div>
-			</div>
-    
-   """)))}))
+        </div>
+    </div>
+
+""")))}))
       }
     }
   }
 
-  def render(user:models.users.User): play.twirl.api.HtmlFormat.Appendable = apply(user)
+  def render(addUserForm:Form[models.users.User],user:models.users.User): play.twirl.api.HtmlFormat.Appendable = apply(addUserForm,user)
 
-  def f:((models.users.User) => play.twirl.api.HtmlFormat.Appendable) = (user) => apply(user)
+  def f:((Form[models.users.User],models.users.User) => play.twirl.api.HtmlFormat.Appendable) = (addUserForm,user) => apply(addUserForm,user)
 
   def ref: this.type = this
 
@@ -107,16 +68,17 @@ Seq[Any](format.raw/*1.27*/("""
 
 
 }
+}
 
 /**/
-object signUp extends signUp_Scope0.signUp
+object signUp extends signUp_Scope0.signUp_Scope1.signUp
               /*
                   -- GENERATED --
-                  DATE: Mon Apr 03 12:13:42 BST 2017
-                  SOURCE: C:/Users/Eileen/Desktop/TicketStore/app/views/signUp.scala.html
-                  HASH: bc93f5fb94db76f5d7af4d1b0afb8628b9518b32
-                  MATRIX: 758->1|878->26|906->29|942->57|981->59|1015->67
-                  LINES: 27->1|32->1|33->2|33->2|33->2|35->4
+                  DATE: Tue Apr 04 11:02:53 IST 2017
+                  SOURCE: /home/wdd/webapps/TicketStore/app/views/signUp.scala.html
+                  HASH: 3d7de5dcf7388a3a3c807a32e121f8379b3b61c6
+                  MATRIX: 827->19|985->82|1013->85|1041->105|1080->107|1112->113|1316->290|1331->296|1382->326
+                  LINES: 30->3|35->3|37->5|37->5|37->5|39->7|44->12|44->12|44->12
                   -- GENERATED --
               */
           

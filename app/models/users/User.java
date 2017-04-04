@@ -14,7 +14,6 @@ public class User extends Model {
     @Id
     @Constraints.Required
     private String email;
-    @Constraints.Required
     private String role;
     @Constraints.Required
     private String name;
@@ -64,11 +63,11 @@ public class User extends Model {
         this.role = role;
     }
 
-    public String getUsername() {
+    public String getName() {
         return name;
     }
 
-    public void setUsername(String name) {
+    public void setName(String name) {
         this.name = name;
     }
 

@@ -893,3 +893,9 @@ name                          varchar(255),
 password                      varchar(255),
 constraint pk_user primary key (email)
 ) [42101-192]
+2017-04-04 11:05:28 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "INSERT INTO USER (EMAIL, ROLE, NAME, PASSWORD) VALUES (MATTHEW@[*]TC.IE, ADMIN, MATTHEW, MATTHEW) "; expected "., (, [, ::, *, /, %, +, -, ||, ~, !~, NOT, LIKE, REGEXP, IS, IN, BETWEEN, AND, OR, ,, )"; SQL statement:
+insert into user (email, role, name, password) values (matthew@tc.ie, admin, Matthew, matthew) [42001-192]
+2017-04-04 11:05:35 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "INSERT INTO USER (EMAIL, ROLE, NAME, PASSWORD) VALUES (MATTHEW@[*]TC.IE, ADMIN, MATTHEW, MATTHEW) "; expected "., (, [, ::, *, /, %, +, -, ||, ~, !~, NOT, LIKE, REGEXP, IS, IN, BETWEEN, AND, OR, ,, )"; SQL statement:
+insert into user (email, role, name, password) values (matthew@tc.ie, admin, Matthew, matthew) [42001-192]
