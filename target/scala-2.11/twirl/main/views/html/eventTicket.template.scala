@@ -32,65 +32,57 @@ import helper._
 Seq[Any](format.raw/*1.56*/("""
 
 """),format.raw/*4.1*/("""
-"""),_display_(/*5.2*/(user: models.users.User)),format.raw/*5.27*/("""
 
-
-
-
-
-"""),_display_(/*11.2*/main("Welcome to Play",user)/*11.30*/ {_display_(Seq[Any](format.raw/*11.32*/("""
-    """),format.raw/*12.5*/("""<!--..CONTENT..-->
+"""),_display_(/*6.2*/main("Tickets",user)/*6.22*/ {_display_(Seq[Any](format.raw/*6.24*/("""
+    """),format.raw/*7.5*/("""<!--..CONTENT..-->
     <div class="container" id = "seatingplans">
         <div class="row well">
-		  <div class="col-lg-5 col-md-5 col-sm-6 col-xs-12">
-		    <img src="http://placehold.it/400x250/000/fff" alt="">
-		  </div>
-		  
-		  <div class="col-lg-7 col-md-7 col-sm-6 col-xs-12" id = "eventInfo">
-		    <h1>Event name</h1>
-			<p>Location here : </p>
-			<p>Date/time here : </p>
-			<p>Description here : </p>
-		  </div>
-		  </div>
+            <div class="col-lg-5 col-md-5 col-sm-6 col-xs-12">
+                <img src="http://placehold.it/400x250/000/fff" alt="">
+            </div>
 
-          <div class="row well" id="tickets">
+            <div class="col-lg-7 col-md-7 col-sm-6 col-xs-12" id = "eventInfo">
+                <h1>Event name</h1>
+                <p>Location here : </p>
+                <p>Date/time here : </p>
+                <p>Description here : </p>
+            </div>
+        </div>
+
+        <div class="row well" id="tickets">
             <div class="col-lg-8 col-md-8 col-sm-6 col-xs-12">
                 <div class="row">
                     <h1>  </h1>
-                    <a href=""""),_display_(/*31.31*/routes/*31.37*/.HomeController.addTicket()),format.raw/*31.64*/("""" class="btn btn-success btn-lg round">Add ticket</a>
+                    """),_display_(/*26.22*/if(user.getRole.equals("admin"))/*26.54*/ {_display_(Seq[Any](format.raw/*26.56*/("""
+                        """),format.raw/*27.25*/("""<a href=""""),_display_(/*27.35*/routes/*27.41*/.HomeController.addTicket()),format.raw/*27.68*/("""" class="btn btn-success btn-lg round">Add ticket</a>
+                    """)))}),format.raw/*28.22*/("""
+                    """),format.raw/*29.21*/("""<br>
                     <br>
-                    <br>
-                    <strong>Display</strong>
-
-                    <div class="btn-group">
-                        <a href="#" id="list" class="btn btn-default btn-sm"><span class="glyphicon glyphicon-th-list">
-                        </span>List</a> <a href="#" id="grid" class="btn btn-default btn-sm"><span
-                    class="glyphicon glyphicon-th"></span>Grid</a>
-                    </div>
                 </div>
                 <br>
+                </div>
 
                 <div id="products" class="row list-group">
-                """),_display_(/*45.18*/for(t <- tickets) yield /*45.35*/ {_display_(Seq[Any](format.raw/*45.37*/("""
-                    """),format.raw/*46.21*/("""<div class="item  col-xs-4 col-lg-4">
+                """),_display_(/*36.18*/for(t <- tickets) yield /*36.35*/ {_display_(Seq[Any](format.raw/*36.37*/("""
+                    """),format.raw/*37.21*/("""<div class="item  col-xs-4 col-lg-4">
                         <div class="thumbnail">
 
-                            <h1>"""),_display_(/*49.34*/t/*49.35*/.getTicketType),format.raw/*49.49*/("""</h1>
+                            <h1>"""),_display_(/*40.34*/t/*40.35*/.getTicketType),format.raw/*40.49*/("""</h1>
                             <div class="caption">
                                 <p class="group inner list-group-item-text">
-                                    """),_display_(/*52.38*/t/*52.39*/.getPrice),format.raw/*52.48*/("""
+                                """),_display_(/*43.34*/t/*43.35*/.getPrice),format.raw/*43.44*/("""
 
-                                """),format.raw/*54.33*/("""</p>
+                                """),format.raw/*45.33*/("""</p>
                                 <div class="row">
                                     <div class="col-xs-12 col-md-6">
 
-
-                                        <a href=""""),_display_(/*59.51*/routes/*59.57*/.HomeController.deleteTicket(t.getTicketID)),format.raw/*59.100*/("""" class = "btn-xs btn-danger"
+                                    """),_display_(/*49.38*/if(user.getRole.equals("admin"))/*49.70*/ {_display_(Seq[Any](format.raw/*49.72*/("""
+                                        """),format.raw/*50.41*/("""<a href=""""),_display_(/*50.51*/routes/*50.57*/.HomeController.deleteTicket(t.getTicketID)),format.raw/*50.100*/("""" class = "btn-xs btn-danger"
                                         onclick="return confirmDel();">
                                             <span class="glyphicon glyphicon-trash"></span></a>
+                                    """)))}),format.raw/*53.38*/("""
 
-                                    </div>
+                                    """),format.raw/*55.37*/("""</div>
 
 
                                 </div>
@@ -98,18 +90,18 @@ Seq[Any](format.raw/*1.56*/("""
                         </div>
                     </div>
                 </div>
-          </div>
-        """)))}),format.raw/*72.10*/("""
+            </div>
+            """)))}),format.raw/*64.14*/("""
 
 
-   """),format.raw/*75.4*/("""<script>
-        function confirmDel()"""),format.raw/*76.30*/("""{"""),format.raw/*76.31*/("""
-            """),format.raw/*77.13*/("""return confirm('Are you sure?');
-        """),format.raw/*78.9*/("""}"""),format.raw/*78.10*/("""
-    """),format.raw/*79.5*/("""</script>
+            """),format.raw/*67.13*/("""<script>
+                    function confirmDel()"""),format.raw/*68.42*/("""{"""),format.raw/*68.43*/("""
+                        """),format.raw/*69.25*/("""return confirm('Are you sure?');
+                    """),format.raw/*70.21*/("""}"""),format.raw/*70.22*/("""
+            """),format.raw/*71.13*/("""</script>
 
-        <!--END CONTENT-->
-       """)))}))
+                <!--END CONTENT-->
+""")))}))
       }
     }
   }
@@ -129,11 +121,11 @@ Seq[Any](format.raw/*1.56*/("""
 object eventTicket extends eventTicket_Scope0.eventTicket
               /*
                   -- GENERATED --
-                  DATE: Tue Apr 04 11:02:53 IST 2017
+                  DATE: Tue Apr 04 11:56:54 IST 2017
                   SOURCE: /home/wdd/webapps/TicketStore/app/views/eventTicket.scala.html
-                  HASH: b6e36751f44167365ac05e5a74070ffb37fbc33d
-                  MATRIX: 788->1|952->55|980->74|1007->76|1052->101|1085->108|1122->136|1162->138|1194->143|1862->784|1877->790|1925->817|2580->1445|2613->1462|2653->1464|2702->1485|2849->1605|2859->1606|2894->1620|3091->1790|3101->1791|3131->1800|3193->1834|3396->2010|3411->2016|3476->2059|3932->2484|3965->2490|4031->2528|4060->2529|4101->2542|4169->2583|4198->2584|4230->2589
-                  LINES: 27->1|32->1|34->4|35->5|35->5|41->11|41->11|41->11|42->12|61->31|61->31|61->31|75->45|75->45|75->45|76->46|79->49|79->49|79->49|82->52|82->52|82->52|84->54|89->59|89->59|89->59|102->72|105->75|106->76|106->76|107->77|108->78|108->78|109->79
+                  HASH: bf3d415ebfad8251bc0327fc07b2915d7c1cbdee
+                  MATRIX: 788->1|952->55|980->74|1008->77|1036->97|1075->99|1106->104|1854->825|1895->857|1935->859|1988->884|2025->894|2040->900|2088->927|2194->1002|2243->1023|2444->1197|2477->1214|2517->1216|2566->1237|2713->1357|2723->1358|2758->1372|2951->1538|2961->1539|2991->1548|3053->1582|3242->1744|3283->1776|3323->1778|3392->1819|3429->1829|3444->1835|3509->1878|3775->2113|3841->2151|4068->2347|4111->2362|4189->2412|4218->2413|4271->2438|4352->2491|4381->2492|4422->2505
+                  LINES: 27->1|32->1|34->4|36->6|36->6|36->6|37->7|56->26|56->26|56->26|57->27|57->27|57->27|57->27|58->28|59->29|66->36|66->36|66->36|67->37|70->40|70->40|70->40|73->43|73->43|73->43|75->45|79->49|79->49|79->49|80->50|80->50|80->50|80->50|83->53|85->55|94->64|97->67|98->68|98->68|99->69|100->70|100->70|101->71
                   -- GENERATED --
               */
           

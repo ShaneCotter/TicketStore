@@ -163,6 +163,11 @@ a:hover, a:visited, a:link, a:active {
 	
 }
 
+#adminOptions {
+    float: left;
+    margin-right: .5em;
+    font-family: Montserrat, sans-serif;
+}
 
 #content {
 	width: 80%;
