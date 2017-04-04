@@ -21,6 +21,22 @@ create table event (
 );
 create sequence event_seq;
 
+create table event_category (
+  event_id                      bigint not null,
+  cat_id                        bigint,
+  constraint pk_event_category primary key (event_id)
+);
+create sequence event_category_seq;
+
+create table order_ticket (
+  ticket_id                     bigint not null,
+  order_id                      bigint,
+  qty                           integer,
+  cost                          double,
+  constraint pk_order_ticket primary key (ticket_id)
+);
+create sequence order_ticket_seq;
+
 create table ticket (
   ticket_id                     bigint not null,
   ticket_type                   varchar(255),
@@ -38,22 +54,6 @@ create table user (
   constraint pk_user primary key (email)
 );
 
-create table event_category (
-  event_id                      bigint not null,
-  cat_id                        bigint,
-  constraint pk_event_category primary key (event_id)
-);
-create sequence event_category_seq;
-
-create table order_ticket (
-  ticket_id                     bigint not null,
-  order_id                      bigint,
-  qty                           integer,
-  cost                          double,
-  constraint pk_order_ticket primary key (ticket_id)
-);
-create sequence order_ticket_seq;
-
 
 # --- !Downs
 
@@ -63,14 +63,14 @@ drop sequence if exists category_seq;
 drop table if exists event;
 drop sequence if exists event_seq;
 
-drop table if exists ticket;
-drop sequence if exists ticket_seq;
-
-drop table if exists user;
-
 drop table if exists event_category;
 drop sequence if exists event_category_seq;
 
 drop table if exists order_ticket;
 drop sequence if exists order_ticket_seq;
+
+drop table if exists ticket;
+drop sequence if exists ticket_seq;
+
+drop table if exists user;
 

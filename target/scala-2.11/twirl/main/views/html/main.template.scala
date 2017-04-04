@@ -76,33 +76,34 @@ Seq[Any](format.raw/*7.55*/("""
                         """),format.raw/*46.25*/("""<a href=""""),_display_(/*46.35*/routes/*46.41*/.HomeController.cart()),format.raw/*46.63*/("""" class="btn btn-success btn-circle btn-lg"><i class="glyphicon glyphicon-shopping-cart"></i></a>
                         <a href=""""),_display_(/*47.35*/routes/*47.41*/.LoginController.logout()),format.raw/*47.66*/("""" class="btn btn-success btn-lg round"><span class="glyphcon glyphicon-pencil"></span>LOGOUT</a>
                         """),_display_(/*48.26*/if(user.getRole.equals("admin"))/*48.58*/ {_display_(Seq[Any](format.raw/*48.60*/("""
-                            """),format.raw/*49.29*/("""<a href=""""),_display_(/*49.39*/routes/*49.45*/.HomeController.addEvent()),format.raw/*49.71*/("""" class="btn btn-success btn-lg round">Add event</a>
-                        """)))}),format.raw/*50.26*/("""
-                    """)))}/*51.22*/else/*51.26*/{_display_(Seq[Any](format.raw/*51.27*/("""
-                        """),format.raw/*52.25*/("""<a href=""""),_display_(/*52.35*/routes/*52.41*/.LoginController.login()),format.raw/*52.65*/("""" class="btn btn-success btn-circle btn-lg"><i class="glyphicon glyphicon-shopping-cart"></i>Login</a>
-                        <a href=""""),_display_(/*53.35*/routes/*53.41*/.HomeController.signUp()),format.raw/*53.65*/("""" class="btn btn-success btn-lg round"><span class="glyphcon glyphicon-pencil"></span>Sign up</a>
-                    """)))}),format.raw/*54.22*/("""
-                """),format.raw/*55.17*/("""</div>
+                            """),format.raw/*49.29*/("""<a href=""""),_display_(/*49.39*/routes/*49.45*/.HomeController.addEvent()),format.raw/*49.71*/("""" class="btn btn-success btn-lg round"><i class="glyphicon glyphicon-plus"></i>Add event</a>
+                            <a href=""""),_display_(/*50.39*/routes/*50.45*/.HomeController.addTicket()),format.raw/*50.72*/("""" class="btn btn-success btn-lg round"><i class="glyphicon glyphicon-plus"></i>Add ticket</a>
+                        """)))}),format.raw/*51.26*/("""
+                    """)))}/*52.22*/else/*52.26*/{_display_(Seq[Any](format.raw/*52.27*/("""
+                        """),format.raw/*53.25*/("""<a href=""""),_display_(/*53.35*/routes/*53.41*/.LoginController.login()),format.raw/*53.65*/("""" class="btn btn-success btn-circle btn-lg"><i class="glyphicon glyphicon-user"></i>Login</a>
+                        <a href=""""),_display_(/*54.35*/routes/*54.41*/.HomeController.signUp()),format.raw/*54.65*/("""" class="btn btn-success btn-lg round"><span class="glyphcon glyphicon-pencil"></span>Sign up</a>
+                    """)))}),format.raw/*55.22*/("""
+                """),format.raw/*56.17*/("""</div>
             </div>
         </div>
         <div id="container">
             <div class="row">
                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" id="nav-bottom">
-                    <a href=""""),_display_(/*61.31*/routes/*61.37*/.HomeController.index),format.raw/*61.58*/("""">HOME</a>
-                    <a href=""""),_display_(/*62.31*/routes/*62.37*/.HomeController.events),format.raw/*62.59*/("""">EVENTS</a>
-                    <a href=""""),_display_(/*63.31*/routes/*63.37*/.HomeController.aboutUs),format.raw/*63.60*/("""">ABOUT US</a>
-                    <a href=""""),_display_(/*64.31*/routes/*64.37*/.HomeController.contact),format.raw/*64.60*/("""">CONTACT US</a>
+                    <a href=""""),_display_(/*62.31*/routes/*62.37*/.HomeController.index),format.raw/*62.58*/("""">HOME</a>
+                    <a href=""""),_display_(/*63.31*/routes/*63.37*/.HomeController.events),format.raw/*63.59*/("""">EVENTS</a>
+                    <a href=""""),_display_(/*64.31*/routes/*64.37*/.HomeController.aboutUs),format.raw/*64.60*/("""">ABOUT US</a>
+                    <a href=""""),_display_(/*65.31*/routes/*65.37*/.HomeController.contact),format.raw/*65.60*/("""">CONTACT US</a>
                 </div>
             </div>
         </div>
     </div>
 
-        """),_display_(/*70.10*/content),format.raw/*70.17*/("""
+        """),_display_(/*71.10*/content),format.raw/*71.17*/("""
 
-"""),format.raw/*72.1*/("""<div class="container" id = "footer">
+"""),format.raw/*73.1*/("""<div class="container" id = "footer">
         <div class="row">
             <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 pull-left">
-                <a href=""""),_display_(/*75.27*/routes/*75.33*/.HomeController.index()),format.raw/*75.56*/(""""><h2>TC <span>EVENTS</h2></a>
+                <a href=""""),_display_(/*76.27*/routes/*76.33*/.HomeController.index()),format.raw/*76.56*/(""""><h2>TC <span>EVENTS</h2></a>
             </div>
             <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6" id="icon div">
                 <a href="#"><i class="fa fa-3x fa-fw fa-instagram text-inverse pull-right" id="icon"></i></a>
@@ -139,11 +140,11 @@ Seq[Any](format.raw/*7.55*/("""
 object main extends main_Scope0.main
               /*
                   -- GENERATED --
-                  DATE: Mon Apr 03 12:13:42 BST 2017
-                  SOURCE: C:/Users/Eileen/Desktop/TicketStore/app/views/main.scala.html
-                  HASH: 0718bbc3468f1943dc9c9174817ec81f2af0df5a
-                  MATRIX: 1025->266|1173->319|1203->323|1254->348|1280->353|1384->430|1399->436|1462->478|2597->1586|2612->1592|2656->1615|3610->2542|3635->2558|3674->2559|3728->2585|3765->2595|3780->2601|3823->2623|3983->2756|3998->2762|4044->2787|4194->2910|4235->2942|4275->2944|4333->2974|4370->2984|4385->2990|4432->3016|4542->3095|4584->3118|4597->3122|4636->3123|4690->3149|4727->3159|4742->3165|4787->3189|4952->3327|4967->3333|5012->3357|5163->3477|5209->3495|5458->3717|5473->3723|5515->3744|5584->3786|5599->3792|5642->3814|5713->3858|5728->3864|5772->3887|5845->3933|5860->3939|5904->3962|6032->4063|6060->4070|6091->4074|6283->4239|6298->4245|6342->4268
-                  LINES: 32->7|37->7|39->9|40->10|40->10|44->14|44->14|44->14|59->29|59->29|59->29|75->45|75->45|75->45|76->46|76->46|76->46|76->46|77->47|77->47|77->47|78->48|78->48|78->48|79->49|79->49|79->49|79->49|80->50|81->51|81->51|81->51|82->52|82->52|82->52|82->52|83->53|83->53|83->53|84->54|85->55|91->61|91->61|91->61|92->62|92->62|92->62|93->63|93->63|93->63|94->64|94->64|94->64|100->70|100->70|102->72|105->75|105->75|105->75
+                  DATE: Tue Apr 04 11:08:32 IST 2017
+                  SOURCE: /home/wdd/webapps/TicketStore/app/views/main.scala.html
+                  HASH: 401f600a74b95ad259c7e7a97bbbbd9aecb8291f
+                  MATRIX: 1020->260|1168->313|1196->315|1246->339|1272->344|1372->417|1387->423|1450->465|2570->1558|2585->1564|2629->1587|3567->2498|3592->2514|3631->2515|3684->2540|3721->2550|3736->2556|3779->2578|3938->2710|3953->2716|3999->2741|4148->2863|4189->2895|4229->2897|4286->2926|4323->2936|4338->2942|4385->2968|4543->3099|4558->3105|4606->3132|4756->3251|4797->3273|4810->3277|4849->3278|4902->3303|4939->3313|4954->3319|4999->3343|5154->3471|5169->3477|5214->3501|5364->3620|5409->3637|5652->3853|5667->3859|5709->3880|5777->3921|5792->3927|5835->3949|5905->3992|5920->3998|5964->4021|6036->4066|6051->4072|6095->4095|6217->4190|6245->4197|6274->4199|6463->4361|6478->4367|6522->4390
+                  LINES: 32->7|37->7|39->9|40->10|40->10|44->14|44->14|44->14|59->29|59->29|59->29|75->45|75->45|75->45|76->46|76->46|76->46|76->46|77->47|77->47|77->47|78->48|78->48|78->48|79->49|79->49|79->49|79->49|80->50|80->50|80->50|81->51|82->52|82->52|82->52|83->53|83->53|83->53|83->53|84->54|84->54|84->54|85->55|86->56|92->62|92->62|92->62|93->63|93->63|93->63|94->64|94->64|94->64|95->65|95->65|95->65|101->71|101->71|103->73|106->76|106->76|106->76
                   -- GENERATED --
               */
           
