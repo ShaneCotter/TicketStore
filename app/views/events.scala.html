@@ -57,10 +57,7 @@
 
                 <!--Main content--->
             <div class="col-sm-9">
-                <div class="row">
-                    <h1> Events </h1>
-                    <br>
-                    <br>
+                <div class="row"><br>
                     <strong>Display</strong>
 
                     <div class="btn-group">
@@ -84,18 +81,21 @@
                                         @e.getTitle</h4>
                                         <p class="group inner list-group-item-text">
                                             @e.getEventName
+                                            <br>
                                             @e.getLocation
+                                            <br>
                                             @e.getDate
+                                            <br>
+                                            Starting from €
                                         </p>
                                         <div class="row">
                                             <div class="col-xs-12 col-md-6">
-                                                <p class="lead">
-                                Starting from €95.00</p>
-
-                                                <a href="@routes.HomeController.deleteEvent(e.getEventID)" class = "btn-xs btn-danger"
-                                                onclick="return confirmDel();">
-                                                    <span class="glyphicon glyphicon-trash"></span>
-                                                </a>
+                                                @if(user.getRole.equals("admin")) {
+                                                    <a href="@routes.HomeController.deleteEvent(e.getEventID)" class = "btn btn-danger"
+                                                    onclick="return confirmDel();">
+                                                        <span class="glyphicon glyphicon-trash"></span>
+                                                    </a>
+                                                }
                                             </div>
 
 
@@ -104,6 +104,7 @@
                                 </div>
                             </div>
                         </a>
+
                     } <!-- End of for loop -->
 
 

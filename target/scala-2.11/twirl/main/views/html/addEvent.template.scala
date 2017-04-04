@@ -50,17 +50,18 @@ Seq[Any](format.raw/*3.60*/("""
 				"""),_display_(/*18.6*/inputText(addEventForm("location"), '_label -> "Location", 'class -> "form-control")),format.raw/*18.90*/("""
 				"""),_display_(/*19.6*/inputText(addEventForm("date"), '_label -> "Date", 'class -> "form-control")),format.raw/*19.82*/("""
 				"""),_display_(/*20.6*/inputText(addEventForm("title"), '_label -> "Title", 'class -> "form-control")),format.raw/*20.84*/("""
+				"""),format.raw/*21.5*/("""<label>Event Image</label>
+				<input class="btn btn-success" type="file" name="upload">
+				"""),_display_(/*23.6*/inputText(addEventForm("id"), '_label -> "", 'hidden -> "hidden")),format.raw/*23.71*/("""
 
-				"""),_display_(/*22.6*/inputText(addEventForm("id"), '_label -> "", 'hidden -> "hidden")),format.raw/*22.71*/("""
-
-				"""),format.raw/*24.5*/("""<br>
+				"""),format.raw/*25.5*/("""<br>
 
 				<div class="actions">
 					<input type="submit" value="Add Product" class="btn btn-success">
 
 
-					"""),format.raw/*30.112*/("""
-					"""),format.raw/*31.6*/("""<a href=""""),_display_(/*31.16*/routes/*31.22*/.HomeController.events()),format.raw/*31.46*/("""" class="btn btn-warning">Cancel</a>
+					"""),format.raw/*31.112*/("""
+					"""),format.raw/*32.6*/("""<a href=""""),_display_(/*32.16*/routes/*32.22*/.HomeController.events()),format.raw/*32.46*/("""" class="btn btn-warning">Cancel</a>
 
 
 				</div>
@@ -68,7 +69,7 @@ Seq[Any](format.raw/*3.60*/("""
 		</div>
 <!--END CONTENT-->
 
-""")))}),format.raw/*39.2*/("""
+""")))}),format.raw/*40.2*/("""
 """)))}))
       }
     }
@@ -90,11 +91,11 @@ Seq[Any](format.raw/*3.60*/("""
 object addEvent extends addEvent_Scope0.addEvent_Scope1.addEvent
               /*
                   -- GENERATED --
-                  DATE: Tue Apr 04 11:02:53 IST 2017
+                  DATE: Tue Apr 04 11:58:17 IST 2017
                   SOURCE: /home/wdd/webapps/TicketStore/app/views/addEvent.scala.html
-                  HASH: 0940f9194c0610d6b4a981d7006d2df7a1fd035a
-                  MATRIX: 828->19|981->77|1009->80|1039->102|1078->104|1105->105|1318->292|1425->389|1465->390|1498->397|1600->478|1632->484|1729->560|1761->566|1866->650|1898->656|1995->732|2027->738|2126->816|2159->823|2245->888|2278->894|2417->1110|2450->1116|2487->1126|2502->1132|2547->1156|2667->1246
-                  LINES: 30->3|35->3|37->5|37->5|37->5|38->6|46->14|46->14|46->14|48->16|48->16|49->17|49->17|50->18|50->18|51->19|51->19|52->20|52->20|54->22|54->22|56->24|62->30|63->31|63->31|63->31|63->31|71->39
+                  HASH: b2f4a60745f0279dc9d7554582e3c4052dcc08cf
+                  MATRIX: 828->19|981->77|1009->80|1039->102|1078->104|1105->105|1318->292|1425->389|1465->390|1498->397|1600->478|1632->484|1729->560|1761->566|1866->650|1898->656|1995->732|2027->738|2126->816|2158->821|2278->915|2364->980|2397->986|2536->1202|2569->1208|2606->1218|2621->1224|2666->1248|2786->1338
+                  LINES: 30->3|35->3|37->5|37->5|37->5|38->6|46->14|46->14|46->14|48->16|48->16|49->17|49->17|50->18|50->18|51->19|51->19|52->20|52->20|53->21|55->23|55->23|57->25|63->31|64->32|64->32|64->32|64->32|72->40
                   -- GENERATED --
               */
           

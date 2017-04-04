@@ -46,8 +46,13 @@
                         <a href="@routes.HomeController.cart()" class="btn btn-success btn-circle btn-lg"><i class="glyphicon glyphicon-shopping-cart"></i></a>
                         <a href="@routes.LoginController.logout()" class="btn btn-success btn-lg round"><span class="glyphcon glyphicon-pencil"></span>LOGOUT</a>
                         @if(user.getRole.equals("admin")) {
-                            <a href="@routes.HomeController.addEvent()" class="btn btn-success btn-lg round"><i class="glyphicon glyphicon-plus"></i>Add event</a>
-                            <a href="@routes.HomeController.addTicket()" class="btn btn-success btn-lg round"><i class="glyphicon glyphicon-plus"></i>Add ticket</a>
+                            <div class="dropdown" id="adminOptions">
+                                <button class="btn btn-success btn-circle btn-lg" data-toggle="dropdown">Admin Options</button>
+                                <ul class="dropdown-menu">
+                                    <li><a href="@routes.HomeController.addEvent()">Add event</a></li>
+                                    <li><a href="@routes.HomeController.addTicket()">Add ticket</a></li>
+                                </ul>
+                            </div>
                         }
                     }else{
                         <a href="@routes.LoginController.login()" class="btn btn-success btn-circle btn-lg"><i class="glyphicon glyphicon-user"></i>Login</a>

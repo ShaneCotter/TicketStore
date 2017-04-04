@@ -2,44 +2,35 @@
 
 @import helper._
 
-@(user: models.users.User)
 
-
-
-
-
-@main("Welcome to Play",user) {
+@main("Tickets",user) {
     <!--..CONTENT..-->
     <div class="container" id = "seatingplans">
         <div class="row well">
-		  <div class="col-lg-5 col-md-5 col-sm-6 col-xs-12">
-		    <img src="http://placehold.it/400x250/000/fff" alt="">
-		  </div>
-		  
-		  <div class="col-lg-7 col-md-7 col-sm-6 col-xs-12" id = "eventInfo">
-		    <h1>Event name</h1>
-			<p>Location here : </p>
-			<p>Date/time here : </p>
-			<p>Description here : </p>
-		  </div>
-		  </div>
+            <div class="col-lg-5 col-md-5 col-sm-6 col-xs-12">
+                <img src="http://placehold.it/400x250/000/fff" alt="">
+            </div>
 
-          <div class="row well" id="tickets">
+            <div class="col-lg-7 col-md-7 col-sm-6 col-xs-12" id = "eventInfo">
+                <h1>Event name</h1>
+                <p>Location here : </p>
+                <p>Date/time here : </p>
+                <p>Description here : </p>
+            </div>
+        </div>
+
+        <div class="row well" id="tickets">
             <div class="col-lg-8 col-md-8 col-sm-6 col-xs-12">
                 <div class="row">
                     <h1>  </h1>
-                    <a href="@routes.HomeController.addTicket()" class="btn btn-success btn-lg round">Add ticket</a>
+                    @if(user.getRole.equals("admin")) {
+                        <a href="@routes.HomeController.addTicket()" class="btn btn-success btn-lg round">Add ticket</a>
+                    }
                     <br>
                     <br>
-                    <strong>Display</strong>
-
-                    <div class="btn-group">
-                        <a href="#" id="list" class="btn btn-default btn-sm"><span class="glyphicon glyphicon-th-list">
-                        </span>List</a> <a href="#" id="grid" class="btn btn-default btn-sm"><span
-                    class="glyphicon glyphicon-th"></span>Grid</a>
-                    </div>
                 </div>
                 <br>
+                </div>
 
                 <div id="products" class="row list-group">
                 @for(t <- tickets) {
@@ -49,16 +40,17 @@
                             <h1>@t.getTicketType</h1>
                             <div class="caption">
                                 <p class="group inner list-group-item-text">
-                                    @t.getPrice
+                                @t.getPrice
 
                                 </p>
                                 <div class="row">
                                     <div class="col-xs-12 col-md-6">
 
-
+                                    @if(user.getRole.equals("admin")) {
                                         <a href="@routes.HomeController.deleteTicket(t.getTicketID)" class = "btn-xs btn-danger"
                                         onclick="return confirmDel();">
                                             <span class="glyphicon glyphicon-trash"></span></a>
+                                    }
 
                                     </div>
 
@@ -68,15 +60,15 @@
                         </div>
                     </div>
                 </div>
-          </div>
-        }
+            </div>
+            }
 
 
-   <script>
-        function confirmDel(){
-            return confirm('Are you sure?');
-        }
-    </script>
+            <script>
+                    function confirmDel(){
+                        return confirm('Are you sure?');
+                    }
+            </script>
 
-        <!--END CONTENT-->
-       }
+                <!--END CONTENT-->
+}
