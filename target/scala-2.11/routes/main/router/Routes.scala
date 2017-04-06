@@ -1,7 +1,7 @@
 
 // @GENERATOR:play-routes-compiler
 // @SOURCE:/home/wdd/webapps/TicketStore/conf/routes
-// @DATE:Thu Apr 06 14:23:16 IST 2017
+// @DATE:Thu Apr 06 16:01:40 IST 2017
 
 package router
 
@@ -20,7 +20,7 @@ class Routes(
   HomeController_0: controllers.HomeController,
   // @LINE:7
   LoginController_2: controllers.LoginController,
-  // @LINE:37
+  // @LINE:38
   Assets_1: controllers.Assets,
   val prefix: String
 ) extends GeneratedRouter {
@@ -31,7 +31,7 @@ class Routes(
     HomeController_0: controllers.HomeController,
     // @LINE:7
     LoginController_2: controllers.LoginController,
-    // @LINE:37
+    // @LINE:38
     Assets_1: controllers.Assets
   ) = this(errorHandler, HomeController_0, LoginController_2, Assets_1, "/")
 
@@ -63,6 +63,7 @@ class Routes(
     ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """logout""", """controllers.LoginController.logout"""),
     ("""POST""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """addTicketSubmit""", """controllers.HomeController.addTicketSubmit"""),
     ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """delTicket/""" + "$" + """id<[^/]+>""", """controllers.HomeController.deleteTicket(id:Long)"""),
+    ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """updateTicket/""" + "$" + """id<[^/]+>""", """controllers.HomeController.updateTicket(id:Long)"""),
     ("""POST""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """addEventSubmit""", """controllers.HomeController.addEventSubmit"""),
     ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """delEvent/""" + "$" + """id<[^/]+>""", """controllers.HomeController.deleteEvent(id:Long)"""),
     ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """updateEvent/""" + "$" + """id<[^/]+>""", """controllers.HomeController.updateEvent(id:Long)"""),
@@ -346,11 +347,28 @@ class Routes(
     )
   )
 
-  // @LINE:26
-  private[this] lazy val controllers_HomeController_addEventSubmit16_route = Route("POST",
+  // @LINE:25
+  private[this] lazy val controllers_HomeController_updateTicket16_route = Route("GET",
+    PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("updateTicket/"), DynamicPart("id", """[^/]+""",true)))
+  )
+  private[this] lazy val controllers_HomeController_updateTicket16_invoker = createInvoker(
+    HomeController_0.updateTicket(fakeValue[Long]),
+    HandlerDef(this.getClass.getClassLoader,
+      "router",
+      "controllers.HomeController",
+      "updateTicket",
+      Seq(classOf[Long]),
+      "GET",
+      """""",
+      this.prefix + """updateTicket/""" + "$" + """id<[^/]+>"""
+    )
+  )
+
+  // @LINE:27
+  private[this] lazy val controllers_HomeController_addEventSubmit17_route = Route("POST",
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("addEventSubmit")))
   )
-  private[this] lazy val controllers_HomeController_addEventSubmit16_invoker = createInvoker(
+  private[this] lazy val controllers_HomeController_addEventSubmit17_invoker = createInvoker(
     HomeController_0.addEventSubmit,
     HandlerDef(this.getClass.getClassLoader,
       "router",
@@ -363,11 +381,11 @@ class Routes(
     )
   )
 
-  // @LINE:28
-  private[this] lazy val controllers_HomeController_deleteEvent17_route = Route("GET",
+  // @LINE:29
+  private[this] lazy val controllers_HomeController_deleteEvent18_route = Route("GET",
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("delEvent/"), DynamicPart("id", """[^/]+""",true)))
   )
-  private[this] lazy val controllers_HomeController_deleteEvent17_invoker = createInvoker(
+  private[this] lazy val controllers_HomeController_deleteEvent18_invoker = createInvoker(
     HomeController_0.deleteEvent(fakeValue[Long]),
     HandlerDef(this.getClass.getClassLoader,
       "router",
@@ -380,11 +398,11 @@ class Routes(
     )
   )
 
-  // @LINE:29
-  private[this] lazy val controllers_HomeController_updateEvent18_route = Route("GET",
+  // @LINE:30
+  private[this] lazy val controllers_HomeController_updateEvent19_route = Route("GET",
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("updateEvent/"), DynamicPart("id", """[^/]+""",true)))
   )
-  private[this] lazy val controllers_HomeController_updateEvent18_invoker = createInvoker(
+  private[this] lazy val controllers_HomeController_updateEvent19_invoker = createInvoker(
     HomeController_0.updateEvent(fakeValue[Long]),
     HandlerDef(this.getClass.getClassLoader,
       "router",
@@ -397,11 +415,11 @@ class Routes(
     )
   )
 
-  // @LINE:37
-  private[this] lazy val controllers_Assets_versioned19_route = Route("GET",
+  // @LINE:38
+  private[this] lazy val controllers_Assets_versioned20_route = Route("GET",
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("assets/"), DynamicPart("file", """.+""",false)))
   )
-  private[this] lazy val controllers_Assets_versioned19_invoker = createInvoker(
+  private[this] lazy val controllers_Assets_versioned20_invoker = createInvoker(
     Assets_1.versioned(fakeValue[String], fakeValue[Asset]),
     HandlerDef(this.getClass.getClassLoader,
       "router",
@@ -513,28 +531,34 @@ class Routes(
         controllers_HomeController_deleteTicket15_invoker.call(HomeController_0.deleteTicket(id))
       }
   
-    // @LINE:26
-    case controllers_HomeController_addEventSubmit16_route(params) =>
-      call { 
-        controllers_HomeController_addEventSubmit16_invoker.call(HomeController_0.addEventSubmit)
+    // @LINE:25
+    case controllers_HomeController_updateTicket16_route(params) =>
+      call(params.fromPath[Long]("id", None)) { (id) =>
+        controllers_HomeController_updateTicket16_invoker.call(HomeController_0.updateTicket(id))
       }
   
-    // @LINE:28
-    case controllers_HomeController_deleteEvent17_route(params) =>
-      call(params.fromPath[Long]("id", None)) { (id) =>
-        controllers_HomeController_deleteEvent17_invoker.call(HomeController_0.deleteEvent(id))
+    // @LINE:27
+    case controllers_HomeController_addEventSubmit17_route(params) =>
+      call { 
+        controllers_HomeController_addEventSubmit17_invoker.call(HomeController_0.addEventSubmit)
       }
   
     // @LINE:29
-    case controllers_HomeController_updateEvent18_route(params) =>
+    case controllers_HomeController_deleteEvent18_route(params) =>
       call(params.fromPath[Long]("id", None)) { (id) =>
-        controllers_HomeController_updateEvent18_invoker.call(HomeController_0.updateEvent(id))
+        controllers_HomeController_deleteEvent18_invoker.call(HomeController_0.deleteEvent(id))
       }
   
-    // @LINE:37
-    case controllers_Assets_versioned19_route(params) =>
+    // @LINE:30
+    case controllers_HomeController_updateEvent19_route(params) =>
+      call(params.fromPath[Long]("id", None)) { (id) =>
+        controllers_HomeController_updateEvent19_invoker.call(HomeController_0.updateEvent(id))
+      }
+  
+    // @LINE:38
+    case controllers_Assets_versioned20_route(params) =>
       call(Param[String]("path", Right("/public")), params.fromPath[Asset]("file", None)) { (path, file) =>
-        controllers_Assets_versioned19_invoker.call(Assets_1.versioned(path, file))
+        controllers_Assets_versioned20_invoker.call(Assets_1.versioned(path, file))
       }
   }
 }

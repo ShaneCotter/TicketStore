@@ -119,7 +119,7 @@ Seq[Any](format.raw/*1.27*/("""
 object contact extends contact_Scope0.contact
               /*
                   -- GENERATED --
-                  DATE: Thu Apr 06 14:20:04 IST 2017
+                  DATE: Thu Apr 06 16:01:40 IST 2017
                   SOURCE: /home/wdd/webapps/TicketStore/app/views/contact.scala.html
                   HASH: 34729a36e0bf99fd267944a918d724ab018352be
                   MATRIX: 760->1|880->26|907->28|943->56|982->58|1009->59

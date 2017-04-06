@@ -1,7 +1,7 @@
 
 // @GENERATOR:play-routes-compiler
 // @SOURCE:/home/wdd/webapps/TicketStore/conf/routes
-// @DATE:Thu Apr 06 14:23:16 IST 2017
+// @DATE:Thu Apr 06 16:01:40 IST 2017
 
 import play.api.mvc.{ QueryStringBindable, PathBindable, Call, JavascriptLiteral }
 import play.core.routing.{ HandlerDef, ReverseRouteContext, queryString, dynamicString }
@@ -26,7 +26,7 @@ package controllers {
       Call("GET", _prefix + { _defaultPrefix } + "cart")
     }
   
-    // @LINE:28
+    // @LINE:29
     def deleteEvent(id:Long): Call = {
       import ReverseRouteContext.empty
       Call("GET", _prefix + { _defaultPrefix } + "delEvent/" + implicitly[PathBindable[Long]].unbind("id", id))
@@ -44,7 +44,7 @@ package controllers {
       Call("GET", _prefix + { _defaultPrefix } + "eventticket" + queryString(List(if(event == 0L) None else Some(implicitly[QueryStringBindable[Long]].unbind("event", event)))))
     }
   
-    // @LINE:29
+    // @LINE:30
     def updateEvent(id:Long): Call = {
       import ReverseRouteContext.empty
       Call("GET", _prefix + { _defaultPrefix } + "updateEvent/" + implicitly[PathBindable[Long]].unbind("id", id))
@@ -74,6 +74,12 @@ package controllers {
       Call("POST", _prefix + { _defaultPrefix } + "addTicketSubmit")
     }
   
+    // @LINE:25
+    def updateTicket(id:Long): Call = {
+      import ReverseRouteContext.empty
+      Call("GET", _prefix + { _defaultPrefix } + "updateTicket/" + implicitly[PathBindable[Long]].unbind("id", id))
+    }
+  
     // @LINE:13
     def events(cat:Long = 0L): Call = {
       import ReverseRouteContext.empty
@@ -92,7 +98,7 @@ package controllers {
       Call("GET", _prefix + { _defaultPrefix } + "checkout")
     }
   
-    // @LINE:26
+    // @LINE:27
     def addEventSubmit(): Call = {
       import ReverseRouteContext.empty
       Call("POST", _prefix + { _defaultPrefix } + "addEventSubmit")
@@ -145,14 +151,14 @@ package controllers {
   
   }
 
-  // @LINE:37
+  // @LINE:38
   class ReverseAssets(_prefix: => String) {
     def _defaultPrefix: String = {
       if (_prefix.endsWith("/")) "" else "/"
     }
 
   
-    // @LINE:37
+    // @LINE:38
     def versioned(file:Asset): Call = {
       implicit val _rrc = new ReverseRouteContext(Map(("path", "/public")))
       Call("GET", _prefix + { _defaultPrefix } + "assets/" + implicitly[PathBindable[Asset]].unbind("file", file))

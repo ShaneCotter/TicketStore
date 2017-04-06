@@ -179,11 +179,26 @@ public class HomeController extends Controller {
     @Transactional
     public Result deleteTicket(Long id){
 
-        Event.find.ref(id).delete();
+        Ticket.find.ref(id).delete();
 
         flash("success","Ticket has been deleted");
 
         return redirect(routes.HomeController.eventTicket(id));
+    }
+
+    @Security.Authenticated(Secured.class)
+    @Transactional
+    public Result updateTicket(Long id){
+        Ticket t;
+        Form<Ticket> ticketForm;
+
+        try {
+            t = Ticket.find.byId(id);
+            ticketForm = formFactory.form(Ticket.class).fill(t);
+        } catch (Exception ex) {
+            return badRequest("error");
+        }
+        return ok(addTicket.render(ticketForm, getUserFromSession()));
     }
 
     private User getUserFromSession(){

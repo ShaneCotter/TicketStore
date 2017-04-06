@@ -98,3 +98,6 @@ clean
 run
 h2-browser
 run
+exit
+clean
+run
