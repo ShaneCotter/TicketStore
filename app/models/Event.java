@@ -17,21 +17,31 @@ public class Event extends Model {
 
     @Constraints.Required
     private String eventName;
+
     @Constraints.Required
     private String time;
+
     @Constraints.Required
     private String location;
+
     @Constraints.Required
     private String date;
+
     @Constraints.Required
     private String title; // Artist?
+
+    @OneToMany(mappedBy="event", cascade=CascadeType.ALL)
+    private List<Ticket> tickets;
+
+    @ManyToOne
+    private Category category;
 
 
     public Event() {}
 
     public Event(Long eventID, String eventName, String time, String location, String date, String title) {
-        this.eventID = eventID;
-        this.eventName = eventName;
+        this.setEventID(eventID);
+        this.setEventName(eventName);
         this.time = time;
         this.location = location;
         this.date = date;
@@ -93,5 +103,36 @@ public class Event extends Model {
     // Filter event name
     public static List<Event> findAll() {
         return Event.find.all();
+    }
+
+    public List<Ticket> getTickets() {
+        return tickets;
+    }
+
+    public void setTickets(List<Ticket> tickets) {
+        this.tickets = tickets;
+    }
+
+    public static Finder<Long,Event> findT = new Finder<Long,Event>(Event.class);
+
+    public static List<Event> findAllT() {
+        return Event.find.where().orderBy("eventName asc").findList();
+    }
+
+    public static Map<String,String> options() {
+        LinkedHashMap<String,String> options = new LinkedHashMap<>();
+
+        for(Event e: Event.findAllT()){
+            options.put(e.getEventID().toString(),e.getEventName());
+        }
+        return options;
+    }
+
+    public Category getCategory() {
+        return category;
+    }
+
+    public void setCategory(Category category) {
+        this.category = category;
     }
 }

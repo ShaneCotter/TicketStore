@@ -10,8 +10,8 @@ GET     /addevent                   controllers.HomeController.addEvent
 GET     /cart                       controllers.HomeController.cart
 GET     /checkout                   controllers.HomeController.checkout
 GET     /contact                    controllers.HomeController.contact
-GET     /events                     controllers.HomeController.events
-GET     /eventticket                controllers.HomeController.eventTicket
+GET     /events                     controllers.HomeController.events(cat:Long ?=0L)
+GET     /eventticket                controllers.HomeController.eventTicket(event:Long ?=0L)
 GET     /login                      controllers.LoginController.login
 GET     /signup                     controllers.HomeController.signUp
 GET     /signUpSubmit               controllers.HomeController.signUpSubmit()

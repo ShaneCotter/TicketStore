@@ -30,15 +30,15 @@ public class Ticket extends Model {
     @Constraints.Required
     private double price;
 
-
-
+    @ManyToOne
+    private Event event;
 
     public Ticket() {
     }
 
     public Ticket(Long ticketID, String ticketType, int quantity, double price) {
         this.ticket_id = ticketID;
-//        this.event_id = eventID;
+//      this.event_id = eventID;
         this.ticket_type = ticketType;
         this.quantity = quantity;
     }

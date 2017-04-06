@@ -78,3 +78,19 @@ run
 exit
 run
 exit
+h2-browser
+run
+h2-browser
+run
+clean
+h2-browser
+run
+clean
+run
+activator run
+exit
+h2-browser
+run
+h2-broswer
+h2-browser
+run

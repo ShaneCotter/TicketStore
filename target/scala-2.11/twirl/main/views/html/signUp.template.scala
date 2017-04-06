@@ -74,10 +74,10 @@ Seq[Any](format.raw/*3.65*/("""
 object signUp extends signUp_Scope0.signUp_Scope1.signUp
               /*
                   -- GENERATED --
-                  DATE: Tue Apr 04 11:02:53 IST 2017
-                  SOURCE: /home/wdd/webapps/TicketStore/app/views/signUp.scala.html
-                  HASH: 3d7de5dcf7388a3a3c807a32e121f8379b3b61c6
-                  MATRIX: 827->19|985->82|1013->85|1041->105|1080->107|1112->113|1316->290|1331->296|1382->326
+                  DATE: Thu Apr 06 13:09:04 BST 2017
+                  SOURCE: C:/Users/Eileen/Desktop/TicketStore/app/views/signUp.scala.html
+                  HASH: e68964ecc0f7f625ca6609f0e7c8d70c6a961698
+                  MATRIX: 827->21|985->84|1015->89|1043->109|1082->111|1116->119|1325->301|1340->307|1391->337
                   LINES: 30->3|35->3|37->5|37->5|37->5|39->7|44->12|44->12|44->12
                   -- GENERATED --
               */

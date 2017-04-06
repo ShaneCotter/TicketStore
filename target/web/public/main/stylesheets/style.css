@@ -163,6 +163,19 @@ a:hover, a:visited, a:link, a:active {
 	
 }
 
+#categories{
+    padding-top:1.5em;
+    padding-bottom:1.5em;
+}
+
+#catTitle h3{
+    text-align:center;
+}
+
+#sidebarnav{
+    text-align:center;
+}
+
 #adminOptions {
     float: left;
     margin-right: .5em;

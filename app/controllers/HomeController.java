@@ -57,7 +57,7 @@ public class HomeController extends Controller {
 
         flash("success", "Event " + newEvent.getEventName() + " has been created. Do not forget to add Tickets");
 
-        return redirect(controllers.routes.HomeController.events());
+        return redirect(controllers.routes.HomeController.events(0));
     }
 
     @Security.Authenticated(Secured.class)
@@ -69,7 +69,7 @@ public class HomeController extends Controller {
 
         flash("success","Event has been deleted");
 
-        return redirect(routes.HomeController.events());
+        return redirect(routes.HomeController.events(0));
     }
 
 
@@ -87,16 +87,25 @@ public class HomeController extends Controller {
         return ok(contact.render(getUserFromSession()));
     }
 
-    public Result events() {
+    public Result events(Long cat) {
 
         // Get list of events
-        List<Event> eventsList = Event.findAll();
-        // Render the list events view, passing parameters
-        return ok(events.render(eventsList,getUserFromSession()));
+        List<Event> eventsList = new ArrayList<Event>();
+        // Render the list events view, passing
+        List<Category> categoriesList = Category.findAll();
+
+        if(cat == 0){
+            eventsList = Event.findAll();
+        }
+        else{
+            eventsList = Category.find.ref(cat).getEvents();
+        }
+
+        return ok(events.render(eventsList,categoriesList,getUserFromSession()));
     }
 
-    public Result eventTicket() {
-        List<Ticket> ticketList = Ticket.findAll();
+    public Result eventTicket(Long event) {
+        List<Ticket> ticketList = Event.find.ref(event).getTickets();
 
         return ok(eventTicket.render(ticketList,getUserFromSession()));
     }
@@ -152,7 +161,7 @@ public class HomeController extends Controller {
 
         flash("success","Ticket has been deleted");
 
-        return redirect(routes.HomeController.eventTicket());
+        return redirect(routes.HomeController.eventTicket(id));
     }
 
     private User getUserFromSession(){

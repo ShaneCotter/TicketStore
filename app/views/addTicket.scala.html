@@ -10,6 +10,10 @@
          <h4>Add Tickets</h4>
               @form(action = routes.HomeController.addTicketSubmit(), 'class -> "form-horizontal",'role->"form"){
 
+                @select(
+                    addTicketForm("event.eventID"),options(Event.options),'_label -> "Event", '_default -> ".. Choose an Event ..",
+                    '_showConstraints -> false, 'class -> "form-control"
+                )
                 @inputText(addTicketForm("ticketType"), '_label -> "TicketType", 'class -> "form-control")
                 @inputText(addTicketForm("quantity"), '_label -> "Quantity", 'class -> "form-control")
                 @inputText(addTicketForm("price"), '_label -> "Price", 'class -> "form-control")

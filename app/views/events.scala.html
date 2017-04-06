@@ -1,4 +1,4 @@
-@(events: List[models.Event],user: models.users.User)
+@(events: List[models.Event], categories: List[models.Category], user: models.users.User)
 
 @main("Events",user) {
 
@@ -20,30 +20,17 @@
                         </div>
                         <div class="navbar-collapse collapse sidebar-navbar-collapse">
                             <ul class="nav navbar-nav">
-                                <li class="active"><a href="#"><h3>EVENT CATEGORIES</h3></a></li>
-                                <li><a href="#"><h4>Music</h4></a></li>
-                                <li><a href="#"><h4>Sports</h4></a></li>
-                                <li><a href="#"><h4>Comedy</h4></a></li>
-                                <li><a href="#"><h4>Theatre</h4></a></li>
-                                <li><a href="#"><h4>Racing</h4></a></li>
-                                <li class="active"><a href="#"><h3>BY COUNTRY</h3></a></li>
-                                <li><a href="#"><h4>Ireland</h4></a></li>
-                                <li><a href="#"><h4>UK</h4></a></li>
+                                <h3 class="greentext ">EVENT CATEGORIES</h3>
+                                <div class="list-group">
 
-                                <li class="active"><a href="#"><h3>BY MONTH</h3></a></li>
+                                    <a href="@routes.HomeController.events(0)" class="list-group-item">All categories</a>
 
-                                <li><a href="#"><h4>January</h4></a></li>
-                                <li><a href="#"><h4>February</h4></a></li>
-                                <li><a href="#"><h4>March</h4></a></li>
-                                <li><a href="#"><h4>April</h4></a></li>
-                                <li><a href="#"><h4>May</h4></a></li>
-                                <li><a href="#"><h4>June</h4></a></li>
-                                <li><a href="#"><h4>July</h4></a></li>
-                                <li><a href="#"><h4>August</h4></a></li>
-                                <li><a href="#"><h4>September</h4></a></li>
-                                <li><a href="#"><h4>October</h4></a></li>
-                                <li><a href="#"><h4>November</h4></a></li>
-                                <li><a href="#"><h4>December</h4></a></li>
+                                @for(c <- categories) {
+                                   <a href="@routes.HomeController.events(c.getCatID)" class="list-group-item" id="categories">@c.getName
+                                        <span class="badge">@c.getEvents.size()</span>
+                                   </a>
+                                }
+                                </div>
                             </ul>
                             <br>
                             <br>
@@ -71,7 +58,7 @@
                 <div id="products" class="row list-group">
                         <!-- Start of for loop - Fo reach e in events add a row -->
                     @for(e <- events) {
-                        <a href="@routes.HomeController.eventTicket()">
+                        <a href="@routes.HomeController.eventTicket(e.getEventID)">
                             <div class="item  col-xs-4 col-lg-4">
                                 <div class="thumbnail">
 
@@ -86,6 +73,7 @@
                                             <br>
                                             @e.getDate
                                             <br>
+                                            @e.getCategory.getName
                                             Starting from €
                                         </p>
                                         <div class="row">

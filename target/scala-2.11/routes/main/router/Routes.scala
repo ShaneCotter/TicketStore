@@ -1,7 +1,7 @@
 
 // @GENERATOR:play-routes-compiler
-// @SOURCE:/home/wdd/webapps/TicketStore/conf/routes
-// @DATE:Tue Apr 04 11:02:52 IST 2017
+// @SOURCE:C:/Users/Eileen/Desktop/TicketStore/conf/routes
+// @DATE:Thu Apr 06 13:09:03 BST 2017
 
 package router
 
@@ -54,8 +54,8 @@ class Routes(
     ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """cart""", """controllers.HomeController.cart"""),
     ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """checkout""", """controllers.HomeController.checkout"""),
     ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """contact""", """controllers.HomeController.contact"""),
-    ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """events""", """controllers.HomeController.events"""),
-    ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """eventticket""", """controllers.HomeController.eventTicket"""),
+    ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """events""", """controllers.HomeController.events(cat:Long ?= 0L)"""),
+    ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """eventticket""", """controllers.HomeController.eventTicket(event:Long ?= 0L)"""),
     ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """login""", """controllers.LoginController.login"""),
     ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """signup""", """controllers.HomeController.signUp"""),
     ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """signUpSubmit""", """controllers.HomeController.signUpSubmit()"""),
@@ -197,12 +197,12 @@ class Routes(
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("events")))
   )
   private[this] lazy val controllers_HomeController_events7_invoker = createInvoker(
-    HomeController_0.events,
+    HomeController_0.events(fakeValue[Long]),
     HandlerDef(this.getClass.getClassLoader,
       "router",
       "controllers.HomeController",
       "events",
-      Nil,
+      Seq(classOf[Long]),
       "GET",
       """""",
       this.prefix + """events"""
@@ -214,12 +214,12 @@ class Routes(
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("eventticket")))
   )
   private[this] lazy val controllers_HomeController_eventTicket8_invoker = createInvoker(
-    HomeController_0.eventTicket,
+    HomeController_0.eventTicket(fakeValue[Long]),
     HandlerDef(this.getClass.getClassLoader,
       "router",
       "controllers.HomeController",
       "eventTicket",
-      Nil,
+      Seq(classOf[Long]),
       "GET",
       """""",
       this.prefix + """eventticket"""
@@ -443,14 +443,14 @@ class Routes(
   
     // @LINE:13
     case controllers_HomeController_events7_route(params) =>
-      call { 
-        controllers_HomeController_events7_invoker.call(HomeController_0.events)
+      call(params.fromQuery[Long]("cat", Some(0L))) { (cat) =>
+        controllers_HomeController_events7_invoker.call(HomeController_0.events(cat))
       }
   
     // @LINE:14
     case controllers_HomeController_eventTicket8_route(params) =>
-      call { 
-        controllers_HomeController_eventTicket8_invoker.call(HomeController_0.eventTicket)
+      call(params.fromQuery[Long]("event", Some(0L))) { (event) =>
+        controllers_HomeController_eventTicket8_invoker.call(HomeController_0.eventTicket(event))
       }
   
     // @LINE:15

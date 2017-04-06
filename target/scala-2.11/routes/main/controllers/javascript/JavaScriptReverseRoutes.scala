@@ -1,7 +1,7 @@
 
 // @GENERATOR:play-routes-compiler
-// @SOURCE:/home/wdd/webapps/TicketStore/conf/routes
-// @DATE:Tue Apr 04 11:02:52 IST 2017
+// @SOURCE:C:/Users/Eileen/Desktop/TicketStore/conf/routes
+// @DATE:Thu Apr 06 13:09:03 BST 2017
 
 import play.api.routing.JavaScriptReverseRoute
 import play.api.mvc.{ QueryStringBindable, PathBindable, Call, JavascriptLiteral }
@@ -53,6 +53,16 @@ package controllers.javascript {
       """
     )
   
+    // @LINE:14
+    def eventTicket: JavaScriptReverseRoute = JavaScriptReverseRoute(
+      "controllers.HomeController.eventTicket",
+      """
+        function(event0) {
+          return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "eventticket" + _qS([(event0 == null ? null : (""" + implicitly[QueryStringBindable[Long]].javascriptUnbind + """)("event", event0))])})
+        }
+      """
+    )
+  
     // @LINE:18
     def addTicket: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.HomeController.addTicket",
@@ -93,12 +103,12 @@ package controllers.javascript {
       """
     )
   
-    // @LINE:14
-    def eventTicket: JavaScriptReverseRoute = JavaScriptReverseRoute(
-      "controllers.HomeController.eventTicket",
+    // @LINE:13
+    def events: JavaScriptReverseRoute = JavaScriptReverseRoute(
+      "controllers.HomeController.events",
       """
-        function() {
-          return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "eventticket"})
+        function(cat0) {
+          return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "events" + _qS([(cat0 == null ? null : (""" + implicitly[QueryStringBindable[Long]].javascriptUnbind + """)("cat", cat0))])})
         }
       """
     )
@@ -119,16 +129,6 @@ package controllers.javascript {
       """
         function() {
           return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "checkout"})
-        }
-      """
-    )
-  
-    // @LINE:13
-    def events: JavaScriptReverseRoute = JavaScriptReverseRoute(
-      "controllers.HomeController.events",
-      """
-        function() {
-          return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "events"})
         }
       """
     )

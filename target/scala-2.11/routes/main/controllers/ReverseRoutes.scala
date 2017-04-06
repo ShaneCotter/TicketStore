@@ -1,7 +1,7 @@
 
 // @GENERATOR:play-routes-compiler
-// @SOURCE:/home/wdd/webapps/TicketStore/conf/routes
-// @DATE:Tue Apr 04 11:02:52 IST 2017
+// @SOURCE:C:/Users/Eileen/Desktop/TicketStore/conf/routes
+// @DATE:Thu Apr 06 13:09:03 BST 2017
 
 import play.api.mvc.{ QueryStringBindable, PathBindable, Call, JavascriptLiteral }
 import play.core.routing.{ HandlerDef, ReverseRouteContext, queryString, dynamicString }
@@ -38,6 +38,12 @@ package controllers {
       Call("GET", _prefix + { _defaultPrefix } + "signup")
     }
   
+    // @LINE:14
+    def eventTicket(event:Long = 0L): Call = {
+      import ReverseRouteContext.empty
+      Call("GET", _prefix + { _defaultPrefix } + "eventticket" + queryString(List(if(event == 0L) None else Some(implicitly[QueryStringBindable[Long]].unbind("event", event)))))
+    }
+  
     // @LINE:18
     def addTicket(): Call = {
       import ReverseRouteContext.empty
@@ -62,10 +68,10 @@ package controllers {
       Call("POST", _prefix + { _defaultPrefix } + "addTicketSubmit")
     }
   
-    // @LINE:14
-    def eventTicket(): Call = {
+    // @LINE:13
+    def events(cat:Long = 0L): Call = {
       import ReverseRouteContext.empty
-      Call("GET", _prefix + { _defaultPrefix } + "eventticket")
+      Call("GET", _prefix + { _defaultPrefix } + "events" + queryString(List(if(cat == 0L) None else Some(implicitly[QueryStringBindable[Long]].unbind("cat", cat)))))
     }
   
     // @LINE:24
@@ -78,12 +84,6 @@ package controllers {
     def checkout(): Call = {
       import ReverseRouteContext.empty
       Call("GET", _prefix + { _defaultPrefix } + "checkout")
-    }
-  
-    // @LINE:13
-    def events(): Call = {
-      import ReverseRouteContext.empty
-      Call("GET", _prefix + { _defaultPrefix } + "events")
     }
   
     // @LINE:26
