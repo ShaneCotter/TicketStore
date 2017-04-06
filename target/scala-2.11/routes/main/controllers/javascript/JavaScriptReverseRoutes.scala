@@ -1,7 +1,7 @@
 
 // @GENERATOR:play-routes-compiler
-// @SOURCE:C:/Users/Eileen/Desktop/TicketStore/conf/routes
-// @DATE:Thu Apr 06 13:09:03 BST 2017
+// @SOURCE:/home/wdd/webapps/TicketStore/conf/routes
+// @DATE:Thu Apr 06 14:23:16 IST 2017
 
 import play.api.routing.JavaScriptReverseRoute
 import play.api.mvc.{ QueryStringBindable, PathBindable, Call, JavascriptLiteral }
@@ -59,6 +59,16 @@ package controllers.javascript {
       """
         function(event0) {
           return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "eventticket" + _qS([(event0 == null ? null : (""" + implicitly[QueryStringBindable[Long]].javascriptUnbind + """)("event", event0))])})
+        }
+      """
+    )
+  
+    // @LINE:29
+    def updateEvent: JavaScriptReverseRoute = JavaScriptReverseRoute(
+      "controllers.HomeController.updateEvent",
+      """
+        function(id0) {
+          return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "updateEvent/" + (""" + implicitly[PathBindable[Long]].javascriptUnbind + """)("id", id0)})
         }
       """
     )

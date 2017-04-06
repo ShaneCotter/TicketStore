@@ -44,10 +44,10 @@
                 <div class="nav navbar-nav navbar-right" id="nav-buttons">
                     @if(user != null){
                         <a href="@routes.HomeController.cart()" class="btn btn-success btn-circle btn-lg"><i class="glyphicon glyphicon-shopping-cart"></i></a>
-                        <a href="@routes.LoginController.logout()" class="btn btn-success btn-lg round"><span class="glyphcon glyphicon-pencil"></span>LOGOUT</a>
+                        <a href="@routes.LoginController.logout()" class="btn btn-success btn-lg round"><span class="glyphicon glyphicon-off"></span>LOGOUT</a>
                         @if(user.getRole.equals("admin")) {
                             <div class="dropdown" id="adminOptions">
-                                <button class="btn btn-success btn-circle btn-lg" data-toggle="dropdown">Admin Options</button>
+                                <button class="btn btn-success btn-circle btn-lg" data-toggle="dropdown"><i class="glyphicon glyphicon-cog"></i>Admin Options</button>
                                 <ul class="dropdown-menu">
                                     <li><a href="@routes.HomeController.addEvent()">Add event</a></li>
                                     <li><a href="@routes.HomeController.addTicket()">Add ticket</a></li>

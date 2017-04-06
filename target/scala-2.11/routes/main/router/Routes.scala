@@ -1,7 +1,7 @@
 
 // @GENERATOR:play-routes-compiler
-// @SOURCE:C:/Users/Eileen/Desktop/TicketStore/conf/routes
-// @DATE:Thu Apr 06 13:09:03 BST 2017
+// @SOURCE:/home/wdd/webapps/TicketStore/conf/routes
+// @DATE:Thu Apr 06 14:23:16 IST 2017
 
 package router
 
@@ -65,6 +65,7 @@ class Routes(
     ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """delTicket/""" + "$" + """id<[^/]+>""", """controllers.HomeController.deleteTicket(id:Long)"""),
     ("""POST""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """addEventSubmit""", """controllers.HomeController.addEventSubmit"""),
     ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """delEvent/""" + "$" + """id<[^/]+>""", """controllers.HomeController.deleteEvent(id:Long)"""),
+    ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """updateEvent/""" + "$" + """id<[^/]+>""", """controllers.HomeController.updateEvent(id:Long)"""),
     ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """assets/""" + "$" + """file<.+>""", """controllers.Assets.versioned(path:String = "/public", file:Asset)"""),
     Nil
   ).foldLeft(List.empty[(String,String,String)]) { (s,e) => e.asInstanceOf[Any] match {
@@ -379,11 +380,28 @@ class Routes(
     )
   )
 
+  // @LINE:29
+  private[this] lazy val controllers_HomeController_updateEvent18_route = Route("GET",
+    PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("updateEvent/"), DynamicPart("id", """[^/]+""",true)))
+  )
+  private[this] lazy val controllers_HomeController_updateEvent18_invoker = createInvoker(
+    HomeController_0.updateEvent(fakeValue[Long]),
+    HandlerDef(this.getClass.getClassLoader,
+      "router",
+      "controllers.HomeController",
+      "updateEvent",
+      Seq(classOf[Long]),
+      "GET",
+      """""",
+      this.prefix + """updateEvent/""" + "$" + """id<[^/]+>"""
+    )
+  )
+
   // @LINE:37
-  private[this] lazy val controllers_Assets_versioned18_route = Route("GET",
+  private[this] lazy val controllers_Assets_versioned19_route = Route("GET",
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("assets/"), DynamicPart("file", """.+""",false)))
   )
-  private[this] lazy val controllers_Assets_versioned18_invoker = createInvoker(
+  private[this] lazy val controllers_Assets_versioned19_invoker = createInvoker(
     Assets_1.versioned(fakeValue[String], fakeValue[Asset]),
     HandlerDef(this.getClass.getClassLoader,
       "router",
@@ -507,10 +525,16 @@ class Routes(
         controllers_HomeController_deleteEvent17_invoker.call(HomeController_0.deleteEvent(id))
       }
   
+    // @LINE:29
+    case controllers_HomeController_updateEvent18_route(params) =>
+      call(params.fromPath[Long]("id", None)) { (id) =>
+        controllers_HomeController_updateEvent18_invoker.call(HomeController_0.updateEvent(id))
+      }
+  
     // @LINE:37
-    case controllers_Assets_versioned18_route(params) =>
+    case controllers_Assets_versioned19_route(params) =>
       call(Param[String]("path", Right("/public")), params.fromPath[Asset]("file", None)) { (path, file) =>
-        controllers_Assets_versioned18_invoker.call(Assets_1.versioned(path, file))
+        controllers_Assets_versioned19_invoker.call(Assets_1.versioned(path, file))
       }
   }
 }

@@ -74,10 +74,10 @@ Seq[Any](format.raw/*7.55*/("""
                 <div class="nav navbar-nav navbar-right" id="nav-buttons">
                     """),_display_(/*45.22*/if(user != null)/*45.38*/{_display_(Seq[Any](format.raw/*45.39*/("""
                         """),format.raw/*46.25*/("""<a href=""""),_display_(/*46.35*/routes/*46.41*/.HomeController.cart()),format.raw/*46.63*/("""" class="btn btn-success btn-circle btn-lg"><i class="glyphicon glyphicon-shopping-cart"></i></a>
-                        <a href=""""),_display_(/*47.35*/routes/*47.41*/.LoginController.logout()),format.raw/*47.66*/("""" class="btn btn-success btn-lg round"><span class="glyphcon glyphicon-pencil"></span>LOGOUT</a>
+                        <a href=""""),_display_(/*47.35*/routes/*47.41*/.LoginController.logout()),format.raw/*47.66*/("""" class="btn btn-success btn-lg round"><span class="glyphicon glyphicon-off"></span>LOGOUT</a>
                         """),_display_(/*48.26*/if(user.getRole.equals("admin"))/*48.58*/ {_display_(Seq[Any](format.raw/*48.60*/("""
                             """),format.raw/*49.29*/("""<div class="dropdown" id="adminOptions">
-                                <button class="btn btn-success btn-circle btn-lg" data-toggle="dropdown">Admin Options</button>
+                                <button class="btn btn-success btn-circle btn-lg" data-toggle="dropdown"><i class="glyphicon glyphicon-cog"></i>Admin Options</button>
                                 <ul class="dropdown-menu">
                                     <li><a href=""""),_display_(/*52.51*/routes/*52.57*/.HomeController.addEvent()),format.raw/*52.83*/("""">Add event</a></li>
                                     <li><a href=""""),_display_(/*53.51*/routes/*53.57*/.HomeController.addTicket()),format.raw/*53.84*/("""">Add ticket</a></li>
@@ -145,10 +145,10 @@ Seq[Any](format.raw/*7.55*/("""
 object main extends main_Scope0.main
               /*
                   -- GENERATED --
-                  DATE: Thu Apr 06 13:09:04 BST 2017
-                  SOURCE: C:/Users/Eileen/Desktop/TicketStore/app/views/main.scala.html
-                  HASH: a0e9446de58bb7995316f68c8c58a85b2a4376d0
-                  MATRIX: 1025->266|1173->319|1203->323|1254->348|1280->353|1384->430|1399->436|1462->478|2597->1586|2612->1592|2656->1615|3610->2542|3635->2558|3674->2559|3728->2585|3765->2595|3780->2601|3823->2623|3983->2756|3998->2762|4044->2787|4194->2910|4235->2942|4275->2944|4333->2974|4641->3255|4656->3261|4703->3287|4802->3359|4817->3365|4865->3392|5019->3515|5061->3538|5074->3542|5113->3543|5167->3569|5204->3579|5219->3585|5264->3609|5420->3738|5435->3744|5480->3768|5631->3888|5677->3906|5926->4128|5941->4134|5983->4155|6052->4197|6067->4203|6113->4228|6184->4272|6199->4278|6243->4301|6316->4347|6331->4353|6375->4376|6503->4477|6531->4484|6562->4488|6754->4653|6769->4659|6813->4682
+                  DATE: Thu Apr 06 14:20:04 IST 2017
+                  SOURCE: /home/wdd/webapps/TicketStore/app/views/main.scala.html
+                  HASH: d06d6dd27023f9c8ef6028b74d04e84ea1961000
+                  MATRIX: 1020->260|1168->313|1196->315|1246->339|1272->344|1372->417|1387->423|1450->465|2570->1558|2585->1564|2629->1587|3567->2498|3592->2514|3631->2515|3684->2540|3721->2550|3736->2556|3779->2578|3938->2710|3953->2716|3999->2741|4146->2861|4187->2893|4227->2895|4284->2924|4628->3241|4643->3247|4690->3273|4788->3344|4803->3350|4851->3377|5002->3497|5043->3519|5056->3523|5095->3524|5148->3549|5185->3559|5200->3565|5245->3589|5400->3717|5415->3723|5460->3747|5610->3866|5655->3883|5898->4099|5913->4105|5955->4126|6023->4167|6038->4173|6084->4198|6154->4241|6169->4247|6213->4270|6285->4315|6300->4321|6344->4344|6466->4439|6494->4446|6523->4448|6712->4610|6727->4616|6771->4639
                   LINES: 32->7|37->7|39->9|40->10|40->10|44->14|44->14|44->14|59->29|59->29|59->29|75->45|75->45|75->45|76->46|76->46|76->46|76->46|77->47|77->47|77->47|78->48|78->48|78->48|79->49|82->52|82->52|82->52|83->53|83->53|83->53|86->56|87->57|87->57|87->57|88->58|88->58|88->58|88->58|89->59|89->59|89->59|90->60|91->61|97->67|97->67|97->67|98->68|98->68|98->68|99->69|99->69|99->69|100->70|100->70|100->70|106->76|106->76|108->78|111->81|111->81|111->81
                   -- GENERATED --
               */
