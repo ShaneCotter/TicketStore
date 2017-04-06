@@ -41,15 +41,16 @@ Seq[Any](format.raw/*3.65*/("""
 
         <div class="row">
             <div class="col-lg-12 well" id="signup">
-                <form action=""""),_display_(/*12.32*/routes/*12.38*/.HomeController.signUpSubmit()),format.raw/*12.68*/("""" name = "addUserForm">
-                    <input type="text" name = "email" placeholder="Email">
-                    <input type="text" name = "name" placeholder="Name">
-                    <input type="password" name = "password" placeholder="Password">
-                    <div class="actions">
-                        <input type="submit" value="Sign Up" class="btn btn-success">
-                    </div>
-                </form>
-            </div>
+
+            """),_display_(/*13.14*/form(action = routes.HomeController.signUpSubmit(), 'class -> "form-horizontal",'role->"form")/*13.108*/{_display_(Seq[Any](format.raw/*13.109*/("""
+                """),_display_(/*14.18*/inputText(addUserForm("email"), '_label -> "Email", 'class -> "form-control")),format.raw/*14.95*/("""
+                """),_display_(/*15.18*/inputText(addUserForm("name"), '_label -> "Name", 'class -> "form-control")),format.raw/*15.93*/("""
+                """),_display_(/*16.18*/inputPassword(addUserForm("password"), '_label -> "Password", 'class -> "form-control")),format.raw/*16.105*/("""
+                """),format.raw/*17.17*/("""<div class="actions">
+                    <input type="submit" value="Sign Up" class="btn btn-success">
+                </div>
+            """)))}),format.raw/*20.14*/("""
+            """),format.raw/*21.13*/("""</div>
         </div>
     </div>
 
@@ -74,11 +75,11 @@ Seq[Any](format.raw/*3.65*/("""
 object signUp extends signUp_Scope0.signUp_Scope1.signUp
               /*
                   -- GENERATED --
-                  DATE: Thu Apr 06 13:09:04 BST 2017
-                  SOURCE: C:/Users/Eileen/Desktop/TicketStore/app/views/signUp.scala.html
-                  HASH: e68964ecc0f7f625ca6609f0e7c8d70c6a961698
-                  MATRIX: 827->21|985->84|1015->89|1043->109|1082->111|1116->119|1325->301|1340->307|1391->337
-                  LINES: 30->3|35->3|37->5|37->5|37->5|39->7|44->12|44->12|44->12
+                  DATE: Thu Apr 06 14:20:04 IST 2017
+                  SOURCE: /home/wdd/webapps/TicketStore/app/views/signUp.scala.html
+                  HASH: 1071e4de70cca58e907a151d692803ab73f51620
+                  MATRIX: 827->19|985->82|1013->85|1041->105|1080->107|1112->113|1299->273|1403->367|1443->368|1488->386|1586->463|1631->481|1727->556|1772->574|1881->661|1926->678|2097->818|2138->831
+                  LINES: 30->3|35->3|37->5|37->5|37->5|39->7|45->13|45->13|45->13|46->14|46->14|47->15|47->15|48->16|48->16|49->17|52->20|53->21
                   -- GENERATED --
               */
           

@@ -53,7 +53,13 @@ public class HomeController extends Controller {
 
         Event newEvent = newEventForm.get();
 
-        newEvent.save();
+        if (newEvent.getEventID() ==  null) {
+            newEvent.save();
+        }
+
+        else if (newEvent.getEventID() != null) {
+            newEvent.update();
+        }
 
         flash("success", "Event " + newEvent.getEventName() + " has been created. Do not forget to add Tickets");
 
@@ -72,6 +78,22 @@ public class HomeController extends Controller {
         return redirect(routes.HomeController.events(0));
     }
 
+    @Security.Authenticated(Secured.class)
+    @With(AuthAdmin.class)
+    @Transactional
+    public Result updateEvent(Long id) {
+        Event e;
+        Form<Event> eventForm;
+
+        try {
+            e = Event.find.byId(id);
+            eventForm = formFactory.form(Event.class).fill(e);
+        } catch (Exception ex) {
+            return badRequest("error");
+        }
+
+        return ok(addEvent.render(eventForm, getUserFromSession()));
+    }
 
     public Result cart() {
         return ok(cart.render(getUserFromSession()));
@@ -167,4 +189,5 @@ public class HomeController extends Controller {
     private User getUserFromSession(){
         return User.getUserById(session().get("email"));
     }
+
 }

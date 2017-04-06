@@ -1,7 +1,7 @@
 
 // @GENERATOR:play-routes-compiler
-// @SOURCE:C:/Users/Eileen/Desktop/TicketStore/conf/routes
-// @DATE:Thu Apr 06 13:09:03 BST 2017
+// @SOURCE:/home/wdd/webapps/TicketStore/conf/routes
+// @DATE:Thu Apr 06 14:23:16 IST 2017
 
 import play.api.mvc.{ QueryStringBindable, PathBindable, Call, JavascriptLiteral }
 import play.core.routing.{ HandlerDef, ReverseRouteContext, queryString, dynamicString }
@@ -42,6 +42,12 @@ package controllers {
     def eventTicket(event:Long = 0L): Call = {
       import ReverseRouteContext.empty
       Call("GET", _prefix + { _defaultPrefix } + "eventticket" + queryString(List(if(event == 0L) None else Some(implicitly[QueryStringBindable[Long]].unbind("event", event)))))
+    }
+  
+    // @LINE:29
+    def updateEvent(id:Long): Call = {
+      import ReverseRouteContext.empty
+      Call("GET", _prefix + { _defaultPrefix } + "updateEvent/" + implicitly[PathBindable[Long]].unbind("id", id))
     }
   
     // @LINE:18

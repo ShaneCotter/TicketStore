@@ -349,8 +349,13 @@ body {
 
 /*Change button colors*/
 .btn-success{
-	background-color: #33cc33 !important;
-	color:white !important;
+    background-color: #33cc33 !important;
+    color:white !important;
+}
+
+.btn-danger {
+    color: white !important;
+    margin-right: .5em;
 }
 
 /*Change glow on input fields to green*/

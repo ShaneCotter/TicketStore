@@ -4,7 +4,7 @@
 
 @main("Add Ticket",user) {
 
-
+<div class="container-fluid" id="content">
 <div class="row">
 <div class="col-lg-12 well" id="addEvent">
          <h4>Add Tickets</h4>
@@ -19,14 +19,13 @@
                 @inputText(addTicketForm("price"), '_label -> "Price", 'class -> "form-control")
 
                 <div class="actions">
-                    <input type="submit" value="add ticket" class="btn btn-primary">
-                    
-                        <a href="@routes.HomeController.index()" <button class="btn btn-warning">Cancel</button></a>
+                    <input type="submit" value="Add Ticket" class="btn btn-success">
+                        <a href="@routes.HomeController.index()" class="btn btn-danger">Cancel</a>
 
                 </div>
 </div>
 </div>
 
-
+</div>
 }
 }

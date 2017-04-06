@@ -36,8 +36,8 @@ Seq[Any](format.raw/*3.62*/("""
 
 """),_display_(/*5.2*/main("Add Ticket",user)/*5.25*/ {_display_(Seq[Any](format.raw/*5.27*/("""
 
-
-"""),format.raw/*8.1*/("""<div class="row">
+"""),format.raw/*7.1*/("""<div class="container-fluid" id="content">
+<div class="row">
 <div class="col-lg-12 well" id="addEvent">
          <h4>Add Tickets</h4>
               """),_display_(/*11.16*/form(action = routes.HomeController.addTicketSubmit(), 'class -> "form-horizontal",'role->"form")/*11.113*/{_display_(Seq[Any](format.raw/*11.114*/("""
@@ -51,16 +51,15 @@ Seq[Any](format.raw/*3.62*/("""
                 """),_display_(/*19.18*/inputText(addTicketForm("price"), '_label -> "Price", 'class -> "form-control")),format.raw/*19.97*/("""
 
                 """),format.raw/*21.17*/("""<div class="actions">
-                    <input type="submit" value="add ticket" class="btn btn-primary">
-                    
-                        <a href=""""),_display_(/*24.35*/routes/*24.41*/.HomeController.index()),format.raw/*24.64*/("""" <button class="btn btn-warning">Cancel</button></a>
+                    <input type="submit" value="Add Ticket" class="btn btn-success">
+                        <a href=""""),_display_(/*23.35*/routes/*23.41*/.HomeController.index()),format.raw/*23.64*/("""" class="btn btn-danger">Cancel</a>
 
                 </div>
 </div>
 </div>
 
-
-""")))}),format.raw/*31.2*/("""
+</div>
+""")))}),format.raw/*30.2*/("""
 """)))}))
       }
     }
@@ -82,11 +81,11 @@ Seq[Any](format.raw/*3.62*/("""
 object addTicket extends addTicket_Scope0.addTicket_Scope1.addTicket
               /*
                   -- GENERATED --
-                  DATE: Thu Apr 06 13:09:04 BST 2017
-                  SOURCE: C:/Users/Eileen/Desktop/TicketStore/app/views/addTicket.scala.html
-                  HASH: bfc61865e7ee3c8087586c8c1837927d99f431e6
-                  MATRIX: 832->21|987->81|1017->86|1048->109|1087->111|1119->117|1255->226|1362->323|1402->324|1450->345|1704->578|1750->597|1861->686|1907->705|2014->790|2060->809|2160->888|2208->908|2400->1073|2415->1079|2459->1102|2591->1204
-                  LINES: 30->3|35->3|37->5|37->5|37->5|40->8|43->11|43->11|43->11|45->13|48->16|49->17|49->17|50->18|50->18|51->19|51->19|53->21|56->24|56->24|56->24|63->31
+                  DATE: Thu Apr 06 14:42:48 IST 2017
+                  SOURCE: /home/wdd/webapps/TicketStore/app/views/addTicket.scala.html
+                  HASH: a7be74ad92e21efbe5963a42374b9e230e1e7f67
+                  MATRIX: 832->19|987->79|1015->82|1046->105|1085->107|1113->109|1289->258|1396->355|1436->356|1482->375|1733->605|1778->623|1889->712|1934->730|2041->815|2086->833|2186->912|2232->930|2400->1071|2415->1077|2459->1100|2572->1183
+                  LINES: 30->3|35->3|37->5|37->5|37->5|39->7|43->11|43->11|43->11|45->13|48->16|49->17|49->17|50->18|50->18|51->19|51->19|53->21|55->23|55->23|55->23|62->30
                   -- GENERATED --
               */
           
