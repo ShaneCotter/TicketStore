@@ -7,7 +7,7 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies for ticketstore#ticketstore_2.11;1.0-SNAPSHOT [compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies ticketstore#ticketstore_2.11;1.0-SNAPSHOT->org.scala-lang#scala-library;2.11.7 [compile->default(compile)][0m
 [0m[[0minfo[0m] [0mResolving org.scala-lang#scala-library;2.11.7 ...[0m
-[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@6540b3bc[0m
+[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@662fd24d[0m
 [0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.scala-lang#scala-library;2.11.7[0m
 [0m[[0mdebug[0m] [0m	found org.scala-lang#scala-library;2.11.7 in sbt-chain[0m
 [0m[[0mdebug[0m] [0m	[2.11.7] org.scala-lang#scala-library;2.11.7[0m
@@ -8290,6 +8290,7 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies ticketstore#ticketstore_2.11;1.0-SNAPSHOT->org.scala-lang#scala-library;2.11.7 [scala-tool->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies ticketstore#ticketstore_2.11;1.0-SNAPSHOT->org.scala-lang#scala-library;2.11.7 [scala-tool->master][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies ticketstore#ticketstore_2.11;1.0-SNAPSHOT->org.scala-lang#scala-library;2.11.7 [scala-tool->optional(default)][0m
+[0m[[0mdebug[0m] [0mcircular dependency found: org.avaje.ebeanorm#avaje-ebeanorm;7.6.1->org.avaje.ebeanorm#avaje-ebeanorm-cluster;1.1.1->...[0m
 [0m[[0mdebug[0m] [0mall callers are evicted for commons-logging#commons-logging;1.1.1: evicting too[0m
 [0m[[0mdebug[0m] [0mall callers are evicted for commons-logging#commons-logging;1.1.1: evicting too[0m
 [0m[[0mdebug[0m] [0m	resolved ivy file produced in cache[0m
@@ -8454,7 +8455,7 @@
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.scala-lang#scala-compiler;2.11.7!scala-compiler.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.scala-lang.modules#scala-xml_2.11;1.0.4!scala-xml_2.11.jar(bundle)[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] jline#jline;2.12.1!jline.jar[0m
-[0m[[0mdebug[0m] [0m:: resolution report :: resolve 2754ms :: artifacts dl 34ms[0m
+[0m[[0mdebug[0m] [0m:: resolution report :: resolve 4439ms :: artifacts dl 71ms[0m
 [0m[[0mdebug[0m] [0m	report for ticketstore#ticketstore_2.11;1.0-SNAPSHOT compile produced in /home/wdd/webapps/TicketStore/target/resolution-cache/reports/ticketstore-ticketstore_2.11-compile.xml[0m
 [0m[[0mdebug[0m] [0m	report for ticketstore#ticketstore_2.11;1.0-SNAPSHOT runtime produced in /home/wdd/webapps/TicketStore/target/resolution-cache/reports/ticketstore-ticketstore_2.11-runtime.xml[0m
 [0m[[0mdebug[0m] [0m	report for ticketstore#ticketstore_2.11;1.0-SNAPSHOT test produced in /home/wdd/webapps/TicketStore/target/resolution-cache/reports/ticketstore-ticketstore_2.11-test.xml[0m
@@ -8468,5 +8469,5 @@
 [0m[[0mdebug[0m] [0m	report for ticketstore#ticketstore_2.11;1.0-SNAPSHOT docs produced in /home/wdd/webapps/TicketStore/target/resolution-cache/reports/ticketstore-ticketstore_2.11-docs.xml[0m
 [0m[[0mdebug[0m] [0m	report for ticketstore#ticketstore_2.11;1.0-SNAPSHOT pom produced in /home/wdd/webapps/TicketStore/target/resolution-cache/reports/ticketstore-ticketstore_2.11-pom.xml[0m
 [0m[[0mdebug[0m] [0m	report for ticketstore#ticketstore_2.11;1.0-SNAPSHOT scala-tool produced in /home/wdd/webapps/TicketStore/target/resolution-cache/reports/ticketstore-ticketstore_2.11-scala-tool.xml[0m
-[0m[[0mdebug[0m] [0m	resolve done (2754ms resolve - 34ms download)[0m
+[0m[[0mdebug[0m] [0m	resolve done (4439ms resolve - 71ms download)[0m
 [0m[[0minfo[0m] [0mDone updating.[0m

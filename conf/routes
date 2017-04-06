@@ -22,6 +22,7 @@ GET     /logout                     controllers.LoginController.logout
 POST    /addTicketSubmit             controllers.HomeController.addTicketSubmit
 
 GET     /delTicket/:id               controllers.HomeController.deleteTicket(id:Long)
+GET     /updateTicket/:id            controllers.HomeController.updateTicket(id:Long)
 
 POST    /addEventSubmit             controllers.HomeController.addEventSubmit
 

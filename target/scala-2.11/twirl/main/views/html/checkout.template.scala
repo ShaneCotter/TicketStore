@@ -294,7 +294,7 @@ Seq[Any](format.raw/*1.27*/("""
 object checkout extends checkout_Scope0.checkout
               /*
                   -- GENERATED --
-                  DATE: Thu Apr 06 14:20:04 IST 2017
+                  DATE: Thu Apr 06 16:01:40 IST 2017
                   SOURCE: /home/wdd/webapps/TicketStore/app/views/checkout.scala.html
                   HASH: 0d9536a2f811667cb2e34a84b1047c59a23c8df5
                   MATRIX: 762->1|882->26|909->28|945->56|984->58|1011->59|15632->14649

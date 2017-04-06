@@ -42,7 +42,7 @@
                                     <div class="col-xs-12 col-md-6">
 
                                     @if(user.getRole.equals("admin")) {
-                                        <a href="@routes.HomeController.deleteTicket(t.getTicketID)" class = "btn-xs btn-danger"
+                                        <a href="@routes.HomeController.deleteTicket(t.getTicketID)" class = "btn btn-danger"
                                         onclick="return confirmDel();">
                                             <span class="glyphicon glyphicon-trash"></span></a>
                                     }

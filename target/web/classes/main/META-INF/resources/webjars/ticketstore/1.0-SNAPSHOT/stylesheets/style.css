@@ -195,7 +195,6 @@ a:hover, a:visited, a:link, a:active {
 
 /*---Add event---*/
 #addEvent form , #addEvent .btn{
-	margin-left:25%;
 	margin-right:0%;
 }
 
