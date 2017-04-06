@@ -276,3 +276,15 @@ Caused by: java.lang.NullPointerException: null
 	at scala.concurrent.Future$$anonfun$flatMap$1.apply(Future.scala:251)
 	at scala.concurrent.Future$$anonfun$flatMap$1.apply(Future.scala:249)
 	... 13 common frames omitted
+2017-04-06 14:59:33,907 [INFO] from application in application-akka.actor.default-dispatcher-22 - ApplicationTimer demo: Stopping application at 2017-04-06T13:59:33.907Z after 759s.
+2017-04-06 14:59:33,910 [INFO] from application in application-akka.actor.default-dispatcher-22 - Shutting down connection pool.
+2017-04-06 14:59:34,063 [INFO] from application in application-akka.actor.default-dispatcher-22 - Creating Pool for datasource 'default'
+2017-04-06 14:59:34,066 [INFO] from play.api.db.DefaultDBApi in application-akka.actor.default-dispatcher-22 - Database [default] connected at jdbc:h2:file:./data/TCEvents
+2017-04-06 14:59:34,119 [INFO] from application in application-akka.actor.default-dispatcher-22 - ApplicationTimer demo: Starting application at 2017-04-06T13:59:34.119Z
+2017-04-06 14:59:34,218 [INFO] from play.api.Play in application-akka.actor.default-dispatcher-22 - Application started (Dev)
+2017-04-06 14:59:57,985 [INFO] from application in application-akka.actor.default-dispatcher-8 - ApplicationTimer demo: Stopping application at 2017-04-06T13:59:57.985Z after 23s.
+2017-04-06 14:59:57,986 [INFO] from application in application-akka.actor.default-dispatcher-8 - Shutting down connection pool.
+2017-04-06 14:59:58,136 [INFO] from application in application-akka.actor.default-dispatcher-8 - Creating Pool for datasource 'default'
+2017-04-06 14:59:58,142 [INFO] from play.api.db.DefaultDBApi in application-akka.actor.default-dispatcher-8 - Database [default] connected at jdbc:h2:file:./data/TCEvents
+2017-04-06 14:59:58,185 [INFO] from application in application-akka.actor.default-dispatcher-8 - ApplicationTimer demo: Starting application at 2017-04-06T13:59:58.185Z
+2017-04-06 14:59:58,263 [INFO] from play.api.Play in application-akka.actor.default-dispatcher-8 - Application started (Dev)
