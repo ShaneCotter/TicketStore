@@ -21,15 +21,15 @@ import play.data._
 import play.api.data.Field
 import play.mvc.Http.Context.Implicit._
 
-class eventTicket extends BaseScalaTemplate[play.twirl.api.HtmlFormat.Appendable,Format[play.twirl.api.HtmlFormat.Appendable]](play.twirl.api.HtmlFormat) with play.twirl.api.Template2[List[models.Ticket],models.users.User,play.twirl.api.HtmlFormat.Appendable] {
+class eventTicket extends BaseScalaTemplate[play.twirl.api.HtmlFormat.Appendable,Format[play.twirl.api.HtmlFormat.Appendable]](play.twirl.api.HtmlFormat) with play.twirl.api.Template3[List[models.Ticket],Event,models.users.User,play.twirl.api.HtmlFormat.Appendable] {
 
   /**/
-  def apply/*1.2*/(tickets: List[models.Ticket],user: models.users.User):play.twirl.api.HtmlFormat.Appendable = {
+  def apply/*1.2*/(tickets: List[models.Ticket], e: Event, user: models.users.User):play.twirl.api.HtmlFormat.Appendable = {
     _display_ {
       {
 import helper._
 
-Seq[Any](format.raw/*1.56*/("""
+Seq[Any](format.raw/*1.67*/("""
 
 """),format.raw/*4.1*/("""
 
@@ -42,58 +42,48 @@ Seq[Any](format.raw/*1.56*/("""
             </div>
 
             <div class="col-lg-7 col-md-7 col-sm-6 col-xs-12" id = "eventInfo">
-                <h1>Event name</h1>
-                <p>Location here : </p>
-                <p>Date/time here : </p>
-                <p>Description here : </p>
+                <h1>"""),_display_(/*15.22*/e/*15.23*/.getTitle),format.raw/*15.32*/(""" """),format.raw/*15.33*/(""", """),_display_(/*15.36*/e/*15.37*/.getEventName),format.raw/*15.50*/("""</h1>
+                <p>Location here : """),_display_(/*16.37*/e/*16.38*/.getLocation),format.raw/*16.50*/("""</p>
+                <p>Date/time here : """),_display_(/*17.38*/e/*17.39*/.getDate),format.raw/*17.47*/("""</p>
             </div>
         </div>
 
         <div class="row well" id="tickets">
-            <div class="col-lg-8 col-md-8 col-sm-6 col-xs-12">
-                <div class="row">
 
-                </div>
-                <br>
-                </div>
-
-                <div id="products" class="row list-group">
-                """),_display_(/*31.18*/for(t <- tickets) yield /*31.35*/ {_display_(Seq[Any](format.raw/*31.37*/("""
-                    """),format.raw/*32.21*/("""<div class="item  col-xs-4 col-lg-4">
+                """),_display_(/*23.18*/for(t <- tickets) yield /*23.35*/ {_display_(Seq[Any](format.raw/*23.37*/("""
+                    """),format.raw/*24.21*/("""<div class="item  col-xs-4 col-lg-4">
                         <div class="thumbnail">
 
-                            <h1>"""),_display_(/*35.34*/t/*35.35*/.getTicketType),format.raw/*35.49*/("""</h1>
+                            <h2>"""),_display_(/*27.34*/t/*27.35*/.getTicketType),format.raw/*27.49*/("""</h2>
                             <div class="caption">
                                 <p class="group inner list-group-item-text">
-                                """),_display_(/*38.34*/t/*38.35*/.getPrice),format.raw/*38.44*/("""
+                                <p>Ticket price : € """),_display_(/*30.54*/t/*30.55*/.getPrice),format.raw/*30.64*/("""</p>
 
-                                """),format.raw/*40.33*/("""</p>
+                                </p>
                                 <div class="row">
                                     <div class="col-xs-12 col-md-6">
 
-                                    """),_display_(/*44.38*/if(user.getRole.equals("admin"))/*44.70*/ {_display_(Seq[Any](format.raw/*44.72*/("""
-                                        """),format.raw/*45.41*/("""<a href=""""),_display_(/*45.51*/routes/*45.57*/.HomeController.deleteTicket(t.getTicketID)),format.raw/*45.100*/("""" class = "btn btn-danger"
+                                    """),_display_(/*36.38*/if(user.getRole.equals("admin"))/*36.70*/ {_display_(Seq[Any](format.raw/*36.72*/("""
+                                        """),format.raw/*37.41*/("""<a href=""""),_display_(/*37.51*/routes/*37.57*/.HomeController.deleteTicket(t.getTicketID)),format.raw/*37.100*/("""" class = "btn btn-danger"
                                         onclick="return confirmDel();">
                                             <span class="glyphicon glyphicon-trash"></span></a>
-                                    """)))}),format.raw/*48.38*/("""
+                                    """)))}),format.raw/*40.38*/("""
 
-                                    """),format.raw/*50.37*/("""</div>
-
-
+                                    """),format.raw/*42.37*/("""</div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                </div>
+                    </div>""")))}),format.raw/*46.28*/("""
+                """),format.raw/*47.17*/("""</div>
             </div>
-            """)))}),format.raw/*59.14*/("""
 
 
-            """),format.raw/*62.13*/("""<script>
-                    function confirmDel()"""),format.raw/*63.42*/("""{"""),format.raw/*63.43*/("""
-                        """),format.raw/*64.25*/("""return confirm('Are you sure?');
-                    """),format.raw/*65.21*/("""}"""),format.raw/*65.22*/("""
-            """),format.raw/*66.13*/("""</script>
+
+            <script>
+                    function confirmDel()"""),format.raw/*53.42*/("""{"""),format.raw/*53.43*/("""
+                        """),format.raw/*54.25*/("""return confirm('Are you sure?');
+                    """),format.raw/*55.21*/("""}"""),format.raw/*55.22*/("""
+            """),format.raw/*56.13*/("""</script>
 
                 <!--END CONTENT-->
 """)))}))
@@ -101,9 +91,9 @@ Seq[Any](format.raw/*1.56*/("""
     }
   }
 
-  def render(tickets:List[models.Ticket],user:models.users.User): play.twirl.api.HtmlFormat.Appendable = apply(tickets,user)
+  def render(tickets:List[models.Ticket],e:Event,user:models.users.User): play.twirl.api.HtmlFormat.Appendable = apply(tickets,e,user)
 
-  def f:((List[models.Ticket],models.users.User) => play.twirl.api.HtmlFormat.Appendable) = (tickets,user) => apply(tickets,user)
+  def f:((List[models.Ticket],Event,models.users.User) => play.twirl.api.HtmlFormat.Appendable) = (tickets,e,user) => apply(tickets,e,user)
 
   def ref: this.type = this
 
@@ -116,11 +106,11 @@ Seq[Any](format.raw/*1.56*/("""
 object eventTicket extends eventTicket_Scope0.eventTicket
               /*
                   -- GENERATED --
-                  DATE: Thu Apr 06 16:01:40 IST 2017
-                  SOURCE: /home/wdd/webapps/TicketStore/app/views/eventTicket.scala.html
-                  HASH: 428b982e1a0b63f99f8441bb81d1acebc8d56c26
-                  MATRIX: 788->1|952->55|980->74|1008->77|1036->97|1075->99|1106->104|1946->917|1979->934|2019->936|2068->957|2215->1077|2225->1078|2260->1092|2453->1258|2463->1259|2493->1268|2555->1302|2744->1464|2785->1496|2825->1498|2894->1539|2931->1549|2946->1555|3011->1598|3274->1830|3340->1868|3567->2064|3610->2079|3688->2129|3717->2130|3770->2155|3851->2208|3880->2209|3921->2222
-                  LINES: 27->1|32->1|34->4|36->6|36->6|36->6|37->7|61->31|61->31|61->31|62->32|65->35|65->35|65->35|68->38|68->38|68->38|70->40|74->44|74->44|74->44|75->45|75->45|75->45|75->45|78->48|80->50|89->59|92->62|93->63|93->63|94->64|95->65|95->65|96->66
+                  DATE: Fri Apr 07 12:01:33 BST 2017
+                  SOURCE: C:/Users/Eileen/Desktop/TicketStore/app/views/eventTicket.scala.html
+                  HASH: e2727c4698c21c81a376f471b3cc5961a1aa6b81
+                  MATRIX: 794->1|969->66|999->88|1029->93|1057->113|1096->115|1128->121|1516->482|1526->483|1556->492|1585->493|1615->496|1625->497|1659->510|1729->553|1739->554|1772->566|1842->609|1852->610|1881->618|2016->726|2049->743|2089->745|2139->767|2289->890|2299->891|2334->905|2550->1094|2560->1095|2590->1104|2823->1310|2864->1342|2904->1344|2974->1386|3011->1396|3026->1402|3091->1445|3357->1680|3425->1720|3599->1863|3645->1881|3770->1978|3799->1979|3853->2005|3935->2059|3964->2060|4006->2074
+                  LINES: 27->1|32->1|34->4|36->6|36->6|36->6|37->7|45->15|45->15|45->15|45->15|45->15|45->15|45->15|46->16|46->16|46->16|47->17|47->17|47->17|53->23|53->23|53->23|54->24|57->27|57->27|57->27|60->30|60->30|60->30|66->36|66->36|66->36|67->37|67->37|67->37|67->37|70->40|72->42|76->46|77->47|83->53|83->53|84->54|85->55|85->55|86->56
                   -- GENERATED --
               */
           

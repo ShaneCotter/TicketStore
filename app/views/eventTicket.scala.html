@@ -1,4 +1,4 @@
-@(tickets: List[models.Ticket],user: models.users.User)
+@(tickets: List[models.Ticket], e: Event, user: models.users.User)
 
 @import helper._
 
@@ -12,30 +12,22 @@
             </div>
 
             <div class="col-lg-7 col-md-7 col-sm-6 col-xs-12" id = "eventInfo">
-                <h1>Event name</h1>
-                <p>Location here : </p>
-                <p>Date/time here : </p>
-                <p>Description here : </p>
+                <h1>@e.getTitle , @e.getEventName</h1>
+                <p>Location here : @e.getLocation</p>
+                <p>Date/time here : @e.getDate</p>
             </div>
         </div>
 
         <div class="row well" id="tickets">
-            <div class="col-lg-8 col-md-8 col-sm-6 col-xs-12">
-                <div class="row">
 
-                </div>
-                <br>
-                </div>
-
-                <div id="products" class="row list-group">
                 @for(t <- tickets) {
                     <div class="item  col-xs-4 col-lg-4">
                         <div class="thumbnail">
 
-                            <h1>@t.getTicketType</h1>
+                            <h2>@t.getTicketType</h2>
                             <div class="caption">
                                 <p class="group inner list-group-item-text">
-                                @t.getPrice
+                                <p>Ticket price : € @t.getPrice</p>
 
                                 </p>
                                 <div class="row">
@@ -48,15 +40,13 @@
                                     }
 
                                     </div>
-
-
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </div>}
                 </div>
             </div>
-            }
+
 
 
             <script>

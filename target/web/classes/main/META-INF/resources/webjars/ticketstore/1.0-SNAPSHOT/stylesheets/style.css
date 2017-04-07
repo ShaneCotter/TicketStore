@@ -834,7 +834,7 @@ hr{
 	padding-left:2em;
 }
 
-#seatingplans h1{
+#seatingplans h1 , #seatingplans h2{
 	color:#33cc33 !important;
 }
 

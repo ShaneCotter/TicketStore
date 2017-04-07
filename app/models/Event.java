@@ -13,7 +13,7 @@ import com.avaje.ebean.*;
 public class Event extends Model {
 
     @Id
-    private Long eventID;
+    private Long id;
 
     @Constraints.Required
     private String eventName;
@@ -49,11 +49,11 @@ public class Event extends Model {
     }
 
     public Long getEventID() {
-        return eventID;
+        return id;
     }
 
     public void setEventID(Long eventID) {
-        this.eventID = eventID;
+        this.id = eventID;
     }
 
     public String getEventName() {

@@ -128,8 +128,9 @@ public class HomeController extends Controller {
 
     public Result eventTicket(Long event) {
         List<Ticket> ticketList = Event.find.ref(event).getTickets();
+        Event e = Event.find.ref(event);
 
-        return ok(eventTicket.render(ticketList,getUserFromSession()));
+        return ok(eventTicket.render(ticketList,e,getUserFromSession()));
     }
 
     public Result signUp() {

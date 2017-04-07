@@ -82,10 +82,10 @@ Seq[Any](format.raw/*1.57*/("""
 object login extends login_Scope0.login
               /*
                   -- GENERATED --
-                  DATE: Thu Apr 06 16:01:40 IST 2017
-                  SOURCE: /home/wdd/webapps/TicketStore/app/views/login.scala.html
-                  HASH: 3a61eddfdf56006ee68b8782e7393266b5728b8b
-                  MATRIX: 775->1|925->56|952->58|988->86|1027->88|1054->89|1166->175|1180->181|1224->205|1395->350|1409->356|1457->384|2408->1305
+                  DATE: Fri Apr 07 10:35:21 BST 2017
+                  SOURCE: C:/Users/Eileen/Desktop/TicketStore/app/views/login.scala.html
+                  HASH: 50881f3336beaa59a7943becd1f99557a6795bb4
+                  MATRIX: 775->1|925->56|953->59|989->87|1028->89|1056->91|1170->179|1184->185|1228->209|1402->357|1416->363|1464->391|2440->1337
                   LINES: 27->1|32->1|33->2|33->2|33->2|34->3|36->5|36->5|36->5|39->8|39->8|39->8|64->33
                   -- GENERATED --
               */
