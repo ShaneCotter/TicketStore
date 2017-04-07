@@ -41,32 +41,31 @@ Seq[Any](format.raw/*3.60*/("""
 <div class="row">
 <div class="col-lg-12 well" id="addEvent">
 <!-- Start of add event up form-->
-		"""),_display_(/*12.4*/form(action = routes.HomeController.addEventSubmit(), 'class -> "form=horizontal", 'role->"form")/*12.101*/{_display_(Seq[Any](format.raw/*12.102*/("""
+		"""),_display_(/*12.4*/form(action = routes.HomeController.addEventSubmit(), 'class -> "form=horizontal", 'role->"form", 'enctype -> "mulitpart/form-data")/*12.136*/{_display_(Seq[Any](format.raw/*12.137*/("""
+				"""),_display_(/*13.6*/select(addEventForm("category.catID"), options(Category.options), '_label -> "Category", '_default -> "Choose a category",
+				'_showConstraints -> false, 'class -> "form-control")),format.raw/*14.58*/("""
+				"""),_display_(/*15.6*/inputText(addEventForm("eventName"), '_label -> "Name", 'class -> "form-control")),format.raw/*15.87*/("""
+				"""),_display_(/*16.6*/inputText(addEventForm("time"), '_label -> "Time", 'class -> "form-control")),format.raw/*16.82*/("""
+				"""),_display_(/*17.6*/inputText(addEventForm("location"), '_label -> "Location", 'class -> "form-control")),format.raw/*17.90*/("""
+				"""),_display_(/*18.6*/inputText(addEventForm("date"), '_label -> "Date", 'class -> "form-control")),format.raw/*18.82*/("""
+				"""),_display_(/*19.6*/inputText(addEventForm("title"), '_label -> "Title", 'class -> "form-control")),format.raw/*19.84*/("""
+				"""),format.raw/*20.5*/("""<label>Event Image</label>
+				<input class="btn btn-success btn-circle btn-md" type="file" name="upload">
+				<br><br>
+				"""),_display_(/*23.6*/inputText(addEventForm("eventID"), '_label -> "", 'hidden -> "hidden")),format.raw/*23.76*/("""
 
-				"""),_display_(/*14.6*/inputText(addEventForm("eventName"), '_label -> "Name", 'class -> "form-control")),format.raw/*14.87*/("""
-				"""),_display_(/*15.6*/inputText(addEventForm("time"), '_label -> "Time", 'class -> "form-control")),format.raw/*15.82*/("""
-				"""),_display_(/*16.6*/inputText(addEventForm("location"), '_label -> "Location", 'class -> "form-control")),format.raw/*16.90*/("""
-				"""),_display_(/*17.6*/inputText(addEventForm("date"), '_label -> "Date", 'class -> "form-control")),format.raw/*17.82*/("""
-				"""),_display_(/*18.6*/inputText(addEventForm("title"), '_label -> "Title", 'class -> "form-control")),format.raw/*18.84*/("""
-				"""),_display_(/*19.6*/inputText(addEventForm("eventID"), '_label -> "", 'hidden -> "hidden")),format.raw/*19.76*/("""
-
-			    """),_display_(/*21.9*/select(
-					addEventForm("category.catID"), options(Category.options), '_label -> "Category", '_default -> ".. Choose a category .. ",
-					'_showConstraints -> false, 'class -> "form-control"
-				)),format.raw/*24.6*/("""
-
-				"""),format.raw/*26.5*/("""<br>
+				"""),format.raw/*25.5*/("""<br>
 
 				<div class="actions">
 					<input type="submit" value="Add Event" class="btn btn-success">
-					<a href=""""),_display_(/*30.16*/routes/*30.22*/.HomeController.events()),format.raw/*30.46*/("""" class="btn btn-danger">Cancel</a>
+					<a href=""""),_display_(/*29.16*/routes/*29.22*/.HomeController.events()),format.raw/*29.46*/("""" class="btn btn-danger">Cancel</a>
 				</div>
 			</div>
 		</div>
 	</div>
 <!--END CONTENT-->
 
-""")))}),format.raw/*37.2*/("""
+""")))}),format.raw/*36.2*/("""
 """)))}))
       }
     }
@@ -88,11 +87,11 @@ Seq[Any](format.raw/*3.60*/("""
 object addEvent extends addEvent_Scope0.addEvent_Scope1.addEvent
               /*
                   -- GENERATED --
-                  DATE: Fri Apr 07 10:35:21 BST 2017
-                  SOURCE: C:/Users/Eileen/Desktop/TicketStore/app/views/addEvent.scala.html
-                  HASH: fd81a5d89d2afef649b878941640456bff191010
-                  MATRIX: 828->21|981->79|1011->84|1041->106|1080->108|1108->110|1302->278|1409->375|1449->376|1484->385|1586->466|1619->473|1716->549|1749->556|1854->640|1887->647|1984->723|2017->730|2116->808|2149->815|2240->885|2278->897|2500->1099|2535->1107|2682->1227|2697->1233|2742->1257|2874->1359
-                  LINES: 30->3|35->3|37->5|37->5|37->5|38->6|44->12|44->12|44->12|46->14|46->14|47->15|47->15|48->16|48->16|49->17|49->17|50->18|50->18|51->19|51->19|53->21|56->24|58->26|62->30|62->30|62->30|69->37
+                  DATE: Fri Apr 07 13:34:10 IST 2017
+                  SOURCE: /home/wdd/webapps/TicketStore/app/views/addEvent.scala.html
+                  HASH: 6086b8d8b40ad3202fc994b74976e666c4400d9b
+                  MATRIX: 828->19|981->77|1009->80|1039->102|1078->104|1105->105|1293->267|1435->399|1475->400|1507->406|1708->586|1740->592|1842->673|1874->679|1971->755|2003->761|2108->845|2140->851|2237->927|2269->933|2368->1011|2400->1016|2551->1141|2642->1211|2675->1217|2818->1333|2833->1339|2878->1363|3003->1458
+                  LINES: 30->3|35->3|37->5|37->5|37->5|38->6|44->12|44->12|44->12|45->13|46->14|47->15|47->15|48->16|48->16|49->17|49->17|50->18|50->18|51->19|51->19|52->20|55->23|55->23|57->25|61->29|61->29|61->29|68->36
                   -- GENERATED --
               */
           

@@ -13,10 +13,9 @@
                     addTicketForm("event.id"),options(Event.options),'_label -> "Event", '_default -> ".. Choose an Event ..",
                     '_showConstraints -> false, 'class -> "form-control"
                 )
-                @inputText(addTicketForm("ticket_type"), '_label -> "TicketType", 'class -> "form-control")
+                @inputText(addTicketForm("ticketType"), '_label -> "TicketType", 'class -> "form-control")
                 @inputText(addTicketForm("quantity"), '_label -> "Quantity", 'class -> "form-control")
-                @inputText(addTicketForm("price"), '_label -> "Price", 'class -> "form-control")
-                  @inputText(addTicketForm("ticketID"), '_label -> "", 'hidden -> "hidden")
+                @inputText(addTicketForm("price"), '_label -> "Price", 'class -> "form-control") @inputText(addTicketForm("ticketID"), '_label -> "", 'hidden -> "hidden")
                 <div class="actions">
                     <input type="submit" value="Add Ticket" class="btn btn-success">
                         <a href="@routes.HomeController.index()" class="btn btn-danger">Cancel</a>
