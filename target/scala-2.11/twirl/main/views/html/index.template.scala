@@ -49,7 +49,7 @@ Seq[Any](format.raw/*1.27*/("""
                     <img src=""""),_display_(/*18.32*/routes/*18.38*/.Assets.versioned("images/crowd1.jpg")),format.raw/*18.76*/("""" alt="Ed ">
                     <div class="carousel-caption">
                         <a href=""""),_display_(/*20.35*/routes/*20.41*/.HomeController.events()),format.raw/*20.65*/(""""><h1>Concerts</h1></a>
-                        <h2>TC Events have the biggest events at the best prices</h2>
+                        <h2>TC Events - The Biggest Events at the Best Prices</h2>
                     </div>
                 </div>
 
@@ -110,10 +110,10 @@ Seq[Any](format.raw/*1.27*/("""
 object index extends index_Scope0.index
               /*
                   -- GENERATED --
-                  DATE: Fri Apr 07 10:35:21 BST 2017
-                  SOURCE: C:/Users/Eileen/Desktop/TicketStore/app/views/index.scala.html
-                  HASH: 5dfe1e669af52a1a6c7b34d7384cc0e54f6f1306
-                  MATRIX: 756->1|876->26|904->29|929->46|968->48|1002->56|1756->783|1771->789|1830->827|1957->927|1972->933|2017->957|2278->1191|2293->1197|2352->1235|2478->1334|2493->1340|2538->1364|2710->1509|2725->1515|2784->1553|2910->1652|2925->1658|2970->1682|3144->1829|3159->1835|3218->1873|3344->1972|3359->1978|3404->2002|4165->2733
+                  DATE: Fri Apr 07 13:23:12 IST 2017
+                  SOURCE: /home/wdd/webapps/TicketStore/app/views/index.scala.html
+                  HASH: f5b03bc76bbca9a6bf6653c337a5b64d3051ad5a
+                  MATRIX: 756->1|876->26|903->28|928->45|967->47|999->53|1739->766|1754->772|1813->810|1938->908|1953->914|1998->938|2250->1163|2265->1169|2324->1207|2448->1304|2463->1310|2508->1334|2675->1474|2690->1480|2749->1518|2873->1615|2888->1621|2933->1645|3102->1787|3117->1793|3176->1831|3300->1928|3315->1934|3360->1958|4102->2670
                   LINES: 27->1|32->1|33->2|33->2|33->2|35->4|49->18|49->18|49->18|51->20|51->20|51->20|57->26|57->26|57->26|59->28|59->28|59->28|64->33|64->33|64->33|66->35|66->35|66->35|71->40|71->40|71->40|73->42|73->42|73->42|92->61
                   -- GENERATED --
               */

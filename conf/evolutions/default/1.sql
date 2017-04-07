@@ -22,6 +22,15 @@ create table event (
 );
 create sequence event_seq;
 
+create table order_ticket (
+  ticket_id                     bigint not null,
+  order_id                      bigint,
+  qty                           integer,
+  cost                          double,
+  constraint pk_order_ticket primary key (ticket_id)
+);
+create sequence order_ticket_seq;
+
 create table ticket (
   ticket_id                     bigint not null,
   ticket_type                   varchar(255),
@@ -39,15 +48,6 @@ create table user (
   password                      varchar(255),
   constraint pk_user primary key (email)
 );
-
-create table order_ticket (
-  ticket_id                     bigint not null,
-  order_id                      bigint,
-  qty                           integer,
-  cost                          double,
-  constraint pk_order_ticket primary key (ticket_id)
-);
-create sequence order_ticket_seq;
 
 alter table event add constraint fk_event_category_cat_id foreign key (category_cat_id) references category (cat_id) on delete restrict on update restrict;
 create index ix_event_category_cat_id on event (category_cat_id);
@@ -70,11 +70,11 @@ drop sequence if exists category_seq;
 drop table if exists event;
 drop sequence if exists event_seq;
 
+drop table if exists order_ticket;
+drop sequence if exists order_ticket_seq;
+
 drop table if exists ticket;
 drop sequence if exists ticket_seq;
 
 drop table if exists user;
-
-drop table if exists order_ticket;
-drop sequence if exists order_ticket_seq;
 

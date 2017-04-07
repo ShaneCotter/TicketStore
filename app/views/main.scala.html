@@ -43,11 +43,12 @@
                 <!--/Search Bar-->
                 <div class="nav navbar-nav navbar-right" id="nav-buttons">
                     @if(user != null){
-                        <a href="@routes.HomeController.cart()" class="btn btn-success btn-circle btn-lg"><i class="glyphicon glyphicon-shopping-cart"></i></a>
-                        <a href="@routes.LoginController.logout()" class="btn btn-success btn-lg round"><span class="glyphicon glyphicon-off"></span>LOGOUT</a>
+                        <a href="@routes.HomeController.cart()" class="btn btn-success btn-circle btn-md"><i class="glyphicon glyphicon-shopping-cart"></i></a>
+                        <a href="@routes.LoginController.logout()" class="btn btn-success btn-circle btn-md"><span class="glyphicon glyphicon-off"></span>LOGOUT</a>
                         @if(user.getRole.equals("admin")) {
                             <div class="dropdown" id="adminOptions">
-                                <button class="btn btn-success btn-circle btn-lg" data-toggle="dropdown"><i class="glyphicon glyphicon-cog"></i>Admin Options</button>
+                                <button class="btn btn-success btn-circle btn-md" data-toggle="dropdown"><i class="glyphicon glyphicon-cog"></i>Admin Options
+                                    <span class="caret"></span></button>
                                 <ul class="dropdown-menu">
                                     <li><a href="@routes.HomeController.addEvent()">Add event</a></li>
                                     <li><a href="@routes.HomeController.addTicket()">Add ticket</a></li>
@@ -55,8 +56,8 @@
                             </div>
                         }
                     }else{
-                        <a href="@routes.LoginController.login()" class="btn btn-success btn-circle btn-lg"><i class="glyphicon glyphicon-user"></i>Login</a>
-                        <a href="@routes.HomeController.signUp()" class="btn btn-success btn-lg round"><span class="glyphcon glyphicon-pencil"></span>Sign up</a>
+                        <a href="@routes.LoginController.login()" class="btn btn-success btn-circle btn-md"><i class="glyphicon glyphicon-user"></i>Login</a>
+                        <a href="@routes.HomeController.signUp()" class="btn btn-success btn-circle btn-md"><span class="glyphcon glyphicon-pencil"></span>Sign up</a>
                     }
                 </div>
             </div>
