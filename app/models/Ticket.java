@@ -38,9 +38,9 @@ public class Ticket extends Model {
 
     public Ticket(Long ticketID, String ticketType, int quantity, double price) {
         this.ticket_id = ticketID;
-//      this.event_id = eventID;
         this.ticket_type = ticketType;
         this.quantity = quantity;
+        this.price = price;
     }
 
 
@@ -52,15 +52,6 @@ public class Ticket extends Model {
         this.ticket_id = ticketID;
     }
 
-
-//    public Long getEventID() {
-//        return event_id;
-//    }
-//
-//    public void setEventID(Long eventID) {
-//        this.event_id = eventID;
-//    }
-
     public String getTicketType() {
         return ticket_type;
     }
@@ -68,7 +59,6 @@ public class Ticket extends Model {
     public void setTicketType(String ticketType) {
         this.ticket_type = ticketType;
     }
-
 
     public int getQuantity() {
         return quantity;
@@ -88,9 +78,15 @@ public class Ticket extends Model {
 
     public static Finder<Long,Ticket> find = new Finder<Long, Ticket>(Ticket.class);
 
-    // Find all Events in the database
-    // Filter event name
     public static List<Ticket> findAll() {
         return Ticket.find.all();
+    }
+
+    public Event getEvent() {
+        return event;
+    }
+
+    public void setEvent(Event event) {
+        this.event = event;
     }
 }

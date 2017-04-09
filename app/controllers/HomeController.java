@@ -53,12 +53,12 @@ public class HomeController extends Controller {
 
         Event newEvent = newEventForm.get();
 
-        if (newEvent.getEventID() ==  null) {
+        if (newEvent.getId() ==  null) {
             newEvent.save();
             flash("success", "Event " + newEvent.getEventName() + " has been created. Do not forget to add Tickets");
         }
 
-        else if (newEvent.getEventID() != null) {
+        else if (newEvent.getId() != null) {
             newEvent.update();
             flash("success", "Event " + newEvent.getEventName() + " has been updated.");
         }

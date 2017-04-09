@@ -91,36 +91,41 @@ Seq[Any](format.raw/*1.90*/("""
                 <br>
 
                 <div id="products" class="row list-group">
+                    <a href=""""),_display_(/*63.31*/routes/*63.37*/.HomeController.addTicket()),format.raw/*63.64*/("""" class="btn btn-success">
+                        <span class="glyphicon glyphicon-plus"></span>Add tickets
+                    </a>
+                    <br>
+                    <br>
                         <!-- Start of for loop - Fo reach e in events add a row -->
-                    """),_display_(/*64.22*/for(e <- events) yield /*64.38*/ {_display_(Seq[Any](format.raw/*64.40*/("""
-                        """),format.raw/*65.25*/("""<a href=""""),_display_(/*65.35*/routes/*65.41*/.HomeController.admineventTicket(e.getEventID)),format.raw/*65.87*/("""">
+                    """),_display_(/*69.22*/for(e <- events) yield /*69.38*/ {_display_(Seq[Any](format.raw/*69.40*/("""
+                        """),format.raw/*70.25*/("""<a href=""""),_display_(/*70.35*/routes/*70.41*/.HomeController.admineventTicket(e.getId)),format.raw/*70.82*/("""">
                             <div class="item  col-xs-4 col-lg-4">
                                 <div class="thumbnail">
 
                                     <img class="group list-group-image" src="http://placehold.it/400x250/000/fff" alt="" >
                                     <div class="caption">
                                         <h4 class="group inner list-group-item-heading">
-                                        """),_display_(/*72.42*/e/*72.43*/.getTitle),format.raw/*72.52*/("""</h4>
-                                            """),_display_(/*73.46*/e/*73.47*/.getEventName),format.raw/*73.60*/("""
-                                            """),format.raw/*74.45*/("""<br>
-                                            """),_display_(/*75.46*/e/*75.47*/.getLocation),format.raw/*75.59*/("""
-                                            """),format.raw/*76.45*/("""<br>
-                                            """),_display_(/*77.46*/e/*77.47*/.getTime),format.raw/*77.55*/(""" """),format.raw/*77.56*/(""", """),_display_(/*77.59*/e/*77.60*/.getDate),format.raw/*77.68*/("""
-                                            """),format.raw/*78.45*/("""<br>
+                                        """),_display_(/*77.42*/e/*77.43*/.getTitle),format.raw/*77.52*/("""</h4>
+                                            """),_display_(/*78.46*/e/*78.47*/.getEventName),format.raw/*78.60*/("""
+                                            """),format.raw/*79.45*/("""<br>
+                                            """),_display_(/*80.46*/e/*80.47*/.getLocation),format.raw/*80.59*/("""
+                                            """),format.raw/*81.45*/("""<br>
+                                            """),_display_(/*82.46*/e/*82.47*/.getTime),format.raw/*82.55*/(""" """),format.raw/*82.56*/(""", """),_display_(/*82.59*/e/*82.60*/.getDate),format.raw/*82.68*/("""
+                                            """),format.raw/*83.45*/("""<br>
                                             Starting from €
                                         </p>
                                         <div class="row">
                                             <div class="col-xs-12 col-md-6">
-                                            """),_display_(/*83.46*/if(user.getRole.equals("admin"))/*83.78*/ {_display_(Seq[Any](format.raw/*83.80*/("""
-                                                """),format.raw/*84.49*/("""<a href=""""),_display_(/*84.59*/routes/*84.65*/.HomeController.updateEvent(e.getEventID)),format.raw/*84.106*/("""" class="btn btn-danger">
+                                            """),_display_(/*88.46*/if(user.getRole.equals("admin"))/*88.78*/ {_display_(Seq[Any](format.raw/*88.80*/("""
+                                                """),format.raw/*89.49*/("""<a href=""""),_display_(/*89.59*/routes/*89.65*/.HomeController.updateEvent(e.getId)),format.raw/*89.101*/("""" class="btn btn-danger">
                                                     <span class="glyphicon glyphicon-wrench"></span>
                                                 </a>
-                                                <a href=""""),_display_(/*87.59*/routes/*87.65*/.HomeController.deleteEvent(e.getEventID)),format.raw/*87.106*/("""" class = "btn btn-danger"
+                                                <a href=""""),_display_(/*92.59*/routes/*92.65*/.HomeController.deleteEvent(e.getId)),format.raw/*92.101*/("""" class = "btn btn-danger"
                                                 onclick="return confirmDel();">
                                                     <span class="glyphicon glyphicon-trash"></span>
                                                 </a>
-                                            """)))}),format.raw/*91.46*/("""
-                                            """),format.raw/*92.45*/("""</div>
+                                            """)))}),format.raw/*96.46*/("""
+                                            """),format.raw/*97.45*/("""</div>
 
 
                                         </div>
@@ -129,7 +134,7 @@ Seq[Any](format.raw/*1.90*/("""
                             </div>
                         </a>
 
-                    """)))}),format.raw/*101.22*/(""" """),format.raw/*101.23*/("""<!-- End of for loop -->
+                    """)))}),format.raw/*106.22*/(""" """),format.raw/*106.23*/("""<!-- End of for loop -->
 
 
                     <div class="col-xs-12 col-md-6">
@@ -144,17 +149,17 @@ Seq[Any](format.raw/*1.90*/("""
 
         <!--Script for displaying products in grid/list-->
     <script>
-            $(document).ready(function() """),format.raw/*116.42*/("""{"""),format.raw/*116.43*/("""
-                """),format.raw/*117.17*/("""$('#list').click(function(event)"""),format.raw/*117.49*/("""{"""),format.raw/*117.50*/("""event.preventDefault();$('#products .item').addClass('list-group-item');"""),format.raw/*117.122*/("""}"""),format.raw/*117.123*/(""");
-                $('#grid').click(function(event)"""),format.raw/*118.49*/("""{"""),format.raw/*118.50*/("""event.preventDefault();$('#products .item').removeClass('list-group-item');$('#products .item').addClass('grid-group-item');"""),format.raw/*118.174*/("""}"""),format.raw/*118.175*/(""");
-            """),format.raw/*119.13*/("""}"""),format.raw/*119.14*/(""");</script>
+            $(document).ready(function() """),format.raw/*121.42*/("""{"""),format.raw/*121.43*/("""
+                """),format.raw/*122.17*/("""$('#list').click(function(event)"""),format.raw/*122.49*/("""{"""),format.raw/*122.50*/("""event.preventDefault();$('#products .item').addClass('list-group-item');"""),format.raw/*122.122*/("""}"""),format.raw/*122.123*/(""");
+                $('#grid').click(function(event)"""),format.raw/*123.49*/("""{"""),format.raw/*123.50*/("""event.preventDefault();$('#products .item').removeClass('list-group-item');$('#products .item').addClass('grid-group-item');"""),format.raw/*123.174*/("""}"""),format.raw/*123.175*/(""");
+            """),format.raw/*124.13*/("""}"""),format.raw/*124.14*/(""");</script>
 
     <!--Script for confirming delete of event-->
     <script>
-        function confirmDel()"""),format.raw/*123.30*/("""{"""),format.raw/*123.31*/("""
-            """),format.raw/*124.13*/("""return confirm('Are you sure?');
-        """),format.raw/*125.9*/("""}"""),format.raw/*125.10*/("""
-    """),format.raw/*126.5*/("""</script>
+        function confirmDel()"""),format.raw/*128.30*/("""{"""),format.raw/*128.31*/("""
+            """),format.raw/*129.13*/("""return confirm('Are you sure?');
+        """),format.raw/*130.9*/("""}"""),format.raw/*130.10*/("""
+    """),format.raw/*131.5*/("""</script>
 """)))}))
       }
     }
@@ -175,11 +180,11 @@ Seq[Any](format.raw/*1.90*/("""
 object adminevents extends adminevents_Scope0.adminevents
               /*
                   -- GENERATED --
-                  DATE: Sun Apr 09 23:00:09 BST 2017
+                  DATE: Sun Apr 09 23:58:26 BST 2017
                   SOURCE: C:/Users/Eileen/Desktop/TicketStore/app/views/adminevents.scala.html
-                  HASH: 2c1a20718dcf2c07a42a3c73e4631f212fa86eeb
-                  MATRIX: 809->1|992->89|1022->94|1049->113|1088->115|1124->125|2353->1327|2368->1333|2419->1363|2527->1444|2563->1464|2603->1466|2668->1503|2705->1513|2720->1519|2780->1558|2851->1601|2862->1602|2892->1610|2962->1652|3010->1673|3020->1674|3058->1691|3172->1774|3234->1808|3597->2144|3638->2176|3677->2177|3727->2199|3810->2255|3824->2260|3860->2275|3910->2297|3966->2322|4012->2340|4684->2985|4716->3001|4756->3003|4810->3029|4847->3039|4862->3045|4929->3091|5400->3535|5410->3536|5440->3545|5519->3597|5529->3598|5563->3611|5637->3657|5715->3708|5725->3709|5758->3721|5832->3767|5910->3818|5920->3819|5949->3827|5978->3828|6008->3831|6018->3832|6047->3840|6121->3886|6443->4181|6484->4213|6524->4215|6602->4265|6639->4275|6654->4281|6717->4322|6985->4563|7000->4569|7063->4610|7403->4919|7477->4965|7742->5198|7772->5199|8134->5532|8164->5533|8211->5551|8272->5583|8302->5584|8404->5656|8435->5657|8516->5709|8546->5710|8700->5834|8731->5835|8776->5851|8806->5852|8943->5960|8973->5961|9016->5975|9086->6017|9116->6018|9150->6024
-                  LINES: 27->1|32->1|34->3|34->3|34->3|37->6|57->26|57->26|57->26|59->28|59->28|59->28|60->29|60->29|60->29|60->29|60->29|60->29|60->29|61->30|61->30|61->30|61->30|63->32|64->33|78->47|78->47|78->47|79->48|80->49|80->49|80->49|81->50|82->51|83->52|95->64|95->64|95->64|96->65|96->65|96->65|96->65|103->72|103->72|103->72|104->73|104->73|104->73|105->74|106->75|106->75|106->75|107->76|108->77|108->77|108->77|108->77|108->77|108->77|108->77|109->78|114->83|114->83|114->83|115->84|115->84|115->84|115->84|118->87|118->87|118->87|122->91|123->92|132->101|132->101|147->116|147->116|148->117|148->117|148->117|148->117|148->117|149->118|149->118|149->118|149->118|150->119|150->119|154->123|154->123|155->124|156->125|156->125|157->126
+                  HASH: d1b1fcee0a78d0ab5e3209d6c389603f1526e9fd
+                  MATRIX: 809->1|992->89|1022->94|1049->113|1088->115|1124->125|2353->1327|2368->1333|2419->1363|2527->1444|2563->1464|2603->1466|2668->1503|2705->1513|2720->1519|2780->1558|2851->1601|2862->1602|2892->1610|2962->1652|3010->1673|3020->1674|3058->1691|3172->1774|3234->1808|3597->2144|3638->2176|3677->2177|3727->2199|3810->2255|3824->2260|3860->2275|3910->2297|3966->2322|4012->2340|4608->2909|4623->2915|4671->2942|4993->3237|5025->3253|5065->3255|5119->3281|5156->3291|5171->3297|5233->3338|5704->3782|5714->3783|5744->3792|5823->3844|5833->3845|5867->3858|5941->3904|6019->3955|6029->3956|6062->3968|6136->4014|6214->4065|6224->4066|6253->4074|6282->4075|6312->4078|6322->4079|6351->4087|6425->4133|6747->4428|6788->4460|6828->4462|6906->4512|6943->4522|6958->4528|7016->4564|7284->4805|7299->4811|7357->4847|7697->5156|7771->5202|8036->5435|8066->5436|8428->5769|8458->5770|8505->5788|8566->5820|8596->5821|8698->5893|8729->5894|8810->5946|8840->5947|8994->6071|9025->6072|9070->6088|9100->6089|9237->6197|9267->6198|9310->6212|9380->6254|9410->6255|9444->6261
+                  LINES: 27->1|32->1|34->3|34->3|34->3|37->6|57->26|57->26|57->26|59->28|59->28|59->28|60->29|60->29|60->29|60->29|60->29|60->29|60->29|61->30|61->30|61->30|61->30|63->32|64->33|78->47|78->47|78->47|79->48|80->49|80->49|80->49|81->50|82->51|83->52|94->63|94->63|94->63|100->69|100->69|100->69|101->70|101->70|101->70|101->70|108->77|108->77|108->77|109->78|109->78|109->78|110->79|111->80|111->80|111->80|112->81|113->82|113->82|113->82|113->82|113->82|113->82|113->82|114->83|119->88|119->88|119->88|120->89|120->89|120->89|120->89|123->92|123->92|123->92|127->96|128->97|137->106|137->106|152->121|152->121|153->122|153->122|153->122|153->122|153->122|154->123|154->123|154->123|154->123|155->124|155->124|159->128|159->128|160->129|161->130|161->130|162->131
                   -- GENERATED --
               */
           

@@ -40,7 +40,7 @@ public class Event extends Model {
     public Event() {}
 
     public Event(Long eventID, String eventName, String time, String location, String date, String title) {
-        this.setEventID(eventID);
+        this.setId(eventID);
         this.setEventName(eventName);
         this.time = time;
         this.location = location;
@@ -48,11 +48,11 @@ public class Event extends Model {
         this.title = title;
     }
 
-    public Long getEventID() {
+    public Long getId() {
         return id;
     }
 
-    public void setEventID(Long eventID) {
+    public void setId(Long eventID) {
         this.id = eventID;
     }
 
@@ -123,7 +123,7 @@ public class Event extends Model {
         LinkedHashMap<String,String> options = new LinkedHashMap<>();
 
         for(Event e: Event.findAllT()){
-            options.put(e.getEventID().toString(),e.getEventName());
+            options.put(e.getId().toString(),e.getEventName());
         }
         return options;
     }

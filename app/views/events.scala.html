@@ -63,7 +63,7 @@
                 <div id="products" class="row list-group">
                         <!-- Start of for loop - Fo reach e in events add a row -->
                     @for(e <- events) {
-                        <a href="@routes.HomeController.eventTicket(e.getEventID)">
+                        <a href="@routes.HomeController.eventTicket(e.getId)">
                             <div class="item  col-xs-4 col-lg-4">
                                 <div class="thumbnail">
 
