@@ -55,15 +55,16 @@ public class HomeController extends Controller {
 
         if (newEvent.getEventID() ==  null) {
             newEvent.save();
+            flash("success", "Event " + newEvent.getEventName() + " has been created. Do not forget to add Tickets");
         }
 
         else if (newEvent.getEventID() != null) {
             newEvent.update();
+            flash("success", "Event " + newEvent.getEventName() + " has been updated.");
         }
 
-        flash("success", "Event " + newEvent.getEventName() + " has been created. Do not forget to add Tickets");
 
-        return redirect(controllers.routes.HomeController.events(0));
+        return redirect(controllers.routes.HomeController.adminevents(0));
     }
 
     @Security.Authenticated(Secured.class)
@@ -71,11 +72,15 @@ public class HomeController extends Controller {
     @Transactional
     public Result deleteEvent(Long id){
 
+        Event e = Event.find.ref(id);
+
+        flash("success","Event: " + e.getEventName() + " has been deleted");
+
         Event.find.ref(id).delete();
 
-        flash("success","Event has been deleted");
 
-        return redirect(routes.HomeController.events(0));
+
+        return redirect(routes.HomeController.adminevents(0));
     }
 
     @Security.Authenticated(Secured.class)
@@ -106,7 +111,16 @@ public class HomeController extends Controller {
     }
 
     public Result contact() {
-        return ok(contact.render(getUserFromSession()));
+        Form<Contact> contactForm = formFactory.form(Contact.class);
+        return ok(contact.render(contactForm,getUserFromSession()));
+    }
+
+    @Security.Authenticated(Secured.class)
+    @With(AuthAdmin.class)
+    @Transactional
+    public Result viewContact(){
+        List<Contact> contactList = Contact.findAll();
+        return ok(viewContact.render(contactList,getUserFromSession()));
     }
 
     public Result events(Long cat) {
@@ -126,11 +140,58 @@ public class HomeController extends Controller {
         return ok(events.render(eventsList,categoriesList,getUserFromSession()));
     }
 
+    @Security.Authenticated(Secured.class)
+    @With(AuthAdmin.class)
+    @Transactional
+    public Result adminevents(Long cat) {
+
+        // Get list of events
+        List<Event> eventsList = new ArrayList<Event>();
+        // Render the list events view, passing
+        List<Category> categoriesList = Category.findAll();
+
+        if(cat == 0){
+            eventsList = Event.findAll();
+        }
+        else{
+            eventsList = Category.find.ref(cat).getEvents();
+        }
+
+        return ok(adminevents.render(eventsList,categoriesList,getUserFromSession()));
+    }
+
     public Result eventTicket(Long event) {
         List<Ticket> ticketList = Event.find.ref(event).getTickets();
         Event e = Event.find.ref(event);
 
         return ok(eventTicket.render(ticketList,e,getUserFromSession()));
+    }
+
+    @Security.Authenticated(Secured.class)
+    @With(AuthAdmin.class)
+    @Transactional
+    public Result admineventTicket(Long event) {
+        List<Ticket> ticketList = Event.find.ref(event).getTickets();
+        Event e = Event.find.ref(event);
+
+        return ok(admineventTicket.render(ticketList,e,getUserFromSession()));
+    }
+
+    public Result addContactSubmit(){
+
+        Form<Contact> contactSubmitForm = formFactory.form(Contact.class).bindFromRequest();
+
+        if(contactSubmitForm.hasErrors()){
+            return badRequest(contact.render(null,getUserFromSession()));
+        }
+
+        Contact newContact = contactSubmitForm.get();
+
+        newContact.save();
+
+        flash("success","Message has been sent");
+
+        return redirect(controllers.routes.HomeController.contact());
     }
 
     public Result signUp() {
@@ -173,7 +234,7 @@ public class HomeController extends Controller {
 
         flash("success", "Ticket " + newTicket.getTicketType() + "has been created");
 
-        return redirect(controllers.routes.HomeController.index());
+        return redirect(controllers.routes.HomeController.adminevents(0));
     }
 
     @Security.Authenticated(Secured.class)
@@ -184,7 +245,7 @@ public class HomeController extends Controller {
 
         flash("success","Ticket has been deleted");
 
-        return redirect(routes.HomeController.eventTicket(id));
+        return redirect(routes.HomeController.admineventTicket(id));
     }
 
     @Security.Authenticated(Secured.class)

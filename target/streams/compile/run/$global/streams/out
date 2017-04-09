@@ -1,0 +1,2 @@
+java.lang.OutOfMemoryError: Metaspace
+[0m[[31merror[0m] [0m(compile:[31mrun[0m) java.lang.reflect.InvocationTargetException[0m

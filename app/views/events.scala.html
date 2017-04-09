@@ -44,6 +44,7 @@
 
                 <!--Main content--->
             <div class="col-sm-9">
+
                 <div class="row"><br>
                     <strong>Display</strong>
                     <div class="btn-group">
@@ -51,6 +52,11 @@
                         </span>List</a> <a href="#" id="grid" class="btn btn-default btn-sm"><span
                     class="glyphicon glyphicon-th"></span>Grid</a>
                     </div>
+                    @if(flash.containsKey("success")){
+                        <div class="alert alert-success">
+                        @flash.get("success")
+                        </div>
+                    }
                 </div>
                 <br>
 
@@ -71,19 +77,10 @@
                                             <br>
                                             @e.getTime , @e.getDate
                                             <br>
-                                            Starting from €
+                                            @e.calcLowestPrice
                                         </p>
                                         <div class="row">
                                             <div class="col-xs-12 col-md-6">
-                                            @if(user.getRole.equals("admin")) {
-                                                <a href="@routes.HomeController.updateEvent(e.getEventID)" class="btn btn-danger">
-                                                    <span class="glyphicon glyphicon-wrench"></span>
-                                                </a>
-                                                <a href="@routes.HomeController.deleteEvent(e.getEventID)" class = "btn btn-danger"
-                                                onclick="return confirmDel();">
-                                                    <span class="glyphicon glyphicon-trash"></span>
-                                                </a>
-                                            }
                                             </div>
 
 

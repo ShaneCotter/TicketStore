@@ -10,8 +10,11 @@ GET     /addevent                   controllers.HomeController.addEvent
 GET     /cart                       controllers.HomeController.cart
 GET     /checkout                   controllers.HomeController.checkout
 GET     /contact                    controllers.HomeController.contact
+GET     /viewContact                controllers.HomeController.viewContact
 GET     /events                     controllers.HomeController.events(cat:Long ?=0L)
+GET     /adminevents                controllers.HomeController.adminevents(cat:Long ?=0L)
 GET     /eventticket                controllers.HomeController.eventTicket(event:Long ?=0L)
+GET     /admineventticket           controllers.HomeController.admineventTicket(event:Long ?=0L)
 GET     /login                      controllers.LoginController.login
 GET     /signup                     controllers.HomeController.signUp
 GET     /signUpSubmit               controllers.HomeController.signUpSubmit()
@@ -29,8 +32,7 @@ POST    /addEventSubmit             controllers.HomeController.addEventSubmit
 GET     /delEvent/:id               controllers.HomeController.deleteEvent(id:Long)
 GET     /updateEvent/:id            controllers.HomeController.updateEvent(id:Long)
 
-
-
+POST    /addContactSubmit           controllers.HomeController.addContactSubmit
 
 
 

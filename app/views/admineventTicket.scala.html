@@ -1,0 +1,61 @@
+@(tickets: List[models.Ticket], e: Event, user: models.users.User)
+
+@import helper._
+
+
+@main("Tickets",user) {
+    <!--..CONTENT..-->
+    <div class="container" id = "seatingplans">
+        @if(flash.containsKey("success")){
+            <div class="alert alert-success">
+            @flash.get("success")
+            </div>
+        }
+        <div class="row well">
+            <div class="col-lg-5 col-md-5 col-sm-6 col-xs-12">
+                <img src="http://placehold.it/400x250/000/fff" alt="">
+            </div>
+
+            <div class="col-lg-7 col-md-7 col-sm-6 col-xs-12" id = "eventInfo">
+                <h1>@e.getTitle , @e.getEventName</h1>
+                <p>Location here : @e.getLocation</p>
+                <p>Date/time here : @e.getDate</p>
+            </div>
+        </div>
+
+        <div class="row well" id="tickets">
+
+                @for(t <- tickets) {
+                    <div class="item  col-xs-4 col-lg-4">
+                        <div class="thumbnail">
+
+                            <h2>@t.getTicketType</h2>
+                            <div class="caption">
+                                <p class="group inner list-group-item-text">
+                                <p>Ticket price : € @t.getPrice</p>
+
+                                <div class="row">
+                                    <div class="col-xs-12 col-md-6">
+                                    @if(user.getRole.equals("admin")) {
+                                        <a href="@routes.HomeController.deleteTicket(t.getTicketID)" class = "btn btn-danger"
+                                        onclick="return confirmDel();">
+                                            <span class="glyphicon glyphicon-trash"></span></a>
+                                    }
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>}
+                </div>
+            </div>
+
+
+
+            <script>
+                    function confirmDel(){
+                        return confirm('Are you sure?');
+                    }
+            </script>
+
+                <!--END CONTENT-->
+}

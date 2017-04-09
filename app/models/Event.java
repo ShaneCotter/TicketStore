@@ -135,4 +135,27 @@ public class Event extends Model {
     public void setCategory(Category category) {
         this.category = category;
     }
+
+        public String calcLowestPrice(){
+          double lowestPrice = 11111111111111.00;
+
+
+
+        if(getTickets().size() > 0){
+            List<Ticket> tickets = getTickets();
+
+            for(int i =0; i< getTickets().size(); i++)
+            {
+
+                Ticket t = tickets.get(i);
+                if(t.getPrice() < lowestPrice)
+                {
+                    lowestPrice = t.getPrice();
+                }
+            }
+        } else{
+            return "No tickets available";
+        }
+        return "Starting from €" + lowestPrice;
+    }
 }

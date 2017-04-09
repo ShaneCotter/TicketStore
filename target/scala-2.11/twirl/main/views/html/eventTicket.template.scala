@@ -36,53 +36,52 @@ Seq[Any](format.raw/*1.67*/("""
 """),_display_(/*6.2*/main("Tickets",user)/*6.22*/ {_display_(Seq[Any](format.raw/*6.24*/("""
     """),format.raw/*7.5*/("""<!--..CONTENT..-->
     <div class="container" id = "seatingplans">
-        <div class="row well">
+        """),_display_(/*9.10*/if(flash.containsKey("success"))/*9.42*/{_display_(Seq[Any](format.raw/*9.43*/("""
+            """),format.raw/*10.13*/("""<div class="alert alert-success">
+            """),_display_(/*11.14*/flash/*11.19*/.get("success")),format.raw/*11.34*/("""
+            """),format.raw/*12.13*/("""</div>
+        """)))}),format.raw/*13.10*/("""
+        """),format.raw/*14.9*/("""<div class="row well">
             <div class="col-lg-5 col-md-5 col-sm-6 col-xs-12">
                 <img src="http://placehold.it/400x250/000/fff" alt="">
             </div>
 
             <div class="col-lg-7 col-md-7 col-sm-6 col-xs-12" id = "eventInfo">
-                <h1>"""),_display_(/*15.22*/e/*15.23*/.getTitle),format.raw/*15.32*/(""" """),format.raw/*15.33*/(""", """),_display_(/*15.36*/e/*15.37*/.getEventName),format.raw/*15.50*/("""</h1>
-                <p>Location here : """),_display_(/*16.37*/e/*16.38*/.getLocation),format.raw/*16.50*/("""</p>
-                <p>Date/time here : """),_display_(/*17.38*/e/*17.39*/.getDate),format.raw/*17.47*/("""</p>
+                <h1>"""),_display_(/*20.22*/e/*20.23*/.getTitle),format.raw/*20.32*/(""" """),format.raw/*20.33*/(""", """),_display_(/*20.36*/e/*20.37*/.getEventName),format.raw/*20.50*/("""</h1>
+                <p>Location here : """),_display_(/*21.37*/e/*21.38*/.getLocation),format.raw/*21.50*/("""</p>
+                <p>Date/time here : """),_display_(/*22.38*/e/*22.39*/.getDate),format.raw/*22.47*/("""</p>
             </div>
         </div>
 
         <div class="row well" id="tickets">
 
-                """),_display_(/*23.18*/for(t <- tickets) yield /*23.35*/ {_display_(Seq[Any](format.raw/*23.37*/("""
-                    """),format.raw/*24.21*/("""<div class="item  col-xs-4 col-lg-4">
+                """),_display_(/*28.18*/for(t <- tickets) yield /*28.35*/ {_display_(Seq[Any](format.raw/*28.37*/("""
+                    """),format.raw/*29.21*/("""<div class="item  col-xs-4 col-lg-4">
                         <div class="thumbnail">
 
-                            <h2>"""),_display_(/*27.34*/t/*27.35*/.getTicketType),format.raw/*27.49*/("""</h2>
+                            <h2>"""),_display_(/*32.34*/t/*32.35*/.getTicketType),format.raw/*32.49*/("""</h2>
                             <div class="caption">
                                 <p class="group inner list-group-item-text">
-                                <p>Ticket price : € """),_display_(/*30.54*/t/*30.55*/.getPrice),format.raw/*30.64*/("""</p>
+                                <p>Ticket price : € """),_display_(/*35.54*/t/*35.55*/.getPrice),format.raw/*35.64*/("""</p>
 
                                 <div class="row">
                                     <div class="col-xs-12 col-md-6">
 
-                                    """),_display_(/*35.38*/if(user.getRole.equals("admin"))/*35.70*/ {_display_(Seq[Any](format.raw/*35.72*/("""
-                                        """),format.raw/*36.41*/("""<a href=""""),_display_(/*36.51*/routes/*36.57*/.HomeController.deleteTicket(t.getTicketID)),format.raw/*36.100*/("""" class = "btn btn-danger"
-                                        onclick="return confirmDel();">
-                                            <span class="glyphicon glyphicon-trash"></span></a>
-                                    """)))}),format.raw/*39.38*/("""
-
-                                    """),format.raw/*41.37*/("""</div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>""")))}),format.raw/*45.28*/("""
-                """),format.raw/*46.17*/("""</div>
+                    </div>""")))}),format.raw/*44.28*/("""
+                """),format.raw/*45.17*/("""</div>
             </div>
 
 
 
             <script>
-                    function confirmDel()"""),format.raw/*52.42*/("""{"""),format.raw/*52.43*/("""
-                        """),format.raw/*53.25*/("""return confirm('Are you sure?');
-                    """),format.raw/*54.21*/("""}"""),format.raw/*54.22*/("""
-            """),format.raw/*55.13*/("""</script>
+                    function confirmDel()"""),format.raw/*51.42*/("""{"""),format.raw/*51.43*/("""
+                        """),format.raw/*52.25*/("""return confirm('Are you sure?');
+                    """),format.raw/*53.21*/("""}"""),format.raw/*53.22*/("""
+            """),format.raw/*54.13*/("""</script>
 
                 <!--END CONTENT-->
 """)))}))
@@ -105,11 +104,11 @@ Seq[Any](format.raw/*1.67*/("""
 object eventTicket extends eventTicket_Scope0.eventTicket
               /*
                   -- GENERATED --
-                  DATE: Fri Apr 07 13:23:12 IST 2017
-                  SOURCE: /home/wdd/webapps/TicketStore/app/views/eventTicket.scala.html
-                  HASH: b49e7c736544233b5adc9b0eea5730ed4369bf63
-                  MATRIX: 794->1|969->66|997->85|1025->88|1053->108|1092->110|1123->115|1503->468|1513->469|1543->478|1572->479|1602->482|1612->483|1646->496|1715->538|1725->539|1758->551|1827->593|1837->594|1866->602|1995->704|2028->721|2068->723|2117->744|2264->864|2274->865|2309->879|2522->1065|2532->1066|2562->1075|2752->1238|2793->1270|2833->1272|2902->1313|2939->1323|2954->1329|3019->1372|3282->1604|3348->1642|3518->1781|3563->1798|3682->1889|3711->1890|3764->1915|3845->1968|3874->1969|3915->1982
-                  LINES: 27->1|32->1|34->4|36->6|36->6|36->6|37->7|45->15|45->15|45->15|45->15|45->15|45->15|45->15|46->16|46->16|46->16|47->17|47->17|47->17|53->23|53->23|53->23|54->24|57->27|57->27|57->27|60->30|60->30|60->30|65->35|65->35|65->35|66->36|66->36|66->36|66->36|69->39|71->41|75->45|76->46|82->52|82->52|83->53|84->54|84->54|85->55
+                  DATE: Sun Apr 09 23:00:09 BST 2017
+                  SOURCE: C:/Users/Eileen/Desktop/TicketStore/app/views/eventTicket.scala.html
+                  HASH: 77087775576411d2fd1f2f3c5215a1d0d3a6730c
+                  MATRIX: 794->1|969->66|999->88|1029->93|1057->113|1096->115|1128->121|1232->199|1272->231|1310->232|1352->246|1427->294|1441->299|1477->314|1519->328|1567->345|1604->355|1915->639|1925->640|1955->649|1984->650|2014->653|2024->654|2058->667|2128->710|2138->711|2171->723|2241->766|2251->767|2280->775|2415->883|2448->900|2488->902|2538->924|2688->1047|2698->1048|2733->1062|2949->1251|2959->1252|2989->1261|3330->1571|3376->1589|3501->1686|3530->1687|3584->1713|3666->1767|3695->1768|3737->1782
+                  LINES: 27->1|32->1|34->4|36->6|36->6|36->6|37->7|39->9|39->9|39->9|40->10|41->11|41->11|41->11|42->12|43->13|44->14|50->20|50->20|50->20|50->20|50->20|50->20|50->20|51->21|51->21|51->21|52->22|52->22|52->22|58->28|58->28|58->28|59->29|62->32|62->32|62->32|65->35|65->35|65->35|74->44|75->45|81->51|81->51|82->52|83->53|83->53|84->54
                   -- GENERATED --
               */
           

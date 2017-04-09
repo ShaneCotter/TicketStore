@@ -41,7 +41,7 @@ public class LoginController extends Controller {
             session().clear();
             session("email",loginSubmitform.get().getEmail());
         }
-        return redirect(controllers.routes.HomeController.index());
+        return redirect(controllers.routes.HomeController.events(0));
     }
 
     public Result logout(){

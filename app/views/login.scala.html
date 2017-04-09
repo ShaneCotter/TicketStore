@@ -1,10 +1,12 @@
 @(loginForm: Form[models.Login],user: models.users.User)
+
 @main("Welcome to Play",user) {
 <!--..CONTENT..-->
 <div class="container-fluid" id="content">
 <h2>Login or <a href ="@routes.HomeController.signUp()">Sign Up</a></h2>
 <div class="row omb_row-sm-offset-3">
-      <div class="col-xs-12 col-sm-6">  
+      <div class="col-xs-12 col-sm-6">
+
           <form class="omb_loginForm" action="@routes.LoginController.loginSubmit" name ="loginForm" method = "POST">
           <div class="input-group">
             <span class="input-group-addon"><i class="fa fa-user"></i></span>
@@ -19,6 +21,7 @@
           <br>
           <button class="btn btn-lg btn-success btn-block" type="submit">Login        <i class="glyphicon glyphicon-thumbs-up"></i></button>
         </form>
+
       </div>
       </div>
     <div class="row omb_row-sm-offset-3">

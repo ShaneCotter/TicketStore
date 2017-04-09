@@ -75,6 +75,7 @@ Seq[Any](format.raw/*1.90*/("""
 
                 <!--Main content--->
             <div class="col-sm-9">
+
                 <div class="row"><br>
                     <strong>Display</strong>
                     <div class="btn-group">
@@ -82,40 +83,36 @@ Seq[Any](format.raw/*1.90*/("""
                         </span>List</a> <a href="#" id="grid" class="btn btn-default btn-sm"><span
                     class="glyphicon glyphicon-th"></span>Grid</a>
                     </div>
-                </div>
+                    """),_display_(/*55.22*/if(flash.containsKey("success"))/*55.54*/{_display_(Seq[Any](format.raw/*55.55*/("""
+                        """),format.raw/*56.25*/("""<div class="alert alert-success">
+                        """),_display_(/*57.26*/flash/*57.31*/.get("success")),format.raw/*57.46*/("""
+                        """),format.raw/*58.25*/("""</div>
+                    """)))}),format.raw/*59.22*/("""
+                """),format.raw/*60.17*/("""</div>
                 <br>
 
                 <div id="products" class="row list-group">
                         <!-- Start of for loop - Fo reach e in events add a row -->
-                    """),_display_(/*59.22*/for(e <- events) yield /*59.38*/ {_display_(Seq[Any](format.raw/*59.40*/("""
-                        """),format.raw/*60.25*/("""<a href=""""),_display_(/*60.35*/routes/*60.41*/.HomeController.eventTicket(e.getEventID)),format.raw/*60.82*/("""">
+                    """),_display_(/*65.22*/for(e <- events) yield /*65.38*/ {_display_(Seq[Any](format.raw/*65.40*/("""
+                        """),format.raw/*66.25*/("""<a href=""""),_display_(/*66.35*/routes/*66.41*/.HomeController.eventTicket(e.getEventID)),format.raw/*66.82*/("""">
                             <div class="item  col-xs-4 col-lg-4">
                                 <div class="thumbnail">
 
                                     <img class="group list-group-image" src="http://placehold.it/400x250/000/fff" alt="" >
                                     <div class="caption">
                                         <h4 class="group inner list-group-item-heading">
-                                        """),_display_(/*67.42*/e/*67.43*/.getTitle),format.raw/*67.52*/("""</h4>
-                                            """),_display_(/*68.46*/e/*68.47*/.getEventName),format.raw/*68.60*/("""
-                                            """),format.raw/*69.45*/("""<br>
-                                            """),_display_(/*70.46*/e/*70.47*/.getLocation),format.raw/*70.59*/("""
-                                            """),format.raw/*71.45*/("""<br>
-                                            """),_display_(/*72.46*/e/*72.47*/.getTime),format.raw/*72.55*/(""" """),format.raw/*72.56*/(""", """),_display_(/*72.59*/e/*72.60*/.getDate),format.raw/*72.68*/("""
-                                            """),format.raw/*73.45*/("""<br>
-                                            Starting from €
-                                        </p>
+                                        """),_display_(/*73.42*/e/*73.43*/.getTitle),format.raw/*73.52*/("""</h4>
+                                            """),_display_(/*74.46*/e/*74.47*/.getEventName),format.raw/*74.60*/("""
+                                            """),format.raw/*75.45*/("""<br>
+                                            """),_display_(/*76.46*/e/*76.47*/.getLocation),format.raw/*76.59*/("""
+                                            """),format.raw/*77.45*/("""<br>
+                                            """),_display_(/*78.46*/e/*78.47*/.getTime),format.raw/*78.55*/(""" """),format.raw/*78.56*/(""", """),_display_(/*78.59*/e/*78.60*/.getDate),format.raw/*78.68*/("""
+                                            """),format.raw/*79.45*/("""<br>
+                                            """),_display_(/*80.46*/e/*80.47*/.calcLowestPrice),format.raw/*80.63*/("""
+                                        """),format.raw/*81.41*/("""</p>
                                         <div class="row">
                                             <div class="col-xs-12 col-md-6">
-                                            """),_display_(/*78.46*/if(user.getRole.equals("admin"))/*78.78*/ {_display_(Seq[Any](format.raw/*78.80*/("""
-                                                """),format.raw/*79.49*/("""<a href=""""),_display_(/*79.59*/routes/*79.65*/.HomeController.updateEvent(e.getEventID)),format.raw/*79.106*/("""" class="btn btn-danger">
-                                                    <span class="glyphicon glyphicon-wrench"></span>
-                                                </a>
-                                                <a href=""""),_display_(/*82.59*/routes/*82.65*/.HomeController.deleteEvent(e.getEventID)),format.raw/*82.106*/("""" class = "btn btn-danger"
-                                                onclick="return confirmDel();">
-                                                    <span class="glyphicon glyphicon-trash"></span>
-                                                </a>
-                                            """)))}),format.raw/*86.46*/("""
-                                            """),format.raw/*87.45*/("""</div>
+                                            </div>
 
 
                                         </div>
@@ -124,7 +121,7 @@ Seq[Any](format.raw/*1.90*/("""
                             </div>
                         </a>
 
-                    """)))}),format.raw/*96.22*/(""" """),format.raw/*96.23*/("""<!-- End of for loop -->
+                    """)))}),format.raw/*93.22*/(""" """),format.raw/*93.23*/("""<!-- End of for loop -->
 
 
                     <div class="col-xs-12 col-md-6">
@@ -139,17 +136,17 @@ Seq[Any](format.raw/*1.90*/("""
 
         <!--Script for displaying products in grid/list-->
     <script>
-            $(document).ready(function() """),format.raw/*111.42*/("""{"""),format.raw/*111.43*/("""
-                """),format.raw/*112.17*/("""$('#list').click(function(event)"""),format.raw/*112.49*/("""{"""),format.raw/*112.50*/("""event.preventDefault();$('#products .item').addClass('list-group-item');"""),format.raw/*112.122*/("""}"""),format.raw/*112.123*/(""");
-                $('#grid').click(function(event)"""),format.raw/*113.49*/("""{"""),format.raw/*113.50*/("""event.preventDefault();$('#products .item').removeClass('list-group-item');$('#products .item').addClass('grid-group-item');"""),format.raw/*113.174*/("""}"""),format.raw/*113.175*/(""");
-            """),format.raw/*114.13*/("""}"""),format.raw/*114.14*/(""");</script>
+            $(document).ready(function() """),format.raw/*108.42*/("""{"""),format.raw/*108.43*/("""
+                """),format.raw/*109.17*/("""$('#list').click(function(event)"""),format.raw/*109.49*/("""{"""),format.raw/*109.50*/("""event.preventDefault();$('#products .item').addClass('list-group-item');"""),format.raw/*109.122*/("""}"""),format.raw/*109.123*/(""");
+                $('#grid').click(function(event)"""),format.raw/*110.49*/("""{"""),format.raw/*110.50*/("""event.preventDefault();$('#products .item').removeClass('list-group-item');$('#products .item').addClass('grid-group-item');"""),format.raw/*110.174*/("""}"""),format.raw/*110.175*/(""");
+            """),format.raw/*111.13*/("""}"""),format.raw/*111.14*/(""");</script>
 
     <!--Script for confirming delete of event-->
     <script>
-        function confirmDel()"""),format.raw/*118.30*/("""{"""),format.raw/*118.31*/("""
-            """),format.raw/*119.13*/("""return confirm('Are you sure?');
-        """),format.raw/*120.9*/("""}"""),format.raw/*120.10*/("""
-    """),format.raw/*121.5*/("""</script>
+        function confirmDel()"""),format.raw/*115.30*/("""{"""),format.raw/*115.31*/("""
+            """),format.raw/*116.13*/("""return confirm('Are you sure?');
+        """),format.raw/*117.9*/("""}"""),format.raw/*117.10*/("""
+    """),format.raw/*118.5*/("""</script>
 """)))}))
       }
     }
@@ -170,11 +167,11 @@ Seq[Any](format.raw/*1.90*/("""
 object events extends events_Scope0.events
               /*
                   -- GENERATED --
-                  DATE: Fri Apr 07 13:23:12 IST 2017
-                  SOURCE: /home/wdd/webapps/TicketStore/app/views/events.scala.html
-                  HASH: f1d96c104ba9831b2fec394b1e9cd478cb195f20
-                  MATRIX: 799->1|982->89|1010->92|1037->111|1076->113|1109->120|2318->1302|2333->1308|2379->1333|2485->1412|2521->1432|2561->1434|2625->1470|2662->1480|2677->1486|2732->1520|2803->1563|2814->1564|2844->1572|2913->1613|2961->1634|2971->1635|3009->1652|3121->1733|3182->1766|4163->2720|4195->2736|4235->2738|4288->2763|4325->2773|4340->2779|4402->2820|4866->3257|4876->3258|4906->3267|4984->3318|4994->3319|5028->3332|5101->3377|5178->3427|5188->3428|5221->3440|5294->3485|5371->3535|5381->3536|5410->3544|5439->3545|5469->3548|5479->3549|5508->3557|5581->3602|5898->3892|5939->3924|5979->3926|6056->3975|6093->3985|6108->3991|6171->4032|6436->4270|6451->4276|6514->4317|6850->4622|6923->4667|7178->4891|7207->4892|7554->5210|7584->5211|7630->5228|7691->5260|7721->5261|7823->5333|7854->5334|7934->5385|7964->5386|8118->5510|8149->5511|8193->5526|8223->5527|8356->5631|8386->5632|8428->5645|8497->5686|8527->5687|8560->5692
-                  LINES: 27->1|32->1|34->3|34->3|34->3|37->6|57->26|57->26|57->26|59->28|59->28|59->28|60->29|60->29|60->29|60->29|60->29|60->29|60->29|61->30|61->30|61->30|61->30|63->32|64->33|90->59|90->59|90->59|91->60|91->60|91->60|91->60|98->67|98->67|98->67|99->68|99->68|99->68|100->69|101->70|101->70|101->70|102->71|103->72|103->72|103->72|103->72|103->72|103->72|103->72|104->73|109->78|109->78|109->78|110->79|110->79|110->79|110->79|113->82|113->82|113->82|117->86|118->87|127->96|127->96|142->111|142->111|143->112|143->112|143->112|143->112|143->112|144->113|144->113|144->113|144->113|145->114|145->114|149->118|149->118|150->119|151->120|151->120|152->121
+                  DATE: Sun Apr 09 23:00:51 BST 2017
+                  SOURCE: C:/Users/Eileen/Desktop/TicketStore/app/views/events.scala.html
+                  HASH: d12ea3f4dfa2cb1625f300101caefd451afbbdd9
+                  MATRIX: 799->1|982->89|1012->94|1039->113|1078->115|1114->125|2343->1327|2358->1333|2404->1358|2512->1439|2548->1459|2588->1461|2653->1498|2690->1508|2705->1514|2760->1548|2831->1591|2842->1592|2872->1600|2942->1642|2990->1663|3000->1664|3038->1681|3152->1764|3214->1798|4030->2587|4071->2619|4110->2620|4164->2646|4251->2706|4265->2711|4301->2726|4355->2752|4415->2781|4461->2799|4686->2997|4718->3013|4758->3015|4812->3041|4849->3051|4864->3057|4926->3098|5397->3542|5407->3543|5437->3552|5516->3604|5526->3605|5560->3618|5634->3664|5712->3715|5722->3716|5755->3728|5829->3774|5907->3825|5917->3826|5946->3834|5975->3835|6005->3838|6015->3839|6044->3847|6118->3893|6196->3944|6206->3945|6243->3961|6313->4003|6764->4423|6793->4424|7155->4757|7185->4758|7232->4776|7293->4808|7323->4809|7425->4881|7456->4882|7537->4934|7567->4935|7721->5059|7752->5060|7797->5076|7827->5077|7964->5185|7994->5186|8037->5200|8107->5242|8137->5243|8171->5249
+                  LINES: 27->1|32->1|34->3|34->3|34->3|37->6|57->26|57->26|57->26|59->28|59->28|59->28|60->29|60->29|60->29|60->29|60->29|60->29|60->29|61->30|61->30|61->30|61->30|63->32|64->33|86->55|86->55|86->55|87->56|88->57|88->57|88->57|89->58|90->59|91->60|96->65|96->65|96->65|97->66|97->66|97->66|97->66|104->73|104->73|104->73|105->74|105->74|105->74|106->75|107->76|107->76|107->76|108->77|109->78|109->78|109->78|109->78|109->78|109->78|109->78|110->79|111->80|111->80|111->80|112->81|124->93|124->93|139->108|139->108|140->109|140->109|140->109|140->109|140->109|141->110|141->110|141->110|141->110|142->111|142->111|146->115|146->115|147->116|148->117|148->117|149->118
                   -- GENERATED --
               */
           

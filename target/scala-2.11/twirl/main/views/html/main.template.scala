@@ -82,34 +82,36 @@ Seq[Any](format.raw/*7.55*/("""
                                 <ul class="dropdown-menu">
                                     <li><a href=""""),_display_(/*53.51*/routes/*53.57*/.HomeController.addEvent()),format.raw/*53.83*/("""">Add event</a></li>
                                     <li><a href=""""),_display_(/*54.51*/routes/*54.57*/.HomeController.addTicket()),format.raw/*54.84*/("""">Add ticket</a></li>
+                                    <li><a href=""""),_display_(/*55.51*/routes/*55.57*/.HomeController.adminevents(0)),format.raw/*55.87*/("""">Manage events</a></li>
+                                    <li><a href=""""),_display_(/*56.51*/routes/*56.57*/.HomeController.viewContact()),format.raw/*56.86*/("""">View contacts</a></li>
                                 </ul>
                             </div>
-                        """)))}),format.raw/*57.26*/("""
-                    """)))}/*58.22*/else/*58.26*/{_display_(Seq[Any](format.raw/*58.27*/("""
-                        """),format.raw/*59.25*/("""<a href=""""),_display_(/*59.35*/routes/*59.41*/.LoginController.login()),format.raw/*59.65*/("""" class="btn btn-success btn-circle btn-md"><i class="glyphicon glyphicon-user"></i>Login</a>
-                        <a href=""""),_display_(/*60.35*/routes/*60.41*/.HomeController.signUp()),format.raw/*60.65*/("""" class="btn btn-success btn-circle btn-md"><span class="glyphcon glyphicon-pencil"></span>Sign up</a>
-                    """)))}),format.raw/*61.22*/("""
-                """),format.raw/*62.17*/("""</div>
+                        """)))}),format.raw/*59.26*/("""
+                    """)))}/*60.22*/else/*60.26*/{_display_(Seq[Any](format.raw/*60.27*/("""
+                        """),format.raw/*61.25*/("""<a href=""""),_display_(/*61.35*/routes/*61.41*/.LoginController.login()),format.raw/*61.65*/("""" class="btn btn-success btn-circle btn-md"><i class="glyphicon glyphicon-user"></i>Login</a>
+                        <a href=""""),_display_(/*62.35*/routes/*62.41*/.HomeController.signUp()),format.raw/*62.65*/("""" class="btn btn-success btn-circle btn-md"><span class="glyphcon glyphicon-pencil"></span>Sign up</a>
+                    """)))}),format.raw/*63.22*/("""
+                """),format.raw/*64.17*/("""</div>
             </div>
         </div>
         <div id="container">
             <div class="row">
                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" id="nav-bottom">
-                    <a href=""""),_display_(/*68.31*/routes/*68.37*/.HomeController.index),format.raw/*68.58*/("""">HOME</a>
-                    <a href=""""),_display_(/*69.31*/routes/*69.37*/.HomeController.events(0)),format.raw/*69.62*/("""">EVENTS</a>
-                    <a href=""""),_display_(/*70.31*/routes/*70.37*/.HomeController.aboutUs),format.raw/*70.60*/("""">ABOUT US</a>
-                    <a href=""""),_display_(/*71.31*/routes/*71.37*/.HomeController.contact),format.raw/*71.60*/("""">CONTACT US</a>
+                    <a href=""""),_display_(/*70.31*/routes/*70.37*/.HomeController.index),format.raw/*70.58*/("""">HOME</a>
+                    <a href=""""),_display_(/*71.31*/routes/*71.37*/.HomeController.events(0)),format.raw/*71.62*/("""">EVENTS</a>
+                    <a href=""""),_display_(/*72.31*/routes/*72.37*/.HomeController.aboutUs),format.raw/*72.60*/("""">ABOUT US</a>
+                    <a href=""""),_display_(/*73.31*/routes/*73.37*/.HomeController.contact),format.raw/*73.60*/("""">CONTACT US</a>
                 </div>
             </div>
         </div>
     </div>
 
-        """),_display_(/*77.10*/content),format.raw/*77.17*/("""
+        """),_display_(/*79.10*/content),format.raw/*79.17*/("""
 
-"""),format.raw/*79.1*/("""<div class="container" id = "footer">
+"""),format.raw/*81.1*/("""<div class="container" id = "footer">
         <div class="row">
             <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 pull-left">
-                <a href=""""),_display_(/*82.27*/routes/*82.33*/.HomeController.index()),format.raw/*82.56*/(""""><h2>TC <span>EVENTS</h2></a>
+                <a href=""""),_display_(/*84.27*/routes/*84.33*/.HomeController.index()),format.raw/*84.56*/(""""><h2>TC <span>EVENTS</h2></a>
             </div>
             <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6" id="icon div">
                 <a href="#"><i class="fa fa-3x fa-fw fa-instagram text-inverse pull-right" id="icon"></i></a>
@@ -146,11 +148,11 @@ Seq[Any](format.raw/*7.55*/("""
 object main extends main_Scope0.main
               /*
                   -- GENERATED --
-                  DATE: Fri Apr 07 13:23:12 IST 2017
-                  SOURCE: /home/wdd/webapps/TicketStore/app/views/main.scala.html
-                  HASH: 55de4b22af2536d10761566c534ef5fb0c128d95
-                  MATRIX: 1020->260|1168->313|1196->315|1246->339|1272->344|1372->417|1387->423|1450->465|2570->1558|2585->1564|2629->1587|3567->2498|3592->2514|3631->2515|3684->2540|3721->2550|3736->2556|3779->2578|3938->2710|3953->2716|3999->2741|4151->2866|4192->2898|4232->2900|4289->2929|4697->3310|4712->3316|4759->3342|4857->3413|4872->3419|4920->3446|5071->3566|5112->3588|5125->3592|5164->3593|5217->3618|5254->3628|5269->3634|5314->3658|5469->3786|5484->3792|5529->3816|5684->3940|5729->3957|5972->4173|5987->4179|6029->4200|6097->4241|6112->4247|6158->4272|6228->4315|6243->4321|6287->4344|6359->4389|6374->4395|6418->4418|6540->4513|6568->4520|6597->4522|6786->4684|6801->4690|6845->4713
-                  LINES: 32->7|37->7|39->9|40->10|40->10|44->14|44->14|44->14|59->29|59->29|59->29|75->45|75->45|75->45|76->46|76->46|76->46|76->46|77->47|77->47|77->47|78->48|78->48|78->48|79->49|83->53|83->53|83->53|84->54|84->54|84->54|87->57|88->58|88->58|88->58|89->59|89->59|89->59|89->59|90->60|90->60|90->60|91->61|92->62|98->68|98->68|98->68|99->69|99->69|99->69|100->70|100->70|100->70|101->71|101->71|101->71|107->77|107->77|109->79|112->82|112->82|112->82
+                  DATE: Sun Apr 09 23:28:49 BST 2017
+                  SOURCE: C:/Users/Eileen/Desktop/TicketStore/app/views/main.scala.html
+                  HASH: d7b5a288aea377a19b73d21e0821b3930ef4b715
+                  MATRIX: 1025->266|1173->319|1203->323|1254->348|1280->353|1384->430|1399->436|1462->478|2597->1586|2612->1592|2656->1615|3610->2542|3635->2558|3674->2559|3728->2585|3765->2595|3780->2601|3823->2623|3983->2756|3998->2762|4044->2787|4197->2913|4238->2945|4278->2947|4336->2977|4748->3362|4763->3368|4810->3394|4909->3466|4924->3472|4972->3499|5072->3572|5087->3578|5138->3608|5241->3684|5256->3690|5306->3719|5463->3845|5505->3868|5518->3872|5557->3873|5611->3899|5648->3909|5663->3915|5708->3939|5864->4068|5879->4074|5924->4098|6080->4223|6126->4241|6375->4463|6390->4469|6432->4490|6501->4532|6516->4538|6562->4563|6633->4607|6648->4613|6692->4636|6765->4682|6780->4688|6824->4711|6952->4812|6980->4819|7011->4823|7203->4988|7218->4994|7262->5017
+                  LINES: 32->7|37->7|39->9|40->10|40->10|44->14|44->14|44->14|59->29|59->29|59->29|75->45|75->45|75->45|76->46|76->46|76->46|76->46|77->47|77->47|77->47|78->48|78->48|78->48|79->49|83->53|83->53|83->53|84->54|84->54|84->54|85->55|85->55|85->55|86->56|86->56|86->56|89->59|90->60|90->60|90->60|91->61|91->61|91->61|91->61|92->62|92->62|92->62|93->63|94->64|100->70|100->70|100->70|101->71|101->71|101->71|102->72|102->72|102->72|103->73|103->73|103->73|109->79|109->79|111->81|114->84|114->84|114->84
                   -- GENERATED --
               */
           

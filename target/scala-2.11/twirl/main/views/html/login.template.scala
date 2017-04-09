@@ -30,13 +30,15 @@ class login extends BaseScalaTemplate[play.twirl.api.HtmlFormat.Appendable,Forma
 
 
 Seq[Any](format.raw/*1.57*/("""
-"""),_display_(/*2.2*/main("Welcome to Play",user)/*2.30*/ {_display_(Seq[Any](format.raw/*2.32*/("""
-"""),format.raw/*3.1*/("""<!--..CONTENT..-->
+
+"""),_display_(/*3.2*/main("Welcome to Play",user)/*3.30*/ {_display_(Seq[Any](format.raw/*3.32*/("""
+"""),format.raw/*4.1*/("""<!--..CONTENT..-->
 <div class="container-fluid" id="content">
-<h2>Login or <a href =""""),_display_(/*5.25*/routes/*5.31*/.HomeController.signUp()),format.raw/*5.55*/("""">Sign Up</a></h2>
+<h2>Login or <a href =""""),_display_(/*6.25*/routes/*6.31*/.HomeController.signUp()),format.raw/*6.55*/("""">Sign Up</a></h2>
 <div class="row omb_row-sm-offset-3">
-      <div class="col-xs-12 col-sm-6">  
-          <form class="omb_loginForm" action=""""),_display_(/*8.48*/routes/*8.54*/.LoginController.loginSubmit),format.raw/*8.82*/("""" name ="loginForm" method = "POST">
+      <div class="col-xs-12 col-sm-6">
+
+          <form class="omb_loginForm" action=""""),_display_(/*10.48*/routes/*10.54*/.LoginController.loginSubmit),format.raw/*10.82*/("""" name ="loginForm" method = "POST">
           <div class="input-group">
             <span class="input-group-addon"><i class="fa fa-user"></i></span>
             <input type="text" class="form-control" name="email" placeholder="Email Address">
@@ -50,6 +52,7 @@ Seq[Any](format.raw/*1.57*/("""
           <br>
           <button class="btn btn-lg btn-success btn-block" type="submit">Login        <i class="glyphicon glyphicon-thumbs-up"></i></button>
         </form>
+
       </div>
       </div>
     <div class="row omb_row-sm-offset-3">
@@ -61,7 +64,7 @@ Seq[Any](format.raw/*1.57*/("""
   </div>
 <!--END CONTENT-->
 
-""")))}),format.raw/*33.2*/("""
+""")))}),format.raw/*36.2*/("""
 """))
       }
     }
@@ -82,11 +85,11 @@ Seq[Any](format.raw/*1.57*/("""
 object login extends login_Scope0.login
               /*
                   -- GENERATED --
-                  DATE: Fri Apr 07 13:27:04 IST 2017
-                  SOURCE: /home/wdd/webapps/TicketStore/app/views/login.scala.html
-                  HASH: 64be7e575638d024dc8afe7782202bf5a571094c
-                  MATRIX: 775->1|925->56|952->58|988->86|1027->88|1054->89|1166->175|1180->181|1224->205|1395->350|1409->356|1457->384|2408->1305
-                  LINES: 27->1|32->1|33->2|33->2|33->2|34->3|36->5|36->5|36->5|39->8|39->8|39->8|64->33
+                  DATE: Sun Apr 09 22:46:16 BST 2017
+                  SOURCE: C:/Users/Eileen/Desktop/TicketStore/app/views/login.scala.html
+                  HASH: f4798d6d8fa02c2d26d32c7da5ddc1ea09ad19f2
+                  MATRIX: 775->1|925->56|955->61|991->89|1030->91|1058->93|1172->181|1186->187|1230->211|1405->359|1420->365|1469->393|2447->1341
+                  LINES: 27->1|32->1|34->3|34->3|34->3|35->4|37->6|37->6|37->6|41->10|41->10|41->10|67->36
                   -- GENERATED --
               */
           

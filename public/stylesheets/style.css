@@ -736,7 +736,7 @@ ol, ul {
 .btn-sm, .btn-group-sm > .btn{
     border-radius: 1px;
 }
-.input-sm, .form-horizontal .form-group-sm .form-control{
+.input-sm, .form-horizontal .form-group-sm .form-control .input-group{
     border-radius: 1px;
 }
 
