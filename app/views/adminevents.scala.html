@@ -1,4 +1,4 @@
-@(events: List[models.Event], categories: List[models.Category], user: models.users.User)
+@(events: List[models.Event], categories: List[models.Category], user: models.users.User, env: play.api.Environment)
 
 @main("Events",user) {
 
@@ -70,8 +70,11 @@
                         <a href="@routes.HomeController.admineventTicket(e.getId)">
                             <div class="item  col-xs-4 col-lg-4">
                                 <div class="thumbnail">
-
-                                    <img class="group list-group-image" src="http://placehold.it/400x250/000/fff" alt="" >
+                                    @if(env.resource("public/images/eventImages/" + e.getId + ".jpg").isDefined) {
+                                        <img class="img-responsive" src="/assets/images/eventImages/@(e.getId + ".jpg")"/>
+                                    } else {
+                                        <img class="img-responsive" src="/assets/images/eventImages/noImage.png" alt="" >
+                                    }
                                     <div class="caption">
                                         <h4 class="group inner list-group-item-heading">
                                         @e.getTitle</h4>

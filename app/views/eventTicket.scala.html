@@ -1,4 +1,4 @@
-@(tickets: List[models.Ticket], e: Event, user: models.users.User)
+@(tickets: List[models.Ticket], e: Event, user: models.users.User, env: play.api.Environment)
 
 @import helper._
 
@@ -13,7 +13,11 @@
         }
         <div class="row well">
             <div class="col-lg-5 col-md-5 col-sm-6 col-xs-12">
-                <img src="http://placehold.it/400x250/000/fff" alt="">
+            @if(env.resource("public/images/eventImages/" + e.getId + ".jpg").isDefined) {
+                <img class="img-responsive" src="/assets/images/eventImages/@(e.getId + ".jpg")"/>
+            } else {
+                <img class="img-responsive" src="/assets/images/eventImages/noImage.png" alt="" >
+                }
             </div>
 
             <div class="col-lg-7 col-md-7 col-sm-6 col-xs-12" id = "eventInfo">

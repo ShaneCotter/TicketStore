@@ -9,6 +9,12 @@ import play.db.ebean.Transactional;
 import java.util.*;
 import javax.inject.Inject;
 import views.html.*;
+import play.mvc.Http.*;
+import play.mvc.Http.MultipartFormData.FilePart;
+import java.io.File;
+// File Upload and image editing
+import org.im4java.core.ConvertCmd;
+import org.im4java.core.IMOperation;
 // Import models
 import models.*;
 
@@ -16,10 +22,12 @@ import models.*;
 public class HomeController extends Controller {
 
     private FormFactory formFactory;
+    private Environment env;
 
     @Inject
-    public HomeController(FormFactory f){
+    public HomeController(FormFactory f, Environment e){
         this.formFactory = f;
+        this.env = e;
     }
 
     public Result index() {
@@ -52,6 +60,14 @@ public class HomeController extends Controller {
         }
 
         Event newEvent = newEventForm.get();
+
+        // Save Image
+        MultipartFormData data = request().body().asMultipartFormData();
+        // Get image data
+        FilePart image = data.getFile("upload");
+
+        // Save the image file
+        String saveImageMsg = saveFile(newEvent.getId(), image);
 
         if (newEvent.getId() ==  null) {
             newEvent.save();
@@ -137,7 +153,7 @@ public class HomeController extends Controller {
             eventsList = Category.find.ref(cat).getEvents();
         }
 
-        return ok(events.render(eventsList,categoriesList,getUserFromSession()));
+        return ok(events.render(eventsList,categoriesList,getUserFromSession(), env));
     }
 
     @Security.Authenticated(Secured.class)
@@ -157,14 +173,14 @@ public class HomeController extends Controller {
             eventsList = Category.find.ref(cat).getEvents();
         }
 
-        return ok(adminevents.render(eventsList,categoriesList,getUserFromSession()));
+        return ok(adminevents.render(eventsList,categoriesList,getUserFromSession(), env));
     }
 
     public Result eventTicket(Long event) {
         List<Ticket> ticketList = Event.find.ref(event).getTickets();
         Event e = Event.find.ref(event);
 
-        return ok(eventTicket.render(ticketList,e,getUserFromSession()));
+        return ok(eventTicket.render(ticketList,e,getUserFromSession(), env));
     }
 
     @Security.Authenticated(Secured.class)
@@ -174,7 +190,7 @@ public class HomeController extends Controller {
         List<Ticket> ticketList = Event.find.ref(event).getTickets();
         Event e = Event.find.ref(event);
 
-        return ok(admineventTicket.render(ticketList,e,getUserFromSession()));
+        return ok(admineventTicket.render(ticketList,e,getUserFromSession(), env));
     }
 
     public Result addContactSubmit(){
@@ -265,6 +281,46 @@ public class HomeController extends Controller {
 
     private User getUserFromSession(){
         return User.getUserById(session().get("email"));
+    }
+
+    // Save an image file
+    public String saveFile(Long id, FilePart<File> image) {
+        if (image != null) {
+            // Get mimetype from image
+            String mimeType = image.getContentType();
+            // Check if uploaded file is an image
+            if (mimeType.startsWith("image/")) {
+                // Create file from uploaded image
+                File file = image.getFile();
+                // create ImageMagick command instance
+                ConvertCmd cmd = new ConvertCmd();
+                // create the operation, add images and operators/options
+                IMOperation op = new IMOperation();
+                // Get the uploaded image file
+                op.addImage(file.getAbsolutePath());
+                // Resize using height and width constraints
+                op.resize(450,200);
+                // Save the  image
+                op.addImage("public/images/eventImages/" + id + ".jpg");
+                // thumbnail
+                IMOperation thumb = new IMOperation();
+                // Get the uploaded image file
+                thumb.addImage(file.getAbsolutePath());
+                thumb.thumbnail(60);
+                // Save the  image
+                thumb.addImage("public/images/eventImages/thumbnails" + id + ".jpg");
+                // execute the operation
+                try{
+                    cmd.run(op);
+                    cmd.run(thumb);
+                }
+                catch(Exception e){
+                    e.printStackTrace();
+                }
+                return " and image saved";
+            }
+        }
+        return "image file missing";
     }
 
 }

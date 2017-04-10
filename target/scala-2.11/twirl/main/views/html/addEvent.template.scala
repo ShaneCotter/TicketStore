@@ -41,31 +41,28 @@ Seq[Any](format.raw/*3.60*/("""
 <div class="row">
 <div class="col-lg-12 well" id="addEvent">
 <!-- Start of add event up form-->
-		"""),_display_(/*12.4*/form(action = routes.HomeController.addEventSubmit(), 'class -> "form=horizontal", 'role->"form", 'enctype -> "mulitpart/form-data")/*12.136*/{_display_(Seq[Any](format.raw/*12.137*/("""
+		"""),_display_(/*12.4*/form(action = routes.HomeController.addEventSubmit(), 'class -> "form=horizontal", 'role->"form", 'enctype -> "multipart/form-data")/*12.136*/{_display_(Seq[Any](format.raw/*12.137*/("""
 				"""),_display_(/*13.6*/select(addEventForm("category.catID"), options(Category.options), '_label -> "Category", '_default -> "Choose a category",
 				'_showConstraints -> false, 'class -> "form-control")),format.raw/*14.58*/("""
 				"""),_display_(/*15.6*/inputText(addEventForm("eventName"), '_label -> "Name", 'class -> "form-control")),format.raw/*15.87*/("""
 				"""),_display_(/*16.6*/inputText(addEventForm("time"), '_label -> "Time", 'class -> "form-control")),format.raw/*16.82*/("""
 				"""),_display_(/*17.6*/inputText(addEventForm("location"), '_label -> "Location", 'class -> "form-control")),format.raw/*17.90*/("""
 				"""),_display_(/*18.6*/inputText(addEventForm("date"), '_label -> "Date", 'class -> "form-control")),format.raw/*18.82*/("""
-				"""),_display_(/*19.6*/inputText(addEventForm("title"), '_label -> "Title", 'class -> "form-control")),format.raw/*19.84*/("""
-				"""),format.raw/*20.5*/("""<label>Event Image</label>
-				<input class="btn btn-success btn-circle btn-md" type="file" name="upload">
-				<br><br>
+				"""),_display_(/*19.6*/inputText(addEventForm("title"), '_label -> "Title", 'class -> "form-control")),format.raw/*19.84*/("""			"""),format.raw/*19.87*/(""" 
+				<label>Event Image</label>
+				<input type="file" name="upload">
+	<br>
 				"""),_display_(/*23.6*/inputText(addEventForm("id"), '_label -> "", 'hidden -> "hidden")),format.raw/*23.71*/("""
-
-				"""),format.raw/*25.5*/("""<br>
-
-				<div class="actions">
+				"""),format.raw/*24.5*/("""<div class="actions">
 					<input type="submit" value="Add Event" class="btn btn-success">
-					<a href=""""),_display_(/*29.16*/routes/*29.22*/.HomeController.events()),format.raw/*29.46*/("""" class="btn btn-danger">Cancel</a>
+					<a href=""""),_display_(/*26.16*/routes/*26.22*/.HomeController.events()),format.raw/*26.46*/("""" class="btn btn-danger">Cancel</a>
 				</div>
 			</div>
 		</div>
 	</div>
 <!--END CONTENT-->
 
-""")))}),format.raw/*36.2*/("""
+""")))}),format.raw/*33.2*/("""
 """)))}))
       }
     }
@@ -87,11 +84,11 @@ Seq[Any](format.raw/*3.60*/("""
 object addEvent extends addEvent_Scope0.addEvent_Scope1.addEvent
               /*
                   -- GENERATED --
-                  DATE: Mon Apr 10 10:40:19 BST 2017
-                  SOURCE: C:/Users/Eileen/Desktop/TicketStore/app/views/addEvent.scala.html
-                  HASH: aa3b4a69bd1188e9df564949fe8d84c2a9005233
-                  MATRIX: 828->21|981->79|1011->84|1041->106|1080->108|1108->110|1302->278|1444->410|1484->411|1517->418|1719->599|1752->606|1854->687|1887->694|1984->770|2017->777|2122->861|2155->868|2252->944|2285->951|2384->1029|2417->1035|2571->1163|2657->1228|2692->1236|2839->1356|2854->1362|2899->1386|3031->1488
-                  LINES: 30->3|35->3|37->5|37->5|37->5|38->6|44->12|44->12|44->12|45->13|46->14|47->15|47->15|48->16|48->16|49->17|49->17|50->18|50->18|51->19|51->19|52->20|55->23|55->23|57->25|61->29|61->29|61->29|68->36
+                  DATE: Mon Apr 10 11:36:16 IST 2017
+                  SOURCE: /home/wdd/webapps/TicketStore/app/views/addEvent.scala.html
+                  HASH: 84a0146c731417b58d30590cfd2bc55e378df4a1
+                  MATRIX: 828->19|981->77|1009->80|1039->102|1078->104|1105->105|1293->267|1435->399|1475->400|1507->406|1708->586|1740->592|1842->673|1874->679|1971->755|2003->761|2108->845|2140->851|2237->927|2269->933|2368->1011|2399->1014|2507->1096|2593->1161|2625->1166|2758->1272|2773->1278|2818->1302|2943->1397
+                  LINES: 30->3|35->3|37->5|37->5|37->5|38->6|44->12|44->12|44->12|45->13|46->14|47->15|47->15|48->16|48->16|49->17|49->17|50->18|50->18|51->19|51->19|51->19|55->23|55->23|56->24|58->26|58->26|58->26|65->33
                   -- GENERATED --
               */
           

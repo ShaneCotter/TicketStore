@@ -21,15 +21,15 @@ import play.data._
 import play.api.data.Field
 import play.mvc.Http.Context.Implicit._
 
-class adminevents extends BaseScalaTemplate[play.twirl.api.HtmlFormat.Appendable,Format[play.twirl.api.HtmlFormat.Appendable]](play.twirl.api.HtmlFormat) with play.twirl.api.Template3[List[models.Event],List[models.Category],models.users.User,play.twirl.api.HtmlFormat.Appendable] {
+class adminevents extends BaseScalaTemplate[play.twirl.api.HtmlFormat.Appendable,Format[play.twirl.api.HtmlFormat.Appendable]](play.twirl.api.HtmlFormat) with play.twirl.api.Template4[List[models.Event],List[models.Category],models.users.User,play.api.Environment,play.twirl.api.HtmlFormat.Appendable] {
 
   /**/
-  def apply/*1.2*/(events: List[models.Event], categories: List[models.Category], user: models.users.User):play.twirl.api.HtmlFormat.Appendable = {
+  def apply/*1.2*/(events: List[models.Event], categories: List[models.Category], user: models.users.User, env: play.api.Environment):play.twirl.api.HtmlFormat.Appendable = {
     _display_ {
       {
 
 
-Seq[Any](format.raw/*1.90*/("""
+Seq[Any](format.raw/*1.117*/("""
 
 """),_display_(/*3.2*/main("Events",user)/*3.21*/ {_display_(Seq[Any](format.raw/*3.23*/("""
 
@@ -101,31 +101,34 @@ Seq[Any](format.raw/*1.90*/("""
                         """),format.raw/*70.25*/("""<a href=""""),_display_(/*70.35*/routes/*70.41*/.HomeController.admineventTicket(e.getId)),format.raw/*70.82*/("""">
                             <div class="item  col-xs-4 col-lg-4">
                                 <div class="thumbnail">
-
-                                    <img class="group list-group-image" src="http://placehold.it/400x250/000/fff" alt="" >
-                                    <div class="caption">
+                                    """),_display_(/*73.38*/if(env.resource("public/images/eventImages/" + e.getId + ".jpg").isDefined)/*73.113*/ {_display_(Seq[Any](format.raw/*73.115*/("""
+                                        """),format.raw/*74.41*/("""<img class="img-responsive" src="/assets/images/eventImages/"""),_display_(/*74.102*/(e.getId + ".jpg")),format.raw/*74.120*/(""""/>
+                                    """)))}/*75.39*/else/*75.44*/{_display_(Seq[Any](format.raw/*75.45*/("""
+                                        """),format.raw/*76.41*/("""<img class="img-responsive" src="/assets/images/eventImages/noImage.png" alt="" >
+                                    """)))}),format.raw/*77.38*/("""
+                                    """),format.raw/*78.37*/("""<div class="caption">
                                         <h4 class="group inner list-group-item-heading">
-                                        """),_display_(/*77.42*/e/*77.43*/.getTitle),format.raw/*77.52*/("""</h4>
-                                            """),_display_(/*78.46*/e/*78.47*/.getEventName),format.raw/*78.60*/("""
-                                            """),format.raw/*79.45*/("""<br>
-                                            """),_display_(/*80.46*/e/*80.47*/.getLocation),format.raw/*80.59*/("""
-                                            """),format.raw/*81.45*/("""<br>
-                                            """),_display_(/*82.46*/e/*82.47*/.getTime),format.raw/*82.55*/(""" """),format.raw/*82.56*/(""", """),_display_(/*82.59*/e/*82.60*/.getDate),format.raw/*82.68*/("""
-                                            """),format.raw/*83.45*/("""<br>
+                                        """),_display_(/*80.42*/e/*80.43*/.getTitle),format.raw/*80.52*/("""</h4>
+                                            """),_display_(/*81.46*/e/*81.47*/.getEventName),format.raw/*81.60*/("""
+                                            """),format.raw/*82.45*/("""<br>
+                                            """),_display_(/*83.46*/e/*83.47*/.getLocation),format.raw/*83.59*/("""
+                                            """),format.raw/*84.45*/("""<br>
+                                            """),_display_(/*85.46*/e/*85.47*/.getTime),format.raw/*85.55*/(""" """),format.raw/*85.56*/(""", """),_display_(/*85.59*/e/*85.60*/.getDate),format.raw/*85.68*/("""
+                                            """),format.raw/*86.45*/("""<br>
                                             Starting from €
                                         </p>
                                         <div class="row">
                                             <div class="col-xs-12 col-md-6">
-                                            """),_display_(/*88.46*/if(user.getRole.equals("admin"))/*88.78*/ {_display_(Seq[Any](format.raw/*88.80*/("""
-                                                """),format.raw/*89.49*/("""<a href=""""),_display_(/*89.59*/routes/*89.65*/.HomeController.updateEvent(e.getId)),format.raw/*89.101*/("""" class="btn btn-danger">
+                                            """),_display_(/*91.46*/if(user.getRole.equals("admin"))/*91.78*/ {_display_(Seq[Any](format.raw/*91.80*/("""
+                                                """),format.raw/*92.49*/("""<a href=""""),_display_(/*92.59*/routes/*92.65*/.HomeController.updateEvent(e.getId)),format.raw/*92.101*/("""" class="btn btn-danger">
                                                     <span class="glyphicon glyphicon-wrench"></span>
                                                 </a>
-                                                <a href=""""),_display_(/*92.59*/routes/*92.65*/.HomeController.deleteEvent(e.getId)),format.raw/*92.101*/("""" class = "btn btn-danger"
+                                                <a href=""""),_display_(/*95.59*/routes/*95.65*/.HomeController.deleteEvent(e.getId)),format.raw/*95.101*/("""" class = "btn btn-danger"
                                                 onclick="return confirmDel();">
                                                     <span class="glyphicon glyphicon-trash"></span>
                                                 </a>
-                                            """)))}),format.raw/*96.46*/("""
-                                            """),format.raw/*97.45*/("""</div>
+                                            """)))}),format.raw/*99.46*/("""
+                                            """),format.raw/*100.45*/("""</div>
 
 
                                         </div>
@@ -134,7 +137,7 @@ Seq[Any](format.raw/*1.90*/("""
                             </div>
                         </a>
 
-                    """)))}),format.raw/*106.22*/(""" """),format.raw/*106.23*/("""<!-- End of for loop -->
+                    """)))}),format.raw/*109.22*/(""" """),format.raw/*109.23*/("""<!-- End of for loop -->
 
 
                     <div class="col-xs-12 col-md-6">
@@ -149,25 +152,25 @@ Seq[Any](format.raw/*1.90*/("""
 
         <!--Script for displaying products in grid/list-->
     <script>
-            $(document).ready(function() """),format.raw/*121.42*/("""{"""),format.raw/*121.43*/("""
-                """),format.raw/*122.17*/("""$('#list').click(function(event)"""),format.raw/*122.49*/("""{"""),format.raw/*122.50*/("""event.preventDefault();$('#products .item').addClass('list-group-item');"""),format.raw/*122.122*/("""}"""),format.raw/*122.123*/(""");
-                $('#grid').click(function(event)"""),format.raw/*123.49*/("""{"""),format.raw/*123.50*/("""event.preventDefault();$('#products .item').removeClass('list-group-item');$('#products .item').addClass('grid-group-item');"""),format.raw/*123.174*/("""}"""),format.raw/*123.175*/(""");
-            """),format.raw/*124.13*/("""}"""),format.raw/*124.14*/(""");</script>
+            $(document).ready(function() """),format.raw/*124.42*/("""{"""),format.raw/*124.43*/("""
+                """),format.raw/*125.17*/("""$('#list').click(function(event)"""),format.raw/*125.49*/("""{"""),format.raw/*125.50*/("""event.preventDefault();$('#products .item').addClass('list-group-item');"""),format.raw/*125.122*/("""}"""),format.raw/*125.123*/(""");
+                $('#grid').click(function(event)"""),format.raw/*126.49*/("""{"""),format.raw/*126.50*/("""event.preventDefault();$('#products .item').removeClass('list-group-item');$('#products .item').addClass('grid-group-item');"""),format.raw/*126.174*/("""}"""),format.raw/*126.175*/(""");
+            """),format.raw/*127.13*/("""}"""),format.raw/*127.14*/(""");</script>
 
     <!--Script for confirming delete of event-->
     <script>
-        function confirmDel()"""),format.raw/*128.30*/("""{"""),format.raw/*128.31*/("""
-            """),format.raw/*129.13*/("""return confirm('Are you sure?');
-        """),format.raw/*130.9*/("""}"""),format.raw/*130.10*/("""
-    """),format.raw/*131.5*/("""</script>
+        function confirmDel()"""),format.raw/*131.30*/("""{"""),format.raw/*131.31*/("""
+            """),format.raw/*132.13*/("""return confirm('Are you sure?');
+        """),format.raw/*133.9*/("""}"""),format.raw/*133.10*/("""
+    """),format.raw/*134.5*/("""</script>
 """)))}))
       }
     }
   }
 
-  def render(events:List[models.Event],categories:List[models.Category],user:models.users.User): play.twirl.api.HtmlFormat.Appendable = apply(events,categories,user)
+  def render(events:List[models.Event],categories:List[models.Category],user:models.users.User,env:play.api.Environment): play.twirl.api.HtmlFormat.Appendable = apply(events,categories,user,env)
 
-  def f:((List[models.Event],List[models.Category],models.users.User) => play.twirl.api.HtmlFormat.Appendable) = (events,categories,user) => apply(events,categories,user)
+  def f:((List[models.Event],List[models.Category],models.users.User,play.api.Environment) => play.twirl.api.HtmlFormat.Appendable) = (events,categories,user,env) => apply(events,categories,user,env)
 
   def ref: this.type = this
 
@@ -180,11 +183,11 @@ Seq[Any](format.raw/*1.90*/("""
 object adminevents extends adminevents_Scope0.adminevents
               /*
                   -- GENERATED --
-                  DATE: Sun Apr 09 23:58:26 BST 2017
-                  SOURCE: C:/Users/Eileen/Desktop/TicketStore/app/views/adminevents.scala.html
-                  HASH: d1b1fcee0a78d0ab5e3209d6c389603f1526e9fd
-                  MATRIX: 809->1|992->89|1022->94|1049->113|1088->115|1124->125|2353->1327|2368->1333|2419->1363|2527->1444|2563->1464|2603->1466|2668->1503|2705->1513|2720->1519|2780->1558|2851->1601|2862->1602|2892->1610|2962->1652|3010->1673|3020->1674|3058->1691|3172->1774|3234->1808|3597->2144|3638->2176|3677->2177|3727->2199|3810->2255|3824->2260|3860->2275|3910->2297|3966->2322|4012->2340|4608->2909|4623->2915|4671->2942|4993->3237|5025->3253|5065->3255|5119->3281|5156->3291|5171->3297|5233->3338|5704->3782|5714->3783|5744->3792|5823->3844|5833->3845|5867->3858|5941->3904|6019->3955|6029->3956|6062->3968|6136->4014|6214->4065|6224->4066|6253->4074|6282->4075|6312->4078|6322->4079|6351->4087|6425->4133|6747->4428|6788->4460|6828->4462|6906->4512|6943->4522|6958->4528|7016->4564|7284->4805|7299->4811|7357->4847|7697->5156|7771->5202|8036->5435|8066->5436|8428->5769|8458->5770|8505->5788|8566->5820|8596->5821|8698->5893|8729->5894|8810->5946|8840->5947|8994->6071|9025->6072|9070->6088|9100->6089|9237->6197|9267->6198|9310->6212|9380->6254|9410->6255|9444->6261
-                  LINES: 27->1|32->1|34->3|34->3|34->3|37->6|57->26|57->26|57->26|59->28|59->28|59->28|60->29|60->29|60->29|60->29|60->29|60->29|60->29|61->30|61->30|61->30|61->30|63->32|64->33|78->47|78->47|78->47|79->48|80->49|80->49|80->49|81->50|82->51|83->52|94->63|94->63|94->63|100->69|100->69|100->69|101->70|101->70|101->70|101->70|108->77|108->77|108->77|109->78|109->78|109->78|110->79|111->80|111->80|111->80|112->81|113->82|113->82|113->82|113->82|113->82|113->82|113->82|114->83|119->88|119->88|119->88|120->89|120->89|120->89|120->89|123->92|123->92|123->92|127->96|128->97|137->106|137->106|152->121|152->121|153->122|153->122|153->122|153->122|153->122|154->123|154->123|154->123|154->123|155->124|155->124|159->128|159->128|160->129|161->130|161->130|162->131
+                  DATE: Mon Apr 10 12:22:46 IST 2017
+                  SOURCE: /home/wdd/webapps/TicketStore/app/views/adminevents.scala.html
+                  HASH: fc123305116ae416c0f8094e7b1888914930df4c
+                  MATRIX: 830->1|1041->116|1069->119|1096->138|1135->140|1168->147|2377->1329|2392->1335|2443->1365|2549->1444|2585->1464|2625->1466|2689->1502|2726->1512|2741->1518|2801->1557|2872->1600|2883->1601|2913->1609|2982->1650|3030->1671|3040->1672|3078->1689|3190->1770|3251->1803|3600->2125|3641->2157|3680->2158|3729->2179|3811->2234|3825->2239|3861->2254|3910->2275|3965->2299|4010->2316|4595->2874|4610->2880|4658->2907|4974->3196|5006->3212|5046->3214|5099->3239|5136->3249|5151->3255|5213->3296|5402->3458|5487->3533|5528->3535|5597->3576|5686->3637|5726->3655|5786->3697|5799->3702|5838->3703|5907->3744|6057->3863|6122->3900|6301->4052|6311->4053|6341->4062|6419->4113|6429->4114|6463->4127|6536->4172|6613->4222|6623->4223|6656->4235|6729->4280|6806->4330|6816->4331|6845->4339|6874->4340|6904->4343|6914->4344|6943->4352|7016->4397|7333->4687|7374->4719|7414->4721|7491->4770|7528->4780|7543->4786|7601->4822|7866->5060|7881->5066|7939->5102|8275->5407|8349->5452|8605->5676|8635->5677|8982->5995|9012->5996|9058->6013|9119->6045|9149->6046|9251->6118|9282->6119|9362->6170|9392->6171|9546->6295|9577->6296|9621->6311|9651->6312|9784->6416|9814->6417|9856->6430|9925->6471|9955->6472|9988->6477
+                  LINES: 27->1|32->1|34->3|34->3|34->3|37->6|57->26|57->26|57->26|59->28|59->28|59->28|60->29|60->29|60->29|60->29|60->29|60->29|60->29|61->30|61->30|61->30|61->30|63->32|64->33|78->47|78->47|78->47|79->48|80->49|80->49|80->49|81->50|82->51|83->52|94->63|94->63|94->63|100->69|100->69|100->69|101->70|101->70|101->70|101->70|104->73|104->73|104->73|105->74|105->74|105->74|106->75|106->75|106->75|107->76|108->77|109->78|111->80|111->80|111->80|112->81|112->81|112->81|113->82|114->83|114->83|114->83|115->84|116->85|116->85|116->85|116->85|116->85|116->85|116->85|117->86|122->91|122->91|122->91|123->92|123->92|123->92|123->92|126->95|126->95|126->95|130->99|131->100|140->109|140->109|155->124|155->124|156->125|156->125|156->125|156->125|156->125|157->126|157->126|157->126|157->126|158->127|158->127|162->131|162->131|163->132|164->133|164->133|165->134
                   -- GENERATED --
               */
           

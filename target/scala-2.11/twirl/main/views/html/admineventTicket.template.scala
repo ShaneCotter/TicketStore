@@ -21,15 +21,15 @@ import play.data._
 import play.api.data.Field
 import play.mvc.Http.Context.Implicit._
 
-class admineventTicket extends BaseScalaTemplate[play.twirl.api.HtmlFormat.Appendable,Format[play.twirl.api.HtmlFormat.Appendable]](play.twirl.api.HtmlFormat) with play.twirl.api.Template3[List[models.Ticket],Event,models.users.User,play.twirl.api.HtmlFormat.Appendable] {
+class admineventTicket extends BaseScalaTemplate[play.twirl.api.HtmlFormat.Appendable,Format[play.twirl.api.HtmlFormat.Appendable]](play.twirl.api.HtmlFormat) with play.twirl.api.Template4[List[models.Ticket],Event,models.users.User,play.api.Environment,play.twirl.api.HtmlFormat.Appendable] {
 
   /**/
-  def apply/*1.2*/(tickets: List[models.Ticket], e: Event, user: models.users.User):play.twirl.api.HtmlFormat.Appendable = {
+  def apply/*1.2*/(tickets: List[models.Ticket], e: Event, user: models.users.User, env: play.api.Environment):play.twirl.api.HtmlFormat.Appendable = {
     _display_ {
       {
 import helper._
 
-Seq[Any](format.raw/*1.67*/("""
+Seq[Any](format.raw/*1.94*/("""
 
 """),format.raw/*4.1*/("""
 
@@ -43,49 +43,53 @@ Seq[Any](format.raw/*1.67*/("""
         """)))}),format.raw/*13.10*/("""
         """),format.raw/*14.9*/("""<div class="row well">
             <div class="col-lg-5 col-md-5 col-sm-6 col-xs-12">
-                <img src="http://placehold.it/400x250/000/fff" alt="">
-            </div>
+            """),_display_(/*16.14*/if(env.resource("public/images/eventImages/" + e.getId + ".jpg").isDefined)/*16.89*/ {_display_(Seq[Any](format.raw/*16.91*/("""
+                """),format.raw/*17.17*/("""<img class="img-responsive" src="/assets/images/eventImages/"""),_display_(/*17.78*/(e.getId + ".jpg")),format.raw/*17.96*/(""""/>
+            """)))}/*18.15*/else/*18.20*/{_display_(Seq[Any](format.raw/*18.21*/("""
+                """),format.raw/*19.17*/("""<img class="img-responsive" src="/assets/images/eventImages/noImage.png" alt="" >
+                """)))}),format.raw/*20.18*/("""
+            """),format.raw/*21.13*/("""</div>
 
             <div class="col-lg-7 col-md-7 col-sm-6 col-xs-12" id = "eventInfo">
-                <h1>"""),_display_(/*20.22*/e/*20.23*/.getTitle),format.raw/*20.32*/(""" """),format.raw/*20.33*/(""", """),_display_(/*20.36*/e/*20.37*/.getEventName),format.raw/*20.50*/("""</h1>
-                <p>Location here : """),_display_(/*21.37*/e/*21.38*/.getLocation),format.raw/*21.50*/("""</p>
-                <p>Date/time here : """),_display_(/*22.38*/e/*22.39*/.getDate),format.raw/*22.47*/("""</p>
+                <h1>"""),_display_(/*24.22*/e/*24.23*/.getTitle),format.raw/*24.32*/(""" """),format.raw/*24.33*/(""", """),_display_(/*24.36*/e/*24.37*/.getEventName),format.raw/*24.50*/("""</h1>
+                <p>Location here : """),_display_(/*25.37*/e/*25.38*/.getLocation),format.raw/*25.50*/("""</p>
+                <p>Date/time here : """),_display_(/*26.38*/e/*26.39*/.getDate),format.raw/*26.47*/("""</p>
             </div>
         </div>
 
         <div class="row well" id="tickets">
 
-                """),_display_(/*28.18*/for(t <- tickets) yield /*28.35*/ {_display_(Seq[Any](format.raw/*28.37*/("""
-                    """),format.raw/*29.21*/("""<div class="item  col-xs-4 col-lg-4">
+                """),_display_(/*32.18*/for(t <- tickets) yield /*32.35*/ {_display_(Seq[Any](format.raw/*32.37*/("""
+                    """),format.raw/*33.21*/("""<div class="item  col-xs-4 col-lg-4">
                         <div class="thumbnail">
 
-                            <h2>"""),_display_(/*32.34*/t/*32.35*/.getTicketType),format.raw/*32.49*/("""</h2>
+                            <h2>"""),_display_(/*36.34*/t/*36.35*/.getTicketType),format.raw/*36.49*/("""</h2>
                             <div class="caption">
                                 <p class="group inner list-group-item-text">
-                                <p>Ticket price : € """),_display_(/*35.54*/t/*35.55*/.getPrice),format.raw/*35.64*/("""</p>
+                                <p>Ticket price : € """),_display_(/*39.54*/t/*39.55*/.getPrice),format.raw/*39.64*/("""</p>
 
                                 <div class="row">
                                     <div class="col-xs-12 col-md-6">
-                                    """),_display_(/*39.38*/if(user.getRole.equals("admin"))/*39.70*/ {_display_(Seq[Any](format.raw/*39.72*/("""
-                                        """),format.raw/*40.41*/("""<a href=""""),_display_(/*40.51*/routes/*40.57*/.HomeController.deleteTicket(t.getTicketID)),format.raw/*40.100*/("""" class = "btn btn-danger"
+                                    """),_display_(/*43.38*/if(user.getRole.equals("admin"))/*43.70*/ {_display_(Seq[Any](format.raw/*43.72*/("""
+                                        """),format.raw/*44.41*/("""<a href=""""),_display_(/*44.51*/routes/*44.57*/.HomeController.deleteTicket(t.getTicketID)),format.raw/*44.100*/("""" class = "btn btn-danger"
                                         onclick="return confirmDel();">
                                             <span class="glyphicon glyphicon-trash"></span></a>
-                                    """)))}),format.raw/*43.38*/("""
-                                    """),format.raw/*44.37*/("""</div>
+                                    """)))}),format.raw/*47.38*/("""
+                                    """),format.raw/*48.37*/("""</div>
                                 </div>
                             </div>
                         </div>
-                    </div>""")))}),format.raw/*48.28*/("""
-                """),format.raw/*49.17*/("""</div>
+                    </div>""")))}),format.raw/*52.28*/("""
+                """),format.raw/*53.17*/("""</div>
             </div>
 
 
 
             <script>
-                    function confirmDel()"""),format.raw/*55.42*/("""{"""),format.raw/*55.43*/("""
-                        """),format.raw/*56.25*/("""return confirm('Are you sure?');
-                    """),format.raw/*57.21*/("""}"""),format.raw/*57.22*/("""
-            """),format.raw/*58.13*/("""</script>
+                    function confirmDel()"""),format.raw/*59.42*/("""{"""),format.raw/*59.43*/("""
+                        """),format.raw/*60.25*/("""return confirm('Are you sure?');
+                    """),format.raw/*61.21*/("""}"""),format.raw/*61.22*/("""
+            """),format.raw/*62.13*/("""</script>
 
                 <!--END CONTENT-->
 """)))}))
@@ -93,9 +97,9 @@ Seq[Any](format.raw/*1.67*/("""
     }
   }
 
-  def render(tickets:List[models.Ticket],e:Event,user:models.users.User): play.twirl.api.HtmlFormat.Appendable = apply(tickets,e,user)
+  def render(tickets:List[models.Ticket],e:Event,user:models.users.User,env:play.api.Environment): play.twirl.api.HtmlFormat.Appendable = apply(tickets,e,user,env)
 
-  def f:((List[models.Ticket],Event,models.users.User) => play.twirl.api.HtmlFormat.Appendable) = (tickets,e,user) => apply(tickets,e,user)
+  def f:((List[models.Ticket],Event,models.users.User,play.api.Environment) => play.twirl.api.HtmlFormat.Appendable) = (tickets,e,user,env) => apply(tickets,e,user,env)
 
   def ref: this.type = this
 
@@ -108,11 +112,11 @@ Seq[Any](format.raw/*1.67*/("""
 object admineventTicket extends admineventTicket_Scope0.admineventTicket
               /*
                   -- GENERATED --
-                  DATE: Sun Apr 09 23:00:09 BST 2017
-                  SOURCE: C:/Users/Eileen/Desktop/TicketStore/app/views/admineventTicket.scala.html
-                  HASH: a9ca79dca363b1971faedf2e9e4606336aef756c
-                  MATRIX: 804->1|979->66|1009->88|1039->93|1067->113|1106->115|1138->121|1242->199|1282->231|1320->232|1362->246|1437->294|1451->299|1487->314|1529->328|1577->345|1614->355|1925->639|1935->640|1965->649|1994->650|2024->653|2034->654|2068->667|2138->710|2148->711|2181->723|2251->766|2261->767|2290->775|2425->883|2458->900|2498->902|2548->924|2698->1047|2708->1048|2743->1062|2959->1251|2969->1252|2999->1261|3192->1427|3233->1459|3273->1461|3343->1503|3380->1513|3395->1519|3460->1562|3726->1797|3792->1835|3966->1978|4012->1996|4137->2093|4166->2094|4220->2120|4302->2174|4331->2175|4373->2189
-                  LINES: 27->1|32->1|34->4|36->6|36->6|36->6|37->7|39->9|39->9|39->9|40->10|41->11|41->11|41->11|42->12|43->13|44->14|50->20|50->20|50->20|50->20|50->20|50->20|50->20|51->21|51->21|51->21|52->22|52->22|52->22|58->28|58->28|58->28|59->29|62->32|62->32|62->32|65->35|65->35|65->35|69->39|69->39|69->39|70->40|70->40|70->40|70->40|73->43|74->44|78->48|79->49|85->55|85->55|86->56|87->57|87->57|88->58
+                  DATE: Mon Apr 10 12:22:46 IST 2017
+                  SOURCE: /home/wdd/webapps/TicketStore/app/views/admineventTicket.scala.html
+                  HASH: 7659db2c7cc40749fc2287b406cdc4d11c2d87e3
+                  MATRIX: 825->1|1027->93|1055->112|1083->115|1111->135|1150->137|1181->142|1283->218|1323->250|1361->251|1402->264|1476->311|1490->316|1526->331|1567->344|1614->360|1650->369|1776->468|1860->543|1900->545|1945->562|2033->623|2072->641|2108->659|2121->664|2160->665|2205->682|2335->781|2376->794|2512->903|2522->904|2552->913|2581->914|2611->917|2621->918|2655->931|2724->973|2734->974|2767->986|2836->1028|2846->1029|2875->1037|3004->1139|3037->1156|3077->1158|3126->1179|3273->1299|3283->1300|3318->1314|3531->1500|3541->1501|3571->1510|3760->1672|3801->1704|3841->1706|3910->1747|3947->1757|3962->1763|4027->1806|4290->2038|4355->2075|4525->2214|4570->2231|4689->2322|4718->2323|4771->2348|4852->2401|4881->2402|4922->2415
+                  LINES: 27->1|32->1|34->4|36->6|36->6|36->6|37->7|39->9|39->9|39->9|40->10|41->11|41->11|41->11|42->12|43->13|44->14|46->16|46->16|46->16|47->17|47->17|47->17|48->18|48->18|48->18|49->19|50->20|51->21|54->24|54->24|54->24|54->24|54->24|54->24|54->24|55->25|55->25|55->25|56->26|56->26|56->26|62->32|62->32|62->32|63->33|66->36|66->36|66->36|69->39|69->39|69->39|73->43|73->43|73->43|74->44|74->44|74->44|74->44|77->47|78->48|82->52|83->53|89->59|89->59|90->60|91->61|91->61|92->62
                   -- GENERATED --
               */
           
