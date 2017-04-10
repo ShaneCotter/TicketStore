@@ -21,87 +21,52 @@ import play.data._
 import play.api.data.Field
 import play.mvc.Http.Context.Implicit._
 
+     object contact_Scope1 {
+import helper._
+
 class contact extends BaseScalaTemplate[play.twirl.api.HtmlFormat.Appendable,Format[play.twirl.api.HtmlFormat.Appendable]](play.twirl.api.HtmlFormat) with play.twirl.api.Template2[Form[models.Contact],models.users.User,play.twirl.api.HtmlFormat.Appendable] {
 
   /**/
-  def apply/*1.2*/(contactForm: Form[models.Contact],user: models.users.User):play.twirl.api.HtmlFormat.Appendable = {
+  def apply/*3.2*/(contactForm: Form[models.Contact],user: models.users.User):play.twirl.api.HtmlFormat.Appendable = {
     _display_ {
       {
 
 
-Seq[Any](format.raw/*1.61*/("""
+Seq[Any](format.raw/*3.61*/("""
 
-"""),_display_(/*3.2*/main("Welcome to Play",user)/*3.30*/ {_display_(Seq[Any](format.raw/*3.32*/("""
-"""),format.raw/*4.1*/("""<!--..CONTENT..-->
+"""),_display_(/*5.2*/main("Contact",user)/*5.22*/ {_display_(Seq[Any](format.raw/*5.24*/("""
+"""),format.raw/*6.1*/("""<!--..CONTENT..-->
 <div class="container-fluid" id="content">
 	<div class="container">
     <div class="row">
         <div class="col-md-8 col-md-offset-1">
-            """),_display_(/*9.14*/if(flash.containsKey("success"))/*9.46*/{_display_(Seq[Any](format.raw/*9.47*/("""
-                """),format.raw/*10.17*/("""<div class="alert alert-success">
-                """),_display_(/*11.18*/flash/*11.23*/.get("success")),format.raw/*11.38*/("""
-            """),format.raw/*12.13*/("""</div>
-            """)))}),format.raw/*13.14*/("""
-                """),format.raw/*14.17*/("""<form class="form-horizontal" action=""""),_display_(/*14.56*/routes/*14.62*/.HomeController.addContactSubmit),format.raw/*14.94*/("""" name="contactForm" method="post">
-                    <fieldset>
-                        <legend class="text-center header">Contact us</legend>
+            """),_display_(/*11.14*/if(flash.containsKey("success"))/*11.46*/{_display_(Seq[Any](format.raw/*11.47*/("""
+                """),format.raw/*12.17*/("""<div class="alert alert-success">
+                """),_display_(/*13.18*/flash/*13.23*/.get("success")),format.raw/*13.38*/("""
+            """),format.raw/*14.13*/("""</div>
+            """)))}),format.raw/*15.14*/("""
+                """),format.raw/*16.17*/("""<h1 class = "greentext">Contact Us</h1>
+            """),_display_(/*17.14*/form(action = routes.HomeController.addContactSubmit(),'method -> "POST", 'class -> "form-horizontal",'role->"form")/*17.130*/{_display_(Seq[Any](format.raw/*17.131*/("""
+                """),_display_(/*18.18*/inputText(contactForm("firstName"), '_label -> "First Name", 'class -> "form-control")),format.raw/*18.104*/("""
+                """),_display_(/*19.18*/inputText(contactForm("lastName"), '_label -> "Last Name", 'class -> "form-control")),format.raw/*19.102*/("""
+                """),_display_(/*20.18*/inputText(contactForm("email"), '_label -> "Email", 'type -> "email", 'class -> "form-control")),format.raw/*20.113*/("""
+                """),_display_(/*21.18*/inputText(contactForm("phone"), '_label -> "Phone", 'type -> "text", 'class -> "form-control")),format.raw/*21.112*/("""
+                """),_display_(/*22.18*/inputText(contactForm("message"), '_label -> "Message", 'type -> "textarea", 'class -> "form-control")),format.raw/*22.120*/("""
 
+                """),format.raw/*24.17*/("""<div class="actions">
+                    <input type="submit" value="Submit" class="btn btn-success">
+                    <a href=""""),_display_(/*26.31*/routes/*26.37*/.HomeController.contact()),format.raw/*26.62*/("""" class="btn btn-danger">Cancel</a>
 
-                            <div class="input-group">
-                            <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-user bigicon"></i></span>
-                            <div class="col-md-8">
-                                <input id="fname" name="firstName" type="text" placeholder="First Name" class="form-control">
-                            </div>
-                            </div>
+                </div>
+            </div>
+    </div>
 
-
-                            <div class="input-group">
-                            <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-user bigicon"></i></span>
-                            <div class="col-md-8">
-                                <input id="lname" name="lastName" type="text" placeholder="Last Name" class="form-control">
-                            </div>
-                            </div>
-
-
-
-                            <div class="input-group">
-                            <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-envelope-o bigicon"></i></span>
-                            <div class="col-md-8">
-                                <input id="email" name="email" type="text" placeholder="Email Address" class="form-control">
-                            </div>
-                            </div>
-
-
-
-                            <div class="input-group">
-                            <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-phone-square bigicon"></i></span>
-                            <div class="col-md-8">
-                                <input id="phone" name="phone" type="text" placeholder="Phone" class="form-control">
-                            </div>
-                            </div>
-
-
-
-                            <div class="input-group">
-                            <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-pencil-square-o bigicon"></i></span>
-                            <div class="col-md-8">
-                                <textarea class="form-control" id="message" name="message" placeholder="Enter your massage for us here. We will get back to you within 2 business days." rows="7"></textarea>
-                            </div>
-                            </div>
-
-                        <div class="form-group">
-                            <div class="col-md-12 text-center">
-                                <button type="submit" class="btn btn-success btn-lg">Submit</button>
-                            </div>
-                        </div>
-				
-                    </fieldset>
-                </form>
-			   <hr>
+    </div>
+    """)))}),format.raw/*33.6*/("""
 			  
-			<div class="row">
+			"""),format.raw/*35.4*/("""<div class="row">
 				<div class="col-md-12 text-center">
-                  <h3>See below for Social Sites</h3> 
+                  <h4>See below for Social Sites</h4>
                	</div>
 				</div>
 				
@@ -128,16 +93,17 @@ Seq[Any](format.raw/*1.61*/("""
 
 
 }
+}
 
 /**/
-object contact extends contact_Scope0.contact
+object contact extends contact_Scope0.contact_Scope1.contact
               /*
                   -- GENERATED --
-                  DATE: Mon Apr 10 11:16:20 IST 2017
+                  DATE: Mon Apr 10 13:22:06 IST 2017
                   SOURCE: /home/wdd/webapps/TicketStore/app/views/contact.scala.html
-                  HASH: 6be12892a1f9c20919c51318c430c0e72c66bcc9
-                  MATRIX: 781->1|935->60|963->63|999->91|1038->93|1065->94|1260->263|1300->295|1338->296|1383->313|1461->364|1475->369|1511->384|1552->397|1603->417|1648->434|1714->473|1729->479|1782->511
-                  LINES: 27->1|32->1|34->3|34->3|34->3|35->4|40->9|40->9|40->9|41->10|42->11|42->11|42->11|43->12|44->13|45->14|45->14|45->14|45->14
+                  HASH: b7744b8162d40b29a86c1df5b21466ba7be1ed7a
+                  MATRIX: 827->19|981->78|1009->81|1037->101|1076->103|1103->104|1299->273|1340->305|1379->306|1424->323|1502->374|1516->379|1552->394|1593->407|1644->427|1689->444|1769->497|1895->613|1935->614|1980->632|2088->718|2133->736|2239->820|2284->838|2401->933|2446->951|2562->1045|2607->1063|2731->1165|2777->1183|2937->1316|2952->1322|2998->1347|3135->1454|3172->1464
+                  LINES: 30->3|35->3|37->5|37->5|37->5|38->6|43->11|43->11|43->11|44->12|45->13|45->13|45->13|46->14|47->15|48->16|49->17|49->17|49->17|50->18|50->18|51->19|51->19|52->20|52->20|53->21|53->21|54->22|54->22|56->24|58->26|58->26|58->26|65->33|67->35
                   -- GENERATED --
               */
           

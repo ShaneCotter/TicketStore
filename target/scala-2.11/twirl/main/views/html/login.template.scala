@@ -41,7 +41,7 @@ Seq[Any](format.raw/*1.57*/("""
           <form class="omb_loginForm" action=""""),_display_(/*10.48*/routes/*10.54*/.LoginController.loginSubmit),format.raw/*10.82*/("""" name ="loginForm" method = "POST">
           <div class="input-group">
             <span class="input-group-addon"><i class="fa fa-user"></i></span>
-            <input type="text" class="form-control" name="email" placeholder="Email Address">
+            <input type="text" class="form-control" type="email" name="email" placeholder="Email Address">
           </div>
           <span class="help-block"></span>
                     
@@ -85,10 +85,10 @@ Seq[Any](format.raw/*1.57*/("""
 object login extends login_Scope0.login
               /*
                   -- GENERATED --
-                  DATE: Mon Apr 10 11:16:20 IST 2017
+                  DATE: Mon Apr 10 12:46:37 IST 2017
                   SOURCE: /home/wdd/webapps/TicketStore/app/views/login.scala.html
-                  HASH: e98dcc1a79e56a1cc8f009d4b12f7d699ad3b369
-                  MATRIX: 775->1|925->56|953->59|989->87|1028->89|1055->90|1167->176|1181->182|1225->206|1396->350|1411->356|1460->384|2412->1306
+                  HASH: 4c9fd784eda43d232d0241dce7c0946001123260
+                  MATRIX: 775->1|925->56|953->59|989->87|1028->89|1055->90|1167->176|1181->182|1225->206|1396->350|1411->356|1460->384|2425->1319
                   LINES: 27->1|32->1|34->3|34->3|34->3|35->4|37->6|37->6|37->6|41->10|41->10|41->10|67->36
                   -- GENERATED --
               */
