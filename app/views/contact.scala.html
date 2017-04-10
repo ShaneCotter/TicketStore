@@ -15,11 +15,11 @@
             }
                 <h1 class = "greentext">Contact Us</h1>
             @form(action = routes.HomeController.addContactSubmit(),'method -> "POST", 'class -> "form-horizontal",'role->"form"){
-                @inputText(contactForm("firstName"), '_label -> "First Name", 'class -> "form-control")
-                @inputText(contactForm("lastName"), '_label -> "Last Name", 'class -> "form-control")
+                @inputText(contactForm("firstName"), '_label -> "First Name", 'class -> "form-control", 'maxlength -> "30")
+                @inputText(contactForm("lastName"), '_label -> "Last Name", 'class -> "form-control", 'maxlength -> "30")
                 @inputText(contactForm("email"), '_label -> "Email", 'type -> "email", 'class -> "form-control")
                 @inputText(contactForm("phone"), '_label -> "Phone", 'type -> "text", 'class -> "form-control")
-                @inputText(contactForm("message"), '_label -> "Message", 'type -> "textarea", 'class -> "form-control")
+                @inputText(contactForm("message"), '_label -> "Message", 'type -> "textarea", 'class -> "form-control", 'maxlength -> "140")
 
                 <div class="actions">
                     <input type="submit" value="Submit" class="btn btn-success">

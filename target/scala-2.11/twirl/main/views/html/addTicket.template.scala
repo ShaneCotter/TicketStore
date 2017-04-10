@@ -45,19 +45,20 @@ Seq[Any](format.raw/*3.62*/("""
                     addTicketForm("event.id"),options(Event.options),'_label -> "Event", '_default -> ".. Choose an Event ..",
                     '_showConstraints -> false, 'class -> "form-control"
                 )),format.raw/*15.18*/("""
-                """),_display_(/*16.18*/inputText(addTicketForm("ticketType"), '_label -> "TicketType", 'class -> "form-control")),format.raw/*16.107*/("""
-                """),_display_(/*17.18*/inputText(addTicketForm("quantity"), '_label -> "Quantity", 'class -> "form-control")),format.raw/*17.103*/("""
-                """),_display_(/*18.18*/inputText(addTicketForm("price"), '_label -> "Price", 'class -> "form-control")),format.raw/*18.97*/(""" """),_display_(/*18.99*/inputText(addTicketForm("ticketID"), '_label -> "", 'hidden -> "hidden")),format.raw/*18.171*/("""
-                """),format.raw/*19.17*/("""<div class="actions">
+                """),_display_(/*16.18*/inputText(addTicketForm("ticketType"), '_label -> "TicketType", 'class -> "form-control", 'maxlength -> "30")),format.raw/*16.127*/("""
+                """),_display_(/*17.18*/inputText(addTicketForm("quantity"), '_label -> "Quantity", 'class -> "form-control", 'type -> "number", 'min -> "1", 'step -> "1", 'max -> "1000", 'value -> "0")),format.raw/*17.180*/("""
+                """),_display_(/*18.18*/inputText(addTicketForm("price"), '_label -> "Price", 'class -> "form-control", 'type -> "number", 'min -> "0.01", 'step -> "0.01", 'max -> "1000", 'value -> "00.00")),format.raw/*18.184*/("""
+                """),_display_(/*19.18*/inputText(addTicketForm("ticketID"), '_label -> "", 'hidden -> "hidden")),format.raw/*19.90*/("""
+                """),format.raw/*20.17*/("""<div class="actions">
                     <input type="submit" value="Add Ticket" class="btn btn-success">
-                        <a href=""""),_display_(/*21.35*/routes/*21.41*/.HomeController.index()),format.raw/*21.64*/("""" class="btn btn-danger">Cancel</a>
+                        <a href=""""),_display_(/*22.35*/routes/*22.41*/.HomeController.index()),format.raw/*22.64*/("""" class="btn btn-danger">Cancel</a>
 
                 </div>
 </div>
 </div>
 
 </div>
-""")))}),format.raw/*28.2*/("""
+""")))}),format.raw/*29.2*/("""
 """)))}))
       }
     }
@@ -79,11 +80,11 @@ Seq[Any](format.raw/*3.62*/("""
 object addTicket extends addTicket_Scope0.addTicket_Scope1.addTicket
               /*
                   -- GENERATED --
-                  DATE: Mon Apr 10 11:16:20 IST 2017
-                  SOURCE: /home/wdd/webapps/TicketStore/app/views/addTicket.scala.html
-                  HASH: 17acf5cd55ffc6331bb50880cc5520239d233c92
-                  MATRIX: 832->19|987->79|1015->82|1046->105|1085->107|1113->109|1259->228|1366->325|1406->326|1452->345|1698->570|1743->588|1854->677|1899->695|2006->780|2051->798|2151->877|2180->879|2274->951|2319->968|2487->1109|2502->1115|2546->1138|2659->1221
-                  LINES: 30->3|35->3|37->5|37->5|37->5|39->7|42->10|42->10|42->10|44->12|47->15|48->16|48->16|49->17|49->17|50->18|50->18|50->18|50->18|51->19|53->21|53->21|53->21|60->28
+                  DATE: Mon Apr 10 13:57:25 BST 2017
+                  SOURCE: C:/Users/Eileen/Desktop/TicketStore/app/views/addTicket.scala.html
+                  HASH: e26b07e6ed9d682eb89dd81c2d3a0c2edddffcd5
+                  MATRIX: 832->21|987->81|1017->86|1048->109|1087->111|1117->115|1266->237|1373->334|1413->335|1461->356|1710->584|1756->603|1887->712|1933->731|2117->893|2163->912|2351->1078|2397->1097|2490->1169|2536->1187|2706->1330|2721->1336|2765->1359|2885->1449
+                  LINES: 30->3|35->3|37->5|37->5|37->5|39->7|42->10|42->10|42->10|44->12|47->15|48->16|48->16|49->17|49->17|50->18|50->18|51->19|51->19|52->20|54->22|54->22|54->22|61->29
                   -- GENERATED --
               */
           

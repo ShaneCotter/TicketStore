@@ -13,8 +13,8 @@
 
             @form(action = routes.HomeController.signUpSubmit(), 'class -> "form-horizontal",'role->"form"){
                 @inputText(addUserForm("email"), '_label -> "Email", 'type -> "email", 'class -> "form-control")
-                @inputText(addUserForm("name"), '_label -> "Name", 'class -> "form-control")
-                @inputPassword(addUserForm("password"), '_label -> "Password", 'class -> "form-control")
+                @inputText(addUserForm("name"), '_label -> "Name", 'class -> "form-control" , 'maxlength -> "30")
+                @inputPassword(addUserForm("password"), '_label -> "Password", 'class -> "form-control" , 'maxlength -> "30")
                 <div class="actions">
                     <input type="submit" value="Sign Up" class="btn btn-success">
                 </div>

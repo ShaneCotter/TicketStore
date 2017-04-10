@@ -12,14 +12,14 @@
 		@form(action = routes.HomeController.addEventSubmit(), 'class -> "form=horizontal", 'role->"form", 'enctype -> "multipart/form-data"){
 				@select(addEventForm("category.catID"), options(Category.options), '_label -> "Category", '_default -> "Choose a category",
 				'_showConstraints -> false, 'class -> "form-control")
-				@inputText(addEventForm("eventName"), '_label -> "Name", 'class -> "form-control")
-				@inputText(addEventForm("time"), '_label -> "Time", 'class -> "form-control")
-				@inputText(addEventForm("location"), '_label -> "Location", 'class -> "form-control")
-				@inputText(addEventForm("date"), '_label -> "Date", 'class -> "form-control")
-				@inputText(addEventForm("title"), '_label -> "Title", 'class -> "form-control")			 
+				@inputText(addEventForm("eventName"), '_label -> "Name", 'class -> "form-control", 'maxlength -> "30")
+			    @inputText(addEventForm("title"), '_label -> "Title", 'class -> "form-control", 'maxlength -> "30")
+			    @inputText(addEventForm("location"), '_label -> "Location", 'class -> "form-control", 'maxlength -> "30")
+			    @inputText(addEventForm("date"), '_label -> "Date", 'class -> "form-control" , 'maxlength -> "30")
+			    @inputText(addEventForm("time"), '_label -> "Time", 'class -> "form-control" , 'maxlength -> "30") 
 				<label>Event Image</label>
 				<input type="file" name="upload">
-	<br>
+	            <br>
 				@inputText(addEventForm("id"), '_label -> "", 'hidden -> "hidden")
 				<div class="actions">
 					<input type="submit" value="Add Event" class="btn btn-success">
