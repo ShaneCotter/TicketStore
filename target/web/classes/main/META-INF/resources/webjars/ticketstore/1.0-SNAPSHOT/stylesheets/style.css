@@ -722,10 +722,11 @@ ol, ul {
 /* images end */
 
 
-
-/*
- * BOOTSTRAP
- */
+#contactForm
+{
+    margin-top:1em;
+    width: 100%;
+}
 
 .panel-footer{
     background:#fff;

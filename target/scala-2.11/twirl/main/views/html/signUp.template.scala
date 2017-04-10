@@ -40,17 +40,18 @@ Seq[Any](format.raw/*3.65*/("""
     <div class="container-fluid" id="content">
 
         <div class="row">
+            <h1 class="greentext">Sign up</h1>
             <div class="col-lg-12 well" id="signup">
 
-            """),_display_(/*13.14*/form(action = routes.HomeController.signUpSubmit(), 'class -> "form-horizontal",'role->"form")/*13.108*/{_display_(Seq[Any](format.raw/*13.109*/("""
-                """),_display_(/*14.18*/inputText(addUserForm("email"), '_label -> "Email", 'class -> "form-control")),format.raw/*14.95*/("""
-                """),_display_(/*15.18*/inputText(addUserForm("name"), '_label -> "Name", 'class -> "form-control")),format.raw/*15.93*/("""
-                """),_display_(/*16.18*/inputPassword(addUserForm("password"), '_label -> "Password", 'class -> "form-control")),format.raw/*16.105*/("""
-                """),format.raw/*17.17*/("""<div class="actions">
+            """),_display_(/*14.14*/form(action = routes.HomeController.signUpSubmit(), 'class -> "form-horizontal",'role->"form")/*14.108*/{_display_(Seq[Any](format.raw/*14.109*/("""
+                """),_display_(/*15.18*/inputText(addUserForm("email"), '_label -> "Email", 'type -> "email", 'class -> "form-control")),format.raw/*15.113*/("""
+                """),_display_(/*16.18*/inputText(addUserForm("name"), '_label -> "Name", 'class -> "form-control")),format.raw/*16.93*/("""
+                """),_display_(/*17.18*/inputPassword(addUserForm("password"), '_label -> "Password", 'class -> "form-control")),format.raw/*17.105*/("""
+                """),format.raw/*18.17*/("""<div class="actions">
                     <input type="submit" value="Sign Up" class="btn btn-success">
                 </div>
-            """)))}),format.raw/*20.14*/("""
-            """),format.raw/*21.13*/("""</div>
+            """)))}),format.raw/*21.14*/("""
+            """),format.raw/*22.13*/("""</div>
         </div>
     </div>
 
@@ -75,11 +76,11 @@ Seq[Any](format.raw/*3.65*/("""
 object signUp extends signUp_Scope0.signUp_Scope1.signUp
               /*
                   -- GENERATED --
-                  DATE: Mon Apr 10 11:16:20 IST 2017
+                  DATE: Mon Apr 10 13:24:46 IST 2017
                   SOURCE: /home/wdd/webapps/TicketStore/app/views/signUp.scala.html
-                  HASH: 1071e4de70cca58e907a151d692803ab73f51620
-                  MATRIX: 827->19|985->82|1013->85|1041->105|1080->107|1112->113|1299->273|1403->367|1443->368|1488->386|1586->463|1631->481|1727->556|1772->574|1881->661|1926->678|2097->818|2138->831
-                  LINES: 30->3|35->3|37->5|37->5|37->5|39->7|45->13|45->13|45->13|46->14|46->14|47->15|47->15|48->16|48->16|49->17|52->20|53->21
+                  HASH: 527c45551b11564b402113607f1c0c1e669cc168
+                  MATRIX: 827->19|985->82|1013->85|1041->105|1080->107|1112->113|1346->320|1450->414|1490->415|1535->433|1652->528|1697->546|1793->621|1838->639|1947->726|1992->743|2163->883|2204->896
+                  LINES: 30->3|35->3|37->5|37->5|37->5|39->7|46->14|46->14|46->14|47->15|47->15|48->16|48->16|49->17|49->17|50->18|53->21|54->22
                   -- GENERATED --
               */
           

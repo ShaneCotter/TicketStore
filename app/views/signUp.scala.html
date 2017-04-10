@@ -8,10 +8,11 @@
     <div class="container-fluid" id="content">
 
         <div class="row">
+            <h1 class="greentext">Sign up</h1>
             <div class="col-lg-12 well" id="signup">
 
             @form(action = routes.HomeController.signUpSubmit(), 'class -> "form-horizontal",'role->"form"){
-                @inputText(addUserForm("email"), '_label -> "Email", 'class -> "form-control")
+                @inputText(addUserForm("email"), '_label -> "Email", 'type -> "email", 'class -> "form-control")
                 @inputText(addUserForm("name"), '_label -> "Name", 'class -> "form-control")
                 @inputPassword(addUserForm("password"), '_label -> "Password", 'class -> "form-control")
                 <div class="actions">
