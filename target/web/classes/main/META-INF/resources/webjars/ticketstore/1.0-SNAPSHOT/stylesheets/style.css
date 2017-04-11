@@ -833,9 +833,9 @@ hr{
 	padding-bottom:1em;
 }
 
-#eventInfo{
-	
-	padding-left:2em;
+#eventInfo h1, #eventInfo p {
+
+    text-align: center;
 }
 
 #seatingplans h1 , #seatingplans h2{
