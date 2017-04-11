@@ -23,20 +23,21 @@ GET     /logout                     controllers.LoginController.logout
 GET     /myaccount                  controllers.HomeController.myAccount
 
 # Shopping
-GET     /showBasket                         controllers.ShoppingCtrl.showBasket()
-GET     /addToBasket/:id                    controllers.ShoppingCtrl.addToBasket(id: Long)
-GET     /addOne/:itemId                     controllers.ShoppingCtrl.addOne(itemId: Long)
-GET     /removeOne/:itemId                  controllers.ShoppingCtrl.removeOne(itemId: Long)
-GET     /emptyBasket                        controllers.ShoppingCtrl.emptyBasket()
-GET     /placeOrder                         controllers.ShoppingCtrl.placeOrder()
-GET     /viewOrder/:id                      controllers.ShoppingCtrl.viewOrder(id: Long)
+GET     /showBasket                 controllers.ShoppingCtrl.showBasket()
+GET     /addToBasket/:id            controllers.ShoppingCtrl.addToBasket(id: Long)
+GET     /addOne/:itemId             controllers.ShoppingCtrl.addOne(itemId: Long)
+GET     /removeOne/:itemId          controllers.ShoppingCtrl.removeOne(itemId: Long)
+GET     /emptyBasket                controllers.ShoppingCtrl.emptyBasket()
+GET     /placeOrder                 controllers.ShoppingCtrl.placeOrder()
+GET     /viewOrder/:id              controllers.ShoppingCtrl.viewOrder(id: Long)
 
+GET     /listEvents                 controllers.EventController.listEvents(cat:Long ?= 0, filter ?="")
 
 #Admin options
-POST    /addTicketSubmit             controllers.HomeController.addTicketSubmit
+POST    /addTicketSubmit            controllers.HomeController.addTicketSubmit
 
-GET     /delTicket/:id               controllers.HomeController.deleteTicket(id:Long)
-GET     /updateTicket/:id            controllers.HomeController.updateTicket(id:Long)
+GET     /delTicket/:id              controllers.HomeController.deleteTicket(id:Long)
+GET     /updateTicket/:id           controllers.HomeController.updateTicket(id:Long)
 
 POST    /addEventSubmit             controllers.HomeController.addEventSubmit
 

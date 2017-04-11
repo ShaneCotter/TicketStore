@@ -73,45 +73,47 @@ Seq[Any](format.raw/*7.55*/("""
                 <!--/Search Bar-->
                 <div class="nav navbar-nav navbar-right" id="nav-buttons">
                     """),_display_(/*45.22*/if(user != null)/*45.38*/{_display_(Seq[Any](format.raw/*45.39*/("""
-                        """),format.raw/*46.25*/("""<a href=""""),_display_(/*46.35*/routes/*46.41*/.HomeController.cart()),format.raw/*46.63*/("""" class="btn btn-success btn-circle btn-md"><i class="glyphicon glyphicon-shopping-cart"></i></a>
-                        <a href=""""),_display_(/*47.35*/routes/*47.41*/.LoginController.logout()),format.raw/*47.66*/("""" class="btn btn-success btn-circle btn-md"><span class="glyphicon glyphicon-off"></span>LOGOUT</a>
-                        """),_display_(/*48.26*/if(user.getRole.equals("admin"))/*48.58*/ {_display_(Seq[Any](format.raw/*48.60*/("""
-                            """),format.raw/*49.29*/("""<div class="dropdown" id="adminOptions">
+                        """),format.raw/*46.25*/("""<a href=""""),_display_(/*46.35*/routes/*46.41*/.EventController.listEvents()),format.raw/*46.70*/("""" class="btn btn-success btn-circle btn-md"><i class="glyphicon glyphicon-search"></i></a>
+                        <a href=""""),_display_(/*47.35*/routes/*47.41*/.HomeController.cart()),format.raw/*47.63*/("""" class="btn btn-success btn-circle btn-md"><i class="glyphicon glyphicon-shopping-cart"></i></a>
+                        <a href=""""),_display_(/*48.35*/routes/*48.41*/.LoginController.logout()),format.raw/*48.66*/("""" class="btn btn-success btn-circle btn-md"><span class="glyphicon glyphicon-off"></span>LOGOUT</a>
+                        """),_display_(/*49.26*/if(user.getRole.equals("admin"))/*49.58*/ {_display_(Seq[Any](format.raw/*49.60*/("""
+                            """),format.raw/*50.29*/("""<div class="dropdown" id="adminOptions">
                                 <button class="btn btn-success btn-circle btn-md" data-toggle="dropdown"><i class="glyphicon glyphicon-cog"></i>Admin Options
                                     <span class="caret"></span></button>
                                 <ul class="dropdown-menu">
-                                    <li><a href=""""),_display_(/*53.51*/routes/*53.57*/.HomeController.addEvent()),format.raw/*53.83*/("""">Add event</a></li>
-                                    <li><a href=""""),_display_(/*54.51*/routes/*54.57*/.HomeController.addTicket()),format.raw/*54.84*/("""">Add ticket</a></li>
-                                    <li><a href=""""),_display_(/*55.51*/routes/*55.57*/.HomeController.adminevents(0)),format.raw/*55.87*/("""">Manage events</a></li>
-                                    <li><a href=""""),_display_(/*56.51*/routes/*56.57*/.HomeController.viewContact()),format.raw/*56.86*/("""">View contacts</a></li>
+                                    <li><a href=""""),_display_(/*54.51*/routes/*54.57*/.HomeController.addEvent()),format.raw/*54.83*/("""">Add event</a></li>
+                                    <li><a href=""""),_display_(/*55.51*/routes/*55.57*/.HomeController.addTicket()),format.raw/*55.84*/("""">Add ticket</a></li>
+                                    <li><a href=""""),_display_(/*56.51*/routes/*56.57*/.HomeController.adminevents(0)),format.raw/*56.87*/("""">Manage events</a></li>
+                                    <li><a href=""""),_display_(/*57.51*/routes/*57.57*/.HomeController.viewContact()),format.raw/*57.86*/("""">View contacts</a></li>
                                 </ul>
                             </div>
-                        """)))}),format.raw/*59.26*/("""
-                    """)))}/*60.22*/else/*60.26*/{_display_(Seq[Any](format.raw/*60.27*/("""
-                        """),format.raw/*61.25*/("""<a href=""""),_display_(/*61.35*/routes/*61.41*/.LoginController.login()),format.raw/*61.65*/("""" class="btn btn-success btn-circle btn-md"><i class="glyphicon glyphicon-user"></i>Login</a>
-                        <a href=""""),_display_(/*62.35*/routes/*62.41*/.HomeController.signUp()),format.raw/*62.65*/("""" class="btn btn-success btn-circle btn-md"><span class="glyphcon glyphicon-pencil"></span>Sign up</a>
-                    """)))}),format.raw/*63.22*/("""
-                """),format.raw/*64.17*/("""</div>
+                        """)))}),format.raw/*60.26*/("""
+                    """)))}/*61.22*/else/*61.26*/{_display_(Seq[Any](format.raw/*61.27*/("""
+                        """),format.raw/*62.25*/("""<a href=""""),_display_(/*62.35*/routes/*62.41*/.EventController.listEvents()),format.raw/*62.70*/("""" class="btn btn-success btn-circle btn-md"><i class="glyphicon glyphicon-search"></i></a>
+                        <a href=""""),_display_(/*63.35*/routes/*63.41*/.LoginController.login()),format.raw/*63.65*/("""" class="btn btn-success btn-circle btn-md"><i class="glyphicon glyphicon-user"></i>Login</a>
+                        <a href=""""),_display_(/*64.35*/routes/*64.41*/.HomeController.signUp()),format.raw/*64.65*/("""" class="btn btn-success btn-circle btn-md"><span class="glyphcon glyphicon-pencil"></span>Sign up</a>
+                    """)))}),format.raw/*65.22*/("""
+                """),format.raw/*66.17*/("""</div>
             </div>
         </div>
         <div id="container">
             <div class="row">
                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" id="nav-bottom">
-                    <a href=""""),_display_(/*70.31*/routes/*70.37*/.HomeController.index),format.raw/*70.58*/("""">HOME</a>
-                    <a href=""""),_display_(/*71.31*/routes/*71.37*/.HomeController.events(0)),format.raw/*71.62*/("""">EVENTS</a>
-                    <a href=""""),_display_(/*72.31*/routes/*72.37*/.HomeController.myAccount),format.raw/*72.62*/("""">MY ACCOUNT</a>
-                    <a href=""""),_display_(/*73.31*/routes/*73.37*/.HomeController.contact),format.raw/*73.60*/("""">CONTACT US</a>
+                    <a href=""""),_display_(/*72.31*/routes/*72.37*/.HomeController.index),format.raw/*72.58*/("""">HOME</a>
+                    <a href=""""),_display_(/*73.31*/routes/*73.37*/.HomeController.events(0)),format.raw/*73.62*/("""">EVENTS</a>
+                    <a href=""""),_display_(/*74.31*/routes/*74.37*/.HomeController.myAccount),format.raw/*74.62*/("""">MY ACCOUNT</a>
+                    <a href=""""),_display_(/*75.31*/routes/*75.37*/.HomeController.contact),format.raw/*75.60*/("""">CONTACT US</a>
                 </div>
             </div>
         </div>
     </div>
 
-        """),_display_(/*79.10*/content),format.raw/*79.17*/("""
+        """),_display_(/*81.10*/content),format.raw/*81.17*/("""
 
-"""),format.raw/*81.1*/("""<div class="container" id = "footer">
+"""),format.raw/*83.1*/("""<div class="container" id = "footer">
         <div class="row">
             <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 pull-left">
-                <a href=""""),_display_(/*84.27*/routes/*84.33*/.HomeController.index()),format.raw/*84.56*/(""""><h2>TC <span>EVENTS</h2></a>
+                <a href=""""),_display_(/*86.27*/routes/*86.33*/.HomeController.index()),format.raw/*86.56*/(""""><h2>TC <span>EVENTS</h2></a>
             </div>
             <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6" id="icon div">
                 <a href="#"><i class="fa fa-3x fa-fw fa-instagram text-inverse pull-right" id="icon"></i></a>
@@ -148,11 +150,11 @@ Seq[Any](format.raw/*7.55*/("""
 object main extends main_Scope0.main
               /*
                   -- GENERATED --
-                  DATE: Tue Apr 11 12:42:34 BST 2017
-                  SOURCE: C:/Users/Eileen/Desktop/TicketStore/app/views/main.scala.html
-                  HASH: 5c63902cccd52825697c9b6324b8ef9c5b2b7c54
-                  MATRIX: 1025->266|1173->319|1203->323|1254->348|1280->353|1384->430|1399->436|1462->478|2597->1586|2612->1592|2656->1615|3610->2542|3635->2558|3674->2559|3728->2585|3765->2595|3780->2601|3823->2623|3983->2756|3998->2762|4044->2787|4197->2913|4238->2945|4278->2947|4336->2977|4748->3362|4763->3368|4810->3394|4909->3466|4924->3472|4972->3499|5072->3572|5087->3578|5138->3608|5241->3684|5256->3690|5306->3719|5463->3845|5505->3868|5518->3872|5557->3873|5611->3899|5648->3909|5663->3915|5708->3939|5864->4068|5879->4074|5924->4098|6080->4223|6126->4241|6375->4463|6390->4469|6432->4490|6501->4532|6516->4538|6562->4563|6633->4607|6648->4613|6694->4638|6769->4686|6784->4692|6828->4715|6956->4816|6984->4823|7015->4827|7207->4992|7222->4998|7266->5021
-                  LINES: 32->7|37->7|39->9|40->10|40->10|44->14|44->14|44->14|59->29|59->29|59->29|75->45|75->45|75->45|76->46|76->46|76->46|76->46|77->47|77->47|77->47|78->48|78->48|78->48|79->49|83->53|83->53|83->53|84->54|84->54|84->54|85->55|85->55|85->55|86->56|86->56|86->56|89->59|90->60|90->60|90->60|91->61|91->61|91->61|91->61|92->62|92->62|92->62|93->63|94->64|100->70|100->70|100->70|101->71|101->71|101->71|102->72|102->72|102->72|103->73|103->73|103->73|109->79|109->79|111->81|114->84|114->84|114->84
+                  DATE: Tue Apr 11 13:36:24 IST 2017
+                  SOURCE: /home/wdd/webapps/TicketStore/app/views/main.scala.html
+                  HASH: b25ad886ff4894ba62e0dbdc1c67634689cdec17
+                  MATRIX: 1020->260|1168->313|1196->315|1246->339|1272->344|1372->417|1387->423|1450->465|2570->1558|2585->1564|2629->1587|3567->2498|3592->2514|3631->2515|3684->2540|3721->2550|3736->2556|3786->2585|3938->2710|3953->2716|3996->2738|4155->2870|4170->2876|4216->2901|4368->3026|4409->3058|4449->3060|4506->3089|4914->3470|4929->3476|4976->3502|5074->3573|5089->3579|5137->3606|5236->3678|5251->3684|5302->3714|5404->3789|5419->3795|5469->3824|5623->3947|5664->3969|5677->3973|5716->3974|5769->3999|5806->4009|5821->4015|5871->4044|6023->4169|6038->4175|6083->4199|6238->4327|6253->4333|6298->4357|6453->4481|6498->4498|6741->4714|6756->4720|6798->4741|6866->4782|6881->4788|6927->4813|6997->4856|7012->4862|7058->4887|7132->4934|7147->4940|7191->4963|7313->5058|7341->5065|7370->5067|7559->5229|7574->5235|7618->5258
+                  LINES: 32->7|37->7|39->9|40->10|40->10|44->14|44->14|44->14|59->29|59->29|59->29|75->45|75->45|75->45|76->46|76->46|76->46|76->46|77->47|77->47|77->47|78->48|78->48|78->48|79->49|79->49|79->49|80->50|84->54|84->54|84->54|85->55|85->55|85->55|86->56|86->56|86->56|87->57|87->57|87->57|90->60|91->61|91->61|91->61|92->62|92->62|92->62|92->62|93->63|93->63|93->63|94->64|94->64|94->64|95->65|96->66|102->72|102->72|102->72|103->73|103->73|103->73|104->74|104->74|104->74|105->75|105->75|105->75|111->81|111->81|113->83|116->86|116->86|116->86
                   -- GENERATED --
               */
           
