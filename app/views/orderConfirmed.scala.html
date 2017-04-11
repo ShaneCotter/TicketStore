@@ -8,7 +8,7 @@
     <!-- Pass page title and user on to main -->
 @main("Order Confirmation", user) {
 
-
+<div class = "container" id ="content">
     <div class="row">
 
         <div class="col-md-12">
@@ -18,37 +18,47 @@
                 </div>
             }
 
-            <table class="table table-bordered table-hover table-condensed">
-                <thead>
-                        <!-- The header row-->
-                    <tr>
-                        <th>Name</th>
-                        <th>Ticket Type</th>
-                        <th>Item Price</th>
-                        <th>Quantity</th>
-                        <th>Total</th>
-                    </tr>
-                </thead>
-                <tbody>
-                @if(order != null) {
-                        <!-- Start of For loop - For each p in products add a row -->
-                    @for(i <- order.getItems) {
-                        <tr>
-                            <td>@i.getTicket.getEvent.getEventName</td>
-                            <td>@i.getTicket.getTicketType</td>
-                            <td>&euro; @("%.2f".format(i.getPrice))</td>
-                            <td>@i.getQuantity()</td>
-                            <td>&euro; @("%.2f".format(i.getItemTotal))</td>
-                        </tr>
-                    }<!-- End of For loop -->
-                }
-                </tbody>
-            </table>
             <div class="row">
                 <div class="col-md-12">
-                    <p class="text-right"><strong>Order Total: &euro; @("%.2f".format(order.getOrderTotal))</strong></p>
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h3 class="text-center"><strong>Order summary</strong></h3>
+                        </div>
+                        <div class="panel-body">
+                            <div class="table-responsive">
+                                <table class="table table-condensed">
+                                    <thead>
+                                        <tr>
+                                            <td><strong>Ticket</strong></td>
+                                            <td class="text-center"><strong>Ticket Price</strong></td>
+                                            <td class="text-center"><strong>Ticket Quantity</strong></td>
+                                            <td class="text-right"><strong>Total</strong></td>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                    @if(order != null) {
+                                            <!-- Start of For loop - For each p in products add a row -->
+                                        @for(i <- order.getItems) {
+                                        <tr>
+                                            <td>@i.getTicket.getEvent.getEventName - @i.getTicket.getTicketType</td>
+                                            <td class="text-center">&euro; @("%.2f".format(i.getPrice))</td>
+                                            <td class="text-center">@i.getQuantity()</td>
+                                            <td class="text-right">&euro; @("%.2f".format(i.getItemTotal))</td>
+                                        </tr>}}
+                                        <tr>
+                                            <td class="highrow"></td>
+                                            <td class="highrow"></td>
+                                            <td class="highrow text-center"><strong>Order Total</strong></td>
+                                            <td class="highrow text-right">&euro; @("%.2f".format(order.getOrderTotal))</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
+
 }

@@ -116,6 +116,9 @@ public class ShoppingCtrl extends Controller {
             i.setBasket(null);
             // update item
             i.update();
+
+            Ticket t = i.getTicket();
+            t.decreaseQuantity(i.getQuantity());
         }
 
         // Update the order

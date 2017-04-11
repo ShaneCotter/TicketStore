@@ -126,4 +126,9 @@ public class Basket extends Model {
     public void setUser(User user) {
         this.user = user;
     }
+
+    public double getStripeTotal(){
+
+        return getBasketTotal() * 100;
+    }
 }

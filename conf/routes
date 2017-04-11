@@ -29,6 +29,7 @@ GET     /addOne/:itemId             controllers.ShoppingCtrl.addOne(itemId: Long
 GET     /removeOne/:itemId          controllers.ShoppingCtrl.removeOne(itemId: Long)
 GET     /emptyBasket                controllers.ShoppingCtrl.emptyBasket()
 GET     /placeOrder                 controllers.ShoppingCtrl.placeOrder()
+POST    /placeOrder                 controllers.ShoppingCtrl.placeOrder()
 GET     /viewOrder/:id              controllers.ShoppingCtrl.viewOrder(id: Long)
 
 GET     /listEvents                 controllers.EventController.listEvents(cat:Long ?= 0, filter ?="")

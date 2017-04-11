@@ -68,6 +68,10 @@ public class Ticket extends Model {
         this.quantity = quantity;
     }
 
+    public void decreaseQuantity(int qty){
+        this.quantity -= qty;
+    }
+
     public double getPrice() {
         return price;
     }
