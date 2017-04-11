@@ -283,6 +283,9 @@ public class HomeController extends Controller {
         return User.getUserById(session().get("email"));
     }
 
+    @Security.Authenticated(Secured.class)
+    public Result myAccount (){return ok(myaccount.render(getUserFromSession()));}
+
     // Save an image file
     public String saveFile(Long id, FilePart<File> image) {
         if (image != null) {

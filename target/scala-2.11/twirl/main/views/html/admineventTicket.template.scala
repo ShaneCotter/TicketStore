@@ -36,60 +36,63 @@ Seq[Any](format.raw/*1.94*/("""
 """),_display_(/*6.2*/main("Tickets",user)/*6.22*/ {_display_(Seq[Any](format.raw/*6.24*/("""
     """),format.raw/*7.5*/("""<!--..CONTENT..-->
     <div class="container" id = "seatingplans">
-        """),_display_(/*9.10*/if(flash.containsKey("success"))/*9.42*/{_display_(Seq[Any](format.raw/*9.43*/("""
-            """),format.raw/*10.13*/("""<div class="alert alert-success">
-            """),_display_(/*11.14*/flash/*11.19*/.get("success")),format.raw/*11.34*/("""
-            """),format.raw/*12.13*/("""</div>
-        """)))}),format.raw/*13.10*/("""
-        """),format.raw/*14.9*/("""<div class="row well">
+        <br>
+        <br>
+        <br>
+        """),_display_(/*12.10*/if(flash.containsKey("success"))/*12.42*/{_display_(Seq[Any](format.raw/*12.43*/("""
+            """),format.raw/*13.13*/("""<div class="alert alert-success">
+            """),_display_(/*14.14*/flash/*14.19*/.get("success")),format.raw/*14.34*/("""
+            """),format.raw/*15.13*/("""</div>
+        """)))}),format.raw/*16.10*/("""
+        """),format.raw/*17.9*/("""<div class="row well">
             <div class="col-lg-5 col-md-5 col-sm-6 col-xs-12">
-            """),_display_(/*16.14*/if(env.resource("public/images/eventImages/" + e.getId + ".jpg").isDefined)/*16.89*/ {_display_(Seq[Any](format.raw/*16.91*/("""
-                """),format.raw/*17.17*/("""<img class="img-responsive" src="/assets/images/eventImages/"""),_display_(/*17.78*/(e.getId + ".jpg")),format.raw/*17.96*/(""""/>
-            """)))}/*18.15*/else/*18.20*/{_display_(Seq[Any](format.raw/*18.21*/("""
-                """),format.raw/*19.17*/("""<img class="img-responsive" src="/assets/images/eventImages/noImage.png" alt="" >
-                """)))}),format.raw/*20.18*/("""
-            """),format.raw/*21.13*/("""</div>
+            """),_display_(/*19.14*/if(env.resource("public/images/eventImages/" + e.getId + ".jpg").isDefined)/*19.89*/ {_display_(Seq[Any](format.raw/*19.91*/("""
+                """),format.raw/*20.17*/("""<img class="img-responsive" src="/assets/images/eventImages/"""),_display_(/*20.78*/(e.getId + ".jpg")),format.raw/*20.96*/(""""/>
+            """)))}/*21.15*/else/*21.20*/{_display_(Seq[Any](format.raw/*21.21*/("""
+                """),format.raw/*22.17*/("""<img class="img-responsive" src="/assets/images/eventImages/noImage.png" alt="" >
+                """)))}),format.raw/*23.18*/("""
+            """),format.raw/*24.13*/("""</div>
 
             <div class="col-lg-7 col-md-7 col-sm-6 col-xs-12" id = "eventInfo">
-                <h1>"""),_display_(/*24.22*/e/*24.23*/.getTitle),format.raw/*24.32*/(""" """),format.raw/*24.33*/(""", """),_display_(/*24.36*/e/*24.37*/.getEventName),format.raw/*24.50*/("""</h1>
-                <p>Location here : """),_display_(/*25.37*/e/*25.38*/.getLocation),format.raw/*25.50*/("""</p>
-                <p>Date/time here : """),_display_(/*26.38*/e/*26.39*/.getDate),format.raw/*26.47*/("""</p>
+                <h1>"""),_display_(/*27.22*/e/*27.23*/.getTitle),format.raw/*27.32*/(""" """),format.raw/*27.33*/(""", """),_display_(/*27.36*/e/*27.37*/.getEventName),format.raw/*27.50*/("""</h1>
+                <p>Location here : """),_display_(/*28.37*/e/*28.38*/.getLocation),format.raw/*28.50*/("""</p>
+                <p>Date/time here : """),_display_(/*29.38*/e/*29.39*/.getDate),format.raw/*29.47*/("""</p>
             </div>
         </div>
 
         <div class="row well" id="tickets">
 
-                """),_display_(/*32.18*/for(t <- tickets) yield /*32.35*/ {_display_(Seq[Any](format.raw/*32.37*/("""
-                    """),format.raw/*33.21*/("""<div class="item  col-xs-4 col-lg-4">
+                """),_display_(/*35.18*/for(t <- tickets) yield /*35.35*/ {_display_(Seq[Any](format.raw/*35.37*/("""
+                    """),format.raw/*36.21*/("""<div class="item  col-xs-4 col-lg-4">
                         <div class="thumbnail">
 
-                            <h2>"""),_display_(/*36.34*/t/*36.35*/.getTicketType),format.raw/*36.49*/("""</h2>
+                            <h2>"""),_display_(/*39.34*/t/*39.35*/.getTicketType),format.raw/*39.49*/("""</h2>
                             <div class="caption">
                                 <p class="group inner list-group-item-text">
-                                <p>Ticket price : € """),_display_(/*39.54*/t/*39.55*/.getPrice),format.raw/*39.64*/("""</p>
+                                <p>Ticket price : € """),_display_(/*42.54*/t/*42.55*/.getPrice),format.raw/*42.64*/("""</p>
 
                                 <div class="row">
                                     <div class="col-xs-12 col-md-6">
-                                    """),_display_(/*43.38*/if(user.getRole.equals("admin"))/*43.70*/ {_display_(Seq[Any](format.raw/*43.72*/("""
-                                        """),format.raw/*44.41*/("""<a href=""""),_display_(/*44.51*/routes/*44.57*/.HomeController.deleteTicket(t.getTicketID)),format.raw/*44.100*/("""" class = "btn btn-danger"
+                                    """),_display_(/*46.38*/if(user.getRole.equals("admin"))/*46.70*/ {_display_(Seq[Any](format.raw/*46.72*/("""
+                                        """),format.raw/*47.41*/("""<a href=""""),_display_(/*47.51*/routes/*47.57*/.HomeController.deleteTicket(t.getTicketID)),format.raw/*47.100*/("""" class = "btn btn-danger"
                                         onclick="return confirmDel();">
                                             <span class="glyphicon glyphicon-trash"></span></a>
-                                    """)))}),format.raw/*47.38*/("""
-                                    """),format.raw/*48.37*/("""</div>
+                                    """)))}),format.raw/*50.38*/("""
+                                    """),format.raw/*51.37*/("""</div>
                                 </div>
                             </div>
                         </div>
-                    </div>""")))}),format.raw/*52.28*/("""
-                """),format.raw/*53.17*/("""</div>
+                    </div>""")))}),format.raw/*55.28*/("""
+                """),format.raw/*56.17*/("""</div>
             </div>
 
 
 
             <script>
-                    function confirmDel()"""),format.raw/*59.42*/("""{"""),format.raw/*59.43*/("""
-                        """),format.raw/*60.25*/("""return confirm('Are you sure?');
-                    """),format.raw/*61.21*/("""}"""),format.raw/*61.22*/("""
-            """),format.raw/*62.13*/("""</script>
+                    function confirmDel()"""),format.raw/*62.42*/("""{"""),format.raw/*62.43*/("""
+                        """),format.raw/*63.25*/("""return confirm('Are you sure?');
+                    """),format.raw/*64.21*/("""}"""),format.raw/*64.22*/("""
+            """),format.raw/*65.13*/("""</script>
 
                 <!--END CONTENT-->
 """)))}))
@@ -112,11 +115,11 @@ Seq[Any](format.raw/*1.94*/("""
 object admineventTicket extends admineventTicket_Scope0.admineventTicket
               /*
                   -- GENERATED --
-                  DATE: Mon Apr 10 13:40:43 BST 2017
+                  DATE: Tue Apr 11 12:42:33 BST 2017
                   SOURCE: C:/Users/Eileen/Desktop/TicketStore/app/views/admineventTicket.scala.html
-                  HASH: 4c0f0c24f66e246793ddf77ccec135021faba2d6
-                  MATRIX: 825->1|1027->93|1057->115|1087->120|1115->140|1154->142|1186->148|1290->226|1330->258|1368->259|1410->273|1485->321|1499->326|1535->341|1577->355|1625->372|1662->382|1790->483|1874->558|1914->560|1960->578|2048->639|2087->657|2124->676|2137->681|2176->682|2222->700|2353->800|2395->814|2534->926|2544->927|2574->936|2603->937|2633->940|2643->941|2677->954|2747->997|2757->998|2790->1010|2860->1053|2870->1054|2899->1062|3034->1170|3067->1187|3107->1189|3157->1211|3307->1334|3317->1335|3352->1349|3568->1538|3578->1539|3608->1548|3801->1714|3842->1746|3882->1748|3952->1790|3989->1800|4004->1806|4069->1849|4335->2084|4401->2122|4575->2265|4621->2283|4746->2380|4775->2381|4829->2407|4911->2461|4940->2462|4982->2476
-                  LINES: 27->1|32->1|34->4|36->6|36->6|36->6|37->7|39->9|39->9|39->9|40->10|41->11|41->11|41->11|42->12|43->13|44->14|46->16|46->16|46->16|47->17|47->17|47->17|48->18|48->18|48->18|49->19|50->20|51->21|54->24|54->24|54->24|54->24|54->24|54->24|54->24|55->25|55->25|55->25|56->26|56->26|56->26|62->32|62->32|62->32|63->33|66->36|66->36|66->36|69->39|69->39|69->39|73->43|73->43|73->43|74->44|74->44|74->44|74->44|77->47|78->48|82->52|83->53|89->59|89->59|90->60|91->61|91->61|92->62
+                  HASH: e6ad6021fc09ab984695d25adf4bbd824ce3467d
+                  MATRIX: 825->1|1027->93|1057->115|1087->120|1115->140|1154->142|1186->148|1333->268|1374->300|1413->301|1455->315|1530->363|1544->368|1580->383|1622->397|1670->414|1707->424|1835->525|1919->600|1959->602|2005->620|2093->681|2132->699|2169->718|2182->723|2221->724|2267->742|2398->842|2440->856|2579->968|2589->969|2619->978|2648->979|2678->982|2688->983|2722->996|2792->1039|2802->1040|2835->1052|2905->1095|2915->1096|2944->1104|3079->1212|3112->1229|3152->1231|3202->1253|3352->1376|3362->1377|3397->1391|3613->1580|3623->1581|3653->1590|3846->1756|3887->1788|3927->1790|3997->1832|4034->1842|4049->1848|4114->1891|4380->2126|4446->2164|4620->2307|4666->2325|4791->2422|4820->2423|4874->2449|4956->2503|4985->2504|5027->2518
+                  LINES: 27->1|32->1|34->4|36->6|36->6|36->6|37->7|42->12|42->12|42->12|43->13|44->14|44->14|44->14|45->15|46->16|47->17|49->19|49->19|49->19|50->20|50->20|50->20|51->21|51->21|51->21|52->22|53->23|54->24|57->27|57->27|57->27|57->27|57->27|57->27|57->27|58->28|58->28|58->28|59->29|59->29|59->29|65->35|65->35|65->35|66->36|69->39|69->39|69->39|72->42|72->42|72->42|76->46|76->46|76->46|77->47|77->47|77->47|77->47|80->50|81->51|85->55|86->56|92->62|92->62|93->63|94->64|94->64|95->65
                   -- GENERATED --
               */
           

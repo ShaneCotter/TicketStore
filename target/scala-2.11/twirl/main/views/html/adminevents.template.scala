@@ -74,13 +74,16 @@ Seq[Any](format.raw/*1.117*/("""
 
 
                 <!--Main content--->
+            <br>
+            <br>
+            <br>
             <div class="col-sm-9">
-                """),_display_(/*47.18*/if(flash.containsKey("success"))/*47.50*/{_display_(Seq[Any](format.raw/*47.51*/("""
-                    """),format.raw/*48.21*/("""<div class="alert alert-success">
-                    """),_display_(/*49.22*/flash/*49.27*/.get("success")),format.raw/*49.42*/("""
-                    """),format.raw/*50.21*/("""</div>
-                """)))}),format.raw/*51.18*/("""
-                """),format.raw/*52.17*/("""<div class="row"><br>
+                """),_display_(/*50.18*/if(flash.containsKey("success"))/*50.50*/{_display_(Seq[Any](format.raw/*50.51*/("""
+                    """),format.raw/*51.21*/("""<div class="alert alert-success">
+                    """),_display_(/*52.22*/flash/*52.27*/.get("success")),format.raw/*52.42*/("""
+                    """),format.raw/*53.21*/("""</div>
+                """)))}),format.raw/*54.18*/("""
+                """),format.raw/*55.17*/("""<div class="row"><br>
                     <strong>Display</strong>
                     <div class="btn-group">
                         <a href="#" id="list" class="btn btn-default btn-sm"><span class="glyphicon glyphicon-th-list">
@@ -91,44 +94,44 @@ Seq[Any](format.raw/*1.117*/("""
                 <br>
 
                 <div id="products" class="row list-group">
-                    <a href=""""),_display_(/*63.31*/routes/*63.37*/.HomeController.addTicket()),format.raw/*63.64*/("""" class="btn btn-success">
+                    <a href=""""),_display_(/*66.31*/routes/*66.37*/.HomeController.addTicket()),format.raw/*66.64*/("""" class="btn btn-success">
                         <span class="glyphicon glyphicon-plus"></span>Add tickets
                     </a>
                     <br>
                     <br>
                         <!-- Start of for loop - Fo reach e in events add a row -->
-                    """),_display_(/*69.22*/for(e <- events) yield /*69.38*/ {_display_(Seq[Any](format.raw/*69.40*/("""
-                        """),format.raw/*70.25*/("""<a href=""""),_display_(/*70.35*/routes/*70.41*/.HomeController.admineventTicket(e.getId)),format.raw/*70.82*/("""">
+                    """),_display_(/*72.22*/for(e <- events) yield /*72.38*/ {_display_(Seq[Any](format.raw/*72.40*/("""
+                        """),format.raw/*73.25*/("""<a href=""""),_display_(/*73.35*/routes/*73.41*/.HomeController.admineventTicket(e.getId)),format.raw/*73.82*/("""">
                             <div class="item  col-xs-4 col-lg-4">
                                 <div class="thumbnail">
-                                    """),_display_(/*73.38*/if(env.resource("public/images/eventImages/" + e.getId + ".jpg").isDefined)/*73.113*/ {_display_(Seq[Any](format.raw/*73.115*/("""
-                                        """),format.raw/*74.41*/("""<img class="img-responsive" src="/assets/images/eventImages/"""),_display_(/*74.102*/(e.getId + ".jpg")),format.raw/*74.120*/(""""/>
-                                    """)))}/*75.39*/else/*75.44*/{_display_(Seq[Any](format.raw/*75.45*/("""
-                                        """),format.raw/*76.41*/("""<img class="img-responsive" src="/assets/images/eventImages/noImage.png" alt="" >
-                                    """)))}),format.raw/*77.38*/("""
-                                    """),format.raw/*78.37*/("""<div class="caption">
+                                    """),_display_(/*76.38*/if(env.resource("public/images/eventImages/" + e.getId + ".jpg").isDefined)/*76.113*/ {_display_(Seq[Any](format.raw/*76.115*/("""
+                                        """),format.raw/*77.41*/("""<img class="img-responsive" src="/assets/images/eventImages/"""),_display_(/*77.102*/(e.getId + ".jpg")),format.raw/*77.120*/(""""/>
+                                    """)))}/*78.39*/else/*78.44*/{_display_(Seq[Any](format.raw/*78.45*/("""
+                                        """),format.raw/*79.41*/("""<img class="img-responsive" src="/assets/images/eventImages/noImage.png" alt="" >
+                                    """)))}),format.raw/*80.38*/("""
+                                    """),format.raw/*81.37*/("""<div class="caption">
                                         <h4 class="group inner list-group-item-heading">
-                                        """),_display_(/*80.42*/e/*80.43*/.getTitle),format.raw/*80.52*/("""</h4>
-                                            <h4>"""),_display_(/*81.50*/e/*81.51*/.getEventName),format.raw/*81.64*/("""</h4>
+                                        """),_display_(/*83.42*/e/*83.43*/.getTitle),format.raw/*83.52*/("""</h4>
+                                            <h4>"""),_display_(/*84.50*/e/*84.51*/.getEventName),format.raw/*84.64*/("""</h4>
 
-                                            <h4>Location : """),_display_(/*83.61*/e/*83.62*/.getLocation),format.raw/*83.74*/("""</h4>
+                                            <h4>Location : """),_display_(/*86.61*/e/*86.62*/.getLocation),format.raw/*86.74*/("""</h4>
 
-                                            <h4>"""),_display_(/*85.50*/e/*85.51*/.getTime),format.raw/*85.59*/(""" """),format.raw/*85.60*/(""", """),_display_(/*85.63*/e/*85.64*/.getDate),format.raw/*85.72*/("""</h4>
+                                            <h4>"""),_display_(/*88.50*/e/*88.51*/.getTime),format.raw/*88.59*/(""" """),format.raw/*88.60*/(""", """),_display_(/*88.63*/e/*88.64*/.getDate),format.raw/*88.72*/("""</h4>
 
-                                            <h5>"""),_display_(/*87.50*/e/*87.51*/.calcLowestPrice),format.raw/*87.67*/("""</h5>
+                                            <h5>"""),_display_(/*90.50*/e/*90.51*/.calcLowestPrice),format.raw/*90.67*/("""</h5>
 
                                         <div class="row">
                                             <div class="col-xs-12 col-md-6">
-                                            """),_display_(/*91.46*/if(user.getRole.equals("admin"))/*91.78*/ {_display_(Seq[Any](format.raw/*91.80*/("""
-                                                """),format.raw/*92.49*/("""<a href=""""),_display_(/*92.59*/routes/*92.65*/.HomeController.updateEvent(e.getId)),format.raw/*92.101*/("""" class="btn btn-danger">
+                                            """),_display_(/*94.46*/if(user.getRole.equals("admin"))/*94.78*/ {_display_(Seq[Any](format.raw/*94.80*/("""
+                                                """),format.raw/*95.49*/("""<a href=""""),_display_(/*95.59*/routes/*95.65*/.HomeController.updateEvent(e.getId)),format.raw/*95.101*/("""" class="btn btn-danger">
                                                     <span class="glyphicon glyphicon-wrench"></span>
                                                 </a>
-                                                <a href=""""),_display_(/*95.59*/routes/*95.65*/.HomeController.deleteEvent(e.getId)),format.raw/*95.101*/("""" class = "btn btn-danger"
+                                                <a href=""""),_display_(/*98.59*/routes/*98.65*/.HomeController.deleteEvent(e.getId)),format.raw/*98.101*/("""" class = "btn btn-danger"
                                                 onclick="return confirmDel();">
                                                     <span class="glyphicon glyphicon-trash"></span>
                                                 </a>
-                                            """)))}),format.raw/*99.46*/("""
-                                            """),format.raw/*100.45*/("""</div>
+                                            """)))}),format.raw/*102.46*/("""
+                                            """),format.raw/*103.45*/("""</div>
 
 
                                         </div>
@@ -137,7 +140,7 @@ Seq[Any](format.raw/*1.117*/("""
                             </div>
                         </a>
 
-                    """)))}),format.raw/*109.22*/(""" """),format.raw/*109.23*/("""<!-- End of for loop -->
+                    """)))}),format.raw/*112.22*/(""" """),format.raw/*112.23*/("""<!-- End of for loop -->
 
 
                     <div class="col-xs-12 col-md-6">
@@ -152,17 +155,17 @@ Seq[Any](format.raw/*1.117*/("""
 
         <!--Script for displaying products in grid/list-->
     <script>
-            $(document).ready(function() """),format.raw/*124.42*/("""{"""),format.raw/*124.43*/("""
-                """),format.raw/*125.17*/("""$('#list').click(function(event)"""),format.raw/*125.49*/("""{"""),format.raw/*125.50*/("""event.preventDefault();$('#products .item').addClass('list-group-item');"""),format.raw/*125.122*/("""}"""),format.raw/*125.123*/(""");
-                $('#grid').click(function(event)"""),format.raw/*126.49*/("""{"""),format.raw/*126.50*/("""event.preventDefault();$('#products .item').removeClass('list-group-item');$('#products .item').addClass('grid-group-item');"""),format.raw/*126.174*/("""}"""),format.raw/*126.175*/(""");
-            """),format.raw/*127.13*/("""}"""),format.raw/*127.14*/(""");</script>
+            $(document).ready(function() """),format.raw/*127.42*/("""{"""),format.raw/*127.43*/("""
+                """),format.raw/*128.17*/("""$('#list').click(function(event)"""),format.raw/*128.49*/("""{"""),format.raw/*128.50*/("""event.preventDefault();$('#products .item').addClass('list-group-item');"""),format.raw/*128.122*/("""}"""),format.raw/*128.123*/(""");
+                $('#grid').click(function(event)"""),format.raw/*129.49*/("""{"""),format.raw/*129.50*/("""event.preventDefault();$('#products .item').removeClass('list-group-item');$('#products .item').addClass('grid-group-item');"""),format.raw/*129.174*/("""}"""),format.raw/*129.175*/(""");
+            """),format.raw/*130.13*/("""}"""),format.raw/*130.14*/(""");</script>
 
     <!--Script for confirming delete of event-->
     <script>
-        function confirmDel()"""),format.raw/*131.30*/("""{"""),format.raw/*131.31*/("""
-            """),format.raw/*132.13*/("""return confirm('Are you sure?');
-        """),format.raw/*133.9*/("""}"""),format.raw/*133.10*/("""
-    """),format.raw/*134.5*/("""</script>
+        function confirmDel()"""),format.raw/*134.30*/("""{"""),format.raw/*134.31*/("""
+            """),format.raw/*135.13*/("""return confirm('Are you sure?');
+        """),format.raw/*136.9*/("""}"""),format.raw/*136.10*/("""
+    """),format.raw/*137.5*/("""</script>
 """)))}))
       }
     }
@@ -183,11 +186,11 @@ Seq[Any](format.raw/*1.117*/("""
 object adminevents extends adminevents_Scope0.adminevents
               /*
                   -- GENERATED --
-                  DATE: Mon Apr 10 13:40:43 BST 2017
+                  DATE: Tue Apr 11 12:42:33 BST 2017
                   SOURCE: C:/Users/Eileen/Desktop/TicketStore/app/views/adminevents.scala.html
-                  HASH: b773f8fb549aa94cbd76d72d47693afcf3b7d241
-                  MATRIX: 830->1|1041->116|1071->121|1098->140|1137->142|1173->152|2402->1354|2417->1360|2468->1390|2576->1471|2612->1491|2652->1493|2717->1530|2754->1540|2769->1546|2829->1585|2900->1628|2911->1629|2941->1637|3011->1679|3059->1700|3069->1701|3107->1718|3221->1801|3283->1835|3646->2171|3687->2203|3726->2204|3776->2226|3859->2282|3873->2287|3909->2302|3959->2324|4015->2349|4061->2367|4657->2936|4672->2942|4720->2969|5042->3264|5074->3280|5114->3282|5168->3308|5205->3318|5220->3324|5282->3365|5474->3530|5559->3605|5600->3607|5670->3649|5759->3710|5799->3728|5860->3771|5873->3776|5912->3777|5982->3819|6133->3939|6199->3977|6380->4131|6390->4132|6420->4141|6503->4197|6513->4198|6547->4211|6643->4280|6653->4281|6686->4293|6771->4351|6781->4352|6810->4360|6839->4361|6869->4364|6879->4365|6908->4373|6993->4431|7003->4432|7040->4448|7258->4639|7299->4671|7339->4673|7417->4723|7454->4733|7469->4739|7527->4775|7795->5016|7810->5022|7868->5058|8208->5367|8283->5413|8548->5646|8578->5647|8940->5980|8970->5981|9017->5999|9078->6031|9108->6032|9210->6104|9241->6105|9322->6157|9352->6158|9506->6282|9537->6283|9582->6299|9612->6300|9749->6408|9779->6409|9822->6423|9892->6465|9922->6466|9956->6472
-                  LINES: 27->1|32->1|34->3|34->3|34->3|37->6|57->26|57->26|57->26|59->28|59->28|59->28|60->29|60->29|60->29|60->29|60->29|60->29|60->29|61->30|61->30|61->30|61->30|63->32|64->33|78->47|78->47|78->47|79->48|80->49|80->49|80->49|81->50|82->51|83->52|94->63|94->63|94->63|100->69|100->69|100->69|101->70|101->70|101->70|101->70|104->73|104->73|104->73|105->74|105->74|105->74|106->75|106->75|106->75|107->76|108->77|109->78|111->80|111->80|111->80|112->81|112->81|112->81|114->83|114->83|114->83|116->85|116->85|116->85|116->85|116->85|116->85|116->85|118->87|118->87|118->87|122->91|122->91|122->91|123->92|123->92|123->92|123->92|126->95|126->95|126->95|130->99|131->100|140->109|140->109|155->124|155->124|156->125|156->125|156->125|156->125|156->125|157->126|157->126|157->126|157->126|158->127|158->127|162->131|162->131|163->132|164->133|164->133|165->134
+                  HASH: daca1eadf1261db81214421f831d14ac38187aa9
+                  MATRIX: 830->1|1041->116|1071->121|1098->140|1137->142|1173->152|2402->1354|2417->1360|2468->1390|2576->1471|2612->1491|2652->1493|2717->1530|2754->1540|2769->1546|2829->1585|2900->1628|2911->1629|2941->1637|3011->1679|3059->1700|3069->1701|3107->1718|3221->1801|3283->1835|3700->2225|3741->2257|3780->2258|3830->2280|3913->2336|3927->2341|3963->2356|4013->2378|4069->2403|4115->2421|4711->2990|4726->2996|4774->3023|5096->3318|5128->3334|5168->3336|5222->3362|5259->3372|5274->3378|5336->3419|5528->3584|5613->3659|5654->3661|5724->3703|5813->3764|5853->3782|5914->3825|5927->3830|5966->3831|6036->3873|6187->3993|6253->4031|6434->4185|6444->4186|6474->4195|6557->4251|6567->4252|6601->4265|6697->4334|6707->4335|6740->4347|6825->4405|6835->4406|6864->4414|6893->4415|6923->4418|6933->4419|6962->4427|7047->4485|7057->4486|7094->4502|7312->4693|7353->4725|7393->4727|7471->4777|7508->4787|7523->4793|7581->4829|7849->5070|7864->5076|7922->5112|8263->5421|8338->5467|8603->5700|8633->5701|8995->6034|9025->6035|9072->6053|9133->6085|9163->6086|9265->6158|9296->6159|9377->6211|9407->6212|9561->6336|9592->6337|9637->6353|9667->6354|9804->6462|9834->6463|9877->6477|9947->6519|9977->6520|10011->6526
+                  LINES: 27->1|32->1|34->3|34->3|34->3|37->6|57->26|57->26|57->26|59->28|59->28|59->28|60->29|60->29|60->29|60->29|60->29|60->29|60->29|61->30|61->30|61->30|61->30|63->32|64->33|81->50|81->50|81->50|82->51|83->52|83->52|83->52|84->53|85->54|86->55|97->66|97->66|97->66|103->72|103->72|103->72|104->73|104->73|104->73|104->73|107->76|107->76|107->76|108->77|108->77|108->77|109->78|109->78|109->78|110->79|111->80|112->81|114->83|114->83|114->83|115->84|115->84|115->84|117->86|117->86|117->86|119->88|119->88|119->88|119->88|119->88|119->88|119->88|121->90|121->90|121->90|125->94|125->94|125->94|126->95|126->95|126->95|126->95|129->98|129->98|129->98|133->102|134->103|143->112|143->112|158->127|158->127|159->128|159->128|159->128|159->128|159->128|160->129|160->129|160->129|160->129|161->130|161->130|165->134|165->134|166->135|167->136|167->136|168->137
                   -- GENERATED --
               */
           

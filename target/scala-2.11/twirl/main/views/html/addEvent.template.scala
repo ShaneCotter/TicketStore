@@ -47,8 +47,8 @@ Seq[Any](format.raw/*3.60*/("""
 				"""),_display_(/*15.6*/inputText(addEventForm("eventName"), '_label -> "Name", 'class -> "form-control", 'maxlength -> "30")),format.raw/*15.107*/("""
 			    """),_display_(/*16.9*/inputText(addEventForm("title"), '_label -> "Title", 'class -> "form-control", 'maxlength -> "30")),format.raw/*16.107*/("""
 			    """),_display_(/*17.9*/inputText(addEventForm("location"), '_label -> "Location", 'class -> "form-control", 'maxlength -> "30")),format.raw/*17.113*/("""
-			    """),_display_(/*18.9*/inputText(addEventForm("date"), 'type -> "date", '_label -> "Date", 'class -> "form-control")),format.raw/*18.102*/("""
-			    """),_display_(/*19.9*/inputText(addEventForm("time"), 'type -> "time", '_label -> "Time", 'class -> "form-control")),format.raw/*19.102*/(""" 
+			    """),_display_(/*18.9*/inputText(addEventForm("date"), '_label -> "Date", 'class -> "form-control" , 'maxlength -> "30")),format.raw/*18.106*/("""
+			    """),_display_(/*19.9*/inputText(addEventForm("time"), '_label -> "Time", 'class -> "form-control" , 'maxlength -> "30")),format.raw/*19.106*/(""" 
 				<label>Event Image</label>
 				<input type="file" name="upload">
 	            <br>
@@ -84,10 +84,10 @@ Seq[Any](format.raw/*3.60*/("""
 object addEvent extends addEvent_Scope0.addEvent_Scope1.addEvent
               /*
                   -- GENERATED --
-                  DATE: Mon Apr 10 13:55:22 BST 2017
+                  DATE: Tue Apr 11 12:42:33 BST 2017
                   SOURCE: C:/Users/Eileen/Desktop/TicketStore/app/views/addEvent.scala.html
-                  HASH: 7f802ef167e8ea674c513622b3e99ddc04fba502
-                  MATRIX: 828->21|981->79|1011->84|1041->106|1080->108|1108->110|1302->278|1444->410|1484->411|1517->418|1719->599|1752->606|1875->707|1911->717|2031->815|2067->825|2193->929|2229->939|2344->1032|2380->1042|2495->1135|2619->1233|2705->1298|2738->1304|2873->1412|2888->1418|2933->1442|3065->1544
+                  HASH: 0219b0d8ee323c601b0361023fca766d6bddf34d
+                  MATRIX: 828->21|981->79|1011->84|1041->106|1080->108|1108->110|1302->278|1444->410|1484->411|1517->418|1719->599|1752->606|1875->707|1911->717|2031->815|2067->825|2193->929|2229->939|2348->1036|2384->1046|2503->1143|2627->1241|2713->1306|2746->1312|2881->1420|2896->1426|2941->1450|3073->1552
                   LINES: 30->3|35->3|37->5|37->5|37->5|38->6|44->12|44->12|44->12|45->13|46->14|47->15|47->15|48->16|48->16|49->17|49->17|50->18|50->18|51->19|51->19|55->23|55->23|56->24|58->26|58->26|58->26|65->33
                   -- GENERATED --
               */
