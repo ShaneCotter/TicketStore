@@ -3,10 +3,10 @@
 @import helper._
 
 
-@main("Tickets",user) {
+@main("Tickets", user) {
     <!--..CONTENT..-->
     <div class="container" id = "seatingplans">
-        @if(flash.containsKey("success")){
+        @if(flash.containsKey("success")) {
             <div class="alert alert-success">
             @flash.get("success")
             </div>
@@ -29,39 +29,39 @@
 
         <div class="row well" id="tickets">
 
-                @for(t <- tickets) {
-                    <div class="item  col-xs-4 col-lg-4">
-                        <div class="thumbnail">
+        @for(t <- tickets) {
+            <div class="item  col-xs-4 col-lg-4">
+                <div class="thumbnail">
 
-                            <h2>@t.getTicketType</h2>
-                            <div class="caption">
-                                <p class="group inner list-group-item-text">
-                                <p>Ticket price : € @t.getPrice</p>
+                    <h2>@t.getTicketType</h2>
+                    <div class="caption">
+                        <p class="group inner list-group-item-text">
+                    <p>Ticket price : € @t.getPrice</p>
 
-                                <div class="row">
-                                    <div class="col-xs-12 col-md-6">
-                                        @if(t.getQuantity > 0) {
-                                            <a href="@routes.ShoppingCtrl.addToBasket(t.getTicketID())" class = "btn btn-success">
-                                                Add to Basket</a>
-                                        } else{
-                                            <button class = "btn btn-danger">
-                                                Out of Stock </button>
-                                        }
-                                    </div>
-                                </div>
+                        <div class="row">
+                            <div class="col-xs-12 col-md-6">
+                            @if(t.getQuantity > 0) {
+                                <a href="@routes.ShoppingCtrl.addToBasket(t.getTicketID())" class = "btn btn-success">
+                                    Add to Basket</a>
+                            } else {
+                                <button class = "btn btn-danger">
+                                    Out of Stock </button>
+                            }
                             </div>
                         </div>
-                    </div>}
+                    </div>
                 </div>
             </div>
+        }
+        </div>
+    </div>
 
 
+    <script>
+            function confirmDel() {
+                return confirm('Are you sure?');
+            }
+    </script>
 
-            <script>
-                    function confirmDel(){
-                        return confirm('Are you sure?');
-                    }
-            </script>
-
-                <!--END CONTENT-->
+        <!--END CONTENT-->
 }

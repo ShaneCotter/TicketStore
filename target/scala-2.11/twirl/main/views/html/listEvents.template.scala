@@ -31,7 +31,7 @@ class listEvents extends BaseScalaTemplate[play.twirl.api.HtmlFormat.Appendable,
 
 Seq[Any](format.raw/*1.146*/("""
 
-"""),_display_(/*3.2*/main("Events List",user)/*3.26*/ {_display_(Seq[Any](format.raw/*3.28*/("""
+"""),_display_(/*3.2*/main("Events", user)/*3.22*/ {_display_(Seq[Any](format.raw/*3.24*/("""
 
 
     """),format.raw/*6.5*/("""<!--..CONTENT..-->
@@ -55,14 +55,15 @@ Seq[Any](format.raw/*1.146*/("""
                                 <h3 class="greentext ">EVENT CATEGORIES</h3>
                                 <div class="list-group">
 
-                                    <a href=""""),_display_(/*27.47*/routes/*27.53*/.EventController.listEvents(0, filter)),format.raw/*27.91*/("""" class="list-group-item">All categories</a>
+                                    <a href=""""),_display_(/*27.47*/routes/*27.53*/.EventController.listEvents(0, filter)),format.raw/*27.91*/("""" class="list-group-item">
+                                        All categories</a>
 
-                                    """),_display_(/*29.38*/for(c <- categories) yield /*29.58*/ {_display_(Seq[Any](format.raw/*29.60*/("""
-                                        """),format.raw/*30.41*/("""<a href=""""),_display_(/*30.51*/routes/*30.57*/.HomeController.events(c.getCatID)),format.raw/*30.91*/("""" class="list-group-item" id="categories">"""),_display_(/*30.134*/c/*30.135*/.getName),format.raw/*30.143*/("""
-                                        """),format.raw/*31.41*/("""<span class="badge">"""),_display_(/*31.62*/c/*31.63*/.getEvents.size()),format.raw/*31.80*/("""</span>
+                                    """),_display_(/*30.38*/for(c <- categories) yield /*30.58*/ {_display_(Seq[Any](format.raw/*30.60*/("""
+                                        """),format.raw/*31.41*/("""<a href=""""),_display_(/*31.51*/routes/*31.57*/.HomeController.events(c.getCatID)),format.raw/*31.91*/("""" class="list-group-item" id="categories">"""),_display_(/*31.134*/c/*31.135*/.getName),format.raw/*31.143*/("""
+                                        """),format.raw/*32.41*/("""<span class="badge">"""),_display_(/*32.62*/c/*32.63*/.getEvents.size()),format.raw/*32.80*/("""</span>
                                         </a>
-                                    """)))}),format.raw/*33.38*/("""
-                                """),format.raw/*34.33*/("""</div>
+                                    """)))}),format.raw/*34.38*/("""
+                                """),format.raw/*35.33*/("""</div>
                             </ul>
                             <br>
                             <br>
@@ -72,16 +73,14 @@ Seq[Any](format.raw/*1.146*/("""
             </div>
 
 
-
-
                 <!--Main content--->
             <div class="col-sm-9">
                 <div class="nav navbar-nav navbar-center" id="search">
-                    <form action=""""),_display_(/*49.36*/routes/*49.42*/.EventController.listEvents(catId)),format.raw/*49.76*/("""" method="GET" class="navbar-form" role="search">
+                    <form action=""""),_display_(/*48.36*/routes/*48.42*/.EventController.listEvents(catId)),format.raw/*48.76*/("""" method="GET" class="navbar-form" role="search">
                         <div class="input-group">
-                            <input type="text" class="form-control" value=""""),_display_(/*51.77*/filter),format.raw/*51.83*/("""" placeholder="Filter by name" name="filter" id="srch-term">
-                            """),format.raw/*52.107*/("""
-                            """),format.raw/*53.29*/("""<button class="btn btn-default" type="submit"><i class="glyphicon glyphicon-search"></i></button>
+                            <input type="text" class="form-control" value=""""),_display_(/*50.77*/filter),format.raw/*50.83*/("""" placeholder="Filter by name" name="filter" id="srch-term">
+                            """),format.raw/*51.107*/("""
+                            """),format.raw/*52.29*/("""<button class="btn btn-default" type="submit"><i class="glyphicon glyphicon-search"></i></button>
                         </div>
                     </form>
                 </div>
@@ -92,39 +91,38 @@ Seq[Any](format.raw/*1.146*/("""
                         </span>List</a> <a href="#" id="grid" class="btn btn-default btn-sm"><span
                     class="glyphicon glyphicon-th"></span>Grid</a>
                     </div>
-                    """),_display_(/*64.22*/if(flash.containsKey("success"))/*64.54*/{_display_(Seq[Any](format.raw/*64.55*/("""
-                        """),format.raw/*65.25*/("""<div class="alert alert-success">
-                        """),_display_(/*66.26*/flash/*66.31*/.get("success")),format.raw/*66.46*/("""
-                        """),format.raw/*67.25*/("""</div>
-                    """)))}),format.raw/*68.22*/("""
-                """),format.raw/*69.17*/("""</div>
+                    """),_display_(/*63.22*/if(flash.containsKey("success"))/*63.54*/ {_display_(Seq[Any](format.raw/*63.56*/("""
+                        """),format.raw/*64.25*/("""<div class="alert alert-success">
+                        """),_display_(/*65.26*/flash/*65.31*/.get("success")),format.raw/*65.46*/("""
+                        """),format.raw/*66.25*/("""</div>
+                    """)))}),format.raw/*67.22*/("""
+                """),format.raw/*68.17*/("""</div>
                 <br>
                 <div id="products" class="row list-group">
                         <!-- Start of for loop - For each e in events add a row -->
-                    """),_display_(/*73.22*/for(e <- events) yield /*73.38*/ {_display_(Seq[Any](format.raw/*73.40*/("""
-                        """),format.raw/*74.25*/("""<a href=""""),_display_(/*74.35*/routes/*74.41*/.HomeController.eventTicket(e.getId)),format.raw/*74.77*/("""">
+                    """),_display_(/*72.22*/for(e <- events) yield /*72.38*/ {_display_(Seq[Any](format.raw/*72.40*/("""
+                        """),format.raw/*73.25*/("""<a href=""""),_display_(/*73.35*/routes/*73.41*/.HomeController.eventTicket(e.getId)),format.raw/*73.77*/("""">
                             <div class="item  col-xs-4 col-lg-4">
                                 <div class="thumbnail">
-                                    """),_display_(/*77.38*/if(env.resource("public/images/eventImages/" + e.getId + ".jpg").isDefined)/*77.113*/ {_display_(Seq[Any](format.raw/*77.115*/("""
-                                        """),format.raw/*78.41*/("""<img class="img-responsive" src="/assets/images/eventImages/"""),_display_(/*78.102*/(e.getId + ".jpg")),format.raw/*78.120*/(""""/>
-                                    """)))}/*79.39*/else/*79.44*/{_display_(Seq[Any](format.raw/*79.45*/("""
-                                        """),format.raw/*80.41*/("""<img class="img-responsive" src="/assets/images/eventImages/noImage.png" alt="" >
-                                    """)))}),format.raw/*81.38*/("""
-                                """),format.raw/*82.33*/("""<div class="caption">
+                                    """),_display_(/*76.38*/if(env.resource("public/images/eventImages/" + e.getId + ".jpg").isDefined)/*76.113*/ {_display_(Seq[Any](format.raw/*76.115*/("""
+                                        """),format.raw/*77.41*/("""<img class="img-responsive" src="/assets/images/eventImages/"""),_display_(/*77.102*/(e.getId + ".jpg")),format.raw/*77.120*/(""""/>
+                                    """)))}/*78.39*/else/*78.44*/{_display_(Seq[Any](format.raw/*78.45*/("""
+                                        """),format.raw/*79.41*/("""<img class="img-responsive" src="/assets/images/eventImages/noImage.png" alt="" >
+                                    """)))}),format.raw/*80.38*/("""
+                                """),format.raw/*81.33*/("""<div class="caption">
                                     <h4 class="group inner list-group-item-heading">
-                                    """),_display_(/*84.38*/e/*84.39*/.getTitle),format.raw/*84.48*/("""</h4>
-                                    <h4>"""),_display_(/*85.42*/e/*85.43*/.getEventName),format.raw/*85.56*/("""</h4>
+                                    """),_display_(/*83.38*/e/*83.39*/.getTitle),format.raw/*83.48*/("""</h4>
+                                    <h4>"""),_display_(/*84.42*/e/*84.43*/.getEventName),format.raw/*84.56*/("""</h4>
 
-                                    <h4>"""),_display_(/*87.42*/e/*87.43*/.getLocation),format.raw/*87.55*/("""</h4>
+                                    <h4>"""),_display_(/*86.42*/e/*86.43*/.getLocation),format.raw/*86.55*/("""</h4>
 
-                                    <h4>"""),_display_(/*89.42*/e/*89.43*/.getTime),format.raw/*89.51*/(""", """),_display_(/*89.54*/e/*89.55*/.getDate),format.raw/*89.63*/("""</h4>
+                                    <h4>"""),_display_(/*88.42*/e/*88.43*/.getTime),format.raw/*88.51*/(""", """),_display_(/*88.54*/e/*88.55*/.getDate),format.raw/*88.63*/("""</h4>
 
-                                    <h5>"""),_display_(/*91.42*/e/*91.43*/.calcLowestPrice),format.raw/*91.59*/("""</h5>
+                                    <h5>"""),_display_(/*90.42*/e/*90.43*/.calcLowestPrice),format.raw/*90.59*/("""</h5>
 
                                     <div class="row">
                                         <div class="col-xs-12 col-md-6">
                                             </div>
-
 
                                     </div>
                                 </div>
@@ -132,7 +130,7 @@ Seq[Any](format.raw/*1.146*/("""
                             </div>
                         </a>
 
-                    """)))}),format.raw/*104.22*/(""" """),format.raw/*104.23*/("""<!-- End of for loop -->
+                    """)))}),format.raw/*102.22*/(""" """),format.raw/*102.23*/("""<!-- End of for loop -->
 
 
                     <div class="col-xs-12 col-md-6">
@@ -147,17 +145,24 @@ Seq[Any](format.raw/*1.146*/("""
 
         <!--Script for displaying products in grid/list-->
     <script>
-            $(document).ready(function() """),format.raw/*119.42*/("""{"""),format.raw/*119.43*/("""
-                """),format.raw/*120.17*/("""$('#list').click(function(event)"""),format.raw/*120.49*/("""{"""),format.raw/*120.50*/("""event.preventDefault();$('#products .item').addClass('list-group-item');"""),format.raw/*120.122*/("""}"""),format.raw/*120.123*/(""");
-                $('#grid').click(function(event)"""),format.raw/*121.49*/("""{"""),format.raw/*121.50*/("""event.preventDefault();$('#products .item').removeClass('list-group-item');$('#products .item').addClass('grid-group-item');"""),format.raw/*121.174*/("""}"""),format.raw/*121.175*/(""");
-            """),format.raw/*122.13*/("""}"""),format.raw/*122.14*/(""");</script>
+            $(document).ready(function () """),format.raw/*117.43*/("""{"""),format.raw/*117.44*/("""
+                """),format.raw/*118.17*/("""$('#list').click(function (event) """),format.raw/*118.51*/("""{"""),format.raw/*118.52*/("""
+                    """),format.raw/*119.21*/("""event.preventDefault();
+                    $('#products .item').addClass('list-group-item');
+                """),format.raw/*121.17*/("""}"""),format.raw/*121.18*/(""");
+                $('#grid').click(function (event) """),format.raw/*122.51*/("""{"""),format.raw/*122.52*/("""
+                    """),format.raw/*123.21*/("""event.preventDefault();
+                    $('#products .item').removeClass('list-group-item');
+                    $('#products .item').addClass('grid-group-item');
+                """),format.raw/*126.17*/("""}"""),format.raw/*126.18*/(""");
+            """),format.raw/*127.13*/("""}"""),format.raw/*127.14*/(""");</script>
 
         <!--Script for confirming delete of event-->
     <script>
-            function confirmDel()"""),format.raw/*126.34*/("""{"""),format.raw/*126.35*/("""
-                """),format.raw/*127.17*/("""return confirm('Are you sure?');
-            """),format.raw/*128.13*/("""}"""),format.raw/*128.14*/("""
-    """),format.raw/*129.5*/("""</script>
+            function confirmDel() """),format.raw/*131.35*/("""{"""),format.raw/*131.36*/("""
+                """),format.raw/*132.17*/("""return confirm('Are you sure?');
+            """),format.raw/*133.13*/("""}"""),format.raw/*133.14*/("""
+    """),format.raw/*134.5*/("""</script>
 """)))}))
       }
     }
@@ -178,11 +183,11 @@ Seq[Any](format.raw/*1.146*/("""
 object listEvents extends listEvents_Scope0.listEvents
               /*
                   -- GENERATED --
-                  DATE: Tue Apr 11 14:15:12 BST 2017
+                  DATE: Tue Apr 11 23:43:49 BST 2017
                   SOURCE: C:/Users/Eileen/Desktop/TicketStore/app/views/listEvents.scala.html
-                  HASH: 431f008969038f43da1786340b417a0a7efff7bb
-                  MATRIX: 840->1|1080->145|1110->150|1142->174|1181->176|1217->186|2448->1390|2463->1396|2522->1434|2634->1519|2670->1539|2710->1541|2780->1583|2817->1593|2832->1599|2887->1633|2958->1676|2969->1677|2999->1685|3069->1727|3117->1748|3127->1749|3165->1766|3288->1858|3350->1892|3803->2318|3818->2324|3873->2358|4078->2536|4105->2542|4224->2710|4282->2740|4961->3392|5002->3424|5041->3425|5095->3451|5182->3511|5196->3516|5232->3531|5286->3557|5346->3586|5392->3604|5615->3800|5647->3816|5687->3818|5741->3844|5778->3854|5793->3860|5850->3896|6042->4061|6127->4136|6168->4138|6238->4180|6327->4241|6367->4259|6428->4302|6441->4307|6480->4308|6550->4350|6701->4470|6763->4504|6936->4650|6946->4651|6976->4660|7051->4708|7061->4709|7095->4722|7172->4772|7182->4773|7215->4785|7292->4835|7302->4836|7331->4844|7361->4847|7371->4848|7400->4856|7477->4906|7487->4907|7524->4923|7963->5330|7993->5331|8355->5664|8385->5665|8432->5683|8493->5715|8523->5716|8625->5788|8656->5789|8737->5841|8767->5842|8921->5966|8952->5967|8997->5983|9027->5984|9172->6100|9202->6101|9249->6119|9324->6165|9354->6166|9388->6172
-                  LINES: 27->1|32->1|34->3|34->3|34->3|37->6|58->27|58->27|58->27|60->29|60->29|60->29|61->30|61->30|61->30|61->30|61->30|61->30|61->30|62->31|62->31|62->31|62->31|64->33|65->34|80->49|80->49|80->49|82->51|82->51|83->52|84->53|95->64|95->64|95->64|96->65|97->66|97->66|97->66|98->67|99->68|100->69|104->73|104->73|104->73|105->74|105->74|105->74|105->74|108->77|108->77|108->77|109->78|109->78|109->78|110->79|110->79|110->79|111->80|112->81|113->82|115->84|115->84|115->84|116->85|116->85|116->85|118->87|118->87|118->87|120->89|120->89|120->89|120->89|120->89|120->89|122->91|122->91|122->91|135->104|135->104|150->119|150->119|151->120|151->120|151->120|151->120|151->120|152->121|152->121|152->121|152->121|153->122|153->122|157->126|157->126|158->127|159->128|159->128|160->129
+                  HASH: c8952c3dd67ac660710833fe378c18e0c8211e71
+                  MATRIX: 840->1|1080->145|1110->150|1138->170|1177->172|1213->182|2444->1386|2459->1392|2518->1430|2672->1557|2708->1577|2748->1579|2818->1621|2855->1631|2870->1637|2925->1671|2996->1714|3007->1715|3037->1723|3107->1765|3155->1786|3165->1787|3203->1804|3326->1896|3388->1930|3837->2352|3852->2358|3907->2392|4112->2570|4139->2576|4258->2744|4316->2774|4995->3426|5036->3458|5076->3460|5130->3486|5217->3546|5231->3551|5267->3566|5321->3592|5381->3621|5427->3639|5650->3835|5682->3851|5722->3853|5776->3879|5813->3889|5828->3895|5885->3931|6077->4096|6162->4171|6203->4173|6273->4215|6362->4276|6402->4294|6463->4337|6476->4342|6515->4343|6585->4385|6736->4505|6798->4539|6971->4685|6981->4686|7011->4695|7086->4743|7096->4744|7130->4757|7207->4807|7217->4808|7250->4820|7327->4870|7337->4871|7366->4879|7396->4882|7406->4883|7435->4891|7512->4941|7522->4942|7559->4958|7996->5363|8026->5364|8389->5698|8419->5699|8466->5717|8529->5751|8559->5752|8610->5774|8751->5886|8781->5887|8864->5941|8894->5942|8945->5964|9160->6150|9190->6151|9235->6167|9265->6168|9411->6285|9441->6286|9488->6304|9563->6350|9593->6351|9627->6357
+                  LINES: 27->1|32->1|34->3|34->3|34->3|37->6|58->27|58->27|58->27|61->30|61->30|61->30|62->31|62->31|62->31|62->31|62->31|62->31|62->31|63->32|63->32|63->32|63->32|65->34|66->35|79->48|79->48|79->48|81->50|81->50|82->51|83->52|94->63|94->63|94->63|95->64|96->65|96->65|96->65|97->66|98->67|99->68|103->72|103->72|103->72|104->73|104->73|104->73|104->73|107->76|107->76|107->76|108->77|108->77|108->77|109->78|109->78|109->78|110->79|111->80|112->81|114->83|114->83|114->83|115->84|115->84|115->84|117->86|117->86|117->86|119->88|119->88|119->88|119->88|119->88|119->88|121->90|121->90|121->90|133->102|133->102|148->117|148->117|149->118|149->118|149->118|150->119|152->121|152->121|153->122|153->122|154->123|157->126|157->126|158->127|158->127|162->131|162->131|163->132|164->133|164->133|165->134
                   -- GENERATED --
               */
           

@@ -1,0 +1,38 @@
+@(contacts: List[models.Contact], user: models.users.User)
+
+@main("viewContact", user) {
+    <!--..CONTENT..-->
+    <div class="container-fluid" id="content">
+        <h2>Customer Contacts</h2>
+        <div class="row omb_row-sm-offset-3">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th class="greentext">Firstname</th>
+                        <th class="greentext">Lastname</th>
+                        <th class="greentext">Email</th>
+                        <th class="greentext">Phone</th>
+                        <th class="greentext">Message</th>
+                    </tr>
+                </thead>
+                <tbody>
+                @for(c <- contacts) {
+                    <tr>
+                        <td>@c.getFirstName</td>
+                        <td>@c.getLastName</td>
+                        <td>@c.getEmail</td>
+                        <td>@c.getPhone</td>
+                        <td>@c.getMessage</td>
+                    </tr>
+                }
+                </tbody>
+            </table>
+            <br>
+            <br>
+        </div>
+
+
+    </div>
+        <!--END CONTENT-->
+
+}

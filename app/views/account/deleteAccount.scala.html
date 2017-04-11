@@ -1,0 +1,41 @@
+@(user: models.users.User)
+@main("Delete Account", user) {
+
+
+    <div class="container text-center" id="content">
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" id="user-order-display">
+            <div class="row">
+                <h1>My Account</h1>
+
+                <a href = "@routes.HomeController.myOrders()" class="btn btn-success btn-lg" id="user-order-button">
+                    <span class="glyphicon glyphicon-calendar"></span>My Orders
+                </a>
+
+                <a href = "@routes.HomeController.updateDetails()" class="btn btn-success btn-lg" id="user-account-button">
+                    <span class="glyphicon glyphicon-user"></span>Change Password
+                </a>
+
+
+                <a href = "@routes.LoginController.deleteAccountPage()" type="button" class="btn btn-success btn-lg" id="user-delete-button">
+                    <span class="glyphicon glyphicon-trash"></span>Delete Account
+                </a>
+
+                <a href = "@routes.HomeController.reportProblem()" type="button" class="btn btn-success btn-lg" id="user-problem-button">
+                    <span class="glyphicon glyphicon-envelope"></span>Report problem
+                </a>
+
+<hr>
+
+        <h2>Are you sure you want to delete your account ?</h2>
+                <a href="@routes.LoginController.deleteMyAccount()" class="btn btn-danger btn-lg whitetext" id="user-delete-button">
+                    <span class="glyphicon glyphicon-trash"></span> Delete my account
+                </a>
+
+                <a href="@routes.HomeController.myAccount()" class="btn btn-success btn-lg" id="user-delete-button">
+                     Cancel
+                </a>
+
+</div>
+</div>
+</div>
+}

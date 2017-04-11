@@ -1,49 +1,49 @@
 @import helper._
 
-@(contactForm: Form[models.Contact],user: models.users.User)
+@(contactForm: Form[models.Contact], user: models.users.User)
 
-@main("Contact",user) {
-<!--..CONTENT..-->
-<div class="container-fluid" id="content">
-	<div class="container">
-    <div class="row">
-        <div class="col-md-8 col-md-offset-1">
-            @if(flash.containsKey("success")){
-                <div class="alert alert-success">
-                @flash.get("success")
+@main("Contact", user) {
+    <!--..CONTENT..-->
+    <div class="container-fluid" id="content">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 col-md-offset-1">
+                    @if(flash.containsKey("success")) {
+                        <div class="alert alert-success">
+                        @flash.get("success")
+                        </div>
+                    }
+                    <h1 class = "greentext">Contact Us</h1>
+                    @form(action = routes.HomeController.addContactSubmit(), 'method -> "POST", 'class -> "form-horizontal", 'role -> "form") {
+                        @inputText(contactForm("firstName"), '_label -> "First Name", 'class -> "form-control", 'maxlength -> "30")
+                        @inputText(contactForm("lastName"), '_label -> "Last Name", 'class -> "form-control", 'maxlength -> "30")
+                        @inputText(contactForm("email"), '_label -> "Email", 'type -> "email", 'class -> "form-control")
+                        @inputText(contactForm("phone"), '_label -> "Phone", 'type -> "text", 'class -> "form-control")
+                        @inputText(contactForm("message"), '_label -> "Message", 'type -> "textarea", 'class -> "form-control", 'maxlength -> "140")
+
+                        <div class="actions">
+                            <input type="submit" value="Submit" class="btn btn-success">
+                            <a href="@routes.HomeController.contact()" class="btn btn-danger">Cancel</a>
+
+                        </div>
+                    </div>
             </div>
-            }
-                <h1 class = "greentext">Contact Us</h1>
-            @form(action = routes.HomeController.addContactSubmit(),'method -> "POST", 'class -> "form-horizontal",'role->"form"){
-                @inputText(contactForm("firstName"), '_label -> "First Name", 'class -> "form-control", 'maxlength -> "30")
-                @inputText(contactForm("lastName"), '_label -> "Last Name", 'class -> "form-control", 'maxlength -> "30")
-                @inputText(contactForm("email"), '_label -> "Email", 'type -> "email", 'class -> "form-control")
-                @inputText(contactForm("phone"), '_label -> "Phone", 'type -> "text", 'class -> "form-control")
-                @inputText(contactForm("message"), '_label -> "Message", 'type -> "textarea", 'class -> "form-control", 'maxlength -> "140")
 
-                <div class="actions">
-                    <input type="submit" value="Submit" class="btn btn-success">
-                    <a href="@routes.HomeController.contact()" class="btn btn-danger">Cancel</a>
-
-                </div>
-            </div>
-    </div>
-
-    </div>
-    }
-			  
-			<div class="row">
-				<div class="col-md-12 text-center">
-                  <h4>See below for Social Sites</h4>
-               	</div>
-				</div>
-				
-              </div>
-		  
-            </div>
-				
         </div>
+        }
+
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <h4>See below for Social Sites</h4>
+            </div>
+        </div>
+
     </div>
-<!--END CONTENT-->
+
+    </div>
+
+    </div>
+    </div>
+        <!--END CONTENT-->
 
 }

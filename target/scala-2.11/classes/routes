@@ -4,23 +4,27 @@
 
 # An example controller showing a sample home page
 GET     /                           controllers.HomeController.index
-POST    /loginSubmit                controllers.LoginController.loginSubmit()
-GET     /aboutus                    controllers.HomeController.aboutUs
-GET     /addevent                   controllers.HomeController.addEvent
-GET     /cart                       controllers.HomeController.cart
-GET     /checkout                   controllers.HomeController.checkout
 GET     /contact                    controllers.HomeController.contact
 GET     /viewContact                controllers.HomeController.viewContact
 GET     /events                     controllers.HomeController.events(cat:Long ?=0L)
-GET     /adminevents                controllers.HomeController.adminevents(cat:Long ?=0L)
 GET     /eventticket                controllers.HomeController.eventTicket(event:Long ?=0L)
-GET     /admineventticket           controllers.HomeController.admineventTicket(event:Long ?=0L)
+GET     /listEvents                 controllers.EventController.listEvents(cat:Long ?= 0, filter ?="")
+
+#login/sign up
 GET     /login                      controllers.LoginController.login
+POST    /loginSubmit                controllers.LoginController.loginSubmit()
 GET     /signup                     controllers.HomeController.signUp
 GET     /signUpSubmit               controllers.HomeController.signUpSubmit()
-GET     /addticket                  controllers.HomeController.addTicket
 GET     /logout                     controllers.LoginController.logout
+
+#my account
 GET     /myaccount                  controllers.HomeController.myAccount
+GET     /myOrders                   controllers.HomeController.myOrders
+GET     /deleteAccount              controllers.LoginController.deleteAccountPage
+GET    /deleteMyAccount             controllers.LoginController.deleteMyAccount
+GET    /reportProblem               controllers.HomeController.reportProblem
+GET    /updateDetails               controllers.HomeController.updateDetails
+POST    /updateDetails               controllers.HomeController.updateDetailsSubmit
 
 # Shopping
 GET     /showBasket                 controllers.ShoppingCtrl.showBasket()
@@ -29,21 +33,22 @@ GET     /addOne/:itemId             controllers.ShoppingCtrl.addOne(itemId: Long
 GET     /removeOne/:itemId          controllers.ShoppingCtrl.removeOne(itemId: Long)
 GET     /emptyBasket                controllers.ShoppingCtrl.emptyBasket()
 GET     /placeOrder                 controllers.ShoppingCtrl.placeOrder()
-POST    /placeOrder                 controllers.ShoppingCtrl.placeOrder()
 GET     /viewOrder/:id              controllers.ShoppingCtrl.viewOrder(id: Long)
-
-GET     /listEvents                 controllers.EventController.listEvents(cat:Long ?= 0, filter ?="")
+GET     /cart                       controllers.HomeController.cart
 
 #Admin options
-POST    /addTicketSubmit            controllers.HomeController.addTicketSubmit
+GET     /adminevents                controllers.HomeController.adminevents(cat:Long ?=0L)
+GET     /admineventticket           controllers.HomeController.admineventTicket(event:Long ?=0L)
 
-GET     /delTicket/:id              controllers.HomeController.deleteTicket(id:Long)
-GET     /updateTicket/:id           controllers.HomeController.updateTicket(id:Long)
-
+GET     /addevent                   controllers.HomeController.addEvent
 POST    /addEventSubmit             controllers.HomeController.addEventSubmit
-
 GET     /delEvent/:id               controllers.HomeController.deleteEvent(id:Long)
 GET     /updateEvent/:id            controllers.HomeController.updateEvent(id:Long)
+
+GET     /addticket                  controllers.HomeController.addTicket
+POST    /addTicketSubmit            controllers.HomeController.addTicketSubmit
+GET     /delTicket/:id              controllers.HomeController.deleteTicket(id:Long)
+GET     /updateTicket/:id           controllers.HomeController.updateTicket(id:Long)
 
 POST    /addContactSubmit           controllers.HomeController.addContactSubmit
 

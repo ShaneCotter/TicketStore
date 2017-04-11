@@ -25,7 +25,7 @@ public class Basket extends Model {
     private User user;
 
     // Default constructor
-    public  Basket() {
+    public Basket() {
     }
 
     // Add product to basket
@@ -57,12 +57,11 @@ public class Basket extends Model {
         // Using an iterator ensures 'safe' removal of list objects
         // Removal of list items is unreliable as index can change if an item is added or removed elsewhere
         // iterator works with an object reference which does not change
-        for (Iterator<OrderItem> iter = basketItems.iterator(); iter.hasNext();) {
+        for (Iterator<OrderItem> iter = basketItems.iterator(); iter.hasNext(); ) {
             OrderItem i = iter.next();
-            if (i.getId().equals(item.getId()))
-            {
+            if (i.getId().equals(item.getId())) {
                 // If more than one of these items in the basket then decrement
-                if (i.getQuantity() > 1 ) {
+                if (i.getQuantity() > 1) {
                     i.decreaseQty();
                 }
                 // If only one left, remove this item from the basket (via the iterator)
@@ -78,7 +77,7 @@ public class Basket extends Model {
     }
 
     public void removeAllItems() {
-        for(OrderItem i: this.basketItems) {
+        for (OrderItem i : this.basketItems) {
             i.delete();
         }
         this.basketItems = null;
@@ -88,14 +87,14 @@ public class Basket extends Model {
 
         double total = 0;
 
-        for (OrderItem i: basketItems) {
+        for (OrderItem i : basketItems) {
             total += i.getItemTotal();
         }
         return total;
     }
 
     //Generic query helper
-    public static Finder<Long,Basket> find = new Finder<Long,Basket>(Basket.class);
+    public static Finder<Long, Basket> find = new Finder<Long, Basket>(Basket.class);
 
     //Find all Products in the database
     public static List<Basket> findAll() {
@@ -127,7 +126,7 @@ public class Basket extends Model {
         this.user = user;
     }
 
-    public double getStripeTotal(){
+    public double getStripeTotal() {
 
         return getBasketTotal() * 100;
     }

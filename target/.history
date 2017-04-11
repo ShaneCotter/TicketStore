@@ -136,3 +136,10 @@ h2-browser
 run
 h2-browser
 run
+clean
+run
+clean
+exit
+h2-browser
+run
+exit

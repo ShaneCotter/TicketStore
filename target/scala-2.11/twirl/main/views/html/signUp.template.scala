@@ -34,7 +34,7 @@ class signUp extends BaseScalaTemplate[play.twirl.api.HtmlFormat.Appendable,Form
 
 Seq[Any](format.raw/*3.65*/("""
 
-"""),_display_(/*5.2*/main("Sign Up",user)/*5.22*/ {_display_(Seq[Any](format.raw/*5.24*/("""
+"""),_display_(/*5.2*/main("Sign Up", user)/*5.23*/ {_display_(Seq[Any](format.raw/*5.25*/("""
 
     """),format.raw/*7.5*/("""<!--..CONTENT..-->
     <div class="container-fluid" id="content">
@@ -43,10 +43,10 @@ Seq[Any](format.raw/*3.65*/("""
             <h1 class="greentext">Sign up</h1>
             <div class="col-lg-12 well" id="signup">
 
-            """),_display_(/*14.14*/form(action = routes.HomeController.signUpSubmit(), 'class -> "form-horizontal",'role->"form")/*14.108*/{_display_(Seq[Any](format.raw/*14.109*/("""
+            """),_display_(/*14.14*/form(action = routes.HomeController.signUpSubmit(), 'class -> "form-horizontal", 'role -> "form")/*14.111*/ {_display_(Seq[Any](format.raw/*14.113*/("""
                 """),_display_(/*15.18*/inputText(addUserForm("email"), '_label -> "Email", 'type -> "email", 'class -> "form-control")),format.raw/*15.113*/("""
-                """),_display_(/*16.18*/inputText(addUserForm("name"), '_label -> "Name", 'class -> "form-control" , 'maxlength -> "30")),format.raw/*16.114*/("""
-                """),_display_(/*17.18*/inputPassword(addUserForm("password"), '_label -> "Password", 'class -> "form-control" , 'maxlength -> "30")),format.raw/*17.126*/("""
+                """),_display_(/*16.18*/inputText(addUserForm("name"), '_label -> "Name", 'class -> "form-control", 'maxlength -> "30")),format.raw/*16.113*/("""
+                """),_display_(/*17.18*/inputPassword(addUserForm("password"), '_label -> "Password", 'class -> "form-control", 'maxlength -> "30")),format.raw/*17.125*/("""
                 """),format.raw/*18.17*/("""<div class="actions">
                     <input type="submit" value="Sign Up" class="btn btn-success">
                 </div>
@@ -76,10 +76,10 @@ Seq[Any](format.raw/*3.65*/("""
 object signUp extends signUp_Scope0.signUp_Scope1.signUp
               /*
                   -- GENERATED --
-                  DATE: Tue Apr 11 14:15:12 BST 2017
+                  DATE: Tue Apr 11 23:43:49 BST 2017
                   SOURCE: C:/Users/Eileen/Desktop/TicketStore/app/views/signUp.scala.html
-                  HASH: 3c6918f357cbd773d223386e8fdba3fbe87c730a
-                  MATRIX: 827->21|985->84|1015->89|1043->109|1082->111|1116->119|1357->333|1461->427|1501->428|1547->447|1664->542|1710->561|1828->657|1874->676|2004->784|2050->802|2224->945|2266->959
+                  HASH: 08f75196953c2fed596d89ea33420f78541f5a26
+                  MATRIX: 827->21|985->84|1015->89|1044->110|1083->112|1117->120|1358->334|1465->431|1506->433|1552->452|1669->547|1715->566|1832->661|1878->680|2007->787|2053->805|2227->948|2269->962
                   LINES: 30->3|35->3|37->5|37->5|37->5|39->7|46->14|46->14|46->14|47->15|47->15|48->16|48->16|49->17|49->17|50->18|53->21|54->22
                   -- GENERATED --
               */

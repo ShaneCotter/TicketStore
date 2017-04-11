@@ -1,0 +1,47 @@
+@import helper._
+
+@(accountForm: Form[models.users.User],user: models.users.User)
+@main("Update Account", user) {
+
+
+    <div class="container text-center" id="content">
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" id="user-order-display">
+            <div class="row">
+                <h1>My Account</h1>
+                <a href = "@routes.HomeController.myOrders()" class="btn btn-success btn-lg" id="user-order-button">
+                    <span class="glyphicon glyphicon-calendar"></span>My Orders
+                </a>
+
+                <a href = "@routes.HomeController.updateDetails()" class="btn btn-success btn-lg" id="user-account-button">
+                    <span class="glyphicon glyphicon-user"></span>Change Password
+                </a>
+
+
+                <a href = "@routes.LoginController.deleteAccountPage()" type="button" class="btn btn-success btn-lg" id="user-delete-button">
+                    <span class="glyphicon glyphicon-trash"></span>Delete Account
+                </a>
+
+                <a href = "@routes.HomeController.reportProblem()" type="button" class="btn btn-success btn-lg" id="user-problem-button">
+                    <span class="glyphicon glyphicon-envelope"></span>Report problem
+                </a>
+
+                <hr>
+            </div>
+
+            @form(action = routes.HomeController.updateDetailsSubmit(), 'method -> "POST", 'class -> "form-horizontal", 'role -> "form") {
+                @inputText(accountForm("email"), '_label -> "Email", 'class -> "form-control", 'maxlength -> "30", 'readonly -> "readonly")
+                @inputText(accountForm("name"), '_label -> "Name", 'class -> "form-control", 'maxlength -> "30")
+                @inputText(accountForm("password"), '_label -> "Email", 'type -> "password", 'class -> "form-control")
+                @inputText(accountForm("role"), '_label -> "", 'hidden -> "hidden")
+
+                <div class="actions">
+                    <input type="submit" value="Submit" class="btn btn-success">
+                    <a href="@routes.HomeController.contact()" class="btn btn-danger">Cancel</a>
+
+                </div>
+            }
+
+        </div>
+    </div>
+
+}

@@ -11,13 +11,15 @@ import java.util.List;
 import javax.inject.Inject;
 
 import views.html.*;
+import views.html.account.*;
+import views.html.admin.*;
 
 // Import models
 import models.*;
 import models.users.*;
 
 
-public class EventController extends Controller{
+public class EventController extends Controller {
 
     private FormFactory formFactory;
 
@@ -28,12 +30,12 @@ public class EventController extends Controller{
     }
 
     @Inject
-    public EventController(Environment e, FormFactory f){
-        this.env=e;
-        this.formFactory=f;
+    public EventController(Environment e, FormFactory f) {
+        this.env = e;
+        this.formFactory = f;
     }
 
-    private User getUserFromSession(){
+    private User getUserFromSession() {
         return User.getUserById(session().get("email"));
     }
 

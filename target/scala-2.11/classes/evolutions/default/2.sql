@@ -21,5 +21,3 @@ Insert into ticket values (2,'Seated',10,50,1);
 Insert into user(email,role,name,password) values('shane@tc.ie','admin','shane','shane');
 Insert into user(email,role,name,password) values('jay@tc.ie','admin','jay','jay');
 Insert into user(email,role,name,password) values('matthew@tc.ie','admin','matthew','matthew');
-
-

@@ -1,6 +1,6 @@
 @(events: List[models.Event], categories: List[models.Category], user: models.users.User, env: play.api.Environment, catId: Long, filter: String)
 
-@main("Events List",user) {
+@main("Events", user) {
 
 
     <!--..CONTENT..-->
@@ -24,7 +24,8 @@
                                 <h3 class="greentext ">EVENT CATEGORIES</h3>
                                 <div class="list-group">
 
-                                    <a href="@routes.EventController.listEvents(0, filter)" class="list-group-item">All categories</a>
+                                    <a href="@routes.EventController.listEvents(0, filter)" class="list-group-item">
+                                        All categories</a>
 
                                     @for(c <- categories) {
                                         <a href="@routes.HomeController.events(c.getCatID)" class="list-group-item" id="categories">@c.getName
@@ -39,8 +40,6 @@
                     </div>
                 </div>
             </div>
-
-
 
 
                 <!--Main content--->
@@ -61,7 +60,7 @@
                         </span>List</a> <a href="#" id="grid" class="btn btn-default btn-sm"><span
                     class="glyphicon glyphicon-th"></span>Grid</a>
                     </div>
-                    @if(flash.containsKey("success")){
+                    @if(flash.containsKey("success")) {
                         <div class="alert alert-success">
                         @flash.get("success")
                         </div>
@@ -94,7 +93,6 @@
                                         <div class="col-xs-12 col-md-6">
                                             </div>
 
-
                                     </div>
                                 </div>
                                 </div>
@@ -116,14 +114,21 @@
 
         <!--Script for displaying products in grid/list-->
     <script>
-            $(document).ready(function() {
-                $('#list').click(function(event){event.preventDefault();$('#products .item').addClass('list-group-item');});
-                $('#grid').click(function(event){event.preventDefault();$('#products .item').removeClass('list-group-item');$('#products .item').addClass('grid-group-item');});
+            $(document).ready(function () {
+                $('#list').click(function (event) {
+                    event.preventDefault();
+                    $('#products .item').addClass('list-group-item');
+                });
+                $('#grid').click(function (event) {
+                    event.preventDefault();
+                    $('#products .item').removeClass('list-group-item');
+                    $('#products .item').addClass('grid-group-item');
+                });
             });</script>
 
         <!--Script for confirming delete of event-->
     <script>
-            function confirmDel(){
+            function confirmDel() {
                 return confirm('Are you sure?');
             }
     </script>

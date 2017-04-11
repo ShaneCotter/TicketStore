@@ -22,11 +22,8 @@ public class User extends Model {
     @Constraints.Required
     private  String password;
 
-    private String street1;
-    private String street2;
-    private String town;
-    private String postCode;
-    private String creditCard;
+//    private int phone;
+//    private String birthday;
 
     @OneToOne(mappedBy="user", cascade = CascadeType.ALL)
     private Basket basket;
@@ -41,61 +38,8 @@ public class User extends Model {
         this.password = password;
     }
 
-    public User(String email, String role, String name, String password, String street1, String street2, String town, String postCode, String creditCard)
-    {
-        this.email = email;
-        this.role = role;
-        this.name = name;
-        this.password = password;
-        this.street1 = street1;
-        this.street2 = street2;
-        this.town = town;
-        this.postCode = postCode;
-        this.creditCard = creditCard;
-    }
-
     public User(List<ShopOrder> orders) {
         this.orders = orders;
-    }
-
-    public String getStreet1() {
-        return street1;
-    }
-
-    public void setStreet1(String street1) {
-        this.street1 = street1;
-    }
-
-    public String getStreet2() {
-        return street2;
-    }
-
-    public void setStreet2(String street2) {
-        this.street2 = street2;
-    }
-
-    public String getTown() {
-        return town;
-    }
-
-    public void setTown(String town) {
-        this.town = town;
-    }
-
-    public String getPostCode() {
-        return postCode;
-    }
-
-    public void setPostCode(String postCode) {
-        this.postCode = postCode;
-    }
-
-    public String getCreditCard() {
-        return creditCard;
-    }
-
-    public void setCreditCard(String creditCard) {
-        this.creditCard = creditCard;
     }
 
     public Basket getBasket() {

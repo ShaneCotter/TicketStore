@@ -6,17 +6,23 @@ import play.mvc.*;
 import play.api.Environment;
 import play.data.*;
 import play.db.ebean.Transactional;
+
 import java.util.*;
 import javax.inject.Inject;
+
 import views.html.*;
+import views.html.account.*;
+import views.html.admin.*;
 import play.mvc.Http.*;
 import play.mvc.Http.MultipartFormData.FilePart;
+
 import java.io.File;
 // File Upload and image editing
 import org.im4java.core.ConvertCmd;
 import org.im4java.core.IMOperation;
 // Import models
 import models.*;
+import models.shopping.*;
 
 
 public class HomeController extends Controller {
@@ -25,7 +31,7 @@ public class HomeController extends Controller {
     private Environment env;
 
     @Inject
-    public HomeController(FormFactory f, Environment e){
+    public HomeController(FormFactory f, Environment e) {
         this.formFactory = f;
         this.env = e;
     }
@@ -34,29 +40,25 @@ public class HomeController extends Controller {
         return ok(index.render(getUserFromSession()));
     }
 
-    public Result aboutUs() {
-        return ok(aboutUs.render(getUserFromSession()));
-    }
-
     @Security.Authenticated(Secured.class)
     @With(AuthAdmin.class)
     @Transactional
     public Result addEvent() {
 
         Form<Event> addEventForm = formFactory.form(Event.class);
-        return ok(addEvent.render(addEventForm,getUserFromSession()));
+        return ok(addEvent.render(addEventForm, getUserFromSession()));
     }
 
     @Security.Authenticated(Secured.class)
     @With(AuthAdmin.class)
     @Transactional
-    public Result addEventSubmit(){
+    public Result addEventSubmit() {
 
         Form<Event> newEventForm = formFactory.form(Event.class).bindFromRequest();
 
-        if(newEventForm.hasErrors()){
+        if (newEventForm.hasErrors()) {
 
-            return badRequest(addEvent.render(newEventForm,getUserFromSession()));
+            return badRequest(addEvent.render(newEventForm, getUserFromSession()));
         }
 
         Event newEvent = newEventForm.get();
@@ -69,12 +71,10 @@ public class HomeController extends Controller {
         // Save the image file
         String saveImageMsg = saveFile(newEvent.getId(), image);
 
-        if (newEvent.getId() ==  null) {
+        if (newEvent.getId() == null) {
             newEvent.save();
             flash("success", "Event " + newEvent.getEventName() + " has been created. Do not forget to add Tickets");
-        }
-
-        else if (newEvent.getId() != null) {
+        } else if (newEvent.getId() != null) {
             newEvent.update();
             flash("success", "Event " + newEvent.getEventName() + " has been updated.");
         }
@@ -86,14 +86,13 @@ public class HomeController extends Controller {
     @Security.Authenticated(Secured.class)
     @With(AuthAdmin.class)
     @Transactional
-    public Result deleteEvent(Long id){
+    public Result deleteEvent(Long id) {
 
         Event e = Event.find.ref(id);
 
-        flash("success","Event: " + e.getEventName() + " has been deleted");
+        flash("success", "Event: " + e.getEventName() + " has been deleted");
 
         Event.find.ref(id).delete();
-
 
 
         return redirect(routes.HomeController.adminevents(0));
@@ -116,27 +115,37 @@ public class HomeController extends Controller {
         return ok(addEvent.render(eventForm, getUserFromSession()));
     }
 
+
     public Result cart() {
         return ok(cart.render(getUserFromSession()));
     }
 
-    @Security.Authenticated(Secured.class)
-    @Transactional
-    public Result checkout() {
-        return ok(checkout.render(getUserFromSession()));
-    }
-
     public Result contact() {
         Form<Contact> contactForm = formFactory.form(Contact.class);
-        return ok(contact.render(contactForm,getUserFromSession()));
+        return ok(contact.render(contactForm, getUserFromSession()));
+    }
+
+
+    public Result reportProblem() {
+        Form<Contact> contactForm = formFactory.form(Contact.class);
+        flash("success", "Please fill out this form to alert admins of any problems.");
+        return ok(contact.render(contactForm, getUserFromSession()));
+    }
+
+    public Result myOrders() {
+        User u = getUserFromSession();
+
+        List<ShopOrder> orders = u.getOrders();
+
+        return ok(myOrders.render(orders, getUserFromSession()));
     }
 
     @Security.Authenticated(Secured.class)
     @With(AuthAdmin.class)
     @Transactional
-    public Result viewContact(){
+    public Result viewContact() {
         List<Contact> contactList = Contact.findAll();
-        return ok(viewContact.render(contactList,getUserFromSession()));
+        return ok(viewContact.render(contactList, getUserFromSession()));
     }
 
     public Result events(Long cat) {
@@ -146,14 +155,13 @@ public class HomeController extends Controller {
         // Render the list events view, passing
         List<Category> categoriesList = Category.findAll();
 
-        if(cat == 0){
+        if (cat == 0) {
             eventsList = Event.findAll();
-        }
-        else{
+        } else {
             eventsList = Category.find.ref(cat).getEvents();
         }
 
-        return ok(events.render(eventsList,categoriesList,getUserFromSession(), env));
+        return ok(events.render(eventsList, categoriesList, getUserFromSession(), env));
     }
 
     @Security.Authenticated(Secured.class)
@@ -166,21 +174,20 @@ public class HomeController extends Controller {
         // Render the list events view, passing
         List<Category> categoriesList = Category.findAll();
 
-        if(cat == 0){
+        if (cat == 0) {
             eventsList = Event.findAll();
-        }
-        else{
+        } else {
             eventsList = Category.find.ref(cat).getEvents();
         }
 
-        return ok(adminevents.render(eventsList,categoriesList,getUserFromSession(), env));
+        return ok(adminevents.render(eventsList, categoriesList, getUserFromSession(), env));
     }
 
     public Result eventTicket(Long event) {
         List<Ticket> ticketList = Event.find.ref(event).getTickets();
         Event e = Event.find.ref(event);
 
-        return ok(eventTicket.render(ticketList,e,getUserFromSession(), env));
+        return ok(eventTicket.render(ticketList, e, getUserFromSession(), env));
     }
 
     @Security.Authenticated(Secured.class)
@@ -190,32 +197,32 @@ public class HomeController extends Controller {
         List<Ticket> ticketList = Event.find.ref(event).getTickets();
         Event e = Event.find.ref(event);
 
-        return ok(admineventTicket.render(ticketList,e,getUserFromSession(), env));
+        return ok(admineventTicket.render(ticketList, e, getUserFromSession(), env));
     }
 
-    public Result addContactSubmit(){
+    public Result addContactSubmit() {
 
         Form<Contact> contactSubmitForm = formFactory.form(Contact.class).bindFromRequest();
 
-        if(contactSubmitForm.hasErrors()){
-            return badRequest(contact.render(null,getUserFromSession()));
+        if (contactSubmitForm.hasErrors()) {
+            return badRequest(contact.render(null, getUserFromSession()));
         }
 
         Contact newContact = contactSubmitForm.get();
 
         newContact.save();
 
-        flash("success","Message has been sent");
+        flash("success", "Message has been sent");
 
         return redirect(controllers.routes.HomeController.contact());
     }
 
     public Result signUp() {
         Form<User> addUserForm = formFactory.form(User.class);
-        return ok(signUp.render(addUserForm,getUserFromSession()));
+        return ok(signUp.render(addUserForm, getUserFromSession()));
     }
 
-    public Result signUpSubmit(){
+    public Result signUpSubmit() {
         Form<User> newUser = formFactory.form(User.class).bindFromRequest();
         User user = newUser.get();
         user.setRole("user");
@@ -230,18 +237,18 @@ public class HomeController extends Controller {
 
         Form<Ticket> addTicketForm = formFactory.form(Ticket.class);
 
-        return ok(addTicket.render(addTicketForm,getUserFromSession()));
+        return ok(addTicket.render(addTicketForm, getUserFromSession()));
 
     }
 
     @Security.Authenticated(Secured.class)
     @Transactional
-    public Result addTicketSubmit(){
+    public Result addTicketSubmit() {
 
         Form<Ticket> newTicketForm = formFactory.form(Ticket.class).bindFromRequest();
 
-        if(newTicketForm.hasErrors()){
-            return badRequest(addTicket.render(newTicketForm,getUserFromSession()));
+        if (newTicketForm.hasErrors()) {
+            return badRequest(addTicket.render(newTicketForm, getUserFromSession()));
         }
 
         Ticket newTicket = newTicketForm.get();
@@ -254,19 +261,20 @@ public class HomeController extends Controller {
     }
 
     @Security.Authenticated(Secured.class)
+    @With(AuthAdmin.class)
     @Transactional
-    public Result deleteTicket(Long id){
+    public Result deleteTicket(Long id) {
 
         Ticket.find.ref(id).delete();
 
-        flash("success","Ticket has been deleted");
+        flash("success", "Ticket has been deleted");
 
         return redirect(routes.HomeController.admineventTicket(id));
     }
 
     @Security.Authenticated(Secured.class)
     @Transactional
-    public Result updateTicket(Long id){
+    public Result updateTicket(Long id) {
         Ticket t;
         Form<Ticket> ticketForm;
 
@@ -279,12 +287,45 @@ public class HomeController extends Controller {
         return ok(addTicket.render(ticketForm, getUserFromSession()));
     }
 
-    private User getUserFromSession(){
+    @Security.Authenticated(Secured.class)
+    @Transactional
+    public Result updateDetails() {
+        User u;
+        Form<User> accountForm;
+
+        try {
+            u = getUserFromSession();
+            accountForm = formFactory.form(User.class).fill(u);
+        } catch (Exception ex) {
+            return badRequest("error");
+        }
+        return ok(updateDetails.render(accountForm, getUserFromSession()));
+    }
+
+    public Result updateDetailsSubmit() {
+        Form<User> userForm = formFactory.form(User.class).bindFromRequest();
+
+        if (userForm.hasErrors()) {
+
+            return badRequest(updateDetails.render(userForm, getUserFromSession()));
+        }
+
+        User u = userForm.get();
+
+        u.update();
+
+        return ok(myaccount.render(getUserFromSession()));
+    }
+
+
+    private User getUserFromSession() {
         return User.getUserById(session().get("email"));
     }
 
     @Security.Authenticated(Secured.class)
-    public Result myAccount (){return ok(myaccount.render(getUserFromSession()));}
+    public Result myAccount() {
+        return ok(myaccount.render(getUserFromSession()));
+    }
 
     // Save an image file
     public String saveFile(Long id, FilePart<File> image) {
@@ -302,7 +343,7 @@ public class HomeController extends Controller {
                 // Get the uploaded image file
                 op.addImage(file.getAbsolutePath());
                 // Resize using height and width constraints
-                op.resize(450,200);
+                op.resize(450, 200);
                 // Save the  image
                 op.addImage("public/images/eventImages/" + id + ".jpg");
                 // thumbnail
@@ -313,11 +354,10 @@ public class HomeController extends Controller {
                 // Save the  image
                 thumb.addImage("public/images/eventImages/thumbnails" + id + ".jpg");
                 // execute the operation
-                try{
+                try {
                     cmd.run(op);
                     cmd.run(thumb);
-                }
-                catch(Exception e){
+                } catch (Exception e) {
                     e.printStackTrace();
                 }
                 return " and image saved";
@@ -325,5 +365,6 @@ public class HomeController extends Controller {
         }
         return "image file missing";
     }
+
 
 }

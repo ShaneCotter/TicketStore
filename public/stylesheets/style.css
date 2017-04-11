@@ -8,6 +8,10 @@
 	   color: #33cc33;
 }
 
+.whitetext{
+    color: white;
+}
+
 #logo{
     margin-left: 3em;
     color:white;
@@ -749,7 +753,12 @@ ol, ul {
 #iconCart{
     color:white;
 }
-
+#user-order-button,
+#user-account-button,
+#user-delete-button,
+#user-problem-button{
+    margin-left :4em;
+}
 .panel-heading {
     border-top-left-radius: 1px;
     border-top-right-radius: 1px;

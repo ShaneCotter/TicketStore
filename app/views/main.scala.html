@@ -1,25 +1,25 @@
 @*
- * This template is called from the `index` template. This template
- * handles the rendering of the page header and body tags. It takes
- * two arguments, a `String` for the title of the page and an `Html`
- * object to insert into the body of the page.
- *@
-@(title: String,user:models.users.User)(content: Html)
+* This template is called from the `index` template. This template
+* handles the rendering of the page header and body tags. It takes
+* two arguments, a `String` for the title of the page and an `Html`
+* object to insert into the body of the page.
+*@
+@(title: String, user: models.users.User)(content: Html)
 
 <!DOCTYPE HTML>
 <title>@title</title>
 
 <head>
-    <!-- CSS link -->
+        <!-- CSS link -->
     <link rel="stylesheet" href="@routes.Assets.versioned("stylesheets/style.css")">
-    <!-- Bootstrap link -->
+        <!-- Bootstrap link -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <!-- Javascript link -->
+        <!-- Javascript link -->
     <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-<link href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
 <body>
@@ -30,27 +30,31 @@
             </div>
             <div class="col-lg-8 col-md-8 col-sm-8 col-xs-8" id="">
                 <div class="nav navbar-nav navbar-right" id="nav-buttons">
-                    @if(user != null){
-                        <a href="@routes.EventController.listEvents()" class="btn btn-success btn-circle btn-md"><i class="glyphicon glyphicon-search"></i></a>
-                        <a href="@routes.HomeController.cart()" class="btn btn-success btn-circle btn-md"><i class="glyphicon glyphicon-shopping-cart"></i></a>
-                        <a href="@routes.LoginController.logout()" class="btn btn-success btn-circle btn-md"><span class="glyphicon glyphicon-off"></span>LOGOUT</a>
-                        @if(user.getRole.equals("admin")) {
-                            <div class="dropdown" id="adminOptions">
-                                <button class="btn btn-success btn-circle btn-md" data-toggle="dropdown"><i class="glyphicon glyphicon-cog"></i>Admin Options
-                                    <span class="caret"></span></button>
-                                <ul class="dropdown-menu">
-                                    <li><a href="@routes.HomeController.addEvent()">Add event</a></li>
-                                    <li><a href="@routes.HomeController.addTicket()">Add ticket</a></li>
-                                    <li><a href="@routes.HomeController.adminevents(0)">Manage events</a></li>
-                                    <li><a href="@routes.HomeController.viewContact()">View contacts</a></li>
-                                </ul>
-                            </div>
-                        }
-                    }else{
-                        <a href="@routes.EventController.listEvents()" class="btn btn-success btn-circle btn-md"><i class="glyphicon glyphicon-search"></i></a>
-                        <a href="@routes.LoginController.login()" class="btn btn-success btn-circle btn-md"><i class="glyphicon glyphicon-user"></i>Login</a>
-                        <a href="@routes.HomeController.signUp()" class="btn btn-success btn-circle btn-md"><span class="glyphcon glyphicon-pencil"></span>Sign up</a>
+                @if(user != null) {
+                    <a href="@routes.EventController.listEvents()" class="btn btn-success btn-circle btn-md"><i class="glyphicon glyphicon-search"></i></a>
+                    <a href="@routes.HomeController.cart()" class="btn btn-success btn-circle btn-md"><i class="glyphicon glyphicon-shopping-cart"></i></a>
+                    <a href="@routes.LoginController.logout()" class="btn btn-success btn-circle btn-md"><span class="glyphicon glyphicon-off"></span>
+                        LOGOUT</a>
+                    @if(user.getRole.equals("admin")) {
+                        <div class="dropdown" id="adminOptions">
+                            <button class="btn btn-success btn-circle btn-md" data-toggle="dropdown"><i class="glyphicon glyphicon-cog"></i>
+                                Admin Options
+                                <span class="caret"></span></button>
+                            <ul class="dropdown-menu">
+                                <li><a href="@routes.HomeController.addEvent()">Add event</a></li>
+                                <li><a href="@routes.HomeController.addTicket()">Add ticket</a></li>
+                                <li><a href="@routes.HomeController.adminevents(0)">Manage events</a></li>
+                                <li><a href="@routes.HomeController.viewContact()">View contacts</a></li>
+                            </ul>
+                        </div>
                     }
+                } else {
+                    <a href="@routes.EventController.listEvents()" class="btn btn-success btn-circle btn-md"><i class="glyphicon glyphicon-search"></i></a>
+                    <a href="@routes.LoginController.login()" class="btn btn-success btn-circle btn-md"><i class="glyphicon glyphicon-user"></i>
+                        Login</a>
+                    <a href="@routes.HomeController.signUp()" class="btn btn-success btn-circle btn-md"><span class="glyphcon glyphicon-pencil"></span>
+                        Sign up</a>
+                }
                 </div>
             </div>
         </div>
@@ -66,9 +70,9 @@
         </div>
     </div>
 
-        @content
+    @content
 
-<div class="container" id = "footer">
+    <div class="container" id = "footer">
         <div class="row">
             <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 pull-left">
                 <a href="@routes.HomeController.index()"><h2>TC <span>EVENTS</h2></a>

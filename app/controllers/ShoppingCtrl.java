@@ -3,13 +3,14 @@ package controllers;
 import play.mvc.*;
 
 import views.html.*;
+import views.html.account.*;
+import views.html.admin.*;
 import play.db.ebean.Transactional;
 
 // Import models
 import models.users.*;
 import models.*;
 import models.shopping.*;
-
 
 
 // Authenticate user
@@ -109,7 +110,7 @@ public class ShoppingCtrl extends Controller {
         order.save();
 
         // Move items from basket to order
-        for (OrderItem i: order.getItems()) {
+        for (OrderItem i : order.getItems()) {
             // Associate with order
             i.setOrder(order);
             // Remove from basket

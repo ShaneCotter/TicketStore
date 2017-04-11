@@ -1,0 +1,62 @@
+@(orders: List[models.shopping.ShopOrder], user: models.users.User)
+@main("My Orders", user) {
+
+
+    <div class="container" id="content">
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" id="user-order-display">
+            <div class="row">
+                <a href = "@routes.HomeController.myOrders()" class="btn btn-success btn-lg" id="user-order-button">
+                    <span class="glyphicon glyphicon-calendar"></span>My Orders
+                </a>
+
+                <a href = "@routes.HomeController.updateDetails()" class="btn btn-success btn-lg" id="user-account-button">
+                    <span class="glyphicon glyphicon-user"></span>Change Password
+                </a>
+
+
+                <a href = "@routes.LoginController.deleteAccountPage()" type="button" class="btn btn-success btn-lg" id="user-delete-button">
+                    <span class="glyphicon glyphicon-trash"></span>Delete Account
+                </a>
+
+                <a href = "@routes.HomeController.reportProblem()" type="button" class="btn btn-success btn-lg" id="user-problem-button">
+                    <span class="glyphicon glyphicon-envelope"></span>Report problem
+                </a>
+
+                <hr>
+            </div>
+        </div>
+        <hr>
+
+        <h2 class="greentext text-center">Order History</h2>
+        @if(orders.size < 1) {
+            <h3 class="text-center"> No orders have been placed on this account yet.</h3>
+        }
+        @if(orders.size > 0) {
+            <table class="table table-condensed">
+                <thead>
+                    <tr>
+                        <th>Order #</th>
+                        <th>Date</th>
+                        <th>Total</th>
+                    </tr>
+                </thead>
+                <tbody>
+                @for(o <- orders) {
+                    <tr>
+                        <td>#@o.getId</td>
+                        <td>@o.getOrderDate</td>
+                        <td>@o.getOrderTotal</td>
+                    </tr>
+
+                    @for(i <- o.getItems) {
+                        <td>Tickets : @i.getQuantity x €@i.getPrice @i.getTicket.getEvent.getEventName - @i.getTicket.getTicketType</td>
+
+                    }
+
+                </tbody>
+                }
+            </table>
+        }
+    </div>
+
+}
