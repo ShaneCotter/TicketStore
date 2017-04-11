@@ -129,3 +129,4 @@ h2-browser
 run
 activator clean
 exit
+run

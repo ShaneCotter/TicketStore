@@ -43,6 +43,7 @@
                 <!--/Search Bar-->
                 <div class="nav navbar-nav navbar-right" id="nav-buttons">
                     @if(user != null){
+                        <a href="@routes.EventController.listEvents()" class="btn btn-success btn-circle btn-md"><i class="glyphicon glyphicon-search"></i></a>
                         <a href="@routes.HomeController.cart()" class="btn btn-success btn-circle btn-md"><i class="glyphicon glyphicon-shopping-cart"></i></a>
                         <a href="@routes.LoginController.logout()" class="btn btn-success btn-circle btn-md"><span class="glyphicon glyphicon-off"></span>LOGOUT</a>
                         @if(user.getRole.equals("admin")) {
@@ -58,6 +59,7 @@
                             </div>
                         }
                     }else{
+                        <a href="@routes.EventController.listEvents()" class="btn btn-success btn-circle btn-md"><i class="glyphicon glyphicon-search"></i></a>
                         <a href="@routes.LoginController.login()" class="btn btn-success btn-circle btn-md"><i class="glyphicon glyphicon-user"></i>Login</a>
                         <a href="@routes.HomeController.signUp()" class="btn btn-success btn-circle btn-md"><span class="glyphcon glyphicon-pencil"></span>Sign up</a>
                     }

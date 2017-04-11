@@ -105,6 +105,22 @@ public class Event extends Model {
         return Event.find.all();
     }
 
+    public static List<Event> findAllS(String filter) {
+        return Event.find.where()
+                .ilike("eventName", "%" + filter + "%")
+                .orderBy("eventName asc")
+                .findList();
+    }
+
+    public static List<Event> findFilter(Long catID, String filter) {
+        return Event.find.where()
+                .eq("categories.catID", catID)
+                .ilike("eventName", "%" + filter + "%")
+                .orderBy("eventName asc")
+                .findList();
+    }
+
+
     public List<Ticket> getTickets() {
         return tickets;
     }

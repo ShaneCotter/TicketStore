@@ -1,7 +1,7 @@
 
 // @GENERATOR:play-routes-compiler
-// @SOURCE:C:/Users/Eileen/Desktop/TicketStore/conf/routes
-// @DATE:Tue Apr 11 12:42:32 BST 2017
+// @SOURCE:/home/wdd/webapps/TicketStore/conf/routes
+// @DATE:Tue Apr 11 13:34:24 IST 2017
 
 import play.api.mvc.{ QueryStringBindable, PathBindable, Call, JavascriptLiteral }
 import play.core.routing.{ HandlerDef, ReverseRouteContext, queryString, dynamicString }
@@ -13,53 +13,32 @@ import _root_.play.libs.F
 // @LINE:6
 package controllers {
 
-  // @LINE:26
-  class ReverseShoppingCtrl(_prefix: => String) {
+  // @LINE:52
+  class ReverseAssets(_prefix: => String) {
     def _defaultPrefix: String = {
       if (_prefix.endsWith("/")) "" else "/"
     }
 
   
-    // @LINE:28
-    def addOne(itemId:Long): Call = {
-      import ReverseRouteContext.empty
-      Call("GET", _prefix + { _defaultPrefix } + "addOne/" + implicitly[PathBindable[Long]].unbind("itemId", itemId))
+    // @LINE:52
+    def versioned(file:Asset): Call = {
+      implicit val _rrc = new ReverseRouteContext(Map(("path", "/public")))
+      Call("GET", _prefix + { _defaultPrefix } + "assets/" + implicitly[PathBindable[Asset]].unbind("file", file))
     }
   
-    // @LINE:27
-    def addToBasket(id:Long): Call = {
-      import ReverseRouteContext.empty
-      Call("GET", _prefix + { _defaultPrefix } + "addToBasket/" + implicitly[PathBindable[Long]].unbind("id", id))
+  }
+
+  // @LINE:34
+  class ReverseEventController(_prefix: => String) {
+    def _defaultPrefix: String = {
+      if (_prefix.endsWith("/")) "" else "/"
     }
+
   
-    // @LINE:32
-    def viewOrder(id:Long): Call = {
+    // @LINE:34
+    def listEvents(cat:Long = 0, filter:String = ""): Call = {
       import ReverseRouteContext.empty
-      Call("GET", _prefix + { _defaultPrefix } + "viewOrder/" + implicitly[PathBindable[Long]].unbind("id", id))
-    }
-  
-    // @LINE:31
-    def placeOrder(): Call = {
-      import ReverseRouteContext.empty
-      Call("GET", _prefix + { _defaultPrefix } + "placeOrder")
-    }
-  
-    // @LINE:29
-    def removeOne(itemId:Long): Call = {
-      import ReverseRouteContext.empty
-      Call("GET", _prefix + { _defaultPrefix } + "removeOne/" + implicitly[PathBindable[Long]].unbind("itemId", itemId))
-    }
-  
-    // @LINE:26
-    def showBasket(): Call = {
-      import ReverseRouteContext.empty
-      Call("GET", _prefix + { _defaultPrefix } + "showBasket")
-    }
-  
-    // @LINE:30
-    def emptyBasket(): Call = {
-      import ReverseRouteContext.empty
-      Call("GET", _prefix + { _defaultPrefix } + "emptyBasket")
+      Call("GET", _prefix + { _defaultPrefix } + "listEvents" + queryString(List(if(cat == 0) None else Some(implicitly[QueryStringBindable[Long]].unbind("cat", cat)), if(filter == "") None else Some(implicitly[QueryStringBindable[String]].unbind("filter", filter)))))
     }
   
   }
@@ -77,7 +56,7 @@ package controllers {
       Call("GET", _prefix + { _defaultPrefix } + "cart")
     }
   
-    // @LINE:43
+    // @LINE:44
     def deleteEvent(id:Long): Call = {
       import ReverseRouteContext.empty
       Call("GET", _prefix + { _defaultPrefix } + "delEvent/" + implicitly[PathBindable[Long]].unbind("id", id))
@@ -101,7 +80,7 @@ package controllers {
       Call("GET", _prefix + { _defaultPrefix } + "eventticket" + queryString(List(if(event == 0L) None else Some(implicitly[QueryStringBindable[Long]].unbind("event", event)))))
     }
   
-    // @LINE:44
+    // @LINE:45
     def updateEvent(id:Long): Call = {
       import ReverseRouteContext.empty
       Call("GET", _prefix + { _defaultPrefix } + "updateEvent/" + implicitly[PathBindable[Long]].unbind("id", id))
@@ -125,13 +104,13 @@ package controllers {
       Call("GET", _prefix + { _defaultPrefix } + "signUpSubmit")
     }
   
-    // @LINE:36
+    // @LINE:37
     def addTicketSubmit(): Call = {
       import ReverseRouteContext.empty
       Call("POST", _prefix + { _defaultPrefix } + "addTicketSubmit")
     }
   
-    // @LINE:39
+    // @LINE:40
     def updateTicket(id:Long): Call = {
       import ReverseRouteContext.empty
       Call("GET", _prefix + { _defaultPrefix } + "updateTicket/" + implicitly[PathBindable[Long]].unbind("id", id))
@@ -149,7 +128,7 @@ package controllers {
       Call("GET", _prefix + { _defaultPrefix } + "adminevents" + queryString(List(if(cat == 0L) None else Some(implicitly[QueryStringBindable[Long]].unbind("cat", cat)))))
     }
   
-    // @LINE:46
+    // @LINE:47
     def addContactSubmit(): Call = {
       import ReverseRouteContext.empty
       Call("POST", _prefix + { _defaultPrefix } + "addContactSubmit")
@@ -161,7 +140,7 @@ package controllers {
       Call("GET", _prefix + { _defaultPrefix } + "events" + queryString(List(if(cat == 0L) None else Some(implicitly[QueryStringBindable[Long]].unbind("cat", cat)))))
     }
   
-    // @LINE:38
+    // @LINE:39
     def deleteTicket(id:Long): Call = {
       import ReverseRouteContext.empty
       Call("GET", _prefix + { _defaultPrefix } + "delTicket/" + implicitly[PathBindable[Long]].unbind("id", id))
@@ -179,7 +158,7 @@ package controllers {
       Call("GET", _prefix + { _defaultPrefix } + "checkout")
     }
   
-    // @LINE:41
+    // @LINE:42
     def addEventSubmit(): Call = {
       import ReverseRouteContext.empty
       Call("POST", _prefix + { _defaultPrefix } + "addEventSubmit")
@@ -232,17 +211,53 @@ package controllers {
   
   }
 
-  // @LINE:51
-  class ReverseAssets(_prefix: => String) {
+  // @LINE:26
+  class ReverseShoppingCtrl(_prefix: => String) {
     def _defaultPrefix: String = {
       if (_prefix.endsWith("/")) "" else "/"
     }
 
   
-    // @LINE:51
-    def versioned(file:Asset): Call = {
-      implicit val _rrc = new ReverseRouteContext(Map(("path", "/public")))
-      Call("GET", _prefix + { _defaultPrefix } + "assets/" + implicitly[PathBindable[Asset]].unbind("file", file))
+    // @LINE:28
+    def addOne(itemId:Long): Call = {
+      import ReverseRouteContext.empty
+      Call("GET", _prefix + { _defaultPrefix } + "addOne/" + implicitly[PathBindable[Long]].unbind("itemId", itemId))
+    }
+  
+    // @LINE:27
+    def addToBasket(id:Long): Call = {
+      import ReverseRouteContext.empty
+      Call("GET", _prefix + { _defaultPrefix } + "addToBasket/" + implicitly[PathBindable[Long]].unbind("id", id))
+    }
+  
+    // @LINE:32
+    def viewOrder(id:Long): Call = {
+      import ReverseRouteContext.empty
+      Call("GET", _prefix + { _defaultPrefix } + "viewOrder/" + implicitly[PathBindable[Long]].unbind("id", id))
+    }
+  
+    // @LINE:31
+    def placeOrder(): Call = {
+      import ReverseRouteContext.empty
+      Call("GET", _prefix + { _defaultPrefix } + "placeOrder")
+    }
+  
+    // @LINE:29
+    def removeOne(itemId:Long): Call = {
+      import ReverseRouteContext.empty
+      Call("GET", _prefix + { _defaultPrefix } + "removeOne/" + implicitly[PathBindable[Long]].unbind("itemId", itemId))
+    }
+  
+    // @LINE:26
+    def showBasket(): Call = {
+      import ReverseRouteContext.empty
+      Call("GET", _prefix + { _defaultPrefix } + "showBasket")
+    }
+  
+    // @LINE:30
+    def emptyBasket(): Call = {
+      import ReverseRouteContext.empty
+      Call("GET", _prefix + { _defaultPrefix } + "emptyBasket")
     }
   
   }
