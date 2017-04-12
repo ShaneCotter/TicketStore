@@ -40,14 +40,21 @@
                         <th class="greentext">Order #</th>
                         <th class="greentext">Date</th>
                         <th class="greentext">Total</th>
+                        <th class="greentext">Order Status</th>
                     </tr>
                 </thead>
                 <tbody>
                 @for(o <- orders) {
                     <tr>
-                        <td>#@o.getId</td>
+                        <td>@o.getId</td>
                         <td>@o.getOrderDate</td>
                         <td>@o.getOrderTotal</td>
+                        @if(o.isProccessed == true){
+                            <td>Your order has been <strong>Proccessed</strong></td>
+                        }
+                        @if(o.isProccessed == false){
+                            <td>Order has been <strong>received</strong> and will be proccessed soon !</td>
+                        }
                     </tr>
 
                     @for(i <- o.getItems) {

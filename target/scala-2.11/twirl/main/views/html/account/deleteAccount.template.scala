@@ -33,8 +33,8 @@ Seq[Any](format.raw/*1.27*/("""
 """),_display_(/*2.2*/main("Delete Account", user)/*2.30*/ {_display_(Seq[Any](format.raw/*2.32*/("""
 
 
-    """),format.raw/*5.5*/("""<div class="container text-center" id="content">
-        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" id="user-order-display">
+    """),format.raw/*5.5*/("""<div class="container" id="content">
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center" id="user-order-display">
             <div class="row">
 
                 <a href = """"),_display_(/*9.29*/routes/*9.35*/.HomeController.myOrders()),format.raw/*9.61*/("""" class="btn btn-success btn-lg" id="user-order-button">
@@ -89,10 +89,10 @@ Seq[Any](format.raw/*1.27*/("""
 object deleteAccount extends deleteAccount_Scope0.deleteAccount
               /*
                   -- GENERATED --
-                  DATE: Wed Apr 12 13:31:40 IST 2017
-                  SOURCE: /home/wdd/webapps/TicketStore/app/views/account/deleteAccount.scala.html
-                  HASH: 3fe59ac7b9853a9045cb1bdcac1eb85540dd3b4c
-                  MATRIX: 780->1|900->26|927->28|963->56|1002->58|1035->65|1255->259|1269->265|1315->291|1529->478|1544->484|1596->515|1815->707|1830->713|1887->749|2118->953|2133->959|2185->990|2488->1266|2503->1272|2558->1306|2786->1507|2801->1513|2849->1540|3009->1670
+                  DATE: Wed Apr 12 15:03:14 BST 2017
+                  SOURCE: C:/Users/Eileen/Desktop/TicketStore/app/views/account/deleteAccount.scala.html
+                  HASH: e7f94829adc18dc1092f765e25378277b641d3de
+                  MATRIX: 780->1|900->26|928->29|964->57|1003->59|1039->69|1263->267|1277->273|1323->299|1541->490|1556->496|1608->527|1832->724|1847->730|1904->766|2139->974|2154->980|2206->1011|2516->1294|2531->1300|2586->1334|2818->1539|2833->1545|2881->1572|3048->1709
                   LINES: 27->1|32->1|33->2|33->2|33->2|36->5|40->9|40->9|40->9|44->13|44->13|44->13|49->18|49->18|49->18|53->22|53->22|53->22|60->29|60->29|60->29|64->33|64->33|64->33|71->40
                   -- GENERATED --
               */

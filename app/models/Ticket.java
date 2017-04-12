@@ -10,6 +10,7 @@ import play.data.format.*;
 import play.data.validation.*;
 
 import com.avaje.ebean.*;
+import models.shopping.*;
 
 
 @Entity
@@ -32,6 +33,9 @@ public class Ticket extends Model {
 
     @ManyToOne
     private Event event;
+
+    @OneToMany(mappedBy="ticket", cascade=CascadeType.ALL)
+    List<OrderItem> orderItem;
 
     public Ticket() {
     }

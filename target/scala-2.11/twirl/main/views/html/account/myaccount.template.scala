@@ -33,8 +33,8 @@ Seq[Any](format.raw/*1.27*/("""
 """),_display_(/*2.2*/main("My Orders", user)/*2.25*/ {_display_(Seq[Any](format.raw/*2.27*/("""
 
 
-    """),format.raw/*5.5*/("""<div class="container text-center" id="content">
-        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" id="user-order-display">
+    """),format.raw/*5.5*/("""<div class="container " id="content">
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center" id="user-order-display">
             <div class="row">
                 <h1>My Account</h1>
                 <a href = """"),_display_(/*9.29*/routes/*9.35*/.HomeController.myOrders()),format.raw/*9.61*/("""" class="btn btn-success btn-lg" id="user-order-button">
@@ -79,10 +79,10 @@ Seq[Any](format.raw/*1.27*/("""
 object myaccount extends myaccount_Scope0.myaccount
               /*
                   -- GENERATED --
-                  DATE: Wed Apr 12 13:31:40 IST 2017
-                  SOURCE: /home/wdd/webapps/TicketStore/app/views/account/myaccount.scala.html
-                  HASH: c5c0423f0bc9a098eaab79bfe691ba4ed825eec2
-                  MATRIX: 772->1|892->26|919->28|950->51|989->53|1022->60|1277->289|1291->295|1337->321|1551->508|1566->514|1618->545|1837->737|1852->743|1909->779|2140->983|2155->989|2207->1020
+                  DATE: Wed Apr 12 15:03:14 BST 2017
+                  SOURCE: C:/Users/Eileen/Desktop/TicketStore/app/views/account/myaccount.scala.html
+                  HASH: c27d18f4cbbb927a746d1ac6439ec0c5d5160d44
+                  MATRIX: 772->1|892->26|920->29|951->52|990->54|1026->64|1286->298|1300->304|1346->330|1564->521|1579->527|1631->558|1855->755|1870->761|1927->797|2162->1005|2177->1011|2229->1042
                   LINES: 27->1|32->1|33->2|33->2|33->2|36->5|40->9|40->9|40->9|44->13|44->13|44->13|49->18|49->18|49->18|53->22|53->22|53->22
                   -- GENERATED --
               */

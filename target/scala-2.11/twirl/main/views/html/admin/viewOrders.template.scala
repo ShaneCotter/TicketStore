@@ -43,44 +43,48 @@ Seq[Any](format.raw/*1.68*/("""
                         <th class="greentext">Order #</th>
                         <th class="greentext">Date</th>
                         <th class="greentext">Total</th>
+                        <th class="greentext">Status</th>
+                        <th></th>
                     </tr>
                 </thead>
                 <tbody>
-                """),_display_(/*18.18*/for(o <- orders) yield /*18.34*/ {_display_(Seq[Any](format.raw/*18.36*/("""
-                    """),_display_(/*19.22*/if(o.isProccessed == false)/*19.49*/ {_display_(Seq[Any](format.raw/*19.51*/("""
-                        """),format.raw/*20.25*/("""<tr class = "danger">
-                            <td>#"""),_display_(/*21.35*/o/*21.36*/.getId),format.raw/*21.42*/("""</td>
-                            <td>"""),_display_(/*22.34*/o/*22.35*/.getOrderDate),format.raw/*22.48*/("""</td>
-                            <td>"""),_display_(/*23.34*/o/*23.35*/.getOrderTotal),format.raw/*23.49*/("""</td>
-                            <td class="col-sm-1"><a href=""""),_display_(/*24.60*/routes/*24.66*/.HomeController.markAsProccessed(o.getId,true)),format.raw/*24.112*/("""" class="btn btn-danger btn-sm whitetext" id="user-delete-button">
+                """),_display_(/*20.18*/for(o <- orders) yield /*20.34*/ {_display_(Seq[Any](format.raw/*20.36*/("""
+                    """),_display_(/*21.22*/if(o.isProccessed == false)/*21.49*/ {_display_(Seq[Any](format.raw/*21.51*/("""
+                        """),format.raw/*22.25*/("""<tr class = "danger">
+                            <td>#"""),_display_(/*23.35*/o/*23.36*/.getId),format.raw/*23.42*/("""</td>
+                            <td>"""),_display_(/*24.34*/o/*24.35*/.getOrderDate),format.raw/*24.48*/("""</td>
+                            <td>"""),_display_(/*25.34*/o/*25.35*/.getOrderTotal),format.raw/*25.49*/("""</td>
+                            <td>Received</td>
+                            <td class="col-sm-1"><a href=""""),_display_(/*27.60*/routes/*27.66*/.HomeController.markAsProccessed(o.getId,true)),format.raw/*27.112*/("""" class="btn btn-danger btn-sm whitetext" id="user-delete-button">
                                 <span class="glyphicon glyphicon-ok"></span> Mark as proccessed
                             </a></td>
                             </tr>
-                            """),_display_(/*28.30*/for(i <- o.getItems) yield /*28.50*/ {_display_(Seq[Any](format.raw/*28.52*/("""
-                                """),format.raw/*29.33*/("""<tr>
-                                <td>Tickets : """),_display_(/*30.48*/i/*30.49*/.getQuantity),format.raw/*30.61*/(""" """),format.raw/*30.62*/("""x €"""),_display_(/*30.66*/i/*30.67*/.getPrice),format.raw/*30.76*/(""" """),_display_(/*30.78*/i/*30.79*/.getTicket.getEvent.getEventName),format.raw/*30.111*/(""" """),format.raw/*30.112*/("""- """),_display_(/*30.115*/i/*30.116*/.getTicket.getTicketType),format.raw/*30.140*/("""</td>
+                            """),_display_(/*31.30*/for(i <- o.getItems) yield /*31.50*/ {_display_(Seq[Any](format.raw/*31.52*/("""
+                                """),format.raw/*32.33*/("""<tr>
+                                <td>Tickets : """),_display_(/*33.48*/i/*33.49*/.getQuantity),format.raw/*33.61*/(""" """),format.raw/*33.62*/("""x €"""),_display_(/*33.66*/i/*33.67*/.getPrice),format.raw/*33.76*/(""" """),_display_(/*33.78*/i/*33.79*/.getTicket.getEvent.getEventName),format.raw/*33.111*/(""" """),format.raw/*33.112*/("""- """),_display_(/*33.115*/i/*33.116*/.getTicket.getTicketType),format.raw/*33.140*/("""</td>
                                 </tr>
-                            """)))}),format.raw/*32.30*/("""
+                            """)))}),format.raw/*35.30*/("""
 
-                    """)))}),format.raw/*34.22*/("""
-                    """),_display_(/*35.22*/if(o.isProccessed == true)/*35.48*/{_display_(Seq[Any](format.raw/*35.49*/("""
-                        """),format.raw/*36.25*/("""<tr class = "success">
-                            <td>#"""),_display_(/*37.35*/o/*37.36*/.getId),format.raw/*37.42*/("""</td>
-                            <td>"""),_display_(/*38.34*/o/*38.35*/.getOrderDate),format.raw/*38.48*/("""</td>
-                            <td>"""),_display_(/*39.34*/o/*39.35*/.getOrderTotal),format.raw/*39.49*/("""</td>
-                            <td class="col-sm-1"><a href=""""),_display_(/*40.60*/routes/*40.66*/.HomeController.markAsProccessed(o.getId,true)),format.raw/*40.112*/("""" class="btn btn-success btn-sm whitetext" id="user-delete-button">
-                                <span class="glyphicon glyphicon-ok"></span> Order is proccessed
+                    """)))}),format.raw/*37.22*/("""
+                    """),_display_(/*38.22*/if(o.isProccessed == true)/*38.48*/{_display_(Seq[Any](format.raw/*38.49*/("""
+                        """),format.raw/*39.25*/("""<tr class = "success">
+                            <td>#"""),_display_(/*40.35*/o/*40.36*/.getId),format.raw/*40.42*/("""</td>
+                            <td>"""),_display_(/*41.34*/o/*41.35*/.getOrderDate),format.raw/*41.48*/("""</td>
+                            <td>"""),_display_(/*42.34*/o/*42.35*/.getOrderTotal),format.raw/*42.49*/("""</td>
+                            <td>Proccessed</td>
+                            <td class="col-sm-1"><a href=""""),_display_(/*44.60*/routes/*44.66*/.HomeController.markAsProccessed(o.getId,true)),format.raw/*44.112*/("""" class="btn btn-success btn-sm whitetext" id="user-delete-button">
+                                <span class="glyphicon glyphicon-ok"></span> Order Proccessed
                             </a></td>
                         </tr>
-                            """),_display_(/*44.30*/for(i <- o.getItems) yield /*44.50*/ {_display_(Seq[Any](format.raw/*44.52*/("""
-                                """),format.raw/*45.33*/("""<tr>
-                                <td>Tickets : """),_display_(/*46.48*/i/*46.49*/.getQuantity),format.raw/*46.61*/(""" """),format.raw/*46.62*/("""x €"""),_display_(/*46.66*/i/*46.67*/.getPrice),format.raw/*46.76*/(""" """),_display_(/*46.78*/i/*46.79*/.getTicket.getEvent.getEventName),format.raw/*46.111*/(""" """),format.raw/*46.112*/("""- """),_display_(/*46.115*/i/*46.116*/.getTicket.getTicketType),format.raw/*46.140*/("""</td>
+                            """),_display_(/*48.30*/for(i <- o.getItems) yield /*48.50*/ {_display_(Seq[Any](format.raw/*48.52*/("""
+                                """),format.raw/*49.33*/("""<tr>
+                                <td>Tickets : """),_display_(/*50.48*/i/*50.49*/.getQuantity),format.raw/*50.61*/(""" """),format.raw/*50.62*/("""x €"""),_display_(/*50.66*/i/*50.67*/.getPrice),format.raw/*50.76*/(""" """),_display_(/*50.78*/i/*50.79*/.getTicket.getEvent.getEventName),format.raw/*50.111*/(""" """),format.raw/*50.112*/("""- """),_display_(/*50.115*/i/*50.116*/.getTicket.getTicketType),format.raw/*50.140*/("""</td>
                                 </tr>
-                            """)))}),format.raw/*48.30*/("""
+                            """)))}),format.raw/*52.30*/("""
 
-                    """)))}),format.raw/*50.22*/("""
-                """)))}),format.raw/*51.18*/("""
-                """),format.raw/*52.17*/("""</tbody>
+                    """)))}),format.raw/*54.22*/("""
+                """)))}),format.raw/*55.18*/("""
+                """),format.raw/*56.17*/("""</tbody>
             </table>
             <br>
             <br>
@@ -110,11 +114,11 @@ Seq[Any](format.raw/*1.68*/("""
 object viewOrders extends viewOrders_Scope0.viewOrders
               /*
                   -- GENERATED --
-                  DATE: Wed Apr 12 13:58:04 IST 2017
-                  SOURCE: /home/wdd/webapps/TicketStore/app/views/admin/viewOrders.scala.html
-                  HASH: 582da8d5e630f6fc7f3452972e222f8921cbba2b
-                  MATRIX: 804->1|965->67|993->70|1025->94|1064->96|1095->101|1647->626|1679->642|1719->644|1768->666|1804->693|1844->695|1897->720|1980->776|1990->777|2017->783|2083->822|2093->823|2127->836|2193->875|2203->876|2238->890|2330->955|2345->961|2413->1007|2704->1271|2740->1291|2780->1293|2841->1326|2920->1378|2930->1379|2963->1391|2992->1392|3023->1396|3033->1397|3063->1406|3092->1408|3102->1409|3156->1441|3186->1442|3217->1445|3228->1446|3274->1470|3378->1543|3432->1566|3481->1588|3516->1614|3555->1615|3608->1640|3692->1697|3702->1698|3729->1704|3795->1743|3805->1744|3839->1757|3905->1796|3915->1797|3950->1811|4042->1876|4057->1882|4125->1928|4414->2190|4450->2210|4490->2212|4551->2245|4630->2297|4640->2298|4673->2310|4702->2311|4733->2315|4743->2316|4773->2325|4802->2327|4812->2328|4866->2360|4896->2361|4927->2364|4938->2365|4984->2389|5088->2462|5142->2485|5191->2503|5236->2520
-                  LINES: 27->1|32->1|34->3|34->3|34->3|35->4|49->18|49->18|49->18|50->19|50->19|50->19|51->20|52->21|52->21|52->21|53->22|53->22|53->22|54->23|54->23|54->23|55->24|55->24|55->24|59->28|59->28|59->28|60->29|61->30|61->30|61->30|61->30|61->30|61->30|61->30|61->30|61->30|61->30|61->30|61->30|61->30|61->30|63->32|65->34|66->35|66->35|66->35|67->36|68->37|68->37|68->37|69->38|69->38|69->38|70->39|70->39|70->39|71->40|71->40|71->40|75->44|75->44|75->44|76->45|77->46|77->46|77->46|77->46|77->46|77->46|77->46|77->46|77->46|77->46|77->46|77->46|77->46|77->46|79->48|81->50|82->51|83->52
+                  DATE: Wed Apr 12 14:20:48 BST 2017
+                  SOURCE: C:/Users/Eileen/Desktop/TicketStore/app/views/admin/viewOrders.scala.html
+                  HASH: 190bda6ef8a3a8f24052d5d806adf6c813e20906
+                  MATRIX: 804->1|965->67|995->72|1027->96|1066->98|1098->104|1758->737|1790->753|1830->755|1880->778|1916->805|1956->807|2010->833|2094->890|2104->891|2131->897|2198->937|2208->938|2242->951|2309->991|2319->992|2354->1006|2494->1119|2509->1125|2577->1171|2872->1439|2908->1459|2948->1461|3010->1495|3090->1548|3100->1549|3133->1561|3162->1562|3193->1566|3203->1567|3233->1576|3262->1578|3272->1579|3326->1611|3356->1612|3387->1615|3398->1616|3444->1640|3550->1715|3606->1740|3656->1763|3691->1789|3730->1790|3784->1816|3869->1874|3879->1875|3906->1881|3973->1921|3983->1922|4017->1935|4084->1975|4094->1976|4129->1990|4271->2105|4286->2111|4354->2157|4644->2420|4680->2440|4720->2442|4782->2476|4862->2529|4872->2530|4905->2542|4934->2543|4965->2547|4975->2548|5005->2557|5034->2559|5044->2560|5098->2592|5128->2593|5159->2596|5170->2597|5216->2621|5322->2696|5378->2721|5428->2740|5474->2758
+                  LINES: 27->1|32->1|34->3|34->3|34->3|35->4|51->20|51->20|51->20|52->21|52->21|52->21|53->22|54->23|54->23|54->23|55->24|55->24|55->24|56->25|56->25|56->25|58->27|58->27|58->27|62->31|62->31|62->31|63->32|64->33|64->33|64->33|64->33|64->33|64->33|64->33|64->33|64->33|64->33|64->33|64->33|64->33|64->33|66->35|68->37|69->38|69->38|69->38|70->39|71->40|71->40|71->40|72->41|72->41|72->41|73->42|73->42|73->42|75->44|75->44|75->44|79->48|79->48|79->48|80->49|81->50|81->50|81->50|81->50|81->50|81->50|81->50|81->50|81->50|81->50|81->50|81->50|81->50|81->50|83->52|85->54|86->55|87->56
                   -- GENERATED --
               */
           

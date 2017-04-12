@@ -12,6 +12,8 @@
                         <th class="greentext">Order #</th>
                         <th class="greentext">Date</th>
                         <th class="greentext">Total</th>
+                        <th class="greentext">Status</th>
+                        <th></th>
                     </tr>
                 </thead>
                 <tbody>
@@ -21,6 +23,7 @@
                             <td>#@o.getId</td>
                             <td>@o.getOrderDate</td>
                             <td>@o.getOrderTotal</td>
+                            <td>Received</td>
                             <td class="col-sm-1"><a href="@routes.HomeController.markAsProccessed(o.getId,true)" class="btn btn-danger btn-sm whitetext" id="user-delete-button">
                                 <span class="glyphicon glyphicon-ok"></span> Mark as proccessed
                             </a></td>
@@ -37,8 +40,9 @@
                             <td>#@o.getId</td>
                             <td>@o.getOrderDate</td>
                             <td>@o.getOrderTotal</td>
+                            <td>Proccessed</td>
                             <td class="col-sm-1"><a href="@routes.HomeController.markAsProccessed(o.getId,true)" class="btn btn-success btn-sm whitetext" id="user-delete-button">
-                                <span class="glyphicon glyphicon-ok"></span> Order is proccessed
+                                <span class="glyphicon glyphicon-ok"></span> Order Proccessed
                             </a></td>
                         </tr>
                             @for(i <- o.getItems) {

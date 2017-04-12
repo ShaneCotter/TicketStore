@@ -42,26 +42,27 @@ Seq[Any](format.raw/*1.55*/("""
                         <th class="greentext">Email</th>
                         <th class="greentext">Name</th>
                         <th class="greentext">Password</th>
+                        <th></th>
                     </tr>
                 </thead>
                 <tbody>
-                """),_display_(/*17.18*/for(u <- u) yield /*17.29*/ {_display_(Seq[Any](format.raw/*17.31*/("""
-                    """),format.raw/*18.21*/("""<tr>
-                        <td>"""),_display_(/*19.30*/u/*19.31*/.getEmail),format.raw/*19.40*/("""</td>
-                        <td>"""),_display_(/*20.30*/u/*20.31*/.getName),format.raw/*20.39*/("""</td>
-                        <td type="password">"""),_display_(/*21.46*/u/*21.47*/.getPassword),format.raw/*21.59*/("""</td>
-                        """),_display_(/*22.26*/if(u.getEmail != user.getEmail)/*22.57*/ {_display_(Seq[Any](format.raw/*22.59*/("""
-                            """),format.raw/*23.29*/("""<td><a href=""""),_display_(/*23.43*/routes/*23.49*/.HomeController.deleteUser(u.getEmail)),format.raw/*23.87*/("""" class="btn btn-danger btn-sm whitetext" id="user-delete-button">
+                """),_display_(/*18.18*/for(u <- u) yield /*18.29*/ {_display_(Seq[Any](format.raw/*18.31*/("""
+                    """),format.raw/*19.21*/("""<tr>
+                        <td>"""),_display_(/*20.30*/u/*20.31*/.getEmail),format.raw/*20.40*/("""</td>
+                        <td>"""),_display_(/*21.30*/u/*21.31*/.getName),format.raw/*21.39*/("""</td>
+                        <td type="password">"""),_display_(/*22.46*/u/*22.47*/.getPassword),format.raw/*22.59*/("""</td>
+                        """),_display_(/*23.26*/if(u.getEmail != user.getEmail)/*23.57*/ {_display_(Seq[Any](format.raw/*23.59*/("""
+                            """),format.raw/*24.29*/("""<td><a href=""""),_display_(/*24.43*/routes/*24.49*/.HomeController.deleteUser(u.getEmail)),format.raw/*24.87*/("""" class="btn btn-danger btn-sm whitetext" id="user-delete-button">
                                 <span class="glyphicon glyphicon-trash"></span> Delete account
                             </a></td>
-                        """)))}/*26.26*/else/*26.30*/{_display_(Seq[Any](format.raw/*26.31*/("""
-                            """),format.raw/*27.29*/("""<td><button class="btn btn-success btn-sm whitetext" id="user-delete-button">
+                        """)))}/*27.26*/else/*27.30*/{_display_(Seq[Any](format.raw/*27.31*/("""
+                            """),format.raw/*28.29*/("""<td><button class="btn btn-success btn-sm whitetext" id="user-delete-button">
                                 <span class="glyphicon glyphicon-thumbs-up"></span> Logged In
                             </button></td>
-                        """)))}),format.raw/*30.26*/("""
-                    """),format.raw/*31.21*/("""</tr>
-                """)))}),format.raw/*32.18*/("""
-                """),format.raw/*33.17*/("""</tbody>
+                        """)))}),format.raw/*31.26*/("""
+                    """),format.raw/*32.21*/("""</tr>
+                """)))}),format.raw/*33.18*/("""
+                """),format.raw/*34.17*/("""</tbody>
             </table>
             <br>
             <br>
@@ -91,11 +92,11 @@ Seq[Any](format.raw/*1.55*/("""
 object viewAccount extends viewAccount_Scope0.viewAccount
               /*
                   -- GENERATED --
-                  DATE: Wed Apr 12 13:31:40 IST 2017
-                  SOURCE: /home/wdd/webapps/TicketStore/app/views/admin/viewAccount.scala.html
-                  HASH: 8fb2522cb74dc082c7167922e39d11a8d5838a73
-                  MATRIX: 798->1|946->54|974->57|1004->79|1043->81|1074->86|1627->612|1654->623|1694->625|1743->646|1804->680|1814->681|1844->690|1906->725|1916->726|1945->734|2023->785|2033->786|2066->798|2124->829|2164->860|2204->862|2261->891|2302->905|2317->911|2376->949|2620->1174|2633->1178|2672->1179|2729->1208|3000->1448|3049->1469|3103->1492|3148->1509
-                  LINES: 27->1|32->1|34->3|34->3|34->3|35->4|48->17|48->17|48->17|49->18|50->19|50->19|50->19|51->20|51->20|51->20|52->21|52->21|52->21|53->22|53->22|53->22|54->23|54->23|54->23|54->23|57->26|57->26|57->26|58->27|61->30|62->31|63->32|64->33
+                  DATE: Wed Apr 12 15:01:26 BST 2017
+                  SOURCE: C:/Users/Eileen/Desktop/TicketStore/app/views/admin/viewAccount.scala.html
+                  HASH: ce3453646e41d5573ebb65a0a4ca63bf0ce5db69
+                  MATRIX: 798->1|946->54|976->59|1006->81|1045->83|1077->89|1678->663|1705->674|1745->676|1795->698|1857->733|1867->734|1897->743|1960->779|1970->780|1999->788|2078->840|2088->841|2121->853|2180->885|2220->916|2260->918|2318->948|2359->962|2374->968|2433->1006|2680->1234|2693->1238|2732->1239|2790->1269|3064->1512|3114->1534|3169->1558|3215->1576
+                  LINES: 27->1|32->1|34->3|34->3|34->3|35->4|49->18|49->18|49->18|50->19|51->20|51->20|51->20|52->21|52->21|52->21|53->22|53->22|53->22|54->23|54->23|54->23|55->24|55->24|55->24|55->24|58->27|58->27|58->27|59->28|62->31|63->32|64->33|65->34
                   -- GENERATED --
               */
           
