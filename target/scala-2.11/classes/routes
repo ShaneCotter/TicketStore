@@ -6,6 +6,7 @@
 GET     /                           controllers.HomeController.index
 GET     /contact                    controllers.HomeController.contact
 GET     /viewContact                controllers.HomeController.viewContact
+GET     /viewOrders                controllers.HomeController.viewOrders
 GET     /events                     controllers.HomeController.events(cat:Long ?=0L)
 GET     /eventticket                controllers.HomeController.eventTicket(event:Long ?=0L)
 GET     /listEvents                 controllers.EventController.listEvents(cat:Long ?= 0, filter ?="")
@@ -55,6 +56,7 @@ POST    /addContactSubmit           controllers.HomeController.addContactSubmit
 GET     /viewAccounts               controllers.HomeController.viewAccounts
 GET     /deleteUser                 controllers.HomeController.deleteUser(id:String)
 GET     /markAsRead                 controllers.HomeController.markAsRead(id:Long,status:Boolean)
+GET     /markAsProccessed           controllers.HomeController.markAsProccessed(id:Long,status:Boolean)
 
 
 

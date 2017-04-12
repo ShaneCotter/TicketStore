@@ -31,6 +31,8 @@ public class ShopOrder extends Model {
     @ManyToOne
     private User user;
 
+    private boolean proccessed;
+
     // Default constructor
     public  ShopOrder() {
         OrderDate = new Date();
@@ -84,5 +86,13 @@ public class ShopOrder extends Model {
 
     public void setUser(User user) {
         this.user = user;
+    }
+
+    public boolean isProccessed() {
+        return proccessed;
+    }
+
+    public void setProccessed(boolean proccessed) {
+        this.proccessed = proccessed;
     }
 }

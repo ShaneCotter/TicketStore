@@ -156,6 +156,14 @@ public class HomeController extends Controller {
         return ok(viewAccount.render(accountsList, getUserFromSession()));
     }
 
+    @Security.Authenticated(Secured.class)
+    @With(AuthAdmin.class)
+    @Transactional
+    public Result viewOrders() {
+        List<ShopOrder> orderList = ShopOrder.findAll();
+        return ok(viewOrders.render(orderList, getUserFromSession()));
+    }
+
     public Result events(Long cat) {
 
         // Get list of events
@@ -237,6 +245,19 @@ public class HomeController extends Controller {
         c.save();
 
         return redirect(routes.HomeController.viewContact());
+    }
+
+    @Security.Authenticated(Secured.class)
+    @With(AuthAdmin.class)
+    @Transactional
+    public Result markAsProccessed(Long id , Boolean status){
+
+        ShopOrder o = ShopOrder.find.ref(id);
+        o.setProccessed(status);
+
+        o.save();
+
+        return redirect(routes.HomeController.viewOrders());
     }
 
     public Result signUp() {
