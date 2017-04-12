@@ -22,8 +22,8 @@
 
             <div class="col-lg-7 col-md-7 col-sm-6 col-xs-12" id = "eventInfo">
                 <h1>@e.getTitle , @e.getEventName</h1>
-                <p>Location here : @e.getLocation</p>
-                <p>Date/time here : @e.getDate</p>
+                <p>@e.getLocation</p>
+                <p>@e.getDate, @e.getTime</p>
             </div>
         </div>
 
@@ -36,7 +36,7 @@
                     <h2>@t.getTicketType</h2>
                     <div class="caption">
                         <p class="group inner list-group-item-text">
-                    <p>Ticket price : € @t.getPrice</p>
+                    <p>€@t.getPrice</p>
 
                         <div class="row">
                             <div class="col-xs-12 col-md-6">
