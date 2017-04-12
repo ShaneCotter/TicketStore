@@ -36,44 +36,48 @@ Seq[Any](format.raw/*3.64*/("""
 """),_display_(/*4.2*/main("Update Account", user)/*4.30*/ {_display_(Seq[Any](format.raw/*4.32*/("""
 
 
-    """),format.raw/*7.5*/("""<div class="container text-center" id="content">
-        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" id="user-order-display">
+    """),format.raw/*7.5*/("""<div class="container " id="content">
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center" id="user-order-display">
             <div class="row">
-                <h1>My Account</h1>
-                <a href = """"),_display_(/*11.29*/routes/*11.35*/.HomeController.myOrders()),format.raw/*11.61*/("""" class="btn btn-success btn-lg" id="user-order-button">
+                <a href = """"),_display_(/*10.29*/routes/*10.35*/.HomeController.myOrders()),format.raw/*10.61*/("""" class="btn btn-success btn-lg" id="user-order-button">
                     <span class="glyphicon glyphicon-calendar"></span>My Orders
                 </a>
 
-                <button type="button" class="btn btn-success btn-lg" id="user-account-button">
+                <a href = """"),_display_(/*14.29*/routes/*14.35*/.HomeController.updateDetails()),format.raw/*14.66*/("""" class="btn btn-success btn-lg" id="user-account-button">
                     <span class="glyphicon glyphicon-user"></span>Change Password
-                </button>
+                </a>
 
 
-                <a href = """"),_display_(/*20.29*/routes/*20.35*/.LoginController.deleteAccountPage()),format.raw/*20.71*/("""" type="button" class="btn btn-success btn-lg" id="user-delete-button">
+                <a href = """"),_display_(/*19.29*/routes/*19.35*/.LoginController.deleteAccountPage()),format.raw/*19.71*/("""" type="button" class="btn btn-success btn-lg" id="user-delete-button">
                     <span class="glyphicon glyphicon-trash"></span>Delete Account
                 </a>
 
-                <a href = """"),_display_(/*24.29*/routes/*24.35*/.HomeController.reportProblem()),format.raw/*24.66*/("""" type="button" class="btn btn-success btn-lg" id="user-problem-button">
+                <a href = """"),_display_(/*23.29*/routes/*23.35*/.HomeController.reportProblem()),format.raw/*23.66*/("""" type="button" class="btn btn-success btn-lg" id="user-problem-button">
                     <span class="glyphicon glyphicon-envelope"></span>Report problem
                 </a>
 
                 <hr>
             </div>
+            </div>
 
-            """),_display_(/*31.14*/form(action = routes.HomeController.updateDetailsSubmit(), 'method -> "POST", 'class -> "form-horizontal", 'role -> "form")/*31.137*/ {_display_(Seq[Any](format.raw/*31.139*/("""
-                """),_display_(/*32.18*/inputText(accountForm("email"), '_label -> "Email", 'class -> "form-control", 'maxlength -> "30", 'readonly -> "readonly")),format.raw/*32.140*/("""
-                """),_display_(/*33.18*/inputText(accountForm("name"), '_label -> "Name", 'class -> "form-control", 'maxlength -> "30")),format.raw/*33.113*/("""
-                """),_display_(/*34.18*/inputText(accountForm("password"), '_label -> "Email", 'type -> "password", 'class -> "form-control")),format.raw/*34.119*/("""
-                """),_display_(/*35.18*/inputText(accountForm("role"), '_label -> "", 'hidden -> "hidden")),format.raw/*35.84*/("""
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" id="user-order-display">
+            <div class="row">
 
-                """),format.raw/*37.17*/("""<div class="actions">
+            """),_display_(/*34.14*/form(action = routes.HomeController.updateDetailsSubmit(), 'method -> "POST", 'class -> "form-horizontal", 'role -> "form")/*34.137*/ {_display_(Seq[Any](format.raw/*34.139*/("""
+                """),_display_(/*35.18*/inputText(accountForm("email"), '_label -> "Email", 'class -> "form-control", 'maxlength -> "30", 'readonly -> "readonly")),format.raw/*35.140*/("""
+                """),_display_(/*36.18*/inputText(accountForm("name"), '_label -> "Name", 'class -> "form-control", 'maxlength -> "30")),format.raw/*36.113*/("""
+                """),_display_(/*37.18*/inputText(accountForm("password"), '_label -> "Email", 'type -> "password", 'class -> "form-control")),format.raw/*37.119*/("""
+                """),_display_(/*38.18*/inputText(accountForm("role"), '_label -> "", 'hidden -> "hidden")),format.raw/*38.84*/("""
+
+                """),format.raw/*40.17*/("""<div class="actions">
                     <input type="submit" value="Submit" class="btn btn-success">
-                    <a href=""""),_display_(/*39.31*/routes/*39.37*/.HomeController.contact()),format.raw/*39.62*/("""" class="btn btn-danger">Cancel</a>
+                    <a href=""""),_display_(/*42.31*/routes/*42.37*/.HomeController.contact()),format.raw/*42.62*/("""" class="btn btn-danger">Cancel</a>
 
                 </div>
-            """)))}),format.raw/*42.14*/("""
+            """)))}),format.raw/*45.14*/("""
 
-        """),format.raw/*44.9*/("""</div>
+        """),format.raw/*47.9*/("""</div>
+    </div>
     </div>
 
 """)))}))
@@ -97,11 +101,11 @@ Seq[Any](format.raw/*3.64*/("""
 object updateDetails extends updateDetails_Scope0.updateDetails_Scope1.updateDetails
               /*
                   -- GENERATED --
-                  DATE: Tue Apr 11 23:49:30 BST 2017
-                  SOURCE: C:/Users/Eileen/Desktop/TicketStore/app/views/account/updateDetails.scala.html
-                  HASH: e239985a05a28d930cfc120155edee9f94228caa
-                  MATRIX: 856->21|1013->83|1041->86|1077->114|1116->116|1152->126|1412->359|1427->365|1474->391|1902->792|1917->798|1974->834|2209->1042|2224->1048|2276->1079|2544->1320|2677->1443|2718->1445|2764->1464|2908->1586|2954->1605|3071->1700|3117->1719|3240->1820|3286->1839|3373->1905|3421->1925|3583->2060|3598->2066|3644->2091|3751->2167|3790->2179
-                  LINES: 30->3|35->3|36->4|36->4|36->4|39->7|43->11|43->11|43->11|52->20|52->20|52->20|56->24|56->24|56->24|63->31|63->31|63->31|64->32|64->32|65->33|65->33|66->34|66->34|67->35|67->35|69->37|71->39|71->39|71->39|74->42|76->44
+                  DATE: Wed Apr 12 12:46:45 IST 2017
+                  SOURCE: /home/wdd/webapps/projectBackup/app/views/account/updateDetails.scala.html
+                  HASH: c815d8782fe79e7973f96b5e085d5d3a30da3de4
+                  MATRIX: 856->19|1013->81|1040->83|1076->111|1115->113|1148->120|1369->314|1384->320|1431->346|1645->533|1660->539|1712->570|1931->762|1946->768|2003->804|2234->1008|2249->1014|2301->1045|2698->1415|2831->1538|2872->1540|2917->1558|3061->1680|3106->1698|3223->1793|3268->1811|3391->1912|3436->1930|3523->1996|3569->2014|3729->2147|3744->2153|3790->2178|3894->2251|3931->2261
+                  LINES: 30->3|35->3|36->4|36->4|36->4|39->7|42->10|42->10|42->10|46->14|46->14|46->14|51->19|51->19|51->19|55->23|55->23|55->23|66->34|66->34|66->34|67->35|67->35|68->36|68->36|69->37|69->37|70->38|70->38|72->40|74->42|74->42|74->42|77->45|79->47
                   -- GENERATED --
               */
           

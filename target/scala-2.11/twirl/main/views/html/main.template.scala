@@ -71,41 +71,40 @@ Seq[Any](format.raw/*7.57*/("""
                                 Admin Options
                                 <span class="caret"></span></button>
                             <ul class="dropdown-menu">
-                                <li><a href=""""),_display_(/*44.47*/routes/*44.53*/.HomeController.addEvent()),format.raw/*44.79*/("""">Add event</a></li>
-                                <li><a href=""""),_display_(/*45.47*/routes/*45.53*/.HomeController.addTicket()),format.raw/*45.80*/("""">Add ticket</a></li>
-                                <li><a href=""""),_display_(/*46.47*/routes/*46.53*/.HomeController.adminevents(0)),format.raw/*46.83*/("""">Manage events</a></li>
-                                <li><a href=""""),_display_(/*47.47*/routes/*47.53*/.HomeController.viewContact()),format.raw/*47.82*/("""">View contacts</a></li>
+                                <li><a href=""""),_display_(/*44.47*/routes/*44.53*/.HomeController.adminevents(0)),format.raw/*44.83*/("""">Manage Events</a></li>
+                                <li><a href=""""),_display_(/*45.47*/routes/*45.53*/.HomeController.viewContact()),format.raw/*45.82*/("""">Manage Contacts</a></li>
+                                <li><a href=""""),_display_(/*46.47*/routes/*46.53*/.HomeController.viewAccounts()),format.raw/*46.83*/("""">Manage Accounts</a></li>
                             </ul>
                         </div>
-                    """)))}),format.raw/*50.22*/("""
-                """)))}/*51.19*/else/*51.24*/{_display_(Seq[Any](format.raw/*51.25*/("""
-                    """),format.raw/*52.21*/("""<a href=""""),_display_(/*52.31*/routes/*52.37*/.EventController.listEvents()),format.raw/*52.66*/("""" class="btn btn-success btn-circle btn-md"><i class="glyphicon glyphicon-search"></i></a>
-                    <a href=""""),_display_(/*53.31*/routes/*53.37*/.LoginController.login()),format.raw/*53.61*/("""" class="btn btn-success btn-circle btn-md"><i class="glyphicon glyphicon-user"></i>
+                    """)))}),format.raw/*49.22*/("""
+                """)))}/*50.19*/else/*50.24*/{_display_(Seq[Any](format.raw/*50.25*/("""
+                    """),format.raw/*51.21*/("""<a href=""""),_display_(/*51.31*/routes/*51.37*/.EventController.listEvents()),format.raw/*51.66*/("""" class="btn btn-success btn-circle btn-md"><i class="glyphicon glyphicon-search"></i></a>
+                    <a href=""""),_display_(/*52.31*/routes/*52.37*/.LoginController.login()),format.raw/*52.61*/("""" class="btn btn-success btn-circle btn-md"><i class="glyphicon glyphicon-user"></i>
                         Login</a>
-                    <a href=""""),_display_(/*55.31*/routes/*55.37*/.HomeController.signUp()),format.raw/*55.61*/("""" class="btn btn-success btn-circle btn-md"><span class="glyphcon glyphicon-pencil"></span>
+                    <a href=""""),_display_(/*54.31*/routes/*54.37*/.HomeController.signUp()),format.raw/*54.61*/("""" class="btn btn-success btn-circle btn-md"><span class="glyphcon glyphicon-pencil"></span>
                         Sign up</a>
-                """)))}),format.raw/*57.18*/("""
-                """),format.raw/*58.17*/("""</div>
+                """)))}),format.raw/*56.18*/("""
+                """),format.raw/*57.17*/("""</div>
             </div>
         </div>
         <div id="container">
             <div class="row">
                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" id="nav-bottom">
-                    <a href=""""),_display_(/*64.31*/routes/*64.37*/.HomeController.index),format.raw/*64.58*/("""">HOME</a>
-                    <a href=""""),_display_(/*65.31*/routes/*65.37*/.HomeController.events(0)),format.raw/*65.62*/("""">EVENTS</a>
-                    <a href=""""),_display_(/*66.31*/routes/*66.37*/.HomeController.myAccount),format.raw/*66.62*/("""">MY ACCOUNT</a>
-                    <a href=""""),_display_(/*67.31*/routes/*67.37*/.HomeController.contact),format.raw/*67.60*/("""">CONTACT US</a>
+                    <a href=""""),_display_(/*63.31*/routes/*63.37*/.HomeController.index),format.raw/*63.58*/("""">HOME</a>
+                    <a href=""""),_display_(/*64.31*/routes/*64.37*/.HomeController.events(0)),format.raw/*64.62*/("""">EVENTS</a>
+                    <a href=""""),_display_(/*65.31*/routes/*65.37*/.HomeController.myAccount),format.raw/*65.62*/("""">MY ACCOUNT</a>
+                    <a href=""""),_display_(/*66.31*/routes/*66.37*/.HomeController.contact),format.raw/*66.60*/("""">CONTACT US</a>
                 </div>
             </div>
         </div>
     </div>
 
-    """),_display_(/*73.6*/content),format.raw/*73.13*/("""
+    """),_display_(/*72.6*/content),format.raw/*72.13*/("""
 
-    """),format.raw/*75.5*/("""<div class="container" id = "footer">
+    """),format.raw/*74.5*/("""<div class="container" id = "footer">
         <div class="row">
             <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 pull-left">
-                <a href=""""),_display_(/*78.27*/routes/*78.33*/.HomeController.index()),format.raw/*78.56*/(""""><h2>TC <span>EVENTS</h2></a>
+                <a href=""""),_display_(/*77.27*/routes/*77.33*/.HomeController.index()),format.raw/*77.56*/(""""><h2>TC <span>EVENTS</h2></a>
             </div>
             <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6" id="icon div">
                 <a href="#"><i class="fa fa-3x fa-fw fa-instagram text-inverse pull-right" id="icon"></i></a>
@@ -142,11 +141,11 @@ Seq[Any](format.raw/*7.57*/("""
 object main extends main_Scope0.main
               /*
                   -- GENERATED --
-                  DATE: Tue Apr 11 23:43:49 BST 2017
-                  SOURCE: C:/Users/Eileen/Desktop/TicketStore/app/views/main.scala.html
-                  HASH: 3bb248567015d187a1da50e13e4e35a2b507e91b
-                  MATRIX: 1020->261|1170->316|1200->320|1251->345|1277->350|1385->431|1400->437|1463->479|2621->1610|2636->1616|2680->1639|2940->1872|2965->1888|3005->1890|3055->1912|3092->1922|3107->1928|3157->1957|3306->2079|3321->2085|3364->2107|3520->2236|3535->2242|3581->2267|3756->2415|3797->2447|3837->2449|3891->2475|4321->2878|4336->2884|4383->2910|4478->2978|4493->2984|4541->3011|4637->3080|4652->3086|4703->3116|4802->3188|4817->3194|4867->3223|5012->3337|5050->3357|5063->3362|5102->3363|5152->3385|5189->3395|5204->3401|5254->3430|5403->3552|5418->3558|5463->3582|5641->3733|5656->3739|5701->3763|5879->3910|5925->3928|6174->4150|6189->4156|6231->4177|6300->4219|6315->4225|6361->4250|6432->4294|6447->4300|6493->4325|6568->4373|6583->4379|6627->4402|6750->4499|6778->4506|6813->4514|7005->4679|7020->4685|7064->4708
-                  LINES: 32->7|37->7|39->9|40->10|40->10|44->14|44->14|44->14|59->29|59->29|59->29|63->33|63->33|63->33|64->34|64->34|64->34|64->34|65->35|65->35|65->35|66->36|66->36|66->36|68->38|68->38|68->38|69->39|74->44|74->44|74->44|75->45|75->45|75->45|76->46|76->46|76->46|77->47|77->47|77->47|80->50|81->51|81->51|81->51|82->52|82->52|82->52|82->52|83->53|83->53|83->53|85->55|85->55|85->55|87->57|88->58|94->64|94->64|94->64|95->65|95->65|95->65|96->66|96->66|96->66|97->67|97->67|97->67|103->73|103->73|105->75|108->78|108->78|108->78
+                  DATE: Wed Apr 12 12:39:19 IST 2017
+                  SOURCE: /home/wdd/webapps/projectBackup/app/views/main.scala.html
+                  HASH: 7eabc385f04a2c09041bb7c610c8e2801de0f2bd
+                  MATRIX: 1015->255|1165->310|1193->312|1243->336|1269->341|1373->418|1388->424|1451->466|2594->1582|2609->1588|2653->1611|2909->1840|2934->1856|2974->1858|3023->1879|3060->1889|3075->1895|3125->1924|3273->2045|3288->2051|3331->2073|3486->2201|3501->2207|3547->2232|3720->2378|3761->2410|3801->2412|3854->2437|4279->2835|4294->2841|4345->2871|4443->2942|4458->2948|4508->2977|4608->3050|4623->3056|4674->3086|4818->3199|4855->3218|4868->3223|4907->3224|4956->3245|4993->3255|5008->3261|5058->3290|5206->3411|5221->3417|5266->3441|5442->3590|5457->3596|5502->3620|5678->3765|5723->3782|5966->3998|5981->4004|6023->4025|6091->4066|6106->4072|6152->4097|6222->4140|6237->4146|6283->4171|6357->4218|6372->4224|6416->4247|6533->4338|6561->4345|6594->4351|6783->4513|6798->4519|6842->4542
+                  LINES: 32->7|37->7|39->9|40->10|40->10|44->14|44->14|44->14|59->29|59->29|59->29|63->33|63->33|63->33|64->34|64->34|64->34|64->34|65->35|65->35|65->35|66->36|66->36|66->36|68->38|68->38|68->38|69->39|74->44|74->44|74->44|75->45|75->45|75->45|76->46|76->46|76->46|79->49|80->50|80->50|80->50|81->51|81->51|81->51|81->51|82->52|82->52|82->52|84->54|84->54|84->54|86->56|87->57|93->63|93->63|93->63|94->64|94->64|94->64|95->65|95->65|95->65|96->66|96->66|96->66|102->72|102->72|104->74|107->77|107->77|107->77
                   -- GENERATED --
               */
           

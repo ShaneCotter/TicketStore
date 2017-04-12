@@ -21,10 +21,10 @@
 
                         <div class="navbar-collapse collapse sidebar-navbar-collapse">
                             <ul class="nav navbar-nav">
-                                <h3 class="greentext ">EVENT CATEGORIES</h3>
+                                <h3 class="greentext text-center">EVENT CATEGORIES</h3>
                                 <div class="list-group">
 
-                                    <a href="@routes.EventController.listEvents(0, filter)" class="list-group-item">
+                                    <a href="@routes.HomeController.events(0)" class="list-group-item">
                                         All categories</a>
 
                                     @for(c <- categories) {

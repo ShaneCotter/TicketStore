@@ -1,0 +1,43 @@
+@(u: List[models.users.User], user: models.users.User)
+
+@main("Accounts", user) {
+    <!--..CONTENT..-->
+    <div class="container-fluid" id="content">
+        <h2>Registered Users</h2>
+        <div class="row omb_row-sm-offset-3">
+            <table class="table table-responsive table-bordered">
+                <thead>
+                    <tr>
+                        <th class="greentext">Email</th>
+                        <th class="greentext">Name</th>
+                        <th class="greentext">Password</th>
+                    </tr>
+                </thead>
+                <tbody>
+                @for(u <- u) {
+                    <tr>
+                        <td>@u.getEmail</td>
+                        <td>@u.getName</td>
+                        <td type="password">@u.getPassword</td>
+                        @if(u.getEmail != user.getEmail) {
+                            <td><a href="@routes.HomeController.deleteUser(u.getEmail)" class="btn btn-danger btn-sm whitetext" id="user-delete-button">
+                                <span class="glyphicon glyphicon-trash"></span> Delete account
+                            </a></td>
+                        }else{
+                            <td><button class="btn btn-success btn-sm whitetext" id="user-delete-button">
+                                <span class="glyphicon glyphicon-thumbs-up"></span> Logged In
+                            </button></td>
+                        }
+                    </tr>
+                }
+                </tbody>
+            </table>
+            <br>
+            <br>
+        </div>
+
+
+    </div>
+        <!--END CONTENT-->
+
+}

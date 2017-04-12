@@ -25,6 +25,7 @@ create table contact (
   email                         varchar(255),
   phone                         integer,
   message                       varchar(255),
+  read                          boolean,
   constraint pk_contact primary key (id)
 );
 create sequence contact_seq;
@@ -52,6 +53,15 @@ create table order_item (
 );
 create sequence order_item_seq;
 
+create table order_ticket (
+  ticket_id                     bigint not null,
+  order_id                      bigint,
+  qty                           integer,
+  cost                          double,
+  constraint pk_order_ticket primary key (ticket_id)
+);
+create sequence order_ticket_seq;
+
 create table shop_order (
   id                            bigint not null,
   order_date                    timestamp,
@@ -77,15 +87,6 @@ create table user (
   password                      varchar(255),
   constraint pk_user primary key (email)
 );
-
-create table order_ticket (
-  ticket_id                     bigint not null,
-  order_id                      bigint,
-  qty                           integer,
-  cost                          double,
-  constraint pk_order_ticket primary key (ticket_id)
-);
-create sequence order_ticket_seq;
 
 alter table basket add constraint fk_basket_user_email foreign key (user_email) references user (email) on delete restrict on update restrict;
 
@@ -145,6 +146,9 @@ drop sequence if exists event_seq;
 drop table if exists order_item;
 drop sequence if exists order_item_seq;
 
+drop table if exists order_ticket;
+drop sequence if exists order_ticket_seq;
+
 drop table if exists shop_order;
 drop sequence if exists shop_order_seq;
 
@@ -152,7 +156,4 @@ drop table if exists ticket;
 drop sequence if exists ticket_seq;
 
 drop table if exists user;
-
-drop table if exists order_ticket;
-drop sequence if exists order_ticket_seq;
 

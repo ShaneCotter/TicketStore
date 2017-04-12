@@ -148,6 +148,14 @@ public class HomeController extends Controller {
         return ok(viewContact.render(contactList, getUserFromSession()));
     }
 
+    @Security.Authenticated(Secured.class)
+    @With(AuthAdmin.class)
+    @Transactional
+    public Result viewAccounts() {
+        List<User> accountsList = User.findAll();
+        return ok(viewAccount.render(accountsList, getUserFromSession()));
+    }
+
     public Result events(Long cat) {
 
         // Get list of events
@@ -210,11 +218,25 @@ public class HomeController extends Controller {
 
         Contact newContact = contactSubmitForm.get();
 
+        newContact.setRead(false);
         newContact.save();
 
         flash("success", "Message has been sent");
 
         return redirect(controllers.routes.HomeController.contact());
+    }
+
+    @Security.Authenticated(Secured.class)
+    @With(AuthAdmin.class)
+    @Transactional
+    public Result markAsRead(Long id , Boolean status){
+
+        Contact c = Contact.find.ref(id);
+        c.setRead(status);
+
+        c.save();
+
+        return redirect(routes.HomeController.viewContact());
     }
 
     public Result signUp() {
@@ -271,6 +293,7 @@ public class HomeController extends Controller {
 
         return redirect(routes.HomeController.admineventTicket(id));
     }
+
 
     @Security.Authenticated(Secured.class)
     @Transactional
@@ -366,5 +389,19 @@ public class HomeController extends Controller {
         return "image file missing";
     }
 
+
+    @Security.Authenticated(Secured.class)
+    @With(AuthAdmin.class)
+    @Transactional
+    public Result deleteUser(String id) {
+
+        User.find.ref(id).delete();
+
+        flash("success", "Account has been deleted");
+
+        List<User> accountsList = User.findAll();
+
+        return redirect(routes.HomeController.viewAccounts());
+    }
 
 }

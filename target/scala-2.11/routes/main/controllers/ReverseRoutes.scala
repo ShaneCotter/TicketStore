@@ -1,7 +1,7 @@
 
 // @GENERATOR:play-routes-compiler
-// @SOURCE:C:/Users/Eileen/Desktop/TicketStore/conf/routes
-// @DATE:Tue Apr 11 23:43:48 BST 2017
+// @SOURCE:/home/wdd/webapps/projectBackup/conf/routes
+// @DATE:Wed Apr 12 12:32:00 IST 2017
 
 import play.api.mvc.{ QueryStringBindable, PathBindable, Call, JavascriptLiteral }
 import play.core.routing.{ HandlerDef, ReverseRouteContext, queryString, dynamicString }
@@ -13,14 +13,14 @@ import _root_.play.libs.F
 // @LINE:6
 package controllers {
 
-  // @LINE:58
+  // @LINE:62
   class ReverseAssets(_prefix: => String) {
     def _defaultPrefix: String = {
       if (_prefix.endsWith("/")) "" else "/"
     }
 
   
-    // @LINE:58
+    // @LINE:62
     def versioned(file:Asset): Call = {
       implicit val _rrc = new ReverseRouteContext(Map(("path", "/public")))
       Call("GET", _prefix + { _defaultPrefix } + "assets/" + implicitly[PathBindable[Asset]].unbind("file", file))
@@ -152,6 +152,12 @@ package controllers {
       Call("POST", _prefix + { _defaultPrefix } + "addContactSubmit")
     }
   
+    // @LINE:57
+    def markAsRead(id:Long, status:Boolean): Call = {
+      import ReverseRouteContext.empty
+      Call("GET", _prefix + { _defaultPrefix } + "markAsRead" + queryString(List(Some(implicitly[QueryStringBindable[Long]].unbind("id", id)), Some(implicitly[QueryStringBindable[Boolean]].unbind("status", status)))))
+    }
+  
     // @LINE:9
     def events(cat:Long = 0L): Call = {
       import ReverseRouteContext.empty
@@ -170,6 +176,12 @@ package controllers {
       Call("GET", _prefix + { _defaultPrefix } + "admineventticket" + queryString(List(if(event == 0L) None else Some(implicitly[QueryStringBindable[Long]].unbind("event", event)))))
     }
   
+    // @LINE:55
+    def viewAccounts(): Call = {
+      import ReverseRouteContext.empty
+      Call("GET", _prefix + { _defaultPrefix } + "viewAccounts")
+    }
+  
     // @LINE:44
     def addEventSubmit(): Call = {
       import ReverseRouteContext.empty
@@ -180,6 +192,12 @@ package controllers {
     def reportProblem(): Call = {
       import ReverseRouteContext.empty
       Call("GET", _prefix + { _defaultPrefix } + "reportProblem")
+    }
+  
+    // @LINE:56
+    def deleteUser(id:String): Call = {
+      import ReverseRouteContext.empty
+      Call("GET", _prefix + { _defaultPrefix } + "deleteUser" + queryString(List(Some(implicitly[QueryStringBindable[String]].unbind("id", id)))))
     }
   
     // @LINE:6

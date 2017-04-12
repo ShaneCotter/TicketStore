@@ -61,7 +61,7 @@ public class User extends Model {
     public static Finder<String,User> find = new Finder<String,User>(User.class);
 
     public static List<User> findAll(){
-        return User.findAll();
+        return User.find.all();
     }
 
     public static User authenticate(String email,String password){

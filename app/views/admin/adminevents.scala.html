@@ -20,7 +20,7 @@
                         </div>
                         <div class="navbar-collapse collapse sidebar-navbar-collapse">
                             <ul class="nav navbar-nav">
-                                <h3 class="greentext ">EVENT CATEGORIES</h3>
+                                <h3 class="greentext text-center">EVENT CATEGORIES</h3>
                                 <div class="list-group">
 
                                     <a href="@routes.HomeController.adminevents(0)" class="list-group-item">All categories</a>
@@ -53,6 +53,14 @@
                     </div>
                 }
                 <div class="row"><br>
+                    <a href = "@routes.HomeController.addEvent()" type="button" class="btn btn-success btn-md" >
+                        <span class="glyphicon glyphicon-plus"></span>Add Event
+                    </a>
+
+                    <a href = "@routes.HomeController.addTicket()" type="button" class="btn btn-success btn-md" >
+                        <span class="glyphicon glyphicon-plus"></span>Add Ticket
+                    </a>
+                    <hr>
                     <strong>Display</strong>
                     <div class="btn-group">
                         <a href="#" id="list" class="btn btn-default btn-sm"><span class="glyphicon glyphicon-th-list">
