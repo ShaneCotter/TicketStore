@@ -107,6 +107,7 @@ public class ShoppingCtrl extends Controller {
         order.setItems(u.getBasket().getBasketItems());
 
         // Save the order now to generate a new id for this order
+        order.setProccessed(false);
         order.save();
 
         // Move items from basket to order

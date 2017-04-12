@@ -1,11 +1,11 @@
-[0m[[0minfo[0m] [0mUpdating {file:/home/wdd/webapps/projectBackup/project/}projectbackup-build...[0m
-[0m[[0mdebug[0m] [0m:: resolving dependencies :: default#projectbackup-build;0.1-SNAPSHOT[0m
+[0m[[0minfo[0m] [0mUpdating {file:/home/wdd/webapps/TicketStore/project/}ticketstore-build...[0m
+[0m[[0mdebug[0m] [0m:: resolving dependencies :: default#ticketstore-build;0.1-SNAPSHOT[0m
 [0m[[0mdebug[0m] [0m	confs: [compile, runtime, test, provided, optional, compile-internal, runtime-internal, test-internal, plugin, sources, docs, pom, scala-tool][0m
 [0m[[0mdebug[0m] [0m	validate = true[0m
 [0m[[0mdebug[0m] [0m	refresh = false[0m
 [0m[[0mdebug[0m] [0mresolving dependencies for configuration 'compile'[0m
-[0m[[0mdebug[0m] [0m== resolving dependencies for default#projectbackup-build;0.1-SNAPSHOT [compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#projectbackup-build;0.1-SNAPSHOT->com.typesafe.play#sbt-plugin;2.5.10 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for default#ticketstore-build;0.1-SNAPSHOT [compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#ticketstore-build;0.1-SNAPSHOT->com.typesafe.play#sbt-plugin;2.5.10 [compile->default(compile)][0m
 [0m[[0minfo[0m] [0mResolving com.typesafe.play#sbt-plugin;2.5.10 ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: com.typesafe.play#sbt-plugin;2.5.10 {compile=[default(compile)]}[0m
 [0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: com.typesafe.play#sbt-plugin;2.5.10[0m
@@ -1780,7 +1780,7 @@
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.4 {provided=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.6 {provided=[default(compile)]}[0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.4 {provided=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.6 {provided=[default(compile)]}[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-js-engine;1.1.3->com.typesafe.sbt#sbt-web;1.3.0 [compile->default(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#projectbackup-build;0.1-SNAPSHOT->com.typesafe.sbt#sbt-coffeescript;1.0.0 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#ticketstore-build;0.1-SNAPSHOT->com.typesafe.sbt#sbt-coffeescript;1.0.0 [compile->default(compile)][0m
 [0m[[0minfo[0m] [0mResolving com.typesafe.sbt#sbt-coffeescript;1.0.0 ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: com.typesafe.sbt#sbt-coffeescript;1.0.0 {compile=[default(compile)]}[0m
 [0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: com.typesafe.sbt#sbt-coffeescript;1.0.0[0m
@@ -1810,7 +1810,7 @@
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.4 {provided=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.6 {provided=[default(compile)]}[0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.4 {provided=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.6 {provided=[default(compile)]}[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-coffeescript;1.0.0->com.typesafe.sbt#sbt-js-engine;1.1.3 [compile->default(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#projectbackup-build;0.1-SNAPSHOT->com.typesafe.sbt#sbt-less;1.1.0 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#ticketstore-build;0.1-SNAPSHOT->com.typesafe.sbt#sbt-less;1.1.0 [compile->default(compile)][0m
 [0m[[0minfo[0m] [0mResolving com.typesafe.sbt#sbt-less;1.1.0 ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: com.typesafe.sbt#sbt-less;1.1.0 {compile=[default(compile)]}[0m
 [0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: com.typesafe.sbt#sbt-less;1.1.0[0m
@@ -1882,7 +1882,7 @@
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.4 {provided=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.6 {provided=[default(compile)]}[0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.4 {provided=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.6 {provided=[default(compile)]}[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-less;1.1.0->com.typesafe.sbt#sbt-js-engine;1.1.3 [compile->default(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#projectbackup-build;0.1-SNAPSHOT->com.typesafe.sbt#sbt-jshint;1.0.4 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#ticketstore-build;0.1-SNAPSHOT->com.typesafe.sbt#sbt-jshint;1.0.4 [compile->default(compile)][0m
 [0m[[0minfo[0m] [0mResolving com.typesafe.sbt#sbt-jshint;1.0.4 ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: com.typesafe.sbt#sbt-jshint;1.0.4 {compile=[default(compile)]}[0m
 [0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: com.typesafe.sbt#sbt-jshint;1.0.4[0m
@@ -1935,7 +1935,7 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-jshint;1.0.4->com.typesafe.sbt#sbt-js-engine;1.1.3 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.5 {provided=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.6 {provided=[default(compile)]}[0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.5 {provided=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.6 {provided=[default(compile)]}[0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#projectbackup-build;0.1-SNAPSHOT->com.typesafe.sbt#sbt-rjs;1.0.8 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#ticketstore-build;0.1-SNAPSHOT->com.typesafe.sbt#sbt-rjs;1.0.8 [compile->default(compile)][0m
 [0m[[0minfo[0m] [0mResolving com.typesafe.sbt#sbt-rjs;1.0.8 ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: com.typesafe.sbt#sbt-rjs;1.0.8 {compile=[default(compile)]}[0m
 [0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: com.typesafe.sbt#sbt-rjs;1.0.8[0m
@@ -1970,7 +1970,7 @@
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.4 {provided=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.6 {provided=[default(compile)]}[0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.4 {provided=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.6 {provided=[default(compile)]}[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-js-engine;1.1.4->com.typesafe.sbt#sbt-web;1.3.0 [compile->default(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#projectbackup-build;0.1-SNAPSHOT->com.typesafe.sbt#sbt-digest;1.1.1 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#ticketstore-build;0.1-SNAPSHOT->com.typesafe.sbt#sbt-digest;1.1.1 [compile->default(compile)][0m
 [0m[[0minfo[0m] [0mResolving com.typesafe.sbt#sbt-digest;1.1.1 ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: com.typesafe.sbt#sbt-digest;1.1.1 {compile=[default(compile)]}[0m
 [0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: com.typesafe.sbt#sbt-digest;1.1.1[0m
@@ -1979,7 +1979,7 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-digest;1.1.1->com.typesafe.sbt#sbt-js-engine;1.1.4 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.5 {provided=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.6 {provided=[default(compile)]}[0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.5 {provided=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.6 {provided=[default(compile)]}[0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#projectbackup-build;0.1-SNAPSHOT->com.typesafe.sbt#sbt-mocha;1.1.0 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#ticketstore-build;0.1-SNAPSHOT->com.typesafe.sbt#sbt-mocha;1.1.0 [compile->default(compile)][0m
 [0m[[0minfo[0m] [0mResolving com.typesafe.sbt#sbt-mocha;1.1.0 ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: com.typesafe.sbt#sbt-mocha;1.1.0 {compile=[default(compile)]}[0m
 [0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: com.typesafe.sbt#sbt-mocha;1.1.0[0m
@@ -2023,7 +2023,7 @@
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.4 {provided=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.6 {provided=[default(compile)]}[0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.4 {provided=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.6 {provided=[default(compile)]}[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-mocha;1.1.0->com.typesafe.sbt#sbt-js-engine;1.1.4 [compile->default(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#projectbackup-build;0.1-SNAPSHOT->org.irundaia.sbt#sbt-sassify;1.4.6 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#ticketstore-build;0.1-SNAPSHOT->org.irundaia.sbt#sbt-sassify;1.4.6 [compile->default(compile)][0m
 [0m[[0minfo[0m] [0mResolving org.irundaia.sbt#sbt-sassify;1.4.6 ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.irundaia.sbt#sbt-sassify;1.4.6 {compile=[default(compile)]}[0m
 [0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.irundaia.sbt#sbt-sassify;1.4.6[0m
@@ -2418,7 +2418,7 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies com.nativelibs4java#jnaerator-runtime;0.12->net.java.dev.jna#jna;4.1.0 [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.nativelibs4java#jnaerator-runtime;0.12->net.java.dev.jna#jna;4.1.0 [runtime->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.irundaia.sbt#sbt-sassify;1.4.6->com.nativelibs4java#jnaerator-runtime;0.12 [compile->master][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#projectbackup-build;0.1-SNAPSHOT->com.typesafe.sbt#sbt-play-enhancer;1.1.0 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#ticketstore-build;0.1-SNAPSHOT->com.typesafe.sbt#sbt-play-enhancer;1.1.0 [compile->default(compile)][0m
 [0m[[0minfo[0m] [0mResolving com.typesafe.sbt#sbt-play-enhancer;1.1.0 ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: com.typesafe.sbt#sbt-play-enhancer;1.1.0 {compile=[default(compile)]}[0m
 [0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: com.typesafe.sbt#sbt-play-enhancer;1.1.0[0m
@@ -2446,7 +2446,7 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-enhancer;1.1.0->org.javassist#javassist;3.18.2-GA [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-enhancer;1.1.0->org.javassist#javassist;3.18.2-GA [runtime->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-play-enhancer;1.1.0->com.typesafe.play#play-enhancer;1.1.0 [compile->master][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#projectbackup-build;0.1-SNAPSHOT->com.typesafe.sbt#sbt-play-ebean;3.0.2 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#ticketstore-build;0.1-SNAPSHOT->com.typesafe.sbt#sbt-play-ebean;3.0.2 [compile->default(compile)][0m
 [0m[[0minfo[0m] [0mResolving com.typesafe.sbt#sbt-play-ebean;3.0.2 ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: com.typesafe.sbt#sbt-play-ebean;3.0.2 {compile=[default(compile)]}[0m
 [0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: com.typesafe.sbt#sbt-play-ebean;3.0.2[0m
@@ -2477,9 +2477,9 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-play-ebean;3.0.2->com.typesafe.play#sbt-plugin;2.5.2 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-play-ebean;3.0.2->com.typesafe.play#sbt-plugin;2.5.10 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0mresolving dependencies for configuration 'runtime'[0m
-[0m[[0mdebug[0m] [0m== resolving dependencies for default#projectbackup-build;0.1-SNAPSHOT [runtime][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies for default#projectbackup-build;0.1-SNAPSHOT [compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#projectbackup-build;0.1-SNAPSHOT->com.typesafe.play#sbt-plugin;2.5.10 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for default#ticketstore-build;0.1-SNAPSHOT [runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for default#ticketstore-build;0.1-SNAPSHOT [compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#ticketstore-build;0.1-SNAPSHOT->com.typesafe.play#sbt-plugin;2.5.10 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.5.10->com.typesafe.play#sbt-routes-compiler_2.10;2.5.10 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.5.10->com.typesafe.play#sbt-routes-compiler_2.10;2.5.10 [compile->runtime][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.5.10->com.typesafe.play#sbt-routes-compiler_2.10;2.5.10 [compile->compile][0m
@@ -3817,7 +3817,7 @@
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.4 {provided=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.6 {provided=[default(compile)]}[0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.4 {provided=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.6 {provided=[default(compile)]}[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-js-engine;1.1.3->com.typesafe.sbt#sbt-web;1.3.0 [compile->default(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#projectbackup-build;0.1-SNAPSHOT->com.typesafe.sbt#sbt-coffeescript;1.0.0 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#ticketstore-build;0.1-SNAPSHOT->com.typesafe.sbt#sbt-coffeescript;1.0.0 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.4 {provided=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.6 {provided=[default(compile)]}[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-coffeescript;1.0.0->org.webjars#coffee-script-node;1.7.1 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.4 {provided=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.6 {provided=[default(compile)]}[0m
@@ -3835,7 +3835,7 @@
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.4 {provided=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.6 {provided=[default(compile)]}[0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.4 {provided=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.6 {provided=[default(compile)]}[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-coffeescript;1.0.0->com.typesafe.sbt#sbt-js-engine;1.1.3 [compile->default(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#projectbackup-build;0.1-SNAPSHOT->com.typesafe.sbt#sbt-less;1.1.0 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#ticketstore-build;0.1-SNAPSHOT->com.typesafe.sbt#sbt-less;1.1.0 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.4 {provided=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.6 {provided=[default(compile)]}[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-less;1.1.0->org.webjars#less-node;2.5.0 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.4 {provided=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.6 {provided=[default(compile)]}[0m
@@ -3877,7 +3877,7 @@
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.4 {provided=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.6 {provided=[default(compile)]}[0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.4 {provided=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.6 {provided=[default(compile)]}[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-less;1.1.0->com.typesafe.sbt#sbt-js-engine;1.1.3 [compile->default(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#projectbackup-build;0.1-SNAPSHOT->com.typesafe.sbt#sbt-jshint;1.0.4 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#ticketstore-build;0.1-SNAPSHOT->com.typesafe.sbt#sbt-jshint;1.0.4 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.5 {provided=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.6 {provided=[default(compile)]}[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-jshint;1.0.4->org.webjars#jshint-node;2.6.3-2 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.5 {provided=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.6 {provided=[default(compile)]}[0m
@@ -3906,7 +3906,7 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-jshint;1.0.4->com.typesafe.sbt#sbt-js-engine;1.1.3 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.5 {provided=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.6 {provided=[default(compile)]}[0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.5 {provided=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.6 {provided=[default(compile)]}[0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#projectbackup-build;0.1-SNAPSHOT->com.typesafe.sbt#sbt-rjs;1.0.8 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#ticketstore-build;0.1-SNAPSHOT->com.typesafe.sbt#sbt-rjs;1.0.8 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-rjs;1.0.8->org.webjars#rjs;2.2.0 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-rjs;1.0.8->org.webjars#rjs;2.2.0 [compile->runtime][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-rjs;1.0.8->org.webjars#rjs;2.2.0 [compile->compile][0m
@@ -3929,12 +3929,12 @@
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.4 {provided=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.6 {provided=[default(compile)]}[0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.4 {provided=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.6 {provided=[default(compile)]}[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-js-engine;1.1.4->com.typesafe.sbt#sbt-web;1.3.0 [compile->default(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#projectbackup-build;0.1-SNAPSHOT->com.typesafe.sbt#sbt-digest;1.1.1 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#ticketstore-build;0.1-SNAPSHOT->com.typesafe.sbt#sbt-digest;1.1.1 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.5 {provided=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.6 {provided=[default(compile)]}[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-digest;1.1.1->com.typesafe.sbt#sbt-js-engine;1.1.4 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.5 {provided=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.6 {provided=[default(compile)]}[0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.5 {provided=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.6 {provided=[default(compile)]}[0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#projectbackup-build;0.1-SNAPSHOT->com.typesafe.sbt#sbt-mocha;1.1.0 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#ticketstore-build;0.1-SNAPSHOT->com.typesafe.sbt#sbt-mocha;1.1.0 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.4 {provided=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.6 {provided=[default(compile)]}[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-mocha;1.1.0->org.webjars#mocha;1.17.1 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.4 {provided=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.6 {provided=[default(compile)]}[0m
@@ -3958,7 +3958,7 @@
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.4 {provided=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.6 {provided=[default(compile)]}[0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.4 {provided=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.6 {provided=[default(compile)]}[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-mocha;1.1.0->com.typesafe.sbt#sbt-js-engine;1.1.4 [compile->default(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#projectbackup-build;0.1-SNAPSHOT->org.irundaia.sbt#sbt-sassify;1.4.6 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#ticketstore-build;0.1-SNAPSHOT->org.irundaia.sbt#sbt-sassify;1.4.6 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.irundaia.sbt#sbt-sassify;1.4.6->com.typesafe.sbt#sbt-web;1.2.2 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.irundaia.sbt#sbt-sassify;1.4.6->com.typesafe.sbt#sbt-web;1.3.0 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.irundaia.sbt#sbt-sassify;1.4.6->com.typesafe.play#play-json_2.10;2.4.6 [compile->default(compile)][0m
@@ -4265,7 +4265,7 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies com.nativelibs4java#jnaerator-runtime;0.12->net.java.dev.jna#jna;4.1.0 [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.nativelibs4java#jnaerator-runtime;0.12->net.java.dev.jna#jna;4.1.0 [runtime->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.irundaia.sbt#sbt-sassify;1.4.6->com.nativelibs4java#jnaerator-runtime;0.12 [compile->master][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#projectbackup-build;0.1-SNAPSHOT->com.typesafe.sbt#sbt-play-enhancer;1.1.0 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#ticketstore-build;0.1-SNAPSHOT->com.typesafe.sbt#sbt-play-enhancer;1.1.0 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.4 {provided=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.6 {provided=[default(compile)]}[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-play-enhancer;1.1.0->com.typesafe.play#play-enhancer;1.1.0 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.4 {provided=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.6 {provided=[default(compile)]}[0m
@@ -4279,7 +4279,7 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-enhancer;1.1.0->org.javassist#javassist;3.18.2-GA [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-enhancer;1.1.0->org.javassist#javassist;3.18.2-GA [runtime->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-play-enhancer;1.1.0->com.typesafe.play#play-enhancer;1.1.0 [compile->master][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#projectbackup-build;0.1-SNAPSHOT->com.typesafe.sbt#sbt-play-ebean;3.0.2 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#ticketstore-build;0.1-SNAPSHOT->com.typesafe.sbt#sbt-play-ebean;3.0.2 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-play-ebean;3.0.2->org.avaje.ebeanorm#avaje-ebeanorm-agent;4.9.2 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-play-ebean;3.0.2->org.avaje.ebeanorm#avaje-ebeanorm-agent;4.9.2 [compile->runtime][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-play-ebean;3.0.2->org.avaje.ebeanorm#avaje-ebeanorm-agent;4.9.2 [compile->compile][0m
@@ -4296,10 +4296,10 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-play-ebean;3.0.2->com.typesafe.play#sbt-plugin;2.5.2 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-play-ebean;3.0.2->com.typesafe.play#sbt-plugin;2.5.10 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0mresolving dependencies for configuration 'test'[0m
-[0m[[0mdebug[0m] [0m== resolving dependencies for default#projectbackup-build;0.1-SNAPSHOT [test][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies for default#projectbackup-build;0.1-SNAPSHOT [runtime][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies for default#projectbackup-build;0.1-SNAPSHOT [compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#projectbackup-build;0.1-SNAPSHOT->com.typesafe.play#sbt-plugin;2.5.10 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for default#ticketstore-build;0.1-SNAPSHOT [test][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for default#ticketstore-build;0.1-SNAPSHOT [runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for default#ticketstore-build;0.1-SNAPSHOT [compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#ticketstore-build;0.1-SNAPSHOT->com.typesafe.play#sbt-plugin;2.5.10 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.5.10->com.typesafe.play#sbt-routes-compiler_2.10;2.5.10 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.5.10->com.typesafe.play#sbt-routes-compiler_2.10;2.5.10 [compile->runtime][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.5.10->com.typesafe.play#sbt-routes-compiler_2.10;2.5.10 [compile->compile][0m
@@ -5637,7 +5637,7 @@
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.4 {provided=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.6 {provided=[default(compile)]}[0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.4 {provided=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.6 {provided=[default(compile)]}[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-js-engine;1.1.3->com.typesafe.sbt#sbt-web;1.3.0 [compile->default(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#projectbackup-build;0.1-SNAPSHOT->com.typesafe.sbt#sbt-coffeescript;1.0.0 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#ticketstore-build;0.1-SNAPSHOT->com.typesafe.sbt#sbt-coffeescript;1.0.0 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.4 {provided=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.6 {provided=[default(compile)]}[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-coffeescript;1.0.0->org.webjars#coffee-script-node;1.7.1 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.4 {provided=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.6 {provided=[default(compile)]}[0m
@@ -5655,7 +5655,7 @@
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.4 {provided=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.6 {provided=[default(compile)]}[0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.4 {provided=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.6 {provided=[default(compile)]}[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-coffeescript;1.0.0->com.typesafe.sbt#sbt-js-engine;1.1.3 [compile->default(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#projectbackup-build;0.1-SNAPSHOT->com.typesafe.sbt#sbt-less;1.1.0 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#ticketstore-build;0.1-SNAPSHOT->com.typesafe.sbt#sbt-less;1.1.0 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.4 {provided=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.6 {provided=[default(compile)]}[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-less;1.1.0->org.webjars#less-node;2.5.0 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.4 {provided=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.6 {provided=[default(compile)]}[0m
@@ -5697,7 +5697,7 @@
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.4 {provided=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.6 {provided=[default(compile)]}[0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.4 {provided=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.6 {provided=[default(compile)]}[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-less;1.1.0->com.typesafe.sbt#sbt-js-engine;1.1.3 [compile->default(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#projectbackup-build;0.1-SNAPSHOT->com.typesafe.sbt#sbt-jshint;1.0.4 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#ticketstore-build;0.1-SNAPSHOT->com.typesafe.sbt#sbt-jshint;1.0.4 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.5 {provided=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.6 {provided=[default(compile)]}[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-jshint;1.0.4->org.webjars#jshint-node;2.6.3-2 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.5 {provided=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.6 {provided=[default(compile)]}[0m
@@ -5726,7 +5726,7 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-jshint;1.0.4->com.typesafe.sbt#sbt-js-engine;1.1.3 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.5 {provided=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.6 {provided=[default(compile)]}[0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.5 {provided=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.6 {provided=[default(compile)]}[0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#projectbackup-build;0.1-SNAPSHOT->com.typesafe.sbt#sbt-rjs;1.0.8 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#ticketstore-build;0.1-SNAPSHOT->com.typesafe.sbt#sbt-rjs;1.0.8 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-rjs;1.0.8->org.webjars#rjs;2.2.0 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-rjs;1.0.8->org.webjars#rjs;2.2.0 [compile->runtime][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-rjs;1.0.8->org.webjars#rjs;2.2.0 [compile->compile][0m
@@ -5749,12 +5749,12 @@
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.4 {provided=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.6 {provided=[default(compile)]}[0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.4 {provided=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.6 {provided=[default(compile)]}[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-js-engine;1.1.4->com.typesafe.sbt#sbt-web;1.3.0 [compile->default(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#projectbackup-build;0.1-SNAPSHOT->com.typesafe.sbt#sbt-digest;1.1.1 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#ticketstore-build;0.1-SNAPSHOT->com.typesafe.sbt#sbt-digest;1.1.1 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.5 {provided=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.6 {provided=[default(compile)]}[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-digest;1.1.1->com.typesafe.sbt#sbt-js-engine;1.1.4 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.5 {provided=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.6 {provided=[default(compile)]}[0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.5 {provided=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.6 {provided=[default(compile)]}[0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#projectbackup-build;0.1-SNAPSHOT->com.typesafe.sbt#sbt-mocha;1.1.0 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#ticketstore-build;0.1-SNAPSHOT->com.typesafe.sbt#sbt-mocha;1.1.0 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.4 {provided=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.6 {provided=[default(compile)]}[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-mocha;1.1.0->org.webjars#mocha;1.17.1 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.4 {provided=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.6 {provided=[default(compile)]}[0m
@@ -5778,7 +5778,7 @@
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.4 {provided=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.6 {provided=[default(compile)]}[0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.4 {provided=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.6 {provided=[default(compile)]}[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-mocha;1.1.0->com.typesafe.sbt#sbt-js-engine;1.1.4 [compile->default(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#projectbackup-build;0.1-SNAPSHOT->org.irundaia.sbt#sbt-sassify;1.4.6 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#ticketstore-build;0.1-SNAPSHOT->org.irundaia.sbt#sbt-sassify;1.4.6 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.irundaia.sbt#sbt-sassify;1.4.6->com.typesafe.sbt#sbt-web;1.2.2 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.irundaia.sbt#sbt-sassify;1.4.6->com.typesafe.sbt#sbt-web;1.3.0 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.irundaia.sbt#sbt-sassify;1.4.6->com.typesafe.play#play-json_2.10;2.4.6 [compile->default(compile)][0m
@@ -6085,7 +6085,7 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies com.nativelibs4java#jnaerator-runtime;0.12->net.java.dev.jna#jna;4.1.0 [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.nativelibs4java#jnaerator-runtime;0.12->net.java.dev.jna#jna;4.1.0 [runtime->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.irundaia.sbt#sbt-sassify;1.4.6->com.nativelibs4java#jnaerator-runtime;0.12 [compile->master][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#projectbackup-build;0.1-SNAPSHOT->com.typesafe.sbt#sbt-play-enhancer;1.1.0 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#ticketstore-build;0.1-SNAPSHOT->com.typesafe.sbt#sbt-play-enhancer;1.1.0 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.4 {provided=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.6 {provided=[default(compile)]}[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-play-enhancer;1.1.0->com.typesafe.play#play-enhancer;1.1.0 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.4 {provided=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.6 {provided=[default(compile)]}[0m
@@ -6099,7 +6099,7 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-enhancer;1.1.0->org.javassist#javassist;3.18.2-GA [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-enhancer;1.1.0->org.javassist#javassist;3.18.2-GA [runtime->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-play-enhancer;1.1.0->com.typesafe.play#play-enhancer;1.1.0 [compile->master][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#projectbackup-build;0.1-SNAPSHOT->com.typesafe.sbt#sbt-play-ebean;3.0.2 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#ticketstore-build;0.1-SNAPSHOT->com.typesafe.sbt#sbt-play-ebean;3.0.2 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-play-ebean;3.0.2->org.avaje.ebeanorm#avaje-ebeanorm-agent;4.9.2 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-play-ebean;3.0.2->org.avaje.ebeanorm#avaje-ebeanorm-agent;4.9.2 [compile->runtime][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-play-ebean;3.0.2->org.avaje.ebeanorm#avaje-ebeanorm-agent;4.9.2 [compile->compile][0m
@@ -6116,12 +6116,12 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-play-ebean;3.0.2->com.typesafe.play#sbt-plugin;2.5.2 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-play-ebean;3.0.2->com.typesafe.play#sbt-plugin;2.5.10 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0mresolving dependencies for configuration 'provided'[0m
-[0m[[0mdebug[0m] [0m== resolving dependencies for default#projectbackup-build;0.1-SNAPSHOT [provided][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#projectbackup-build;0.1-SNAPSHOT->org.scala-lang#scala-library;2.10.6 [provided->default(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#projectbackup-build;0.1-SNAPSHOT->org.scala-lang#scala-library;2.10.6 [provided->runtime][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#projectbackup-build;0.1-SNAPSHOT->org.scala-lang#scala-library;2.10.6 [provided->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#projectbackup-build;0.1-SNAPSHOT->org.scala-lang#scala-library;2.10.6 [provided->master][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#projectbackup-build;0.1-SNAPSHOT->org.scala-sbt#sbt;0.13.11 [provided->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for default#ticketstore-build;0.1-SNAPSHOT [provided][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#ticketstore-build;0.1-SNAPSHOT->org.scala-lang#scala-library;2.10.6 [provided->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#ticketstore-build;0.1-SNAPSHOT->org.scala-lang#scala-library;2.10.6 [provided->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#ticketstore-build;0.1-SNAPSHOT->org.scala-lang#scala-library;2.10.6 [provided->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#ticketstore-build;0.1-SNAPSHOT->org.scala-lang#scala-library;2.10.6 [provided->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#ticketstore-build;0.1-SNAPSHOT->org.scala-sbt#sbt;0.13.11 [provided->default(compile)][0m
 [0m[[0minfo[0m] [0mResolving org.scala-sbt#sbt;0.13.11 ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.scala-sbt#sbt;0.13.11 {provided=[default(compile)]}[0m
 [0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.scala-sbt#sbt;0.13.11[0m
@@ -6944,11 +6944,11 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-sbt#compiler-interface;0.13.11->org.scala-lang#scala-library;2.10.6 [compile->master][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-sbt#compiler-interface;0.13.11->org.scala-sbt#interface;0.13.11 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0mresolving dependencies for configuration 'optional'[0m
-[0m[[0mdebug[0m] [0m== resolving dependencies for default#projectbackup-build;0.1-SNAPSHOT [optional][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for default#ticketstore-build;0.1-SNAPSHOT [optional][0m
 [0m[[0mdebug[0m] [0mresolving dependencies for configuration 'compile-internal'[0m
-[0m[[0mdebug[0m] [0m== resolving dependencies for default#projectbackup-build;0.1-SNAPSHOT [compile-internal][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies for default#projectbackup-build;0.1-SNAPSHOT [compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#projectbackup-build;0.1-SNAPSHOT->com.typesafe.play#sbt-plugin;2.5.10 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for default#ticketstore-build;0.1-SNAPSHOT [compile-internal][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for default#ticketstore-build;0.1-SNAPSHOT [compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#ticketstore-build;0.1-SNAPSHOT->com.typesafe.play#sbt-plugin;2.5.10 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.5.10->com.typesafe.play#sbt-routes-compiler_2.10;2.5.10 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.5.10->com.typesafe.play#sbt-routes-compiler_2.10;2.5.10 [compile->runtime][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.5.10->com.typesafe.play#sbt-routes-compiler_2.10;2.5.10 [compile->compile][0m
@@ -8286,7 +8286,7 @@
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.4 {provided=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.6 {provided=[default(compile)]}[0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.4 {provided=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.6 {provided=[default(compile)]}[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-js-engine;1.1.3->com.typesafe.sbt#sbt-web;1.3.0 [compile->default(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#projectbackup-build;0.1-SNAPSHOT->com.typesafe.sbt#sbt-coffeescript;1.0.0 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#ticketstore-build;0.1-SNAPSHOT->com.typesafe.sbt#sbt-coffeescript;1.0.0 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.4 {provided=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.6 {provided=[default(compile)]}[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-coffeescript;1.0.0->org.webjars#coffee-script-node;1.7.1 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.4 {provided=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.6 {provided=[default(compile)]}[0m
@@ -8304,7 +8304,7 @@
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.4 {provided=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.6 {provided=[default(compile)]}[0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.4 {provided=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.6 {provided=[default(compile)]}[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-coffeescript;1.0.0->com.typesafe.sbt#sbt-js-engine;1.1.3 [compile->default(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#projectbackup-build;0.1-SNAPSHOT->com.typesafe.sbt#sbt-less;1.1.0 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#ticketstore-build;0.1-SNAPSHOT->com.typesafe.sbt#sbt-less;1.1.0 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.4 {provided=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.6 {provided=[default(compile)]}[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-less;1.1.0->org.webjars#less-node;2.5.0 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.4 {provided=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.6 {provided=[default(compile)]}[0m
@@ -8346,7 +8346,7 @@
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.4 {provided=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.6 {provided=[default(compile)]}[0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.4 {provided=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.6 {provided=[default(compile)]}[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-less;1.1.0->com.typesafe.sbt#sbt-js-engine;1.1.3 [compile->default(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#projectbackup-build;0.1-SNAPSHOT->com.typesafe.sbt#sbt-jshint;1.0.4 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#ticketstore-build;0.1-SNAPSHOT->com.typesafe.sbt#sbt-jshint;1.0.4 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.5 {provided=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.6 {provided=[default(compile)]}[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-jshint;1.0.4->org.webjars#jshint-node;2.6.3-2 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.5 {provided=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.6 {provided=[default(compile)]}[0m
@@ -8375,7 +8375,7 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-jshint;1.0.4->com.typesafe.sbt#sbt-js-engine;1.1.3 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.5 {provided=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.6 {provided=[default(compile)]}[0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.5 {provided=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.6 {provided=[default(compile)]}[0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#projectbackup-build;0.1-SNAPSHOT->com.typesafe.sbt#sbt-rjs;1.0.8 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#ticketstore-build;0.1-SNAPSHOT->com.typesafe.sbt#sbt-rjs;1.0.8 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-rjs;1.0.8->org.webjars#rjs;2.2.0 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-rjs;1.0.8->org.webjars#rjs;2.2.0 [compile->runtime][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-rjs;1.0.8->org.webjars#rjs;2.2.0 [compile->compile][0m
@@ -8398,12 +8398,12 @@
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.4 {provided=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.6 {provided=[default(compile)]}[0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.4 {provided=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.6 {provided=[default(compile)]}[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-js-engine;1.1.4->com.typesafe.sbt#sbt-web;1.3.0 [compile->default(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#projectbackup-build;0.1-SNAPSHOT->com.typesafe.sbt#sbt-digest;1.1.1 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#ticketstore-build;0.1-SNAPSHOT->com.typesafe.sbt#sbt-digest;1.1.1 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.5 {provided=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.6 {provided=[default(compile)]}[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-digest;1.1.1->com.typesafe.sbt#sbt-js-engine;1.1.4 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.5 {provided=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.6 {provided=[default(compile)]}[0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.5 {provided=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.6 {provided=[default(compile)]}[0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#projectbackup-build;0.1-SNAPSHOT->com.typesafe.sbt#sbt-mocha;1.1.0 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#ticketstore-build;0.1-SNAPSHOT->com.typesafe.sbt#sbt-mocha;1.1.0 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.4 {provided=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.6 {provided=[default(compile)]}[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-mocha;1.1.0->org.webjars#mocha;1.17.1 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.4 {provided=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.6 {provided=[default(compile)]}[0m
@@ -8427,7 +8427,7 @@
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.4 {provided=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.6 {provided=[default(compile)]}[0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.4 {provided=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.6 {provided=[default(compile)]}[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-mocha;1.1.0->com.typesafe.sbt#sbt-js-engine;1.1.4 [compile->default(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#projectbackup-build;0.1-SNAPSHOT->org.irundaia.sbt#sbt-sassify;1.4.6 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#ticketstore-build;0.1-SNAPSHOT->org.irundaia.sbt#sbt-sassify;1.4.6 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.irundaia.sbt#sbt-sassify;1.4.6->com.typesafe.sbt#sbt-web;1.2.2 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.irundaia.sbt#sbt-sassify;1.4.6->com.typesafe.sbt#sbt-web;1.3.0 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.irundaia.sbt#sbt-sassify;1.4.6->com.typesafe.play#play-json_2.10;2.4.6 [compile->default(compile)][0m
@@ -8734,7 +8734,7 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies com.nativelibs4java#jnaerator-runtime;0.12->net.java.dev.jna#jna;4.1.0 [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.nativelibs4java#jnaerator-runtime;0.12->net.java.dev.jna#jna;4.1.0 [runtime->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.irundaia.sbt#sbt-sassify;1.4.6->com.nativelibs4java#jnaerator-runtime;0.12 [compile->master][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#projectbackup-build;0.1-SNAPSHOT->com.typesafe.sbt#sbt-play-enhancer;1.1.0 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#ticketstore-build;0.1-SNAPSHOT->com.typesafe.sbt#sbt-play-enhancer;1.1.0 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.4 {provided=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.6 {provided=[default(compile)]}[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-play-enhancer;1.1.0->com.typesafe.play#play-enhancer;1.1.0 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.4 {provided=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.6 {provided=[default(compile)]}[0m
@@ -8748,7 +8748,7 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-enhancer;1.1.0->org.javassist#javassist;3.18.2-GA [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-enhancer;1.1.0->org.javassist#javassist;3.18.2-GA [runtime->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-play-enhancer;1.1.0->com.typesafe.play#play-enhancer;1.1.0 [compile->master][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#projectbackup-build;0.1-SNAPSHOT->com.typesafe.sbt#sbt-play-ebean;3.0.2 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#ticketstore-build;0.1-SNAPSHOT->com.typesafe.sbt#sbt-play-ebean;3.0.2 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-play-ebean;3.0.2->org.avaje.ebeanorm#avaje-ebeanorm-agent;4.9.2 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-play-ebean;3.0.2->org.avaje.ebeanorm#avaje-ebeanorm-agent;4.9.2 [compile->runtime][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-play-ebean;3.0.2->org.avaje.ebeanorm#avaje-ebeanorm-agent;4.9.2 [compile->compile][0m
@@ -8764,13 +8764,13 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-play-ebean;3.0.2->com.typesafe.sbt#sbt-play-enhancer;1.1.0 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-play-ebean;3.0.2->com.typesafe.play#sbt-plugin;2.5.2 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-play-ebean;3.0.2->com.typesafe.play#sbt-plugin;2.5.10 [compile->default(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies for default#projectbackup-build;0.1-SNAPSHOT [optional][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies for default#projectbackup-build;0.1-SNAPSHOT [provided][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#projectbackup-build;0.1-SNAPSHOT->org.scala-lang#scala-library;2.10.6 [provided->default(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#projectbackup-build;0.1-SNAPSHOT->org.scala-lang#scala-library;2.10.6 [provided->runtime][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#projectbackup-build;0.1-SNAPSHOT->org.scala-lang#scala-library;2.10.6 [provided->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#projectbackup-build;0.1-SNAPSHOT->org.scala-lang#scala-library;2.10.6 [provided->master][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#projectbackup-build;0.1-SNAPSHOT->org.scala-sbt#sbt;0.13.11 [provided->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for default#ticketstore-build;0.1-SNAPSHOT [optional][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for default#ticketstore-build;0.1-SNAPSHOT [provided][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#ticketstore-build;0.1-SNAPSHOT->org.scala-lang#scala-library;2.10.6 [provided->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#ticketstore-build;0.1-SNAPSHOT->org.scala-lang#scala-library;2.10.6 [provided->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#ticketstore-build;0.1-SNAPSHOT->org.scala-lang#scala-library;2.10.6 [provided->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#ticketstore-build;0.1-SNAPSHOT->org.scala-lang#scala-library;2.10.6 [provided->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#ticketstore-build;0.1-SNAPSHOT->org.scala-sbt#sbt;0.13.11 [provided->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-sbt#sbt;0.13.11->org.scala-lang#scala-library;2.10.6 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-sbt#sbt;0.13.11->org.scala-lang#scala-library;2.10.6 [compile->runtime][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-sbt#sbt;0.13.11->org.scala-lang#scala-library;2.10.6 [compile->compile][0m
@@ -9375,10 +9375,10 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-sbt#compiler-interface;0.13.11->org.scala-lang#scala-library;2.10.6 [compile->master][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-sbt#compiler-interface;0.13.11->org.scala-sbt#interface;0.13.11 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0mresolving dependencies for configuration 'runtime-internal'[0m
-[0m[[0mdebug[0m] [0m== resolving dependencies for default#projectbackup-build;0.1-SNAPSHOT [runtime-internal][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies for default#projectbackup-build;0.1-SNAPSHOT [runtime][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies for default#projectbackup-build;0.1-SNAPSHOT [compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#projectbackup-build;0.1-SNAPSHOT->com.typesafe.play#sbt-plugin;2.5.10 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for default#ticketstore-build;0.1-SNAPSHOT [runtime-internal][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for default#ticketstore-build;0.1-SNAPSHOT [runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for default#ticketstore-build;0.1-SNAPSHOT [compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#ticketstore-build;0.1-SNAPSHOT->com.typesafe.play#sbt-plugin;2.5.10 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.5.10->com.typesafe.play#sbt-routes-compiler_2.10;2.5.10 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.5.10->com.typesafe.play#sbt-routes-compiler_2.10;2.5.10 [compile->runtime][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.5.10->com.typesafe.play#sbt-routes-compiler_2.10;2.5.10 [compile->compile][0m
@@ -10716,7 +10716,7 @@
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.4 {provided=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.6 {provided=[default(compile)]}[0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.4 {provided=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.6 {provided=[default(compile)]}[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-js-engine;1.1.3->com.typesafe.sbt#sbt-web;1.3.0 [compile->default(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#projectbackup-build;0.1-SNAPSHOT->com.typesafe.sbt#sbt-coffeescript;1.0.0 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#ticketstore-build;0.1-SNAPSHOT->com.typesafe.sbt#sbt-coffeescript;1.0.0 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.4 {provided=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.6 {provided=[default(compile)]}[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-coffeescript;1.0.0->org.webjars#coffee-script-node;1.7.1 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.4 {provided=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.6 {provided=[default(compile)]}[0m
@@ -10734,7 +10734,7 @@
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.4 {provided=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.6 {provided=[default(compile)]}[0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.4 {provided=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.6 {provided=[default(compile)]}[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-coffeescript;1.0.0->com.typesafe.sbt#sbt-js-engine;1.1.3 [compile->default(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#projectbackup-build;0.1-SNAPSHOT->com.typesafe.sbt#sbt-less;1.1.0 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#ticketstore-build;0.1-SNAPSHOT->com.typesafe.sbt#sbt-less;1.1.0 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.4 {provided=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.6 {provided=[default(compile)]}[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-less;1.1.0->org.webjars#less-node;2.5.0 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.4 {provided=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.6 {provided=[default(compile)]}[0m
@@ -10776,7 +10776,7 @@
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.4 {provided=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.6 {provided=[default(compile)]}[0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.4 {provided=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.6 {provided=[default(compile)]}[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-less;1.1.0->com.typesafe.sbt#sbt-js-engine;1.1.3 [compile->default(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#projectbackup-build;0.1-SNAPSHOT->com.typesafe.sbt#sbt-jshint;1.0.4 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#ticketstore-build;0.1-SNAPSHOT->com.typesafe.sbt#sbt-jshint;1.0.4 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.5 {provided=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.6 {provided=[default(compile)]}[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-jshint;1.0.4->org.webjars#jshint-node;2.6.3-2 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.5 {provided=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.6 {provided=[default(compile)]}[0m
@@ -10805,7 +10805,7 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-jshint;1.0.4->com.typesafe.sbt#sbt-js-engine;1.1.3 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.5 {provided=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.6 {provided=[default(compile)]}[0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.5 {provided=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.6 {provided=[default(compile)]}[0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#projectbackup-build;0.1-SNAPSHOT->com.typesafe.sbt#sbt-rjs;1.0.8 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#ticketstore-build;0.1-SNAPSHOT->com.typesafe.sbt#sbt-rjs;1.0.8 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-rjs;1.0.8->org.webjars#rjs;2.2.0 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-rjs;1.0.8->org.webjars#rjs;2.2.0 [compile->runtime][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-rjs;1.0.8->org.webjars#rjs;2.2.0 [compile->compile][0m
@@ -10828,12 +10828,12 @@
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.4 {provided=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.6 {provided=[default(compile)]}[0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.4 {provided=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.6 {provided=[default(compile)]}[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-js-engine;1.1.4->com.typesafe.sbt#sbt-web;1.3.0 [compile->default(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#projectbackup-build;0.1-SNAPSHOT->com.typesafe.sbt#sbt-digest;1.1.1 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#ticketstore-build;0.1-SNAPSHOT->com.typesafe.sbt#sbt-digest;1.1.1 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.5 {provided=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.6 {provided=[default(compile)]}[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-digest;1.1.1->com.typesafe.sbt#sbt-js-engine;1.1.4 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.5 {provided=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.6 {provided=[default(compile)]}[0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.5 {provided=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.6 {provided=[default(compile)]}[0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#projectbackup-build;0.1-SNAPSHOT->com.typesafe.sbt#sbt-mocha;1.1.0 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#ticketstore-build;0.1-SNAPSHOT->com.typesafe.sbt#sbt-mocha;1.1.0 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.4 {provided=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.6 {provided=[default(compile)]}[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-mocha;1.1.0->org.webjars#mocha;1.17.1 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.4 {provided=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.6 {provided=[default(compile)]}[0m
@@ -10857,7 +10857,7 @@
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.4 {provided=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.6 {provided=[default(compile)]}[0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.4 {provided=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.6 {provided=[default(compile)]}[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-mocha;1.1.0->com.typesafe.sbt#sbt-js-engine;1.1.4 [compile->default(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#projectbackup-build;0.1-SNAPSHOT->org.irundaia.sbt#sbt-sassify;1.4.6 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#ticketstore-build;0.1-SNAPSHOT->org.irundaia.sbt#sbt-sassify;1.4.6 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.irundaia.sbt#sbt-sassify;1.4.6->com.typesafe.sbt#sbt-web;1.2.2 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.irundaia.sbt#sbt-sassify;1.4.6->com.typesafe.sbt#sbt-web;1.3.0 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.irundaia.sbt#sbt-sassify;1.4.6->com.typesafe.play#play-json_2.10;2.4.6 [compile->default(compile)][0m
@@ -11164,7 +11164,7 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies com.nativelibs4java#jnaerator-runtime;0.12->net.java.dev.jna#jna;4.1.0 [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.nativelibs4java#jnaerator-runtime;0.12->net.java.dev.jna#jna;4.1.0 [runtime->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.irundaia.sbt#sbt-sassify;1.4.6->com.nativelibs4java#jnaerator-runtime;0.12 [compile->master][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#projectbackup-build;0.1-SNAPSHOT->com.typesafe.sbt#sbt-play-enhancer;1.1.0 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#ticketstore-build;0.1-SNAPSHOT->com.typesafe.sbt#sbt-play-enhancer;1.1.0 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.4 {provided=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.6 {provided=[default(compile)]}[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-play-enhancer;1.1.0->com.typesafe.play#play-enhancer;1.1.0 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.4 {provided=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.6 {provided=[default(compile)]}[0m
@@ -11178,7 +11178,7 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-enhancer;1.1.0->org.javassist#javassist;3.18.2-GA [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-enhancer;1.1.0->org.javassist#javassist;3.18.2-GA [runtime->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-play-enhancer;1.1.0->com.typesafe.play#play-enhancer;1.1.0 [compile->master][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#projectbackup-build;0.1-SNAPSHOT->com.typesafe.sbt#sbt-play-ebean;3.0.2 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#ticketstore-build;0.1-SNAPSHOT->com.typesafe.sbt#sbt-play-ebean;3.0.2 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-play-ebean;3.0.2->org.avaje.ebeanorm#avaje-ebeanorm-agent;4.9.2 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-play-ebean;3.0.2->org.avaje.ebeanorm#avaje-ebeanorm-agent;4.9.2 [compile->runtime][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-play-ebean;3.0.2->org.avaje.ebeanorm#avaje-ebeanorm-agent;4.9.2 [compile->compile][0m
@@ -11194,13 +11194,13 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-play-ebean;3.0.2->com.typesafe.sbt#sbt-play-enhancer;1.1.0 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-play-ebean;3.0.2->com.typesafe.play#sbt-plugin;2.5.2 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-play-ebean;3.0.2->com.typesafe.play#sbt-plugin;2.5.10 [compile->default(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies for default#projectbackup-build;0.1-SNAPSHOT [optional][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for default#ticketstore-build;0.1-SNAPSHOT [optional][0m
 [0m[[0mdebug[0m] [0mresolving dependencies for configuration 'test-internal'[0m
-[0m[[0mdebug[0m] [0m== resolving dependencies for default#projectbackup-build;0.1-SNAPSHOT [test-internal][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies for default#projectbackup-build;0.1-SNAPSHOT [test][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies for default#projectbackup-build;0.1-SNAPSHOT [runtime][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies for default#projectbackup-build;0.1-SNAPSHOT [compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#projectbackup-build;0.1-SNAPSHOT->com.typesafe.play#sbt-plugin;2.5.10 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for default#ticketstore-build;0.1-SNAPSHOT [test-internal][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for default#ticketstore-build;0.1-SNAPSHOT [test][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for default#ticketstore-build;0.1-SNAPSHOT [runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for default#ticketstore-build;0.1-SNAPSHOT [compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#ticketstore-build;0.1-SNAPSHOT->com.typesafe.play#sbt-plugin;2.5.10 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.5.10->com.typesafe.play#sbt-routes-compiler_2.10;2.5.10 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.5.10->com.typesafe.play#sbt-routes-compiler_2.10;2.5.10 [compile->runtime][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.5.10->com.typesafe.play#sbt-routes-compiler_2.10;2.5.10 [compile->compile][0m
@@ -12538,7 +12538,7 @@
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.4 {provided=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.6 {provided=[default(compile)]}[0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.4 {provided=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.6 {provided=[default(compile)]}[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-js-engine;1.1.3->com.typesafe.sbt#sbt-web;1.3.0 [compile->default(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#projectbackup-build;0.1-SNAPSHOT->com.typesafe.sbt#sbt-coffeescript;1.0.0 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#ticketstore-build;0.1-SNAPSHOT->com.typesafe.sbt#sbt-coffeescript;1.0.0 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.4 {provided=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.6 {provided=[default(compile)]}[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-coffeescript;1.0.0->org.webjars#coffee-script-node;1.7.1 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.4 {provided=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.6 {provided=[default(compile)]}[0m
@@ -12556,7 +12556,7 @@
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.4 {provided=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.6 {provided=[default(compile)]}[0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.4 {provided=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.6 {provided=[default(compile)]}[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-coffeescript;1.0.0->com.typesafe.sbt#sbt-js-engine;1.1.3 [compile->default(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#projectbackup-build;0.1-SNAPSHOT->com.typesafe.sbt#sbt-less;1.1.0 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#ticketstore-build;0.1-SNAPSHOT->com.typesafe.sbt#sbt-less;1.1.0 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.4 {provided=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.6 {provided=[default(compile)]}[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-less;1.1.0->org.webjars#less-node;2.5.0 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.4 {provided=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.6 {provided=[default(compile)]}[0m
@@ -12598,7 +12598,7 @@
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.4 {provided=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.6 {provided=[default(compile)]}[0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.4 {provided=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.6 {provided=[default(compile)]}[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-less;1.1.0->com.typesafe.sbt#sbt-js-engine;1.1.3 [compile->default(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#projectbackup-build;0.1-SNAPSHOT->com.typesafe.sbt#sbt-jshint;1.0.4 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#ticketstore-build;0.1-SNAPSHOT->com.typesafe.sbt#sbt-jshint;1.0.4 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.5 {provided=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.6 {provided=[default(compile)]}[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-jshint;1.0.4->org.webjars#jshint-node;2.6.3-2 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.5 {provided=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.6 {provided=[default(compile)]}[0m
@@ -12627,7 +12627,7 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-jshint;1.0.4->com.typesafe.sbt#sbt-js-engine;1.1.3 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.5 {provided=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.6 {provided=[default(compile)]}[0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.5 {provided=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.6 {provided=[default(compile)]}[0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#projectbackup-build;0.1-SNAPSHOT->com.typesafe.sbt#sbt-rjs;1.0.8 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#ticketstore-build;0.1-SNAPSHOT->com.typesafe.sbt#sbt-rjs;1.0.8 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-rjs;1.0.8->org.webjars#rjs;2.2.0 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-rjs;1.0.8->org.webjars#rjs;2.2.0 [compile->runtime][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-rjs;1.0.8->org.webjars#rjs;2.2.0 [compile->compile][0m
@@ -12650,12 +12650,12 @@
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.4 {provided=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.6 {provided=[default(compile)]}[0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.4 {provided=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.6 {provided=[default(compile)]}[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-js-engine;1.1.4->com.typesafe.sbt#sbt-web;1.3.0 [compile->default(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#projectbackup-build;0.1-SNAPSHOT->com.typesafe.sbt#sbt-digest;1.1.1 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#ticketstore-build;0.1-SNAPSHOT->com.typesafe.sbt#sbt-digest;1.1.1 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.5 {provided=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.6 {provided=[default(compile)]}[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-digest;1.1.1->com.typesafe.sbt#sbt-js-engine;1.1.4 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.5 {provided=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.6 {provided=[default(compile)]}[0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.5 {provided=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.6 {provided=[default(compile)]}[0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#projectbackup-build;0.1-SNAPSHOT->com.typesafe.sbt#sbt-mocha;1.1.0 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#ticketstore-build;0.1-SNAPSHOT->com.typesafe.sbt#sbt-mocha;1.1.0 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.4 {provided=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.6 {provided=[default(compile)]}[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-mocha;1.1.0->org.webjars#mocha;1.17.1 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.4 {provided=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.6 {provided=[default(compile)]}[0m
@@ -12679,7 +12679,7 @@
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.4 {provided=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.6 {provided=[default(compile)]}[0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.4 {provided=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.6 {provided=[default(compile)]}[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-mocha;1.1.0->com.typesafe.sbt#sbt-js-engine;1.1.4 [compile->default(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#projectbackup-build;0.1-SNAPSHOT->org.irundaia.sbt#sbt-sassify;1.4.6 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#ticketstore-build;0.1-SNAPSHOT->org.irundaia.sbt#sbt-sassify;1.4.6 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.irundaia.sbt#sbt-sassify;1.4.6->com.typesafe.sbt#sbt-web;1.2.2 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.irundaia.sbt#sbt-sassify;1.4.6->com.typesafe.sbt#sbt-web;1.3.0 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.irundaia.sbt#sbt-sassify;1.4.6->com.typesafe.play#play-json_2.10;2.4.6 [compile->default(compile)][0m
@@ -12986,7 +12986,7 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies com.nativelibs4java#jnaerator-runtime;0.12->net.java.dev.jna#jna;4.1.0 [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.nativelibs4java#jnaerator-runtime;0.12->net.java.dev.jna#jna;4.1.0 [runtime->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.irundaia.sbt#sbt-sassify;1.4.6->com.nativelibs4java#jnaerator-runtime;0.12 [compile->master][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#projectbackup-build;0.1-SNAPSHOT->com.typesafe.sbt#sbt-play-enhancer;1.1.0 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#ticketstore-build;0.1-SNAPSHOT->com.typesafe.sbt#sbt-play-enhancer;1.1.0 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.4 {provided=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.6 {provided=[default(compile)]}[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-play-enhancer;1.1.0->com.typesafe.play#play-enhancer;1.1.0 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.4 {provided=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.6 {provided=[default(compile)]}[0m
@@ -13000,7 +13000,7 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-enhancer;1.1.0->org.javassist#javassist;3.18.2-GA [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-enhancer;1.1.0->org.javassist#javassist;3.18.2-GA [runtime->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-play-enhancer;1.1.0->com.typesafe.play#play-enhancer;1.1.0 [compile->master][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#projectbackup-build;0.1-SNAPSHOT->com.typesafe.sbt#sbt-play-ebean;3.0.2 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#ticketstore-build;0.1-SNAPSHOT->com.typesafe.sbt#sbt-play-ebean;3.0.2 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-play-ebean;3.0.2->org.avaje.ebeanorm#avaje-ebeanorm-agent;4.9.2 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-play-ebean;3.0.2->org.avaje.ebeanorm#avaje-ebeanorm-agent;4.9.2 [compile->runtime][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-play-ebean;3.0.2->org.avaje.ebeanorm#avaje-ebeanorm-agent;4.9.2 [compile->compile][0m
@@ -13016,13 +13016,13 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-play-ebean;3.0.2->com.typesafe.sbt#sbt-play-enhancer;1.1.0 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-play-ebean;3.0.2->com.typesafe.play#sbt-plugin;2.5.2 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-play-ebean;3.0.2->com.typesafe.play#sbt-plugin;2.5.10 [compile->default(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies for default#projectbackup-build;0.1-SNAPSHOT [optional][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies for default#projectbackup-build;0.1-SNAPSHOT [provided][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#projectbackup-build;0.1-SNAPSHOT->org.scala-lang#scala-library;2.10.6 [provided->default(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#projectbackup-build;0.1-SNAPSHOT->org.scala-lang#scala-library;2.10.6 [provided->runtime][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#projectbackup-build;0.1-SNAPSHOT->org.scala-lang#scala-library;2.10.6 [provided->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#projectbackup-build;0.1-SNAPSHOT->org.scala-lang#scala-library;2.10.6 [provided->master][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#projectbackup-build;0.1-SNAPSHOT->org.scala-sbt#sbt;0.13.11 [provided->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for default#ticketstore-build;0.1-SNAPSHOT [optional][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for default#ticketstore-build;0.1-SNAPSHOT [provided][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#ticketstore-build;0.1-SNAPSHOT->org.scala-lang#scala-library;2.10.6 [provided->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#ticketstore-build;0.1-SNAPSHOT->org.scala-lang#scala-library;2.10.6 [provided->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#ticketstore-build;0.1-SNAPSHOT->org.scala-lang#scala-library;2.10.6 [provided->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#ticketstore-build;0.1-SNAPSHOT->org.scala-lang#scala-library;2.10.6 [provided->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#ticketstore-build;0.1-SNAPSHOT->org.scala-sbt#sbt;0.13.11 [provided->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-sbt#sbt;0.13.11->org.scala-lang#scala-library;2.10.6 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-sbt#sbt;0.13.11->org.scala-lang#scala-library;2.10.6 [compile->runtime][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-sbt#sbt;0.13.11->org.scala-lang#scala-library;2.10.6 [compile->compile][0m
@@ -13627,18 +13627,18 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-sbt#compiler-interface;0.13.11->org.scala-lang#scala-library;2.10.6 [compile->master][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-sbt#compiler-interface;0.13.11->org.scala-sbt#interface;0.13.11 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0mresolving dependencies for configuration 'plugin'[0m
-[0m[[0mdebug[0m] [0m== resolving dependencies for default#projectbackup-build;0.1-SNAPSHOT [plugin][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for default#ticketstore-build;0.1-SNAPSHOT [plugin][0m
 [0m[[0mdebug[0m] [0mresolving dependencies for configuration 'sources'[0m
-[0m[[0mdebug[0m] [0m== resolving dependencies for default#projectbackup-build;0.1-SNAPSHOT [sources][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for default#ticketstore-build;0.1-SNAPSHOT [sources][0m
 [0m[[0mdebug[0m] [0mresolving dependencies for configuration 'docs'[0m
-[0m[[0mdebug[0m] [0m== resolving dependencies for default#projectbackup-build;0.1-SNAPSHOT [docs][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for default#ticketstore-build;0.1-SNAPSHOT [docs][0m
 [0m[[0mdebug[0m] [0mresolving dependencies for configuration 'pom'[0m
-[0m[[0mdebug[0m] [0m== resolving dependencies for default#projectbackup-build;0.1-SNAPSHOT [pom][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for default#ticketstore-build;0.1-SNAPSHOT [pom][0m
 [0m[[0mdebug[0m] [0mresolving dependencies for configuration 'scala-tool'[0m
-[0m[[0mdebug[0m] [0m== resolving dependencies for default#projectbackup-build;0.1-SNAPSHOT [scala-tool][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#projectbackup-build;0.1-SNAPSHOT->org.scala-lang#scala-compiler;2.10.6 [scala-tool->default][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#projectbackup-build;0.1-SNAPSHOT->org.scala-lang#scala-compiler;2.10.6 [scala-tool->runtime][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#projectbackup-build;0.1-SNAPSHOT->org.scala-lang#scala-compiler;2.10.6 [scala-tool->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for default#ticketstore-build;0.1-SNAPSHOT [scala-tool][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#ticketstore-build;0.1-SNAPSHOT->org.scala-lang#scala-compiler;2.10.6 [scala-tool->default][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#ticketstore-build;0.1-SNAPSHOT->org.scala-lang#scala-compiler;2.10.6 [scala-tool->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#ticketstore-build;0.1-SNAPSHOT->org.scala-lang#scala-compiler;2.10.6 [scala-tool->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang#scala-compiler;2.10.6->org.scala-lang#scala-library;2.10.6 [compile->master(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang#scala-compiler;2.10.6->org.scala-lang#scala-library;2.10.6 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang#scala-compiler;2.10.6->org.scala-lang#scala-library;2.10.6 [compile->default][0m
@@ -13656,8 +13656,8 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang#scala-compiler;2.10.6->org.scala-lang#scala-reflect;2.10.6 [runtime->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang#scala-reflect;2.10.6->org.scala-lang#scala-library;2.10.6 [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang#scala-reflect;2.10.6->org.scala-lang#scala-library;2.10.6 [runtime->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#projectbackup-build;0.1-SNAPSHOT->org.scala-lang#scala-compiler;2.10.6 [scala-tool->master][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#projectbackup-build;0.1-SNAPSHOT->org.scala-lang#scala-compiler;2.10.6 [scala-tool->optional(default)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#ticketstore-build;0.1-SNAPSHOT->org.scala-lang#scala-compiler;2.10.6 [scala-tool->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#ticketstore-build;0.1-SNAPSHOT->org.scala-lang#scala-compiler;2.10.6 [scala-tool->optional(default)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang#scala-compiler;2.10.6->org.scala-lang#jline;2.10.6 [optional->master(compile)][0m
 [0m[[0minfo[0m] [0mResolving org.scala-lang#jline;2.10.6 ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.scala-lang#jline;2.10.6 {optional=[compile(*), master(compile)]}[0m
@@ -13670,11 +13670,11 @@
 [0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.fusesource.jansi#jansi;1.4[0m
 [0m[[0mdebug[0m] [0m	found org.fusesource.jansi#jansi;1.4 in sbt-chain[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang#jline;2.10.6->org.fusesource.jansi#jansi;1.4 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#projectbackup-build;0.1-SNAPSHOT->org.scala-lang#scala-library;2.10.6 [scala-tool->default][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#projectbackup-build;0.1-SNAPSHOT->org.scala-lang#scala-library;2.10.6 [scala-tool->runtime][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#projectbackup-build;0.1-SNAPSHOT->org.scala-lang#scala-library;2.10.6 [scala-tool->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#projectbackup-build;0.1-SNAPSHOT->org.scala-lang#scala-library;2.10.6 [scala-tool->master][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#projectbackup-build;0.1-SNAPSHOT->org.scala-lang#scala-library;2.10.6 [scala-tool->optional(default)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#ticketstore-build;0.1-SNAPSHOT->org.scala-lang#scala-library;2.10.6 [scala-tool->default][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#ticketstore-build;0.1-SNAPSHOT->org.scala-lang#scala-library;2.10.6 [scala-tool->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#ticketstore-build;0.1-SNAPSHOT->org.scala-lang#scala-library;2.10.6 [scala-tool->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#ticketstore-build;0.1-SNAPSHOT->org.scala-lang#scala-library;2.10.6 [scala-tool->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#ticketstore-build;0.1-SNAPSHOT->org.scala-lang#scala-library;2.10.6 [scala-tool->optional(default)][0m
 [0m[[0mdebug[0m] [0mall callers are evicted for org.tukaani#xz;1.4: evicting too[0m
 [0m[[0mdebug[0m] [0mall callers are evicted for org.tukaani#xz;1.4: evicting too[0m
 [0m[[0mdebug[0m] [0mall callers are evicted for org.tukaani#xz;1.4: evicting too[0m
@@ -13858,19 +13858,19 @@
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.scala-sbt#apply-macro;0.13.11!apply-macro.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.scala-lang#jline;2.10.6!jline.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.fusesource.jansi#jansi;1.4!jansi.jar[0m
-[0m[[0mdebug[0m] [0m:: resolution report :: resolve 2319ms :: artifacts dl 59ms[0m
-[0m[[0mdebug[0m] [0m	report for default#projectbackup-build;0.1-SNAPSHOT compile produced in /home/wdd/webapps/projectBackup/project/target/resolution-cache/reports/default-projectbackup-build-compile.xml[0m
-[0m[[0mdebug[0m] [0m	report for default#projectbackup-build;0.1-SNAPSHOT runtime produced in /home/wdd/webapps/projectBackup/project/target/resolution-cache/reports/default-projectbackup-build-runtime.xml[0m
-[0m[[0mdebug[0m] [0m	report for default#projectbackup-build;0.1-SNAPSHOT test produced in /home/wdd/webapps/projectBackup/project/target/resolution-cache/reports/default-projectbackup-build-test.xml[0m
-[0m[[0mdebug[0m] [0m	report for default#projectbackup-build;0.1-SNAPSHOT provided produced in /home/wdd/webapps/projectBackup/project/target/resolution-cache/reports/default-projectbackup-build-provided.xml[0m
-[0m[[0mdebug[0m] [0m	report for default#projectbackup-build;0.1-SNAPSHOT optional produced in /home/wdd/webapps/projectBackup/project/target/resolution-cache/reports/default-projectbackup-build-optional.xml[0m
-[0m[[0mdebug[0m] [0m	report for default#projectbackup-build;0.1-SNAPSHOT compile-internal produced in /home/wdd/webapps/projectBackup/project/target/resolution-cache/reports/default-projectbackup-build-compile-internal.xml[0m
-[0m[[0mdebug[0m] [0m	report for default#projectbackup-build;0.1-SNAPSHOT runtime-internal produced in /home/wdd/webapps/projectBackup/project/target/resolution-cache/reports/default-projectbackup-build-runtime-internal.xml[0m
-[0m[[0mdebug[0m] [0m	report for default#projectbackup-build;0.1-SNAPSHOT test-internal produced in /home/wdd/webapps/projectBackup/project/target/resolution-cache/reports/default-projectbackup-build-test-internal.xml[0m
-[0m[[0mdebug[0m] [0m	report for default#projectbackup-build;0.1-SNAPSHOT plugin produced in /home/wdd/webapps/projectBackup/project/target/resolution-cache/reports/default-projectbackup-build-plugin.xml[0m
-[0m[[0mdebug[0m] [0m	report for default#projectbackup-build;0.1-SNAPSHOT sources produced in /home/wdd/webapps/projectBackup/project/target/resolution-cache/reports/default-projectbackup-build-sources.xml[0m
-[0m[[0mdebug[0m] [0m	report for default#projectbackup-build;0.1-SNAPSHOT docs produced in /home/wdd/webapps/projectBackup/project/target/resolution-cache/reports/default-projectbackup-build-docs.xml[0m
-[0m[[0mdebug[0m] [0m	report for default#projectbackup-build;0.1-SNAPSHOT pom produced in /home/wdd/webapps/projectBackup/project/target/resolution-cache/reports/default-projectbackup-build-pom.xml[0m
-[0m[[0mdebug[0m] [0m	report for default#projectbackup-build;0.1-SNAPSHOT scala-tool produced in /home/wdd/webapps/projectBackup/project/target/resolution-cache/reports/default-projectbackup-build-scala-tool.xml[0m
-[0m[[0mdebug[0m] [0m	resolve done (2319ms resolve - 59ms download)[0m
+[0m[[0mdebug[0m] [0m:: resolution report :: resolve 4817ms :: artifacts dl 201ms[0m
+[0m[[0mdebug[0m] [0m	report for default#ticketstore-build;0.1-SNAPSHOT compile produced in /home/wdd/webapps/TicketStore/project/target/resolution-cache/reports/default-ticketstore-build-compile.xml[0m
+[0m[[0mdebug[0m] [0m	report for default#ticketstore-build;0.1-SNAPSHOT runtime produced in /home/wdd/webapps/TicketStore/project/target/resolution-cache/reports/default-ticketstore-build-runtime.xml[0m
+[0m[[0mdebug[0m] [0m	report for default#ticketstore-build;0.1-SNAPSHOT test produced in /home/wdd/webapps/TicketStore/project/target/resolution-cache/reports/default-ticketstore-build-test.xml[0m
+[0m[[0mdebug[0m] [0m	report for default#ticketstore-build;0.1-SNAPSHOT provided produced in /home/wdd/webapps/TicketStore/project/target/resolution-cache/reports/default-ticketstore-build-provided.xml[0m
+[0m[[0mdebug[0m] [0m	report for default#ticketstore-build;0.1-SNAPSHOT optional produced in /home/wdd/webapps/TicketStore/project/target/resolution-cache/reports/default-ticketstore-build-optional.xml[0m
+[0m[[0mdebug[0m] [0m	report for default#ticketstore-build;0.1-SNAPSHOT compile-internal produced in /home/wdd/webapps/TicketStore/project/target/resolution-cache/reports/default-ticketstore-build-compile-internal.xml[0m
+[0m[[0mdebug[0m] [0m	report for default#ticketstore-build;0.1-SNAPSHOT runtime-internal produced in /home/wdd/webapps/TicketStore/project/target/resolution-cache/reports/default-ticketstore-build-runtime-internal.xml[0m
+[0m[[0mdebug[0m] [0m	report for default#ticketstore-build;0.1-SNAPSHOT test-internal produced in /home/wdd/webapps/TicketStore/project/target/resolution-cache/reports/default-ticketstore-build-test-internal.xml[0m
+[0m[[0mdebug[0m] [0m	report for default#ticketstore-build;0.1-SNAPSHOT plugin produced in /home/wdd/webapps/TicketStore/project/target/resolution-cache/reports/default-ticketstore-build-plugin.xml[0m
+[0m[[0mdebug[0m] [0m	report for default#ticketstore-build;0.1-SNAPSHOT sources produced in /home/wdd/webapps/TicketStore/project/target/resolution-cache/reports/default-ticketstore-build-sources.xml[0m
+[0m[[0mdebug[0m] [0m	report for default#ticketstore-build;0.1-SNAPSHOT docs produced in /home/wdd/webapps/TicketStore/project/target/resolution-cache/reports/default-ticketstore-build-docs.xml[0m
+[0m[[0mdebug[0m] [0m	report for default#ticketstore-build;0.1-SNAPSHOT pom produced in /home/wdd/webapps/TicketStore/project/target/resolution-cache/reports/default-ticketstore-build-pom.xml[0m
+[0m[[0mdebug[0m] [0m	report for default#ticketstore-build;0.1-SNAPSHOT scala-tool produced in /home/wdd/webapps/TicketStore/project/target/resolution-cache/reports/default-ticketstore-build-scala-tool.xml[0m
+[0m[[0mdebug[0m] [0m	resolve done (4817ms resolve - 201ms download)[0m
 [0m[[0minfo[0m] [0mDone updating.[0m

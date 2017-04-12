@@ -4,7 +4,7 @@
 		module="ticketstore-build"
 		revision="0.1-SNAPSHOT"
 		status="integration"
-		publication="20170411140649"
+		publication="20170412132956"
 		e:sbtVersion="0.13" e:scalaVersion="2.10"
 	>
 		<description>

@@ -66,6 +66,7 @@ create table shop_order (
   id                            bigint not null,
   order_date                    timestamp,
   user_email                    varchar(255),
+  proccessed                    boolean,
   constraint pk_shop_order primary key (id)
 );
 create sequence shop_order_seq;
