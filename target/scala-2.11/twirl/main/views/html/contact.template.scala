@@ -53,18 +53,19 @@ Seq[Any](format.raw/*3.62*/("""
                         """),_display_(/*21.26*/inputText(contactForm("phone"), '_label -> "Phone", 'type -> "text", 'class -> "form-control")),format.raw/*21.120*/("""
                         """),_display_(/*22.26*/inputText(contactForm("message"), '_label -> "Message", 'type -> "textarea", 'class -> "form-control", 'maxlength -> "140")),format.raw/*22.149*/("""
 
-                        """),format.raw/*24.25*/("""<div class="actions">
+
+                        """),format.raw/*25.25*/("""<div class="actions">
                             <input type="submit" value="Submit" class="btn btn-success">
-                            <a href=""""),_display_(/*26.39*/routes/*26.45*/.HomeController.contact()),format.raw/*26.70*/("""" class="btn btn-danger">Cancel</a>
+                            <a href=""""),_display_(/*27.39*/routes/*27.45*/.HomeController.contact()),format.raw/*27.70*/("""" class="btn btn-danger">Cancel</a>
 
                         </div>
                     </div>
             </div>
 
         </div>
-        """)))}),format.raw/*33.10*/("""
+        """)))}),format.raw/*34.10*/("""
 
-        """),format.raw/*35.9*/("""<div class="row">
+        """),format.raw/*36.9*/("""<div class="row">
             <div class="col-md-12 text-center">
                 <h4>See below for Social Sites</h4>
             </div>
@@ -99,11 +100,11 @@ Seq[Any](format.raw/*3.62*/("""
 object contact extends contact_Scope0.contact_Scope1.contact
               /*
                   -- GENERATED --
-                  DATE: Tue Apr 11 23:43:49 BST 2017
-                  SOURCE: C:/Users/Eileen/Desktop/TicketStore/app/views/contact.scala.html
-                  HASH: 74e4cd728a12fdea68cf90486f576cf9dcdced24
-                  MATRIX: 827->21|982->81|1012->86|1041->107|1080->109|1112->115|1348->324|1389->356|1429->358|1483->384|1570->444|1584->449|1620->464|1674->490|1734->519|1784->541|1873->603|2003->723|2044->725|2098->752|2226->858|2280->885|2406->989|2460->1016|2577->1111|2631->1138|2747->1232|2801->1259|2946->1382|3002->1410|3180->1561|3195->1567|3241->1592|3418->1738|3457->1750
-                  LINES: 30->3|35->3|37->5|37->5|37->5|38->6|43->11|43->11|43->11|44->12|45->13|45->13|45->13|46->14|47->15|48->16|49->17|49->17|49->17|50->18|50->18|51->19|51->19|52->20|52->20|53->21|53->21|54->22|54->22|56->24|58->26|58->26|58->26|65->33|67->35
+                  DATE: Wed Apr 12 12:14:29 IST 2017
+                  SOURCE: /home/wdd/webapps/projectBackup/app/views/contact.scala.html
+                  HASH: 757f19d121e20ea48e6577767e5db6ab2f6a7985
+                  MATRIX: 827->19|982->79|1010->82|1039->103|1078->105|1109->110|1340->314|1381->346|1421->348|1474->373|1560->432|1574->437|1610->452|1663->477|1722->505|1771->526|1859->587|1989->707|2030->709|2083->735|2211->841|2264->867|2390->971|2443->997|2560->1092|2613->1118|2729->1212|2782->1238|2927->1361|2982->1388|3158->1537|3173->1543|3219->1568|3389->1707|3426->1717
+                  LINES: 30->3|35->3|37->5|37->5|37->5|38->6|43->11|43->11|43->11|44->12|45->13|45->13|45->13|46->14|47->15|48->16|49->17|49->17|49->17|50->18|50->18|51->19|51->19|52->20|52->20|53->21|53->21|54->22|54->22|57->25|59->27|59->27|59->27|66->34|68->36
                   -- GENERATED --
               */
           

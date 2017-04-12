@@ -2,8 +2,8 @@
 @main("My Orders", user) {
 
 
-    <div class="container" id="content">
-        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" id="user-order-display">
+    <div class="container " id="content">
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center" id="user-order-display">
             <div class="row">
                 <a href = "@routes.HomeController.myOrders()" class="btn btn-success btn-lg" id="user-order-button">
                     <span class="glyphicon glyphicon-calendar"></span>My Orders
@@ -27,17 +27,19 @@
         </div>
         <hr>
 
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" id="user-order-display">
+            <div class="row">
         <h2 class="greentext text-center">Order History</h2>
         @if(orders.size < 1) {
             <h3 class="text-center"> No orders have been placed on this account yet.</h3>
         }
         @if(orders.size > 0) {
-            <table class="table table-condensed">
+            <table class="table table-repsonsive table-bordered">
                 <thead>
                     <tr>
-                        <th>Order #</th>
-                        <th>Date</th>
-                        <th>Total</th>
+                        <th class="greentext">Order #</th>
+                        <th class="greentext">Date</th>
+                        <th class="greentext">Total</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -57,6 +59,7 @@
                 }
             </table>
         }
+          </div>
     </div>
 
 }

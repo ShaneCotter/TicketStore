@@ -51,7 +51,7 @@ Seq[Any](format.raw/*1.117*/("""
                         </div>
                         <div class="navbar-collapse collapse sidebar-navbar-collapse">
                             <ul class="nav navbar-nav">
-                                <h3 class="greentext ">EVENT CATEGORIES</h3>
+                                <h3 class="greentext text-center">EVENT CATEGORIES</h3>
                                 <div class="list-group">
 
                                     <a href=""""),_display_(/*26.47*/routes/*26.53*/.HomeController.adminevents(0)),format.raw/*26.83*/("""" class="list-group-item">All categories</a>
@@ -84,6 +84,14 @@ Seq[Any](format.raw/*1.117*/("""
                     """),format.raw/*53.21*/("""</div>
                 """)))}),format.raw/*54.18*/("""
                 """),format.raw/*55.17*/("""<div class="row"><br>
+                    <a href = """"),_display_(/*56.33*/routes/*56.39*/.HomeController.addEvent()),format.raw/*56.65*/("""" type="button" class="btn btn-success btn-md" >
+                        <span class="glyphicon glyphicon-plus"></span>Add Event
+                    </a>
+
+                    <a href = """"),_display_(/*60.33*/routes/*60.39*/.HomeController.addTicket()),format.raw/*60.66*/("""" type="button" class="btn btn-success btn-md" >
+                        <span class="glyphicon glyphicon-plus"></span>Add Ticket
+                    </a>
+                    <hr>
                     <strong>Display</strong>
                     <div class="btn-group">
                         <a href="#" id="list" class="btn btn-default btn-sm"><span class="glyphicon glyphicon-th-list">
@@ -94,38 +102,38 @@ Seq[Any](format.raw/*1.117*/("""
                 <br>
                 <div id="products" class="row list-group">
                         <!-- Start of for loop - Fo reach e in events add a row -->
-                    """),_display_(/*66.22*/for(e <- events) yield /*66.38*/ {_display_(Seq[Any](format.raw/*66.40*/("""
-                        """),format.raw/*67.25*/("""<a href=""""),_display_(/*67.35*/routes/*67.41*/.HomeController.admineventTicket(e.getId)),format.raw/*67.82*/("""">
+                    """),_display_(/*74.22*/for(e <- events) yield /*74.38*/ {_display_(Seq[Any](format.raw/*74.40*/("""
+                        """),format.raw/*75.25*/("""<a href=""""),_display_(/*75.35*/routes/*75.41*/.HomeController.admineventTicket(e.getId)),format.raw/*75.82*/("""">
                             <div class="item  col-xs-4 col-lg-4">
                                 <div class="thumbnail">
-                                    """),_display_(/*70.38*/if(env.resource("public/images/eventImages/" + e.getId + ".jpg").isDefined)/*70.113*/ {_display_(Seq[Any](format.raw/*70.115*/("""
-                                        """),format.raw/*71.41*/("""<img class="img-responsive" src="/assets/images/eventImages/"""),_display_(/*71.102*/(e.getId + ".jpg")),format.raw/*71.120*/(""""/>
-                                    """)))}/*72.39*/else/*72.44*/{_display_(Seq[Any](format.raw/*72.45*/("""
-                                        """),format.raw/*73.41*/("""<img class="img-responsive" src="/assets/images/eventImages/noImage.png" alt="" >
-                                    """)))}),format.raw/*74.38*/("""
-                                    """),format.raw/*75.37*/("""<div class="caption">
+                                    """),_display_(/*78.38*/if(env.resource("public/images/eventImages/" + e.getId + ".jpg").isDefined)/*78.113*/ {_display_(Seq[Any](format.raw/*78.115*/("""
+                                        """),format.raw/*79.41*/("""<img class="img-responsive" src="/assets/images/eventImages/"""),_display_(/*79.102*/(e.getId + ".jpg")),format.raw/*79.120*/(""""/>
+                                    """)))}/*80.39*/else/*80.44*/{_display_(Seq[Any](format.raw/*80.45*/("""
+                                        """),format.raw/*81.41*/("""<img class="img-responsive" src="/assets/images/eventImages/noImage.png" alt="" >
+                                    """)))}),format.raw/*82.38*/("""
+                                    """),format.raw/*83.37*/("""<div class="caption">
                                         <h4 class="group inner list-group-item-heading">
-                                        """),_display_(/*77.42*/e/*77.43*/.getTitle),format.raw/*77.52*/("""</h4>
-                                            <h4>"""),_display_(/*78.50*/e/*78.51*/.getEventName),format.raw/*78.64*/("""</h4>
+                                        """),_display_(/*85.42*/e/*85.43*/.getTitle),format.raw/*85.52*/("""</h4>
+                                            <h4>"""),_display_(/*86.50*/e/*86.51*/.getEventName),format.raw/*86.64*/("""</h4>
 
-                                            <h4>"""),_display_(/*80.50*/e/*80.51*/.getLocation),format.raw/*80.63*/("""</h4>
+                                            <h4>"""),_display_(/*88.50*/e/*88.51*/.getLocation),format.raw/*88.63*/("""</h4>
 
-                                            <h4>"""),_display_(/*82.50*/e/*82.51*/.getTime),format.raw/*82.59*/(""", """),_display_(/*82.62*/e/*82.63*/.getDate),format.raw/*82.71*/("""</h4>
+                                            <h4>"""),_display_(/*90.50*/e/*90.51*/.getTime),format.raw/*90.59*/(""", """),_display_(/*90.62*/e/*90.63*/.getDate),format.raw/*90.71*/("""</h4>
 
-                                            <h5>"""),_display_(/*84.50*/e/*84.51*/.calcLowestPrice),format.raw/*84.67*/("""</h5>
+                                            <h5>"""),_display_(/*92.50*/e/*92.51*/.calcLowestPrice),format.raw/*92.67*/("""</h5>
 
                                         <div class="row">
                                             <div class="col-xs-12 col-md-6">
-                                            """),_display_(/*88.46*/if(user.getRole.equals("admin"))/*88.78*/ {_display_(Seq[Any](format.raw/*88.80*/("""
-                                                """),format.raw/*89.49*/("""<a href=""""),_display_(/*89.59*/routes/*89.65*/.HomeController.updateEvent(e.getId)),format.raw/*89.101*/("""" class="btn btn-danger">
+                                            """),_display_(/*96.46*/if(user.getRole.equals("admin"))/*96.78*/ {_display_(Seq[Any](format.raw/*96.80*/("""
+                                                """),format.raw/*97.49*/("""<a href=""""),_display_(/*97.59*/routes/*97.65*/.HomeController.updateEvent(e.getId)),format.raw/*97.101*/("""" class="btn btn-danger">
                                                     <span class="glyphicon glyphicon-wrench"></span>
                                                 </a>
-                                                <a href=""""),_display_(/*92.59*/routes/*92.65*/.HomeController.deleteEvent(e.getId)),format.raw/*92.101*/("""" class = "btn btn-danger"
+                                                <a href=""""),_display_(/*100.59*/routes/*100.65*/.HomeController.deleteEvent(e.getId)),format.raw/*100.101*/("""" class = "btn btn-danger"
                                                 onclick="return confirmDel();">
                                                     <span class="glyphicon glyphicon-trash"></span>
                                                 </a>
-                                            """)))}),format.raw/*96.46*/("""
-                                            """),format.raw/*97.45*/("""</div>
+                                            """)))}),format.raw/*104.46*/("""
+                                            """),format.raw/*105.45*/("""</div>
 
 
                                         </div>
@@ -134,7 +142,7 @@ Seq[Any](format.raw/*1.117*/("""
                             </div>
                         </a>
 
-                    """)))}),format.raw/*106.22*/(""" """),format.raw/*106.23*/("""<!-- End of for loop -->
+                    """)))}),format.raw/*114.22*/(""" """),format.raw/*114.23*/("""<!-- End of for loop -->
 
 
                     <div class="col-xs-12 col-md-6">
@@ -149,17 +157,17 @@ Seq[Any](format.raw/*1.117*/("""
 
         <!--Script for displaying products in grid/list-->
     <script>
-            $(document).ready(function() """),format.raw/*121.42*/("""{"""),format.raw/*121.43*/("""
-                """),format.raw/*122.17*/("""$('#list').click(function(event)"""),format.raw/*122.49*/("""{"""),format.raw/*122.50*/("""event.preventDefault();$('#products .item').addClass('list-group-item');"""),format.raw/*122.122*/("""}"""),format.raw/*122.123*/(""");
-                $('#grid').click(function(event)"""),format.raw/*123.49*/("""{"""),format.raw/*123.50*/("""event.preventDefault();$('#products .item').removeClass('list-group-item');$('#products .item').addClass('grid-group-item');"""),format.raw/*123.174*/("""}"""),format.raw/*123.175*/(""");
-            """),format.raw/*124.13*/("""}"""),format.raw/*124.14*/(""");</script>
+            $(document).ready(function() """),format.raw/*129.42*/("""{"""),format.raw/*129.43*/("""
+                """),format.raw/*130.17*/("""$('#list').click(function(event)"""),format.raw/*130.49*/("""{"""),format.raw/*130.50*/("""event.preventDefault();$('#products .item').addClass('list-group-item');"""),format.raw/*130.122*/("""}"""),format.raw/*130.123*/(""");
+                $('#grid').click(function(event)"""),format.raw/*131.49*/("""{"""),format.raw/*131.50*/("""event.preventDefault();$('#products .item').removeClass('list-group-item');$('#products .item').addClass('grid-group-item');"""),format.raw/*131.174*/("""}"""),format.raw/*131.175*/(""");
+            """),format.raw/*132.13*/("""}"""),format.raw/*132.14*/(""");</script>
 
     <!--Script for confirming delete of event-->
     <script>
-        function confirmDel()"""),format.raw/*128.30*/("""{"""),format.raw/*128.31*/("""
-            """),format.raw/*129.13*/("""return confirm('Are you sure?');
-        """),format.raw/*130.9*/("""}"""),format.raw/*130.10*/("""
-    """),format.raw/*131.5*/("""</script>
+        function confirmDel()"""),format.raw/*136.30*/("""{"""),format.raw/*136.31*/("""
+            """),format.raw/*137.13*/("""return confirm('Are you sure?');
+        """),format.raw/*138.9*/("""}"""),format.raw/*138.10*/("""
+    """),format.raw/*139.5*/("""</script>
 """)))}))
       }
     }
@@ -180,11 +188,11 @@ Seq[Any](format.raw/*1.117*/("""
 object adminevents extends adminevents_Scope0.adminevents
               /*
                   -- GENERATED --
-                  DATE: Tue Apr 11 23:43:50 BST 2017
-                  SOURCE: C:/Users/Eileen/Desktop/TicketStore/app/views/admin/adminevents.scala.html
-                  HASH: 4f08bb0d461585cdba061db04c420cf416481bc6
-                  MATRIX: 836->1|1047->116|1077->121|1104->140|1143->142|1179->152|2408->1354|2423->1360|2474->1390|2582->1471|2618->1491|2658->1493|2723->1530|2760->1540|2775->1546|2835->1585|2906->1628|2917->1629|2947->1637|3017->1679|3065->1700|3075->1701|3113->1718|3227->1801|3289->1835|3706->2225|3747->2257|3786->2258|3836->2280|3919->2336|3933->2341|3969->2356|4019->2378|4075->2403|4121->2421|4791->3064|4823->3080|4863->3082|4917->3108|4954->3118|4969->3124|5031->3165|5223->3330|5308->3405|5349->3407|5419->3449|5508->3510|5548->3528|5609->3571|5622->3576|5661->3577|5731->3619|5882->3739|5948->3777|6129->3931|6139->3932|6169->3941|6252->3997|6262->3998|6296->4011|6381->4069|6391->4070|6424->4082|6509->4140|6519->4141|6548->4149|6578->4152|6588->4153|6617->4161|6702->4219|6712->4220|6749->4236|6967->4427|7008->4459|7048->4461|7126->4511|7163->4521|7178->4527|7236->4563|7504->4804|7519->4810|7577->4846|7917->5155|7991->5201|8256->5434|8286->5435|8648->5768|8678->5769|8725->5787|8786->5819|8816->5820|8918->5892|8949->5893|9030->5945|9060->5946|9214->6070|9245->6071|9290->6087|9320->6088|9457->6196|9487->6197|9530->6211|9600->6253|9630->6254|9664->6260
-                  LINES: 27->1|32->1|34->3|34->3|34->3|37->6|57->26|57->26|57->26|59->28|59->28|59->28|60->29|60->29|60->29|60->29|60->29|60->29|60->29|61->30|61->30|61->30|61->30|63->32|64->33|81->50|81->50|81->50|82->51|83->52|83->52|83->52|84->53|85->54|86->55|97->66|97->66|97->66|98->67|98->67|98->67|98->67|101->70|101->70|101->70|102->71|102->71|102->71|103->72|103->72|103->72|104->73|105->74|106->75|108->77|108->77|108->77|109->78|109->78|109->78|111->80|111->80|111->80|113->82|113->82|113->82|113->82|113->82|113->82|115->84|115->84|115->84|119->88|119->88|119->88|120->89|120->89|120->89|120->89|123->92|123->92|123->92|127->96|128->97|137->106|137->106|152->121|152->121|153->122|153->122|153->122|153->122|153->122|154->123|154->123|154->123|154->123|155->124|155->124|159->128|159->128|160->129|161->130|161->130|162->131
+                  DATE: Wed Apr 12 12:49:49 IST 2017
+                  SOURCE: /home/wdd/webapps/projectBackup/app/views/admin/adminevents.scala.html
+                  HASH: 1be9ffc4b577c6ed130126068a5b16db5e5cc217
+                  MATRIX: 836->1|1047->116|1075->119|1102->138|1141->140|1174->147|2394->1340|2409->1346|2460->1376|2566->1455|2602->1475|2642->1477|2706->1513|2743->1523|2758->1529|2818->1568|2889->1611|2900->1612|2930->1620|2999->1661|3047->1682|3057->1683|3095->1700|3207->1781|3268->1814|3668->2187|3709->2219|3748->2220|3797->2241|3879->2296|3893->2301|3929->2316|3978->2337|4033->2361|4078->2378|4159->2432|4174->2438|4221->2464|4435->2651|4450->2657|4498->2684|5315->3474|5347->3490|5387->3492|5440->3517|5477->3527|5492->3533|5554->3574|5743->3736|5828->3811|5869->3813|5938->3854|6027->3915|6067->3933|6127->3975|6140->3980|6179->3981|6248->4022|6398->4141|6463->4178|6642->4330|6652->4331|6682->4340|6764->4395|6774->4396|6808->4409|6891->4465|6901->4466|6934->4478|7017->4534|7027->4535|7056->4543|7086->4546|7096->4547|7125->4555|7208->4611|7218->4612|7255->4628|7469->4815|7510->4847|7550->4849|7627->4898|7664->4908|7679->4914|7737->4950|8003->5188|8019->5194|8078->5230|8415->5535|8489->5580|8745->5804|8775->5805|9122->6123|9152->6124|9198->6141|9259->6173|9289->6174|9391->6246|9422->6247|9502->6298|9532->6299|9686->6423|9717->6424|9761->6439|9791->6440|9924->6544|9954->6545|9996->6558|10065->6599|10095->6600|10128->6605
+                  LINES: 27->1|32->1|34->3|34->3|34->3|37->6|57->26|57->26|57->26|59->28|59->28|59->28|60->29|60->29|60->29|60->29|60->29|60->29|60->29|61->30|61->30|61->30|61->30|63->32|64->33|81->50|81->50|81->50|82->51|83->52|83->52|83->52|84->53|85->54|86->55|87->56|87->56|87->56|91->60|91->60|91->60|105->74|105->74|105->74|106->75|106->75|106->75|106->75|109->78|109->78|109->78|110->79|110->79|110->79|111->80|111->80|111->80|112->81|113->82|114->83|116->85|116->85|116->85|117->86|117->86|117->86|119->88|119->88|119->88|121->90|121->90|121->90|121->90|121->90|121->90|123->92|123->92|123->92|127->96|127->96|127->96|128->97|128->97|128->97|128->97|131->100|131->100|131->100|135->104|136->105|145->114|145->114|160->129|160->129|161->130|161->130|161->130|161->130|161->130|162->131|162->131|162->131|162->131|163->132|163->132|167->136|167->136|168->137|169->138|169->138|170->139
                   -- GENERATED --
               */
           

@@ -30,6 +30,8 @@ public class Contact extends Model {
     @Constraints.Required
     private String message;
 
+    private boolean read;
+
     public Long getId() {
         return id;
     }
@@ -83,5 +85,13 @@ public class Contact extends Model {
     public static List<Contact> findAll() {
 
         return Contact.find.all();
+    }
+
+    public boolean isRead() {
+        return read;
+    }
+
+    public void setRead(boolean read) {
+        this.read = read;
     }
 }

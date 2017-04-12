@@ -52,6 +52,10 @@ GET     /updateTicket/:id           controllers.HomeController.updateTicket(id:L
 
 POST    /addContactSubmit           controllers.HomeController.addContactSubmit
 
+GET     /viewAccounts               controllers.HomeController.viewAccounts
+GET     /deleteUser                 controllers.HomeController.deleteUser(id:String)
+GET     /markAsRead                 controllers.HomeController.markAsRead(id:Long,status:Boolean)
+
 
 
 # Map static resources from the /public folder to the /assets URL path

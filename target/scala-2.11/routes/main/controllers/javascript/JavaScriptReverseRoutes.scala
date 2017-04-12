@@ -1,7 +1,7 @@
 
 // @GENERATOR:play-routes-compiler
-// @SOURCE:C:/Users/Eileen/Desktop/TicketStore/conf/routes
-// @DATE:Tue Apr 11 23:43:48 BST 2017
+// @SOURCE:/home/wdd/webapps/projectBackup/conf/routes
+// @DATE:Wed Apr 12 12:32:00 IST 2017
 
 import play.api.routing.JavaScriptReverseRoute
 import play.api.mvc.{ QueryStringBindable, PathBindable, Call, JavascriptLiteral }
@@ -15,7 +15,7 @@ import _root_.play.libs.F
 package controllers.javascript {
   import ReverseRouteContext.empty
 
-  // @LINE:58
+  // @LINE:62
   class ReverseAssets(_prefix: => String) {
 
     def _defaultPrefix: String = {
@@ -23,7 +23,7 @@ package controllers.javascript {
     }
 
   
-    // @LINE:58
+    // @LINE:62
     def versioned: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.Assets.versioned",
       """
@@ -233,6 +233,16 @@ package controllers.javascript {
       """
     )
   
+    // @LINE:57
+    def markAsRead: JavaScriptReverseRoute = JavaScriptReverseRoute(
+      "controllers.HomeController.markAsRead",
+      """
+        function(id0,status1) {
+          return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "markAsRead" + _qS([(""" + implicitly[QueryStringBindable[Long]].javascriptUnbind + """)("id", id0), (""" + implicitly[QueryStringBindable[Boolean]].javascriptUnbind + """)("status", status1)])})
+        }
+      """
+    )
+  
     // @LINE:9
     def events: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.HomeController.events",
@@ -263,6 +273,16 @@ package controllers.javascript {
       """
     )
   
+    // @LINE:55
+    def viewAccounts: JavaScriptReverseRoute = JavaScriptReverseRoute(
+      "controllers.HomeController.viewAccounts",
+      """
+        function() {
+          return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "viewAccounts"})
+        }
+      """
+    )
+  
     // @LINE:44
     def addEventSubmit: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.HomeController.addEventSubmit",
@@ -279,6 +299,16 @@ package controllers.javascript {
       """
         function() {
           return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "reportProblem"})
+        }
+      """
+    )
+  
+    // @LINE:56
+    def deleteUser: JavaScriptReverseRoute = JavaScriptReverseRoute(
+      "controllers.HomeController.deleteUser",
+      """
+        function(id0) {
+          return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "deleteUser" + _qS([(""" + implicitly[QueryStringBindable[String]].javascriptUnbind + """)("id", id0)])})
         }
       """
     )
