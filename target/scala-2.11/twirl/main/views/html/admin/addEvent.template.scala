@@ -84,7 +84,7 @@ Seq[Any](format.raw/*3.61*/("""
 object addEvent extends addEvent_Scope0.addEvent_Scope1.addEvent
               /*
                   -- GENERATED --
-                  DATE: Wed Apr 12 14:13:01 BST 2017
+                  DATE: Fri Apr 14 10:44:00 BST 2017
                   SOURCE: C:/Users/Eileen/Desktop/TicketStore/app/views/admin/addEvent.scala.html
                   HASH: f8c987e989010ea6ecdd9df9ed956a2b19fd5370
                   MATRIX: 834->21|988->80|1018->85|1049->108|1088->110|1120->116|1373->342|1517->476|1558->478|1608->501|1830->702|1880->725|2003->826|2053->849|2173->947|2223->970|2349->1074|2399->1097|2517->1193|2567->1216|2685->1312|2849->1449|2935->1514|2981->1532|3146->1670|3161->1676|3206->1700|3376->1840

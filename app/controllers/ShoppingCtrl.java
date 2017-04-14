@@ -6,11 +6,14 @@ import views.html.*;
 import views.html.account.*;
 import views.html.admin.*;
 import play.db.ebean.Transactional;
+import play.api.Environment;
+import javax.inject.Inject;
 
 // Import models
 import models.users.*;
 import models.*;
 import models.shopping.*;
+
 
 
 // Authenticate user
@@ -19,6 +22,13 @@ import models.shopping.*;
 
 public class ShoppingCtrl extends Controller {
 
+    private Environment env;
+
+    @Inject
+    public ShoppingCtrl(Environment e) {
+        this.env = e;
+    }
+
     // Get a user - if logged in email will be set in the session
     private User getCurrentUser() {
         return User.getUserById(session().get("email"));
@@ -26,7 +36,7 @@ public class ShoppingCtrl extends Controller {
 
     @Transactional
     public Result showBasket() {
-        return ok(cart.render(getCurrentUser()));
+        return ok(cart.render(getCurrentUser(),env));
     }
 
     // Add item to customer basket
@@ -51,7 +61,7 @@ public class ShoppingCtrl extends Controller {
         user.update();
 
         // Show the basket contents
-        return ok(cart.render(user));
+        return ok(cart.render(user,env));
     }
 
     // Add an item to the basket
@@ -79,7 +89,7 @@ public class ShoppingCtrl extends Controller {
         u.getBasket().removeItem(item);
         u.getBasket().update();
         // back to basket
-        return ok(cart.render(u));
+        return ok(cart.render(u,env));
     }
 
     // Empty Basket
@@ -90,9 +100,10 @@ public class ShoppingCtrl extends Controller {
         u.getBasket().removeAllItems();
         u.getBasket().update();
 
-        return ok(cart.render(u));
+        return ok(cart.render(u,env));
     }
 
+    @Security.Authenticated(Secured.class)
     @Transactional
     public Result placeOrder() {
         User u = getCurrentUser();

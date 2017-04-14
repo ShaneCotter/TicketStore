@@ -6,9 +6,6 @@
 @main("Tickets", user) {
     <!--..CONTENT..-->
     <div class="container" id = "seatingplans">
-        <br>
-        <br>
-        <br>
         @if(flash.containsKey("success")) {
             <div class="alert alert-success">
             @flash.get("success")
@@ -27,34 +24,39 @@
                 <h1>@e.getTitle, @e.getEventName</h1>
                 <p>@e.getLocation</p>
                 <p>@e.getDate, @e.getTime</p>
+                <p><a><a href = "@routes.HomeController.addTicket()" type="button" class="btn btn-success btn-md" >
+                    <span class="glyphicon glyphicon-plus"></span>Add Ticket
+                 </a></p>
             </div>
         </div>
 
         <div class="row well" id="tickets">
+        <h1 class="text-center">Tickets</h1>
 
         @for(t <- tickets) {
-            <div class="item  col-xs-4 col-lg-4">
-                <div class="thumbnail">
-
-                    <h2>@t.getTicketType</h2>
-                    <div class="caption">
-                        <p class="group inner list-group-item-text">
-                    <p>€@t.getPrice</p>
-
-                        <div class="row">
-                            <div class="col-xs-12 col-md-6">
-                            @if(user.getRole.equals("admin")) {
-                                <a href="@routes.HomeController.deleteTicket(t.getTicketID)" class = "btn btn-danger"
-                                onclick="return confirmDel();">
-                                    <span class="glyphicon glyphicon-trash"></span></a>
-                            }
-                            </div>
-                        </div>
+            <div class="col-md-4 text-center">
+                <div class="panel panel-success panel-pricing">
+                    <div class="panel-heading">
+                        <i class="fa fa-ticket whitetext" aria-hidden="true"></i>
+                        <h3 class="whitetext">@e.getTitle : @e.getEventName</h3>
+                        <h3 class="whitetext">@t.getTicketType ticket</h3>
+                    </div>
+                    <div class="panel-body text-center">
+                        <p><strong>€ @t.getPrice</strong></p>
+                    </div>
+                    <div class="panel-footer">
+                    @if(user.getRole.equals("admin")) {
+                        <a href="@routes.HomeController.updateTicket(t.getTicketID)" class="btn btn-danger">
+                            <span class="glyphicon glyphicon-wrench"></span>
+                        </a>
+                        <a href="@routes.HomeController.deleteTicket(t.getTicketID)" class = "btn btn-danger"
+                        onclick="return confirmDel();">
+                            <span class="glyphicon glyphicon-trash"></span></a>
+                    }
                     </div>
                 </div>
-            </div>
+            </div><!-- /ticket -->
         }
-        </div>
     </div>
 
 

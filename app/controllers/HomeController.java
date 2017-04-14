@@ -115,9 +115,9 @@ public class HomeController extends Controller {
         return ok(addEvent.render(eventForm, getUserFromSession()));
     }
 
-
+    @Security.Authenticated(Secured.class)
     public Result cart() {
-        return ok(cart.render(getUserFromSession()));
+        return ok(cart.render(getUserFromSession(),env));
     }
 
     public Result contact() {
@@ -125,13 +125,14 @@ public class HomeController extends Controller {
         return ok(contact.render(contactForm, getUserFromSession()));
     }
 
-
+    @Security.Authenticated(Secured.class)
     public Result reportProblem() {
         Form<Contact> contactForm = formFactory.form(Contact.class);
         flash("success", "Please fill out this form to alert admins of any problems.");
         return ok(contact.render(contactForm, getUserFromSession()));
     }
 
+    @Security.Authenticated(Secured.class)
     public Result myOrders() {
         User u = getUserFromSession();
 
@@ -295,12 +296,20 @@ public class HomeController extends Controller {
         }
 
         Ticket newTicket = newTicketForm.get();
+        Long e = newTicket.getEvent().getId();
 
-        newTicket.save();
 
-        flash("success", "Ticket " + newTicket.getTicketType() + "has been created");
+        if (newTicket.getTicketID() == null) {
+            newTicket.save();
+            flash("success", newTicket.getTicketType() + " ticket has been created");
+        } else if (newTicket.getTicketID() != null) {
+            newTicket.update();
+            flash("success", newTicket.getTicketType() + " ticket has been updated");
+        }
 
-        return redirect(controllers.routes.HomeController.adminevents(0));
+
+
+        return redirect(controllers.routes.HomeController.admineventTicket(e));
     }
 
     @Security.Authenticated(Secured.class)
@@ -308,15 +317,19 @@ public class HomeController extends Controller {
     @Transactional
     public Result deleteTicket(Long id) {
 
-        Ticket.find.ref(id).delete();
+        Ticket t = Ticket.find.ref(id);
+        Long e = t.getEvent().getId();
+        t.delete();
+
 
         flash("success", "Ticket has been deleted");
 
-        return redirect(routes.HomeController.admineventTicket(id));
+        return redirect(routes.HomeController.admineventTicket(e));
     }
 
 
     @Security.Authenticated(Secured.class)
+    @With(AuthAdmin.class)
     @Transactional
     public Result updateTicket(Long id) {
         Ticket t;

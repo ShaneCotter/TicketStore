@@ -21,10 +21,10 @@ import play.data._
 import play.api.data.Field
 import play.mvc.Http.Context.Implicit._
 
-class cart extends BaseScalaTemplate[play.twirl.api.HtmlFormat.Appendable,Format[play.twirl.api.HtmlFormat.Appendable]](play.twirl.api.HtmlFormat) with play.twirl.api.Template1[models.users.User,play.twirl.api.HtmlFormat.Appendable] {
+class cart extends BaseScalaTemplate[play.twirl.api.HtmlFormat.Appendable,Format[play.twirl.api.HtmlFormat.Appendable]](play.twirl.api.HtmlFormat) with play.twirl.api.Template2[models.users.User,play.api.Environment,play.twirl.api.HtmlFormat.Appendable] {
 
   /**/
-  def apply/*1.2*/(user: models.users.User):play.twirl.api.HtmlFormat.Appendable = {
+  def apply/*1.2*/(user: models.users.User,env: play.api.Environment):play.twirl.api.HtmlFormat.Appendable = {
     _display_ {
       {
 import play.api.Play.resource
@@ -32,7 +32,7 @@ import play.api.Play.current
 import models.shopping._
 import models._
 
-Seq[Any](format.raw/*1.27*/("""
+Seq[Any](format.raw/*1.53*/("""
 
 """),format.raw/*7.1*/("""
     """),format.raw/*8.5*/("""<!-- Pass page title and user on to main -->
@@ -71,32 +71,32 @@ Seq[Any](format.raw/*1.27*/("""
 
                             """),format.raw/*42.29*/("""<div class="panel-body">
                                 <div class="row">
-                                    <div class="col-xs-2"><img class="img-responsive" src="http://placehold.it/100x70">
-                                    </div>
+                                    <div class="col-xs-2">
+                                    """),_display_(/*45.38*/if(env.resource("public/images/eventImages/" + i.getTicket.getEvent.getId + ".jpg").isDefined)/*45.132*/ {_display_(Seq[Any](format.raw/*45.134*/("""
+                                        """),format.raw/*46.41*/("""<img class="img-responsive" src="/assets/images/eventImages/"""),_display_(/*46.102*/(i.getTicket.getEvent.getId + ".jpg")),format.raw/*46.139*/(""""/>
+                                    """)))}/*47.39*/else/*47.44*/{_display_(Seq[Any](format.raw/*47.45*/("""
+                                        """),format.raw/*48.41*/("""<img class="img-responsive" src="/assets/images/eventImages/noImage.png" alt="" >
+                                        """)))}),format.raw/*49.42*/("""
+                                    """),format.raw/*50.37*/("""</div>
                                     <div class="col-xs-4">
-                                        <h4 class="product-name"><strong>"""),_display_(/*47.75*/i/*47.76*/.getTicket.getEvent.getEventName),format.raw/*47.108*/("""</strong></h4>
-                                        <h4><small>"""),_display_(/*48.53*/i/*48.54*/.getTicket.getTicketType),format.raw/*48.78*/("""</small></h4>
+                                        <h4 class="product-name"><strong>"""),_display_(/*52.75*/i/*52.76*/.getTicket.getEvent.getEventName),format.raw/*52.108*/("""</strong></h4>
+                                        <h4><small>"""),_display_(/*53.53*/i/*53.54*/.getTicket.getTicketType),format.raw/*53.78*/("""</small></h4>
                                     </div>
                                     <div class="col-xs-6">
                                         <div class="col-xs-6 text-right">
-                                            <h6><strong>&euro;
-                                                """),_display_(/*53.50*/("%.2f".format(i.getPrice))),format.raw/*53.77*/(""" """),format.raw/*53.78*/("""<span class="text-muted">x</span></strong>
-                                            </h6>
+                                            <h4><strong>Price</strong></h4>
+                                            <h4>&euro;
+                                                """),_display_(/*59.50*/("%.2f".format(i.getPrice))),format.raw/*59.77*/(""" """),format.raw/*59.78*/("""<span class="text-muted">x</span>
+                                            </h4>
                                         </div>
-                                        <div class="col-xs-4">
-                                            """),_display_(/*57.46*/i/*57.47*/.getQuantity()),format.raw/*57.61*/("""
-                                        """),format.raw/*58.41*/("""<a href=""""),_display_(/*58.51*/routes/*58.57*/.ShoppingCtrl.removeOne(i.getId)),format.raw/*58.89*/(""""><span class="glyphicon glyphicon-minus-sign"></span></a>
-                                        <a href=""""),_display_(/*59.51*/routes/*59.57*/.ShoppingCtrl.addOne(i.getId)),format.raw/*59.86*/(""""><span class="glyphicon glyphicon-plus-sign"></span></a>
-                                        </div>
-                                        <div class="col-xs-2">
-                                            <button type="button" class="btn btn-link btn-xs">
-                                                <span class="glyphicon glyphicon-trash"> </span>
-                                            </button>
+                                        <div class="col-xs-4 pull-right">
+                                            <h4><strong>Quantity</strong></h4>
+                                            """),_display_(/*64.46*/i/*64.47*/.getQuantity()),format.raw/*64.61*/("""
+                                        """),format.raw/*65.41*/("""<a href=""""),_display_(/*65.51*/routes/*65.57*/.ShoppingCtrl.removeOne(i.getId)),format.raw/*65.89*/(""""><span class="glyphicon glyphicon-minus-sign"></span></a>
+                                        <a href=""""),_display_(/*66.51*/routes/*66.57*/.ShoppingCtrl.addOne(i.getId)),format.raw/*66.86*/(""""><span class="glyphicon glyphicon-plus-sign"></span></a>
                                         </div>
                                     </div>
                                 </div>
-                                <hr>
-
                                 <hr>
                                 """)))}),format.raw/*71.34*/("""
 
@@ -150,9 +150,9 @@ Seq[Any](format.raw/*1.27*/("""
     }
   }
 
-  def render(user:models.users.User): play.twirl.api.HtmlFormat.Appendable = apply(user)
+  def render(user:models.users.User,env:play.api.Environment): play.twirl.api.HtmlFormat.Appendable = apply(user,env)
 
-  def f:((models.users.User) => play.twirl.api.HtmlFormat.Appendable) = (user) => apply(user)
+  def f:((models.users.User,play.api.Environment) => play.twirl.api.HtmlFormat.Appendable) = (user,env) => apply(user,env)
 
   def ref: this.type = this
 
@@ -165,11 +165,11 @@ Seq[Any](format.raw/*1.27*/("""
 object cart extends cart_Scope0.cart
               /*
                   -- GENERATED --
-                  DATE: Wed Apr 12 14:13:01 BST 2017
+                  DATE: Fri Apr 14 11:17:05 BST 2017
                   SOURCE: C:/Users/Eileen/Desktop/TicketStore/app/views/cart.scala.html
-                  HASH: d449577b3fe7a2cdd45f6c3d32d4078c2220da98
-                  MATRIX: 754->1|973->26|1003->138|1035->144|1107->191|1133->209|1172->211|1207->219|1963->948|1978->954|2024->979|2487->1415|2524->1443|2564->1445|2618->1471|2726->1548|2778->1573|2815->1601|2855->1603|2913->1633|3028->1721|3087->1764|3127->1766|3189->1800|3592->2176|3602->2177|3656->2209|3751->2277|3761->2278|3806->2302|4140->2609|4188->2636|4217->2637|4496->2889|4506->2890|4541->2904|4611->2946|4648->2956|4663->2962|4716->2994|4853->3104|4868->3110|4918->3139|5612->3802|5668->3830|6043->4178|6058->4184|6106->4211|6415->4489|6469->4515|6747->4766|6814->4812|6922->4893|6968->4930|7008->4932|7070->4966|7509->5377|7523->5381|7570->5406|7785->5593|7799->5597|7832->5608|8319->6063|8374->6089
-                  LINES: 27->1|35->1|37->7|38->8|39->9|39->9|39->9|41->11|54->24|54->24|54->24|62->32|62->32|62->32|63->33|65->35|67->37|67->37|67->37|68->38|69->39|69->39|69->39|72->42|77->47|77->47|77->47|78->48|78->48|78->48|83->53|83->53|83->53|87->57|87->57|87->57|88->58|88->58|88->58|88->58|89->59|89->59|89->59|101->71|103->73|109->79|109->79|109->79|115->85|118->88|122->92|122->92|124->94|124->94|124->94|125->95|130->100|130->100|130->100|133->103|133->103|133->103|141->111|142->112
+                  HASH: 5bddd8d5211f0434032f404b1a1292e11b70b36c
+                  MATRIX: 775->1|1020->52|1050->164|1082->170|1154->217|1180->235|1219->237|1254->245|2010->974|2025->980|2071->1005|2534->1441|2571->1469|2611->1471|2665->1497|2773->1574|2825->1599|2862->1627|2902->1629|2960->1659|3075->1747|3134->1790|3174->1792|3236->1826|3437->2000|3541->2094|3582->2096|3652->2138|3741->2199|3800->2236|3861->2279|3874->2284|3913->2285|3983->2327|4138->2451|4204->2489|4373->2631|4383->2632|4437->2664|4532->2732|4542->2733|4587->2757|4990->3133|5038->3160|5067->3161|5428->3495|5438->3496|5473->3510|5543->3552|5580->3562|5595->3568|5648->3600|5785->3710|5800->3716|5850->3745|6143->4007|6199->4035|6574->4383|6589->4389|6637->4416|6946->4694|7000->4720|7278->4971|7345->5017|7453->5098|7499->5135|7539->5137|7601->5171|8040->5582|8054->5586|8101->5611|8316->5798|8330->5802|8363->5813|8850->6268|8905->6294
+                  LINES: 27->1|35->1|37->7|38->8|39->9|39->9|39->9|41->11|54->24|54->24|54->24|62->32|62->32|62->32|63->33|65->35|67->37|67->37|67->37|68->38|69->39|69->39|69->39|72->42|75->45|75->45|75->45|76->46|76->46|76->46|77->47|77->47|77->47|78->48|79->49|80->50|82->52|82->52|82->52|83->53|83->53|83->53|89->59|89->59|89->59|94->64|94->64|94->64|95->65|95->65|95->65|95->65|96->66|96->66|96->66|101->71|103->73|109->79|109->79|109->79|115->85|118->88|122->92|122->92|124->94|124->94|124->94|125->95|130->100|130->100|130->100|133->103|133->103|133->103|141->111|142->112
                   -- GENERATED --
               */
           

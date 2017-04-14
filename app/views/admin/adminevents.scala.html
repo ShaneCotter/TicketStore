@@ -47,12 +47,13 @@
             <br>
             <br>
             <div class="col-sm-9">
+                <div class="row">
                 @if(flash.containsKey("success")){
                     <div class="alert alert-success">
                     @flash.get("success")
                     </div>
                 }
-                <div class="row"><br>
+                <br>
                     <a href = "@routes.HomeController.addEvent()" type="button" class="btn btn-success btn-md" >
                         <span class="glyphicon glyphicon-plus"></span>Add Event
                     </a>

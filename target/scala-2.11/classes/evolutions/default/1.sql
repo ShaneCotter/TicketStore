@@ -80,15 +80,6 @@ create table user (
   constraint pk_user primary key (email)
 );
 
-create table order_ticket (
-  ticket_id                     bigint not null,
-  order_id                      bigint,
-  qty                           integer,
-  cost                          double,
-  constraint pk_order_ticket primary key (ticket_id)
-);
-create sequence order_ticket_seq;
-
 alter table basket add constraint fk_basket_user_email foreign key (user_email) references user (email) on delete restrict on update restrict;
 
 alter table event add constraint fk_event_category_cat_id foreign key (category_cat_id) references category (cat_id) on delete restrict on update restrict;
@@ -154,7 +145,4 @@ drop table if exists ticket;
 drop sequence if exists ticket_seq;
 
 drop table if exists user;
-
-drop table if exists order_ticket;
-drop sequence if exists order_ticket_seq;
 

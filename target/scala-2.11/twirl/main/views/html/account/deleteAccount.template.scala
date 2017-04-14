@@ -89,7 +89,7 @@ Seq[Any](format.raw/*1.27*/("""
 object deleteAccount extends deleteAccount_Scope0.deleteAccount
               /*
                   -- GENERATED --
-                  DATE: Wed Apr 12 15:03:14 BST 2017
+                  DATE: Fri Apr 14 10:44:00 BST 2017
                   SOURCE: C:/Users/Eileen/Desktop/TicketStore/app/views/account/deleteAccount.scala.html
                   HASH: e7f94829adc18dc1092f765e25378277b641d3de
                   MATRIX: 780->1|900->26|928->29|964->57|1003->59|1039->69|1263->267|1277->273|1323->299|1541->490|1556->496|1608->527|1832->724|1847->730|1904->766|2139->974|2154->980|2206->1011|2516->1294|2531->1300|2586->1334|2818->1539|2833->1545|2881->1572|3048->1709

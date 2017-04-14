@@ -58,6 +58,8 @@ public class LoginController extends Controller {
         return User.getUserById(session().get("email"));
     }
 
+    @Security.Authenticated(Secured.class)
+    @Transactional
     public Result deleteMyAccount() {
 
         User u = getUserFromSession();
@@ -69,13 +71,14 @@ public class LoginController extends Controller {
         return redirect(routes.LoginController.login());
     }
 
-
+    @Security.Authenticated(Secured.class)
     public Result cancelDeleteAccount(){
 
             flash("success", "Account deletion cancelled");
             return redirect(routes.HomeController.myAccount());
     }
 
+    @Security.Authenticated(Secured.class)
     public Result deleteAccountPage(){
         return ok(deleteAccount.render(getUserFromSession()));
     }

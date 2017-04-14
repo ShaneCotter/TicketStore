@@ -51,7 +51,7 @@ Seq[Any](format.raw/*3.63*/("""
                 """),_display_(/*19.18*/inputText(addTicketForm("ticketID"), '_label -> "", 'hidden -> "hidden")),format.raw/*19.90*/("""
                 """),format.raw/*20.17*/("""<div class="actions">
                     <input type="submit" value="Add Ticket" class="btn btn-success">
-                    <a href=""""),_display_(/*22.31*/routes/*22.37*/.HomeController.index()),format.raw/*22.60*/("""" class="btn btn-danger">Cancel</a>
+                    <a href=""""),_display_(/*22.31*/routes/*22.37*/.HomeController.adminevents(0)),format.raw/*22.67*/("""" class="btn btn-danger">Cancel</a>
 
                 </div>
             </div>
@@ -80,10 +80,10 @@ Seq[Any](format.raw/*3.63*/("""
 object addTicket extends addTicket_Scope0.addTicket_Scope1.addTicket
               /*
                   -- GENERATED --
-                  DATE: Wed Apr 12 14:13:01 BST 2017
+                  DATE: Fri Apr 14 10:44:00 BST 2017
                   SOURCE: C:/Users/Eileen/Desktop/TicketStore/app/views/admin/addTicket.scala.html
-                  HASH: 450bc72d9db42ccb12b641c37bdd48bdb0816bbc
-                  MATRIX: 838->21|994->82|1024->87|1056->111|1095->113|1129->121|1296->261|1406->361|1447->363|1495->384|1746->614|1792->633|1923->742|1969->761|2153->923|2199->942|2387->1108|2433->1127|2526->1199|2572->1217|2738->1356|2753->1362|2797->1385|2941->1499
+                  HASH: 412799aaf98322971179d52f20e8c2cbe4fee442
+                  MATRIX: 838->21|994->82|1024->87|1056->111|1095->113|1129->121|1296->261|1406->361|1447->363|1495->384|1746->614|1792->633|1923->742|1969->761|2153->923|2199->942|2387->1108|2433->1127|2526->1199|2572->1217|2738->1356|2753->1362|2804->1392|2948->1506
                   LINES: 30->3|35->3|37->5|37->5|37->5|39->7|42->10|42->10|42->10|44->12|47->15|48->16|48->16|49->17|49->17|50->18|50->18|51->19|51->19|52->20|54->22|54->22|54->22|61->29
                   -- GENERATED --
               */
