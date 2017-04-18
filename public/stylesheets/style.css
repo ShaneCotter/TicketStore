@@ -22,7 +22,6 @@ a:hover, a:visited, a:link, a:active {
 }
 
 
-
 #nav-top{
 
 	background-color: #808080;
@@ -126,6 +125,11 @@ a:hover, a:visited, a:link, a:active {
 	margin-bottom:3em;
 	font-size:4em;
 }
+
+#profile {
+    margin: auto;
+}
+
 
 #aboutUs h2{
 	font-size: 2em;

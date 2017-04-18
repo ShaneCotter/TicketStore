@@ -371,7 +371,12 @@ public class HomeController extends Controller {
 
         u.update();
 
-        return ok(myaccount.render(getUserFromSession()));
+        MultipartFormData data1 = request().body().asMultipartFormData();
+        FilePart image1 = data1.getFile("upload1");
+
+        String saveImageMsg1 = saveFile1(u.getEmail(), image1);
+
+        return ok(myaccount.render(getUserFromSession(), env));
     }
 
 
@@ -381,7 +386,7 @@ public class HomeController extends Controller {
 
     @Security.Authenticated(Secured.class)
     public Result myAccount() {
-        return ok(myaccount.render(getUserFromSession()));
+        return ok(myaccount.render(getUserFromSession(), env));
     }
 
     // Save an image file
@@ -410,6 +415,44 @@ public class HomeController extends Controller {
                 thumb.thumbnail(60);
                 // Save the  image
                 thumb.addImage("public/images/eventImages/thumbnails" + id + ".jpg");
+                // execute the operation
+                try {
+                    cmd.run(op);
+                    cmd.run(thumb);
+                } catch (Exception e) {
+                    e.printStackTrace();
+                }
+                return " and image saved";
+            }
+        }
+        return "image file missing";
+    }
+
+    public String saveFile1(String id, FilePart<File> image) {
+        if (image != null) {
+            // Get mimetype from image
+            String mimeType = image.getContentType();
+            // Check if uploaded file is an image
+            if (mimeType.startsWith("image/")) {
+                // Create file from uploaded image
+                File file = image.getFile();
+                // create ImageMagick command instance
+                ConvertCmd cmd = new ConvertCmd();
+                // create the operation, add images and operators/options
+                IMOperation op = new IMOperation();
+                // Get the uploaded image file
+                op.addImage(file.getAbsolutePath());
+                // Resize using height and width constraints
+                op.resize(450, 200);
+                // Save the  image
+                op.addImage("public/images/profile/" + id + ".jpg");
+                // thumbnail
+                IMOperation thumb = new IMOperation();
+                // Get the uploaded image file
+                thumb.addImage(file.getAbsolutePath());
+                thumb.thumbnail(60);
+                // Save the  image
+                thumb.addImage("public/images/profile/thumbnails" + id + ".jpg");
                 // execute the operation
                 try {
                     cmd.run(op);
