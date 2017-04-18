@@ -65,6 +65,7 @@ create sequence shop_order_seq;
 create table ticket (
   ticket_id                     bigint not null,
   ticket_type                   varchar(255),
+  description                   varchar(255),
   quantity                      integer,
   price                         double,
   event_id                      bigint,

@@ -63,38 +63,40 @@ Seq[Any](format.raw/*1.94*/("""
         <div class="row well" id="tickets">
         <h1 class="text-center">Tickets</h1>
 
-        """),_display_(/*36.10*/for(t <- tickets) yield /*36.27*/ {_display_(Seq[Any](format.raw/*36.29*/("""
-            """),format.raw/*37.13*/("""<div class="col-md-4 text-center">
-                <div class="panel panel-success panel-pricing">
-                    <div class="panel-heading">
-                        <i class="fa fa-ticket whitetext" aria-hidden="true"></i>
-                        <h3 class="whitetext">"""),_display_(/*41.48*/e/*41.49*/.getTitle),format.raw/*41.58*/(""" """),format.raw/*41.59*/(""": """),_display_(/*41.62*/e/*41.63*/.getEventName),format.raw/*41.76*/("""</h3>
-                        <h3 class="whitetext">"""),_display_(/*42.48*/t/*42.49*/.getTicketType),format.raw/*42.63*/(""" """),format.raw/*42.64*/("""ticket</h3>
+            """),_display_(/*36.14*/for(t <- tickets) yield /*36.31*/ {_display_(Seq[Any](format.raw/*36.33*/("""
+                """),format.raw/*37.17*/("""<div class="col-md-4 text-center">
+                    <div class="panel panel-success panel-pricing">
+                        <div class="panel-heading">
+                            <i class="fa fa-ticket whitetext" aria-hidden="true"></i>
+                            <h3 class="whitetext">"""),_display_(/*41.52*/e/*41.53*/.getTitle),format.raw/*41.62*/(""" """),format.raw/*41.63*/(""": """),_display_(/*41.66*/e/*41.67*/.getEventName),format.raw/*41.80*/("""</h3>
+                            <h3 class="whitetext">"""),_display_(/*42.52*/t/*42.53*/.getTicketType),format.raw/*42.67*/(""" """),format.raw/*42.68*/("""ticket</h3>
+                        </div>
+                        <div class="panel-body text-center">
+                            <p><strong>€ """),_display_(/*45.43*/("%.2f".format(t.getPrice))),format.raw/*45.70*/("""</strong></p>
+                        </div>
+                        <ul class="list-group text-center">
+                            <li class="list-group-item"><i class="fa fa-info-circle "></i> """),_display_(/*48.93*/t/*48.94*/.getDescription),format.raw/*48.109*/("""</li>
+                        </ul>
+                        <div class="panel-footer">
+                        """),_display_(/*51.26*/if(t.getQuantity > 0)/*51.47*/ {_display_(Seq[Any](format.raw/*51.49*/("""
+                            """),format.raw/*52.29*/("""<a href=""""),_display_(/*52.39*/routes/*52.45*/.ShoppingCtrl.addToBasket(t.getTicketID())),format.raw/*52.87*/("""" class="btn btn-lg btn-block btn-success">
+                                Add to Cart</a>
+                        """)))}/*54.27*/else/*54.32*/{_display_(Seq[Any](format.raw/*54.33*/("""
+                            """),format.raw/*55.29*/("""<button class = "btn btn-lg btn-block btn-danger">
+                                Out of Stock </button>
+                        """)))}),format.raw/*57.26*/("""
+                        """),format.raw/*58.25*/("""</div>
                     </div>
-                    <div class="panel-body text-center">
-                        <p><strong>€ """),_display_(/*45.39*/t/*45.40*/.getPrice),format.raw/*45.49*/("""</strong></p>
-                    </div>
-                    <div class="panel-footer">
-                    """),_display_(/*48.22*/if(user.getRole.equals("admin"))/*48.54*/ {_display_(Seq[Any](format.raw/*48.56*/("""
-                        """),format.raw/*49.25*/("""<a href=""""),_display_(/*49.35*/routes/*49.41*/.HomeController.updateTicket(t.getTicketID)),format.raw/*49.84*/("""" class="btn btn-danger">
-                            <span class="glyphicon glyphicon-wrench"></span>
-                        </a>
-                        <a href=""""),_display_(/*52.35*/routes/*52.41*/.HomeController.deleteTicket(t.getTicketID)),format.raw/*52.84*/("""" class = "btn btn-danger"
-                        onclick="return confirmDel();">
-                            <span class="glyphicon glyphicon-trash"></span></a>
-                    """)))}),format.raw/*55.22*/("""
-                    """),format.raw/*56.21*/("""</div>
-                </div>
-            </div><!-- /ticket -->
-        """)))}),format.raw/*59.10*/("""
-    """),format.raw/*60.5*/("""</div>
+                </div><!-- /ticket -->
+        """)))}),format.raw/*61.10*/("""
+    """),format.raw/*62.5*/("""</div>
 
 
     <script>
-            function confirmDel() """),format.raw/*64.35*/("""{"""),format.raw/*64.36*/("""
-                """),format.raw/*65.17*/("""return confirm('Are you sure?');
-            """),format.raw/*66.13*/("""}"""),format.raw/*66.14*/("""
-    """),format.raw/*67.5*/("""</script>
+            function confirmDel() """),format.raw/*66.35*/("""{"""),format.raw/*66.36*/("""
+                """),format.raw/*67.17*/("""return confirm('Are you sure?');
+            """),format.raw/*68.13*/("""}"""),format.raw/*68.14*/("""
+    """),format.raw/*69.5*/("""</script>
 
         <!--END CONTENT-->
 """)))}))
@@ -117,11 +119,11 @@ Seq[Any](format.raw/*1.94*/("""
 object admineventTicket extends admineventTicket_Scope0.admineventTicket
               /*
                   -- GENERATED --
-                  DATE: Tue Apr 18 11:45:57 IST 2017
-                  SOURCE: /home/wdd/webapps/TicketStore/app/views/admin/admineventTicket.scala.html
-                  HASH: 7d2ed1e08228bf1dad3c1fe19e7dd6b05f8cfe99
-                  MATRIX: 831->1|1033->93|1061->112|1089->115|1118->136|1157->138|1188->143|1290->219|1330->251|1369->253|1410->266|1484->313|1498->318|1534->333|1575->346|1622->362|1658->371|1784->470|1868->545|1908->547|1953->564|2041->625|2080->643|2116->661|2129->666|2168->667|2213->684|2343->783|2384->796|2518->903|2528->904|2558->913|2588->916|2598->917|2632->930|2685->956|2695->957|2728->969|2780->994|2790->995|2819->1003|2849->1006|2859->1007|2888->1015|2954->1054|2969->1060|3017->1087|3330->1373|3363->1390|3403->1392|3444->1405|3747->1681|3757->1682|3787->1691|3816->1692|3846->1695|3856->1696|3890->1709|3970->1762|3980->1763|4015->1777|4044->1778|4205->1912|4215->1913|4245->1922|4381->2031|4422->2063|4462->2065|4515->2090|4552->2100|4567->2106|4631->2149|4824->2315|4839->2321|4903->2364|5118->2548|5167->2569|5272->2643|5304->2648|5388->2704|5417->2705|5462->2722|5535->2767|5564->2768|5596->2773
-                  LINES: 27->1|32->1|34->4|36->6|36->6|36->6|37->7|39->9|39->9|39->9|40->10|41->11|41->11|41->11|42->12|43->13|44->14|46->16|46->16|46->16|47->17|47->17|47->17|48->18|48->18|48->18|49->19|50->20|51->21|54->24|54->24|54->24|54->24|54->24|54->24|55->25|55->25|55->25|56->26|56->26|56->26|56->26|56->26|56->26|57->27|57->27|57->27|66->36|66->36|66->36|67->37|71->41|71->41|71->41|71->41|71->41|71->41|71->41|72->42|72->42|72->42|72->42|75->45|75->45|75->45|78->48|78->48|78->48|79->49|79->49|79->49|79->49|82->52|82->52|82->52|85->55|86->56|89->59|90->60|94->64|94->64|95->65|96->66|96->66|97->67
+                  DATE: Tue Apr 18 13:59:50 BST 2017
+                  SOURCE: C:/Users/Eileen/Desktop/TicketStore/app/views/admin/admineventTicket.scala.html
+                  HASH: dbe7bf78fe7e396d215d8500ec0fc554e0860138
+                  MATRIX: 831->1|1033->93|1063->115|1093->120|1122->141|1161->143|1193->149|1297->227|1337->259|1376->261|1418->275|1493->323|1507->328|1543->343|1585->357|1633->374|1670->384|1798->485|1882->560|1922->562|1968->580|2056->641|2095->659|2132->678|2145->683|2184->684|2230->702|2361->802|2403->816|2540->926|2550->927|2580->936|2610->939|2620->940|2654->953|2708->980|2718->981|2751->993|2804->1019|2814->1020|2843->1028|2873->1031|2883->1032|2912->1040|2979->1080|2994->1086|3042->1113|3368->1412|3401->1429|3441->1431|3487->1449|3810->1745|3820->1746|3850->1755|3879->1756|3909->1759|3919->1760|3953->1773|4038->1831|4048->1832|4083->1846|4112->1847|4288->1996|4336->2023|4563->2223|4573->2224|4610->2239|4752->2354|4782->2375|4822->2377|4880->2407|4917->2417|4932->2423|4995->2465|5133->2585|5146->2590|5185->2591|5243->2621|5407->2754|5461->2780|5577->2865|5610->2871|5698->2931|5727->2932|5773->2950|5847->2996|5876->2997|5909->3003
+                  LINES: 27->1|32->1|34->4|36->6|36->6|36->6|37->7|39->9|39->9|39->9|40->10|41->11|41->11|41->11|42->12|43->13|44->14|46->16|46->16|46->16|47->17|47->17|47->17|48->18|48->18|48->18|49->19|50->20|51->21|54->24|54->24|54->24|54->24|54->24|54->24|55->25|55->25|55->25|56->26|56->26|56->26|56->26|56->26|56->26|57->27|57->27|57->27|66->36|66->36|66->36|67->37|71->41|71->41|71->41|71->41|71->41|71->41|71->41|72->42|72->42|72->42|72->42|75->45|75->45|78->48|78->48|78->48|81->51|81->51|81->51|82->52|82->52|82->52|82->52|84->54|84->54|84->54|85->55|87->57|88->58|91->61|92->62|96->66|96->66|97->67|98->68|98->68|99->69
                   -- GENERATED --
               */
           

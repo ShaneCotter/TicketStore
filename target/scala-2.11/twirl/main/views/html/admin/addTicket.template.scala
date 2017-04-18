@@ -45,20 +45,21 @@ Seq[Any](format.raw/*3.63*/("""
                     addTicketForm("event.id"), options(Event.options), '_label -> "Event", '_default -> ".. Choose an Event ..",
                     '_showConstraints -> false, 'class -> "form-control"
                 )),format.raw/*15.18*/("""
-                """),_display_(/*16.18*/inputText(addTicketForm("ticketType"), '_label -> "TicketType", 'class -> "form-control", 'maxlength -> "30")),format.raw/*16.127*/("""
-                """),_display_(/*17.18*/inputText(addTicketForm("quantity"), '_label -> "Quantity", 'class -> "form-control", 'type -> "number", 'min -> "1", 'step -> "1", 'max -> "1000", 'value -> "0")),format.raw/*17.180*/("""
-                """),_display_(/*18.18*/inputText(addTicketForm("price"), '_label -> "Price", 'class -> "form-control", 'type -> "number", 'min -> "0.01", 'step -> "0.01", 'max -> "1000", 'value -> "00.00")),format.raw/*18.184*/("""
-                """),_display_(/*19.18*/inputText(addTicketForm("ticketID"), '_label -> "", 'hidden -> "hidden")),format.raw/*19.90*/("""
-                """),format.raw/*20.17*/("""<div class="actions">
+                """),_display_(/*16.18*/inputText(addTicketForm("ticketType"), '_label -> "Ticket Type", 'class -> "form-control", 'maxlength -> "30")),format.raw/*16.128*/("""
+                """),_display_(/*17.18*/inputText(addTicketForm("description"), '_label -> "Description ", 'class -> "form-control", 'maxlength -> "30")),format.raw/*17.130*/("""
+                """),_display_(/*18.18*/inputText(addTicketForm("quantity"), '_label -> "Quantity", 'class -> "form-control", 'type -> "number", 'min -> "1", 'step -> "1", 'max -> "1000", 'value -> "0")),format.raw/*18.180*/("""
+                """),_display_(/*19.18*/inputText(addTicketForm("price"), '_label -> "Price", 'class -> "form-control", 'type -> "number", 'min -> "0.01", 'step -> "0.01", 'max -> "1000", 'value -> "00.00")),format.raw/*19.184*/("""
+                """),_display_(/*20.18*/inputText(addTicketForm("ticketID"), '_label -> "", 'hidden -> "hidden")),format.raw/*20.90*/("""
+                """),format.raw/*21.17*/("""<div class="actions">
                     <input type="submit" value="Add Ticket" class="btn btn-success">
-                    <a href=""""),_display_(/*22.31*/routes/*22.37*/.HomeController.adminevents(0)),format.raw/*22.67*/("""" class="btn btn-danger">Cancel</a>
+                    <a href=""""),_display_(/*23.31*/routes/*23.37*/.HomeController.adminevents(0)),format.raw/*23.67*/("""" class="btn btn-danger">Cancel</a>
 
                 </div>
             </div>
         </div>
 
     </div>
-""")))}),format.raw/*29.2*/("""
+""")))}),format.raw/*30.2*/("""
 """)))}))
       }
     }
@@ -80,11 +81,11 @@ Seq[Any](format.raw/*3.63*/("""
 object addTicket extends addTicket_Scope0.addTicket_Scope1.addTicket
               /*
                   -- GENERATED --
-                  DATE: Tue Apr 18 11:45:57 IST 2017
-                  SOURCE: /home/wdd/webapps/TicketStore/app/views/admin/addTicket.scala.html
-                  HASH: f0fbb49bfe6de90e6930eab7166b20509b819c11
-                  MATRIX: 838->19|994->80|1022->83|1054->107|1093->109|1125->115|1289->252|1399->352|1440->354|1486->373|1734->600|1779->618|1910->727|1955->745|2139->907|2184->925|2372->1091|2417->1109|2510->1181|2555->1198|2719->1335|2734->1341|2785->1371|2922->1478
-                  LINES: 30->3|35->3|37->5|37->5|37->5|39->7|42->10|42->10|42->10|44->12|47->15|48->16|48->16|49->17|49->17|50->18|50->18|51->19|51->19|52->20|54->22|54->22|54->22|61->29
+                  DATE: Tue Apr 18 13:50:32 BST 2017
+                  SOURCE: C:/Users/Eileen/Desktop/TicketStore/app/views/admin/addTicket.scala.html
+                  HASH: 3b8fe9b58a4e505f0be959961a99642c96113750
+                  MATRIX: 838->21|994->82|1024->87|1056->111|1095->113|1129->121|1296->261|1406->361|1447->363|1495->384|1746->614|1792->633|1924->743|1970->762|2104->874|2150->893|2334->1055|2380->1074|2568->1240|2614->1259|2707->1331|2753->1349|2919->1488|2934->1494|2985->1524|3129->1638
+                  LINES: 30->3|35->3|37->5|37->5|37->5|39->7|42->10|42->10|42->10|44->12|47->15|48->16|48->16|49->17|49->17|50->18|50->18|51->19|51->19|52->20|52->20|53->21|55->23|55->23|55->23|62->30
                   -- GENERATED --
               */
           
