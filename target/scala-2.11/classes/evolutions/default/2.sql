@@ -17,6 +17,15 @@ Insert into event (id,event_name,time,location,date,title,category_cat_id) value
 
 Insert into ticket values (1,'Standing',10,100,1);
 Insert into ticket values (2,'Seated',10,50,1);
+Insert into ticket values (3,'Seated',10,50,2);
+Insert into ticket values (4,'Day Pass',10,50,3);
+Insert into ticket values (5,'Concession',10,50,4);
+Insert into ticket values (6,'Standing',10,50,5);
+Insert into ticket values (7,'Seated',10,50,6);
+Insert into ticket values (8,'Standing',10,50,6);
+Insert into ticket values (9,'Ring-side',10,50,7);
+Insert into ticket values (10,'Pitch side',10,50,8);
+Insert into ticket values (11,'Seated',10,50,8);
 
 Insert into user(email,role,name,password) values('shane@tc.ie','admin','shane','shane');
 Insert into user(email,role,name,password) values('jay@tc.ie','admin','jay','jay');
