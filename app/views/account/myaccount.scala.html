@@ -1,11 +1,12 @@
-@(user: models.users.User)
-@main("My Orders", user) {
+@(user: models.users.User, env: play.api.Environment)
+@main("My Account", user) {
 
 
     <div class="container " id="content">
         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center" id="user-order-display">
             <div class="row">
                 <h1>My Account</h1>
+                <hr>
                 <a href = "@routes.HomeController.myOrders()" class="btn btn-success btn-lg" id="user-order-button">
                     <span class="glyphicon glyphicon-calendar"></span>My Orders
                 </a>
@@ -24,8 +25,20 @@
                 </a>
 
                 <hr>
+
+                    <div class="thumbnail">
+                    @if(env.resource("public/images/profile/" + user.getEmail + ".jpg").isDefined) {
+                        <img class="img-circle img-responsive" src="/assets/images/profile/@(user.getEmail + ".jpg")"/>
+                    } else {
+                        <img class="img-circle img-responsive" src="/assets/images/profile/noImage.png" alt="" >
+                    }
+                    <h3 class="text-center"><span class="greentext">Name: </span>@user.getName</h3>
+                    <h3 class="text-center"><span class="greentext">Email: </span>@user.getEmail</h3>
+                    <h3 class="text-center"><span class="greentext">Role:</span> @user.getRole</h3>
+                    </div>
+                </div>
             </div>
         </div>
-    </div>
+
 
 }

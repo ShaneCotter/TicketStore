@@ -5,6 +5,7 @@
     @if(flash.containsKey("success")) {
         <div class="alert alert-success">
         @flash.get("success")
+        </div>
         }
     <div class="container-fluid" id="content">
         <h2>Login or <a href ="@routes.HomeController.signUp()">Sign Up</a></h2>

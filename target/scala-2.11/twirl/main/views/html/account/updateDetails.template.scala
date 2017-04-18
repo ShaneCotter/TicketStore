@@ -63,20 +63,23 @@ Seq[Any](format.raw/*3.64*/("""
         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" id="user-order-display">
             <div class="row">
 
-            """),_display_(/*34.14*/form(action = routes.HomeController.updateDetailsSubmit(), 'method -> "POST", 'class -> "form-horizontal", 'role -> "form")/*34.137*/ {_display_(Seq[Any](format.raw/*34.139*/("""
+            """),_display_(/*34.14*/form(action = routes.HomeController.updateDetailsSubmit(), 'method -> "POST", 'class -> "form-horizontal", 'role -> "form", 'enctype -> "multipart/form-data")/*34.172*/ {_display_(Seq[Any](format.raw/*34.174*/("""
                 """),_display_(/*35.18*/inputText(accountForm("email"), '_label -> "Email", 'class -> "form-control", 'maxlength -> "30", 'readonly -> "readonly")),format.raw/*35.140*/("""
                 """),_display_(/*36.18*/inputText(accountForm("name"), '_label -> "Name", 'class -> "form-control", 'maxlength -> "30")),format.raw/*36.113*/("""
                 """),_display_(/*37.18*/inputText(accountForm("password"), '_label -> "Email", 'type -> "password", 'class -> "form-control")),format.raw/*37.119*/("""
-                """),_display_(/*38.18*/inputText(accountForm("role"), '_label -> "", 'hidden -> "hidden")),format.raw/*38.84*/("""
+                """),format.raw/*38.17*/("""<label>Profile Image</label>
+                <input type="file" name="upload1">
+                <br>
+                """),_display_(/*41.18*/inputText(accountForm("role"), '_label -> "", 'hidden -> "hidden")),format.raw/*41.84*/("""
 
-                """),format.raw/*40.17*/("""<div class="actions">
+                """),format.raw/*43.17*/("""<div class="actions">
                     <input type="submit" value="Submit" class="btn btn-success">
-                    <a href=""""),_display_(/*42.31*/routes/*42.37*/.HomeController.contact()),format.raw/*42.62*/("""" class="btn btn-danger">Cancel</a>
+                    <a href=""""),_display_(/*45.31*/routes/*45.37*/.HomeController.contact()),format.raw/*45.62*/("""" class="btn btn-danger">Cancel</a>
 
                 </div>
-            """)))}),format.raw/*45.14*/("""
+            """)))}),format.raw/*48.14*/("""
 
-        """),format.raw/*47.9*/("""</div>
+        """),format.raw/*50.9*/("""</div>
     </div>
     </div>
 
@@ -101,11 +104,11 @@ Seq[Any](format.raw/*3.64*/("""
 object updateDetails extends updateDetails_Scope0.updateDetails_Scope1.updateDetails
               /*
                   -- GENERATED --
-                  DATE: Tue Apr 18 11:33:35 BST 2017
-                  SOURCE: C:/Users/Eileen/Desktop/TicketStore/app/views/account/updateDetails.scala.html
-                  HASH: ebe3cabf442be189c2d644d77bcdca72e14f69da
-                  MATRIX: 856->21|1013->83|1041->86|1077->114|1116->116|1152->126|1376->323|1391->329|1438->355|1656->546|1671->552|1723->583|1947->780|1962->786|2019->822|2254->1030|2269->1036|2321->1067|2729->1448|2862->1571|2903->1573|2949->1592|3093->1714|3139->1733|3256->1828|3302->1847|3425->1948|3471->1967|3558->2033|3606->2053|3768->2188|3783->2194|3829->2219|3936->2295|3975->2307
-                  LINES: 30->3|35->3|36->4|36->4|36->4|39->7|42->10|42->10|42->10|46->14|46->14|46->14|51->19|51->19|51->19|55->23|55->23|55->23|66->34|66->34|66->34|67->35|67->35|68->36|68->36|69->37|69->37|70->38|70->38|72->40|74->42|74->42|74->42|77->45|79->47
+                  DATE: Tue Apr 18 12:57:38 IST 2017
+                  SOURCE: /home/wdd/webapps/TicketStore/app/views/account/updateDetails.scala.html
+                  HASH: c84c5538c2224d2580435753dace53f54de4e365
+                  MATRIX: 856->19|1013->81|1040->83|1076->111|1115->113|1148->120|1369->314|1384->320|1431->346|1645->533|1660->539|1712->570|1931->762|1946->768|2003->804|2234->1008|2249->1014|2301->1045|2698->1415|2866->1573|2907->1575|2952->1593|3096->1715|3141->1733|3258->1828|3303->1846|3426->1947|3471->1964|3616->2082|3703->2148|3749->2166|3909->2299|3924->2305|3970->2330|4074->2403|4111->2413
+                  LINES: 30->3|35->3|36->4|36->4|36->4|39->7|42->10|42->10|42->10|46->14|46->14|46->14|51->19|51->19|51->19|55->23|55->23|55->23|66->34|66->34|66->34|67->35|67->35|68->36|68->36|69->37|69->37|70->38|73->41|73->41|75->43|77->45|77->45|77->45|80->48|82->50
                   -- GENERATED --
               */
           
