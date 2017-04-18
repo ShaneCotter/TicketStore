@@ -18,8 +18,9 @@
                         @inputText(contactForm("firstName"), '_label -> "First Name", 'class -> "form-control", 'maxlength -> "30")
                         @inputText(contactForm("lastName"), '_label -> "Last Name", 'class -> "form-control", 'maxlength -> "30")
                         @inputText(contactForm("email"), '_label -> "Email", 'type -> "email", 'class -> "form-control")
-                        @inputText(contactForm("phone"), '_label -> "Phone", 'type -> "text", 'class -> "form-control")
-                        @inputText(contactForm("message"), '_label -> "Message", 'type -> "textarea", 'class -> "form-control", 'maxlength -> "140")
+                        @inputText(contactForm("phone"), '_label -> "Phone", 'type -> "tel", 'pattern -> "[0-9]{10}" , 'title -> "10 digit mobile number",
+                            'class -> "form-control")
+                        @inputText(contactForm("message"), '_label -> "Message", 'type -> "text", 'class -> "form-control", 'maxlength -> "140")
 
 
                         <div class="actions">

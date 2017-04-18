@@ -270,6 +270,8 @@ public class HomeController extends Controller {
         Form<User> newUser = formFactory.form(User.class).bindFromRequest();
         User user = newUser.get();
         user.setRole("user");
+        Basket b = new Basket();
+        user.setBasket(b);
         user.save();
         return redirect(routes.LoginController.login());
     }

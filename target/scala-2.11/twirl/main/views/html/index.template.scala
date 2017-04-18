@@ -48,7 +48,7 @@ Seq[Any](format.raw/*1.27*/("""
                 <div class="item active">
                     <img src=""""),_display_(/*18.32*/routes/*18.38*/.Assets.versioned("images/crowd1.jpg")),format.raw/*18.76*/("""" alt="Ed ">
                     <div class="carousel-caption">
-                        <a href=""""),_display_(/*20.35*/routes/*20.41*/.HomeController.events()),format.raw/*20.65*/(""""><h1>Concerts</h1></a>
+                        <a href=""""),_display_(/*20.35*/routes/*20.41*/.HomeController.events(1)),format.raw/*20.66*/(""""><h1>Concerts</h1></a>
                         <h2>TC Events - The Biggest Events at the Best Prices</h2>
                     </div>
                 </div>
@@ -56,21 +56,21 @@ Seq[Any](format.raw/*1.27*/("""
                 <div class="item" >
                     <img src=""""),_display_(/*26.32*/routes/*26.38*/.Assets.versioned("images/crowd2.jpg")),format.raw/*26.76*/("""" alt="">
                     <div class="carousel-caption">
-                        <a href = """"),_display_(/*28.37*/routes/*28.43*/.HomeController.events()),format.raw/*28.67*/(""""><h1>Sports</h1></a>
+                        <a href = """"),_display_(/*28.37*/routes/*28.43*/.HomeController.events(2)),format.raw/*28.68*/(""""><h1>Sports</h1></a>
                     </div>
                 </div>
 
                 <div class="item" >
                     <img src=""""),_display_(/*33.32*/routes/*33.38*/.Assets.versioned("images/crowd3.jpg")),format.raw/*33.76*/("""" alt="">
                     <div class="carousel-caption">
-                        <a href = """"),_display_(/*35.37*/routes/*35.43*/.HomeController.events()),format.raw/*35.67*/(""""><h1>Race Days</h1></a>
+                        <a href = """"),_display_(/*35.37*/routes/*35.43*/.HomeController.events(5)),format.raw/*35.68*/(""""><h1>Race Days</h1></a>
                     </div>
                 </div>
 
                 <div class="item">
                     <img src=""""),_display_(/*40.32*/routes/*40.38*/.Assets.versioned("images/crowd4.jpg")),format.raw/*40.76*/("""" alt="">
                     <div class="carousel-caption">
-                        <a href = """"),_display_(/*42.37*/routes/*42.43*/.HomeController.events()),format.raw/*42.67*/(""""><h1>Theatre</h1></a>
+                        <a href = """"),_display_(/*42.37*/routes/*42.43*/.HomeController.events(4)),format.raw/*42.68*/(""""><h1>Theatre</h1></a>
                     </div>
                 </div>
             </div>
@@ -110,10 +110,10 @@ Seq[Any](format.raw/*1.27*/("""
 object index extends index_Scope0.index
               /*
                   -- GENERATED --
-                  DATE: Tue Apr 18 13:50:32 BST 2017
+                  DATE: Tue Apr 18 15:49:00 BST 2017
                   SOURCE: C:/Users/Eileen/Desktop/TicketStore/app/views/index.scala.html
-                  HASH: 5868bf2a7dd0837eee06e2ffc2a152684ccb6a08
-                  MATRIX: 756->1|876->26|904->29|930->47|969->49|1003->57|1757->784|1772->790|1831->828|1958->928|1973->934|2018->958|2276->1189|2291->1195|2350->1233|2476->1332|2491->1338|2536->1362|2708->1507|2723->1513|2782->1551|2908->1650|2923->1656|2968->1680|3142->1827|3157->1833|3216->1871|3342->1970|3357->1976|3402->2000|4163->2731
+                  HASH: 5ef877fff9416d1a8985ecef1fa75e6813e389cb
+                  MATRIX: 756->1|876->26|904->29|930->47|969->49|1003->57|1757->784|1772->790|1831->828|1958->928|1973->934|2019->959|2277->1190|2292->1196|2351->1234|2477->1333|2492->1339|2538->1364|2710->1509|2725->1515|2784->1553|2910->1652|2925->1658|2971->1683|3145->1830|3160->1836|3219->1874|3345->1973|3360->1979|3406->2004|4167->2735
                   LINES: 27->1|32->1|33->2|33->2|33->2|35->4|49->18|49->18|49->18|51->20|51->20|51->20|57->26|57->26|57->26|59->28|59->28|59->28|64->33|64->33|64->33|66->35|66->35|66->35|71->40|71->40|71->40|73->42|73->42|73->42|92->61
                   -- GENERATED --
               */

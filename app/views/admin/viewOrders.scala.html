@@ -3,7 +3,7 @@
 @main("viewOrders", user) {
     <!--..CONTENT..-->
     <div class="container-fluid" id="content">
-        <h2>Customer Orders</h2>
+        <h2 class = "greentext">Customer Orders</h2>
         <div class="row omb_row-sm-offset-3">
 
             <table class="table table-responsive table-bordered">
@@ -17,42 +17,57 @@
                     </tr>
                 </thead>
                 <tbody>
-                @for(o <- orders) {
-                    @if(o.isProccessed == false) {
-                        <tr class = "danger">
-                            <td>#@o.getId</td>
-                            <td>@o.getOrderDate</td>
-                            <td>@o.getOrderTotal</td>
-                            <td>Received</td>
-                            <td class="col-sm-1"><a href="@routes.HomeController.markAsProccessed(o.getId,true)" class="btn btn-danger btn-sm whitetext" id="user-delete-button">
-                                <span class="glyphicon glyphicon-ok"></span> Mark as proccessed
-                            </a></td>
-                            </tr>
-                            @for(i <- o.getItems) {
-                                <tr>
-                                <td>Tickets : @i.getQuantity x €@i.getPrice @i.getTicket.getEvent.getEventName - @i.getTicket.getTicketType</td>
-                                </tr>
-                            }
-
-                    }
-                    @if(o.isProccessed == true){
-                        <tr class = "success">
-                            <td>#@o.getId</td>
-                            <td>@o.getOrderDate</td>
-                            <td>@o.getOrderTotal</td>
-                            <td>Proccessed</td>
-                            <td class="col-sm-1"><a href="@routes.HomeController.markAsProccessed(o.getId,true)" class="btn btn-success btn-sm whitetext" id="user-delete-button">
-                                <span class="glyphicon glyphicon-ok"></span> Order Proccessed
-                            </a></td>
-                        </tr>
-                            @for(i <- o.getItems) {
-                                <tr>
-                                <td>Tickets : @i.getQuantity x €@i.getPrice @i.getTicket.getEvent.getEventName - @i.getTicket.getTicketType</td>
-                                </tr>
-                            }
-
-                    }
+                @if(orders.size < 1){
+                    <tr class = "danger">
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td class="col-sm-1"></td>
+                    </tr>
+                </tbody>
+            </table>
+                    <h3 class="text-center"> No orders have been placed yet.</h3>
                 }
+                    @if(orders.size >= 1) {
+
+                        @for(o <- orders) {
+                            @if(o.isProccessed == false) {
+                                <tr class = "danger">
+                                    <td>#@o.getId</td>
+                                    <td>@o.getOrderDate</td>
+                                    <td>@o.getOrderTotal</td>
+                                    <td>Received</td>
+                                    <td class="col-sm-1"><a href="@routes.HomeController.markAsProccessed(o.getId, true)" class="btn btn-danger btn-sm whitetext" id="user-delete-button">
+                                        <span class="glyphicon glyphicon-ok"></span> Mark as proccessed
+                                    </a></td>
+                                </tr>
+                                @for(i <- o.getItems) {
+                                    <tr>
+                                        <td>Tickets : @i.getQuantity x €@i.getPrice @i.getTicket.getEvent.getEventName - @i.getTicket.getTicketType</td>
+                                    </tr>
+                                }
+
+                            }
+                            @if(o.isProccessed == true) {
+                                <tr class = "success">
+                                    <td>#@o.getId</td>
+                                    <td>@o.getOrderDate</td>
+                                    <td>@o.getOrderTotal</td>
+                                    <td>Proccessed</td>
+                                    <td class="col-sm-1"><a href="@routes.HomeController.markAsProccessed(o.getId, true)" class="btn btn-success btn-sm whitetext" id="user-delete-button">
+                                        <span class="glyphicon glyphicon-ok"></span> Order Proccessed
+                                    </a></td>
+                                </tr>
+                                @for(i <- o.getItems) {
+                                    <tr>
+                                        <td>Tickets : @i.getQuantity x €@i.getPrice @i.getTicket.getEvent.getEventName - @i.getTicket.getTicketType</td>
+                                    </tr>
+                                }
+
+                            }
+                        }
+                    }
                 </tbody>
             </table>
             <br>
