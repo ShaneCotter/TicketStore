@@ -62,8 +62,16 @@
                                         <div class="col-xs-4 pull-right">
                                             <h4><strong>Quantity</strong></h4>
                                             @i.getQuantity()
-                                        <a href="@routes.ShoppingCtrl.removeOne(i.getId)"><span class="glyphicon glyphicon-minus-sign"></span></a>
-                                        <a href="@routes.ShoppingCtrl.addOne(i.getId)"><span class="glyphicon glyphicon-plus-sign"></span></a>
+                                            @if(i.getQuantity < i.getTicket.getQuantity) {
+                                                <a href="@routes.ShoppingCtrl.removeOne(i.getId)"><span class="glyphicon glyphicon-minus-sign"></span></a>
+                                                <a href="@routes.ShoppingCtrl.addOne(i.getId)"><span class="glyphicon glyphicon-plus-sign"></span></a>
+                                            }
+                                            @if(i.getQuantity == i.getTicket.getQuantity) {
+                                                <a href="@routes.ShoppingCtrl.removeOne(i.getId)"><span class="glyphicon glyphicon-minus-sign"></span></a>
+                                                <span class="glyphicon glyphicon-plus-sign"></span>
+                                                <br>
+                                                Max reached
+                                            }
                                         </div>
                                     </div>
                                 </div>
