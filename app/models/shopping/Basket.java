@@ -83,6 +83,9 @@ public class Basket extends Model {
         this.basketItems = null;
     }
 
+    public void removeFromCart (OrderItem i){
+        i.delete();
+    }
     public double getBasketTotal() {
 
         double total = 0;

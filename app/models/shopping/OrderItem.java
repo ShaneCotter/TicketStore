@@ -52,6 +52,10 @@ public class OrderItem extends Model {
         quantity -= 1;
     }
 
+    public void removeFromCart() {
+        quantity = 0;
+    }
+
     // Calculate and return total price for this order item
     public double getItemTotal() {
         return this.price * this.quantity;

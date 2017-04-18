@@ -61,7 +61,7 @@ public class ShoppingCtrl extends Controller {
         user.update();
 
         // Show the basket contents
-        return ok(cart.render(user,env));
+        return redirect(routes.ShoppingCtrl.showBasket());
     }
 
     // Add an item to the basket
@@ -89,7 +89,21 @@ public class ShoppingCtrl extends Controller {
         u.getBasket().removeItem(item);
         u.getBasket().update();
         // back to basket
-        return ok(cart.render(u,env));
+        return redirect(routes.ShoppingCtrl.showBasket());
+    }
+
+    @Transactional
+    public Result removeFromCart(Long itemId) {
+
+        // Get the order item
+        OrderItem item = OrderItem.find.byId(itemId);
+
+        User u = getCurrentUser();
+        u.getBasket().removeFromCart(item);
+        u.getBasket().update();
+
+        // Show updated basket
+        return redirect(routes.ShoppingCtrl.showBasket());
     }
 
     // Empty Basket
@@ -100,7 +114,7 @@ public class ShoppingCtrl extends Controller {
         u.getBasket().removeAllItems();
         u.getBasket().update();
 
-        return ok(cart.render(u,env));
+        return redirect(routes.ShoppingCtrl.showBasket());
     }
 
     @Security.Authenticated(Secured.class)
