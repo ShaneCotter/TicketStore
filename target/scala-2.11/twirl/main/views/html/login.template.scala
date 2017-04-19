@@ -34,16 +34,21 @@ Seq[Any](format.raw/*1.58*/("""
 """),_display_(/*3.2*/main("Log in", user)/*3.22*/ {_display_(Seq[Any](format.raw/*3.24*/("""
     """),format.raw/*4.5*/("""<!--..CONTENT..-->
     """),_display_(/*5.6*/if(flash.containsKey("success"))/*5.38*/ {_display_(Seq[Any](format.raw/*5.40*/("""
-        """),format.raw/*6.9*/("""<div class="alert alert-success">
+        """),format.raw/*6.9*/("""<div class="alert alert-success text-center">
         """),_display_(/*7.10*/flash/*7.15*/.get("success")),format.raw/*7.30*/("""
         """),format.raw/*8.9*/("""</div>
         """)))}),format.raw/*9.10*/("""
-    """),format.raw/*10.5*/("""<div class="container-fluid" id="content">
-        <h2>Login or <a href =""""),_display_(/*11.33*/routes/*11.39*/.HomeController.signUp()),format.raw/*11.63*/("""">Sign Up</a></h2>
+    """),_display_(/*10.6*/if(flash.containsKey("danger"))/*10.37*/ {_display_(Seq[Any](format.raw/*10.39*/("""
+        """),format.raw/*11.9*/("""<div class="alert alert-danger text-center">
+        """),_display_(/*12.10*/flash/*12.15*/.get("danger")),format.raw/*12.29*/("""
+        """),format.raw/*13.9*/("""</div>
+    """)))}),format.raw/*14.6*/("""
+    """),format.raw/*15.5*/("""<div class="container-fluid" id="content">
+        <h2>Login or <a href =""""),_display_(/*16.33*/routes/*16.39*/.HomeController.signUp()),format.raw/*16.63*/("""">Sign Up</a></h2>
         <div class="row omb_row-sm-offset-3">
             <div class="col-xs-12 col-sm-6">
 
-                <form class="omb_loginForm" action=""""),_display_(/*15.54*/routes/*15.60*/.LoginController.loginSubmit),format.raw/*15.88*/("""" name ="loginForm" method = "POST">
+                <form class="omb_loginForm" action=""""),_display_(/*20.54*/routes/*20.60*/.LoginController.loginSubmit),format.raw/*20.88*/("""" name ="loginForm" method = "POST">
                     <div class="input-group">
                         <span class="input-group-addon"><i class="fa fa-user"></i></span>
                         <input type="text" class="form-control" type="email" name="email" placeholder="Email Address">
@@ -70,7 +75,7 @@ Seq[Any](format.raw/*1.58*/("""
     </div>
         <!--END CONTENT-->
 
-""")))}),format.raw/*42.2*/("""
+""")))}),format.raw/*47.2*/("""
 """))
       }
     }
@@ -91,11 +96,11 @@ Seq[Any](format.raw/*1.58*/("""
 object login extends login_Scope0.login
               /*
                   -- GENERATED --
-                  DATE: Wed Apr 19 12:40:01 IST 2017
+                  DATE: Wed Apr 19 13:47:03 IST 2017
                   SOURCE: /home/wdd/webapps/TicketStore/app/views/login.scala.html
-                  HASH: c05e04633877f9518a619a3f0218a2ff2268c690
-                  MATRIX: 775->1|926->57|954->60|982->80|1021->82|1052->87|1101->111|1141->143|1180->145|1215->154|1284->197|1297->202|1332->217|1367->226|1413->242|1445->247|1547->322|1562->328|1607->352|1798->516|1813->522|1862->550|3003->1661
-                  LINES: 27->1|32->1|34->3|34->3|34->3|35->4|36->5|36->5|36->5|37->6|38->7|38->7|38->7|39->8|40->9|41->10|42->11|42->11|42->11|46->15|46->15|46->15|73->42
+                  HASH: fa909e40d42459f4f3b4e21bb1f380fc7c1b14f1
+                  MATRIX: 775->1|926->57|954->60|982->80|1021->82|1052->87|1101->111|1141->143|1180->145|1215->154|1296->209|1309->214|1344->229|1379->238|1425->254|1457->260|1497->291|1537->293|1573->302|1654->356|1668->361|1703->375|1739->384|1781->396|1813->401|1915->476|1930->482|1975->506|2166->670|2181->676|2230->704|3371->1815
+                  LINES: 27->1|32->1|34->3|34->3|34->3|35->4|36->5|36->5|36->5|37->6|38->7|38->7|38->7|39->8|40->9|41->10|41->10|41->10|42->11|43->12|43->12|43->12|44->13|45->14|46->15|47->16|47->16|47->16|51->20|51->20|51->20|78->47
                   -- GENERATED --
               */
           

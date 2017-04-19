@@ -269,8 +269,14 @@ public class HomeController extends Controller {
     public Result signUpSubmit() {
         Form<User> newUser = formFactory.form(User.class).bindFromRequest();
         User user = newUser.get();
-        user.setRole("user");
-        user.save();
+
+        int count = User.find.where().like("email", user.getEmail()).findRowCount();
+        if (count>0) {
+            flash("danger", "This email address already in use");
+        }else {
+            user.setRole("user");
+            user.save();
+        }
         return redirect(routes.LoginController.login());
     }
 

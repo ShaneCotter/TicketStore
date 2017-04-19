@@ -3,10 +3,15 @@
 @main("Log in", user) {
     <!--..CONTENT..-->
     @if(flash.containsKey("success")) {
-        <div class="alert alert-success">
+        <div class="alert alert-success text-center">
         @flash.get("success")
         </div>
         }
+    @if(flash.containsKey("danger")) {
+        <div class="alert alert-danger text-center">
+        @flash.get("danger")
+        </div>
+    }
     <div class="container-fluid" id="content">
         <h2>Login or <a href ="@routes.HomeController.signUp()">Sign Up</a></h2>
         <div class="row omb_row-sm-offset-3">
