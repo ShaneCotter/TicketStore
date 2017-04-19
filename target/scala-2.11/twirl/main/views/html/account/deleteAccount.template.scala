@@ -42,7 +42,7 @@ Seq[Any](format.raw/*1.27*/("""
                 </a>
 
                 <a href = """"),_display_(/*13.29*/routes/*13.35*/.HomeController.updateDetails()),format.raw/*13.66*/("""" class="btn btn-success btn-lg" id="user-account-button">
-                    <span class="glyphicon glyphicon-user"></span>Change Password
+                    <span class="glyphicon glyphicon-user"></span>Update Details
                 </a>
 
 
@@ -89,10 +89,10 @@ Seq[Any](format.raw/*1.27*/("""
 object deleteAccount extends deleteAccount_Scope0.deleteAccount
               /*
                   -- GENERATED --
-                  DATE: Tue Apr 18 13:50:32 BST 2017
-                  SOURCE: C:/Users/Eileen/Desktop/TicketStore/app/views/account/deleteAccount.scala.html
-                  HASH: e7f94829adc18dc1092f765e25378277b641d3de
-                  MATRIX: 780->1|900->26|928->29|964->57|1003->59|1039->69|1263->267|1277->273|1323->299|1541->490|1556->496|1608->527|1832->724|1847->730|1904->766|2139->974|2154->980|2206->1011|2516->1294|2531->1300|2586->1334|2818->1539|2833->1545|2881->1572|3048->1709
+                  DATE: Wed Apr 19 10:46:19 IST 2017
+                  SOURCE: /home/wdd/webapps/TicketStore/app/views/account/deleteAccount.scala.html
+                  HASH: 9665af9f02885f5bedd7d87800ada3355dd0c7cd
+                  MATRIX: 780->1|900->26|927->28|963->56|1002->58|1035->65|1255->259|1269->265|1315->291|1529->478|1544->484|1596->515|1814->706|1829->712|1886->748|2117->952|2132->958|2184->989|2487->1265|2502->1271|2557->1305|2785->1506|2800->1512|2848->1539|3008->1669
                   LINES: 27->1|32->1|33->2|33->2|33->2|36->5|40->9|40->9|40->9|44->13|44->13|44->13|49->18|49->18|49->18|53->22|53->22|53->22|60->29|60->29|60->29|64->33|64->33|64->33|71->40
                   -- GENERATED --
               */

@@ -10,7 +10,7 @@
                 </a>
 
                 <a href = "@routes.HomeController.updateDetails()" class="btn btn-success btn-lg" id="user-account-button">
-                    <span class="glyphicon glyphicon-user"></span>Change Password
+                    <span class="glyphicon glyphicon-user"></span>Update Details
                 </a>
 
 
@@ -48,17 +48,17 @@
                     <tr>
                         <td>@o.getId</td>
                         <td>@o.getOrderDate</td>
-                        <td>@o.getOrderTotal</td>
+                        <td>€@("%.2f".format(o.getOrderTotal))</td>
                         @if(o.isProccessed == true){
-                            <td>Your order has been <strong>Proccessed</strong></td>
+                            <td>Your order has been <strong>Processed</strong></td>
                         }
                         @if(o.isProccessed == false){
-                            <td>Order has been <strong>received</strong> and will be proccessed soon !</td>
+                            <td>Order has been <strong>received</strong> and will be processed soon !</td>
                         }
                     </tr>
 
                     @for(i <- o.getItems) {
-                        <td>Tickets : @i.getQuantity x €@i.getPrice @i.getTicket.getEvent.getEventName - @i.getTicket.getTicketType</td>
+                        <td>Tickets : @i.getQuantity x €@("%.2f".format(i.getPrice)) @i.getTicket.getEvent.getEventName - @i.getTicket.getTicketType</td>
 
                     }
 

@@ -172,6 +172,7 @@ public class Event extends Model {
         } else{
             return "No tickets available";
         }
-        return "Starting from €" + lowestPrice;
+
+        return String.format("Starting from €%.2f", lowestPrice);
     }
 }

@@ -45,6 +45,7 @@ public class ShopOrder extends Model {
         for (OrderItem i: items) {
             total += i.getItemTotal();
         }
+
         return total;
     }
 
