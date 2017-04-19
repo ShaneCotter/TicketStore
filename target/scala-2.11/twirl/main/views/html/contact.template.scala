@@ -45,28 +45,28 @@ Seq[Any](format.raw/*3.62*/("""
                         """),_display_(/*13.26*/flash/*13.31*/.get("success")),format.raw/*13.46*/("""
                         """),format.raw/*14.25*/("""</div>
                     """)))}),format.raw/*15.22*/("""
-                    """),format.raw/*16.21*/("""<h1 class = "greentext">Contact Us</h1>
-                    """),_display_(/*17.22*/form(action = routes.HomeController.addContactSubmit(), 'method -> "POST", 'class -> "form-horizontal", 'role -> "form")/*17.142*/ {_display_(Seq[Any](format.raw/*17.144*/("""
-                        """),_display_(/*18.26*/inputText(contactForm("firstName"), '_label -> "First Name", 'class -> "form-control", 'maxlength -> "30")),format.raw/*18.132*/("""
-                        """),_display_(/*19.26*/inputText(contactForm("lastName"), '_label -> "Last Name", 'class -> "form-control", 'maxlength -> "30")),format.raw/*19.130*/("""
-                        """),_display_(/*20.26*/inputText(contactForm("email"), '_label -> "Email", 'type -> "email", 'class -> "form-control")),format.raw/*20.121*/("""
-                        """),_display_(/*21.26*/inputText(contactForm("phone"), '_label -> "Phone", 'type -> "tel", 'pattern -> "[0-9]{10}" , 'title -> "10 digit mobile number",
-                            'class -> "form-control")),format.raw/*22.54*/("""
-                        """),_display_(/*23.26*/inputText(contactForm("message"), '_label -> "Message", 'type -> "text", 'class -> "form-control", 'maxlength -> "140")),format.raw/*23.145*/("""
-
+                    """),format.raw/*16.21*/("""<h1 class = "text-center">Contact Us</h1>
+                    <div class="col-lg-12" id="contactForm">
+                    """),_display_(/*18.22*/form(action = routes.HomeController.addContactSubmit(), 'method -> "POST", 'class -> "form-horizontal", 'role -> "form")/*18.142*/ {_display_(Seq[Any](format.raw/*18.144*/("""
+                        """),_display_(/*19.26*/inputText(contactForm("firstName"), '_label -> "First Name", 'class -> "form-control", 'maxlength -> "30")),format.raw/*19.132*/("""
+                        """),_display_(/*20.26*/inputText(contactForm("lastName"), '_label -> "Last Name", 'class -> "form-control", 'maxlength -> "30")),format.raw/*20.130*/("""
+                        """),_display_(/*21.26*/inputText(contactForm("email"), '_label -> "Email", 'type -> "email", 'class -> "form-control")),format.raw/*21.121*/("""
+                        """),_display_(/*22.26*/inputText(contactForm("phone"), '_label -> "Phone", 'type -> "tel", 'pattern -> "[0-9]{10}", 'title -> "10 digit mobile number",
+                            'class -> "form-control")),format.raw/*23.54*/("""
+                        """),_display_(/*24.26*/inputText(contactForm("message"), '_label -> "Message", 'type -> "text", 'class -> "form-control", 'maxlength -> "140")),format.raw/*24.145*/("""
 
                         """),format.raw/*26.25*/("""<div class="actions">
                             <input type="submit" value="Submit" class="btn btn-success">
                             <a href=""""),_display_(/*28.39*/routes/*28.45*/.HomeController.contact()),format.raw/*28.70*/("""" class="btn btn-danger">Cancel</a>
-
                         </div>
-                    </div>
+                """)))}),format.raw/*30.18*/("""
+                    """),format.raw/*31.21*/("""</div>
             </div>
 
         </div>
-        """)))}),format.raw/*35.10*/("""
 
-        """),format.raw/*37.9*/("""<div class="row">
+
+        <div class="row">
             <div class="col-md-12 text-center">
                 <h4>See below for Social Sites</h4>
             </div>
@@ -101,11 +101,11 @@ Seq[Any](format.raw/*3.62*/("""
 object contact extends contact_Scope0.contact_Scope1.contact
               /*
                   -- GENERATED --
-                  DATE: Tue Apr 18 16:03:41 BST 2017
-                  SOURCE: C:/Users/Eileen/Desktop/TicketStore/app/views/contact.scala.html
-                  HASH: e00914b17c08efadc4827451d489a42860ef25e5
-                  MATRIX: 827->21|982->81|1012->86|1041->107|1080->109|1112->115|1348->324|1389->356|1429->358|1483->384|1570->444|1584->449|1620->464|1674->490|1734->519|1784->541|1873->603|2003->723|2044->725|2098->752|2226->858|2280->885|2406->989|2460->1016|2577->1111|2631->1138|2836->1322|2890->1349|3031->1468|3089->1498|3267->1649|3282->1655|3328->1680|3505->1826|3544->1838
-                  LINES: 30->3|35->3|37->5|37->5|37->5|38->6|43->11|43->11|43->11|44->12|45->13|45->13|45->13|46->14|47->15|48->16|49->17|49->17|49->17|50->18|50->18|51->19|51->19|52->20|52->20|53->21|54->22|55->23|55->23|58->26|60->28|60->28|60->28|67->35|69->37
+                  DATE: Wed Apr 19 11:27:18 IST 2017
+                  SOURCE: /home/wdd/webapps/TicketStore/app/views/contact.scala.html
+                  HASH: cab10b66607a34f1e7bcce590570b34fba466687
+                  MATRIX: 827->19|982->79|1010->82|1039->103|1078->105|1109->110|1340->314|1381->346|1421->348|1474->373|1560->432|1574->437|1610->452|1663->477|1722->505|1771->526|1922->650|2052->770|2093->772|2146->798|2274->904|2327->930|2453->1034|2506->1060|2623->1155|2676->1181|2879->1363|2932->1389|3073->1508|3127->1534|3303->1683|3318->1689|3364->1714|3479->1798|3528->1819
+                  LINES: 30->3|35->3|37->5|37->5|37->5|38->6|43->11|43->11|43->11|44->12|45->13|45->13|45->13|46->14|47->15|48->16|50->18|50->18|50->18|51->19|51->19|52->20|52->20|53->21|53->21|54->22|55->23|56->24|56->24|58->26|60->28|60->28|60->28|62->30|63->31
                   -- GENERATED --
               */
           

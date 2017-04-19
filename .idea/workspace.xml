@@ -2,41 +2,289 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5fdfba13-bf09-49f6-9a16-0c140c5aa45b" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/project/project/target/config-classes/$206fcd9580d0f60e6d81.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/project/project/target/config-classes/$2a257496a254bdc3d2f5.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/project/project/target/config-classes/$32df11d5ff7fb36af66c.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/project/project/target/config-classes/$7725c695ac2153180913.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/project/project/target/config-classes/$7c43efe4ad1602045be4.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/project/project/target/config-classes/$c311228216ce651b4f0e.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/project/project/target/config-classes/$d375f698df5ef1b5a3b2.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/project/project/target/config-classes/$da06e3c01c5a25158ad6.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/project/project/target/config-classes/$decf10c69c9431d04321.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/project/project/target/config-classes/$f26459141d90221c0c97.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/project/target/config-classes/$02b3540df0e51968aeda.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/project/target/config-classes/$956f90570344e1196025.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/project/target/config-classes/$a0926fc77de6feefe3af.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/project/target/config-classes/$b473f2d28657918d8e5b.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/project/target/config-classes/$dd10acc91a6e5f5d5f98.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/eventImages/10.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/eventImages/11.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/eventImages/12.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/eventImages/33.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/eventImages/9.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/eventImages/thumbnails10.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/eventImages/thumbnails11.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/eventImages/thumbnails12.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/eventImages/thumbnails33.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/eventImages/thumbnails9.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/profile/shane@tc.ie.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/profile/thumbnailsshane@tc.ie.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/profile/thumbnailsuser@tc.ie.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/profile/user@tc.ie.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/web/classes/main/META-INF/resources/webjars/ticketstore/1.0-SNAPSHOT/images/eventImages/10.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/web/classes/main/META-INF/resources/webjars/ticketstore/1.0-SNAPSHOT/images/eventImages/11.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/web/classes/main/META-INF/resources/webjars/ticketstore/1.0-SNAPSHOT/images/eventImages/12.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/web/classes/main/META-INF/resources/webjars/ticketstore/1.0-SNAPSHOT/images/eventImages/33.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/web/classes/main/META-INF/resources/webjars/ticketstore/1.0-SNAPSHOT/images/eventImages/9.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/web/classes/main/META-INF/resources/webjars/ticketstore/1.0-SNAPSHOT/images/eventImages/thumbnails10.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/web/classes/main/META-INF/resources/webjars/ticketstore/1.0-SNAPSHOT/images/eventImages/thumbnails11.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/web/classes/main/META-INF/resources/webjars/ticketstore/1.0-SNAPSHOT/images/eventImages/thumbnails12.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/web/classes/main/META-INF/resources/webjars/ticketstore/1.0-SNAPSHOT/images/eventImages/thumbnails33.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/web/classes/main/META-INF/resources/webjars/ticketstore/1.0-SNAPSHOT/images/eventImages/thumbnails9.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/web/classes/main/META-INF/resources/webjars/ticketstore/1.0-SNAPSHOT/images/profile/shane@tc.ie.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/web/classes/main/META-INF/resources/webjars/ticketstore/1.0-SNAPSHOT/images/profile/thumbnailsshane@tc.ie.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/web/classes/main/META-INF/resources/webjars/ticketstore/1.0-SNAPSHOT/images/profile/thumbnailsuser@tc.ie.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/web/classes/main/META-INF/resources/webjars/ticketstore/1.0-SNAPSHOT/images/profile/user@tc.ie.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/web/public/main/images/eventImages/10.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/web/public/main/images/eventImages/11.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/web/public/main/images/eventImages/12.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/web/public/main/images/eventImages/33.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/web/public/main/images/eventImages/9.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/web/public/main/images/eventImages/thumbnails10.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/web/public/main/images/eventImages/thumbnails11.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/web/public/main/images/eventImages/thumbnails12.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/web/public/main/images/eventImages/thumbnails33.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/web/public/main/images/eventImages/thumbnails9.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/web/public/main/images/profile/shane@tc.ie.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/web/public/main/images/profile/thumbnailsshane@tc.ie.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/web/public/main/images/profile/thumbnailsuser@tc.ie.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/web/public/main/images/profile/user@tc.ie.jpg" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/project/project/target/config-classes/$0446d1d23ee1f636882e.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/project/project/target/config-classes/$0910ada604f008ad055f.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/project/project/target/config-classes/$0e2f6ac370d17569d338.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/project/project/target/config-classes/$1e38683ef69113f749ac.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/project/project/target/config-classes/$83f44487a5330ccc8534.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/project/project/target/config-classes/$8e1807d541444755f1ec.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/project/project/target/config-classes/$8ed857a9dc779a5503fe.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/project/project/target/config-classes/$9d9c043517b8953896e9.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/project/project/target/config-classes/$a0ff571498e00ecc63e3.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/project/project/target/config-classes/$fe05a084a7103577e111.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/project/target/config-classes/$0d2a40baf3adb9842c31.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/project/target/config-classes/$719f7defc60c0b1c0f86.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/project/target/config-classes/$8a5b3fa4c10069adbd2f.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/project/target/config-classes/$bc129bdbda2a7042abba.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/project/target/config-classes/$bd56b180f1094a07e0d4.class" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/project/project/target/config-classes/$0446d1d23ee1f636882e$.class" afterPath="$PROJECT_DIR$/project/project/target/config-classes/$f26459141d90221c0c97$.class" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/project/project/target/config-classes/$0446d1d23ee1f636882e.cache" afterPath="$PROJECT_DIR$/project/target/config-classes/$dd10acc91a6e5f5d5f98.cache" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/project/project/target/config-classes/$0910ada604f008ad055f$.class" afterPath="$PROJECT_DIR$/project/project/target/config-classes/$32df11d5ff7fb36af66c$.class" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/project/project/target/config-classes/$0910ada604f008ad055f.cache" afterPath="$PROJECT_DIR$/project/target/config-classes/$b473f2d28657918d8e5b.cache" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/project/project/target/config-classes/$0e2f6ac370d17569d338$.class" afterPath="$PROJECT_DIR$/project/project/target/config-classes/$c311228216ce651b4f0e$.class" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/project/project/target/config-classes/$0e2f6ac370d17569d338.cache" afterPath="$PROJECT_DIR$/project/target/config-classes/$a0926fc77de6feefe3af.cache" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/project/project/target/config-classes/$1e38683ef69113f749ac$.class" afterPath="$PROJECT_DIR$/project/project/target/config-classes/$d375f698df5ef1b5a3b2$.class" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/project/project/target/config-classes/$1e38683ef69113f749ac.cache" afterPath="$PROJECT_DIR$/project/target/config-classes/$956f90570344e1196025.cache" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/project/project/target/config-classes/$83f44487a5330ccc8534$.class" afterPath="$PROJECT_DIR$/project/project/target/config-classes/$7725c695ac2153180913$.class" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/project/project/target/config-classes/$83f44487a5330ccc8534.cache" afterPath="$PROJECT_DIR$/project/project/target/config-classes/$f26459141d90221c0c97.cache" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/project/project/target/config-classes/$8e1807d541444755f1ec$.class" afterPath="$PROJECT_DIR$/project/project/target/config-classes/$da06e3c01c5a25158ad6$.class" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/project/project/target/config-classes/$8e1807d541444755f1ec.cache" afterPath="$PROJECT_DIR$/project/project/target/config-classes/$decf10c69c9431d04321.cache" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/project/project/target/config-classes/$8ed857a9dc779a5503fe$.class" afterPath="$PROJECT_DIR$/project/project/target/config-classes/$7c43efe4ad1602045be4$.class" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/project/project/target/config-classes/$8ed857a9dc779a5503fe.cache" afterPath="$PROJECT_DIR$/project/project/target/config-classes/$da06e3c01c5a25158ad6.cache" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/project/project/target/config-classes/$9d9c043517b8953896e9$.class" afterPath="$PROJECT_DIR$/project/project/target/config-classes/$2a257496a254bdc3d2f5$.class" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/project/project/target/config-classes/$9d9c043517b8953896e9.cache" afterPath="$PROJECT_DIR$/project/project/target/config-classes/$d375f698df5ef1b5a3b2.cache" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/project/project/target/config-classes/$a0ff571498e00ecc63e3$.class" afterPath="$PROJECT_DIR$/project/project/target/config-classes/$decf10c69c9431d04321$.class" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/project/project/target/config-classes/$a0ff571498e00ecc63e3.cache" afterPath="$PROJECT_DIR$/project/project/target/config-classes/$c311228216ce651b4f0e.cache" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/project/project/target/config-classes/$fe05a084a7103577e111$.class" afterPath="$PROJECT_DIR$/project/project/target/config-classes/$206fcd9580d0f60e6d81$.class" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/project/project/target/config-classes/$fe05a084a7103577e111.cache" afterPath="$PROJECT_DIR$/project/project/target/config-classes/$7c43efe4ad1602045be4.cache" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/project/target/config-classes/$0d2a40baf3adb9842c31$$anonfun$$sbtdef$1.class" afterPath="$PROJECT_DIR$/project/target/config-classes/$a0926fc77de6feefe3af$$anonfun$$sbtdef$1.class" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/project/target/config-classes/$0d2a40baf3adb9842c31$.class" afterPath="$PROJECT_DIR$/project/target/config-classes/$a0926fc77de6feefe3af$.class" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/project/target/config-classes/$0d2a40baf3adb9842c31.cache" afterPath="$PROJECT_DIR$/project/project/target/config-classes/$7725c695ac2153180913.cache" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/project/target/config-classes/$719f7defc60c0b1c0f86$$anonfun$$sbtdef$1.class" afterPath="$PROJECT_DIR$/project/target/config-classes/$b473f2d28657918d8e5b$$anonfun$$sbtdef$1.class" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/project/target/config-classes/$719f7defc60c0b1c0f86$.class" afterPath="$PROJECT_DIR$/project/target/config-classes/$b473f2d28657918d8e5b$.class" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/project/target/config-classes/$719f7defc60c0b1c0f86.cache" afterPath="$PROJECT_DIR$/project/project/target/config-classes/$32df11d5ff7fb36af66c.cache" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/project/target/config-classes/$8a5b3fa4c10069adbd2f$$anonfun$$sbtdef$1.class" afterPath="$PROJECT_DIR$/project/target/config-classes/$dd10acc91a6e5f5d5f98$$anonfun$$sbtdef$1.class" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/project/target/config-classes/$8a5b3fa4c10069adbd2f$.class" afterPath="$PROJECT_DIR$/project/target/config-classes/$dd10acc91a6e5f5d5f98$.class" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/project/target/config-classes/$8a5b3fa4c10069adbd2f.cache" afterPath="$PROJECT_DIR$/project/project/target/config-classes/$2a257496a254bdc3d2f5.cache" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/project/target/config-classes/$bc129bdbda2a7042abba$$anonfun$root$1.class" afterPath="$PROJECT_DIR$/project/target/config-classes/$02b3540df0e51968aeda$$anonfun$root$1.class" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/project/target/config-classes/$bc129bdbda2a7042abba$$anonfun$root$2.class" afterPath="$PROJECT_DIR$/project/target/config-classes/$02b3540df0e51968aeda$$anonfun$root$2.class" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/project/target/config-classes/$bc129bdbda2a7042abba$$anonfun$root$3.class" afterPath="$PROJECT_DIR$/project/target/config-classes/$02b3540df0e51968aeda$$anonfun$root$3.class" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/project/target/config-classes/$bc129bdbda2a7042abba$$anonfun$root$4.class" afterPath="$PROJECT_DIR$/project/target/config-classes/$02b3540df0e51968aeda$$anonfun$root$4.class" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/project/target/config-classes/$bc129bdbda2a7042abba$.class" afterPath="$PROJECT_DIR$/project/target/config-classes/$02b3540df0e51968aeda$.class" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/project/target/config-classes/$bc129bdbda2a7042abba.cache" afterPath="$PROJECT_DIR$/project/target/config-classes/$02b3540df0e51968aeda.cache" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/project/target/config-classes/$bd56b180f1094a07e0d4$$anonfun$$sbtdef$1.class" afterPath="$PROJECT_DIR$/project/target/config-classes/$956f90570344e1196025$$anonfun$$sbtdef$1.class" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/project/target/config-classes/$bd56b180f1094a07e0d4$.class" afterPath="$PROJECT_DIR$/project/target/config-classes/$956f90570344e1196025$.class" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/project/target/config-classes/$bd56b180f1094a07e0d4.cache" afterPath="$PROJECT_DIR$/project/project/target/config-classes/$206fcd9580d0f60e6d81.cache" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/TCEvents.mv.db" afterPath="$PROJECT_DIR$/data/TCEvents.mv.db" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project/target/streams/$global/dependencyPositions/$global/streams/update_cache_2.10/output_dsp" afterPath="$PROJECT_DIR$/project/target/streams/$global/dependencyPositions/$global/streams/update_cache_2.10/output_dsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/controllers/HomeController.class" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/controllers/HomeController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/views/html/admin/viewOrders$.class" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/views/html/admin/viewOrders$.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/views/html/admin/viewOrders_Scope0$.class" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/views/html/admin/viewOrders_Scope0$.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project/target/streams/$global/update/$global/streams/update_cache_2.10/inputs" afterPath="$PROJECT_DIR$/project/target/streams/$global/update/$global/streams/update_cache_2.10/inputs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project/target/streams/$global/update/$global/streams/update_cache_2.10/output" afterPath="$PROJECT_DIR$/project/target/streams/$global/update/$global/streams/update_cache_2.10/output" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/images/eventImages/null.jpg" afterPath="$PROJECT_DIR$/public/images/eventImages/null.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/images/eventImages/thumbnailsnull.jpg" afterPath="$PROJECT_DIR$/public/images/eventImages/thumbnailsnull.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/models/Event.class" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/models/Event.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/models/shopping/ShopOrder.class" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/models/shopping/ShopOrder.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/views/html/account/deleteAccount_Scope0$deleteAccount.class" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/views/html/account/deleteAccount_Scope0$deleteAccount.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/views/html/account/myOrders_Scope0$myOrders$$anonfun$apply$1$$anonfun$apply$2.class" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/views/html/account/myOrders_Scope0$myOrders$$anonfun$apply$1$$anonfun$apply$2.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/views/html/account/myOrders_Scope0$myOrders$$anonfun$apply$1.class" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/views/html/account/myOrders_Scope0$myOrders$$anonfun$apply$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/views/html/account/myOrders_Scope0$myOrders.class" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/views/html/account/myOrders_Scope0$myOrders.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/views/html/account/myaccount_Scope0$myaccount.class" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/views/html/account/myaccount_Scope0$myaccount.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/views/html/account/updateDetails_Scope0$updateDetails_Scope1$updateDetails$$anonfun$apply$1.class" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/views/html/account/updateDetails_Scope0$updateDetails_Scope1$updateDetails$$anonfun$apply$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/views/html/account/updateDetails_Scope0$updateDetails_Scope1$updateDetails.class" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/views/html/account/updateDetails_Scope0$updateDetails_Scope1$updateDetails.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/views/html/admin/addEvent_Scope0$addEvent_Scope1$addEvent$$anonfun$apply$1.class" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/views/html/admin/addEvent_Scope0$addEvent_Scope1$addEvent$$anonfun$apply$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/views/html/admin/addEvent_Scope0$addEvent_Scope1$addEvent.class" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/views/html/admin/addEvent_Scope0$addEvent_Scope1$addEvent.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/views/html/admin/addTicket_Scope0$addTicket_Scope1$addTicket$$anonfun$apply$1.class" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/views/html/admin/addTicket_Scope0$addTicket_Scope1$addTicket$$anonfun$apply$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/views/html/admin/addTicket_Scope0$addTicket_Scope1$addTicket.class" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/views/html/admin/addTicket_Scope0$addTicket_Scope1$addTicket.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/views/html/admin/admineventTicket$.class" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/views/html/admin/admineventTicket$.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/views/html/admin/admineventTicket_Scope0$.class" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/views/html/admin/admineventTicket_Scope0$.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/views/html/admin/admineventTicket_Scope0$admineventTicket$$anonfun$apply$1.class" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/views/html/admin/admineventTicket_Scope0$admineventTicket$$anonfun$apply$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/views/html/admin/admineventTicket_Scope0$admineventTicket$$anonfun$f$1.class" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/views/html/admin/admineventTicket_Scope0$admineventTicket$$anonfun$f$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/views/html/admin/admineventTicket_Scope0$admineventTicket.class" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/views/html/admin/admineventTicket_Scope0$admineventTicket.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/views/html/admin/adminevents_Scope0$adminevents$$anonfun$apply$1.class" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/views/html/admin/adminevents_Scope0$adminevents$$anonfun$apply$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/views/html/admin/adminevents_Scope0$adminevents$$anonfun$apply$2.class" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/views/html/admin/adminevents_Scope0$adminevents$$anonfun$apply$2.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/views/html/admin/adminevents_Scope0$adminevents.class" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/views/html/admin/adminevents_Scope0$adminevents.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/views/html/admin/viewAccount_Scope0$viewAccount$$anonfun$apply$1.class" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/views/html/admin/viewAccount_Scope0$viewAccount$$anonfun$apply$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/views/html/admin/viewAccount_Scope0$viewAccount.class" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/views/html/admin/viewAccount_Scope0$viewAccount.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/views/html/admin/viewContact_Scope0$viewContact$$anonfun$apply$1.class" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/views/html/admin/viewContact_Scope0$viewContact$$anonfun$apply$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/views/html/admin/viewContact_Scope0$viewContact.class" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/views/html/admin/viewContact_Scope0$viewContact.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/views/html/admin/viewOrders_Scope0$viewOrders$$anonfun$apply$1$$anonfun$apply$2.class" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/views/html/admin/viewOrders_Scope0$viewOrders$$anonfun$apply$1$$anonfun$apply$2.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/views/html/admin/viewOrders_Scope0$viewOrders$$anonfun$apply$1$$anonfun$apply$3.class" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/views/html/admin/viewOrders_Scope0$viewOrders$$anonfun$apply$1$$anonfun$apply$3.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/views/html/admin/viewOrders_Scope0$viewOrders$$anonfun$apply$1.class" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/views/html/admin/viewOrders_Scope0$viewOrders$$anonfun$apply$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/views/html/admin/viewOrders_Scope0$viewOrders$$anonfun$f$1.class" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/views/html/admin/viewOrders_Scope0$viewOrders$$anonfun$f$1.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/views/html/admin/viewOrders_Scope0$viewOrders.class" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/views/html/admin/viewOrders_Scope0$viewOrders.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/views/html/contact$.class" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/views/html/contact$.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/views/html/contact_Scope0$.class" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/views/html/contact_Scope0$.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/views/html/contact_Scope0$contact_Scope1$.class" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/views/html/contact_Scope0$contact_Scope1$.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/views/html/cart_Scope0$cart$$anonfun$apply$1.class" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/views/html/cart_Scope0$cart$$anonfun$apply$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/views/html/cart_Scope0$cart.class" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/views/html/cart_Scope0$cart.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/views/html/contact_Scope0$contact_Scope1$contact$$anonfun$apply$1.class" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/views/html/contact_Scope0$contact_Scope1$contact$$anonfun$apply$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/views/html/contact_Scope0$contact_Scope1$contact$$anonfun$f$1.class" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/views/html/contact_Scope0$contact_Scope1$contact$$anonfun$f$1.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/views/html/contact_Scope0$contact_Scope1$contact.class" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/views/html/contact_Scope0$contact_Scope1$contact.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/views/html/eventTicket_Scope0$eventTicket$$anonfun$apply$1.class" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/views/html/eventTicket_Scope0$eventTicket$$anonfun$apply$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/views/html/eventTicket_Scope0$eventTicket.class" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/views/html/eventTicket_Scope0$eventTicket.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/views/html/events_Scope0$events$$anonfun$apply$1.class" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/views/html/events_Scope0$events$$anonfun$apply$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/views/html/events_Scope0$events$$anonfun$apply$2.class" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/views/html/events_Scope0$events$$anonfun$apply$2.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/views/html/events_Scope0$events.class" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/views/html/events_Scope0$events.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/views/html/index_Scope0$index.class" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/views/html/index_Scope0$index.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/views/html/listEvents_Scope0$listEvents$$anonfun$apply$1.class" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/views/html/listEvents_Scope0$listEvents$$anonfun$apply$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/views/html/listEvents_Scope0$listEvents$$anonfun$apply$2.class" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/views/html/listEvents_Scope0$listEvents$$anonfun$apply$2.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/views/html/listEvents_Scope0$listEvents.class" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/views/html/listEvents_Scope0$listEvents.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/views/html/login_Scope0$login.class" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/views/html/login_Scope0$login.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/views/html/main_Scope0$main.class" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/views/html/main_Scope0$main.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/views/html/orderConfirmed_Scope0$orderConfirmed$$anonfun$apply$1.class" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/views/html/orderConfirmed_Scope0$orderConfirmed$$anonfun$apply$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/views/html/orderConfirmed_Scope0$orderConfirmed.class" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/views/html/orderConfirmed_Scope0$orderConfirmed.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/views/html/signUp_Scope0$signUp_Scope1$signUp$$anonfun$apply$1.class" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/views/html/signUp_Scope0$signUp_Scope1$signUp$$anonfun$apply$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/views/html/signUp_Scope0$signUp_Scope1$signUp.class" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/views/html/signUp_Scope0$signUp_Scope1$signUp.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/streams/$global/coffeescript/$global/streams/copy-resource/op-cache" afterPath="$PROJECT_DIR$/target/streams/$global/coffeescript/$global/streams/copy-resource/op-cache" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/streams/$global/dependencyPositions/$global/streams/update_cache_2.11/output_dsp" afterPath="$PROJECT_DIR$/target/streams/$global/dependencyPositions/$global/streams/update_cache_2.11/output_dsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/streams/$global/jshint/$global/streams/copy-resource/op-cache" afterPath="$PROJECT_DIR$/target/streams/$global/jshint/$global/streams/copy-resource/op-cache" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/streams/$global/less/$global/streams/copy-resource/op-cache" afterPath="$PROJECT_DIR$/target/streams/$global/less/$global/streams/copy-resource/op-cache" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/streams/$global/update/$global/streams/update_cache_2.11/inputs" afterPath="$PROJECT_DIR$/target/streams/$global/update/$global/streams/update_cache_2.11/inputs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/streams/$global/update/$global/streams/update_cache_2.11/output" afterPath="$PROJECT_DIR$/target/streams/$global/update/$global/streams/update_cache_2.11/output" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/streams/compile/copyResources/$global/streams/copy-resources" afterPath="$PROJECT_DIR$/target/streams/compile/copyResources/$global/streams/copy-resources" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/streams/compile/playRoutes/$global/streams/op-cache" afterPath="$PROJECT_DIR$/target/streams/compile/playRoutes/$global/streams/op-cache" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/streams/web-assets/assets/$global/streams/sync-mappings" afterPath="$PROJECT_DIR$/target/streams/web-assets/assets/$global/streams/sync-mappings" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/streams/web-assets/webExportedDirectory/$global/streams/sync-mappings" afterPath="$PROJECT_DIR$/target/streams/web-assets/webExportedDirectory/$global/streams/sync-mappings" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/web/classes/main/META-INF/resources/webjars/ticketstore/1.0-SNAPSHOT/images/eventImages/null.jpg" afterPath="$PROJECT_DIR$/target/web/classes/main/META-INF/resources/webjars/ticketstore/1.0-SNAPSHOT/images/eventImages/null.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/web/classes/main/META-INF/resources/webjars/ticketstore/1.0-SNAPSHOT/images/eventImages/thumbnailsnull.jpg" afterPath="$PROJECT_DIR$/target/web/classes/main/META-INF/resources/webjars/ticketstore/1.0-SNAPSHOT/images/eventImages/thumbnailsnull.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/web/public/main/images/eventImages/null.jpg" afterPath="$PROJECT_DIR$/target/web/public/main/images/eventImages/null.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/web/public/main/images/eventImages/thumbnailsnull.jpg" afterPath="$PROJECT_DIR$/target/web/public/main/images/eventImages/thumbnailsnull.jpg" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/HomeController.java" afterPath="$PROJECT_DIR$/app/controllers/HomeController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/Event.java" afterPath="$PROJECT_DIR$/app/models/Event.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/shopping/ShopOrder.java" afterPath="$PROJECT_DIR$/app/models/shopping/ShopOrder.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/account/deleteAccount.scala.html" afterPath="$PROJECT_DIR$/app/views/account/deleteAccount.scala.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/account/myOrders.scala.html" afterPath="$PROJECT_DIR$/app/views/account/myOrders.scala.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/account/updateDetails.scala.html" afterPath="$PROJECT_DIR$/app/views/account/updateDetails.scala.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/admin/admineventTicket.scala.html" afterPath="$PROJECT_DIR$/app/views/admin/admineventTicket.scala.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/admin/adminevents.scala.html" afterPath="$PROJECT_DIR$/app/views/admin/adminevents.scala.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/admin/viewOrders.scala.html" afterPath="$PROJECT_DIR$/app/views/admin/viewOrders.scala.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/contact.scala.html" afterPath="$PROJECT_DIR$/app/views/contact.scala.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/index.scala.html" afterPath="$PROJECT_DIR$/app/views/index.scala.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/eventTicket.scala.html" afterPath="$PROJECT_DIR$/app/views/eventTicket.scala.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/orderConfirmed.scala.html" afterPath="$PROJECT_DIR$/app/views/orderConfirmed.scala.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/conf/evolutions/default/2.sql" afterPath="$PROJECT_DIR$/conf/evolutions/default/2.sql" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/TCEvents.trace.db" afterPath="$PROJECT_DIR$/data/TCEvents.trace.db" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/logs/application.log" afterPath="$PROJECT_DIR$/logs/application.log" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project/target/resolution-cache/default/ticketstore-build/scala_2.10/sbt_0.13/0.1-SNAPSHOT/resolved.xml.properties" afterPath="$PROJECT_DIR$/project/target/resolution-cache/default/ticketstore-build/scala_2.10/sbt_0.13/0.1-SNAPSHOT/resolved.xml.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project/target/resolution-cache/default/ticketstore-build/scala_2.10/sbt_0.13/0.1-SNAPSHOT/resolved.xml.xml" afterPath="$PROJECT_DIR$/project/target/resolution-cache/default/ticketstore-build/scala_2.10/sbt_0.13/0.1-SNAPSHOT/resolved.xml.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project/target/resolution-cache/reports/default-ticketstore-build-compile-internal.xml" afterPath="$PROJECT_DIR$/project/target/resolution-cache/reports/default-ticketstore-build-compile-internal.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project/target/resolution-cache/reports/default-ticketstore-build-compile.xml" afterPath="$PROJECT_DIR$/project/target/resolution-cache/reports/default-ticketstore-build-compile.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project/target/resolution-cache/reports/default-ticketstore-build-docs.xml" afterPath="$PROJECT_DIR$/project/target/resolution-cache/reports/default-ticketstore-build-docs.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project/target/resolution-cache/reports/default-ticketstore-build-optional.xml" afterPath="$PROJECT_DIR$/project/target/resolution-cache/reports/default-ticketstore-build-optional.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project/target/resolution-cache/reports/default-ticketstore-build-plugin.xml" afterPath="$PROJECT_DIR$/project/target/resolution-cache/reports/default-ticketstore-build-plugin.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project/target/resolution-cache/reports/default-ticketstore-build-pom.xml" afterPath="$PROJECT_DIR$/project/target/resolution-cache/reports/default-ticketstore-build-pom.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project/target/resolution-cache/reports/default-ticketstore-build-provided.xml" afterPath="$PROJECT_DIR$/project/target/resolution-cache/reports/default-ticketstore-build-provided.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project/target/resolution-cache/reports/default-ticketstore-build-runtime-internal.xml" afterPath="$PROJECT_DIR$/project/target/resolution-cache/reports/default-ticketstore-build-runtime-internal.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project/target/resolution-cache/reports/default-ticketstore-build-runtime.xml" afterPath="$PROJECT_DIR$/project/target/resolution-cache/reports/default-ticketstore-build-runtime.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project/target/resolution-cache/reports/default-ticketstore-build-scala-tool.xml" afterPath="$PROJECT_DIR$/project/target/resolution-cache/reports/default-ticketstore-build-scala-tool.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project/target/resolution-cache/reports/default-ticketstore-build-sources.xml" afterPath="$PROJECT_DIR$/project/target/resolution-cache/reports/default-ticketstore-build-sources.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project/target/resolution-cache/reports/default-ticketstore-build-test-internal.xml" afterPath="$PROJECT_DIR$/project/target/resolution-cache/reports/default-ticketstore-build-test-internal.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project/target/resolution-cache/reports/default-ticketstore-build-test.xml" afterPath="$PROJECT_DIR$/project/target/resolution-cache/reports/default-ticketstore-build-test.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project/target/streams/$global/update/$global/streams/out" afterPath="$PROJECT_DIR$/project/target/streams/$global/update/$global/streams/out" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project/target/streams/compile/dependencyClasspath/$global/streams/export" afterPath="$PROJECT_DIR$/project/target/streams/compile/dependencyClasspath/$global/streams/export" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project/target/streams/compile/exportedProducts/$global/streams/export" afterPath="$PROJECT_DIR$/project/target/streams/compile/exportedProducts/$global/streams/export" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project/target/streams/compile/externalDependencyClasspath/$global/streams/export" afterPath="$PROJECT_DIR$/project/target/streams/compile/externalDependencyClasspath/$global/streams/export" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project/target/streams/compile/managedClasspath/$global/streams/export" afterPath="$PROJECT_DIR$/project/target/streams/compile/managedClasspath/$global/streams/export" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project/target/streams/runtime/dependencyClasspath/$global/streams/export" afterPath="$PROJECT_DIR$/project/target/streams/runtime/dependencyClasspath/$global/streams/export" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project/target/streams/runtime/exportedProducts/$global/streams/export" afterPath="$PROJECT_DIR$/project/target/streams/runtime/exportedProducts/$global/streams/export" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project/target/streams/runtime/externalDependencyClasspath/$global/streams/export" afterPath="$PROJECT_DIR$/project/target/streams/runtime/externalDependencyClasspath/$global/streams/export" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project/target/streams/runtime/fullClasspath/$global/streams/export" afterPath="$PROJECT_DIR$/project/target/streams/runtime/fullClasspath/$global/streams/export" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project/target/streams/runtime/internalDependencyClasspath/$global/streams/export" afterPath="$PROJECT_DIR$/project/target/streams/runtime/internalDependencyClasspath/$global/streams/export" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project/target/streams/runtime/managedClasspath/$global/streams/export" afterPath="$PROJECT_DIR$/project/target/streams/runtime/managedClasspath/$global/streams/export" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project/target/webjars-plugin.cache" afterPath="$PROJECT_DIR$/project/target/webjars-plugin.cache" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/stylesheets/style.css" afterPath="$PROJECT_DIR$/public/stylesheets/style.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/.history" afterPath="$PROJECT_DIR$/target/.history" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/resolution-cache/reports/ticketstore-ticketstore_2.11-compile-internal.xml" afterPath="$PROJECT_DIR$/target/resolution-cache/reports/ticketstore-ticketstore_2.11-compile-internal.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/resolution-cache/reports/ticketstore-ticketstore_2.11-compile.xml" afterPath="$PROJECT_DIR$/target/resolution-cache/reports/ticketstore-ticketstore_2.11-compile.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/resolution-cache/reports/ticketstore-ticketstore_2.11-docs.xml" afterPath="$PROJECT_DIR$/target/resolution-cache/reports/ticketstore-ticketstore_2.11-docs.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/resolution-cache/reports/ticketstore-ticketstore_2.11-optional.xml" afterPath="$PROJECT_DIR$/target/resolution-cache/reports/ticketstore-ticketstore_2.11-optional.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/resolution-cache/reports/ticketstore-ticketstore_2.11-plugin.xml" afterPath="$PROJECT_DIR$/target/resolution-cache/reports/ticketstore-ticketstore_2.11-plugin.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/resolution-cache/reports/ticketstore-ticketstore_2.11-pom.xml" afterPath="$PROJECT_DIR$/target/resolution-cache/reports/ticketstore-ticketstore_2.11-pom.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/resolution-cache/reports/ticketstore-ticketstore_2.11-provided.xml" afterPath="$PROJECT_DIR$/target/resolution-cache/reports/ticketstore-ticketstore_2.11-provided.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/resolution-cache/reports/ticketstore-ticketstore_2.11-runtime-internal.xml" afterPath="$PROJECT_DIR$/target/resolution-cache/reports/ticketstore-ticketstore_2.11-runtime-internal.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/resolution-cache/reports/ticketstore-ticketstore_2.11-runtime.xml" afterPath="$PROJECT_DIR$/target/resolution-cache/reports/ticketstore-ticketstore_2.11-runtime.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/resolution-cache/reports/ticketstore-ticketstore_2.11-scala-tool.xml" afterPath="$PROJECT_DIR$/target/resolution-cache/reports/ticketstore-ticketstore_2.11-scala-tool.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/resolution-cache/reports/ticketstore-ticketstore_2.11-sources.xml" afterPath="$PROJECT_DIR$/target/resolution-cache/reports/ticketstore-ticketstore_2.11-sources.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/resolution-cache/reports/ticketstore-ticketstore_2.11-test-internal.xml" afterPath="$PROJECT_DIR$/target/resolution-cache/reports/ticketstore-ticketstore_2.11-test-internal.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/resolution-cache/reports/ticketstore-ticketstore_2.11-test.xml" afterPath="$PROJECT_DIR$/target/resolution-cache/reports/ticketstore-ticketstore_2.11-test.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/resolution-cache/ticketstore/ticketstore_2.11/1.0-SNAPSHOT/resolved.xml.properties" afterPath="$PROJECT_DIR$/target/resolution-cache/ticketstore/ticketstore_2.11/1.0-SNAPSHOT/resolved.xml.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/resolution-cache/ticketstore/ticketstore_2.11/1.0-SNAPSHOT/resolved.xml.xml" afterPath="$PROJECT_DIR$/target/resolution-cache/ticketstore/ticketstore_2.11/1.0-SNAPSHOT/resolved.xml.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/evolutions/default/2.sql" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/evolutions/default/2.sql" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/routes/main/controllers/ReverseRoutes.scala" afterPath="$PROJECT_DIR$/target/scala-2.11/routes/main/controllers/ReverseRoutes.scala" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/routes/main/controllers/javascript/JavaScriptReverseRoutes.scala" afterPath="$PROJECT_DIR$/target/scala-2.11/routes/main/controllers/javascript/JavaScriptReverseRoutes.scala" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/routes/main/controllers/routes.java" afterPath="$PROJECT_DIR$/target/scala-2.11/routes/main/controllers/routes.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/routes/main/router/Routes.scala" afterPath="$PROJECT_DIR$/target/scala-2.11/routes/main/router/Routes.scala" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/routes/main/router/RoutesPrefix.scala" afterPath="$PROJECT_DIR$/target/scala-2.11/routes/main/router/RoutesPrefix.scala" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/twirl/main/views/html/account/deleteAccount.template.scala" afterPath="$PROJECT_DIR$/target/scala-2.11/twirl/main/views/html/account/deleteAccount.template.scala" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/twirl/main/views/html/account/myOrders.template.scala" afterPath="$PROJECT_DIR$/target/scala-2.11/twirl/main/views/html/account/myOrders.template.scala" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/twirl/main/views/html/account/myaccount.template.scala" afterPath="$PROJECT_DIR$/target/scala-2.11/twirl/main/views/html/account/myaccount.template.scala" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/twirl/main/views/html/account/updateDetails.template.scala" afterPath="$PROJECT_DIR$/target/scala-2.11/twirl/main/views/html/account/updateDetails.template.scala" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/twirl/main/views/html/admin/addEvent.template.scala" afterPath="$PROJECT_DIR$/target/scala-2.11/twirl/main/views/html/admin/addEvent.template.scala" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/twirl/main/views/html/admin/addTicket.template.scala" afterPath="$PROJECT_DIR$/target/scala-2.11/twirl/main/views/html/admin/addTicket.template.scala" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/twirl/main/views/html/admin/admineventTicket.template.scala" afterPath="$PROJECT_DIR$/target/scala-2.11/twirl/main/views/html/admin/admineventTicket.template.scala" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/twirl/main/views/html/admin/adminevents.template.scala" afterPath="$PROJECT_DIR$/target/scala-2.11/twirl/main/views/html/admin/adminevents.template.scala" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/twirl/main/views/html/admin/viewAccount.template.scala" afterPath="$PROJECT_DIR$/target/scala-2.11/twirl/main/views/html/admin/viewAccount.template.scala" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/twirl/main/views/html/admin/viewContact.template.scala" afterPath="$PROJECT_DIR$/target/scala-2.11/twirl/main/views/html/admin/viewContact.template.scala" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/twirl/main/views/html/admin/viewOrders.template.scala" afterPath="$PROJECT_DIR$/target/scala-2.11/twirl/main/views/html/admin/viewOrders.template.scala" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/twirl/main/views/html/cart.template.scala" afterPath="$PROJECT_DIR$/target/scala-2.11/twirl/main/views/html/cart.template.scala" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/twirl/main/views/html/contact.template.scala" afterPath="$PROJECT_DIR$/target/scala-2.11/twirl/main/views/html/contact.template.scala" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/twirl/main/views/html/eventTicket.template.scala" afterPath="$PROJECT_DIR$/target/scala-2.11/twirl/main/views/html/eventTicket.template.scala" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/twirl/main/views/html/events.template.scala" afterPath="$PROJECT_DIR$/target/scala-2.11/twirl/main/views/html/events.template.scala" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/twirl/main/views/html/index.template.scala" afterPath="$PROJECT_DIR$/target/scala-2.11/twirl/main/views/html/index.template.scala" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/twirl/main/views/html/listEvents.template.scala" afterPath="$PROJECT_DIR$/target/scala-2.11/twirl/main/views/html/listEvents.template.scala" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/twirl/main/views/html/login.template.scala" afterPath="$PROJECT_DIR$/target/scala-2.11/twirl/main/views/html/login.template.scala" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/twirl/main/views/html/main.template.scala" afterPath="$PROJECT_DIR$/target/scala-2.11/twirl/main/views/html/main.template.scala" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/twirl/main/views/html/orderConfirmed.template.scala" afterPath="$PROJECT_DIR$/target/scala-2.11/twirl/main/views/html/orderConfirmed.template.scala" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/twirl/main/views/html/signUp.template.scala" afterPath="$PROJECT_DIR$/target/scala-2.11/twirl/main/views/html/signUp.template.scala" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/streams/$global/playCommonClassloader/$global/streams/out" afterPath="$PROJECT_DIR$/target/streams/$global/playCommonClassloader/$global/streams/out" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/streams/$global/update/$global/streams/out" afterPath="$PROJECT_DIR$/target/streams/$global/update/$global/streams/out" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/streams/compile/compileIncremental/$global/streams/export" afterPath="$PROJECT_DIR$/target/streams/compile/compileIncremental/$global/streams/export" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/streams/compile/copyResources/$global/streams/out" afterPath="$PROJECT_DIR$/target/streams/compile/copyResources/$global/streams/out" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/streams/compile/dependencyClasspath/$global/streams/export" afterPath="$PROJECT_DIR$/target/streams/compile/dependencyClasspath/$global/streams/export" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/streams/compile/exportedProducts/$global/streams/export" afterPath="$PROJECT_DIR$/target/streams/compile/exportedProducts/$global/streams/export" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/streams/compile/externalDependencyClasspath/$global/streams/export" afterPath="$PROJECT_DIR$/target/streams/compile/externalDependencyClasspath/$global/streams/export" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/streams/compile/incCompileSetup/$global/streams/inc_compile_2.11" afterPath="$PROJECT_DIR$/target/streams/compile/incCompileSetup/$global/streams/inc_compile_2.11" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/streams/compile/managedClasspath/$global/streams/export" afterPath="$PROJECT_DIR$/target/streams/compile/managedClasspath/$global/streams/export" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/streams/compile/playEnhancerGenerateAccessors/$global/streams/play_instrumentation_2.11" afterPath="$PROJECT_DIR$/target/streams/compile/playEnhancerGenerateAccessors/$global/streams/play_instrumentation_2.11" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/streams/compile/playEnhancerRewriteAccessors/$global/streams/play_instrumentation_2.11" afterPath="$PROJECT_DIR$/target/streams/compile/playEnhancerRewriteAccessors/$global/streams/play_instrumentation_2.11" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/streams/compile/unmanagedClasspath/$global/streams/export" afterPath="$PROJECT_DIR$/target/streams/compile/unmanagedClasspath/$global/streams/export" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/streams/compile/unmanagedJars/$global/streams/export" afterPath="$PROJECT_DIR$/target/streams/compile/unmanagedJars/$global/streams/export" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/streams/runtime/exportedProducts/$global/streams/export" afterPath="$PROJECT_DIR$/target/streams/runtime/exportedProducts/$global/streams/export" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/streams/runtime/externalDependencyClasspath/$global/streams/export" afterPath="$PROJECT_DIR$/target/streams/runtime/externalDependencyClasspath/$global/streams/export" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/streams/runtime/internalDependencyClasspath/$global/streams/export" afterPath="$PROJECT_DIR$/target/streams/runtime/internalDependencyClasspath/$global/streams/export" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/streams/runtime/managedClasspath/$global/streams/export" afterPath="$PROJECT_DIR$/target/streams/runtime/managedClasspath/$global/streams/export" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/streams/runtime/unmanagedClasspath/$global/streams/export" afterPath="$PROJECT_DIR$/target/streams/runtime/unmanagedClasspath/$global/streams/export" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/streams/runtime/unmanagedJars/$global/streams/export" afterPath="$PROJECT_DIR$/target/streams/runtime/unmanagedJars/$global/streams/export" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/web/classes/main/META-INF/resources/webjars/ticketstore/1.0-SNAPSHOT/stylesheets/style.css" afterPath="$PROJECT_DIR$/target/web/classes/main/META-INF/resources/webjars/ticketstore/1.0-SNAPSHOT/stylesheets/style.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/web/public/main/stylesheets/style.css" afterPath="$PROJECT_DIR$/target/web/public/main/stylesheets/style.css" />
     </list>
@@ -65,11 +313,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="HomeController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/controllers/HomeController.java">
+      <file leaf-file-name="Event.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/models/Event.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="346">
-              <caret line="273" column="26" lean-forward="false" selection-start-line="273" selection-start-column="26" selection-end-line="273" selection-end-column="26" />
+            <state relative-caret-position="613">
+              <caret line="175" column="65" selection-start-line="175" selection-start-column="65" selection-end-line="175" selection-end-column="65" />
               <folding />
             </state>
           </provider>
@@ -78,28 +326,58 @@
       <file leaf-file-name="contact.scala.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/contact.scala.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="22" column="95" lean-forward="false" selection-start-line="22" selection-start-column="95" selection-end-line="22" selection-end-column="95" />
+            <state relative-caret-position="270">
+              <caret line="15" column="33" selection-start-line="15" selection-start-column="33" selection-end-line="15" selection-end-column="33" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="viewOrders.scala.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/admin/viewOrders.scala.html">
+      <file leaf-file-name="signUp.scala.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/signUp.scala.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="5" column="30" lean-forward="false" selection-start-line="5" selection-start-column="30" selection-end-line="5" selection-end-column="30" />
+            <state relative-caret-position="198">
+              <caret line="11" column="52" selection-start-line="11" selection-start-column="12" selection-end-line="11" selection-end-column="52" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="style.css" pinned="false" current-in-tab="true">
+      <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/stylesheets/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="438">
-              <caret line="905" column="0" lean-forward="true" selection-start-line="905" selection-start-column="0" selection-end-line="905" selection-end-column="0" />
+            <state relative-caret-position="374">
+              <caret line="739" column="14" selection-start-line="739" selection-start-column="14" selection-end-line="739" selection-end-column="14" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="admineventTicket.scala.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/views/admin/admineventTicket.scala.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="630">
+              <caret line="59" column="28" selection-start-line="59" selection-start-column="28" selection-end-line="59" selection-end-column="28" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Ticket.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/models/Ticket.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="541">
+              <caret line="53" column="27" selection-start-line="53" selection-start-column="16" selection-end-line="53" selection-end-column="27" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="adminevents.scala.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/admin/adminevents.scala.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="590">
+              <caret line="105" column="50" selection-start-line="105" selection-start-column="50" selection-end-line="105" selection-end-column="50" />
               <folding />
             </state>
           </provider>
@@ -108,65 +386,29 @@
       <file leaf-file-name="myOrders.scala.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/account/myOrders.scala.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="305">
-              <caret line="33" column="12" lean-forward="false" selection-start-line="33" selection-start-column="12" selection-end-line="33" selection-end-column="89" />
+            <state relative-caret-position="702">
+              <caret line="60" column="84" selection-start-line="60" selection-start-column="55" selection-end-line="60" selection-end-column="84" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="User.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/models/users/User.java">
+      <file leaf-file-name="ShopOrder.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/models/shopping/ShopOrder.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="549">
-              <caret line="62" column="24" lean-forward="false" selection-start-line="62" selection-start-column="24" selection-end-line="62" selection-end-column="24" />
-              <folding>
-                <element signature="e#1433#1434#0" expanded="true" />
-                <element signature="e#1471#1472#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ShoppingCtrl.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/controllers/ShoppingCtrl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="281">
-              <caret line="63" column="58" lean-forward="false" selection-start-line="63" selection-start-column="58" selection-end-line="63" selection-end-column="58" />
+            <state relative-caret-position="392">
+              <caret line="48" column="21" selection-start-line="48" selection-start-column="21" selection-end-line="48" selection-end-column="21" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.scala.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/index.scala.html">
+      <file leaf-file-name="eventTicket.scala.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/eventTicket.scala.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="523">
-              <caret line="60" column="1" lean-forward="false" selection-start-line="60" selection-start-column="1" selection-end-line="60" selection-end-column="1" />
+            <state relative-caret-position="535">
+              <caret line="41" column="39" selection-start-line="41" selection-start-column="39" selection-end-line="41" selection-end-column="40" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="LoginController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/controllers/LoginController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="176">
-              <caret line="64" column="32" lean-forward="false" selection-start-line="64" selection-start-column="31" selection-end-line="64" selection-end-column="32" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Basket.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/models/shopping/Basket.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="342">
-              <caret line="86" column="18" lean-forward="false" selection-start-line="86" selection-start-column="18" selection-end-line="86" selection-end-column="18" />
-              <folding>
-                <element signature="e#2437#2438#0" expanded="true" />
-                <element signature="e#2463#2464#0" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -241,24 +483,13 @@
         <option value="$PROJECT_DIR$/app/models/Contact.java" />
         <option value="$PROJECT_DIR$/app/views/admin/viewContact.scala.html" />
         <option value="$PROJECT_DIR$/app/views/listEvents.scala.html" />
-        <option value="$PROJECT_DIR$/app/models/shopping/ShopOrder.java" />
         <option value="$PROJECT_DIR$/app/views/main.scala.html" />
-        <option value="$PROJECT_DIR$/app/views/account/myOrders.scala.html" />
         <option value="$PROJECT_DIR$/app/views/admin/viewAccount.scala.html" />
-        <option value="$PROJECT_DIR$/app/views/account/deleteAccount.scala.html" />
         <option value="$PROJECT_DIR$/app/controllers/LoginController.java" />
-        <option value="$PROJECT_DIR$/app/views/account/updateDetails.scala.html" />
         <option value="$PROJECT_DIR$/app/views/login.scala.html" />
-        <option value="$PROJECT_DIR$/conf/evolutions/default/2.sql" />
         <option value="$PROJECT_DIR$/app/views/admin/addTicket.scala.html" />
         <option value="$PROJECT_DIR$/app/models/Ticket.java" />
         <option value="$PROJECT_DIR$/app/views/account/myaccount.scala.html" />
-        <option value="$PROJECT_DIR$/app/views/admin/admineventTicket.scala.html" />
-        <option value="$PROJECT_DIR$/app/views/eventTicket.scala.html" />
-        <option value="$PROJECT_DIR$/app/views/admin/adminevents.scala.html" />
-        <option value="$PROJECT_DIR$/app/views/events.scala.html" />
-        <option value="$PROJECT_DIR$/app/views/orderConfirmed.scala.html" />
-        <option value="$PROJECT_DIR$/app/models/Event.java" />
         <option value="$PROJECT_DIR$/app/views/cart.scala.html" />
         <option value="$PROJECT_DIR$/app/models/shopping/OrderItem.java" />
         <option value="$PROJECT_DIR$/app/models/shopping/Basket.java" />
@@ -266,9 +497,20 @@
         <option value="$PROJECT_DIR$/app/controllers/ShoppingCtrl.java" />
         <option value="$PROJECT_DIR$/app/views/index.scala.html" />
         <option value="$PROJECT_DIR$/app/controllers/HomeController.java" />
-        <option value="$PROJECT_DIR$/app/views/contact.scala.html" />
+        <option value="$PROJECT_DIR$/conf/evolutions/default/2.sql" />
+        <option value="$PROJECT_DIR$/app/views/admin/adminevents.scala.html" />
+        <option value="$PROJECT_DIR$/app/views/account/deleteAccount.scala.html" />
+        <option value="$PROJECT_DIR$/app/views/account/updateDetails.scala.html" />
+        <option value="$PROJECT_DIR$/app/views/events.scala.html" />
+        <option value="$PROJECT_DIR$/app/models/Event.java" />
+        <option value="$PROJECT_DIR$/app/views/eventTicket.scala.html" />
+        <option value="$PROJECT_DIR$/app/views/orderConfirmed.scala.html" />
+        <option value="$PROJECT_DIR$/app/models/shopping/ShopOrder.java" />
+        <option value="$PROJECT_DIR$/app/views/account/myOrders.scala.html" />
         <option value="$PROJECT_DIR$/app/views/admin/viewOrders.scala.html" />
+        <option value="$PROJECT_DIR$/app/views/contact.scala.html" />
         <option value="$PROJECT_DIR$/public/stylesheets/style.css" />
+        <option value="$PROJECT_DIR$/app/views/admin/admineventTicket.scala.html" />
       </list>
     </option>
   </component>
@@ -285,10 +527,20 @@
     <handled-path value="$PROJECT_DIR$/project/target/node-modules/webjars/npm/node_modules" />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
-    <option name="width" value="1382" />
-    <option name="height" value="744" />
+    <option name="x" value="-1" />
+    <option name="y" value="25" />
+    <option name="width" value="1922" />
+    <option name="height" value="951" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
+    <OptionsSetting value="true" id="Add" />
+    <OptionsSetting value="true" id="Remove" />
+    <OptionsSetting value="true" id="Checkout" />
+    <OptionsSetting value="true" id="Update" />
+    <OptionsSetting value="true" id="Status" />
+    <OptionsSetting value="true" id="Edit" />
+    <ConfirmationsSetting value="0" id="Add" />
+    <ConfirmationsSetting value="0" id="Remove" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -310,6 +562,12 @@
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TicketStore" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
           <PATH>
             <PATH_ELEMENT>
               <option name="myItemId" value="TicketStore" />
@@ -584,7 +842,7 @@
       <predefined_log_file id="idea.log" enabled="true" />
       <method />
     </configuration>
-    <configuration default="true" type="AndroidRunConfigurationType" factoryName="Android App">
+    <configuration default="true" type="AndroidRunConfigurationType" factoryName="Android Application">
       <module name="" />
       <option name="DEPLOY" value="true" />
       <option name="ARTIFACT_NAME" value="" />
@@ -594,7 +852,7 @@
       <option name="TARGET_SELECTION_MODE" value="SHOW_DIALOG" />
       <option name="PREFERRED_AVD" value="" />
       <option name="CLEAR_LOGCAT" value="false" />
-      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="false" />
+      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="true" />
       <option name="SKIP_NOOP_APK_INSTALLATIONS" value="true" />
       <option name="FORCE_STOP_RUNNING_APP" value="true" />
       <option name="DEBUGGER_TYPE" value="Java" />
@@ -602,11 +860,7 @@
       <option name="PREFERRED_AVD" value="" />
       <Java />
       <Profilers>
-        <option name="ENABLE_ADVANCED_PROFILING" value="true" />
-        <option name="GAPID_ENABLED" value="false" />
         <option name="GAPID_DISABLE_PCS" value="false" />
-        <option name="SUPPORT_LIB_ENABLED" value="true" />
-        <option name="INSTRUMENTATION_ENABLED" value="true" />
       </Profilers>
       <option name="DEEP_LINK" value="" />
       <option name="ACTIVITY_CLASS" value="" />
@@ -631,11 +885,7 @@
       <option name="PREFERRED_AVD" value="" />
       <Java />
       <Profilers>
-        <option name="ENABLE_ADVANCED_PROFILING" value="true" />
-        <option name="GAPID_ENABLED" value="false" />
         <option name="GAPID_DISABLE_PCS" value="false" />
-        <option name="SUPPORT_LIB_ENABLED" value="true" />
-        <option name="INSTRUMENTATION_ENABLED" value="true" />
       </Profilers>
       <method />
     </configuration>
@@ -813,7 +1063,6 @@
       <setting name="cmdLine" value="run-app" />
       <setting name="passParentEnv" value="true" />
       <setting name="launchBrowser" value="true" />
-      <setting name="launchBrowserUrl" value="" />
       <setting name="depsClasspath" value="false" />
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <method />
@@ -830,6 +1079,27 @@
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="true" type="JUnitTestDiscovery" factoryName="JUnit Test Discovery" changeList="All">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
       <option name="ENV_VARIABLES" />
       <option name="PASS_PARENT_ENVS" value="true" />
       <option name="TEST_SEARCH_SCOPE">
@@ -860,12 +1130,6 @@
       <envs />
       <method />
     </configuration>
-    <configuration default="true" type="JavaScriptTestRunnerProtractor" factoryName="Protractor">
-      <config-file value="" />
-      <node-interpreter value="project" />
-      <envs />
-      <method />
-    </configuration>
     <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
       <method />
     </configuration>
@@ -892,6 +1156,9 @@
       <option name="workingDirectory" />
       <option name="isAlternativeJrePathEnabled" value="false" />
       <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="NodeJSConfigurationType" factoryName="Node.js" path-to-node="project" working-dir="">
       <method />
     </configuration>
     <configuration default="true" type="Remote" factoryName="Remote">
@@ -966,6 +1233,34 @@
       <listeners />
       <method />
     </configuration>
+    <configuration default="true" type="TestNGTestDiscovery" factoryName="TestNG Test Discovery" changeList="All">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="VM_PARAMETERS" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="ANNOTATION_TYPE" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <envs />
+      <properties />
+      <listeners />
+      <method />
+    </configuration>
     <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
       <node-interpreter>project</node-interpreter>
       <node-options />
@@ -980,6 +1275,19 @@
       <scripts />
       <node-interpreter value="project" />
       <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="mocha-javascript-test-runner" factoryName="Mocha">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <working-directory />
+      <pass-parent-env>true</pass-parent-env>
+      <envs />
+      <ui />
+      <extra-mocha-options />
+      <test-kind>DIRECTORY</test-kind>
+      <test-directory />
+      <recursive>false</recursive>
       <method />
     </configuration>
     <configuration default="true" type="osgi.bnd.run" factoryName="Run Launcher">
@@ -1003,7 +1311,7 @@
       <envs />
       <method />
     </configuration>
-    <configuration default="true" type="AndroidRunConfigurationType" factoryName="Android Application">
+    <configuration default="true" type="AndroidRunConfigurationType" factoryName="Android App">
       <module name="" />
       <option name="DEPLOY" value="true" />
       <option name="ARTIFACT_NAME" value="" />
@@ -1013,7 +1321,7 @@
       <option name="TARGET_SELECTION_MODE" value="SHOW_DIALOG" />
       <option name="PREFERRED_AVD" value="" />
       <option name="CLEAR_LOGCAT" value="false" />
-      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="true" />
+      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="false" />
       <option name="SKIP_NOOP_APK_INSTALLATIONS" value="true" />
       <option name="FORCE_STOP_RUNNING_APP" value="true" />
       <option name="DEBUGGER_TYPE" value="Java" />
@@ -1021,7 +1329,11 @@
       <option name="PREFERRED_AVD" value="" />
       <Java />
       <Profilers>
+        <option name="ENABLE_ADVANCED_PROFILING" value="true" />
+        <option name="GAPID_ENABLED" value="false" />
         <option name="GAPID_DISABLE_PCS" value="false" />
+        <option name="SUPPORT_LIB_ENABLED" value="true" />
+        <option name="INSTRUMENTATION_ENABLED" value="true" />
       </Profilers>
       <option name="DEEP_LINK" value="" />
       <option name="ACTIVITY_CLASS" value="" />
@@ -1078,45 +1390,46 @@
       <workItem from="1492519499460" duration="1325000" />
       <workItem from="1492522474075" duration="1014000" />
       <workItem from="1492525124478" duration="3677000" />
+      <workItem from="1492593808029" duration="4108000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="126804000" />
+    <option name="totallyTimeSpent" value="130912000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <frame x="-1" y="25" width="1922" height="951" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980332" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25030085" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.38350984" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21237993" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980332" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32851985" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1168,7 +1481,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/views/basket.scala.html" />
     <entry file="file://$PROJECT_DIR$/app/views/aboutUs.scala.html" />
     <entry file="file://$PROJECT_DIR$/app/controllers/CheckIfUser.java" />
     <entry file="file://$PROJECT_DIR$/app/views/account/orders.scala.html" />
@@ -1177,56 +1489,49 @@
     <entry file="file://$PROJECT_DIR$/app/controllers/CountController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/EventController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
-          <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/signUp.scala.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="7" lean-forward="false" selection-start-line="4" selection-start-column="7" selection-end-line="4" selection-end-column="7" />
+          <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="jar://$APPLICATION_HOME_DIR$/lib/idea.jar!/resources/html5-schema/html5/phrase.rnc">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="194">
-          <caret line="57" column="14" lean-forward="false" selection-start-line="57" selection-start-column="14" selection-end-line="57" selection-end-column="14" />
+          <caret line="57" column="14" selection-start-line="57" selection-start-column="14" selection-end-line="57" selection-end-column="14" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/models/Category.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="694">
-          <caret line="68" column="0" lean-forward="false" selection-start-line="68" selection-start-column="0" selection-end-line="68" selection-end-column="0" />
+          <caret line="68" column="0" selection-start-line="68" selection-start-column="0" selection-end-line="68" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/listEvents.scala.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="414">
-          <caret line="23" column="87" lean-forward="false" selection-start-line="23" selection-start-column="87" selection-end-line="23" selection-end-column="87" />
+          <caret line="23" column="87" selection-start-line="23" selection-start-column="87" selection-end-line="23" selection-end-column="87" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/models/Contact.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="459">
-          <caret line="32" column="25" lean-forward="false" selection-start-line="32" selection-start-column="25" selection-end-line="32" selection-end-column="25" />
+          <caret line="32" column="25" selection-start-line="32" selection-start-column="25" selection-end-line="32" selection-end-column="25" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/admin/viewContact.scala.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="55" selection-end-column="1" />
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="55" selection-end-column="1" />
         </state>
       </provider>
     </entry>
@@ -1234,42 +1539,28 @@
     <entry file="file://$PROJECT_DIR$/app/views/admin/viewAccount.scala.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
-          <caret line="13" column="28" lean-forward="false" selection-start-line="13" selection-start-column="28" selection-end-line="13" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/account/deleteAccount.scala.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="6" lean-forward="false" selection-start-line="4" selection-start-column="6" selection-end-line="4" selection-end-column="6" />
+          <caret line="13" column="28" selection-start-line="13" selection-start-column="28" selection-end-line="13" selection-end-column="28" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/AsyncController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/AuthAdmin.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/Secured.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/models/Login.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -1283,300 +1574,286 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/account/updateDetails.scala.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="646">
-          <caret line="38" column="48" lean-forward="false" selection-start-line="38" selection-start-column="48" selection-end-line="38" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/main.scala.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="476">
-          <caret line="28" column="93" lean-forward="false" selection-start-line="28" selection-start-column="75" selection-end-line="28" selection-end-column="93" />
+          <caret line="28" column="93" selection-start-line="28" selection-start-column="75" selection-end-line="28" selection-end-column="93" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/login.scala.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-122">
-          <caret line="7" column="14" lean-forward="false" selection-start-line="7" selection-start-column="14" selection-end-line="7" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/conf/evolutions/default/2.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="561">
-          <caret line="33" column="0" lean-forward="false" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/admin/addEvent.scala.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" column="16" lean-forward="false" selection-start-line="19" selection-start-column="16" selection-end-line="21" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/admin/addTicket.scala.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="75" lean-forward="false" selection-start-line="15" selection-start-column="75" selection-end-line="15" selection-end-column="75" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/Ticket.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="27" column="30" lean-forward="false" selection-start-line="27" selection-start-column="30" selection-end-line="27" selection-end-column="30" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#943#944#0" expanded="false" />
-            <element signature="e#975#976#0" expanded="false" />
-            <element signature="e#1021#1022#0" expanded="false" />
-            <element signature="e#1062#1063#0" expanded="false" />
-            <element signature="e#1099#1100#0" expanded="false" />
-            <element signature="e#1133#1134#0" expanded="false" />
-            <element signature="e#1185#1186#0" expanded="false" />
-            <element signature="e#1230#1231#0" expanded="false" />
-            <element signature="e#1262#1263#0" expanded="false" />
-            <element signature="e#1293#1294#0" expanded="false" />
-            <element signature="e#1338#1339#0" expanded="false" />
-            <element signature="e#1378#1379#0" expanded="false" />
-            <element signature="e#1422#1423#0" expanded="false" />
-            <element signature="e#1458#1459#0" expanded="false" />
-            <element signature="e#1490#1491#0" expanded="false" />
-            <element signature="e#1518#1519#0" expanded="false" />
-            <element signature="e#1560#1561#0" expanded="false" />
-            <element signature="e#1594#1595#0" expanded="false" />
-            <element signature="e#1724#1725#0" expanded="false" />
-            <element signature="e#1764#1765#0" expanded="false" />
-            <element signature="e#1795#1796#0" expanded="false" />
-            <element signature="e#1823#1824#0" expanded="false" />
-            <element signature="e#1864#1865#0" expanded="false" />
-            <element signature="e#1898#1899#0" expanded="false" />
-            <element signature="e#1936#1937#0" expanded="false" />
-            <element signature="e#1970#1971#0" expanded="false" />
-            <element signature="e#2024#2025#0" expanded="false" />
-            <element signature="e#2070#2071#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/account/myaccount.scala.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="80" lean-forward="false" selection-start-line="14" selection-start-column="80" selection-end-line="14" selection-end-column="80" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/admin/admineventTicket.scala.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="748">
-          <caret line="44" column="57" lean-forward="false" selection-start-line="44" selection-start-column="57" selection-end-line="44" selection-end-column="57" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/admin/adminevents.scala.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1564">
-          <caret line="92" column="48" lean-forward="false" selection-start-line="92" selection-start-column="48" selection-end-line="92" selection-end-column="66" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/events.scala.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1377">
-          <caret line="81" column="45" lean-forward="false" selection-start-line="81" selection-start-column="45" selection-end-line="81" selection-end-column="45" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/orderConfirmed.scala.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="21" column="30" lean-forward="false" selection-start-line="21" selection-start-column="30" selection-end-line="21" selection-end-column="30" />
-          <folding>
-            <element signature="e#63#92#0#Scala" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/eventTicket.scala.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="697">
-          <caret line="41" column="39" lean-forward="false" selection-start-line="41" selection-start-column="39" selection-end-line="41" selection-end-column="69" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/Event.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2261">
-          <caret line="174" column="35" lean-forward="false" selection-start-line="174" selection-start-column="35" selection-end-line="174" selection-end-column="35" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#992#993#0" expanded="false" />
-            <element signature="e#1017#1018#0" expanded="false" />
-            <element signature="e#1056#1057#0" expanded="false" />
-            <element signature="e#1089#1090#0" expanded="false" />
-            <element signature="e#1125#1126#0" expanded="false" />
-            <element signature="e#1157#1158#0" expanded="false" />
-            <element signature="e#1207#1208#0" expanded="false" />
-            <element signature="e#1249#1250#0" expanded="false" />
-            <element signature="e#1280#1281#0" expanded="false" />
-            <element signature="e#1307#1308#0" expanded="false" />
-            <element signature="e#1347#1348#0" expanded="false" />
-            <element signature="e#1379#1380#0" expanded="false" />
-            <element signature="e#1414#1415#0" expanded="false" />
-            <element signature="e#1445#1446#0" expanded="false" />
-            <element signature="e#1493#1494#0" expanded="false" />
-            <element signature="e#1533#1534#0" expanded="false" />
-            <element signature="e#1564#1565#0" expanded="false" />
-            <element signature="e#1591#1592#0" expanded="false" />
-            <element signature="e#1631#1632#0" expanded="false" />
-            <element signature="e#1663#1664#0" expanded="false" />
-            <element signature="e#1695#1696#0" expanded="false" />
-            <element signature="e#1723#1724#0" expanded="false" />
-            <element signature="e#1765#1766#0" expanded="false" />
-            <element signature="e#1799#1800#0" expanded="false" />
-            <element signature="e#2050#2051#0" expanded="false" />
-            <element signature="e#2089#2090#0" expanded="false" />
-            <element signature="e#2639#2640#0" expanded="false" />
-            <element signature="e#2669#2670#0" expanded="false" />
-            <element signature="e#2721#2722#0" expanded="false" />
-            <element signature="e#2759#2760#0" expanded="false" />
-            <element signature="e#2886#2887#0" expanded="false" />
-            <element signature="e#2963#2964#0" expanded="false" />
-            <element signature="e#3265#3266#0" expanded="false" />
-            <element signature="e#3296#3297#0" expanded="false" />
-            <element signature="e#3346#3347#0" expanded="false" />
-            <element signature="e#3386#3387#0" expanded="false" />
-          </folding>
+          <caret line="7" column="14" selection-start-line="7" selection-start-column="14" selection-end-line="7" selection-end-column="14" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/cart.scala.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="412">
-          <caret line="75" column="88" lean-forward="false" selection-start-line="75" selection-start-column="88" selection-end-line="75" selection-end-column="88" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/shopping/ShopOrder.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="921">
-          <caret line="98" column="0" lean-forward="false" selection-start-line="98" selection-start-column="0" selection-end-line="98" selection-end-column="0" />
-          <folding />
+          <caret line="75" column="88" selection-start-line="75" selection-start-column="88" selection-end-line="75" selection-end-column="88" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/models/shopping/OrderItem.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="458">
-          <caret line="55" column="21" lean-forward="false" selection-start-line="55" selection-start-column="21" selection-end-line="55" selection-end-column="21" />
-          <folding>
-            <element signature="e#994#995#0" expanded="true" />
-            <element signature="e#1022#1023#0" expanded="true" />
-          </folding>
+          <caret line="55" column="21" selection-start-line="55" selection-start-column="21" selection-end-line="55" selection-end-column="21" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/conf/routes">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="416">
-          <caret line="34" column="36" lean-forward="false" selection-start-line="34" selection-start-column="36" selection-end-line="34" selection-end-column="36" />
-          <folding />
+          <caret line="34" column="36" selection-start-line="34" selection-start-column="36" selection-end-line="34" selection-end-column="36" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/models/shopping/Basket.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="86" column="18" lean-forward="false" selection-start-line="86" selection-start-column="18" selection-end-line="86" selection-end-column="18" />
+        <state relative-caret-position="1386">
+          <caret line="86" column="18" selection-start-line="86" selection-start-column="18" selection-end-line="86" selection-end-column="18" />
           <folding>
-            <element signature="e#2437#2438#0" expanded="true" />
-            <element signature="e#2463#2464#0" expanded="true" />
+            <element signature="imports" expanded="false" />
+            <element signature="e#2845#2846#0" expanded="false" />
+            <element signature="e#2885#2886#0" expanded="false" />
+            <element signature="e#2913#2914#0" expanded="false" />
+            <element signature="e#2938#2939#0" expanded="false" />
+            <element signature="e#2972#2973#0" expanded="false" />
+            <element signature="e#3000#3001#0" expanded="false" />
+            <element signature="e#3047#3048#0" expanded="false" />
+            <element signature="e#3081#3082#0" expanded="false" />
+            <element signature="e#3144#3145#0" expanded="false" />
+            <element signature="e#3190#3191#0" expanded="false" />
+            <element signature="e#3219#3220#0" expanded="false" />
+            <element signature="e#3246#3247#0" expanded="false" />
+            <element signature="e#3284#3285#0" expanded="false" />
+            <element signature="e#3316#3317#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/index.scala.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="523">
-          <caret line="60" column="1" lean-forward="false" selection-start-line="60" selection-start-column="1" selection-end-line="60" selection-end-column="1" />
+        <state relative-caret-position="1080">
+          <caret line="60" column="1" selection-start-line="60" selection-start-column="1" selection-end-line="60" selection-end-column="1" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/LoginController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="64" column="32" lean-forward="false" selection-start-line="64" selection-start-column="31" selection-end-line="64" selection-end-column="32" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/users/User.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="549">
-          <caret line="62" column="24" lean-forward="false" selection-start-line="62" selection-start-column="24" selection-end-line="62" selection-end-column="24" />
+        <state relative-caret-position="846">
+          <caret line="64" column="32" selection-start-line="64" selection-start-column="31" selection-end-line="64" selection-end-column="32" />
           <folding>
-            <element signature="e#1433#1434#0" expanded="true" />
-            <element signature="e#1471#1472#0" expanded="true" />
+            <element signature="imports" expanded="false" />
+            <element signature="e#1426#1427#0" expanded="false" />
+            <element signature="e#1489#1490#0" expanded="false" />
+            <element signature="e#2095#2096#0" expanded="false" />
+            <element signature="e#2164#2165#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/ShoppingCtrl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="281">
-          <caret line="63" column="58" lean-forward="false" selection-start-line="63" selection-start-column="58" selection-end-line="63" selection-end-column="58" />
+        <state relative-caret-position="810">
+          <caret line="63" column="58" selection-start-line="63" selection-start-column="58" selection-end-line="63" selection-end-column="58" />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#490#491#0" expanded="false" />
+            <element signature="e#518#519#0" expanded="false" />
+            <element signature="e#621#622#0" expanded="false" />
+            <element signature="e#684#685#0" expanded="false" />
+            <element signature="e#737#738#0" expanded="false" />
+            <element signature="e#797#798#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/conf/evolutions/default/1.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-594">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/conf/evolutions/default/2.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="594">
+          <caret line="39" column="61" selection-start-line="39" selection-start-column="61" selection-end-line="39" selection-end-column="61" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/admin/addTicket.scala.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="15" column="75" selection-start-line="15" selection-start-column="75" selection-end-line="15" selection-end-column="75" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/admin/addEvent.scala.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="468">
+          <caret line="26" column="22" selection-start-line="26" selection-start-column="22" selection-end-line="26" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/account/myaccount.scala.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="66" selection-start-line="14" selection-start-column="66" selection-end-line="14" selection-end-column="80" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/account/deleteAccount.scala.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="13" column="80" selection-start-line="13" selection-start-column="80" selection-end-line="13" selection-end-column="80" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/account/updateDetails.scala.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="214">
+          <caret line="14" column="80" selection-start-line="14" selection-start-column="80" selection-end-line="14" selection-end-column="80" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/HomeController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="346">
-          <caret line="273" column="26" lean-forward="false" selection-start-line="273" selection-start-column="26" selection-end-line="273" selection-end-column="26" />
+        <state relative-caret-position="248">
+          <caret line="85" column="23" selection-start-line="85" selection-start-column="22" selection-end-line="85" selection-end-column="23" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/contact.scala.html">
+    <entry file="file://$PROJECT_DIR$/app/controllers/AuthAdmin.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="22" column="95" lean-forward="false" selection-start-line="22" selection-start-column="95" selection-end-line="22" selection-end-column="95" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/users/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="766">
+          <caret line="62" column="24" selection-start-line="62" selection-start-column="24" selection-end-line="62" selection-end-column="24" />
+          <folding>
+            <element signature="e#1433#1434#0" expanded="false" />
+            <element signature="e#1471#1472#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/events.scala.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="388">
+          <caret line="80" column="0" selection-start-line="80" selection-start-column="0" selection-end-line="80" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/orderConfirmed.scala.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="594">
+          <caret line="58" column="68" selection-start-line="58" selection-start-column="53" selection-end-line="58" selection-end-column="68" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/eventTicket.scala.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="535">
+          <caret line="41" column="39" selection-start-line="41" selection-start-column="39" selection-end-line="41" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/Event.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="613">
+          <caret line="175" column="65" selection-start-line="175" selection-start-column="65" selection-end-line="175" selection-end-column="65" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/shopping/ShopOrder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="392">
+          <caret line="48" column="21" selection-start-line="48" selection-start-column="21" selection-end-line="48" selection-end-column="21" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/account/myOrders.scala.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="305">
-          <caret line="33" column="12" lean-forward="false" selection-start-line="33" selection-start-column="12" selection-end-line="33" selection-end-column="89" />
+        <state relative-caret-position="702">
+          <caret line="60" column="84" selection-start-line="60" selection-start-column="55" selection-end-line="60" selection-end-column="84" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/admin/viewOrders.scala.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="30" lean-forward="false" selection-start-line="5" selection-start-column="30" selection-end-line="5" selection-end-column="30" />
+        <state relative-caret-position="576">
+          <caret line="63" column="100" selection-start-line="63" selection-start-column="100" selection-end-line="63" selection-end-column="100" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/signUp.scala.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="11" column="52" selection-start-line="11" selection-start-column="12" selection-end-line="11" selection-end-column="52" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/contact.scala.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="15" column="33" selection-start-line="15" selection-start-column="33" selection-end-line="15" selection-end-column="33" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/stylesheets/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="438">
-          <caret line="905" column="0" lean-forward="true" selection-start-line="905" selection-start-column="0" selection-end-line="905" selection-end-column="0" />
+        <state relative-caret-position="374">
+          <caret line="739" column="14" selection-start-line="739" selection-start-column="14" selection-end-line="739" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/admin/adminevents.scala.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="590">
+          <caret line="105" column="50" selection-start-line="105" selection-start-column="50" selection-end-line="105" selection-end-column="50" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/Ticket.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="541">
+          <caret line="53" column="27" selection-start-line="53" selection-start-column="16" selection-end-line="53" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/admin/admineventTicket.scala.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="630">
+          <caret line="59" column="28" selection-start-line="59" selection-start-column="28" selection-end-line="59" selection-end-column="28" />
           <folding />
         </state>
       </provider>

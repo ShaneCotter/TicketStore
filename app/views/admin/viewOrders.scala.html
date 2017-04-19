@@ -36,15 +36,15 @@
                                 <tr class = "danger">
                                     <td>#@o.getId</td>
                                     <td>@o.getOrderDate</td>
-                                    <td>@o.getOrderTotal</td>
+                                    <td>€@("%.2f".format(o.getOrderTotal))</td>
                                     <td>Received</td>
                                     <td class="col-sm-1"><a href="@routes.HomeController.markAsProccessed(o.getId, true)" class="btn btn-danger btn-sm whitetext" id="user-delete-button">
-                                        <span class="glyphicon glyphicon-ok"></span> Mark as proccessed
+                                        <span class="glyphicon glyphicon-ok"></span> Mark as processed
                                     </a></td>
                                 </tr>
                                 @for(i <- o.getItems) {
                                     <tr>
-                                        <td>Tickets : @i.getQuantity x €@i.getPrice @i.getTicket.getEvent.getEventName - @i.getTicket.getTicketType</td>
+                                        <td>Tickets : @i.getQuantity x €@("%.2f".format(i.getPrice)) @i.getTicket.getEvent.getEventName - @i.getTicket.getTicketType</td>
                                     </tr>
                                 }
 
@@ -53,15 +53,15 @@
                                 <tr class = "success">
                                     <td>#@o.getId</td>
                                     <td>@o.getOrderDate</td>
-                                    <td>@o.getOrderTotal</td>
-                                    <td>Proccessed</td>
+                                    <td>€@("%.2f".format(o.getOrderTotal))</td>
+                                    <td>Processed</td>
                                     <td class="col-sm-1"><a href="@routes.HomeController.markAsProccessed(o.getId, true)" class="btn btn-success btn-sm whitetext" id="user-delete-button">
-                                        <span class="glyphicon glyphicon-ok"></span> Order Proccessed
+                                        <span class="glyphicon glyphicon-ok"></span> Order Processed
                                     </a></td>
                                 </tr>
                                 @for(i <- o.getItems) {
                                     <tr>
-                                        <td>Tickets : @i.getQuantity x €@i.getPrice @i.getTicket.getEvent.getEventName - @i.getTicket.getTicketType</td>
+                                        <td>Tickets : @i.getQuantity x €@("%.2f".format(i.getPrice)) @i.getTicket.getEvent.getEventName - @i.getTicket.getTicketType</td>
                                     </tr>
                                 }
 

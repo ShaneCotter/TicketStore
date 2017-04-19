@@ -19,7 +19,7 @@
             @if(order != null) {
                 <div class="col-md-12">
                     <h3 class = "text-center">@user.getName
-                        thank you for choosing TC Events. Your order #@order.getId has been successful.</h3>
+                        thank you for choosing TC Events. Order #@order.getId has been successfully placed.</h3>
                     <h4 class = "text-center">Your e-tickets will be emailed to @user.getEmail shortly !</h4>
                     <div class="row">
                         <div class="col-md-12">
@@ -56,7 +56,7 @@
                 <td class="highrow"></td>
                 <td class="highrow"></td>
                 <td class="highrow text-center"><strong>Order Total</strong></td>
-                <td class="highrow text-right">&euro; @("%.2f".format(order.getOrderTotal))</td>
+                <td class="highrow text-right">&euro;@("%.2f".format(order.getOrderTotal))</td>
             </tr>
         </tbody>
         </table>
