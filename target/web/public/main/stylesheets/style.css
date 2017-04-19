@@ -729,6 +729,9 @@ ol, ul {
 }
 /* images end */
 
+#removeCartBtn {
+    color: red;
+}
 
 #contactForm
 {

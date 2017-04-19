@@ -17,6 +17,7 @@ import views.html.account.*;
 import views.html.admin.*;
 // Import models
 import models.*;
+import models.shopping.*;
 
 public class LoginController extends Controller {
 
@@ -45,6 +46,14 @@ public class LoginController extends Controller {
             session().clear();
             session("email", loginSubmitform.get().getEmail());
         }
+
+        //To prevent null pointer error from user having null basket
+        //happened if viewing basket before adding items
+        User u = getUserFromSession();
+        Basket b = new Basket();
+        u.setBasket(b);
+        u.update();
+
         return redirect(controllers.routes.HomeController.events(0));
     }
 

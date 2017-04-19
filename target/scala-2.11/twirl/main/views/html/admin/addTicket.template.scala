@@ -42,7 +42,7 @@ Seq[Any](format.raw/*3.63*/("""
             """),_display_(/*10.14*/form(action = routes.HomeController.addTicketSubmit(), 'class -> "form-horizontal", 'role -> "form")/*10.114*/ {_display_(Seq[Any](format.raw/*10.116*/("""
 
                 """),_display_(/*12.18*/select(
-                    addTicketForm("event.id"), options(Event.options), '_label -> "Event", '_default -> ".. Choose an Event ..",
+                    addTicketForm("event.id"), options(Event.options), '_label -> "Event", '_default -> "Choose an Event",
                     '_showConstraints -> false, 'class -> "form-control"
                 )),format.raw/*15.18*/("""
                 """),_display_(/*16.18*/inputText(addTicketForm("ticketType"), '_label -> "Ticket Type", 'class -> "form-control", 'maxlength -> "30")),format.raw/*16.128*/("""
@@ -81,10 +81,10 @@ Seq[Any](format.raw/*3.63*/("""
 object addTicket extends addTicket_Scope0.addTicket_Scope1.addTicket
               /*
                   -- GENERATED --
-                  DATE: Wed Apr 19 10:22:27 IST 2017
+                  DATE: Wed Apr 19 12:18:46 IST 2017
                   SOURCE: /home/wdd/webapps/TicketStore/app/views/admin/addTicket.scala.html
-                  HASH: f18ba0853932ae88d85c8a3151dc1858c60cea1c
-                  MATRIX: 838->19|994->80|1022->83|1054->107|1093->109|1125->115|1289->252|1399->352|1440->354|1486->373|1734->600|1779->618|1911->728|1956->746|2090->858|2135->876|2319->1038|2364->1056|2552->1222|2597->1240|2690->1312|2735->1329|2899->1466|2914->1472|2965->1502|3102->1609
+                  HASH: 9e90df83f7f2f716833615f7e15d4e3a4f5d5312
+                  MATRIX: 838->19|994->80|1022->83|1054->107|1093->109|1125->115|1289->252|1399->352|1440->354|1486->373|1728->594|1773->612|1905->722|1950->740|2084->852|2129->870|2313->1032|2358->1050|2546->1216|2591->1234|2684->1306|2729->1323|2893->1460|2908->1466|2959->1496|3096->1603
                   LINES: 30->3|35->3|37->5|37->5|37->5|39->7|42->10|42->10|42->10|44->12|47->15|48->16|48->16|49->17|49->17|50->18|50->18|51->19|51->19|52->20|52->20|53->21|55->23|55->23|55->23|62->30
                   -- GENERATED --
               */

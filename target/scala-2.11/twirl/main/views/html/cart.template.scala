@@ -59,12 +59,12 @@ Seq[Any](format.raw/*1.53*/("""
                             </div>
                         </div>
                     </div>
-                    """),_display_(/*32.22*/if(user.getBasket() == null)/*32.50*/ {_display_(Seq[Any](format.raw/*32.52*/("""
+                    """),_display_(/*32.22*/if(user.getBasket().getBasketItems().size() == 0)/*32.71*/{_display_(Seq[Any](format.raw/*32.72*/("""
                         """),format.raw/*33.25*/("""<br>
-                        <h3>Cart is empty !</h3>
+                        <h3 class ="text-center">Cart is empty <span class="glyphicon glyphicon-shopping-cart"></span></h3>
                     """)))}),format.raw/*35.22*/("""
 
-                    """),_display_(/*37.22*/if(user.getBasket() != null)/*37.50*/ {_display_(Seq[Any](format.raw/*37.52*/("""
+                    """),_display_(/*37.22*/if(user.getBasket().getBasketItems().size() > 0)/*37.70*/{_display_(Seq[Any](format.raw/*37.71*/("""
                             """),format.raw/*38.29*/("""<!-- Start of For loop - For each p in products add a row -->
                         """),_display_(/*39.26*/for(i <- user.getBasket().getBasketItems()) yield /*39.69*/ {_display_(Seq[Any](format.raw/*39.71*/("""
 
@@ -85,62 +85,59 @@ Seq[Any](format.raw/*1.53*/("""
                                     <div class="col-xs-6">
                                         <div class="col-xs-6 text-right">
                                             <h4><strong>Price</strong></h4>
-                                            <h4>&euro;
-                                                """),_display_(/*59.50*/("%.2f".format(i.getPrice))),format.raw/*59.77*/(""" """),format.raw/*59.78*/("""<span class="text-muted">x</span>
-                                            </h4>
+                                            <h4>&euro;"""),_display_(/*58.56*/("%.2f".format(i.getPrice))),format.raw/*58.83*/("""</h4>
                                         </div>
                                         <div class="col-xs-4 pull-right">
                                             <h4><strong>Quantity</strong></h4>
-                                            """),_display_(/*64.46*/i/*64.47*/.getQuantity()),format.raw/*64.61*/("""
-                                            """),_display_(/*65.46*/if(i.getQuantity < i.getTicket.getQuantity)/*65.89*/ {_display_(Seq[Any](format.raw/*65.91*/("""
-                                                """),format.raw/*66.49*/("""<a href=""""),_display_(/*66.59*/routes/*66.65*/.ShoppingCtrl.removeOne(i.getId)),format.raw/*66.97*/(""""><span class="glyphicon glyphicon-minus-sign"></span></a>
-                                                <a href=""""),_display_(/*67.59*/routes/*67.65*/.ShoppingCtrl.addOne(i.getId)),format.raw/*67.94*/(""""><span class="glyphicon glyphicon-plus-sign"></span></a>
-                                            """)))}),format.raw/*68.46*/("""
-                                            """),_display_(/*69.46*/if(i.getQuantity == i.getTicket.getQuantity)/*69.90*/ {_display_(Seq[Any](format.raw/*69.92*/("""
-                                                """),format.raw/*70.49*/("""<a href=""""),_display_(/*70.59*/routes/*70.65*/.ShoppingCtrl.removeOne(i.getId)),format.raw/*70.97*/(""""><span class="glyphicon glyphicon-minus-sign"></span></a>
+                                            """),_display_(/*62.46*/i/*62.47*/.getQuantity()),format.raw/*62.61*/("""
+                                            """),_display_(/*63.46*/if(i.getQuantity < i.getTicket.getQuantity)/*63.89*/ {_display_(Seq[Any](format.raw/*63.91*/("""
+                                                """),format.raw/*64.49*/("""<a href=""""),_display_(/*64.59*/routes/*64.65*/.ShoppingCtrl.removeOne(i.getId)),format.raw/*64.97*/(""""><span class="glyphicon glyphicon-minus-sign"></span></a>
+                                                <a href=""""),_display_(/*65.59*/routes/*65.65*/.ShoppingCtrl.addOne(i.getId)),format.raw/*65.94*/(""""><span class="glyphicon glyphicon-plus-sign"></span></a>
+                                            """)))}),format.raw/*66.46*/("""
+                                            """),_display_(/*67.46*/if(i.getQuantity == i.getTicket.getQuantity)/*67.90*/ {_display_(Seq[Any](format.raw/*67.92*/("""
+                                                """),format.raw/*68.49*/("""<a href=""""),_display_(/*68.59*/routes/*68.65*/.ShoppingCtrl.removeOne(i.getId)),format.raw/*68.97*/(""""><span class="glyphicon glyphicon-minus-sign"></span></a>
                                                 <span class="glyphicon glyphicon-plus-sign"></span>
                                                 <br>
                                                 Max reached
-                                            """)))}),format.raw/*74.46*/("""
-
-                                            """),format.raw/*76.45*/("""<a href=""""),_display_(/*76.55*/routes/*76.61*/.ShoppingCtrl.removeFromCart(i.getId)),format.raw/*76.98*/(""""><span class="glyphicon glyphicon-trash"></span></a>
+                                            """)))}),format.raw/*72.46*/("""
+                                            """),format.raw/*73.45*/("""<a href=""""),_display_(/*73.55*/routes/*73.61*/.ShoppingCtrl.removeFromCart(i.getId)),format.raw/*73.98*/(""""><span class="glyphicon glyphicon-trash" id="removeCartBtn"></span></a>
                                         </div>
                                     </div>
                                 </div>
                                 <hr>
-                                """)))}),format.raw/*81.34*/("""
-
-                        """),format.raw/*83.25*/("""<div class="row">
+                                """)))}),format.raw/*78.34*/("""
+                        """),_display_(/*79.26*/if(user.getBasket().getBasketItems().size() > 0)/*79.74*/{_display_(Seq[Any](format.raw/*79.75*/("""
+                        """),format.raw/*80.25*/("""<div class="row">
                             <div class="text-center">
                                 <div class="col-xs-9">
-                                    <h6 class="text-right">Empty cart</h6>
                                 </div>
                                 <div class="col-xs-3">
-                                    <a href=""""),_display_(/*89.47*/routes/*89.53*/.ShoppingCtrl.emptyBasket()),format.raw/*89.80*/("""" class="btn btn-danger btn-sm" onclick="return confirmDel();">
+                                    <a href=""""),_display_(/*85.47*/routes/*85.53*/.ShoppingCtrl.emptyBasket()),format.raw/*85.80*/("""" class="btn btn-danger btn-sm" onclick="return confirmDel();">
                                         Empty Cart</a>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    """)))}),format.raw/*95.22*/("""
+                        """)))}),format.raw/*90.26*/("""
+                    """),format.raw/*91.21*/("""</div>
+                    """)))}),format.raw/*92.22*/("""
 
 
-                    """),format.raw/*98.21*/("""<div class="panel-footer">
+                    """),format.raw/*95.21*/("""<div class="panel-footer">
                         <div class="row text-center">
                             <div class="col-xs-9">
                                 <h4 class="text-right"><strong>
-                                    Total: &euro; """),_display_(/*102.52*/("%.2f".format(user.getBasket.getBasketTotal))),format.raw/*102.98*/("""</strong></h4>
+                                    Total: &euro;"""),_display_(/*99.51*/("%.2f".format(user.getBasket.getBasketTotal))),format.raw/*99.97*/("""</strong></h4>
                             </div>
-                            """),_display_(/*104.30*/if(user.getBasket.getBasketTotal > 0)/*104.67*/ {_display_(Seq[Any](format.raw/*104.69*/("""
-                                """),format.raw/*105.33*/("""<div class="col-xs-3">
+                            """),_display_(/*101.30*/if(user.getBasket.getBasketTotal > 0)/*101.67*/ {_display_(Seq[Any](format.raw/*101.69*/("""
+                                """),format.raw/*102.33*/("""<div class="col-xs-3">
                                     <form action="/placeOrder" method="GET">
                                         <script
                                         src="https://checkout.stripe.com/checkout.js" class="stripe-button btn-success"
                                         data-key="pk_test_6pRNASCoBOKtIshFeQd4XMUh"
-                                        data-amount=""""),_display_(/*110.55*/user/*110.59*/.getBasket.getStripeTotal),format.raw/*110.84*/(""""
+                                        data-amount=""""),_display_(/*107.55*/user/*107.59*/.getBasket.getStripeTotal),format.raw/*107.84*/(""""
                                         data-name="TC Events"
                                         data-description="Payment"
-                                        data-email=""""),_display_(/*113.54*/user/*113.58*/.getEmail()),format.raw/*113.69*/(""""
+                                        data-email=""""),_display_(/*110.54*/user/*110.58*/.getEmail()),format.raw/*110.69*/(""""
                                         data-currency="EUR"
                                         data-image="http://cdn.wallpapersafari.com/62/83/v3qT9H.jpg"
                                         data-locale="auto"
@@ -148,8 +145,8 @@ Seq[Any](format.raw/*1.53*/("""
                                         </script>
                                     </form>
                                 </div>
-                            """)))}),format.raw/*121.30*/("""
-                        """),format.raw/*122.25*/("""</div>
+                            """)))}),format.raw/*118.30*/("""
+                        """),format.raw/*119.25*/("""</div>
                     </div>
                 </div>
             </div>
@@ -175,11 +172,11 @@ Seq[Any](format.raw/*1.53*/("""
 object cart extends cart_Scope0.cart
               /*
                   -- GENERATED --
-                  DATE: Wed Apr 19 10:22:26 IST 2017
+                  DATE: Wed Apr 19 12:18:45 IST 2017
                   SOURCE: /home/wdd/webapps/TicketStore/app/views/cart.scala.html
-                  HASH: d9571eee2b2f1c17ab76359ed2616fbbb48f2b2e
-                  MATRIX: 775->1|1020->52|1048->158|1079->163|1150->209|1176->227|1215->229|1248->235|1991->951|2006->957|2052->982|2507->1410|2544->1438|2584->1440|2637->1465|2743->1540|2793->1563|2830->1591|2870->1593|2927->1622|3041->1709|3100->1752|3140->1754|3199->1785|3397->1956|3501->2050|3542->2052|3611->2093|3700->2154|3759->2191|3819->2233|3832->2238|3871->2239|3940->2280|4094->2403|4159->2440|4326->2580|4336->2581|4390->2613|4484->2680|4494->2681|4539->2705|4936->3075|4984->3102|5013->3103|5369->3432|5379->3433|5414->3447|5487->3493|5539->3536|5579->3538|5656->3587|5693->3597|5708->3603|5761->3635|5905->3752|5920->3758|5970->3787|6104->3890|6177->3936|6230->3980|6270->3982|6347->4031|6384->4041|6399->4047|6452->4079|6800->4396|6874->4442|6911->4452|6926->4458|6984->4495|7268->4748|7322->4774|7691->5116|7706->5122|7754->5149|8057->5421|8108->5444|8383->5691|8451->5737|8558->5816|8605->5853|8646->5855|8708->5888|9142->6294|9156->6298|9203->6323|9415->6507|9429->6511|9462->6522|9941->6969|9995->6994
-                  LINES: 27->1|35->1|37->7|38->8|39->9|39->9|39->9|41->11|54->24|54->24|54->24|62->32|62->32|62->32|63->33|65->35|67->37|67->37|67->37|68->38|69->39|69->39|69->39|72->42|75->45|75->45|75->45|76->46|76->46|76->46|77->47|77->47|77->47|78->48|79->49|80->50|82->52|82->52|82->52|83->53|83->53|83->53|89->59|89->59|89->59|94->64|94->64|94->64|95->65|95->65|95->65|96->66|96->66|96->66|96->66|97->67|97->67|97->67|98->68|99->69|99->69|99->69|100->70|100->70|100->70|100->70|104->74|106->76|106->76|106->76|106->76|111->81|113->83|119->89|119->89|119->89|125->95|128->98|132->102|132->102|134->104|134->104|134->104|135->105|140->110|140->110|140->110|143->113|143->113|143->113|151->121|152->122
+                  HASH: 29df94565a082e4e698566ed990c75eb8220a322
+                  MATRIX: 775->1|1020->52|1048->158|1079->163|1150->209|1176->227|1215->229|1248->235|1991->951|2006->957|2052->982|2507->1410|2565->1459|2604->1460|2657->1485|2838->1635|2888->1658|2945->1706|2984->1707|3041->1736|3155->1823|3214->1866|3254->1868|3313->1899|3511->2070|3615->2164|3656->2166|3725->2207|3814->2268|3873->2305|3933->2347|3946->2352|3985->2353|4054->2394|4208->2517|4273->2554|4440->2694|4450->2695|4504->2727|4598->2794|4608->2795|4653->2819|5001->3140|5049->3167|5327->3418|5337->3419|5372->3433|5445->3479|5497->3522|5537->3524|5614->3573|5651->3583|5666->3589|5719->3621|5863->3738|5878->3744|5928->3773|6062->3876|6135->3922|6188->3966|6228->3968|6305->4017|6342->4027|6357->4033|6410->4065|6758->4382|6831->4427|6868->4437|6883->4443|6941->4480|7244->4752|7297->4778|7354->4826|7393->4827|7446->4852|7740->5119|7755->5125|7803->5152|8083->5401|8132->5422|8191->5450|8242->5473|8515->5719|8582->5765|8689->5844|8736->5881|8777->5883|8839->5916|9273->6322|9287->6326|9334->6351|9546->6535|9560->6539|9593->6550|10072->6997|10126->7022
+                  LINES: 27->1|35->1|37->7|38->8|39->9|39->9|39->9|41->11|54->24|54->24|54->24|62->32|62->32|62->32|63->33|65->35|67->37|67->37|67->37|68->38|69->39|69->39|69->39|72->42|75->45|75->45|75->45|76->46|76->46|76->46|77->47|77->47|77->47|78->48|79->49|80->50|82->52|82->52|82->52|83->53|83->53|83->53|88->58|88->58|92->62|92->62|92->62|93->63|93->63|93->63|94->64|94->64|94->64|94->64|95->65|95->65|95->65|96->66|97->67|97->67|97->67|98->68|98->68|98->68|98->68|102->72|103->73|103->73|103->73|103->73|108->78|109->79|109->79|109->79|110->80|115->85|115->85|115->85|120->90|121->91|122->92|125->95|129->99|129->99|131->101|131->101|131->101|132->102|137->107|137->107|137->107|140->110|140->110|140->110|148->118|149->119
                   -- GENERATED --
               */
           
