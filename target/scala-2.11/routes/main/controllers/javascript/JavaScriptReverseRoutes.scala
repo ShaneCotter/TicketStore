@@ -1,7 +1,7 @@
 
 // @GENERATOR:play-routes-compiler
 // @SOURCE:/home/wdd/webapps/TicketStore/conf/routes
-// @DATE:Wed Apr 19 10:22:25 IST 2017
+// @DATE:Wed Apr 19 12:18:44 IST 2017
 
 import play.api.routing.JavaScriptReverseRoute
 import play.api.mvc.{ QueryStringBindable, PathBindable, Call, JavascriptLiteral }

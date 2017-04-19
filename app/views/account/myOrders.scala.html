@@ -50,10 +50,10 @@
                         <td>@o.getOrderDate</td>
                         <td>€@("%.2f".format(o.getOrderTotal))</td>
                         @if(o.isProccessed == true){
-                            <td>Your order has been <strong>Processed</strong></td>
+                            <td>Your order has been <strong>Processed <span class="glyphicon glyphicon-thumbs-up"></span></strong></td>
                         }
                         @if(o.isProccessed == false){
-                            <td>Order has been <strong>received</strong> and will be processed soon !</td>
+                            <td>Order has been <strong>received</strong> and will be processed soon <span class="glyphicon glyphicon-hourglass"></span></td>
                         }
                     </tr>
 

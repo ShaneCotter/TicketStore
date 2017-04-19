@@ -29,12 +29,12 @@
                             </div>
                         </div>
                     </div>
-                    @if(user.getBasket() == null) {
+                    @if(user.getBasket().getBasketItems().size() == 0){
                         <br>
-                        <h3>Cart is empty !</h3>
+                        <h3 class ="text-center">Cart is empty <span class="glyphicon glyphicon-shopping-cart"></span></h3>
                     }
 
-                    @if(user.getBasket() != null) {
+                    @if(user.getBasket().getBasketItems().size() > 0){
                             <!-- Start of For loop - For each p in products add a row -->
                         @for(i <- user.getBasket().getBasketItems()) {
 
@@ -55,9 +55,7 @@
                                     <div class="col-xs-6">
                                         <div class="col-xs-6 text-right">
                                             <h4><strong>Price</strong></h4>
-                                            <h4>&euro;
-                                                @("%.2f".format(i.getPrice)) <span class="text-muted">x</span>
-                                            </h4>
+                                            <h4>&euro;@("%.2f".format(i.getPrice))</h4>
                                         </div>
                                         <div class="col-xs-4 pull-right">
                                             <h4><strong>Quantity</strong></h4>
@@ -72,18 +70,16 @@
                                                 <br>
                                                 Max reached
                                             }
-
-                                            <a href="@routes.ShoppingCtrl.removeFromCart(i.getId)"><span class="glyphicon glyphicon-trash"></span></a>
+                                            <a href="@routes.ShoppingCtrl.removeFromCart(i.getId)"><span class="glyphicon glyphicon-trash" id="removeCartBtn"></span></a>
                                         </div>
                                     </div>
                                 </div>
                                 <hr>
                                 }
-
+                        @if(user.getBasket().getBasketItems().size() > 0){
                         <div class="row">
                             <div class="text-center">
                                 <div class="col-xs-9">
-                                    <h6 class="text-right">Empty cart</h6>
                                 </div>
                                 <div class="col-xs-3">
                                     <a href="@routes.ShoppingCtrl.emptyBasket()" class="btn btn-danger btn-sm" onclick="return confirmDel();">
@@ -91,6 +87,7 @@
                                 </div>
                             </div>
                         </div>
+                        }
                     </div>
                     }
 
@@ -99,7 +96,7 @@
                         <div class="row text-center">
                             <div class="col-xs-9">
                                 <h4 class="text-right"><strong>
-                                    Total: &euro; @("%.2f".format(user.getBasket.getBasketTotal))</strong></h4>
+                                    Total: &euro;@("%.2f".format(user.getBasket.getBasketTotal))</strong></h4>
                             </div>
                             @if(user.getBasket.getBasketTotal > 0) {
                                 <div class="col-xs-3">

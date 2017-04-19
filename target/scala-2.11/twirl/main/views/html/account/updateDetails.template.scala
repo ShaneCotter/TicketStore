@@ -104,7 +104,7 @@ Seq[Any](format.raw/*3.64*/("""
 object updateDetails extends updateDetails_Scope0.updateDetails_Scope1.updateDetails
               /*
                   -- GENERATED --
-                  DATE: Wed Apr 19 10:46:19 IST 2017
+                  DATE: Wed Apr 19 12:18:45 IST 2017
                   SOURCE: /home/wdd/webapps/TicketStore/app/views/account/updateDetails.scala.html
                   HASH: 74b00a2d2cb81d69d34136a5003e2e11dbd6619c
                   MATRIX: 856->19|1013->81|1040->83|1076->111|1115->113|1148->120|1369->314|1384->320|1431->346|1645->533|1660->539|1712->570|1930->761|1945->767|2002->803|2233->1007|2248->1013|2300->1044|2697->1414|2865->1572|2906->1574|2951->1592|3095->1714|3140->1732|3257->1827|3302->1845|3425->1946|3470->1963|3615->2081|3702->2147|3748->2165|3908->2298|3923->2304|3969->2329|4073->2402|4110->2412
