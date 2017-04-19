@@ -20,7 +20,7 @@ Insert into event (id,event_name,time,location,date,title,category_cat_id) value
 Insert into event (id,event_name,time,location,date,title,category_cat_id) values (12,'Irish Cross Country','08:00','Ballina, Co. Mayo','27th July 2017','Motorsport',5);
 
 Insert into ticket values (3,'Standing','Pitch 3',0,100,2);
-Insert into ticket values (4,'Seated','Hogan Stand, Section E - P',100,69,2);
+Insert into ticket values (4,'Seated','Hogan Stand, Section E - P',1,69,2);
 Insert into ticket values (6,'Day Pass','Friday, Saturday or Sunday',10,70,3);
 Insert into ticket values (7,'Concession','Upper Stand',10,35.50,4);
 Insert into ticket values (8,'Standing','Lower Floor',10,50,5);
