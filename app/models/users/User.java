@@ -107,4 +107,17 @@ public class User extends Model {
     public void setPassword(String password) {
         this.password = password;
     }
+
+    public Boolean isExisting(User u){
+        Boolean existing = false;
+        List<User> accountsList = User.findAll();
+
+        for(int i =0; i < accountsList.size(); i++){
+
+            if(u.getEmail() == accountsList.get(i).getEmail()){
+                existing = true;
+            }
+        }
+        return existing;
+    }
 }
