@@ -47,12 +47,14 @@ public class LoginController extends Controller {
             session("email", loginSubmitform.get().getEmail());
         }
 
-        //To prevent null pointer error from user having null basket
-        //happened if viewing basket before adding items
         User u = getUserFromSession();
-        Basket b = new Basket();
-        u.setBasket(b);
-        u.update();
+        if(u.getBasket() == null) {
+            //To prevent null pointer error from user having null basket
+            //happened if viewing basket before adding items
+            Basket b = new Basket();
+            u.setBasket(b);
+            u.update();
+        }
 
         return redirect(controllers.routes.HomeController.events(0));
     }

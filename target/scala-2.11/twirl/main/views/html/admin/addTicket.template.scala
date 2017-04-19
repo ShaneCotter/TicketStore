@@ -81,7 +81,7 @@ Seq[Any](format.raw/*3.63*/("""
 object addTicket extends addTicket_Scope0.addTicket_Scope1.addTicket
               /*
                   -- GENERATED --
-                  DATE: Wed Apr 19 12:18:46 IST 2017
+                  DATE: Wed Apr 19 12:40:01 IST 2017
                   SOURCE: /home/wdd/webapps/TicketStore/app/views/admin/addTicket.scala.html
                   HASH: 9e90df83f7f2f716833615f7e15d4e3a4f5d5312
                   MATRIX: 838->19|994->80|1022->83|1054->107|1093->109|1125->115|1289->252|1399->352|1440->354|1486->373|1728->594|1773->612|1905->722|1950->740|2084->852|2129->870|2313->1032|2358->1050|2546->1216|2591->1234|2684->1306|2729->1323|2893->1460|2908->1466|2959->1496|3096->1603

@@ -91,7 +91,7 @@ Seq[Any](format.raw/*1.58*/("""
 object login extends login_Scope0.login
               /*
                   -- GENERATED --
-                  DATE: Wed Apr 19 12:18:45 IST 2017
+                  DATE: Wed Apr 19 12:40:01 IST 2017
                   SOURCE: /home/wdd/webapps/TicketStore/app/views/login.scala.html
                   HASH: c05e04633877f9518a619a3f0218a2ff2268c690
                   MATRIX: 775->1|926->57|954->60|982->80|1021->82|1052->87|1101->111|1141->143|1180->145|1215->154|1284->197|1297->202|1332->217|1367->226|1413->242|1445->247|1547->322|1562->328|1607->352|1798->516|1813->522|1862->550|3003->1661

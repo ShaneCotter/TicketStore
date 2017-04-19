@@ -45,11 +45,9 @@
                                                     <tr>
                                                         <td>@i.getTicket.getEvent.getEventName
                                                             - @i.getTicket.getTicketType</td>
-                                                        <td class="text-center">&euro;
-                                                            @("%.2f".format(i.getPrice))</td>
+                                                        <td class="text-center">&euro;@("%.2f".format(i.getPrice))</td>
                                                         <td class="text-center">@i.getQuantity()</td>
-                                                        <td class="text-right">&euro;
-                                                            @("%.2f".format(i.getItemTotal))</td>
+                                                        <td class="text-right">&euro;@("%.2f".format(i.getItemTotal))</td>
                                                     </tr>
                                                 }}
             <tr>

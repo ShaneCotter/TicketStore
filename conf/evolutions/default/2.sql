@@ -19,25 +19,23 @@ Insert into event (id,event_name,time,location,date,title,category_cat_id) value
 Insert into event (id,event_name,time,location,date,title,category_cat_id) values (11,'Not Dead Enough','14:30','Bord Gais Energy Theatre','21st May 2017','Peter James Not Dead Enough',4);
 Insert into event (id,event_name,time,location,date,title,category_cat_id) values (12,'Irish Cross Country','08:00','Ballina, Co. Mayo','27th July 2017','Motorsport',5);
 
-Insert into ticket values (1,'Standing','Section A - D',10,100,1);
-Insert into ticket values (2,'Seated','Section A - D',10,50,1);
-Insert into ticket values (3,'Standing','Section A - D',0,50,2);
-Insert into ticket values (4,'Seated','Section A - D',10,50,2);
-Insert into ticket values (6,'Day Pass','Section A - D',10,70,3);
-Insert into ticket values (7,'Concession','Section A - D',10,35.50,4);
-Insert into ticket values (8,'Standing','Section A - D',10,50,5);
-Insert into ticket values (9,'Seated','Section A - D',10,50,6);
-Insert into ticket values (10,'Standing','Section A - D',0,50,6);
-Insert into ticket values (11,'Ring-side','Section A - D',10,50,7);
-Insert into ticket values (12,'Pitch side','Section A - D',10,50,8);
-Insert into ticket values (13,'Seated','Section A - D',10,50,8);
-Insert into ticket values (14,'Back Stage','Section A - D',10,100,4);
-Insert into ticket values (15,'Front Standing','Section A - D',10,75,5);
-Insert into ticket values (16,'Standard','Section A - D',10,35,7);
-Insert into ticket values (17,'Ringside','Section A - D',10,1000,9);
-Insert into ticket values (18,'Concession','Section A - D',10,40,10);
-Insert into ticket values (19,'Concession','Section A - D',10,50,11);
-Insert into ticket values (20,'Weekend Pass','Section A - D',10,50,12);
+Insert into ticket values (3,'Standing','Pitch 3',0,100,2);
+Insert into ticket values (4,'Seated','Hogan Stand, Section E - P',1,69,2);
+Insert into ticket values (6,'Day Pass','Friday, Saturday or Sunday',10,70,3);
+Insert into ticket values (7,'Concession','Upper Stand',10,35.50,4);
+Insert into ticket values (8,'Standing','Lower Floor',10,50,5);
+Insert into ticket values (9,'Seated','Pitch 1',10,50,6);
+Insert into ticket values (10,'Standing','Pitch 2',0,50,6);
+Insert into ticket values (11,'Ring-side','Area 2',10,50,7);
+Insert into ticket values (12,'Pitch side','Main Stand, Rows A - H',10,50,8);
+Insert into ticket values (13,'Seated','Lower Main Stand, Rows H - P',10,50,8);
+Insert into ticket values (14,'Back Stage','VIP',10,100,4);
+Insert into ticket values (15,'Standing','Pitch 2',10,75,5);
+Insert into ticket values (16,'Standard','Section E - F',10,35,7);
+Insert into ticket values (17,'Ringside','VIP',10,1000,9);
+Insert into ticket values (18,'Concession','Lower Floor',10,40,10);
+Insert into ticket values (19,'Concession','Balcony 1 - 9',10,50,11);
+Insert into ticket values (20,'Weekend Pass','All Days',10,50,12);
 
 
 Insert into user(email,role,name,password) values('shane@tc.ie','admin','shane','shane');

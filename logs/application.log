@@ -1,9 +1,9 @@
-2017-04-19 12:22:38,907 [INFO] from application in ForkJoinPool-3-worker-1 - Creating Pool for datasource 'default'
-2017-04-19 12:22:38,945 [INFO] from play.api.db.DefaultDBApi in ForkJoinPool-3-worker-1 - Database [default] connected at jdbc:h2:file:./data/TCEvents
-2017-04-19 12:22:39,527 [INFO] from application in ForkJoinPool-3-worker-1 - ApplicationTimer demo: Starting application at 2017-04-19T11:22:39.527Z
-2017-04-19 12:22:39,589 [ERROR] from application in netty-event-loop-3 - 
+2017-04-19 12:41:34,007 [INFO] from application in ForkJoinPool-2-worker-1 - Creating Pool for datasource 'default'
+2017-04-19 12:41:34,057 [INFO] from play.api.db.DefaultDBApi in ForkJoinPool-2-worker-1 - Database [default] connected at jdbc:h2:file:./data/TCEvents
+2017-04-19 12:41:34,570 [INFO] from application in ForkJoinPool-2-worker-1 - ApplicationTimer demo: Starting application at 2017-04-19T11:41:34.569Z
+2017-04-19 12:41:34,632 [ERROR] from application in netty-event-loop-3 - 
 
-! @73lj6k90e - Internal server error, for (GET) [/] ->
+! @73lj96o3n - Internal server error, for (GET) [/] ->
  
 play.api.db.evolutions.InvalidDatabaseRevision: Database 'default' needs evolution![An SQL script need to be run on your database.]
 	at play.api.db.evolutions.ApplicationEvolutions$$anonfun$play$api$db$evolutions$ApplicationEvolutions$$runEvolutions$1.apply$mcV$sp(ApplicationEvolutions.scala:77)
@@ -55,11 +55,9 @@ play.api.db.evolutions.InvalidDatabaseRevision: Database 'default' needs evoluti
 	at java.util.concurrent.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1056)
 	at java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1692)
 	at java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:157)
-2017-04-19 12:22:42,767 [INFO] from application in ForkJoinPool-3-worker-1 - ApplicationTimer demo: Stopping application at 2017-04-19T11:22:42.767Z after 3s.
-2017-04-19 12:22:42,777 [INFO] from application in ForkJoinPool-3-worker-1 - Shutting down connection pool.
-2017-04-19 12:22:42,875 [INFO] from application in ForkJoinPool-3-worker-1 - Creating Pool for datasource 'default'
-2017-04-19 12:22:42,888 [INFO] from play.api.db.DefaultDBApi in ForkJoinPool-3-worker-1 - Database [default] connected at jdbc:h2:file:./data/TCEvents
-2017-04-19 12:22:42,948 [INFO] from application in ForkJoinPool-3-worker-1 - ApplicationTimer demo: Starting application at 2017-04-19T11:22:42.945Z
-2017-04-19 12:22:43,292 [INFO] from play.api.Play in ForkJoinPool-3-worker-1 - Application started (Dev)
-2017-04-19 12:23:00,046 [INFO] from application in pool-24-thread-5 - ApplicationTimer demo: Stopping application at 2017-04-19T11:23:00.046Z after 18s.
-2017-04-19 12:23:00,049 [INFO] from application in pool-24-thread-5 - Shutting down connection pool.
+2017-04-19 12:41:37,049 [INFO] from application in ForkJoinPool-2-worker-1 - ApplicationTimer demo: Stopping application at 2017-04-19T11:41:37.049Z after 3s.
+2017-04-19 12:41:37,053 [INFO] from application in ForkJoinPool-2-worker-1 - Shutting down connection pool.
+2017-04-19 12:41:37,144 [INFO] from application in ForkJoinPool-2-worker-1 - Creating Pool for datasource 'default'
+2017-04-19 12:41:37,166 [INFO] from play.api.db.DefaultDBApi in ForkJoinPool-2-worker-1 - Database [default] connected at jdbc:h2:file:./data/TCEvents
+2017-04-19 12:41:37,235 [INFO] from application in ForkJoinPool-2-worker-1 - ApplicationTimer demo: Starting application at 2017-04-19T11:41:37.235Z
+2017-04-19 12:41:37,558 [INFO] from play.api.Play in ForkJoinPool-2-worker-1 - Application started (Dev)

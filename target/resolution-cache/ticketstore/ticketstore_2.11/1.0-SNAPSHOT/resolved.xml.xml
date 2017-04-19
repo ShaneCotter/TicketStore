@@ -4,7 +4,7 @@
 		module="ticketstore_2.11"
 		revision="1.0-SNAPSHOT"
 		status="integration"
-		publication="20170419121833"
+		publication="20170419123954"
 	>
 		<description>
 		TicketStore
