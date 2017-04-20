@@ -41,8 +41,10 @@ public class LoginController extends Controller {
     public Result loginSubmit() {
         Form<Login> loginSubmitform = formFactory.form(Login.class).bindFromRequest();
         if (loginSubmitform.hasErrors()) {
+            flash("danger", "Invalid email or password");
             return badRequest(login.render(null, getUserFromSession()));
         } else {
+            flash("success", "You have successfully logged in");
             session().clear();
             session("email", loginSubmitform.get().getEmail());
         }
