@@ -273,7 +273,9 @@ public class HomeController extends Controller {
         int count = User.find.where().like("email", user.getEmail()).findRowCount();
         if (count>0) {
             flash("danger", "This email address already in use");
+            return redirect(routes.HomeController.signUp());
         }else {
+            flash("success", "Account Created");
             user.setRole("user");
             user.save();
         }
@@ -382,6 +384,7 @@ public class HomeController extends Controller {
 
         String saveImageMsg1 = saveFile1(u.getEmail(), image1);
 
+        flash("success", "Details have been updated.");
         return ok(myaccount.render(getUserFromSession(), env));
     }
 
@@ -480,7 +483,7 @@ public class HomeController extends Controller {
 
         User.find.ref(id).delete();
 
-        flash("success", "Account has been deleted");
+        flash("danger", "Account has been deleted");
 
         List<User> accountsList = User.findAll();
 

@@ -3,13 +3,25 @@
 @main("Accounts", user) {
     <!--..CONTENT..-->
     <div class="container-fluid" id="content">
+        @if(flash.containsKey("success")) {
+            <div class="alert alert-success text-center">
+            @flash.get("success")
+            </div>
+        }
+        @if(flash.containsKey("danger")) {
+            <div class="alert alert-danger text-center">
+            @flash.get("danger")
+            </div>
+        }
         <h2>Registered Users</h2>
         <div class="row omb_row-sm-offset-3">
             <table class="table table-responsive table-bordered">
                 <thead>
                     <tr>
+
                         <th class="greentext">Email</th>
                         <th class="greentext">Name</th>
+                        <th class="greentext">Role</th>
                         <th class="greentext">Password</th>
                         <th></th>
                     </tr>
@@ -19,6 +31,7 @@
                     <tr>
                         <td>@u.getEmail</td>
                         <td>@u.getName</td>
+                        <td>@u.getRole</td>
                         <td type="password">@u.getPassword</td>
                         @if(u.getEmail != user.getEmail) {
                             <td><a href="@routes.HomeController.deleteUser(u.getEmail)" class="btn btn-danger btn-sm whitetext" id="user-delete-button">

@@ -45,22 +45,26 @@ Seq[Any](format.raw/*3.62*/("""
                         """),_display_(/*13.26*/flash/*13.31*/.get("success")),format.raw/*13.46*/("""
                         """),format.raw/*14.25*/("""</div>
                     """)))}),format.raw/*15.22*/("""
-                    """),format.raw/*16.21*/("""<h1 class = "text-center">Contact Us</h1>
-                    <div class="col-lg-12" id="contactForm">
-                    """),_display_(/*18.22*/form(action = routes.HomeController.addContactSubmit(), 'method -> "POST", 'class -> "form-horizontal", 'role -> "form")/*18.142*/ {_display_(Seq[Any](format.raw/*18.144*/("""
-                        """),_display_(/*19.26*/inputText(contactForm("firstName"), '_label -> "First Name", 'class -> "form-control", 'maxlength -> "30")),format.raw/*19.132*/("""
-                        """),_display_(/*20.26*/inputText(contactForm("lastName"), '_label -> "Last Name", 'class -> "form-control", 'maxlength -> "30")),format.raw/*20.130*/("""
-                        """),_display_(/*21.26*/inputText(contactForm("email"), '_label -> "Email", 'type -> "email", 'class -> "form-control")),format.raw/*21.121*/("""
-                        """),_display_(/*22.26*/inputText(contactForm("phone"), '_label -> "Phone", 'type -> "tel", 'pattern -> "[0-9]{10}", 'title -> "10 digit mobile number",
-                            'class -> "form-control")),format.raw/*23.54*/("""
-                        """),_display_(/*24.26*/inputText(contactForm("message"), '_label -> "Message", 'type -> "text", 'class -> "form-control", 'maxlength -> "140")),format.raw/*24.145*/("""
+                    """),format.raw/*16.21*/("""<div class="col-lg-12" id="contactForm">
+                        <h1 class = "text-center">Contact Us</h1>
+                        <h5 class="text-center">Please fill out this form to report any problems or make an enquiry. <br>
+                            If you wish to know how to use something on our website please refer to the
+                            <a href="https://drive.google.com/open?id=0B2ddyi0zuA95TU5yX3dSYkdlZkE" class="greentext">User manual</a>
+                        </h5>
+                    """),_display_(/*22.22*/form(action = routes.HomeController.addContactSubmit(), 'method -> "POST", 'class -> "form-horizontal", 'role -> "form")/*22.142*/ {_display_(Seq[Any](format.raw/*22.144*/("""
+                        """),_display_(/*23.26*/inputText(contactForm("firstName"), '_label -> "First Name", 'class -> "form-control", 'maxlength -> "30")),format.raw/*23.132*/("""
+                        """),_display_(/*24.26*/inputText(contactForm("lastName"), '_label -> "Last Name", 'class -> "form-control", 'maxlength -> "30")),format.raw/*24.130*/("""
+                        """),_display_(/*25.26*/inputText(contactForm("email"), '_label -> "Email", 'type -> "email", 'class -> "form-control")),format.raw/*25.121*/("""
+                        """),_display_(/*26.26*/inputText(contactForm("phone"), '_label -> "Phone", 'type -> "tel", 'pattern -> "[0-9]{10}", 'title -> "10 digit mobile number",
+                            'class -> "form-control")),format.raw/*27.54*/("""
+                        """),_display_(/*28.26*/inputText(contactForm("message"), '_label -> "Message", 'type -> "text", 'class -> "form-control", 'maxlength -> "140")),format.raw/*28.145*/("""
 
-                        """),format.raw/*26.25*/("""<div class="actions">
+                        """),format.raw/*30.25*/("""<div class="actions">
                             <input type="submit" value="Submit" class="btn btn-success">
-                            <a href=""""),_display_(/*28.39*/routes/*28.45*/.HomeController.contact()),format.raw/*28.70*/("""" class="btn btn-danger">Cancel</a>
+                            <a href=""""),_display_(/*32.39*/routes/*32.45*/.HomeController.contact()),format.raw/*32.70*/("""" class="btn btn-danger">Cancel</a>
                         </div>
-                """)))}),format.raw/*30.18*/("""
-                    """),format.raw/*31.21*/("""</div>
+                """)))}),format.raw/*34.18*/("""
+                    """),format.raw/*35.21*/("""</div>
             </div>
 
         </div>
@@ -102,11 +106,11 @@ Seq[Any](format.raw/*3.62*/("""
 object contact extends contact_Scope0.contact_Scope1.contact
               /*
                   -- GENERATED --
-                  DATE: Wed Apr 19 13:47:03 IST 2017
-                  SOURCE: /home/wdd/webapps/TicketStore/app/views/contact.scala.html
-                  HASH: 9e8a0e16a8042e80350df3d2d5d4bbf1fb8018ad
-                  MATRIX: 827->19|982->79|1010->82|1039->103|1078->105|1109->110|1340->314|1381->346|1421->348|1474->373|1572->444|1586->449|1622->464|1675->489|1734->517|1783->538|1934->662|2064->782|2105->784|2158->810|2286->916|2339->942|2465->1046|2518->1072|2635->1167|2688->1193|2891->1375|2944->1401|3085->1520|3139->1546|3315->1695|3330->1701|3376->1726|3491->1810|3540->1831
-                  LINES: 30->3|35->3|37->5|37->5|37->5|38->6|43->11|43->11|43->11|44->12|45->13|45->13|45->13|46->14|47->15|48->16|50->18|50->18|50->18|51->19|51->19|52->20|52->20|53->21|53->21|54->22|55->23|56->24|56->24|58->26|60->28|60->28|60->28|62->30|63->31
+                  DATE: Thu Apr 20 15:50:05 BST 2017
+                  SOURCE: C:/Users/Eileen/Desktop/TicketStore/app/views/contact.scala.html
+                  HASH: 7505145380e384072d82f9f1e55e058cf31386d0
+                  MATRIX: 827->21|982->81|1012->86|1041->107|1080->109|1112->115|1348->324|1389->356|1429->358|1483->384|1582->456|1596->461|1632->476|1686->502|1746->531|1796->553|2347->1077|2477->1197|2518->1199|2572->1226|2700->1332|2754->1359|2880->1463|2934->1490|3051->1585|3105->1612|3309->1795|3363->1822|3504->1941|3560->1969|3738->2120|3753->2126|3799->2151|3916->2237|3966->2259
+                  LINES: 30->3|35->3|37->5|37->5|37->5|38->6|43->11|43->11|43->11|44->12|45->13|45->13|45->13|46->14|47->15|48->16|54->22|54->22|54->22|55->23|55->23|56->24|56->24|57->25|57->25|58->26|59->27|60->28|60->28|62->30|64->32|64->32|64->32|66->34|67->35
                   -- GENERATED --
               */
           

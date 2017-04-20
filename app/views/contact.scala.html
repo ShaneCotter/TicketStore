@@ -13,8 +13,12 @@
                         @flash.get("success")
                         </div>
                     }
-                    <h1 class = "text-center">Contact Us</h1>
                     <div class="col-lg-12" id="contactForm">
+                        <h1 class = "text-center">Contact Us</h1>
+                        <h5 class="text-center">Please fill out this form to report any problems or make an enquiry. <br>
+                            If you wish to know how to use something on our website please refer to the
+                            <a href="https://drive.google.com/open?id=0B2ddyi0zuA95TU5yX3dSYkdlZkE" class="greentext">User manual</a>
+                        </h5>
                     @form(action = routes.HomeController.addContactSubmit(), 'method -> "POST", 'class -> "form-horizontal", 'role -> "form") {
                         @inputText(contactForm("firstName"), '_label -> "First Name", 'class -> "form-control", 'maxlength -> "30")
                         @inputText(contactForm("lastName"), '_label -> "Last Name", 'class -> "form-control", 'maxlength -> "30")

@@ -6,6 +6,16 @@
 
     <!--..CONTENT..-->
     <div class="container-fluid" id="content">
+        @if(flash.containsKey("success")) {
+            <div class="alert alert-success text-center">
+            @flash.get("success")
+            </div>
+        }
+        @if(flash.containsKey("danger")) {
+            <div class="alert alert-danger text-center">
+            @flash.get("danger")
+            </div>
+        }
 
         <div class="row">
             <h1 class="greentext">Sign up</h1>

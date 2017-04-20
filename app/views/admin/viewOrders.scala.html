@@ -10,6 +10,7 @@
                 <thead>
                     <tr>
                         <th class="greentext">Order #</th>
+                        <th class="greentext">User</th>
                         <th class="greentext">Date</th>
                         <th class="greentext">Total</th>
                         <th class="greentext">Status</th>
@@ -35,6 +36,7 @@
                             @if(o.isProccessed == false) {
                                 <tr class = "danger">
                                     <td>#@o.getId</td>
+                                    <td>@o.getUser.getEmail</td>
                                     <td>@o.getOrderDate</td>
                                     <td>€@("%.2f".format(o.getOrderTotal))</td>
                                     <td>Received</td>
@@ -52,6 +54,7 @@
                             @if(o.isProccessed == true) {
                                 <tr class = "success">
                                     <td>#@o.getId</td>
+                                    <td>@o.getUser.getEmail</td>
                                     <td>@o.getOrderDate</td>
                                     <td>€@("%.2f".format(o.getOrderTotal))</td>
                                     <td>Processed</td>
