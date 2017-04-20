@@ -3,6 +3,11 @@
 @main("Accounts", user) {
     <!--..CONTENT..-->
     <div class="container-fluid" id="content">
+        @if(flash.containsKey("warning")) {
+            <div class="alert alert-warning text-center">
+            @flash.get("warning")
+            </div>
+        }
         <h2>Registered Users</h2>
         <div class="row omb_row-sm-offset-3">
             <table class="table table-responsive table-bordered">

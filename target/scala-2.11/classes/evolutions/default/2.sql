@@ -23,7 +23,7 @@ Insert into ticket values (3,'Standing','Pitch 3',0,100,2);
 Insert into ticket values (4,'Seated','Hogan Stand, Section E - P',1,69,2);
 Insert into ticket values (6,'Day Pass','Friday, Saturday or Sunday',10,70,3);
 Insert into ticket values (7,'Concession','Upper Stand',10,35.50,4);
-Insert into ticket values (8,'Standing','Lower Floor',10,50,5);
+Insert into ticket values (8,'Standing','Pitch 1',10,50,5);
 Insert into ticket values (9,'Seated','Pitch 1',10,50,6);
 Insert into ticket values (10,'Standing','Pitch 2',0,50,6);
 Insert into ticket values (11,'Ring-side','Area 2',10,50,7);
@@ -38,6 +38,7 @@ Insert into ticket values (19,'Concession','Balcony 1 - 9',10,50,11);
 Insert into ticket values (20,'Weekend Pass','All Days',10,50,12);
 
 
-Insert into user(email,role,name,password) values('shane@tc.ie','admin','shane','shane');
-Insert into user(email,role,name,password) values('jay@tc.ie','admin','jay','jay');
-Insert into user(email,role,name,password) values('matthew@tc.ie','admin','matthew','matthew');
+Insert into user(email,role,name,password) values('shane@tc.ie','admin','Shane','shane');
+Insert into user(email,role,name,password) values('jay@tc.ie','admin','Jay','jay');
+Insert into user(email,role,name,password) values('matthew@tc.ie','admin','Matthew','matthew');
+Insert into user(email,role,name,password) values('paul@tc.ie','user','Paul','paul');

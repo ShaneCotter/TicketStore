@@ -274,6 +274,7 @@ public class HomeController extends Controller {
         if (count>0) {
             flash("danger", "This email address already in use");
         }else {
+            flash("success", "Account created");
             user.setRole("user");
             user.save();
         }
@@ -480,7 +481,7 @@ public class HomeController extends Controller {
 
         User.find.ref(id).delete();
 
-        flash("success", "Account has been deleted");
+        flash("warning", "Account has been deleted");
 
         List<User> accountsList = User.findAll();
 
