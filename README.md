@@ -1,9 +1,11 @@
-#TicketStore
- -Second Year Project 
- -Create a CRUD application using the Java Play! framework
- -Topic : Online Event Ticket Booking
+# TicketStore
+
+ - Second Year Project 
+ - Create a CRUD application using the Java Play! framework
+ - Topic : Online Event Ticket Booking
  
-#Team Members
+# Team Members
+
  |Name          | Student Number|
  |------------- | ------------- |
  |Shane Cotter  | X00131736     |
