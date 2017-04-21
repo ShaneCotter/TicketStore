@@ -63,13 +63,6 @@ public class HomeController extends Controller {
 
         Event newEvent = newEventForm.get();
 
-        // Save Image
-        MultipartFormData data = request().body().asMultipartFormData();
-        // Get image data
-        FilePart image = data.getFile("upload");
-
-        // Save the image file
-        String saveImageMsg = saveFile(newEvent.getId(), image);
 
         if (newEvent.getId() == null) {
             newEvent.save();
@@ -78,6 +71,15 @@ public class HomeController extends Controller {
             newEvent.update();
             flash("success", "Event " + newEvent.getEventName() + " has been updated.");
         }
+
+        // Save Image
+        MultipartFormData data = request().body().asMultipartFormData();
+        // Get image data
+        FilePart image = data.getFile("upload");
+
+        // Save the image file
+        String saveImageMsg = saveFile(newEvent.getId(), image);
+        newEvent.update();
 
 
         return redirect(controllers.routes.HomeController.adminevents(0));
@@ -483,6 +485,7 @@ public class HomeController extends Controller {
 
         User.find.ref(id).delete();
 
+        flash("danger", "Account has been deleted");
         flash("danger", "Account has been deleted");
 
         List<User> accountsList = User.findAll();
