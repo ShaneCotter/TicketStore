@@ -1,5 +1,9 @@
 
 /*-------NAV BAR CSS----------*/
+@media only screen and (max-device-width: 480px) {
+    .logodiv{display:none;}
+}
+
 #logo span , #footer span{
     color: #33cc33;
 }

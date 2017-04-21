@@ -39,13 +39,13 @@ Seq[Any](format.raw/*3.62*/("""
     <div class="container-fluid" id="content">
         <div class="container">
             <div class="row">
-                <div class="col-md-8 col-md-offset-1">
+                <div class="col-md-8 col-xs-12 col-md-offset-1">
                     """),_display_(/*11.22*/if(flash.containsKey("success"))/*11.54*/ {_display_(Seq[Any](format.raw/*11.56*/("""
                         """),format.raw/*12.25*/("""<div class="alert alert-success text-center">
                         """),_display_(/*13.26*/flash/*13.31*/.get("success")),format.raw/*13.46*/("""
                         """),format.raw/*14.25*/("""</div>
                     """)))}),format.raw/*15.22*/("""
-                    """),format.raw/*16.21*/("""<div class="col-lg-12" id="contactForm">
+                    """),format.raw/*16.21*/("""<div class="col-lg-12 col-xs-8 col-xs-offset-1" id="contactForm">
                         <h1 class = "text-center">Contact Us</h1>
                         <h5 class="text-center">Please fill out this form to report any problems or make an enquiry. <br>
                             If you wish to know how to use something on our website please refer to the
@@ -106,10 +106,10 @@ Seq[Any](format.raw/*3.62*/("""
 object contact extends contact_Scope0.contact_Scope1.contact
               /*
                   -- GENERATED --
-                  DATE: Thu Apr 20 15:50:05 BST 2017
-                  SOURCE: C:/Users/Eileen/Desktop/TicketStore/app/views/contact.scala.html
-                  HASH: 7505145380e384072d82f9f1e55e058cf31386d0
-                  MATRIX: 827->21|982->81|1012->86|1041->107|1080->109|1112->115|1348->324|1389->356|1429->358|1483->384|1582->456|1596->461|1632->476|1686->502|1746->531|1796->553|2347->1077|2477->1197|2518->1199|2572->1226|2700->1332|2754->1359|2880->1463|2934->1490|3051->1585|3105->1612|3309->1795|3363->1822|3504->1941|3560->1969|3738->2120|3753->2126|3799->2151|3916->2237|3966->2259
+                  DATE: Fri Apr 21 12:22:28 IST 2017
+                  SOURCE: /home/wdd/webapps/TicketStore/app/views/contact.scala.html
+                  HASH: acc7bc285013dfe7d3d978930823f9d937fb5085
+                  MATRIX: 827->19|982->79|1010->82|1039->103|1078->105|1109->110|1350->324|1391->356|1431->358|1484->383|1582->454|1596->459|1632->474|1685->499|1744->527|1793->548|2363->1091|2493->1211|2534->1213|2587->1239|2715->1345|2768->1371|2894->1475|2947->1501|3064->1596|3117->1622|3320->1804|3373->1830|3514->1949|3568->1975|3744->2124|3759->2130|3805->2155|3920->2239|3969->2260
                   LINES: 30->3|35->3|37->5|37->5|37->5|38->6|43->11|43->11|43->11|44->12|45->13|45->13|45->13|46->14|47->15|48->16|54->22|54->22|54->22|55->23|55->23|56->24|56->24|57->25|57->25|58->26|59->27|60->28|60->28|62->30|64->32|64->32|64->32|66->34|67->35
                   -- GENERATED --
               */

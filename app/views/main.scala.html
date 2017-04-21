@@ -25,10 +25,10 @@
 <body>
     <div class="container-fluid" id="nav-top">
         <div class="row">
-            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+            <div class="col-lg-4 col-md-4 visible-lg" >
                 <a href="@routes.HomeController.index()"> <h1 id="logo">TC <span> Events</span></h1></a>
             </div>
-            <div class="col-lg-8 col-md-8 col-sm-8 col-xs-8" id="">
+            <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12" id="">
                 <div class="nav navbar-nav navbar-right" id="nav-buttons">
                 @if(user != null) {
                     <a href="@routes.EventController.listEvents()" class="btn btn-success btn-circle btn-md"><i class="glyphicon glyphicon-search"></i></a>

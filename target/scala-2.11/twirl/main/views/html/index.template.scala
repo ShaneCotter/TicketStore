@@ -46,7 +46,7 @@ Seq[Any](format.raw/*1.27*/("""
                 <!-- Wrapper for slides -->
             <div class="carousel-inner" role="listbox">
                 <div class="item active">
-                    <img src=""""),_display_(/*18.32*/routes/*18.38*/.Assets.versioned("images/crowd1.jpg")),format.raw/*18.76*/("""" alt="Ed ">
+                    <img src=""""),_display_(/*18.32*/routes/*18.38*/.Assets.versioned("images/crowd1.jpg")),format.raw/*18.76*/("""" alt="Ed " class="img img-responsive">
                     <div class="carousel-caption">
                         <a href=""""),_display_(/*20.35*/routes/*20.41*/.HomeController.events(1)),format.raw/*20.66*/(""""><h1>Concerts</h1></a>
                         <h2>TC Events - The Biggest Events at the Best Prices</h2>
@@ -54,21 +54,21 @@ Seq[Any](format.raw/*1.27*/("""
                 </div>
 
                 <div class="item" >
-                    <img src=""""),_display_(/*26.32*/routes/*26.38*/.Assets.versioned("images/crowd2.jpg")),format.raw/*26.76*/("""" alt="">
+                    <img src=""""),_display_(/*26.32*/routes/*26.38*/.Assets.versioned("images/crowd2.jpg")),format.raw/*26.76*/("""" alt="" class="img img-responsive">
                     <div class="carousel-caption">
                         <a href = """"),_display_(/*28.37*/routes/*28.43*/.HomeController.events(2)),format.raw/*28.68*/(""""><h1>Sports</h1></a>
                     </div>
                 </div>
 
                 <div class="item" >
-                    <img src=""""),_display_(/*33.32*/routes/*33.38*/.Assets.versioned("images/crowd3.jpg")),format.raw/*33.76*/("""" alt="">
+                    <img src=""""),_display_(/*33.32*/routes/*33.38*/.Assets.versioned("images/crowd3.jpg")),format.raw/*33.76*/("""" alt="" class="img img-responsive">
                     <div class="carousel-caption">
                         <a href = """"),_display_(/*35.37*/routes/*35.43*/.HomeController.events(5)),format.raw/*35.68*/(""""><h1>Race Days</h1></a>
                     </div>
                 </div>
 
                 <div class="item">
-                    <img src=""""),_display_(/*40.32*/routes/*40.38*/.Assets.versioned("images/crowd4.jpg")),format.raw/*40.76*/("""" alt="">
+                    <img src=""""),_display_(/*40.32*/routes/*40.38*/.Assets.versioned("images/crowd4.jpg")),format.raw/*40.76*/("""" alt="" class="img img-responsive">
                     <div class="carousel-caption">
                         <a href = """"),_display_(/*42.37*/routes/*42.43*/.HomeController.events(4)),format.raw/*42.68*/(""""><h1>Theatre</h1></a>
                     </div>
@@ -110,10 +110,10 @@ Seq[Any](format.raw/*1.27*/("""
 object index extends index_Scope0.index
               /*
                   -- GENERATED --
-                  DATE: Thu Apr 20 14:13:33 BST 2017
-                  SOURCE: C:/Users/Eileen/Desktop/TicketStore/app/views/index.scala.html
-                  HASH: 5ef877fff9416d1a8985ecef1fa75e6813e389cb
-                  MATRIX: 756->1|876->26|904->29|930->47|969->49|1003->57|1757->784|1772->790|1831->828|1958->928|1973->934|2019->959|2277->1190|2292->1196|2351->1234|2477->1333|2492->1339|2538->1364|2710->1509|2725->1515|2784->1553|2910->1652|2925->1658|2971->1683|3145->1830|3160->1836|3219->1874|3345->1973|3360->1979|3406->2004|4167->2735
+                  DATE: Fri Apr 21 12:29:58 IST 2017
+                  SOURCE: /home/wdd/webapps/TicketStore/app/views/index.scala.html
+                  HASH: ba32be134ed5e2e83db7c2344dbd62749b202abd
+                  MATRIX: 756->1|876->26|903->28|929->46|968->48|1000->54|1740->767|1755->773|1814->811|1966->936|1981->942|2027->967|2279->1192|2294->1198|2353->1236|2504->1360|2519->1366|2565->1391|2732->1531|2747->1537|2806->1575|2957->1699|2972->1705|3018->1730|3187->1872|3202->1878|3261->1916|3412->2040|3427->2046|3473->2071|4215->2783
                   LINES: 27->1|32->1|33->2|33->2|33->2|35->4|49->18|49->18|49->18|51->20|51->20|51->20|57->26|57->26|57->26|59->28|59->28|59->28|64->33|64->33|64->33|66->35|66->35|66->35|71->40|71->40|71->40|73->42|73->42|73->42|92->61
                   -- GENERATED --
               */
