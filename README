@@ -1,10 +1,10 @@
-#TicketStore
+##TicketStore
  Second Year Project 
  Create a CRUD application using the Java Play! framework
  Topic : Online Event Ticket Booking
  
- #Team Members
- Name | Student Number
+##Team Members
+ Name          | Student Number
  ------------- | -------------
  Shane Cotter  | X00131736
  Matthew Cleary| X00130277
